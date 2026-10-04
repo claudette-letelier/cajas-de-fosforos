@@ -24,6 +24,11 @@ import { writeFileSync, existsSync, readFileSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 import path from 'node:path'
 import { regionalAccessFor } from './regional-access.mjs'
+import {
+  extractAddress,
+  extractCoords,
+  sanitizeAddress,
+} from './lib/html-location.mjs'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const CATALOG_PATH = path.join(ROOT, 'src/data/catalog.js')
@@ -665,95 +670,6 @@ function inferMetroFromText(text) {
   }
 }
 
-function extractCoords(html) {
-  const candidates = []
-  const push = (lat, lng, score = 0) => {
-    lat = Number(lat)
-    lng = Number(lng)
-    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return
-    // Chile continental + Magallanes
-    if (lat < -56 || lat > -17 || lng < -76 || lng > -66) return
-    candidates.push({ lat, lng, score })
-  }
-
-  // Google / Apple / OSM style @lat,lng
-  for (const m of html.matchAll(/@(-?\d+\.\d+),(-?\d+\.\d+)/g)) {
-    push(m[1], m[2], 40)
-  }
-  // Google Maps !3dLAT!4dLNG
-  for (const m of html.matchAll(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/g)) {
-    push(m[1], m[2], 50)
-  }
-  // q=lat,lng / ll= / center=
-  for (const m of html.matchAll(
-    /[?&](?:q|ll|center|query)=(-?\d+\.\d+)[,+\s](-?\d+\.\d+)/gi,
-  )) {
-    push(m[1], m[2], 35)
-  }
-  // Waze ll= or navigate.waze
-  for (const m of html.matchAll(
-    /(?:waze\.com\/(?:.*?[?&](?:ll|to)=|ul\?ll=)|navigate\.waze\.com\/.*[?&]ll=)(-?\d+\.\d+)%2C(-?\d+\.\d+)/gi,
-  )) {
-    push(m[1], m[2], 45)
-  }
-  for (const m of html.matchAll(
-    /waze\.com[^"'\\\s<>]*[?&]ll=(-?\d+\.\d+),(-?\d+\.\d+)/gi,
-  )) {
-    push(m[1], m[2], 45)
-  }
-  // JSON lat/lng pairs (bare numbers)
-  for (const m of html.matchAll(
-    /"lat(?:itude)?"\s*:\s*(-?\d+\.\d+)[\s\S]{0,80}"l(?:ng|on|ongitude)"\s*:\s*(-?\d+\.\d+)/gi,
-  )) {
-    push(m[1], m[2], 30)
-  }
-  for (const m of html.matchAll(
-    /"l(?:ng|on|ongitude)"\s*:\s*(-?\d+\.\d+)[\s\S]{0,80}"lat(?:itude)?"\s*:\s*(-?\d+\.\d+)/gi,
-  )) {
-    push(m[2], m[1], 30)
-  }
-  // Subsidios.cl / Laravel JSON: "latitude":"-36.8","longitude":"-73.0"
-  for (const m of html.matchAll(
-    /"latitude"\s*:\s*"(-?\d+\.\d+)"[\s\S]{0,120}"longitude"\s*:\s*"(-?\d+\.\d+)"/gi,
-  )) {
-    push(m[1], m[2], 70)
-  }
-  for (const m of html.matchAll(
-    /"longitude"\s*:\s*"(-?\d+\.\d+)"[\s\S]{0,120}"latitude"\s*:\s*"(-?\d+\.\d+)"/gi,
-  )) {
-    push(m[2], m[1], 70)
-  }
-  for (const m of html.matchAll(
-    /"lat"\s*:\s*"(-?\d+\.\d+)"[\s\S]{0,80}"l(?:ng|on)"\s*:\s*"(-?\d+\.\d+)"/gi,
-  )) {
-    push(m[1], m[2], 65)
-  }
-  // data attributes / init helpers
-  for (const m of html.matchAll(
-    /initUbicacion\(\s*'(-?\d+\.\d+)'\s*,\s*'(-?\d+\.\d+)'/g,
-  )) {
-    push(m[1], m[2], 55)
-  }
-  for (const m of html.matchAll(
-    /data-lat=["'](-?\d+\.\d+)["'][^>]*data-l(?:ng|on)=["'](-?\d+\.\d+)["']/gi,
-  )) {
-    push(m[1], m[2], 40)
-  }
-  for (const m of html.matchAll(
-    /data-l(?:ng|on)=["'](-?\d+\.\d+)["'][^>]*data-lat=["'](-?\d+\.\d+)["']/gi,
-  )) {
-    push(m[2], m[1], 40)
-  }
-  // iframe Google Maps embed pb=!1m...!2dLNG!3dLAT
-  for (const m of html.matchAll(/!2d(-?\d+\.\d+)!3d(-?\d+\.\d+)/g)) {
-    push(m[2], m[1], 42)
-  }
-
-  if (!candidates.length) return null
-  candidates.sort((a, b) => b.score - a.score)
-  return { lat: candidates[0].lat, lng: candidates[0].lng }
-}
-
 /** Prefer ficha coords; else sector from description; else comuna centroid. */
 function resolveLocation(item, htmlCoords) {
   if (htmlCoords?.lat != null && htmlCoords?.lng != null) {
@@ -1030,59 +946,6 @@ function extractDescription(html) {
     cleanDescription(og) ||
     cleanDescription(meta)
   )
-}
-
-function sanitizeAddress(raw) {
-  if (!raw) return null
-  let a = decodeHtml(String(raw))
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-  if (a.length < 8 || a.length > 140) return null
-  if (/[{}<>;]|olw-|prev-head|className|function\s*\(|https?:|www\./i.test(a))
-    return null
-  // Reject opinion/junk phrases that sometimes appear in scraped fields
-  if (
-    /no me gusta|me gusta|consultar|sin informaci|por definir|proximamente|próximamente/i.test(
-      a,
-    )
-  ) {
-    return null
-  }
-  if (!/(av\.|avenida|calle|pasaje|camino|pte\.|puente|los |las |el |la |\d)/i.test(a))
-    return null
-  return a
-}
-
-function extractAddress(html) {
-  const listing = extractLdListing(html)
-  const ldAddr =
-    listing?.address?.streetAddress ||
-    (typeof listing?.address === 'string' ? listing.address : null)
-  // Subsidios.cl embedded project JSON (prefer address next to latitude)
-  const subsidiosAddr =
-    html.match(
-      /"address"\s*:\s*"((?:[^"\\]|\\.){5,120})"\s*,\s*"latitude"/i,
-    )?.[1] ||
-    html.match(/"address"\s*:\s*"((?:[^"\\]|\\.){5,120})"/i)?.[1]
-  const raw =
-    ldAddr ||
-    (subsidiosAddr
-      ? subsidiosAddr
-          .replace(/\\u003C/gi, '<')
-          .replace(/\\u003E/gi, '>')
-          .replace(/\\"/g, '"')
-          .replace(/\\\//g, '/')
-      : '') ||
-    html.match(
-      /<(?:h3|p|span|div)[^>]*>\s*((?:Avenida|Av\.|Calle|Pasaje|Camino)[^<]{5,90})\s*</i,
-    )?.[1] ||
-    html.match(
-      /(?:Direcci[oó]n|Ubicaci[oó]n)\s*[:：]?\s*<\/[^>]+>\s*<[^>]+>\s*([^<]{8,100})/i,
-    )?.[1] ||
-    html.match(/"streetAddress"\s*:\s*"([^"]+)"/i)?.[1] ||
-    ''
-  return sanitizeAddress(raw)
 }
 
 const AMENITY_PATTERNS = [
