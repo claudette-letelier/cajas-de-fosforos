@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #102a32;
+  --teal: #0f766e;
+  --paper: #f3f7f6;
+  --sand: #e4eeec;
+  --muted-ink: #44585c;
+  --line: #c9d6d3;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+button,
+a,
+select,
+input {
+  font: inherit;
+}
+
+/* Labels permanentes sobre pines del mapa */
+.guan-map-label {
+  background: rgba(11, 46, 43, 0.92) !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  color: #fff !important;
+  font: 600 11px/1.2 Manrope, system-ui, sans-serif !important;
+  padding: 3px 7px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+  white-space: nowrap;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.guan-map-label::before {
+  border-top-color: rgba(11, 46, 43, 0.92) !important;
+}

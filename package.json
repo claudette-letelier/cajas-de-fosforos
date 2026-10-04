@@ -1,0 +1,27 @@
+{
+  "name": "cajas-de-fosforos",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 43127 --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --port 43127 --host 127.0.0.1",
+    "update:catalog": "node scripts/update-catalog.mjs",
+    "lint": "oxlint"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.52.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/leaflet": "^1.9.22",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.0"
+  }
+}

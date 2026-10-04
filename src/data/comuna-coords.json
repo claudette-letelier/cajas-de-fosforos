@@ -1,0 +1,568 @@
+{
+  "La Cisterna|Metropolitana": {
+    "lat": -33.5346265,
+    "lng": -70.6644024,
+    "display": "La Cisterna, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Limache|Valparaíso": {
+    "lat": -33.0018741,
+    "lng": -71.2657315,
+    "display": "Limache, Provincia de Marga Marga, Región de Valparaíso, Chile"
+  },
+  "Rancagua|O'Higgins": {
+    "lat": -34.1702433,
+    "lng": -70.740718,
+    "display": "Rancagua, Provincia de Cachapoal, Región del Libertador General Bernardo O'Higgins, Chile"
+  },
+  "Recoleta|Metropolitana": {
+    "lat": -33.4020744,
+    "lng": -70.6428912,
+    "display": "Recoleta, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Viña del Mar|Valparaíso": {
+    "lat": -33.0244535,
+    "lng": -71.5517636,
+    "display": "Viña del Mar, Provincia de Valparaíso, Región de Valparaíso, Chile"
+  },
+  "San Pedro de la Paz|Biobío": {
+    "lat": -36.8414183,
+    "lng": -73.1039909,
+    "display": "San Pedro de la Paz, Provincia de Concepción, Región del Biobío, Chile"
+  },
+  "Ovalle|Coquimbo": {
+    "lat": -30.6030819,
+    "lng": -71.2029894,
+    "display": "Ovalle, Provincia de Limarí, Región de Coquimbo, Chile"
+  },
+  "Coquimbo|Coquimbo": {
+    "lat": -29.9531851,
+    "lng": -71.3379503,
+    "display": "Coquimbo, Provincia de Elqui, Región de Coquimbo, Chile"
+  },
+  "Estación Central|Metropolitana": {
+    "lat": -33.4536375,
+    "lng": -70.6898654,
+    "display": "Estación Central, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Villa Alemana|Metropolitana": {
+    "lat": -33.0441903,
+    "lng": -71.3725464,
+    "display": "Villa Alemana, Provincia de Marga Marga, Región de Valparaíso, Chile"
+  },
+  "Chicureo - Piedra Roja|Metropolitana": {
+    "lat": -33.2771583,
+    "lng": -70.6277475,
+    "display": "Banco de Chile, Avenida Chicureo, Piedra Roja, Hacienda Chicureo, Chicureo, Colina, Provincia de Chacabuco, Región Metropolitana de Santiago, 9362428, Chile"
+  },
+  "Puente Alto|Metropolitana": {
+    "lat": -33.6095279,
+    "lng": -70.5754736,
+    "display": "Puente Alto, Provincia de Cordillera, Región Metropolitana de Santiago, Chile"
+  },
+  "Curacaví|Metropolitana": {
+    "lat": -33.4022289,
+    "lng": -71.1293733,
+    "display": "Curacaví, Provincia de Melipilla, Región Metropolitana de Santiago, Chile"
+  },
+  "Ñuñoa|Metropolitana": {
+    "lat": -33.4543164,
+    "lng": -70.5936358,
+    "display": "Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Lampa|Metropolitana": {
+    "lat": -33.2895953,
+    "lng": -70.8705255,
+    "display": "Lampa, Larapinta, Lampa, Provincia de Chacabuco, Región Metropolitana de Santiago, Chile"
+  },
+  "Quilpue|Valparaíso": {
+    "lat": -33.0498135,
+    "lng": -71.4415282,
+    "display": "Quilpué, Provincia de Marga Marga, Región de Valparaíso, Chile"
+  },
+  "Talca|Maule": {
+    "lat": -35.4265343,
+    "lng": -71.6660322,
+    "display": "Talca, Provincia de Talca, Región del Maule, Chile"
+  },
+  "Renca|Metropolitana": {
+    "lat": -33.4036212,
+    "lng": -70.7310176,
+    "display": "Renca, Provincia de Santiago, Región Metropolitana de Santiago, Chile"
+  },
+  "Chillán|Ñuble": {
+    "lat": -36.6066616,
+    "lng": -72.1033194,
+    "display": "Chillán, Provincia de Diguillín, Región de Ñuble, Chile"
+  },
+  "Curauma|Valparaíso": {
+    "lat": -33.127419,
+    "lng": -71.5696552,
+    "display": "Curauma, Placilla de Peñuelas, Valparaíso, Provincia de Valparaíso, Región de Valparaíso, 2372003, Chile"
+  },
+  "Pudahuel|Metropolitana": {
+    "lat": -33.4192724,
+    "lng": -70.8634486,
+    "display": "Pudahuel, Provincia de Santiago, Región Metropolitana de Santiago, Chile"
+  },
+  "Puerto Montt|Los Lagos": {
+    "lat": -41.471798,
+    "lng": -72.9395915,
+    "display": "Puerto Montt, Provincia de Llanquihue, Región de Los Lagos, Chile"
+  },
+  "Quilicura|Metropolitana": {
+    "lat": -33.3600426,
+    "lng": -70.7118564,
+    "display": "Quilicura, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "San Esteban|Metropolitana": {
+    "lat": -33.5209405,
+    "lng": -70.5828332,
+    "display": "San Esteban, Villa Los Copihues, La Florida, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Chicureo|Metropolitana": {
+    "lat": -33.2836492,
+    "lng": -70.653376,
+    "display": "Chicureo, Colina, Provincia de Chacabuco, Región Metropolitana de Santiago, 9362428, Chile"
+  },
+  "Molina|Maule": {
+    "lat": -35.1139703,
+    "lng": -71.2799798,
+    "display": "Molina, Provincia de Curicó, Región del Maule, Chile"
+  },
+  "Machalí|O'Higgins": {
+    "lat": -34.182453,
+    "lng": -70.6511584,
+    "display": "Machalí, Provincia de Cachapoal, Región del Libertador General Bernardo O'Higgins, Chile"
+  },
+  "San Fernando|O'Higgins": {
+    "lat": -34.583791,
+    "lng": -70.989122,
+    "display": "San Fernando, Provincia de Colchagua, Región del Libertador General Bernardo O'Higgins, Chile"
+  },
+  "San Javier|Maule": {
+    "lat": -35.5923933,
+    "lng": -71.735308,
+    "display": "San Javier, Provincia de Linares, Región del Maule, 3660000, Chile"
+  },
+  "San Javier|Metropolitana": {
+    "lat": -33.455781,
+    "lng": -70.6813976,
+    "display": "San Javier, Barrio Pila del Ganso, Estación Central, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Constitución|Maule": {
+    "lat": -35.3318306,
+    "lng": -72.4118998,
+    "display": "Constitución, Provincia de Talca, Región del Maule, Chile"
+  },
+  "Concepción|Biobío": {
+    "lat": -36.8270698,
+    "lng": -73.0502064,
+    "display": "Concepción, Provincia de Concepción, Región del Biobío, Chile"
+  },
+  "Santiago|Metropolitana": {
+    "lat": -33.4376995,
+    "lng": -70.6510671,
+    "display": "Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Independencia|Metropolitana": {
+    "lat": -33.422295,
+    "lng": -70.6554648,
+    "display": "Independencia, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Concepcion|Metropolitana": {
+    "lat": -33.5173903,
+    "lng": -70.7538093,
+    "display": "Concepción, Los Renovales, Barrio Esquina Blanca - Cuatro Alamos, Maipú, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Los Ángeles|Biobío": {
+    "lat": -37.4707455,
+    "lng": -72.351686,
+    "display": "Los Ángeles, Provincia de Bío-Bío, Región del Biobío, Chile"
+  },
+  "Cerrillos|Metropolitana": {
+    "lat": -33.5023396,
+    "lng": -70.7158417,
+    "display": "Cerrillos, Provincia de Santiago, Región Metropolitana de Santiago, Chile"
+  },
+  "Macul|Metropolitana": {
+    "lat": -33.4821635,
+    "lng": -70.5991929,
+    "display": "Macul, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "La Florida|Metropolitana": {
+    "lat": -33.5204181,
+    "lng": -70.6006178,
+    "display": "La Florida, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Temuco|La Araucanía": {
+    "lat": -38.7358908,
+    "lng": -72.590538,
+    "display": "Temuco, Provincia de Cautín, Región de la Araucanía, Chile"
+  },
+  "Valparaíso|Valparaíso": {
+    "lat": -33.0458456,
+    "lng": -71.6196749,
+    "display": "Valparaíso, Provincia de Valparaíso, Región de Valparaíso, Chile"
+  },
+  "Alto Hospicio|Tarapacá": {
+    "lat": -20.2700478,
+    "lng": -70.1009162,
+    "display": "Alto Hospicio, Provincia de Iquique, Región de Tarapacá, 1130000, Chile"
+  },
+  "Alto Hospicio|Metropolitana": {
+    "lat": -33.6497946,
+    "lng": -70.9273383,
+    "display": "Alto Hospicio, San Rafael, Talagante, Provincia de Talagante, Región Metropolitana de Santiago, 9670378, Chile"
+  },
+  "Buin|Metropolitana": {
+    "lat": -33.7319741,
+    "lng": -70.7419619,
+    "display": "Buin, Provincia de Maipo, Región Metropolitana de Santiago, 9500708, Chile"
+  },
+  "Quillota|Metropolitana": {
+    "lat": -32.879997,
+    "lng": -71.2473555,
+    "display": "Quillota, Provincia de Quillota, Región de Valparaíso, 2260000, Chile"
+  },
+  "La Serena|Coquimbo": {
+    "lat": -29.902705,
+    "lng": -71.2519575,
+    "display": "La Serena, Provincia de Elqui, Región de Coquimbo, Chile"
+  },
+  "San Bernardo|Metropolitana": {
+    "lat": -33.5922859,
+    "lng": -70.7045838,
+    "display": "San Bernardo, Provincia de Maipo, Región Metropolitana de Santiago, Chile"
+  },
+  "Melipilla|Metropolitana": {
+    "lat": -33.6855134,
+    "lng": -71.2145796,
+    "display": "Melipilla, Provincia de Melipilla, Región Metropolitana de Santiago, Chile"
+  },
+  "Padre Hurtado|Metropolitana": {
+    "lat": -33.5673051,
+    "lng": -70.8020467,
+    "display": "Padre Hurtado, Provincia de Talagante, Región Metropolitana de Santiago, Chile"
+  },
+  "San Miguel|Metropolitana": {
+    "lat": -33.4859746,
+    "lng": -70.6495465,
+    "display": "San Miguel, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Linares|Metropolitana": {
+    "lat": -35.8452905,
+    "lng": -71.5977173,
+    "display": "Linares, Provincia de Linares, Región del Maule, Chile"
+  },
+  "Chiguayante|Biobío": {
+    "lat": -36.9292478,
+    "lng": -73.0237115,
+    "display": "Chiguayante, Provincia de Concepción, Región del Biobío, Chile"
+  },
+  "Talcahuano|Biobío": {
+    "lat": -36.7144863,
+    "lng": -73.1141087,
+    "display": "Talcahuano, Provincia de Concepción, Región del Biobío, Chile"
+  },
+  "Colina|Metropolitana": {
+    "lat": -33.202472,
+    "lng": -70.6749147,
+    "display": "Colina, Provincia de Chacabuco, Región Metropolitana de Santiago, Chile"
+  },
+  "Quillota|Valparaíso": {
+    "lat": -32.879997,
+    "lng": -71.2473555,
+    "display": "Quillota, Provincia de Quillota, Región de Valparaíso, 2260000, Chile"
+  },
+  "Osorno|Los Lagos": {
+    "lat": -40.5736955,
+    "lng": -73.1358091,
+    "display": "Osorno, Provincia de Osorno, Región de Los Lagos, Chile"
+  },
+  "El Bosque|Metropolitana": {
+    "lat": -33.5561468,
+    "lng": -70.6655679,
+    "display": "El Bosque, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Huechuraba|Metropolitana": {
+    "lat": -33.3744615,
+    "lng": -70.6362988,
+    "display": "Huechuraba, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Maipú|Metropolitana": {
+    "lat": -33.5094409,
+    "lng": -70.756182,
+    "display": "Maipú, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Antofagasta|Antofagasta": {
+    "lat": -23.6463741,
+    "lng": -70.3980033,
+    "display": "Antofagasta, Provincia de Antofagasta, Región de Antofagasta, Chile"
+  },
+  "Puerto Varas|Metropolitana": {
+    "lat": -41.317802,
+    "lng": -72.9829073,
+    "display": "Puerto Varas, Provincia de Llanquihue, Región de Los Lagos, Chile"
+  },
+  "Copiapo|Atacama": {
+    "lat": -27.3664685,
+    "lng": -70.3322753,
+    "display": "Copiapó, Provincia de Copiapó, Región de Atacama, Chile"
+  },
+  "La Pintana|Metropolitana": {
+    "lat": -33.5833594,
+    "lng": -70.629827,
+    "display": "La Pintana, Provincia de Santiago, Región Metropolitana de Santiago, Chile"
+  },
+  "Villarrica|Metropolitana": {
+    "lat": -39.2780911,
+    "lng": -72.2274364,
+    "display": "Villarrica, Provincia de Cautín, Región de la Araucanía, Chile"
+  },
+  "Los Angeles|Biobío": {
+    "lat": -37.4707455,
+    "lng": -72.351686,
+    "display": "Los Ángeles, Provincia de Bío-Bío, Región del Biobío, Chile"
+  },
+  "Villarica|La Araucanía": {
+    "lat": -37.8146462,
+    "lng": -72.6992486,
+    "display": "Lago Villarica, Los Lagos, Angol, Provincia de Malleco, Región de la Araucanía, 4650000, Chile"
+  },
+  "Valdivia|Los Ríos": {
+    "lat": -39.8141262,
+    "lng": -73.2459859,
+    "display": "Valdivia, Provincia de Valdivia, Región de Los Ríos, Chile"
+  },
+  "Curicó|Maule": {
+    "lat": -34.985368,
+    "lng": -71.2393705,
+    "display": "Curicó, Provincia de Curicó, Región del Maule, Chile"
+  },
+  "Arica|Arica y Parinacota": {
+    "lat": -18.4785288,
+    "lng": -70.3211394,
+    "display": "Arica, Provincia de Arica, Región de Arica y Parinacota, Chile"
+  },
+  "Quinta Normal|Metropolitana": {
+    "lat": -33.4283561,
+    "lng": -70.6999898,
+    "display": "Quinta Normal, Provincia de Santiago, Región Metropolitana de Santiago, 8500445, Chile"
+  },
+  "Villa Alemana|Valparaíso": {
+    "lat": -33.0441903,
+    "lng": -71.3725464,
+    "display": "Villa Alemana, Provincia de Marga Marga, Región de Valparaíso, Chile"
+  },
+  "Requinoa|O'Higgins": {
+    "lat": -34.2848586,
+    "lng": -70.8175128,
+    "display": "Requínoa, Provincia de Cachapoal, Región del Libertador General Bernardo O'Higgins, Chile"
+  },
+  "San Felipe|Valparaíso": {
+    "lat": -32.750687,
+    "lng": -70.7252688,
+    "display": "San Felipe, Provincia de San Felipe de Aconcagua, Región de Valparaíso, Chile"
+  },
+  "La Cruz|Valparaíso": {
+    "lat": -32.8279116,
+    "lng": -71.2271534,
+    "display": "La Cruz, Provincia de Quillota, Región de Valparaíso, 2280000, Chile"
+  },
+  "villarrica|La Araucanía": {
+    "lat": -39.2780911,
+    "lng": -72.2274364,
+    "display": "Villarrica, Provincia de Cautín, Región de la Araucanía, Chile"
+  },
+  "Hualpén|Metropolitana": {
+    "lat": -36.7927608,
+    "lng": -73.0943414,
+    "display": "Hualpén, Provincia de Concepción, Región del Biobío, Chile"
+  },
+  "Providencia|Metropolitana": {
+    "lat": -33.4288379,
+    "lng": -70.6113373,
+    "display": "Providencia, Provincia de Santiago, Región Metropolitana de Santiago, Chile"
+  },
+  "Peñalolen|Metropolitana": {
+    "lat": -33.4765918,
+    "lng": -70.5418308,
+    "display": "Peñalolén, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Chile|Metropolitana": {
+    "lat": -33.4376995,
+    "lng": -70.6510671,
+    "display": "Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Las Condes|Metropolitana": {
+    "lat": -33.4084548,
+    "lng": -70.5671489,
+    "display": "Las Condes, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Conchalí|Metropolitana": {
+    "lat": -33.3843233,
+    "lng": -70.6747382,
+    "display": "Conchalí, Provincia de Santiago, Región Metropolitana de Santiago, Chile"
+  },
+  "Antofagasta|Metropolitana": {
+    "lat": -23.6463741,
+    "lng": -70.3980033,
+    "display": "Antofagasta, Provincia de Antofagasta, Región de Antofagasta, Chile"
+  },
+  "Penco|Metropolitana": {
+    "lat": -36.7385838,
+    "lng": -72.9937749,
+    "display": "Penco, Provincia de Concepción, Región del Biobío, 4140000, Chile"
+  },
+  "Coronel|Metropolitana": {
+    "lat": -37.0164712,
+    "lng": -73.1561953,
+    "display": "Coronel, Provincia de Concepción, Región del Biobío, 4190000, Chile"
+  },
+  "San Pedro de La Paz|Metropolitana": {
+    "lat": -36.8414183,
+    "lng": -73.1039909,
+    "display": "San Pedro de la Paz, Provincia de Concepción, Región del Biobío, Chile"
+  },
+  "Chimbarongo|Metropolitana": {
+    "lat": -34.708953,
+    "lng": -71.0403642,
+    "display": "Chimbarongo, Provincia de Colchagua, Región del Libertador General Bernardo O'Higgins, 3090000, Chile"
+  },
+  "Casablanca|Valparaíso": {
+    "lat": -33.3205864,
+    "lng": -71.4100762,
+    "display": "Casablanca, Provincia de Valparaíso, Región de Valparaíso, Chile"
+  },
+  "Peñablanca|Valparaíso": {
+    "lat": -33.0402022,
+    "lng": -71.3529769,
+    "display": "Peñablanca, Sargento Aldea, El Páramo, Peñablanca, Villa Alemana, Provincia de Marga Marga, Región de Valparaíso, 2460435, Chile"
+  },
+  "La Granja|Metropolitana": {
+    "lat": -33.5431234,
+    "lng": -70.6332426,
+    "display": "La Granja, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "San Joaquín|Metropolitana": {
+    "lat": -33.4942329,
+    "lng": -70.6284983,
+    "display": "San Joaquín, Provincia de Santiago, Región Metropolitana de Santiago, Chile"
+  },
+  "Coyhaique|Metropolitana": {
+    "lat": -45.5711804,
+    "lng": -72.0684863,
+    "display": "Coyhaique, Provincia de Coyhaique, Región Aysén del General Carlos Ibáñez del Campo, Chile"
+  },
+  "Rengo|Metropolitana": {
+    "lat": -34.4088744,
+    "lng": -70.8616583,
+    "display": "Rengo, Provincia de Cachapoal, Región del Libertador General Bernardo O'Higgins, Chile"
+  },
+  "San Fernando|Metropolitana": {
+    "lat": -34.583791,
+    "lng": -70.989122,
+    "display": "San Fernando, Provincia de Colchagua, Región del Libertador General Bernardo O'Higgins, Chile"
+  },
+  "Mejillones|Metropolitana": {
+    "lat": -23.1002342,
+    "lng": -70.4483076,
+    "display": "Mejillones, Provincia de Antofagasta, Región de Antofagasta, 1310000, Chile"
+  },
+  "La Calera|Metropolitana": {
+    "lat": -32.788981,
+    "lng": -71.203546,
+    "display": "La Calera, Provincia de Quillota, Región de Valparaíso, 2290000, Chile"
+  },
+  "Vitacura|Metropolitana": {
+    "lat": -33.3871062,
+    "lng": -70.5764516,
+    "display": "Vitacura, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Peñaflor|Metropolitana": {
+    "lat": -33.6058638,
+    "lng": -70.8785306,
+    "display": "Peñaflor, Provincia de Talagante, Región Metropolitana de Santiago, 9750000, Chile"
+  },
+  "San Carlos|Metropolitana": {
+    "lat": -36.3792284,
+    "lng": -72.0179525,
+    "display": "San Carlos, Provincia de Punilla, Región de Ñuble, 3841660, Chile"
+  },
+  "Curanilahue|Biobío": {
+    "lat": -37.4758037,
+    "lng": -73.3457069,
+    "display": "Curanilahue, Provincia de Arauco, Región del Biobío, Chile"
+  },
+  "Requínoa|Metropolitana": {
+    "lat": -34.2848586,
+    "lng": -70.8175128,
+    "display": "Requínoa, Provincia de Cachapoal, Región del Libertador General Bernardo O'Higgins, Chile"
+  },
+  "Vilcún|La Araucanía": {
+    "lat": -38.6703956,
+    "lng": -72.2240806,
+    "display": "Vilcún, Provincia de Cautín, Región de la Araucanía, 4880000, Chile"
+  },
+  "Pedro Aguirre Cerda|Metropolitana": {
+    "lat": -33.49383,
+    "lng": -70.6760755,
+    "display": "Pedro Aguirre Cerda, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Vallenar|Atacama": {
+    "lat": -28.5750438,
+    "lng": -70.7616398,
+    "display": "Vallenar, Provincia de Huasco, Región de Atacama, Chile"
+  },
+  "Punta Arenas|Magallanes": {
+    "lat": -53.1625688,
+    "lng": -70.907822,
+    "display": "Punta Arenas, Provincia de Magallanes, Región de Magallanes y de la Antártica Chilena, 6201065, Chile"
+  },
+  "Los Andes|Valparaíso": {
+    "lat": -32.8336867,
+    "lng": -70.5981609,
+    "display": "Los Andes, Provincia de Los Andes, Región de Valparaíso, 2100000, Chile"
+  },
+  "Lomas De San Andres|Metropolitana": {
+    "lat": -36.8270698,
+    "lng": -73.0502064,
+    "display": "Concepción, Provincia de Concepción, Región del Biobío, Chile"
+  },
+  "Calle Larga|Metropolitana": {
+    "lat": -32.8552685,
+    "lng": -70.6260407,
+    "display": "Calle Larga, Provincia de Los Andes, Región de Valparaíso, Chile"
+  },
+  "Los Andes|Metropolitana": {
+    "lat": -32.8336867,
+    "lng": -70.5981609,
+    "display": "Los Andes, Provincia de Los Andes, Región de Valparaíso, 2100000, Chile"
+  },
+  "Chile|Coquimbo": {
+    "lat": -31.6353704,
+    "lng": -71.1688783,
+    "display": "Chile, Comunidad y Progreso, Illapel, Provincia de Choapa, Región de Coquimbo, 1930000, Chile"
+  },
+  "Lo Barnechea|Metropolitana": {
+    "lat": -33.3616012,
+    "lng": -70.5051957,
+    "display": "Lo Barnechea, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
+  },
+  "Cartagena|Valparaíso": {
+    "lat": -33.5468491,
+    "lng": -71.6031708,
+    "display": "Cartagena, Provincia de San Antonio, Región de Valparaíso, Chile"
+  },
+  "Placilla|Valparaíso": {
+    "lat": -33.1148867,
+    "lng": -71.5679796,
+    "display": "Placilla de Peñuelas, Valparaíso, Provincia de Valparaíso, Región de Valparaíso, 2372003, Chile",
+    "query": "Placilla de Peñuelas, Valparaíso, Chile"
+  },
+  "Parral|Metropolitana": {
+    "lat": -36.1414293,
+    "lng": -71.8222221,
+    "display": "Parral, Provincia de Linares, Región del Maule, 3630000, Chile"
+  }
+}

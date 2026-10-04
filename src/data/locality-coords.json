@@ -1,0 +1,158 @@
+{
+  "curauma": {
+    "lat": -33.127419,
+    "lng": -71.5696552,
+    "display": "Curauma, Placilla de Peñuelas, Valparaíso, Provincia de Valparaíso, Región de Valparaíso, 2372003, Chile",
+    "query": "Curauma, Placilla de Peñuelas, Valparaíso, Chile"
+  },
+  "placilla-de-penuelas": {
+    "lat": -33.1148867,
+    "lng": -71.5679796,
+    "display": "Placilla de Peñuelas, Valparaíso, Provincia de Valparaíso, Región de Valparaíso, 2372003, Chile",
+    "query": "Placilla de Peñuelas, Valparaíso, Chile"
+  },
+  "placilla": {
+    "lat": -33.1148867,
+    "lng": -71.5679796,
+    "display": "Placilla de Peñuelas, Valparaíso, Provincia de Valparaíso, Región de Valparaíso, 2372003, Chile",
+    "query": "Placilla de Peñuelas, Valparaíso, Chile"
+  },
+  "renaca": {
+    "lat": -32.9715335,
+    "lng": -71.5437133,
+    "display": "Reñaca, Viña del Mar, Provincia de Valparaíso, Región de Valparaíso, 2540070, Chile",
+    "query": "Reñaca, Viña del Mar, Valparaíso, Chile"
+  },
+  "concón": {
+    "lat": -32.9220036,
+    "lng": -71.5159565,
+    "display": "Concón, Provincia de Valparaíso, Región de Valparaíso, Chile",
+    "query": "Concón, Valparaíso, Chile"
+  },
+  "concon": {
+    "lat": -32.9220036,
+    "lng": -71.5159565,
+    "display": "Concón, Provincia de Valparaíso, Región de Valparaíso, Chile",
+    "query": "Concón, Valparaíso, Chile"
+  },
+  "peñablanca": {
+    "lat": -33.0402022,
+    "lng": -71.3529769,
+    "display": "Peñablanca, Sargento Aldea, El Páramo, Peñablanca, Villa Alemana, Provincia de Marga Marga, Región de Valparaíso, 2460435, Chile",
+    "query": "Peñablanca, Villa Alemana, Valparaíso, Chile"
+  },
+  "penablanca": {
+    "lat": -33.0402022,
+    "lng": -71.3529769,
+    "display": "Peñablanca, Sargento Aldea, El Páramo, Peñablanca, Villa Alemana, Provincia de Marga Marga, Región de Valparaíso, 2460435, Chile",
+    "query": "Peñablanca, Villa Alemana, Valparaíso, Chile"
+  },
+  "piedra-roja": {
+    "lat": -33.2800738,
+    "lng": -70.6409045,
+    "display": "Piedra Roja, Hacienda Chicureo, Chicureo, Colina, Provincia de Chacabuco, Región Metropolitana de Santiago, 9362428, Chile",
+    "query": "Piedra Roja, Chicureo, Colina, Chile"
+  },
+  "chicureo": {
+    "lat": -33.2836492,
+    "lng": -70.653376,
+    "display": "Chicureo, Colina, Provincia de Chacabuco, Región Metropolitana de Santiago, 9362428, Chile",
+    "query": "Chicureo, Colina, Chile"
+  },
+  "la-dehesa": {
+    "lat": -33.3527096,
+    "lng": -70.5185906,
+    "display": "La Dehesa, Lo Barnechea, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "query": "La Dehesa, Lo Barnechea, Chile"
+  },
+  "andalue": {
+    "lat": -36.8567126,
+    "lng": -73.0965234,
+    "display": "Andalué, San Pedro de la Paz, Provincia de Concepción, Región del Biobío, 4130383, Chile",
+    "query": "Andalué, San Pedro de la Paz, Chile"
+  },
+  "san-pedro-de-la-paz": {
+    "lat": -36.8414183,
+    "lng": -73.1039909,
+    "display": "San Pedro de la Paz, Provincia de Concepción, Región del Biobío, Chile",
+    "query": "San Pedro de la Paz, Biobío, Chile"
+  },
+  "alto-hospicio": {
+    "lat": -20.2700478,
+    "lng": -70.1009162,
+    "display": "Alto Hospicio, Provincia de Iquique, Región de Tarapacá, 1130000, Chile",
+    "query": "Alto Hospicio, Tarapacá, Chile"
+  },
+  "serena-oriente": {
+    "lat": -29.9315532,
+    "lng": -71.2430449,
+    "display": "Iglesia Cristiana de La Serena, 2806, Francisco Ariztía, Condominio Cumbres de San Joaquín, San Joaquín, La Serena, Provincia de Elqui, Región de Coquimbo, 1721885, Chile",
+    "query": "La Serena Oriente, La Serena, Chile"
+  },
+  "gran-avenida": {
+    "lat": -33.5635501,
+    "lng": -70.6824842,
+    "display": "Gran Avenida José Miguel Carrera, Villa Los Carolinos, El Bosque, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "query": "Gran Avenida José Miguel Carrera, El Bosque, Santiago, Chile"
+  },
+  "puerto-varas": {
+    "lat": -41.317802,
+    "lng": -72.9829073,
+    "display": "Puerto Varas, Provincia de Llanquihue, Región de Los Lagos, Chile",
+    "query": "Puerto Varas, Los Lagos, Chile"
+  },
+  "los-andes": {
+    "lat": -32.8336867,
+    "lng": -70.5981609,
+    "display": "Los Andes, Provincia de Los Andes, Región de Valparaíso, 2100000, Chile",
+    "query": "Los Andes, Valparaíso, Chile"
+  },
+  "machalí": {
+    "lat": -34.182453,
+    "lng": -70.6511584,
+    "display": "Machalí, Provincia de Cachapoal, Región del Libertador General Bernardo O'Higgins, Chile",
+    "query": "Machalí, O'Higgins, Chile"
+  },
+  "machali": {
+    "lat": -34.182453,
+    "lng": -70.6511584,
+    "display": "Machalí, Provincia de Cachapoal, Región del Libertador General Bernardo O'Higgins, Chile",
+    "query": "Machalí, O'Higgins, Chile"
+  },
+  "limache": {
+    "lat": -33.0018741,
+    "lng": -71.2657315,
+    "display": "Limache, Provincia de Marga Marga, Región de Valparaíso, Chile",
+    "query": "Limache, Valparaíso, Chile"
+  },
+  "quilpue": {
+    "lat": -33.0498135,
+    "lng": -71.4415282,
+    "display": "Quilpué, Provincia de Marga Marga, Región de Valparaíso, Chile",
+    "query": "Quilpué, Valparaíso, Chile"
+  },
+  "quilpué": {
+    "lat": -33.0498135,
+    "lng": -71.4415282,
+    "display": "Quilpué, Provincia de Marga Marga, Región de Valparaíso, Chile",
+    "query": "Quilpué, Valparaíso, Chile"
+  },
+  "villa-alemana": {
+    "lat": -33.0441903,
+    "lng": -71.3725464,
+    "display": "Villa Alemana, Provincia de Marga Marga, Región de Valparaíso, Chile",
+    "query": "Villa Alemana, Valparaíso, Chile"
+  },
+  "san-felipe": {
+    "lat": -32.750687,
+    "lng": -70.7252688,
+    "display": "San Felipe, Provincia de San Felipe de Aconcagua, Región de Valparaíso, Chile",
+    "query": "San Felipe, Valparaíso, Chile"
+  },
+  "puerto-montt": {
+    "lat": -41.471798,
+    "lng": -72.9395915,
+    "display": "Puerto Montt, Provincia de Llanquihue, Región de Los Lagos, Chile",
+    "query": "Puerto Montt, Los Lagos, Chile"
+  }
+}
