@@ -112,7 +112,7 @@ function ProjectImage({ src, alt }) {
 export default function App() {
   const [filters, setFilters] = useState(defaultFilters)
   const [showPortals, setShowPortals] = useState(false)
-  const [viewMode, setViewMode] = useState('lista')
+  const [viewMode, setViewMode] = useState('mapa')
   const [focusId, setFocusId] = useState(null)
   const [selectedProject, setSelectedProject] = useState(null)
   const buscadorRef = useRef(null)
@@ -218,14 +218,22 @@ export default function App() {
 
           <div className="mt-auto max-w-xl pt-20 sm:pt-24">
             <p
-              className="font-[family-name:var(--font-display)] text-5xl leading-[0.95] text-white sm:text-7xl"
-              style={{ animation: 'fade-up 0.9s ease-out both' }}
+              className="font-[family-name:var(--font-display)] text-4xl leading-[0.95] text-white sm:text-6xl"
+              style={{
+                animation: 'fade-up 0.9s ease-out both',
+                textShadow:
+                  '0 2px 4px rgba(0,0,0,0.55), 0 8px 24px rgba(0,0,0,0.45), 0 0 1px rgba(0,0,0,0.8)',
+              }}
             >
-              Cajas de Fósforos
+              Mapas de cajas de fósforos
             </p>
             <h1
               className="mt-5 text-2xl font-medium text-[#f6e7c5] sm:text-3xl"
-              style={{ animation: 'fade-up 0.9s ease-out 0.12s both' }}
+              style={{
+                animation: 'fade-up 0.9s ease-out 0.12s both',
+                textShadow:
+                  '0 2px 4px rgba(0,0,0,0.6), 0 6px 18px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.85)',
+              }}
             >
               Encuentra tu cajita de fósforos.
             </h1>
