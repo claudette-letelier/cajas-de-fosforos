@@ -8,6 +8,285 @@ export const UF_CLP = 41090
  */
 export const catalog = [
   {
+    "id": "uts-accion-briones-luco",
+    "name": "Acción Briones Luco",
+    "developer": "Inmobiliaria+Independencia",
+    "region": "Metropolitana",
+    "comuna": "La Cisterna",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 2"
+    ],
+    "priceFromUf": 1883,
+    "priceToUf": 1883,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/accion-briones-luco/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-aires-de-limache",
+    "name": "Aires de Limache",
+    "developer": "CONCRECASA",
+    "region": "Valparaíso",
+    "comuna": "Limache",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1700,
+    "priceToUf": 1700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-de-limache/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "aitue-aires-de-machali",
+    "name": "Aires de Machalí",
+    "developer": "Aitue",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4680,
+    "priceToUf": 4680,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-casas/aires-de-machali/rancagua/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "uts-aires-de-recoleta",
+    "name": "Aires de Recoleta",
+    "developer": "Inmobiliaria+Aires+de+Recoleta",
+    "region": "Metropolitana",
+    "comuna": "Recoleta",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Cerro Blanco",
+    "metroLine": "L2",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-de-recoleta/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-aires-de-renaca",
+    "name": "Aires de Reñaca",
+    "developer": "Inmobiliaria+Rio+Cochrane",
+    "region": "Valparaíso",
+    "comuna": "Viña del Mar",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-de-renaca/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-aires-de-san-pedro",
+    "name": "Aires de San Pedro",
+    "developer": "Contigo",
+    "region": "Biobío",
+    "comuna": "San Pedro de la Paz",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2700,
+    "priceToUf": 2700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-de-san-pedro/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-aires-del-limari",
+    "name": "Aires del Limarí",
+    "developer": "IHabita",
+    "region": "Coquimbo",
+    "comuna": "Ovalle",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-del-limari/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-aires-del-sauce",
+    "name": "Aires del Sauce",
+    "developer": "IHabita",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-del-sauce/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-alameda-4719",
+    "name": "Alameda 4719",
+    "developer": "Inmobiliaria+Euro",
+    "region": "Metropolitana",
+    "comuna": "Estación Central",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2288,
+    "priceToUf": 2288,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Estación Central",
+    "metroLine": "L1",
+    "metroWalkMin": 8,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/alameda-4719/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-485-alicura-condominio",
     "name": "Alicura Condominio",
     "developer": "Consultar portal",
@@ -39,6 +318,316 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "soco-alkura-casas-en-chicureo",
+    "name": "Alkura",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "Chicureo - Piedra Roja",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 11900,
+    "priceToUf": 11900,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/alkura-casas-en-chicureo/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "bci-9452-alto-andes",
+    "name": "Alto Andes",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Puente Alto",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2950,
+    "priceToUf": 3000,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Las Mercedes",
+    "metroLine": "L4",
+    "metroWalkMin": 18,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/puente-alto/departamento/alto-andes/9452"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
+    "id": "uts-alto-curacavi",
+    "name": "Alto Curacaví",
+    "developer": "ALTO+NORTE+INMOBILIARIA",
+    "region": "Metropolitana",
+    "comuna": "Curacaví",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/alto-curacavi/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-alto-irarrazaval",
+    "name": "Alto Irarrázaval",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4004,
+    "priceToUf": 6116,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "2do semestre 2028",
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/alto-irarrazaval"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "uts-alto-miraflores-ii",
+    "name": "Alto Miraflores II",
+    "developer": "ALTO+NORTE+INMOBILIARIA",
+    "region": "Metropolitana",
+    "comuna": "Lampa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2033,
+    "priceToUf": 2033,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/alto-miraflores-ii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-altos-de-marga-marga-iii",
+    "name": "Altos de Marga Marga III",
+    "developer": "PACAL",
+    "region": "Valparaíso",
+    "comuna": "Quilpue",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1800,
+    "priceToUf": 1800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/altos-de-marga-marga-iii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-altos-de-san-miguel",
+    "name": "Altos de San Miguel",
+    "developer": "Ferval",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/altos-de-san-miguel/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "silos-altos-de-santa-maria",
+    "name": "Altos de Santa Maria",
+    "developer": "Los Silos",
+    "region": "Metropolitana",
+    "comuna": "Renca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1800,
+    "priceToUf": 1800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Lo Prado",
+    "metroLine": "L5",
+    "metroWalkMin": 22,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/altos-de-santa-maria/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "uts-altos-del-este",
+    "name": "Altos del Este",
+    "developer": "CODEH",
+    "region": "Ñuble",
+    "comuna": "Chillán",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2337,
+    "priceToUf": 2337,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/altos-del-este/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-altos-del-parque",
+    "name": "Altos del Parque",
+    "developer": "Inmobiliaria+Rio+Cochrane",
+    "region": "Valparaíso",
+    "comuna": "Curauma",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/altos-del-parque/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "alturas-pudahuel",
     "name": "Alturas de Pudahuel",
     "developer": "Consultar portal",
@@ -49,8 +638,8 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 1900,
-    "priceToUf": 2800,
+    "priceFromUf": 2450,
+    "priceToUf": 3000,
     "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
@@ -69,6 +658,10 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/512/alturas-de-pudahuel"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/pudahuel/departamento/alturas-de-pudahuel/9580"
       }
     ],
     "notes": ""
@@ -107,7 +700,7 @@ export const catalog = [
   {
     "id": "andes-quilicura-ii",
     "name": "Andes Quilicura II",
-    "developer": "Consultar portal",
+    "developer": "EPS",
     "region": "Metropolitana",
     "comuna": "Quilicura",
     "propertyType": "departamento",
@@ -117,7 +710,7 @@ export const catalog = [
     ],
     "priceFromUf": 2800,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 1,
@@ -167,10 +760,165 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "paz-I227",
+    "name": "ATELIER ÑUÑOA",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4113,
+    "priceToUf": 4113,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": "Irarrázaval",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/atelier-nunoa"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "soco-avellanos-departamentos-en-nunoa",
+    "name": "Avellanos",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3090,
+    "priceToUf": 3090,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/avellanos-departamentos-en-nunoa/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "bricsa-18",
+    "name": "Ayres de Chicureo",
+    "developer": "Bricsa",
+    "region": "Metropolitana",
+    "comuna": "Chicureo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 5969,
+    "priceToUf": 5969,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "bricsa",
+        "url": "https://bricsa.cl/proyecto/18"
+      }
+    ],
+    "notes": "Importado desde Bricsa"
+  },
+  {
+    "id": "uts-barrio-encanto-de-molina",
+    "name": "Barrio Encanto de Molina",
+    "developer": "BRIO+INMOBILIARIA",
+    "region": "Maule",
+    "comuna": "Molina",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2350,
+    "priceToUf": 2350,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/barrio-encanto-de-molina/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-barrio-espanol",
+    "name": "Barrio Español",
+    "developer": "Grupo+Vías",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2650,
+    "priceToUf": 2650,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/barrio-espanol/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-319-barrio-las-delicias",
     "name": "Barrio Las Delicias",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Ñuble",
     "comuna": "Chillán",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -196,6 +944,37 @@ export const catalog = [
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "uts-barrio-las-delicias-v",
+    "name": "Barrio Las Delicias V",
+    "developer": "Inespa",
+    "region": "Ñuble",
+    "comuna": "Chillán",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1640,
+    "priceToUf": 1640,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/barrio-las-delicias-v/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "sub-521-barrio-pinares-v",
@@ -229,6 +1008,37 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "galilea-brisas-de-machali-ii",
+    "name": "Brisas de Machalí II",
+    "developer": "Galilea",
+    "region": "O'Higgins",
+    "comuna": "Machalí",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 3100,
+    "priceToUf": 6290,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "galilea",
+        "url": "https://www.galilea.cl/proyectos/brisas-de-machali-ii/"
+      }
+    ],
+    "notes": "Importado desde Galilea"
+  },
+  {
     "id": "brisas-quilicura",
     "name": "Brisas de Quilicura",
     "developer": "Maestra Inmobiliaria",
@@ -240,8 +1050,8 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 2000,
-    "priceToUf": 2600,
-    "bedroomsMin": 2,
+    "priceToUf": 2000,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -255,9 +1065,75 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://maestra.cl/subsidio-ds19/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/quilicura/departamento/brisas-de-quilicura/7014"
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "uts-brisas-de-san-fernando",
+    "name": "Brisas de San Fernando",
+    "developer": "IHorizonte",
+    "region": "O'Higgins",
+    "comuna": "San Fernando",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1476,
+    "priceToUf": 1476,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/brisas-de-san-fernando/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-brisas-de-san-javier",
+    "name": "Brisas de San Javier",
+    "developer": "MALPO",
+    "region": "Maule",
+    "comuna": "San Javier",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2205,
+    "priceToUf": 2205,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/brisas-de-san-javier/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "sub-477-brisas-de-san-javier-ii",
@@ -291,6 +1167,348 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-brisas-del-maule-vi",
+    "name": "Brisas del Maule VI",
+    "developer": "BOETSCH",
+    "region": "Maule",
+    "comuna": "Constitución",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1969,
+    "priceToUf": 1969,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/brisas-del-maule-vi/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I170",
+    "name": "CAIQUÉN",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Estación Central",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 1811,
+    "priceToUf": 1811,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Las Rejas",
+    "metroLine": "L1",
+    "metroWalkMin": 8,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/caiquen"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "uts-camilo-henriquez-2565",
+    "name": "Camilo Henríquez 2565",
+    "developer": "Contigo",
+    "region": "Biobío",
+    "comuna": "Concepción",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2590,
+    "priceToUf": 2590,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/camilo-henriquez-2565/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I188",
+    "name": "CARMEN 72",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3280,
+    "priceToUf": 3280,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/carmen-72"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "bci-7938-carrion",
+    "name": "Carrion",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Independencia",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2273,
+    "priceToUf": 3475,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Hospitales",
+    "metroLine": "L3",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/independencia/departamento/carrion/7938"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
+    "id": "paz-I156",
+    "name": "CARRIÓN 2",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Independencia",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2299,
+    "priceToUf": 2299,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Hospitales",
+    "metroLine": "L3",
+    "metroWalkMin": 12,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/carrion-2"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "aitue-house",
+    "name": "Casas Altos del Valle",
+    "developer": "Aitue",
+    "region": "Metropolitana",
+    "comuna": "Concepcion",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 9543,
+    "priceToUf": 9543,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-casas/house/concepcion/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "aitue-casas-borde-laguna",
+    "name": "Casas Borde Laguna",
+    "developer": "Aitue",
+    "region": "Biobío",
+    "comuna": "Los Ángeles",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 6860,
+    "priceToUf": 6860,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-casas/casas-borde-laguna/los-angeles/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "uts-central-sur-210",
+    "name": "Central Sur 210",
+    "developer": "Contigo",
+    "region": "Biobío",
+    "comuna": "Concepción",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2900,
+    "priceToUf": 2900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/central-sur-210/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-maestranza",
+    "name": "Ciudad Justa Maestranza",
+    "developer": "ECASA",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/maestranza/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-ciudad-panamericana",
+    "name": "Ciudad Panamericana",
+    "developer": "Panamericana",
+    "region": "Metropolitana",
+    "comuna": "Cerrillos",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2300,
+    "priceToUf": 2300,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Cerrillos",
+    "metroLine": "L6",
+    "metroWalkMin": 18,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/ciudad-panamericana/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-519-ciudad-panamericana-lote-c",
     "name": "Ciudad Panamericana Lote C",
     "developer": "Consultar portal",
@@ -299,12 +1517,13 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2000,
     "priceToUf": 2000,
     "bedroomsMin": 1,
-    "bedroomsMax": 1,
+    "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 1,
     "parking": "consultar",
@@ -317,9 +1536,75 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/519/villa-panamericana"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/cerrillos/departamento/ciudad-panamericana-lote-c/9499"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "soco-coipue-departamentos-en-venta-macul",
+    "name": "Coipué",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "Macul",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3390,
+    "priceToUf": 3390,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Macul",
+    "metroLine": "L4",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/coipue-departamentos-en-venta-macul/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "paz-I169",
+    "name": "COLOMBIA 7664",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "La Florida",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4165,
+    "priceToUf": 4165,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Vicente Valdés",
+    "metroLine": "L4",
+    "metroWalkMin": 12,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/colombia-7664"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
   },
   {
     "id": "sub-402-condominio-abogada-matilde-throup",
@@ -395,8 +1680,8 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 2950,
-    "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "priceToUf": 2950,
+    "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -418,6 +1703,10 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/515/condominio-alto-andes"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-alto-andes/"
       }
     ],
     "notes": ""
@@ -426,7 +1715,7 @@ export const catalog = [
     "id": "sub-313-condominio-alto-carrera",
     "name": "Condominio Alto Carrera",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "La Araucanía",
     "comuna": "Temuco",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -454,10 +1743,41 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-alto-del-puerto",
+    "name": "Condominio Alto del Puerto",
+    "developer": "Condominio+Alto+del+Puerto",
+    "region": "Valparaíso",
+    "comuna": "Valparaíso",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2000,
+    "priceToUf": 2000,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/alto-del-puerto/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-212-condominio-alto-durand",
     "name": "Condominio alto Durand",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "La Araucanía",
     "comuna": "Temuco",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -485,6 +1805,99 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-condominio-alto-durand-iv",
+    "name": "Condominio Alto Durand IV",
+    "developer": "Inespa",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-alto-durand-iv/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-condominio-alto-maderos",
+    "name": "Condominio Alto Maderos",
+    "developer": "Socovesa",
+    "region": "Biobío",
+    "comuna": "Los Ángeles",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4440,
+    "priceToUf": 4440,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-alto-maderos/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "uts-condominio-alto-molle",
+    "name": "Condominio Alto Molle",
+    "developer": "Inmobiliaria+Huella",
+    "region": "Tarapacá",
+    "comuna": "Alto Hospicio",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1700,
+    "priceToUf": 1700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-alto-molle/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "alto-ohiggins-2",
     "name": "Condominio Alto O'Higgins 2",
     "developer": "Consultar portal",
@@ -496,7 +1909,7 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 1604,
-    "priceToUf": 2200,
+    "priceToUf": 1604,
     "bedroomsMin": 1,
     "bedroomsMax": 1,
     "bathroomsMin": 1,
@@ -562,8 +1975,8 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 2550,
-    "priceToUf": 3000,
-    "bedroomsMin": 2,
+    "priceToUf": 2550,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -577,6 +1990,10 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://ilossilos.cl/los-silos-proyectos-subsidios/"
+      },
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-altos-de-buin/"
       }
     ],
     "notes": "Sin metro; dependencia de tren/buses. Baja puntuación de conectividad Santiago."
@@ -616,7 +2033,7 @@ export const catalog = [
     "id": "sub-464-condominio-arboleda",
     "name": "Condominio Arboleda",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "La Araucanía",
     "comuna": "Temuco",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -686,8 +2103,8 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 1800,
-    "priceToUf": 2600,
-    "bedroomsMin": 2,
+    "priceToUf": 1800,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -701,9 +2118,44 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://ilossilos.cl/los-silos-proyectos-subsidios/"
+      },
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-borinquen/"
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "uts-condominio-brisas-de-maitenes",
+    "name": "Condominio Brisas de Maitenes",
+    "developer": "NOVAL",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2100,
+    "priceToUf": 2100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-brisas-de-maitenes/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "carlos-condell",
@@ -718,7 +2170,7 @@ export const catalog = [
     ],
     "priceFromUf": 2500,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -732,6 +2184,14 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-carlos-condell/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/san-bernardo/departamento/condominio-carlos-condell/9409"
       }
     ],
     "notes": "Opciones 3D/2B publicadas."
@@ -768,6 +2228,285 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-condominio-casas-patronales",
+    "name": "Condominio Casas Patronales",
+    "developer": "CONCRECASA",
+    "region": "Metropolitana",
+    "comuna": "Melipilla",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-casas-patronales/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "ecomac-condominio-cerro-amancay-etapa-1",
+    "name": "CONDOMINIO CERRO AMANCAY - ETAPA 1",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3309,
+    "priceToUf": 3309,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 2,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-amancay-etapa-1"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "ecomac-condominio-cerro-amancay-etapa-2",
+    "name": "CONDOMINIO CERRO AMANCAY - ETAPA 2",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3040,
+    "priceToUf": 3040,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 2,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-amancay-etapa-2"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "ecomac-condominio-cerro-mamalluca-faldeos-del-cerro-grande-iii",
+    "name": "CONDOMINIO CERRO MAMALLUCA - FALDEOS DEL CERRO GRANDE III",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4074,
+    "priceToUf": 4074,
+    "bedroomsMin": 3,
+    "bedroomsMax": 4,
+    "bathroomsMin": 2,
+    "bathroomsMax": 3,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-mamalluca-faldeos-del-cerro-grande-iii"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "ecomac-condominio-cerro-paranao-faldeos-del-cerro-grande-iii",
+    "name": "CONDOMINIO CERRO PARANAO - FALDEOS DEL CERRO GRANDE III",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4729,
+    "priceToUf": 4729,
+    "bedroomsMin": 3,
+    "bedroomsMax": 4,
+    "bathroomsMin": 2,
+    "bathroomsMax": 3,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-paranao-faldeos-del-cerro-grande-iii"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "ecomac-condominio-cerro-tamaya-faldeos-del-cerro-grande-iii",
+    "name": "CONDOMINIO CERRO TAMAYA - FALDEOS DEL CERRO GRANDE III",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4999,
+    "priceToUf": 4999,
+    "bedroomsMin": 3,
+    "bedroomsMax": 4,
+    "bathroomsMin": 2,
+    "bathroomsMax": 3,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-tamaya-faldeos-del-cerro-grande-iii"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "uts-conjunto-residencial-costa-pacifico",
+    "name": "Condominio Costa Pacífico",
+    "developer": "CONCRECASA",
+    "region": "Metropolitana",
+    "comuna": "Melipilla",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 2"
+    ],
+    "priceFromUf": 1540,
+    "priceToUf": 1540,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/conjunto-residencial-costa-pacifico/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "ecomac-cumbres-del-bosque",
+    "name": "CONDOMINIO CUMBRES DEL BOSQUE",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2522,
+    "priceToUf": 2522,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/cumbres-del-bosque"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "bci-8571-condominio-curamapu",
+    "name": "Condominio Curamapu",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Padre Hurtado",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/padre-hurtado/departamento/condominio-curamapu/8571"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
     "id": "sub-398-condominio-don-francisco",
     "name": "Condominio Don Francisco",
     "developer": "Consultar portal",
@@ -797,6 +2536,68 @@ export const catalog = [
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "silos-condominio-don-gaspar",
+    "name": "Condominio Don Gaspar",
+    "developer": "Los Silos",
+    "region": "Metropolitana",
+    "comuna": "Quilicura",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Quilicura",
+    "metroLine": "L3",
+    "metroWalkMin": 18,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-don-gaspar/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "uts-condominio-don-miguel",
+    "name": "Condominio Don Miguel",
+    "developer": "LOS+SILOS",
+    "region": "Metropolitana",
+    "comuna": "San Miguel",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2750,
+    "priceToUf": 2750,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "San Miguel",
+    "metroLine": "L2",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-don-miguel/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "sub-93-condominio-dona-agustina",
@@ -830,6 +2631,196 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "aitue-condominio-dona-josefina",
+    "name": "Condominio Doña Josefina",
+    "developer": "Aitue",
+    "region": "Biobío",
+    "comuna": "Chiguayante",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2105,
+    "priceToUf": 2105,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/condominio-dona-josefina/chiguayante/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "uts-condominio-dona-sofia",
+    "name": "Condominio Doña Sofia",
+    "developer": "CODEH",
+    "region": "Valparaíso",
+    "comuna": "Quilpue",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2450,
+    "priceToUf": 2450,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-dona-sofia/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "aitue-condominio-dona-sofia",
+    "name": "Condominio Doña Sofía",
+    "developer": "Aitue",
+    "region": "Biobío",
+    "comuna": "Talcahuano",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3159,
+    "priceToUf": 3159,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/condominio-dona-sofia/talcahuano/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "silos-condominio-el-manzano",
+    "name": "Condominio El Manzano",
+    "developer": "Los Silos",
+    "region": "Metropolitana",
+    "comuna": "Padre Hurtado",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2550,
+    "priceToUf": 2550,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-el-manzano/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "silos-condominio-el-trebol",
+    "name": "Condominio El Trebol",
+    "developer": "Los Silos",
+    "region": "Metropolitana",
+    "comuna": "Padre Hurtado",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-el-trebol/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "bci-8238-condominio-el-trebol-ii",
+    "name": "Condominio El Trebol Ii",
+    "developer": "Los Silos",
+    "region": "Metropolitana",
+    "comuna": "Padre Hurtado",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/padre-hurtado/departamento/condominio-el-trebol-ii/8238"
+      },
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-el-trebol-2/"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
     "id": "escritor-jorge-edwards",
     "name": "Condominio Escritor Jorge Edwards",
     "developer": "Consultar portal",
@@ -856,6 +2847,10 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/pudahuel/departamento/condominio-escritor-jorge-edwards/9446"
       }
     ],
     "notes": "Incluye tipología 2D/2B desde UF 2.800."
@@ -873,7 +2868,7 @@ export const catalog = [
     ],
     "priceFromUf": 2550,
     "priceToUf": 2600,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -887,6 +2882,10 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/colina/casa/condominio-escritor-salvador-reyes/9443"
       }
     ],
     "notes": ""
@@ -923,6 +2922,99 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "silos-condominio-estancia-norte-quilicura",
+    "name": "Condominio Estancia Norte",
+    "developer": "Los Silos",
+    "region": "Metropolitana",
+    "comuna": "Quilicura",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2750,
+    "priceToUf": 2750,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Quilicura",
+    "metroLine": "L3",
+    "metroWalkMin": 18,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-estancia-norte-quilicura/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "uts-condominio-fernando-monckberg",
+    "name": "Condominio Fernando Monckberg",
+    "developer": "Inmobiliaria+Patriarca",
+    "region": "Valparaíso",
+    "comuna": "Quillota",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-fernando-monckberg/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-fuchslocher-oriente",
+    "name": "Condominio Fuchslocher Oriente",
+    "developer": "BOETSCH",
+    "region": "Los Lagos",
+    "comuna": "Osorno",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-fuchslocher-oriente/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "gran-avenida",
     "name": "Condominio Gran Avenida",
     "developer": "Inmobiliaria Ciclos",
@@ -934,9 +3026,9 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 1700,
-    "priceToUf": 2600,
+    "priceToUf": 2800,
     "bedroomsMin": 1,
-    "bedroomsMax": 2,
+    "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
     "parking": "consultar",
@@ -949,6 +3041,18 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://www.granavenidads19.cl/"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-gran-avenida/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/el-bosque/departamento/condominio-gran-avenida/9317"
+      },
+      {
+        "portal": "ciclos",
+        "url": "https://www.granavenidads19.cl/"
       }
     ],
     "notes": "DS19 automático; tipología 2D/2B publicada. ~7 min al metro."
@@ -957,7 +3061,7 @@ export const catalog = [
     "id": "sub-404-condominio-ingeniero-enrique-tirapegui",
     "name": "Condominio Ingeniero Enrique Tirapegui",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Concepción",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -985,6 +3089,134 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-jardin-los-volcanes",
+    "name": "Condominio Jardín Los Volcanes",
+    "developer": "ECOMAC",
+    "region": "Los Lagos",
+    "comuna": "Osorno",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardin-los-volcanes/"
+      },
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/jardin-los-volcanes"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "ecomac-jardines-del-pacifico-v",
+    "name": "CONDOMINIO JARDINES DEL PACIFICO V",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2709,
+    "priceToUf": 2709,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/jardines-del-pacifico-v"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "uts-condominio-javieracarrera",
+    "name": "Condominio Javiera Carrera",
+    "developer": "Consultar portal",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1100,
+    "priceToUf": 1100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-javieracarrera/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-la-estrella-8540",
+    "name": "Condominio La Estrella 8540",
+    "developer": "Inmobiliaria+Mena+y+Ovalle",
+    "region": "Metropolitana",
+    "comuna": "Pudahuel",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "San Pablo",
+    "metroLine": "L1",
+    "metroWalkMin": 20,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-la-estrella-8540/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "la-piramide",
     "name": "Condominio La Pirámide",
     "developer": "Consultar portal",
@@ -995,10 +3227,10 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2400,
-    "priceToUf": 2900,
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
     "bedroomsMin": 1,
-    "bedroomsMax": 1,
+    "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
     "parking": "incluido",
@@ -1015,14 +3247,80 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/397/condominio-la-piramide"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/huechuraba/departamento/condominio-la-piramide/9191"
       }
     ],
     "notes": ""
   },
   {
+    "id": "silos-condominio-la-pradera",
+    "name": "Condominio La Pradera",
+    "developer": "Los Silos",
+    "region": "Metropolitana",
+    "comuna": "Maipú",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1700,
+    "priceToUf": 1700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Plaza de Maipú",
+    "metroLine": "L5",
+    "metroWalkMin": 14,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-la-pradera/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "uts-condominio-la-reserva-1",
+    "name": "Condominio La Reserva",
+    "developer": "Echeverria+Izquierdo",
+    "region": "Antofagasta",
+    "comuna": "Antofagasta",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-la-reserva-1/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-506-condominio-las-golondrinas",
     "name": "Condominio Las Golondrinas",
-    "developer": "Consultar portal",
+    "developer": "PY+INMOBILIARIA",
     "region": "Metropolitana",
     "comuna": "Puerto Varas",
     "propertyType": "departamento",
@@ -1046,6 +3344,10 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/506/condominio-las-golondrinas"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-las-golondrinas/"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
@@ -1054,7 +3356,7 @@ export const catalog = [
     "id": "sub-251-condominio-las-lobelias",
     "name": "Condominio Las Lobelias",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Valparaíso",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -1092,9 +3394,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2400,
-    "priceToUf": 2400,
-    "bedroomsMin": 3,
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1108,6 +3410,10 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/474/condominio-las-pataguas"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/lampa/casa/condominio-las-pataguas/8853"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
@@ -1125,7 +3431,7 @@ export const catalog = [
     ],
     "priceFromUf": 1900,
     "priceToUf": 3000,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1143,14 +3449,53 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://www.enlaceinmobiliario.cl/metropolitano/catalogo-especial-subsidio-ds19/2650/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/pudahuel/departamento/condominio-las-torres-558/9454"
       }
     ],
     "notes": "Rango amplio de precios; desde UF 1.900."
   },
   {
+    "id": "uts-condominio-lickan-oriente",
+    "name": "Condominio Lickan Oriente",
+    "developer": "ECOMAC",
+    "region": "Atacama",
+    "comuna": "Copiapo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-lickan-oriente/"
+      },
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-lickan-oriente"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-139-condominio-lihuen",
     "name": "Condominio Lihuen",
-    "developer": "Consultar portal",
+    "developer": "ECASA",
     "region": "O'Higgins",
     "comuna": "Rancagua",
     "propertyType": "departamento",
@@ -1158,9 +3503,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2600,
-    "priceToUf": 2600,
-    "bedroomsMin": 2,
+    "priceFromUf": 2280,
+    "priceToUf": 2280,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1174,6 +3519,10 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/139/condominio-lihuen"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-lihuen/"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
@@ -1190,8 +3539,8 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 2200,
-    "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "priceToUf": 2700,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1205,6 +3554,14 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/lo-blanco-1361/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/la-pintana/departamento/condominio-lo-blanco-1361/9465"
       }
     ],
     "notes": ""
@@ -1241,6 +3598,72 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-condominio-los-arrayanes",
+    "name": "Condominio Los Arrayanes",
+    "developer": "ECOMAC",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-los-arrayanes/"
+      },
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-los-arrayanes"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-los-avellanos",
+    "name": "Condominio Los Avellanos",
+    "developer": "FOURCADE",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-los-avellanos/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-481-condominio-los-cipreses",
     "name": "Condominio Los Cipreses",
     "developer": "Consultar portal",
@@ -1272,6 +3695,192 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "soco-los-coihues-casas-en-lampa",
+    "name": "Condominio Los Coihues",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "Lampa",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3830,
+    "priceToUf": 3830,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/los-coihues-casas-en-lampa/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "ecomac-los-maitenes",
+    "name": "CONDOMINIO LOS MAITENES I",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/los-maitenes"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "uts-condominio-los-naranjos",
+    "name": "Condominio Los Naranjos",
+    "developer": "FOURCADE",
+    "region": "Biobío",
+    "comuna": "Los Angeles",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1399,
+    "priceToUf": 1399,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-los-naranjos/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-marconi",
+    "name": "Condominio Marconi",
+    "developer": "Nuevavida",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2100,
+    "priceToUf": 2100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-marconi/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-mirador",
+    "name": "Condominio Mirador",
+    "developer": "Inmobiliaria+Huella",
+    "region": "La Araucanía",
+    "comuna": "Villarica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-mirador/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-mirador-del-rio",
+    "name": "Condominio Mirador del Río",
+    "developer": "NOVAL",
+    "region": "Biobío",
+    "comuna": "Chiguayante",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-mirador-del-rio/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "condominio-montreal",
     "name": "Condominio Montreal",
     "developer": "Brio",
@@ -1280,11 +3889,12 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "Sin subsidio"
+      "Sin subsidio",
+      "DS19"
     ],
     "priceFromUf": 3150,
     "priceToUf": 3200,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 2,
     "bathroomsMax": 2,
@@ -1302,6 +3912,14 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/526/condominio-montreal"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-montreal/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/san-miguel/departamento/condominio-montreal/9661"
       }
     ],
     "notes": "Sin cupo DS19 en ficha vista; excelente conectividad L2."
@@ -1309,7 +3927,7 @@ export const catalog = [
   {
     "id": "sub-207-condominio-newen",
     "name": "Condominio Newen",
-    "developer": "Consultar portal",
+    "developer": "Nuevavida",
     "region": "Metropolitana",
     "comuna": "Villarrica",
     "propertyType": "departamento",
@@ -1319,7 +3937,7 @@ export const catalog = [
     ],
     "priceFromUf": 2100,
     "priceToUf": 2100,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1333,15 +3951,81 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/207/condominio-newen"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-newen/"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "soco-condominio-nueva-toledo",
+    "name": "Condominio Nueva Toledo",
+    "developer": "Socovesa",
+    "region": "Ñuble",
+    "comuna": "Chillán",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 5690,
+    "priceToUf": 5690,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-nueva-toledo/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "uts-condominio-ohiggins",
+    "name": "Condominio O&#039;Higgins",
+    "developer": "NOVAL",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2520,
+    "priceToUf": 2520,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-ohiggins/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-252-condominio-paqari",
     "name": "Condominio Paqari",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Valparaíso",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -1369,6 +4053,100 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-condominio-parque-carrera",
+    "name": "Condominio Parque Carrera",
+    "developer": "Providencia",
+    "region": "Biobío",
+    "comuna": "Los Angeles",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-carrera/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-parque-ciudadano-iii",
+    "name": "Condominio Parque Ciudadano III",
+    "developer": "Inmobiliaria+Huella",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-ciudadano-iii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "bci-8843-condominio-parque-del-sur-torre-a",
+    "name": "Condominio Parque Del Sur Torre A",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "La Cisterna",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2331,
+    "priceToUf": 3393,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/la-cisterna/departamento/condominio-parque-del-sur-torre-a/8843"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
     "id": "parque-eyzaguirre",
     "name": "Condominio Parque Eyzaguirre",
     "developer": "Noval",
@@ -1377,11 +4155,12 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2800,
     "priceToUf": 2801,
-    "bedroomsMin": 3,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1395,6 +4174,14 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-eyzaguirre/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/puente-alto/departamento/condominio-parque-eyzaguirre/9269"
       }
     ],
     "notes": ""
@@ -1403,7 +4190,7 @@ export const catalog = [
     "id": "sub-14-condominio-parque-lourdes",
     "name": "Condominio Parque Lourdes",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Los Ríos",
     "comuna": "Valdivia",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -1444,7 +4231,7 @@ export const catalog = [
       "DS1 Tramo 3"
     ],
     "priceFromUf": 1600,
-    "priceToUf": 2600,
+    "priceToUf": 1600,
     "bedroomsMin": 2,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
@@ -1468,9 +4255,106 @@ export const catalog = [
     "notes": "Fuera de Metro Santiago; score de conectividad N/A."
   },
   {
+    "id": "uts-condominio-parque-pehuen-i",
+    "name": "Condominio Parque Pehuén I",
+    "developer": "Monte+San+Lorenzo",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-pehuen-i/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-parque-vistas-de-colina",
+    "name": "Condominio Parque Vistas de Colina",
+    "developer": "Inmobiliaria+Besalco",
+    "region": "Metropolitana",
+    "comuna": "Colina",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-vistas-de-colina/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-paseo-san-carlos-viii",
+    "name": "Condominio Paseo San Carlos VIII",
+    "developer": "ECOMAC",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-paseo-san-carlos-viii/"
+      },
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/paseo-san-carlos-viii"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-376-condominio-pilares-de-talca",
     "name": "Condominio Pilares de Talca",
-    "developer": "Consultar portal",
+    "developer": "BRIO",
     "region": "Maule",
     "comuna": "Talca",
     "propertyType": "departamento",
@@ -1480,7 +4364,7 @@ export const catalog = [
     ],
     "priceFromUf": 2500,
     "priceToUf": 2500,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1494,15 +4378,174 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/376/condominio-pilares-de-talca"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-pilares-de-talca/"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-condominio-pinares",
+    "name": "Condominio Pinares",
+    "developer": "POCURO",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-pinares/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-portal-bonilla",
+    "name": "Condominio Portal Bonilla",
+    "developer": "NOVAL",
+    "region": "Biobío",
+    "comuna": "Concepción",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-bonilla/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-portal-de-tutuquen",
+    "name": "Condominio Portal de Tutuquén",
+    "developer": "NOVAL",
+    "region": "Maule",
+    "comuna": "Curicó",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2105,
+    "priceToUf": 2105,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-de-tutuquen/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-portal-del-bosque",
+    "name": "Condominio Portal del Bosque",
+    "developer": "NOVAL",
+    "region": "Biobío",
+    "comuna": "San Pedro de la Paz",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2120,
+    "priceToUf": 2120,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-del-bosque/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-portal-ulriksen",
+    "name": "Condominio Portal Ulriksen",
+    "developer": "ECOMAC",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 3080,
+    "priceToUf": 3080,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-ulriksen/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-504-condominio-puerta-del-sol",
     "name": "Condominio Puerta del Sol",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Arica y Parinacota",
     "comuna": "Arica",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -1559,6 +4602,72 @@ export const catalog = [
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "uts-condominio-quillota-21",
+    "name": "Condominio Quillota 21",
+    "developer": "NOVAL",
+    "region": "Valparaíso",
+    "comuna": "Quillota",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1950,
+    "priceToUf": 1950,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-quillota-21/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-quinta-berna",
+    "name": "Condominio Quinta Berna",
+    "developer": "ECOMAC",
+    "region": "Biobío",
+    "comuna": "Los Angeles",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-quinta-berna/"
+      },
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-quinta-berna"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "sub-372-condominio-radal",
@@ -1623,6 +4732,258 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-condominio-rayun",
+    "name": "Condominio Rayun",
+    "developer": "Inmobiliaria+Rio+Cochrane",
+    "region": "Valparaíso",
+    "comuna": "Valparaíso",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-rayun/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-san-cristian",
+    "name": "Condominio San Cristian",
+    "developer": "Magua",
+    "region": "Valparaíso",
+    "comuna": "Villa Alemana",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2350,
+    "priceToUf": 2350,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-san-cristian/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-san-marcos",
+    "name": "Condominio San Marcos",
+    "developer": "Magua",
+    "region": "O'Higgins",
+    "comuna": "Requinoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2350,
+    "priceToUf": 2350,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-san-marcos/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-san-rafael",
+    "name": "Condominio San Rafael",
+    "developer": "Magua",
+    "region": "Valparaíso",
+    "comuna": "Villa Alemana",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-san-rafael/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-santa-adriana",
+    "name": "Condominio Santa Adriana",
+    "developer": "Magua",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2480,
+    "priceToUf": 2480,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-adriana/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-santa-ines-ii",
+    "name": "Condominio Santa Inés II",
+    "developer": "LOS+SILOS",
+    "region": "Metropolitana",
+    "comuna": "La Florida",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1800,
+    "priceToUf": 1800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Rojas Magallanes",
+    "metroLine": "L4",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-ines-ii/"
+      },
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-santa-ines-etapa-ii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-santa-josefina",
+    "name": "Condominio Santa Josefina",
+    "developer": "Magua",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2450,
+    "priceToUf": 2450,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-josefina/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-santa-maria-isabel",
+    "name": "Condominio Santa María Isabel",
+    "developer": "Magua",
+    "region": "Valparaíso",
+    "comuna": "La Cruz",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-maria-isabel/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "santa-rosa-ciclos",
     "name": "Condominio Santa Rosa",
     "developer": "Inmobiliaria Ciclos",
@@ -1633,9 +4994,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 1700,
-    "priceToUf": 2600,
-    "bedroomsMin": 2,
+    "priceFromUf": 2530,
+    "priceToUf": 2700,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1653,9 +5014,110 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "ciclos",
+        "url": "https://www.iciclos.cl/condominio-santa-rosa/"
       }
     ],
     "notes": "Buses RED al metro; futura L9 mejora proyección."
+  },
+  {
+    "id": "ecomac-senderos-de-penuelas",
+    "name": "CONDOMINIO SENDEROS DE PEÑUELAS",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/senderos-de-penuelas"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "uts-senderos-de-penuelas-ii",
+    "name": "Condominio Senderos de Peñuelas II",
+    "developer": "ECOMAC",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/senderos-de-penuelas-ii/"
+      },
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/senderos-de-penuelas-ii"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "ecomac-senderos-del-limari-iii",
+    "name": "CONDOMINIO SENDEROS DEL LIMARI III",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "Ovalle",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2817,
+    "priceToUf": 2817,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/senderos-del-limari-iii"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
   },
   {
     "id": "sub-405-condominio-sol-de-penuelas",
@@ -1689,6 +5151,68 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-condominio-tepual",
+    "name": "Condominio tepual",
+    "developer": "NOVAL",
+    "region": "Los Lagos",
+    "comuna": "Puerto Montt",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-tepual/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-condominio-terraza-mirador-ii",
+    "name": "Condominio Terraza Mirador II",
+    "developer": "Socovesa",
+    "region": "Los Lagos",
+    "comuna": "Puerto Montt",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3890,
+    "priceToUf": 3890,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-terraza-mirador-ii/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
     "id": "titan-2-renca",
     "name": "Condominio Titán 2",
     "developer": "Nexos Desarrollos Inmobiliarios",
@@ -1699,9 +5223,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2400,
+    "priceFromUf": 2150,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1715,6 +5239,14 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-titan-2/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/renca/departamento/condominio-titan-2/8842"
       }
     ],
     "notes": ""
@@ -1731,8 +5263,8 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 2750,
-    "priceToUf": 3200,
-    "bedroomsMin": 2,
+    "priceToUf": 2750,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 2,
     "bathroomsMax": 2,
@@ -1746,9 +5278,48 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://ilossilos.cl/los-silos-proyectos-subsidios/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/quilicura/departamento/condominio-tres-piedras/9310"
+      },
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-tres-piedras/"
       }
     ],
     "notes": "Tipologías 2D/2B y 3D/2B."
+  },
+  {
+    "id": "sub-143-condominio-vertice",
+    "name": "Condominio Vértice",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Quillota",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/143/condominio-vertice"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
   },
   {
     "id": "viento-norte-sur",
@@ -1759,11 +5330,12 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2800,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1777,9 +5349,234 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/viento-norte-sur/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/cerrillos/departamento/condominio-viento-norte-y-sur/8630"
       }
     ],
     "notes": "Buena conexión L6 hacia Franklin / centro."
+  },
+  {
+    "id": "uts-condominio-viracocha",
+    "name": "Condominio Viracocha",
+    "developer": "SB2",
+    "region": "Coquimbo",
+    "comuna": "Ovalle",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1690,
+    "priceToUf": 1690,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-viracocha/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-vista-chinquihue",
+    "name": "Condominio Vista Chinquihue",
+    "developer": "Martabid",
+    "region": "Los Lagos",
+    "comuna": "Puerto Montt",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-vista-chinquihue/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-420-condominio-vista-molle",
+    "name": "Condominio Vista Molle",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Alto Hospicio",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/420/condominio-vista-molle"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-condominio-vista-parque-iii",
+    "name": "Condominio Vista Parque III",
+    "developer": "Inmobiliaria+Huella",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2000,
+    "priceToUf": 2000,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-vista-parque-iii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-volcan-villarrica",
+    "name": "Condominio Volcán Villarrica",
+    "developer": "Martabid",
+    "region": "La Araucanía",
+    "comuna": "villarrica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1980,
+    "priceToUf": 1980,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-volcan-villarrica/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-volcanes",
+    "name": "Condominio Volcanes",
+    "developer": "PACAL",
+    "region": "Antofagasta",
+    "comuna": "Antofagasta",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1500,
+    "priceToUf": 1500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-volcanes/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-434-costanera-del-sol",
+    "name": "Costanera del Sol",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Hualpén",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1848,
+    "priceToUf": 1848,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/434/costanera-del-sol"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
   },
   {
     "id": "semi-nuevo-nunoa-ref",
@@ -1844,6 +5641,535 @@ export const catalog = [
     "notes": "Referencia de mercado usado bien conectado; no es cupo de subsidio."
   },
   {
+    "id": "euro-diagonal-vicuna",
+    "name": "Diagonal Vicuña",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3184,
+    "priceToUf": 3859,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "1er semestre 2027",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/diagonal-vicuna"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "uts-don-manuel",
+    "name": "Don Manuel",
+    "developer": "Inmobiliaria+Rio+Cochrane",
+    "region": "Valparaíso",
+    "comuna": "Quillota",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/don-manuel/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-don-pepe-154",
+    "name": "Don Pepe 154",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "La Florida",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3285,
+    "priceToUf": 3979,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "1er semestre 2027",
+    "metroStation": "Rojas Magallanes",
+    "metroLine": "L4",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/don-pepe-154"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "uts-dona-ignacia",
+    "name": "Doña Ignacia",
+    "developer": "MALPO",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2206,
+    "priceToUf": 2206,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/dona-ignacia/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "ecomac-dunas-de-san-pedro-iv",
+    "name": "DUNAS DE SAN PEDRO IV",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2308,
+    "priceToUf": 2308,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/dunas-de-san-pedro-iv"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "uts-edificio-alcala",
+    "name": "Edificio Alcalá",
+    "developer": "Grupo+Vías",
+    "region": "Metropolitana",
+    "comuna": "Peñalolen",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/edificio-alcala/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "aitue-borde-laguna",
+    "name": "Edificio Borde Laguna",
+    "developer": "Aitue",
+    "region": "Biobío",
+    "comuna": "Los Ángeles",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2690,
+    "priceToUf": 2690,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/borde-laguna/los-angeles/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "aitue-edificio-castellon-227",
+    "name": "Edificio Castellón 227",
+    "developer": "Aitue",
+    "region": "Metropolitana",
+    "comuna": "Chile",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2959,
+    "priceToUf": 2959,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/edificio-castellon-227/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "soco-edificio-garcia-reyes",
+    "name": "Edificio García Reyes",
+    "developer": "Socovesa",
+    "region": "Los Ríos",
+    "comuna": "Valdivia",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2950,
+    "priceToUf": 2950,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/edificio-garcia-reyes/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "aitue-edificio-huertos-las-margaritas",
+    "name": "Edificio Huertos Las Margaritas",
+    "developer": "Aitue",
+    "region": "Metropolitana",
+    "comuna": "Chile",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3242,
+    "priceToUf": 3242,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/edificio-huertos-las-margaritas/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "aitue-edificio-insigne",
+    "name": "Edificio Insigne",
+    "developer": "Aitue",
+    "region": "Metropolitana",
+    "comuna": "Concepcion",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 7700,
+    "priceToUf": 7700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/edificio-insigne/concepcion/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "paz-I171",
+    "name": "EDIFICIO IV CENTENARIO 1025",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Las Condes",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 5131,
+    "priceToUf": 5131,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Hernando de Magallanes",
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/edificio-iv-centenario-1025"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "sub-76-edificio-las-rocas",
+    "name": "Edificio Las Rocas",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Alto Hospicio",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2490,
+    "priceToUf": 2490,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/76/edificio-las-rocas"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-450-edificio-nueva-lientur",
+    "name": "Edificio Nueva Lientur",
+    "developer": "Consultar portal",
+    "region": "Biobío",
+    "comuna": "Concepción",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1906,
+    "priceToUf": 1906,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/450/edificio-nueva-lientur"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "silos-condominio-parquemar",
+    "name": "Edificio Parque Mar",
+    "developer": "Los Silos",
+    "region": "Valparaíso",
+    "comuna": "Viña del Mar",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-parquemar/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "silos-edificio-parque-mar-2",
+    "name": "Edificio Parque Mar II",
+    "developer": "Los Silos",
+    "region": "Valparaíso",
+    "comuna": "Viña del Mar",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/edificio-parque-mar-2/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "aitue-plaza-los-canelos",
+    "name": "Edificio Plaza Los Canelos",
+    "developer": "Aitue",
+    "region": "Biobío",
+    "comuna": "San Pedro de la Paz",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3116,
+    "priceToUf": 3116,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/plaza-los-canelos/san-pedro-de-la-paz/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
     "id": "edificio-prat",
     "name": "Edificio Prat",
     "developer": "Ingevec Inmobiliaria",
@@ -1875,6 +6201,947 @@ export const catalog = [
     "notes": "Santiago Centro; alta conectividad, típicamente sin DS19."
   },
   {
+    "id": "uts-edificio-prat",
+    "name": "Edificio Prat",
+    "developer": "Inmobiliaria+Ausdauer",
+    "region": "Metropolitana",
+    "comuna": "La Cisterna",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1850,
+    "priceToUf": 1850,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/edificio-prat/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-216-edificio-quinta-radal",
+    "name": "Edificio Quinta Radal",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Quinta Normal",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 3,
+    "bedroomsMax": 4,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Quinta Normal",
+    "metroLine": "L5",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/216/edificio-quinta-radal"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "aitue-edificio-refugio-new",
+    "name": "Edificio Refugio New",
+    "developer": "Aitue",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3584,
+    "priceToUf": 3584,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/edificio-refugio-new/santiago/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "uts-edificio-riga",
+    "name": "Edificio Sergio Ceppi",
+    "developer": "Inmobiliaria+Ausdauer",
+    "region": "Metropolitana",
+    "comuna": "La Cisterna",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1800,
+    "priceToUf": 1800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/edificio-riga/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-edificio-vertice",
+    "name": "Edificio Vértice",
+    "developer": "Socovesa",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3990,
+    "priceToUf": 3990,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/edificio-vertice/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "sub-269-edificio-vivaceta",
+    "name": "Edificio Vivaceta",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Conchalí",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Vivaceta",
+    "metroLine": "L2",
+    "metroWalkMin": 14,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/269/edificio-vivaceta"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "bricsa-38",
+    "name": "Edificio Vive Barcelona",
+    "developer": "Bricsa",
+    "region": "Metropolitana",
+    "comuna": "La Florida",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2907,
+    "priceToUf": 2907,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Rojas Magallanes",
+    "metroLine": "L4",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "bricsa",
+        "url": "https://bricsa.cl/proyecto/38"
+      }
+    ],
+    "notes": "Importado desde Bricsa"
+  },
+  {
+    "id": "bricsa-37",
+    "name": "Edificio Vive Barroso",
+    "developer": "Bricsa",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2573,
+    "priceToUf": 2573,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "bricsa",
+        "url": "https://bricsa.cl/proyecto/37"
+      }
+    ],
+    "notes": "Importado desde Bricsa"
+  },
+  {
+    "id": "aitue-altos-del-valle",
+    "name": "Edificios Altos del Valle",
+    "developer": "Aitue",
+    "region": "Metropolitana",
+    "comuna": "Concepcion",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3592,
+    "priceToUf": 3592,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/altos-del-valle/concepcion/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "uts-el-portal-2",
+    "name": "El Portal 2",
+    "developer": "Habicasa",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1510,
+    "priceToUf": 1510,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/el-portal-2/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-211-el-porvenir",
+    "name": "El Porvenir",
+    "developer": "Consultar portal",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/211/el-porvenir"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "bci-9701-el-porvenir",
+    "name": "El Porvenir",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Lampa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1800,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/lampa/departamento/el-porvenir/9701"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
+    "id": "uts-el-real",
+    "name": "El Real",
+    "developer": "ECASA",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/el-real/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-entre-vicunas",
+    "name": "Entre Vicuñas",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "La Florida",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3093,
+    "priceToUf": 3908,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "1er semestre 2027",
+    "metroStation": "Rojas Magallanes",
+    "metroLine": "L4",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/entre-vicunas"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "uts-estrella-del-norte-ii",
+    "name": "Estrella del Norte II",
+    "developer": "ALTES",
+    "region": "Valparaíso",
+    "comuna": "Quilpue",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 2"
+    ],
+    "priceFromUf": 1200,
+    "priceToUf": 1200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/estrella-del-norte-ii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I221",
+    "name": "EXEQUIEL FERNÁNDEZ 3.430",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Macul",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3404,
+    "priceToUf": 3404,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Futura Línea 8",
+    "metroLine": "L4",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/exequiel-fernandez-3-430"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "uts-farellon-norte",
+    "name": "Farellon Norte",
+    "developer": "Armas",
+    "region": "Antofagasta",
+    "comuna": "Antofagasta",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/farellon-norte/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-130-farellon-norte-iii",
+    "name": "Farellón Norte III",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Antofagasta",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2700,
+    "priceToUf": 2700,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/130/farellon-norte"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-401-fotografo-enrique-maturana-gonzalez",
+    "name": "Fotógrafo Enrique Maturana González",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Linares",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/401/fotografo-enrique-maturana-gonzalez"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "euro-froilan-roa-5731",
+    "name": "Froilán Roa 5731",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "La Florida",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3049,
+    "priceToUf": 3883,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "2do semestre 2027",
+    "metroStation": "Rojas Magallanes",
+    "metroLine": "L4",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/froilan-roa-5731"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "uts-condominio-fuchslocher",
+    "name": "Fuchslocher 1.170",
+    "developer": "BOETSCH",
+    "region": "Los Lagos",
+    "comuna": "Osorno",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2000,
+    "priceToUf": 2000,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-fuchslocher/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-427-fuentes-de-piedra-iv",
+    "name": "Fuentes de Piedra IV",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Penco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/427/fuentes-de-piedra-iv"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-309-fuentes-de-porvenir",
+    "name": "Fuentes de Porvenir",
+    "developer": "Consultar portal",
+    "region": "Biobío",
+    "comuna": "Chiguayante",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/309/fuentes-de-porvenir"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-426-fuentes-de-prats",
+    "name": "Fuentes de Prats",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Coronel",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1980,
+    "priceToUf": 1980,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/426/fuentes-de-prats"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-348-fuentes-de-rucalhue-2",
+    "name": "Fuentes de Rucalhue 2",
+    "developer": "CISS",
+    "region": "Metropolitana",
+    "comuna": "Hualpén",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1100,
+    "priceToUf": 1100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/348/fuentes-de-rucalhue-2"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/fuentes-de-rucalhue-2/"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-311-fuentes-de-san-pedro",
+    "name": "Fuentes de San Pedro",
+    "developer": "CISS",
+    "region": "Metropolitana",
+    "comuna": "San Pedro de La Paz",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1100,
+    "priceToUf": 1100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/311/fuentes-de-san-pedro"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/fuentes-de-san-pedro/"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-425-fuentes-de-vilumanque-2",
+    "name": "Fuentes de Vilumanque 2",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Penco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/425/fuentes-de-vilumanque-2"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-124-gran-vista",
+    "name": "Gran Vista",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Alto Hospicio",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/124/gran-vista"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "euro-guillermo-mann-1401",
+    "name": "Guillermo Mann 1401",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3461,
+    "priceToUf": 3461,
+    "bedroomsMin": 2,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/guillermo-mann-1401"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "aitue-hacienda-las-cruces",
+    "name": "Hacienda Las Cruces",
+    "developer": "Aitue",
+    "region": "Biobío",
+    "comuna": "Los Ángeles",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3578,
+    "priceToUf": 3578,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-casas/hacienda-las-cruces/los-angeles/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
     "id": "hacienda-lo-errazuriz",
     "name": "Hacienda Lo Errázuriz",
     "developer": "Ingevec Inmobiliaria",
@@ -1886,7 +7153,7 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 1700,
-    "priceToUf": 2489,
+    "priceToUf": 1700,
     "bedroomsMin": 2,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
@@ -1912,17 +7179,18 @@ export const catalog = [
   {
     "id": "sub-444-hacienda-quilicura",
     "name": "Hacienda Quilicura",
-    "developer": "Consultar portal",
+    "developer": "Tres+Piedras+Spa",
     "region": "Metropolitana",
     "comuna": "Quilicura",
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2400,
-    "priceToUf": 2400,
-    "bedroomsMin": 2,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1936,14 +7204,53 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/444/hacienda-quilicura"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/hacienda-quilicura/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/quilicura/departamento/hacienda-quilicura/8827"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "sub-399-historiador-guillermo-feliu",
+    "name": "Historiador Guillermo Feliú",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Chimbarongo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/399/historiador-guillermo-feliu"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
     "id": "horcones-2",
     "name": "Horcones 2",
-    "developer": "Consultar portal",
+    "developer": "Monte+San+Lorenzo",
     "region": "Valparaíso",
     "comuna": "Casablanca",
     "propertyType": "departamento",
@@ -1954,8 +7261,8 @@ export const catalog = [
       "DS1 Tramo 3"
     ],
     "priceFromUf": 2200,
-    "priceToUf": 2700,
-    "bedroomsMin": 2,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -1973,14 +7280,767 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/509/jardines-de-horcones-2"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/horcones-de-casa-blanca/"
       }
     ],
     "notes": ""
   },
   {
+    "id": "uts-huertos-sur",
+    "name": "HUERTOS SUR",
+    "developer": "Inmobiliaria+PRIME",
+    "region": "Biobío",
+    "comuna": "San Pedro de la Paz",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/huertos-sur/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-independencia-4745",
+    "name": "Independencia 4745",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Conchalí",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3135,
+    "priceToUf": 3663,
+    "bedroomsMin": 2,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Vivaceta",
+    "metroLine": "L2",
+    "metroWalkMin": 14,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/independencia-4745"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "ingevec-abdoncifuentes",
+    "name": "Ingevec Abdoncifuentes",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3158,
+    "priceToUf": 3158,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-abdoncifuentes"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-brasil",
+    "name": "Ingevec Brasil",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2830,
+    "priceToUf": 2830,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-brasil"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-carreracapital",
+    "name": "Ingevec Carreracapital",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2638,
+    "priceToUf": 2638,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-carreracapital"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-centenario",
+    "name": "Ingevec Centenario",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2649,
+    "priceToUf": 2649,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-centenario"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-coronelgodoy",
+    "name": "Ingevec Coronelgodoy",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2440,
+    "priceToUf": 2440,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-coronelgodoy"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-diagonalparaguay",
+    "name": "Ingevec Diagonalparaguay",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 3223,
+    "priceToUf": 3223,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-diagonalparaguay"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-donignacio",
+    "name": "Ingevec Donignacio",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3141,
+    "priceToUf": 3141,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-donignacio"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-elaromo",
+    "name": "Ingevec Elaromo",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3091,
+    "priceToUf": 3091,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-elaromo"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-froilanroa",
+    "name": "Ingevec Froilanroa",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3328,
+    "priceToUf": 3328,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-froilanroa"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-loslilenes",
+    "name": "Ingevec Loslilenes",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3180,
+    "priceToUf": 3180,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-loslilenes"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-matta",
+    "name": "Ingevec Matta",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-matta"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-nuevaesmeralda",
+    "name": "Ingevec Nuevaesmeralda",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2373,
+    "priceToUf": 2373,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-nuevaesmeralda"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-prat",
+    "name": "Ingevec Prat",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2515,
+    "priceToUf": 2515,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-prat"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-serranocapital",
+    "name": "Ingevec Serranocapital",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3026,
+    "priceToUf": 3026,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-serranocapital"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-terrazzo",
+    "name": "Ingevec Terrazzo",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2489,
+    "priceToUf": 2489,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-terrazzo"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-tocornal",
+    "name": "Ingevec Tocornal",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3282,
+    "priceToUf": 3282,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-tocornal"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-vespuciocapital",
+    "name": "Ingevec Vespuciocapital",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-vespuciocapital"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-vicu",
+    "name": "Ingevec Vicu",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3172,
+    "priceToUf": 3172,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-vicu%C3%B1amackenna7589"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-vima",
+    "name": "Ingevec Vima",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3202,
+    "priceToUf": 3202,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-vima"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "ingevec-vivaceta",
+    "name": "Ingevec Vivaceta",
+    "developer": "Ingevec Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2972,
+    "priceToUf": 2972,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "ingevec",
+        "url": "https://ingevecinmobiliaria.cl/proyecto-vivaceta"
+      }
+    ],
+    "notes": "Importado desde Ingevec"
+  },
+  {
+    "id": "sub-472-jardin-del-valle",
+    "name": "Jardín del Valle",
+    "developer": "Inmobiliaria+Sigma",
+    "region": "Metropolitana",
+    "comuna": "Quillota",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2450,
+    "priceToUf": 2450,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/472/jardin-del-valle"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardin-del-valle/"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-jardin-norte",
+    "name": "Jardin Norte",
+    "developer": "BOETSCH",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardin-norte/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "jardines-san-bernardo",
     "name": "Jardines de San Bernardo",
-    "developer": "Consultar portal",
+    "developer": "CICLOS",
     "region": "Metropolitana",
     "comuna": "San Bernardo",
     "propertyType": "departamento",
@@ -2012,14 +8072,53 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/424/jardines-de-san-bernardo"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardines-de-san-bernardo/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/san-bernardo/departamento/jardines-de-san-bernardo/8830"
       }
     ],
     "notes": "1 a 3 dormitorios. Más alejado del eje central de metro."
   },
   {
+    "id": "uts-jardines-de-san-bernardo-ii",
+    "name": "Jardines de San Bernardo II",
+    "developer": "CICLOS",
+    "region": "Metropolitana",
+    "comuna": "San Bernardo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2100,
+    "priceToUf": 2100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardines-de-san-bernardo-ii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "jardines-san-felipe",
     "name": "Jardines de San Felipe",
-    "developer": "Consultar portal",
+    "developer": "Monte+San+Lorenzo",
     "region": "Valparaíso",
     "comuna": "San Felipe",
     "propertyType": "departamento",
@@ -2029,9 +8128,9 @@ export const catalog = [
       "DS1 Tramo 2",
       "DS1 Tramo 3"
     ],
-    "priceFromUf": 2200,
-    "priceToUf": 2600,
-    "bedroomsMin": 2,
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2049,6 +8148,10 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/508/jardines-de-san-felipe"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardines-de-san-felipe/"
       }
     ],
     "notes": ""
@@ -2064,9 +8167,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2100,
+    "priceFromUf": 2700,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2080,9 +8183,111 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://www.enlaceinmobiliario.cl/metropolitano/catalogo-especial-subsidio-ds19/2650/"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/antumapu/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/la-pintana/departamento/jardines-de-san-francisco/9033"
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "uts-jardines-de-valdivia-ii",
+    "name": "Jardines de Valdivia II",
+    "developer": "Condominio+Jardines+de+Valdivia+II",
+    "region": "Valparaíso",
+    "comuna": "Peñablanca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1700,
+    "priceToUf": 1700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardines-de-valdivia-ii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-jardines-del-sur",
+    "name": "Jardines del Sur",
+    "developer": "Martabid",
+    "region": "Los Lagos",
+    "comuna": "Osorno",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2250,
+    "priceToUf": 2250,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardines-del-sur/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-jose-pedro-alessandri",
+    "name": "José Pedro Alessandri",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3401,
+    "priceToUf": 3401,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/jose-pedro-alessandri"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
   },
   {
     "id": "la-balada",
@@ -2116,9 +8321,40 @@ export const catalog = [
     "notes": "Tipologías 2D/2B y 3D/2B. Conectividad actual más dependiente de buses."
   },
   {
-    "id": "la-granja-2",
-    "name": "La Granja 2",
+    "id": "sub-484-la-finka-poniente",
+    "name": "La Finka Poniente",
     "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Quillota",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1560,
+    "priceToUf": 1560,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/484/la-finka-poniente"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-las-uvas-y-el-viento-316",
+    "name": "La Granja",
+    "developer": "BOETSCH",
     "region": "Metropolitana",
     "comuna": "La Granja",
     "propertyType": "departamento",
@@ -2126,9 +8362,44 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2100,
-    "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "priceFromUf": 1800,
+    "priceToUf": 2750,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Santa Rosa",
+    "metroLine": "L4",
+    "metroWalkMin": 20,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/las-uvas-y-el-viento-316/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/la-granja/departamento/la-granja/8324"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "la-granja-2",
+    "name": "La Granja 2",
+    "developer": "BOETSCH",
+    "region": "Metropolitana",
+    "comuna": "La Granja",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2142,9 +8413,110 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/las-uvas-y-el-viento-2/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/la-granja/departamento/la-granja-2/9327"
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "uts-laguna-verde",
+    "name": "Laguna Verde",
+    "developer": "PACAL",
+    "region": "Atacama",
+    "comuna": "Copiapo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1500,
+    "priceToUf": 1500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/laguna-verde/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-las-pataguas-subsidio-ds19",
+    "name": "Las Pataguas",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "Lampa",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/las-pataguas-subsidio-ds19/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "uts-las-pelargonias",
+    "name": "Las Pelargonias",
+    "developer": "Inmobiliaria+Rio+Cochrane",
+    "region": "Valparaíso",
+    "comuna": "Villa Alemana",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/las-pelargonias/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "lira-parque",
@@ -2157,9 +8529,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 1800,
-    "priceToUf": 2610,
-    "bedroomsMin": 2,
+    "priceFromUf": 2000,
+    "priceToUf": 2900,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2173,9 +8545,44 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://maestra.cl/subsidio-ds19/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/san-joaquin/departamento/lira-parque/9755"
       }
     ],
     "notes": "Estacionamientos subterráneos en el conjunto."
+  },
+  {
+    "id": "uts-lomas-de-borgono",
+    "name": "Lomas de Borgoño",
+    "developer": "IHabita",
+    "region": "Atacama",
+    "comuna": "Copiapo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1700,
+    "priceToUf": 1700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/lomas-de-borgono/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "sub-10-lomas-de-coyhaique-ii",
@@ -2207,6 +8614,259 @@ export const catalog = [
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "sub-396-lomas-de-la-luz",
+    "name": "Lomas de la Luz",
+    "developer": "Consultar portal",
+    "region": "Valparaíso",
+    "comuna": "Valparaíso",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/396/lomas-de-la-luz"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-353-lomas-de-landa",
+    "name": "Lomas de Landa",
+    "developer": "Consultar portal",
+    "region": "Biobío",
+    "comuna": "Concepción",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/353/lomas-de-landa"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-199-lomas-de-limache",
+    "name": "Lomas de Limache",
+    "developer": "Consultar portal",
+    "region": "Valparaíso",
+    "comuna": "Limache",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/199/lomas-de-limache"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-los-acacios-1594",
+    "name": "Los Acacios 1594",
+    "developer": "Contigo",
+    "region": "Metropolitana",
+    "comuna": "Renca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Lo Prado",
+    "metroLine": "L5",
+    "metroWalkMin": 22,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/los-acacios-1594/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-175-los-alamos-de-penco",
+    "name": "Los Álamos de Penco",
+    "developer": "COMOSA",
+    "region": "Metropolitana",
+    "comuna": "Penco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/175/los-alamos-de-penco"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/los-alamos-de-penco/"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-los-almendros",
+    "name": "Los Almendros",
+    "developer": "Inmobiliaria+Rio+Cochrane",
+    "region": "Valparaíso",
+    "comuna": "Villa Alemana",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/los-almendros/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-los-aromos",
+    "name": "Los Aromos",
+    "developer": "PACAL",
+    "region": "Coquimbo",
+    "comuna": "Ovalle",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/los-aromos/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "bci-8917-los-cipreses",
+    "name": "Los Cipreses",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "San Bernardo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/san-bernardo/departamento/los-cipreses/8917"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
   },
   {
     "id": "sub-517-los-molinos",
@@ -2242,7 +8902,7 @@ export const catalog = [
   {
     "id": "los-tilos-3520",
     "name": "Los Tilos 3520",
-    "developer": "Consultar portal",
+    "developer": "Contigo",
     "region": "Metropolitana",
     "comuna": "Renca",
     "propertyType": "departamento",
@@ -2250,9 +8910,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2650,
+    "priceFromUf": 2600,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2270,9 +8930,143 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/431/los-tilos-3520"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/los-tilos-3520/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/renca/departamento/los-tilos-3520/8868"
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "sub-90-manso-de-velasco-iii",
+    "name": "Manso de Velasco III",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "San Fernando",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2220,
+    "priceToUf": 2220,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/90/villa-manso-de-velasco"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "euro-mapocho-3521",
+    "name": "Mapocho 3521",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Quinta Normal",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2994,
+    "priceToUf": 3622,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Quinta Normal",
+    "metroLine": "L5",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/mapocho-3521"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "soco-marathon-departamentos-en-nunoa",
+    "name": "Marathon",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2850,
+    "priceToUf": 2850,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en Blanco",
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/marathon-departamentos-en-nunoa/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "euro-mirador-pacifico",
+    "name": "Marina Pacífico",
+    "developer": "Euro Inmobiliaria",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2525,
+    "priceToUf": 3251,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/mirador-pacifico"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
   },
   {
     "id": "matta-vial-624",
@@ -2286,7 +9080,7 @@ export const catalog = [
       "DS19",
       "DS1"
     ],
-    "priceFromUf": 2300,
+    "priceFromUf": 2230,
     "priceToUf": 2800,
     "bedroomsMin": 1,
     "bedroomsMax": 2,
@@ -2314,9 +9108,44 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/443/matta-vial-624"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/san-joaquin/departamento/matta-vial-624/8914"
       }
     ],
     "notes": "Tipologías 2D/2B desde UF 2.800. Alta ratio de estacionamientos reportada."
+  },
+  {
+    "id": "paz-I234",
+    "name": "MERCADO SERRANO 245",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3550,
+    "priceToUf": 3550,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": "Santa Isabel",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/mercado-serrano-245"
+      }
+    ],
+    "notes": "Importado desde API Paz"
   },
   {
     "id": "sub-507-mirador-costanera-ii",
@@ -2350,9 +9179,102 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-condominio-mirador-costaventura-2",
+    "name": "Mirador Costaventura II",
+    "developer": "BOETSCH",
+    "region": "Antofagasta",
+    "comuna": "Antofagasta",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2900,
+    "priceToUf": 2900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-mirador-costaventura-2/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-335-mirador-de-agua-santa",
+    "name": "Mirador de Agua Santa",
+    "developer": "Consultar portal",
+    "region": "Valparaíso",
+    "comuna": "Viña del Mar",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/335/mirador-de-agua-santa"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "soco-mirador-de-la-frontera",
+    "name": "Mirador de la Frontera",
+    "developer": "Socovesa",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 9990,
+    "priceToUf": 9990,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/mirador-de-la-frontera/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
     "id": "sub-54-mirador-de-limache",
     "name": "Mirador de Limache",
-    "developer": "Consultar portal",
+    "developer": "Grupo+Vías",
     "region": "Valparaíso",
     "comuna": "Limache",
     "propertyType": "departamento",
@@ -2360,9 +9282,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2200,
-    "priceToUf": 2200,
-    "bedroomsMin": 2,
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 1,
@@ -2376,6 +9298,10 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/54/mirador-de-limache"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/mirador-de-limache/"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
@@ -2384,7 +9310,7 @@ export const catalog = [
     "id": "sub-171-mirador-de-talhuen",
     "name": "Mirador de Talhuén",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Coquimbo",
     "comuna": "Ovalle",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -2412,10 +9338,41 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-mirador-de-volcanes",
+    "name": "Mirador de Volcanes",
+    "developer": "Martabid",
+    "region": "Los Lagos",
+    "comuna": "Puerto Montt",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2260,
+    "priceToUf": 2260,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/mirador-de-volcanes/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-528-mirador-del-aguila",
     "name": "Mirador del Águila",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "O'Higgins",
     "comuna": "Machalí",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -2443,9 +9400,44 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "sub-227-mirador-del-puerto",
+    "name": "Mirador del Puerto",
+    "developer": "Altos+de+Mejillones+SPA",
+    "region": "Metropolitana",
+    "comuna": "Mejillones",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2000,
+    "priceToUf": 2000,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/227/mirador-del-puerto"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/mirador-del-puerto/"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
     "id": "sub-467-mirador-del-sol-departamentos",
     "name": "Mirador del Sol Departamentos",
-    "developer": "Consultar portal",
+    "developer": "PY+INMOBILIARIA",
     "region": "Metropolitana",
     "comuna": "La Pintana",
     "propertyType": "departamento",
@@ -2453,9 +9445,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2500,
-    "priceToUf": 2500,
-    "bedroomsMin": 2,
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2469,9 +9461,44 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/467/mirador-del-sol-departamentos"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/mirador-del-sol-departamentos/"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "euro-mirador-irarrazabal",
+    "name": "Mirador Irarrázaval",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4026,
+    "priceToUf": 6010,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "1er semestre 2028",
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/mirador-irarrazabal"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
   },
   {
     "id": "sub-516-mirador-sur-ii",
@@ -2505,6 +9532,414 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-montevideo-464",
+    "name": "Montevideo 464",
+    "developer": "Contigo",
+    "region": "Antofagasta",
+    "comuna": "Antofagasta",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2350,
+    "priceToUf": 2350,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/montevideo-464/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I202",
+    "name": "MOSAIC ART",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2751,
+    "priceToUf": 2751,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Parque Almagro",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/mosaic-art"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "soco-n3-nueva-etapa",
+    "name": "N3 – Nueva Etapa",
+    "developer": "Socovesa",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2350,
+    "priceToUf": 2350,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en Blanco",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/n3-nueva-etapa/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "soco-n3",
+    "name": "N3 de Condominio Vista Ñielol",
+    "developer": "Socovesa",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2700,
+    "priceToUf": 2700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/n3/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "paz-I166",
+    "name": "NEO ART",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2876,
+    "priceToUf": 2876,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "La Moneda",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/neo-art"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "sub-394-nova-miraflores",
+    "name": "Nova Miraflores",
+    "developer": "Consultar portal",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1980,
+    "priceToUf": 1980,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/394/nova-miraflores"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "euro-nova-parque",
+    "name": "Nova Parque",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "San Joaquín",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2725,
+    "priceToUf": 2725,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "2do semestre 2028",
+    "metroStation": "San Joaquín",
+    "metroLine": "L5",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/nova-parque"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "sub-395-nueva-aeropuerto-1",
+    "name": "Nueva Aeropuerto 1",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Cerrillos",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1700,
+    "priceToUf": 1700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Cerrillos",
+    "metroLine": "L6",
+    "metroWalkMin": 18,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/395/nueva-aeropuerto-1"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-condominio-nueva-carrera",
+    "name": "Nueva Carrera 1 y 2",
+    "developer": "Albores",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-nueva-carrera/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-391-nueva-carrera-1837",
+    "name": "Nueva Carrera 1837",
+    "developer": "Albores",
+    "region": "Metropolitana",
+    "comuna": "La Calera",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/391/nueva-carrera-1837"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/nueva-carrera-1837/"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-393-nueva-carrera-2",
+    "name": "Nueva Carrera 2",
+    "developer": "Consultar portal",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/393/nueva-carrera-2"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-392-nueva-tocornal-1",
+    "name": "Nueva Tocornal 1",
+    "developer": "Consultar portal",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/392/nueva-tocornal-1"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-nueva-tocornal-1-y-2",
+    "name": "Nueva Tocornal 1 y 2",
+    "developer": "Albores",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/nueva-tocornal-1-y-2/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "nuevo-renca",
     "name": "Nuevo Renca",
     "developer": "Grupo Vías",
@@ -2515,9 +9950,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2800,
+    "priceFromUf": 2450,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2535,9 +9970,513 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/446/nueva-renca"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/nueva-renca/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/renca/departamento/nuevo-renca/8924"
       }
     ],
     "notes": "2D/2B desde UF 2.800."
+  },
+  {
+    "id": "soco-o3",
+    "name": "O3 de Parque Olimpia",
+    "developer": "Socovesa",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2330,
+    "priceToUf": 2330,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/o3/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "uts-ohiggins-979",
+    "name": "OHiggins 979",
+    "developer": "Contigo",
+    "region": "Biobío",
+    "comuna": "Los Angeles",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/ohiggins-979/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-pajaritos-departamentos-en-maipu",
+    "name": "Pajaritos",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "Maipú",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2890,
+    "priceToUf": 2890,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en Blanco",
+    "metroStation": "Plaza de Maipú",
+    "metroLine": "L5",
+    "metroWalkMin": 14,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/pajaritos-departamentos-en-maipu/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "sub-465-parque-andino",
+    "name": "Parque Andino",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Villarrica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2150,
+    "priceToUf": 2150,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/465/parque-andino"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "paz-I152",
+    "name": "PARQUE ARBOLEDA LO CURRO ET. 2",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Vitacura",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 19230,
+    "priceToUf": 19230,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/parque-arboleda-lo-curro-et-2"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "uts-parque-canteras",
+    "name": "Parque Canteras",
+    "developer": "PACAL",
+    "region": "Arica y Parinacota",
+    "comuna": "Arica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1500,
+    "priceToUf": 1500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-canteras/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-475-parque-cordillera-ii",
+    "name": "Parque Cordillera II",
+    "developer": "Consultar portal",
+    "region": "Ñuble",
+    "comuna": "Chillán",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/475/parque-cordillera-ii"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-433-parque-costanera",
+    "name": "Parque Costanera",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Hualpén",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/433/parque-costanera"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "silos-condominio-parque-curamapu",
+    "name": "Parque Curamapu",
+    "developer": "Los Silos",
+    "region": "Metropolitana",
+    "comuna": "Padre Hurtado",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-parque-curamapu/"
+      }
+    ],
+    "notes": "Importado desde Los Silos"
+  },
+  {
+    "id": "uts-parque-el-dorado",
+    "name": "Parque del Dorado",
+    "developer": "PARQUE+EL+DORADO",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-el-dorado/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-73-parque-del-sol-linares",
+    "name": "Parque del Sol Linares",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Linares",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/73/parque-del-sol-linares"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "sub-259-parque-del-sol-san-javier",
+    "name": "Parque del Sol San Javier",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "San Javier",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2050,
+    "priceToUf": 2050,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/259/parque-del-sol-san-javier"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-parque-las-alamedas",
+    "name": "Parque Las Alamedas",
+    "developer": "Inmobiliaria+Koyam",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2250,
+    "priceToUf": 2250,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-las-alamedas/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-parque-los-avellanos-ii",
+    "name": "Parque Los Avellanos II",
+    "developer": "Socovesa",
+    "region": "Biobío",
+    "comuna": "Los Ángeles",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 5250,
+    "priceToUf": 5250,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/parque-los-avellanos-ii/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "uts-parque-samore",
+    "name": "Parque Samore",
+    "developer": "Inmobiliaria+Rio+Cochrane",
+    "region": "Valparaíso",
+    "comuna": "Curauma",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-samore/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-parque-villarrica",
+    "name": "Parque Villarrica",
+    "developer": "Martabid",
+    "region": "La Araucanía",
+    "comuna": "villarrica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2060,
+    "priceToUf": 2060,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-villarrica/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "sub-505-parque-zenteno-ii",
@@ -2569,6 +10508,99 @@ export const catalog = [
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "uts-parques-del-sur",
+    "name": "Parques del Sur",
+    "developer": "Martabid",
+    "region": "Los Lagos",
+    "comuna": "Puerto Montt",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parques-del-sur/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-parras-de-san-javier",
+    "name": "Parras de San Javier",
+    "developer": "FAI",
+    "region": "Maule",
+    "comuna": "San Javier",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parras-de-san-javier/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-parras-de-san-javier-ii",
+    "name": "Parras de San Javier II",
+    "developer": "FAI",
+    "region": "Maule",
+    "comuna": "San Javier",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parras-de-san-javier-ii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "sub-385-parrones-de-baquedano",
@@ -2604,7 +10636,7 @@ export const catalog = [
   {
     "id": "sub-499-parrones-de-baquedano-norte",
     "name": "Parrones de Baquedano Norte",
-    "developer": "Consultar portal",
+    "developer": "BRIO",
     "region": "O'Higgins",
     "comuna": "Rancagua",
     "propertyType": "departamento",
@@ -2614,7 +10646,7 @@ export const catalog = [
     ],
     "priceFromUf": 1600,
     "priceToUf": 1600,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 1,
@@ -2628,9 +10660,75 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/499/parrones-de-baquedano-norte"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parrones-de-baquedano-norte/"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "uts-parrones-baquedano-sur",
+    "name": "Parrones de Baquedano Sur",
+    "developer": "BRIO",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parrones-baquedano-sur/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-condominio-paseo-de-las-aves",
+    "name": "Paseo de Las Aves",
+    "developer": "Grupo+Vías",
+    "region": "Metropolitana",
+    "comuna": "Cerrillos",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 3200,
+    "priceToUf": 3200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Cerrillos",
+    "metroLine": "L6",
+    "metroWalkMin": 18,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-paseo-de-las-aves/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "sub-374-paso-el-roble",
@@ -2664,6 +10762,37 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "sub-483-peumayen",
+    "name": "Peumayen",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Quillota",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1550,
+    "priceToUf": 1550,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/483/peumayen"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
     "id": "pintor-helsby",
     "name": "Pintor Alfredo Helsby",
     "developer": "Consultar portal",
@@ -2675,8 +10804,8 @@ export const catalog = [
       "DS19"
     ],
     "priceFromUf": 2350,
-    "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "priceToUf": 2350,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2690,6 +10819,10 @@ export const catalog = [
       {
         "portal": "bancoestado",
         "url": "https://bancoestado.enlaceinmobiliario.cl/listado/region-metropolitana/propiedades/todas/superficie/precios/dormitorios/subsidio-ds19"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/penaflor/casa/pintor-alfredo-helsby/9437"
       }
     ],
     "notes": "Casas con subsidio en periferia RM."
@@ -2697,7 +10830,7 @@ export const catalog = [
   {
     "id": "sub-495-pintor-gustavo-cabello-ii",
     "name": "Pintor Gustavo Cabello II",
-    "developer": "Consultar portal",
+    "developer": "PY+INMOBILIARIA",
     "region": "O'Higgins",
     "comuna": "Rancagua",
     "propertyType": "departamento",
@@ -2707,7 +10840,7 @@ export const catalog = [
     ],
     "priceFromUf": 2600,
     "priceToUf": 2600,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2721,9 +10854,137 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/495/pintor-gustavo-cabello-ii"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/pintor-gustavo-cabello-ii/"
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "sub-513-pintor-gustavo-cabello-ii-ds01",
+    "name": "Pintor Gustavo Cabello II DS01",
+    "developer": "Consultar portal",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/513/pintor-gustavo-cabello-ii-ds01"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "bci-9444-pintor-jose-venturelli",
+    "name": "Pintor Jose Venturelli",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Buin",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2550,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/buin/casa/pintor-jose-venturelli/9444"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
+    "id": "sub-70-plaza-bilbao-barquin",
+    "name": "Plaza Bilbao Barquín",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "San Carlos",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/70/plaza-bilbao-barquin"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-plaza-cautin",
+    "name": "Plaza Cautín",
+    "developer": "Martabid",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/plaza-cautin/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
   },
   {
     "id": "plaza-central-maipu",
@@ -2763,6 +11024,131 @@ export const catalog = [
     "notes": ""
   },
   {
+    "id": "bricsa-35",
+    "name": "Plaza Central (Subsidios)",
+    "developer": "Bricsa",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "bricsa",
+        "url": "https://bricsa.cl/proyecto/35"
+      }
+    ],
+    "notes": "Importado desde Bricsa"
+  },
+  {
+    "id": "euro-plaza-de-lourdes",
+    "name": "Plaza de Lourdes",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Quinta Normal",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2733,
+    "priceToUf": 3824,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "1er semestre 2028",
+    "metroStation": "Quinta Normal",
+    "metroLine": "L5",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/plaza-de-lourdes"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "paz-I173",
+    "name": "PLAZA LIRA SANTA VICTORIA 382",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3285,
+    "priceToUf": 3285,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": "Santa Isabel",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/plaza-lira-santa-victoria-382"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "paz-I236",
+    "name": "PLAZA LIRA SANTA VICTORIA 382B",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2899,
+    "priceToUf": 2899,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": "Santa Isabel",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/plaza-lira-santa-victoria-382b"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
     "id": "plaza-mayor-maipu",
     "name": "Plaza Mayor",
     "developer": "Consultar portal",
@@ -2776,7 +11162,7 @@ export const catalog = [
       "DS1 Tramo 3"
     ],
     "priceFromUf": 1900,
-    "priceToUf": 2800,
+    "priceToUf": 1900,
     "bedroomsMin": 2,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
@@ -2798,6 +11184,286 @@ export const catalog = [
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "bricsa-42",
+    "name": "Plaza Mayor (Subsidios)",
+    "developer": "Bricsa",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "bricsa",
+        "url": "https://bricsa.cl/proyecto/42"
+      }
+    ],
+    "notes": "Importado desde Bricsa"
+  },
+  {
+    "id": "soco-plaza-mirador-departamentos-en-la-florida",
+    "name": "Plaza Mirador",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "La Florida",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2850,
+    "priceToUf": 2850,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Venta en Blanco",
+    "metroStation": "Rojas Magallanes",
+    "metroLine": "L4",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/plaza-mirador-departamentos-en-la-florida/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "uts-condominio-plaza-quilicura",
+    "name": "Plaza Quilicura",
+    "developer": "Maestra",
+    "region": "Metropolitana",
+    "comuna": "Quilicura",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2389,
+    "priceToUf": 2389,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Quilicura",
+    "metroLine": "L3",
+    "metroWalkMin": 18,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-plaza-quilicura/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-portal-austral",
+    "name": "Portal Austral",
+    "developer": "Socovesa",
+    "region": "Los Lagos",
+    "comuna": "Puerto Montt",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4850,
+    "priceToUf": 4850,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en Blanco",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/portal-austral/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "uts-portal-de-azapa",
+    "name": "Portal de Azapa",
+    "developer": "PACAL",
+    "region": "Arica y Parinacota",
+    "comuna": "Arica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1500,
+    "priceToUf": 1500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/portal-de-azapa/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-portal-de-curanilahue",
+    "name": "Portal de Curanilahue",
+    "developer": "URBANI",
+    "region": "Biobío",
+    "comuna": "Curanilahue",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1350,
+    "priceToUf": 1350,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/portal-de-curanilahue/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "bci-9598-portal-de-los-artesanos",
+    "name": "Portal De Los Artesanos",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Peñaflor",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2090,
+    "priceToUf": 2444,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/penaflor/casa/portal-de-los-artesanos/9598"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
+    "id": "uts-portal-del-alwa",
+    "name": "Portal del Alwa",
+    "developer": "ECASA",
+    "region": "Arica y Parinacota",
+    "comuna": "Arica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2450,
+    "priceToUf": 2450,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/portal-del-alwa/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-portal-del-libertador-ix",
+    "name": "Portal del Libertador IX",
+    "developer": "Socovesa",
+    "region": "Ñuble",
+    "comuna": "Chillán",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3390,
+    "priceToUf": 3390,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en Blanco",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/portal-del-libertador-ix/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
   },
   {
     "id": "sub-380-portal-el-abra",
@@ -2831,6 +11497,223 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "sub-406-portal-el-alwa",
+    "name": "Portal el alwa",
+    "developer": "Consultar portal",
+    "region": "Arica y Parinacota",
+    "comuna": "Arica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/406/portal-el-alwa"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-portal-lo-campino",
+    "name": "Portal lo Campino",
+    "developer": "EPS",
+    "region": "Metropolitana",
+    "comuna": "Quilicura",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Quilicura",
+    "metroLine": "L3",
+    "metroWalkMin": 18,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/portal-lo-campino/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-portal-penablanca",
+    "name": "Portal Peñablanca",
+    "developer": "NOVAL",
+    "region": "Valparaíso",
+    "comuna": "Villa Alemana",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1998,
+    "priceToUf": 1998,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/portal-penablanca/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "ecomac-portal-ulriksen",
+    "name": "PORTAL ULRIKSEN",
+    "developer": "Ecomac",
+    "region": "Coquimbo",
+    "comuna": "La Serena",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Venta en verde",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/portal-ulriksen"
+      }
+    ],
+    "notes": "Importado desde API Ecomac"
+  },
+  {
+    "id": "uts-praderas-de-labranza-ii",
+    "name": "Praderas De Labranza II",
+    "developer": "Martabid",
+    "region": "La Araucanía",
+    "comuna": "Temuco",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1990,
+    "priceToUf": 1990,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/praderas-de-labranza-ii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-praderas-de-talca",
+    "name": "Praderas de Talca",
+    "developer": "BRIO+INMOBILIARIA",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2100,
+    "priceToUf": 2100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/praderas-de-talca/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-praderas-del-llaima",
+    "name": "Praderas Del Llaima",
+    "developer": "Martabid",
+    "region": "La Araucanía",
+    "comuna": "Vilcún",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/praderas-del-llaima/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "presidente-prieto",
     "name": "Presidente Prieto",
     "developer": "Maestra Inmobiliaria",
@@ -2857,6 +11740,10 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://maestra.cl/proyectos/presidente-prieto/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/pedro-aguirre-cerda/departamento/presidente-prieto/7015"
       }
     ],
     "notes": "Entrega inmediata según inmobiliaria."
@@ -2864,7 +11751,7 @@ export const catalog = [
   {
     "id": "principal-1385",
     "name": "Principal 1385",
-    "developer": "Consultar portal",
+    "developer": "CICLOS",
     "region": "Metropolitana",
     "comuna": "Conchalí",
     "propertyType": "departamento",
@@ -2872,9 +11759,9 @@ export const catalog = [
     "subsidies": [
       "DS19"
     ],
-    "priceFromUf": 2300,
+    "priceFromUf": 2250,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -2888,9 +11775,236 @@ export const catalog = [
       {
         "portal": "enlace",
         "url": "https://www.enlaceinmobiliario.cl/metropolitano/catalogo-especial-subsidio-ds19/2650/"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/principal-1385/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/conchali/departamento/principal-1385/8886"
       }
     ],
     "notes": ""
+  },
+  {
+    "id": "bci-8247-puerta-norte",
+    "name": "Puerta Norte",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Colina",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 1960,
+    "priceToUf": 2130,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 1,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/colina/casa/puerta-norte/8247"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+  },
+  {
+    "id": "sub-421-puerta-norte-chinchorro",
+    "name": "Puerta Norte Chinchorro",
+    "developer": "Consultar portal",
+    "region": "Arica y Parinacota",
+    "comuna": "Arica",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2800,
+    "priceToUf": 2800,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/421/puerta-norte-chinchorro"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-quinta-costanera",
+    "name": "Quinta Costanera",
+    "developer": "Inmobiliaria+Koyam",
+    "region": "Atacama",
+    "comuna": "Vallenar",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2330,
+    "priceToUf": 2330,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/quinta-costanera/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "soco-reserva-magallanes",
+    "name": "Reserva Magallanes",
+    "developer": "Socovesa",
+    "region": "Magallanes",
+    "comuna": "Punta Arenas",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4990,
+    "priceToUf": 4990,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/reserva-magallanes/"
+      }
+    ],
+    "notes": "Importado desde Socovesa"
+  },
+  {
+    "id": "uts-robles-de-aconcagua",
+    "name": "Robles de Aconcagua",
+    "developer": "ECASA",
+    "region": "Valparaíso",
+    "comuna": "Los Andes",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/robles-de-aconcagua/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-rocas-de-la-iglesia-2",
+    "name": "Rocas de la Iglesia",
+    "developer": "BAKER",
+    "region": "Maule",
+    "comuna": "Constitución",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/rocas-de-la-iglesia-2/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-rosas-1444",
+    "name": "Rosas 1444",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3063,
+    "priceToUf": 3581,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/rosas-1444"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
   },
   {
     "id": "sub-496-samuel-roman-rojas",
@@ -2924,6 +12038,542 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "aitue-san-andres-del-valle",
+    "name": "San Andrés del Valle",
+    "developer": "Aitue",
+    "region": "Metropolitana",
+    "comuna": "Lomas De San Andres",
+    "propertyType": "casa",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 7259,
+    "priceToUf": 7259,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-casas/san-andres-del-valle/lomas-de-san-andres/"
+      }
+    ],
+    "notes": "Importado desde Aitue"
+  },
+  {
+    "id": "sub-456-san-cristian",
+    "name": "San Cristián",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Villa Alemana",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2300,
+    "priceToUf": 2300,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/456/san-cristian"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "paz-I229",
+    "name": "SAN FRANCISCO 211",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3515,
+    "priceToUf": 3515,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": "Santa Lucía",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/san-francisco-211"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "paz-I232",
+    "name": "SAN ISIDRO 545",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2770,
+    "priceToUf": 2770,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/san-isidro-545"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "uts-condominio-san-jorge-aurelio",
+    "name": "San Jorge Aurelio",
+    "developer": "Magua",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2550,
+    "priceToUf": 2550,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-san-jorge-aurelio/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-458-san-marcos",
+    "name": "San Marcos",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Requínoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2350,
+    "priceToUf": 2350,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/458/san-marcos"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-san-rafael-condominio",
+    "name": "San Rafael Condominio",
+    "developer": "SAN+RAFAEL+CONDOMINIO",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1900,
+    "priceToUf": 1900,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/san-rafael-condominio/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-457-santa-adriana",
+    "name": "Santa Adriana",
+    "developer": "Consultar portal",
+    "region": "Valparaíso",
+    "comuna": "San Felipe",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/457/santa-adriana"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-santa-elena-1670",
+    "name": "Santa Elena 1670",
+    "developer": "Inmobiliaria+Euro",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2931,
+    "priceToUf": 3944,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/santa-elena-1670/"
+      },
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/santa-elena-1670"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I177",
+    "name": "SANTA ELVIRA 46",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2646,
+    "priceToUf": 2646,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Irarrázaval",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/santa-elvira-46"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "sub-459-santa-josefina",
+    "name": "Santa Josefina",
+    "developer": "Consultar portal",
+    "region": "O'Higgins",
+    "comuna": "Rancagua",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2550,
+    "priceToUf": 2550,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/459/santa-josefina"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-edificio-santa-petronila",
+    "name": "Santa Petronila Plaza",
+    "developer": "Inmobiliaria+Absal",
+    "region": "Metropolitana",
+    "comuna": "Estación Central",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Estación Central",
+    "metroLine": "L1",
+    "metroWalkMin": 8,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/edificio-santa-petronila/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-santa-rosa",
+    "name": "Santa Rosa",
+    "developer": "CICLOS",
+    "region": "Metropolitana",
+    "comuna": "La Pintana",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2530,
+    "priceToUf": 2680,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Santa Rosa",
+    "metroLine": "L4",
+    "metroWalkMin": 25,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/santa-rosa/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/la-pintana/departamento/santa-rosa/8887"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I197",
+    "name": "SEMINARIO 2",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4115,
+    "priceToUf": 4115,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": "Irarrázaval",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/seminario-2"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "paz-I196",
+    "name": "SEMINARIO 850",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 4165,
+    "priceToUf": 4165,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Irarrázaval",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/seminario-850"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "sub-473-sendero-de-guindal",
+    "name": "Sendero de Guindal",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Calle Larga",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2350,
+    "priceToUf": 2350,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/473/sendero-de-guindal"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-senderos-de-los-andes-iii",
+    "name": "Senderos de los Andes IV",
+    "developer": "PY+INMOBILIARIA",
+    "region": "Valparaíso",
+    "comuna": "Los Andes",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/senderos-de-los-andes-iii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
     "id": "sub-109-senderos-de-los-andes-v",
     "name": "Senderos de Los Andes V",
     "developer": "Consultar portal",
@@ -2955,10 +12605,675 @@ export const catalog = [
     "notes": "Importado automáticamente desde Subsidios.cl"
   },
   {
+    "id": "uts-sol-de-penuelas",
+    "name": "Sol de Peñuelas",
+    "developer": "ECASA",
+    "region": "Coquimbo",
+    "comuna": "Chile",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2600,
+    "priceToUf": 2600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/sol-de-penuelas/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I230",
+    "name": "TARAPACÁ 851",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2700,
+    "priceToUf": 2700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": "Santa Isabel",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/tarapaca-851"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "paz-I214",
+    "name": "TERESA VIAL 1139",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "San Miguel",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3149,
+    "priceToUf": 3149,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "San Miguel",
+    "metroLine": "L2",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/teresa-vial-1139"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+  },
+  {
+    "id": "uts-terrazas-del-bicentenario",
+    "name": "Terrazas del Bicentenario",
+    "developer": "BOETSCH",
+    "region": "Metropolitana",
+    "comuna": "Cerrillos",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3000,
+    "priceToUf": 3000,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Cerrillos",
+    "metroLine": "L6",
+    "metroWalkMin": 18,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/terrazas-del-bicentenario/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/cerrillos/departamento/terrazas-del-bicentenario/9727"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/cerrillos/departamento/terrazas-del-bicentenario/9382"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-terrazas-del-bicentenario-ii",
+    "name": "Terrazas del Bicentenario Etapa 2",
+    "developer": "BOETSCH",
+    "region": "Metropolitana",
+    "comuna": "Cerrillos",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2300,
+    "priceToUf": 2300,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Cerrillos",
+    "metroLine": "L6",
+    "metroWalkMin": 18,
+    "connectivityScore": 4,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/terrazas-del-bicentenario-ii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-torres-de-varoli",
+    "name": "Torres de Varoli",
+    "developer": "Ferval",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/torres-de-varoli/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-valles-de-la-florida",
+    "name": "Valles de la Florida",
+    "developer": "Ferval",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1780,
+    "priceToUf": 1780,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/valles-de-la-florida/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "sub-155-valles-de-rengo-iii",
+    "name": "Valles de Rengo III",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Rengo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2400,
+    "priceToUf": 2400,
+    "bedroomsMin": 3,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/155/valles-de-rengo"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-valles-de-san-clemente",
+    "name": "Valles de san Clemente",
+    "developer": "Ferval",
+    "region": "Maule",
+    "comuna": "Talca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1800,
+    "priceToUf": 1800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/valles-de-san-clemente/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-valles-del-sur",
+    "name": "Valles del Sur",
+    "developer": "Martabid",
+    "region": "Los Lagos",
+    "comuna": "Osorno",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2500,
+    "priceToUf": 2500,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/valles-del-sur/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-veramonte-2",
+    "name": "Veramonte 2",
+    "developer": "Inmobiliaria+VM",
+    "region": "Valparaíso",
+    "comuna": "Villa Alemana",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1940,
+    "priceToUf": 1940,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/veramonte-2/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I136",
+    "name": "VERDECE II",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Lo Barnechea",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 9353,
+    "priceToUf": 9353,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/verdece-ii"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "uts-vicente-huidobro",
+    "name": "Vicente Huidobro",
+    "developer": "CODEH",
+    "region": "Valparaíso",
+    "comuna": "Cartagena",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1450,
+    "priceToUf": 1450,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vicente-huidobro/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-vicuna-mackenna-1432",
+    "name": "Vicuña Mackenna 1432",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3381,
+    "priceToUf": 3381,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/vicuna-mackenna-1432"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
+    "id": "sub-346-viento-norte-ii",
+    "name": "Viento Norte II",
+    "developer": "Inmobiliaria+Grespa",
+    "region": "Metropolitana",
+    "comuna": "San Pedro de La Paz",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1400,
+    "priceToUf": 1400,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/346/viento-norte-ii"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/viento-norte-ii/"
+      }
+    ],
+    "notes": "Importado desde Subsidios.cl"
+  },
+  {
+    "id": "uts-vista-aconcagua",
+    "name": "Vista Aconcagua",
+    "developer": "PACAL",
+    "region": "Valparaíso",
+    "comuna": "Los Andes",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1100,
+    "priceToUf": 1100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vista-aconcagua/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-vista-costanera",
+    "name": "Vista Costanera",
+    "developer": "Maestra",
+    "region": "Metropolitana",
+    "comuna": "Renca",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS1 Tramo 3"
+    ],
+    "priceFromUf": 2311,
+    "priceToUf": 2311,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Lo Prado",
+    "metroLine": "L5",
+    "metroWalkMin": 22,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vista-costanera/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I237",
+    "name": "VISTA GOLF II",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Lo Barnechea",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 12700,
+    "priceToUf": 12700,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Futura",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/vista-golf-ii"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "paz-I132",
+    "name": "VISTA GOLF LA DEHESA",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Lo Barnechea",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 38683,
+    "priceToUf": 38683,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/vista-golf-la-dehesa"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "uts-vista-marga-marga-i",
+    "name": "Vista Marga Marga I",
+    "developer": "PACAL",
+    "region": "Valparaíso",
+    "comuna": "Quilpue",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1800,
+    "priceToUf": 1800,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vista-marga-marga-i/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-vista-portugal",
+    "name": "Vista Portugal",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Santiago",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 2616,
+    "priceToUf": 3600,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Universidad de Chile",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/vista-portugal"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
+  },
+  {
     "id": "sub-525-vistas-de-curauma-iii",
     "name": "Vistas de Curauma III",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Valparaíso",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -2984,6 +13299,100 @@ export const catalog = [
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "uts-vistas-de-curauma-iii",
+    "name": "Vistas de Curauma III",
+    "developer": "BRIO",
+    "region": "Valparaíso",
+    "comuna": "Curauma",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2550,
+    "priceToUf": 2550,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vistas-de-curauma-iii/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "uts-vistas-i",
+    "name": "Vistas I",
+    "developer": "BRIO",
+    "region": "Valparaíso",
+    "comuna": "Placilla",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 2350,
+    "priceToUf": 2350,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vistas-i/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "euro-vitro",
+    "name": "Vitro",
+    "developer": "Euro Inmobiliaria",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2791,
+    "priceToUf": 3838,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega inmediata",
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/vitro"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria"
   },
   {
     "id": "sub-511-vive-la-herradura",
@@ -3019,7 +13428,7 @@ export const catalog = [
   {
     "id": "vive-la-vara",
     "name": "Vive La Vara",
-    "developer": "Consultar portal",
+    "developer": "Puerto+Capital",
     "region": "Metropolitana",
     "comuna": "San Bernardo",
     "propertyType": "departamento",
@@ -3029,7 +13438,7 @@ export const catalog = [
     ],
     "priceFromUf": 2800,
     "priceToUf": 2800,
-    "bedroomsMin": 2,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -3047,6 +13456,10 @@ export const catalog = [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/520/vive-la-vara"
+      },
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vive-la-vara/"
       }
     ],
     "notes": "Estacionamientos subterráneos publicados."
@@ -3112,6 +13525,99 @@ export const catalog = [
       }
     ],
     "notes": "Importado automáticamente desde Subsidios.cl"
+  },
+  {
+    "id": "uts-walk-san-javier",
+    "name": "Walk San Javier",
+    "developer": "FAI",
+    "region": "Maule",
+    "comuna": "San Javier",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1100,
+    "priceToUf": 1100,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": null,
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/walk-san-javier/"
+      }
+    ],
+    "notes": "Importado desde UsaTuSubsidio"
+  },
+  {
+    "id": "paz-I174",
+    "name": "WORKIN OFICINAS",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Lo Barnechea",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3042,
+    "priceToUf": 3042,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/workin-oficinas"
+      }
+    ],
+    "notes": "Importado desde API Paz"
+  },
+  {
+    "id": "paz-I191",
+    "name": "ZORZAL",
+    "developer": "Paz Corp",
+    "region": "Metropolitana",
+    "comuna": "Estación Central",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 1861,
+    "priceToUf": 1861,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "metroStation": "Las Rejas",
+    "metroLine": "L1",
+    "metroWalkMin": 8,
+    "connectivityScore": 5,
+    "sources": [
+      {
+        "portal": "paz",
+        "url": "https://www.paz.cl/proyecto/zorzal"
+      }
+    ],
+    "notes": "Importado desde Paz (posible subsidio a la tasa)"
   }
 ]
 
@@ -3119,5 +13625,5 @@ export const catalogMeta = {
   generatedAt: "2026-10-04",
   ufClp: UF_CLP,
   disclaimer:
-    'Catálogo curado/actualizado desde fichas públicas (Subsidios.cl, Enlace/BancoEstado, UsaTuSubsidio e inmobiliarias). Cupos, precios y tipologías cambian: confirma siempre en el portal de origen y sala de ventas.',
+    'Catálogo actualizado desde fuentes públicas (Subsidios.cl, UsaTuSubsidio, Enlace/BCI, Los Silos, Ingevec, Ciclos, Euro, Ecomac, Socovesa, Paz, Aitue, Bricsa, Galilea, mindicador.cl). Cupos y precios cambian: confirma en el portal de origen.',
 }

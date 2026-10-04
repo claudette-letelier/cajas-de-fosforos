@@ -1,9 +1,66 @@
 {
   "generatedAt": "2026-10-04",
   "ufClp": 41090,
-  "scraped": 72,
-  "catalogSize": 97,
-  "updated": 16,
-  "created": 56,
-  "source": "subsidios.cl + mindicador.cl"
+  "scraped": 476,
+  "catalogSize": 425,
+  "updated": 476,
+  "created": 0,
+  "sources": {
+    "mindicador": {
+      "ok": true,
+      "ufClp": 41090
+    },
+    "los-silos": {
+      "ok": true,
+      "count": 14
+    },
+    "galilea": {
+      "ok": true,
+      "count": 1
+    },
+    "ingevec": {
+      "ok": true,
+      "count": 20
+    },
+    "aitue": {
+      "ok": true,
+      "count": 14
+    },
+    "ciclos": {
+      "ok": true,
+      "count": 2
+    },
+    "paz": {
+      "ok": true,
+      "count": 25
+    },
+    "ecomac": {
+      "ok": true,
+      "count": 18
+    },
+    "euro": {
+      "ok": true,
+      "count": 18
+    },
+    "socovesa": {
+      "ok": true,
+      "count": 21
+    },
+    "subsidios-cl": {
+      "ok": true,
+      "count": 121
+    },
+    "bricsa": {
+      "ok": true,
+      "count": 5
+    },
+    "usatusubsidio": {
+      "ok": true,
+      "count": 180
+    },
+    "enlace-bci": {
+      "ok": true,
+      "count": 37
+    }
+  }
 }

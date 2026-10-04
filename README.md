@@ -2,7 +2,7 @@
 
 Buscador unificado de **proyectos inmobiliarios publicados en Chile**. Sitio estático en JavaScript (Vite + React), **sin base de datos**, hospedado en GitHub Pages.
 
-Agrega fichas públicas de portales listados por el MINVU ([portales de proyectos](https://www.minvu.gob.cl/beneficio/vivienda/portales-de-proyectos/)), incluyendo Subsidios.cl, Enlace Inmobiliario / BancoEstado, UsaTuSubsidio y más.
+Agrega fichas públicas de portales listados por el MINVU ([portales de proyectos](https://www.minvu.gob.cl/beneficio/vivienda/portales-de-proyectos/)) y sitios de inmobiliarias scrapeables: Subsidios.cl, UsaTuSubsidio, Enlace/BCI, Los Silos, Ingevec, Ciclos, Euro, Ecomac, Socovesa, Paz, Aitue, Bricsa y Galilea.
 
 ## Sitio
 
@@ -32,9 +32,11 @@ npm run dev
 El workflow `.github/workflows/daily-update.yml` corre **todos los días cerca de las 04:00 (America/Santiago)**:
 
 1. Lee la **UF del día** desde [mindicador.cl](https://mindicador.cl/api/uf)
-2. Actualiza proyectos desde [Subsidios.cl](https://www.subsidios.cl/proyectos)
+2. Actualiza proyectos desde **13+ fuentes** (Subsidios.cl, UsaTuSubsidio, Enlace/BCI, Los Silos, Ingevec, Ciclos, Euro, Ecomac API, Socovesa, Paz API, Aitue, Bricsa, Galilea)
 3. Hace commit del catálogo si cambió
 4. Rebuild + deploy a la rama `gh-pages`
+
+Portales con Cloudflare estricto (BancoEstado Enlace, Matchogar, TocToc) no se pueden scrapear desde GitHub Actions; quedan como enlace de referencia.
 
 También puedes lanzarlo a mano en GitHub → **Actions → Daily catalog update → Run workflow**.
 
