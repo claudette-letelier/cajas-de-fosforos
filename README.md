@@ -38,11 +38,21 @@ El workflow `.github/workflows/daily-update.yml` corre **todos los días cerca d
 
 También puedes lanzarlo a mano en GitHub → **Actions → Daily catalog update → Run workflow**.
 
-### Activar por primera vez
+### Activar por primera vez (importante)
 
-1. En el repo: **Settings → Actions → General → Allow all actions**
-2. **Settings → Pages** debe seguir apuntando a la rama `gh-pages`
-3. Si GitHub rechaza subir el archivo `.github/workflows/...` desde tu PC (falta scope `workflow`), créalo en la web de GitHub o usa un PAT con scope `workflow`
+El login actual de GitHub CLI no tiene permiso `workflow`, así que el archivo del cron está en:
+
+`scripts/github-daily-update.yml`
+
+Haz esto **una sola vez**:
+
+1. Abre: https://github.com/claudiojaviermeza-creator/casa-al-metro/new/main?filename=.github/workflows/daily-update.yml
+2. Copia y pega el contenido de `scripts/github-daily-update.yml`
+3. Commit en `main`
+4. Ve a **Actions** y verifica que aparece **Daily catalog update (04:00 Chile)**
+5. Opcional: **Run workflow** para probarlo ahora
+
+También: **Settings → Actions → General → Allow all actions**, y Pages en rama `gh-pages`.
 
 ### Probar en local
 
