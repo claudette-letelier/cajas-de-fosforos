@@ -19,6 +19,7 @@ import { honestyScore, truthSignals } from '../lib/truth.js'
 import { reputationLinks } from '../lib/reputation.js'
 import { accessSummary, formatClp, formatUf, ufToClp } from '../lib/search.js'
 import { safeHttpUrl, safeImageUrl, safeWhatsappUrl } from '../lib/security.js'
+import { googleMapsUrl, hasExactLocation, wazeUrl } from '../lib/maps.js'
 
 function GalleryImage({ src, alt }) {
   const [failed, setFailed] = useState(false)
@@ -297,6 +298,59 @@ export default function ProjectDetail({
               </div>
             </div>
           </div>
+
+          {hasExactLocation(project) ? (
+            <div className="mt-5 rounded-xl border border-[var(--line)] bg-white p-3">
+              <div className="flex items-start gap-2">
+                <MapPin className="mt-0.5 size-4 shrink-0 text-[var(--teal)]" />
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-[var(--ink)]">
+                    Cómo llegar
+                  </p>
+                  <p className="mt-1 text-sm text-[var(--muted-ink)]">
+                    {project.address
+                      ? project.address
+                      : `${project.comuna}, ${project.region}`}
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {(() => {
+                      const gmaps = googleMapsUrl(project)
+                      const waze = wazeUrl(project)
+                      return (
+                        <>
+                          {gmaps ? (
+                            <a
+                              href={gmaps}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex h-9 items-center gap-1.5 rounded-lg bg-[#1a73e8] px-3 text-xs font-medium text-white hover:brightness-110"
+                            >
+                              Google Maps
+                              <ExternalLink className="size-3 opacity-80" />
+                            </a>
+                          ) : null}
+                          {waze ? (
+                            <a
+                              href={waze}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex h-9 items-center gap-1.5 rounded-lg bg-[#33ccff] px-3 text-xs font-semibold text-[#0b2e2b] hover:brightness-105"
+                            >
+                              Waze
+                              <ExternalLink className="size-3 opacity-70" />
+                            </a>
+                          ) : null}
+                        </>
+                      )
+                    })()}
+                  </div>
+                  <p className="mt-2 text-[11px] text-[var(--muted-ink)]">
+                    Coordenadas tomadas de la ficha del proyecto.
+                  </p>
+                </div>
+              </div>
+            </div>
+          ) : null}
 
           {project.amenities?.length ? (
             <div className="mt-5">

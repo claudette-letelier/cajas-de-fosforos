@@ -117,7 +117,9 @@ export default function ProjectMap({ projects, onSelect }) {
         ? source.slice('sector:'.length).replace(/-/g, ' ')
         : null
       const locNote = !estimated
-        ? `<br/><span style="color:#0f766e">Ubicación según ficha</span>`
+        ? `<br/><span style="color:#0f766e">Ubicación según ficha${
+            p.address ? `: ${escapeHtml(p.address)}` : ''
+          }</span>`
         : sector
           ? `<br/><span style="color:#9a3412">Aprox. por sector: ${escapeHtml(sector)}</span>`
           : `<br/><span style="color:#9a3412">Ubicación aprox. por comuna</span>`
@@ -125,6 +127,22 @@ export default function ProjectMap({ projects, onSelect }) {
         ? `<br/><span style="color:#0f766e">Metro: ${escapeHtml(p.metroStation)}</span>`
         : p.region !== 'Metropolitana' && p.accessLabel
           ? `<br/><span style="color:#0f766e">${escapeHtml(p.accessLabel)}</span>`
+          : ''
+
+      const mapsBtns =
+        !estimated && p.lat != null && p.lng != null
+          ? `<div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=${Number(p.lat)},${Number(p.lng)}"
+                target="_blank" rel="noopener noreferrer"
+                style="display:inline-flex;align-items:center;background:#1a73e8;color:#fff;border-radius:8px;padding:6px 10px;text-decoration:none;font:600 12px/1 Manrope,system-ui,sans-serif">
+                Google Maps
+              </a>
+              <a href="https://waze.com/ul?ll=${Number(p.lat)}%2C${Number(p.lng)}&navigate=yes"
+                target="_blank" rel="noopener noreferrer"
+                style="display:inline-flex;align-items:center;background:#33ccff;color:#0b2e2b;border-radius:8px;padding:6px 10px;text-decoration:none;font:600 12px/1 Manrope,system-ui,sans-serif">
+                Waze
+              </a>
+            </div>`
           : ''
 
       const marker = L.marker([p.lat, p.lng], { title: p.name })
@@ -140,6 +158,7 @@ export default function ProjectMap({ projects, onSelect }) {
           <strong style="font-size:15px">${title}</strong><br/>
           ${comuna}, ${region} · Desde ${escapeHtml(formatUf(p.priceFromUf))}
           ${locNote}${metro}
+          ${mapsBtns}
           <div style="margin-top:8px">
             <button type="button" data-project-id="${escapeHtml(p.id)}"
               style="cursor:pointer;background:#0f766e;color:#fff;border:0;border-radius:8px;padding:6px 10px;font:inherit">
