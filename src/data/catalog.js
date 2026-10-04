@@ -2,9 +2,9 @@
 export const UF_CLP = 41090
 
 /**
- * connectivityScore (1–5):
- * - Metropolitana: acceso a Metro de Santiago
- * - Regiones: Metrotren/Biotrén, Ruta 5 Norte/Sur o terminal de buses (estimado por comuna)
+ * connectivityScore (1–5): ranking de acceso a Metro de Santiago.
+ * 5 = ≤8 min a pie · 4 = ≤15 · 3 = ≤25 o combinación bus+metro
+ * 2 = lejos / estación futura · 1 = sin metro · null = fuera de RM
  */
 export const catalog = [
   {
@@ -86,10 +86,27 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Limache",
+    "accessDetail": "Terminal de la línea Metrotren",
+    "accessMode": "metrotren",
+    "lat": -33.0018741,
+    "lng": -71.2657315,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-02-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "“A sólo 43 km de Valparaíso, Limache comuna conectada” Contamos con una localización privilegiada, cercano a Estación de Metro, Hospital Santo Tomás, Plaza 40 horas, Supermercados y otros servicios.",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -97,7 +114,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 56.56 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -105,23 +121,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:limache"
-    },
-    "lat": -33.0018741,
-    "lng": -71.2657315,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 56.6,
-    "description": "“A sólo 43 km de Valparaíso, Limache comuna conectada” Contamos con una localización privilegiada, cercano a Estación de Metro, Hospital Santo Tomás, Plaza 40 horas, Supermercados y otros servicios.",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-02-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Limache",
-    "accessDetail": "Terminal de la línea Metrotren",
-    "accessMode": "metrotren"
+    }
   },
   {
     "id": "aitue-aires-de-machali",
@@ -142,33 +142,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "aitue",
-        "url": "https://www.aitue.cl/propiedades-casas/aires-de-machali/rancagua/"
-      }
-    ],
-    "notes": "Importado desde Aitue",
-    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/ADM-.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.17,
     "lng": -70.67845,
     "address": null,
     "contactPhone": "+56963208535",
     "contactWhatsapp": "https://wa.me/56963208535",
-    "areaM2": null,
-    "description": "Disfruta la tranquilidadde un condominio con accesos cerrados, parques interiores y espacios para disfrutar en familia con la tranquilidad que mereces.",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/ADM-.png",
     "images": [
       "https://www.aitue.cl/wp-content/uploads/2021/04/ADM-.png",
       "https://www.aitue.cl/wp-content/uploads/2021/04/BANNER-WEB_IVA_AITUE.jpg",
@@ -177,6 +165,7 @@ export const catalog = [
       "https://www.aitue.cl/wp-content/uploads/2022/12/linkedin.png",
       "https://www.aitue.cl/wp-content/uploads/2022/12/insta.png"
     ],
+    "description": "Disfruta la tranquilidadde un condominio con accesos cerrados, parques interiores y espacios para disfrutar en familia con la tranquilidad que mereces.",
     "amenities": [
       "Bodega",
       "Sala de estar",
@@ -188,10 +177,21 @@ export const catalog = [
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-casas/aires-de-machali/rancagua/"
+      }
+    ],
+    "notes": "Importado desde Aitue",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-aires-de-recoleta",
@@ -271,33 +271,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 62.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/aires-de-renaca/"
-      }
-    ],
-    "notes": "Ficha UTS: 62,37 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/condominio-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:renaca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren",
     "lat": -32.9715335,
     "lng": -71.5437133,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 62.4,
-    "description": "Condominio Aires de Reñaca se encuentra en Reñaca Alto, cerca del Camino Internacional que une Concón, Viña del Mar y Santiago. Esta ubicación te da fácil acceso a colegios, centros comerciales y luga…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/condominio-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/condominio-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/condominio2-1024x768.jpg",
@@ -306,13 +294,25 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/dormitorioprincipal-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/living-comedor-1-1024x768.jpg"
     ],
+    "description": "Condominio Aires de Reñaca se encuentra en Reñaca Alto, cerca del Camino Internacional que une Concón, Viña del Mar y Santiago. Esta ubicación te da fácil acceso a colegios, centros comerciales y luga…",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Viña del Mar",
-    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-de-renaca/"
+      }
+    ],
+    "notes": "Ficha UTS: 62,37 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:renaca"
+    }
   },
   {
     "id": "uts-aires-de-san-pedro",
@@ -333,33 +333,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/aires-de-san-pedro/"
-      }
-    ],
-    "notes": "Ficha UTS: 59 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-280-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-pedro-de-la-paz"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren",
     "lat": -36.8414183,
     "lng": -73.1039909,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 59,
-    "description": "Proyecto certificado Best Place to Live® Aires de San Pedro es un condominio de casas con Subsidio DS19, diseñado para quienes buscan mejorar su calidad de vida en un entorno que combina naturaleza, c…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-280-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-280-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-250-1024x768.jpg",
@@ -368,6 +356,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-234-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-269-1024x768.jpg"
     ],
+    "description": "Proyecto certificado Best Place to Live® Aires de San Pedro es un condominio de casas con Subsidio DS19, diseñado para quienes buscan mejorar su calidad de vida en un entorno que combina naturaleza, c…",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
@@ -382,10 +371,21 @@ export const catalog = [
       "3 locales comerciales",
       "Punto limpio"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · San Pedro de la Paz",
-    "accessDetail": "Estaciones Biotrén / acceso Concepción",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-de-san-pedro/"
+      }
+    ],
+    "notes": "Ficha UTS: 59 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:san-pedro-de-la-paz"
+    }
   },
   {
     "id": "uts-aires-del-limari",
@@ -406,33 +406,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 62,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/aires-del-limari/"
-      }
-    ],
-    "notes": "Ficha UTS: 62 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-180-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Ovalle"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5",
     "lat": -30.6030819,
     "lng": -71.2029894,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 62,
-    "description": "Te presentamos en Ovalle, Condominio Aires del Limarí. Un proyecto único, al que podrás acceder con Subsidio automático DS-19 y considera 3 tipologías disponibles de 2 a 3 dormitorios, 1 a 2 baños y …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-180-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/2-180-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-168-1024x768.jpg",
@@ -441,15 +429,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/1-186-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-121-1024x768.jpg"
     ],
+    "description": "Te presentamos en Ovalle, Condominio Aires del Limarí. Un proyecto único, al que podrás acceder con Subsidio automático DS-19 y considera 3 tipologías disponibles de 2 a 3 dormitorios, 1 a 2 baños y …",
     "amenities": [
       "Piscina",
       "Quincho",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
-    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-del-limari/"
+      }
+    ],
+    "notes": "Ficha UTS: 62 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Ovalle"
+    }
   },
   {
     "id": "uts-aires-del-sauce",
@@ -470,33 +470,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 64.5,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/aires-del-sauce/"
-      }
-    ],
-    "notes": "Ficha UTS: 64,5 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-172-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Coquimbo"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
     "lat": -29.9531851,
     "lng": -71.3379503,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 64.5,
-    "description": "Departamentos con Subsidio Ds19 en el sector del Sauce, Coquimbo.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-172-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/2-172-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-178-1024x768.jpg",
@@ -505,11 +493,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/7-117-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/8-97-1024x768.jpg"
     ],
+    "description": "Departamentos con Subsidio Ds19 en el sector del Sauce, Coquimbo.",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/aires-del-sauce/"
+      }
+    ],
+    "notes": "Ficha UTS: 64,5 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Coquimbo"
+    }
   },
   {
     "id": "uts-alameda-4719",
@@ -575,7 +575,7 @@ export const catalog = [
     "id": "sub-485-alicura-condominio",
     "name": "Alicura Condominio",
     "developer": "Río Baker",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Villa Alemana",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -590,10 +590,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
+    "lat": -33.053482,
+    "lng": -71.348178,
+    "address": "Las Acacias 751",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_1_485_na.png",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_1_485_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_2_485_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_3_485_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_4_485_na.png"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Villa Alemana con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -601,37 +624,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_1_485_na.png",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:villa-alemana"
-    },
-    "lat": -33.0441903,
-    "lng": -71.3725464,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Villa Alemana con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_1_485_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_2_485_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_3_485_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/AlicuraCondominio/Inmobiliaria-Ro-Baker_Alicura-Condominio_galeria_4_485_na.png"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "soco-alkura-casas-en-chicureo",
@@ -971,10 +971,28 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 65.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Quilpué",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
+    "lat": -33.0498135,
+    "lng": -71.4415282,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-03-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Departamentos con Subsidio DS19 en Quilpué. ¡Entrega Inmediata! Excelente conectividad en un consolidado barrio residencial de Quilpué. Ven a vivir a un proyecto inmobiliario pensado para optimizar ca…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -982,7 +1000,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 65.05 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -990,24 +1007,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:quilpue"
-    },
-    "lat": -33.0498135,
-    "lng": -71.4415282,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 65.1,
-    "description": "Departamentos con Subsidio DS19 en Quilpué. ¡Entrega Inmediata! Excelente conectividad en un consolidado barrio residencial de Quilpué. Ven a vivir a un proyecto inmobiliario pensado para optimizar ca…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-03-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Quilpué",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    }
   },
   {
     "id": "uts-altos-de-san-miguel",
@@ -1028,33 +1028,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 66,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/altos-de-san-miguel/"
-      }
-    ],
-    "notes": "Ficha UTS: metro San Miguel. 66 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Talca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -35.4265343,
     "lng": -71.6660322,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 66,
-    "description": "Departamentos ubicados en Av. San Miguel, Talca de 3 dormitorios con 1/2 baños. Con subsidio automático DS19 desde UF 1.400. Con subsidios para familias vulnerables ganados DS49 – DS1T1 departam…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-02-Vitrina-UTS-1024x768.jpg",
@@ -1062,11 +1050,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-05-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Departamentos ubicados en Av. San Miguel, Talca de 3 dormitorios con 1/2 baños. Con subsidio automático DS19 desde UF 1.400. Con subsidios para familias vulnerables ganados DS49 – DS1T1 departam…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/altos-de-san-miguel/"
+      }
+    ],
+    "notes": "Ficha UTS: metro San Miguel. 66 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Talca"
+    }
   },
   {
     "id": "silos-altos-de-santa-maria",
@@ -1154,33 +1154,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 65.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/altos-del-este/"
-      }
-    ],
-    "notes": "Ficha UTS: metro Ñuble. 65,08 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2FE0E83B-9950-48E2-B432-A54610D57ADE-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Chillán"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -36.6066616,
     "lng": -72.1033194,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 65.1,
-    "description": "El Condominio Altos del Este I, desarrollado por la prestigiosa Inmobiliaria y Constructora CVP, es un proyecto residencial que se destaca por su diseño y ubicación privilegiada. Situado en un entorno…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2FE0E83B-9950-48E2-B432-A54610D57ADE-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/2FE0E83B-9950-48E2-B432-A54610D57ADE-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1C1CE5C9-96B5-4CB9-8806-60C094265468-1024x772.jpg",
@@ -1189,11 +1177,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/B82B14FA-DEF8-4584-8F57-9865A045DD7F-1024x772.jpg",
       "https://usatusubsidio.com/wp-content/uploads/E7C03B5E-604A-4CF7-9748-2597DCB37923-1024x772.jpg"
     ],
+    "description": "El Condominio Altos del Este I, desarrollado por la prestigiosa Inmobiliaria y Constructora CVP, es un proyecto residencial que se destaca por su diseño y ubicación privilegiada. Situado en un entorno…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Chillán",
-    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/altos-del-este/"
+      }
+    ],
+    "notes": "Ficha UTS: metro Ñuble. 65,08 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Chillán"
+    }
   },
   {
     "id": "uts-altos-del-parque",
@@ -1214,33 +1214,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/altos-del-parque/"
-      }
-    ],
-    "notes": "Ficha UTS: 63,7 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/8-140-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:curauma"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
+    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
+    "accessMode": "ruta",
     "lat": -33.127419,
     "lng": -71.5696552,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 63.7,
-    "description": "Condominio Altos del Parque – Etapa I es un proyecto acogido al Subsidio DS19, diseñado para familias que buscan más espacio, tranquilidad y una mejor calidad de vida en un entorno natural. Esta prime…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/8-140-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/8-140-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/10-98-1024x768.jpg",
@@ -1249,11 +1237,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-183-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-252-1024x768.jpg"
     ],
+    "description": "Condominio Altos del Parque – Etapa I es un proyecto acogido al Subsidio DS19, diseñado para familias que buscan más espacio, tranquilidad y una mejor calidad de vida en un entorno natural. Esta prime…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
-    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
-    "accessMode": "ruta"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/altos-del-parque/"
+      }
+    ],
+    "notes": "Ficha UTS: 63,7 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:curauma"
+    }
   },
   {
     "id": "alturas-pudahuel",
@@ -1350,33 +1350,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/7/alturas-de-tepual"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AlturasdeTepual/Inmobiliaria-Icuadra_Alturas-de-Tepual_galeria_10_7_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:puerto-montt"
-    },
-    "lat": -41.471798,
-    "lng": -72.9395915,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5",
+    "lat": -41.458876,
+    "lng": -72.98957,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Puerto Montt con DS19, Inmobiliaria Icuadra, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AlturasdeTepual/Inmobiliaria-Icuadra_Alturas-de-Tepual_galeria_10_7_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AlturasdeTepual/Inmobiliaria-Icuadra_Alturas-de-Tepual_galeria_10_7_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AlturasdeTepual/Inmobiliaria-Icuadra_Alturas-de-Tepual_galeria_8_7_na.jpg",
@@ -1384,13 +1372,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AlturasdeTepual/Inmobiliaria-Icuadra_Alturas-de-Tepual_galeria_11_7_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AlturasdeTepual/Inmobiliaria-Icuadra_Alturas-de-Tepual_galeria_12_7_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Puerto Montt con DS19, Inmobiliaria Icuadra, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
-    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/7/alturas-de-tepual"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "andes-quilicura-ii",
@@ -1471,33 +1471,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/400/arquitecta-dora-riedel"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/ArquitectaDoraRiedel/Conavicoop_Arquitecta-Dora-Riedel_galeria_1_400_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Esteban"
-    },
-    "lat": -33.5209405,
-    "lng": -70.5828332,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -32.803352,
+    "lng": -70.583542,
+    "address": "R\\u00edo Aconcagua",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Esteban con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/ArquitectaDoraRiedel/Conavicoop_Arquitecta-Dora-Riedel_galeria_1_400_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/ArquitectaDoraRiedel/Conavicoop_Arquitecta-Dora-Riedel_galeria_1_400_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/ArquitectaDoraRiedel/Conavicoop_Arquitecta-Dora-Riedel_galeria_2_400_na.jpg",
@@ -1505,13 +1493,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/ArquitectaDoraRiedel/Conavicoop_Arquitecta-Dora-Riedel_galeria_4_400_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/ArquitectaDoraRiedel/Conavicoop_Arquitecta-Dora-Riedel_galeria_5_400_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Esteban con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/400/arquitecta-dora-riedel"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "paz-I227",
@@ -1728,33 +1728,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 67.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/barrio-encanto-de-molina/"
-      }
-    ],
-    "notes": "Ficha UTS: 67,86 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-271-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Molina"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · Molina",
+    "accessDetail": "Acceso 5 Sur vía Curicó",
+    "accessMode": "ruta5",
     "lat": -35.1139703,
     "lng": -71.2799798,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 67.9,
-    "description": "Barrio Encanto de Molina es un proyecto habitacional pensado para quienes buscan una vida tranquila, en un entorno de barrio cercano, familiar y con espacios que invitan a disfrutar el día a día. Ubic…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-271-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-271-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-260-1024x768.jpg",
@@ -1763,13 +1751,25 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-226-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-197-1024x768.jpg"
     ],
+    "description": "Barrio Encanto de Molina es un proyecto habitacional pensado para quienes buscan una vida tranquila, en un entorno de barrio cercano, familiar y con espacios que invitan a disfrutar el día a día. Ubic…",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Cerca Ruta 5 Sur · Molina",
-    "accessDetail": "Acceso 5 Sur vía Curicó",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/barrio-encanto-de-molina/"
+      }
+    ],
+    "notes": "Ficha UTS: 67,86 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Molina"
+    }
   },
   {
     "id": "uts-barrio-espanol",
@@ -1790,33 +1790,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 52,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/barrio-espanol/"
-      }
-    ],
-    "notes": "Ficha UTS: 52 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10.-Condominio-Completo-Barrio-Espanol-1024x768.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": "El proyecto se encuentra en",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 52,
-    "description": "Barrio Español es un proyecto residencial ubicado en San Rafael 0420, Rancagua, que contempla 255 hogares sobre 3 hectáreas recuperadas que pertenecieron a las dependencias del antiguo Centro Español.…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10.-Condominio-Completo-Barrio-Espanol-1024x768.webp",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/10.-Condominio-Completo-Barrio-Espanol-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/1.-Entrada-principal-Barrio-Espanol-1024x768.webp",
@@ -1825,14 +1813,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/4.-Esquina-Barrio-Espanol-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/5.-Patio-Interior-pasto-Barrio-Espanol-1024x768.webp"
     ],
+    "description": "Barrio Español es un proyecto residencial ubicado en San Rafael 0420, Rancagua, que contempla 255 hogares sobre 3 hectáreas recuperadas que pertenecieron a las dependencias del antiguo Centro Español.…",
     "amenities": [
       "Áreas verdes",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/barrio-espanol/"
+      }
+    ],
+    "notes": "Ficha UTS: 52 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "sub-319-barrio-las-delicias",
@@ -1853,10 +1853,29 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -36.625677,
+    "lng": -72.074795,
+    "address": "Av.Alonso de Ercilla",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDeliciasVDepartamentos/Barrio-Las-Delicias---V-Departamentos_galeria_1_319_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDeliciasVDepartamentos/Barrio-Las-Delicias---V-Departamentos_galeria_1_319_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDeliciasVDepartamentos/Inmobiliaria-Inespa_Barrio-Las-Delicias---V-Departamentos_galeria_2_319_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Chillán con DS19, Inmobiliaria Inespa, departamentos con 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -1864,33 +1883,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDeliciasVDepartamentos/Barrio-Las-Delicias---V-Departamentos_galeria_1_319_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Chillán"
-    },
-    "lat": -36.6066616,
-    "lng": -72.1033194,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Chillán con DS19, Inmobiliaria Inespa, departamentos con 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDeliciasVDepartamentos/Barrio-Las-Delicias---V-Departamentos_galeria_1_319_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDeliciasVDepartamentos/Inmobiliaria-Inespa_Barrio-Las-Delicias---V-Departamentos_galeria_2_319_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Chillán",
-    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-barrio-las-delicias-v",
@@ -1911,10 +1911,29 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 57,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -36.6066616,
+    "lng": -72.1033194,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-64-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/3-64-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/1-74-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/2-65-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/5-59-1024x768.jpg"
+    ],
+    "description": "Descubre tu Hogar en Barrio Las Delicias V Descubre Barrio Las Delicias V, donde calidad, ubicación y beneficios se combinan para ofrecerte el hogar que siempre has soñado. Ven y experimenta la…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -1922,7 +1941,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: metro Ñuble. 57 m² m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-64-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -1930,25 +1948,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chillán"
-    },
-    "lat": -36.6066616,
-    "lng": -72.1033194,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 57,
-    "description": "Descubre tu Hogar en Barrio Las Delicias V Descubre Barrio Las Delicias V, donde calidad, ubicación y beneficios se combinan para ofrecerte el hogar que siempre has soñado. Ven y experimenta la…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/3-64-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/1-74-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/2-65-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/5-59-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Chillán",
-    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "sub-521-barrio-pinares-v",
@@ -1969,10 +1969,32 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.151561,
+    "lng": -70.701877,
+    "address": "Av. La Compa\\u00f1\\u00eda 1435",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_1_521_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_1_521_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_2_521_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_3_521_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_4_521_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria Pocuro, departamentos con 2 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -1980,36 +2002,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_1_521_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria Pocuro, departamentos con 2 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_1_521_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_2_521_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_3_521_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/BarrioPinaresV/Inmobiliaria-Pocuro_Barrio-Pinares-V_galeria_4_521_na.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "galilea-brisas-de-machali-ii",
@@ -2030,33 +2030,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "galilea",
-        "url": "https://www.galilea.cl/proyectos/brisas-de-machali-ii/"
-      }
-    ],
-    "notes": "Ficha Galilea. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://www.galilea.cl/wp-content/uploads/2026/09/BDMII_BANNER-PROYECTO-1920x567px.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Machalí"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses a Rancagua · cerca Ruta 5 Sur",
+    "accessDetail": "Micros a Rancagua · acceso 5 Sur por la capital regional",
+    "accessMode": "ruta5",
     "lat": -34.182453,
     "lng": -70.6511584,
     "address": "Camino Las Rosas # 5, Local 7 (2º Piso), Machalí",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Agenda tu visita al piloto o una reunión con uno de nuestros ejecutivos de ventas para recibir toda la información que necesitas.",
+    "imageUrl": "https://www.galilea.cl/wp-content/uploads/2026/09/BDMII_BANNER-PROYECTO-1920x567px.jpg",
     "images": [
       "https://www.galilea.cl/wp-content/uploads/2026/09/BDMII_BANNER-PROYECTO-1920x567px.jpg",
       "https://www.galilea.cl/wp-content/uploads/2024/10/Fotos-Traro-Web_879x588-TRARO-9.jpg",
@@ -2065,14 +2053,26 @@ export const catalog = [
       "https://www.galilea.cl/wp-content/uploads/2024/10/Fotos-Traro-Web_879x588-TRARO-6.jpg",
       "https://www.galilea.cl/wp-content/uploads/2024/10/Fotos-Traro-Web_879x588-TRARO-5.jpg"
     ],
+    "description": "Agenda tu visita al piloto o una reunión con uno de nuestros ejecutivos de ventas para recibir toda la información que necesitas.",
     "amenities": [
       "Áreas verdes",
       "Sala de estar"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Buses a Rancagua · cerca Ruta 5 Sur",
-    "accessDetail": "Micros a Rancagua · acceso 5 Sur por la capital regional",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "galilea",
+        "url": "https://www.galilea.cl/proyectos/brisas-de-machali-ii/"
+      }
+    ],
+    "notes": "Ficha Galilea. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Machalí"
+    }
   },
   {
     "id": "brisas-quilicura",
@@ -2152,33 +2152,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 51,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/brisas-de-san-fernando/"
-      }
-    ],
-    "notes": "Ficha UTS: 51 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-178-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Fernando"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal San Fernando",
+    "accessDetail": "Parada frecuente de buses en corredor 5 Sur",
+    "accessMode": "ruta5",
     "lat": -34.583791,
     "lng": -70.989122,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 51,
-    "description": "Condominio Brisas de San Fernando es un proyecto desarrollado por Inmobiliaria y Constructora Horizonte Spa. En la ciudad de San Fernando, sexta región, emplazado en un barrio emergente y residencial …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-178-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/2-178-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/3-175-1024x768.jpg",
@@ -2187,16 +2175,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-157-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-137-1024x768.jpg"
     ],
+    "description": "Condominio Brisas de San Fernando es un proyecto desarrollado por Inmobiliaria y Constructora Horizonte Spa. En la ciudad de San Fernando, sexta región, emplazado en un barrio emergente y residencial …",
     "amenities": [
       "Piscina",
       "Quincho",
       "Áreas verdes",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal San Fernando",
-    "accessDetail": "Parada frecuente de buses en corredor 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/brisas-de-san-fernando/"
+      }
+    ],
+    "notes": "Ficha UTS: 51 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:San Fernando"
+    }
   },
   {
     "id": "uts-brisas-de-san-javier",
@@ -2217,10 +2217,29 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 74,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
+    "accessDetail": "Acceso 5 Sur / Talca",
+    "accessMode": "ruta5",
+    "lat": -35.5923933,
+    "lng": -71.735308,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-2-10-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-2-10-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-3-10-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-4-11-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-1-10-1024x768.jpg"
+    ],
+    "description": "Aprovecha tu subsidio DS1 tramo 3 en San Javier con Malpo. La mejor ubicación, entorno y conectividad para la seguridad y comodidad de tu familia. Cerca de Talca y Linares. ¡Conviértete en propietario…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2228,7 +2247,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 74 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-2-10-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -2236,25 +2254,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:San Javier"
-    },
-    "lat": -35.5923933,
-    "lng": -71.735308,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 74,
-    "description": "Aprovecha tu subsidio DS1 tramo 3 en San Javier con Malpo. La mejor ubicación, entorno y conectividad para la seguridad y comodidad de tu familia. Cerca de Talca y Linares. ¡Conviértete en propietario…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-2-10-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-3-10-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-4-11-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-1-10-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
-    "accessDetail": "Acceso 5 Sur / Talca",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "sub-477-brisas-de-san-javier-ii",
@@ -2275,10 +2275,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -35.601763,
+    "lng": -71.714225,
+    "address": "Los Coihues",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_1_477_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_1_477_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_2_477_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_3_477_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_4_477_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna San Javier con DS19, Inmobiliaria Malpo, departamentos con 2 Y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -2286,35 +2307,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_1_477_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Javier"
-    },
-    "lat": -33.455781,
-    "lng": -70.6813976,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Javier con DS19, Inmobiliaria Malpo, departamentos con 2 Y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_1_477_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_2_477_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_3_477_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/BrisasdeSanJavierII/Inmobiliaria-Malpo_Brisas-de-San-Javier-II_galeria_4_477_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-brisas-del-maule-vi",
@@ -2335,33 +2335,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60.5,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/brisas-del-maule-vi/"
-      }
-    ],
-    "notes": "Ficha UTS: 60,48 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-126-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Constitución"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Constitución · costa Maule",
+    "accessDetail": "Buses a Talca · lejos del eje 5 Sur",
+    "accessMode": "buses",
     "lat": -35.3318306,
     "lng": -72.4118998,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.5,
-    "description": "Brisas del Maule VI es una excelente oportunidad para quienes buscan un departamento con DS19 . Este proyecto residencial en Constitución ofrece un estilo de vida moderno, cómodo y funcional, ideal pa…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-126-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/5-126-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-107-1024x768.jpg",
@@ -2370,15 +2358,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/9-68-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/3-136-1024x768.jpg"
     ],
+    "description": "Brisas del Maule VI es una excelente oportunidad para quienes buscan un departamento con DS19 . Este proyecto residencial en Constitución ofrece un estilo de vida moderno, cómodo y funcional, ideal pa…",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Constitución · costa Maule",
-    "accessDetail": "Buses a Talca · lejos del eje 5 Sur",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/brisas-del-maule-vi/"
+      }
+    ],
+    "notes": "Ficha UTS: 60,48 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Constitución"
+    }
   },
   {
     "id": "paz-I170",
@@ -2467,10 +2467,32 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 31,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren",
+    "lat": -36.8270698,
+    "lng": -73.0502064,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-273-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/1-273-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/2-262-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/3-255-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/4-243-1024x768.jpg"
+    ],
+    "description": "Inmobiliaria certificada Best Place to Live® Ubicado en Camilo Henríquez 2565, en pleno centro de Concepción, este exclusivo edificio de 9 pisos ofrece modernos departamentos de 2 dormitorios y 2 bañ…",
+    "amenities": [
+      "Gimnasio",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2478,7 +2500,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: metro Ecuador. 31 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-273-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -2486,28 +2507,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Concepción"
-    },
-    "lat": -36.8270698,
-    "lng": -73.0502064,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 31,
-    "description": "Inmobiliaria certificada Best Place to Live® Ubicado en Camilo Henríquez 2565, en pleno centro de Concepción, este exclusivo edificio de 9 pisos ofrece modernos departamentos de 2 dormitorios y 2 bañ…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/1-273-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/2-262-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/3-255-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/4-243-1024x768.jpg"
-    ],
-    "amenities": [
-      "Gimnasio",
-      "Juegos infantiles"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Concepción",
-    "accessDetail": "Red Biotrén + micros · terminal Collao",
-    "accessMode": "biotren"
+    }
   },
   {
     "id": "paz-I188",
@@ -2793,33 +2793,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "aitue",
-        "url": "https://www.aitue.cl/propiedades-casas/casas-borde-laguna/los-angeles/"
-      }
-    ],
-    "notes": "Importado desde Aitue",
-    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/CBL-1.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5",
     "lat": -37.4486138,
     "lng": -72.3362441,
     "address": null,
     "contactPhone": "+56993218566",
     "contactWhatsapp": "https://wa.me/56993218566",
-    "areaM2": null,
-    "description": "Amplitud y luz naturalEspacios bien distribuidos que aprovechan la iluminación natural y entregan mayor comodidad.",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/CBL-1.png",
     "images": [
       "https://www.aitue.cl/wp-content/uploads/2021/04/CBL-1.png",
       "https://www.aitue.cl/wp-content/uploads/2021/04/BANNER-WEB_DESKTOP.jpg",
@@ -2828,6 +2816,7 @@ export const catalog = [
       "https://www.aitue.cl/wp-content/uploads/2022/12/insta.png",
       "https://www.aitue.cl/wp-content/themes/aitue/assets/img/menu.png"
     ],
+    "description": "Amplitud y luz naturalEspacios bien distribuidos que aprovechan la iluminación natural y entregan mayor comodidad.",
     "amenities": [
       "Quincho",
       "Bodega",
@@ -2840,10 +2829,21 @@ export const catalog = [
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
-    "accessDetail": "Corredor 5 Sur · capital provincial",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-casas/casas-borde-laguna/los-angeles/"
+      }
+    ],
+    "notes": "Importado desde Aitue",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-central-sur-210",
@@ -2864,33 +2864,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 47,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/central-sur-210/"
-      }
-    ],
-    "notes": "Ficha UTS: metro Mirador. 47 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Central_Sur_210-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Concepción"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren",
     "lat": -36.8270698,
     "lng": -73.0502064,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 47,
-    "description": "Central Sur 210 es un proyecto habitacional acogido al Subsidio DS19, ubicado estratégicamente en Concepción. Está pensado para familias y personas que buscan acceder a una vivienda propia en un secto…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Central_Sur_210-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Central_Sur_210-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/11-79-1024x768.jpg",
@@ -2899,14 +2887,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/9-112-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-160-1024x768.jpg"
     ],
+    "description": "Central Sur 210 es un proyecto habitacional acogido al Subsidio DS19, ubicado estratégicamente en Concepción. Está pensado para familias y personas que buscan acceder a una vivienda propia en un secto…",
     "amenities": [
       "Juegos infantiles",
       "Transporte público"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Concepción",
-    "accessDetail": "Red Biotrén + micros · terminal Collao",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/central-sur-210/"
+      }
+    ],
+    "notes": "Ficha UTS: metro Mirador. 47 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Concepción"
+    }
   },
   {
     "id": "uts-maestranza",
@@ -2927,10 +2927,29 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
+    "lat": -29.9531851,
+    "lng": -71.3379503,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-223-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/2-223-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/3-216-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/4-206-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/1-233-1024x768.jpg"
+    ],
+    "description": "¡Tu primer hogar te espera en Coquimbo! Departamentos con subsidio automático DS19, en sector residencial. Con terminaciones de primer nivel, espacios amplios, luminosos y áreas comunes diseñadas para…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2938,7 +2957,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 60 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-223-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -2946,25 +2964,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
-    },
-    "lat": -29.9531851,
-    "lng": -71.3379503,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 60,
-    "description": "¡Tu primer hogar te espera en Coquimbo! Departamentos con subsidio automático DS19, en sector residencial. Con terminaciones de primer nivel, espacios amplios, luminosos y áreas comunes diseñadas para…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/2-223-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/3-216-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/4-206-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/1-233-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "uts-ciudad-panamericana",
@@ -3048,10 +3048,33 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": "Cerrillos",
     "metroLine": "L6",
     "metroWalkMin": 12,
     "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.484472,
+    "lng": -70.694566,
+    "address": "Av. Pedro Aguirre Cerda 4700",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_1_519_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_1_519_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_2_519_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_3_519_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_4_519_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_5_519_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_6_519_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Cerrillos con DS19, Inmobiliaria Sip, departamentos con 1 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3063,37 +3086,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl: metro Cerrillos. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_1_519_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Cerrillos"
-    },
-    "lat": -33.5023396,
-    "lng": -70.7158417,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Cerrillos con DS19, Inmobiliaria Sip, departamentos con 1 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_1_519_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_2_519_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_3_519_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_4_519_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_5_519_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/VillaPanamericana/Inmobiliaria-Sip_Villa-Panamericana_galeria_6_519_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "soco-coipue-departamentos-en-venta-macul",
@@ -3231,7 +3231,7 @@ export const catalog = [
     "id": "sub-402-condominio-abogada-matilde-throup",
     "name": "Condominio Abogada Matilde Throup",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Villa Alemana",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -3246,10 +3246,32 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
+    "lat": -33.071018,
+    "lng": -71.368075,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_1_402_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_1_402_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_2_402_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_3_402_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_4_402_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Villa Alemana con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Bicicletero"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3257,36 +3279,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_1_402_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:villa-alemana"
-    },
-    "lat": -33.0441903,
-    "lng": -71.3725464,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Villa Alemana con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_1_402_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_2_402_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_3_402_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioAbogadaMatildeThroup/Conavicoop_Condominio-Abogada-Matilde-Throup_galeria_4_402_na.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Bicicletero"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-6-condominio-alto-o-higgins",
@@ -3307,33 +3307,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/6/condominio-alto-ohiggins"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioAltoOHiggins/Inmobiliaria-Icuadra_Condominio-Alto----OHiggins_galeria_1_6_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.161119,
+    "lng": -70.768335,
+    "address": "Av. El valle 199",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria Icuadra, departamentos con 1 y 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioAltoOHiggins/Inmobiliaria-Icuadra_Condominio-Alto----OHiggins_galeria_1_6_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioAltoOHiggins/Inmobiliaria-Icuadra_Condominio-Alto----OHiggins_galeria_1_6_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioAltoOHiggins/Inmobiliaria-Icuadra_Condominio-Alto----OHiggins_galeria_2_6_na.jpg",
@@ -3342,14 +3330,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioAltoOHiggins/Inmobiliaria-Icuadra_Condominio-Alto----OHiggins_galeria_5_6_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioAltoOHiggins/Inmobiliaria-Icuadra_Condominio-Alto----OHiggins_galeria_6_6_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria Icuadra, departamentos con 1 y 2 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/6/condominio-alto-ohiggins"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "alto-andes-puente-alto",
@@ -3450,10 +3450,28 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -38.721511,
+    "lng": -72.626475,
+    "address": "Avenida Javiera Carrera 245",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/CondominioAltoCarrera/Condominio-Alto-Carrera_galeria_1_313_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/CondominioAltoCarrera/Condominio-Alto-Carrera_galeria_1_313_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Temuco con DS19, Inmobiliaria Inespa, departamentos con 1 y 2 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3461,32 +3479,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/CondominioAltoCarrera/Condominio-Alto-Carrera_galeria_1_313_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
-    "lat": -38.7358908,
-    "lng": -72.590538,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Temuco con DS19, Inmobiliaria Inespa, departamentos con 1 y 2 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/CondominioAltoCarrera/Condominio-Alto-Carrera_galeria_1_313_na.webp"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-alto-del-puerto",
@@ -3507,33 +3507,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 38.3,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/alto-del-puerto/"
-      }
-    ],
-    "notes": "Ficha UTS: metro Mirador. 38,27 m2 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/FACHADA-ALTO-DEL-PUERTO-DS-19-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Valparaíso"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren",
     "lat": -33.0458456,
     "lng": -71.6196749,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 38.3,
-    "description": "Bienvenido a tu Nuevo Hogar en el Corazón de Valparaíso Alto del Puerto te brinda la oportunidad de vivir en un exclusivo condominio de 4 torres rodeado por un parque de 12,000 m². Imagina levantarte …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/FACHADA-ALTO-DEL-PUERTO-DS-19-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/FACHADA-ALTO-DEL-PUERTO-DS-19-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/PERGOLA-EJERCICIOS-ALTO-DEL-PUERTO-DS-19-1024x768.jpg",
@@ -3542,13 +3530,25 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/DORMITORIO-ALTO-DEL-PUERTO-DS-19-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/TERRAZA-ALTO-DEL-PUERTO-DS-19-1024x768.jpg"
     ],
+    "description": "Bienvenido a tu Nuevo Hogar en el Corazón de Valparaíso Alto del Puerto te brinda la oportunidad de vivir en un exclusivo condominio de 4 torres rodeado por un parque de 12,000 m². Imagina levantarte …",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Valparaíso / Puerto",
-    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/alto-del-puerto/"
+      }
+    ],
+    "notes": "Ficha UTS: metro Mirador. 38,27 m2 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Valparaíso"
+    }
   },
   {
     "id": "sub-212-condominio-alto-durand",
@@ -3569,10 +3569,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -38.719057,
+    "lng": -72.647113,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_4_212_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_4_212_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_5_212_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_6_212_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_7_212_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Temuco con DS19, Inmobiliaria Inespa, departamentos con 1, 2 y 3 dormitorios",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3580,37 +3603,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_4_212_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
-    "lat": -38.7358908,
-    "lng": -72.590538,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Temuco con DS19, Inmobiliaria Inespa, departamentos con 1, 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_4_212_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_5_212_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_6_212_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaInespa/BarrioLasDelicias/Inmobiliaria-Inespa_Barrio-Las-Delicias_galeria_7_212_na.jpg"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-alto-durand-iv",
@@ -3631,33 +3631,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 54,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-alto-durand-iv/"
-      }
-    ],
-    "notes": "Ficha UTS: 54 m² m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portada-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -38.7358908,
     "lng": -72.590538,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 54,
-    "description": "Condominio Alto Durand IV – Tu nuevo hogar en Fundo El Carmen Con Condominio Alto Durand IV, haz realidad tu sueño de tener un hogar propio. Benefíciate del subsidio automático DS19 gestionado s…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portada-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Portada-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-66-1024x768.jpg",
@@ -3666,14 +3654,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-60-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-49-1024x768.jpg"
     ],
+    "description": "Condominio Alto Durand IV – Tu nuevo hogar en Fundo El Carmen Con Condominio Alto Durand IV, haz realidad tu sueño de tener un hogar propio. Benefíciate del subsidio automático DS19 gestionado s…",
     "amenities": [
       "Piscina",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-alto-durand-iv/"
+      }
+    ],
+    "notes": "Ficha UTS: 54 m² m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Temuco"
+    }
   },
   {
     "id": "soco-condominio-alto-maderos",
@@ -3763,33 +3763,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 64.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-alto-molle/"
-      }
-    ],
-    "notes": "Ficha UTS: 64,7 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-260-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:alto-hospicio"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses · Alto Hospicio / Iquique",
+    "accessDetail": "Conurbación con Iquique · micros locales",
+    "accessMode": "buses",
     "lat": -20.2700478,
     "lng": -70.1009162,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 64.7,
-    "description": "Condominio Alto Molle es un proyecto habitacional ubicado en Alto Hospicio, diseñado para familias que buscan acceder a su vivienda propia con apoyo del Estado, en un entorno residencial que combina c…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-260-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-260-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-250-1024x768.jpg",
@@ -3798,16 +3786,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-215-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-189-1024x768.jpg"
     ],
+    "description": "Condominio Alto Molle es un proyecto habitacional ubicado en Alto Hospicio, diseñado para familias que buscan acceder a su vivienda propia con apoyo del Estado, en un entorno residencial que combina c…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Buses · Alto Hospicio / Iquique",
-    "accessDetail": "Conurbación con Iquique · micros locales",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-alto-molle/"
+      }
+    ],
+    "notes": "Ficha UTS: 64,7 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:alto-hospicio"
+    }
   },
   {
     "id": "alto-ohiggins-2",
     "name": "Condominio Alto O'Higgins 2",
-    "developer": "Icuadra",
+    "developer": "SIP\\u003C\\/p\\u003E\\u003Cp\\u003EAgenda tu visita y descubre p",
     "region": "O'Higgins",
     "comuna": "Rancagua",
     "propertyType": "departamento",
@@ -3823,10 +3823,39 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -33.453801,
+    "lng": -70.742238,
+    "address": "Claudio Arrau 7482",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AltoOHiggins2/Inmobiliaria-Icuadra_Alto-OHiggins-2_galeria_6_258_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AltoOHiggins2/Inmobiliaria-Icuadra_Alto-OHiggins-2_galeria_6_258_na.jpg",
+      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791155946",
+      "https://www.subsidios.cl/assets/images/letras-banner-donde.webp",
+      "https://www.subsidios.cl/assets/images/letras-banner-aqui.webp",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/pudahuel-mobile.webp?v=1791155946",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/mirador-del-sol-mobile.webp?v=1791155946",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/vertice-mobile.webp?v=1791155946",
+      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791149662"
+    ],
+    "description": "Compra propiedades con subsidio habitacional DS1, DS49 y DS19 en subsidios.cl Te asesoramos durante todo el proceso para encontrar tu próxima vivienda de forma fácil y rápida.",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero",
+      "Cancha"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3838,49 +3867,20 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AltoOHiggins2/Inmobiliaria-Icuadra_Alto-OHiggins-2_galeria_6_258_na.jpg",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Compra propiedades con subsidio habitacional DS1, DS49 y DS19 en subsidios.cl Te asesoramos durante todo el proceso para encontrar tu próxima vivienda de forma fácil y rápida.",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/AltoOHiggins2/Inmobiliaria-Icuadra_Alto-OHiggins-2_galeria_6_258_na.jpg",
-      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791149662",
-      "https://www.subsidios.cl/assets/images/letras-banner-donde.webp",
-      "https://www.subsidios.cl/assets/images/letras-banner-aqui.webp",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/pudahuel-mobile.webp?v=1791149662",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/mirador-del-sol-mobile.webp?v=1791149662",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/vertice-mobile.webp?v=1791149662",
-      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791148522"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero",
-      "Cancha"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-492-condominio-alto-piramide-ii",
     "name": "Condominio Alto Pirámide II",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Tarapacá",
     "comuna": "Alto Hospicio",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -3895,33 +3895,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/492/condominio-alto-piramide"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioAltoPirmide/Besalco_Condominio-Alto-Pirmide_galeria_1_492_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:alto-hospicio"
-    },
-    "lat": -20.2700478,
-    "lng": -70.1009162,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Buses · Alto Hospicio / Iquique",
+    "accessDetail": "Conurbación con Iquique · micros locales",
+    "accessMode": "buses",
+    "lat": -20.299242,
+    "lng": -70.107893,
+    "address": "Av. las Am\\u00e9ricas 4545",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Alto Hospicio con DS19, Besalco, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioAltoPirmide/Besalco_Condominio-Alto-Pirmide_galeria_1_492_na.png",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioAltoPirmide/Besalco_Condominio-Alto-Pirmide_galeria_1_492_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioAltoPirmide/Besalco_Condominio-Alto-Pirmide_galeria_2_492_na.png",
@@ -3929,13 +3917,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioAltoPirmide/Besalco_Condominio-Alto-Pirmide_galeria_4_492_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioAltoPirmide/Besalco_Condominio-Alto-Pirmide_galeria_5_492_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Alto Hospicio con DS19, Besalco, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/492/condominio-alto-piramide"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "altos-de-buin",
@@ -4021,33 +4021,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/523/condominio-altos-de-san-ramon"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl: metro El Bosque. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominioAltosdeSanRamn/Inmobiliaria-Pocuro_Condominio-Altos-de-San-Ramn_galeria_1_523_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Coquimbo"
-    },
-    "lat": -29.9531851,
-    "lng": -71.3379503,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
+    "lat": -29.983248,
+    "lng": -71.222095,
+    "address": "Avenida El Bosque",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, Inmobiliaria Pocuro, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominioAltosdeSanRamn/Inmobiliaria-Pocuro_Condominio-Altos-de-San-Ramn_galeria_1_523_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominioAltosdeSanRamn/Inmobiliaria-Pocuro_Condominio-Altos-de-San-Ramn_galeria_1_523_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominioAltosdeSanRamn/Inmobiliaria-Pocuro_Condominio-Altos-de-San-Ramn_galeria_2_523_na.jpg",
@@ -4056,14 +4044,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominioAltosdeSanRamn/Inmobiliaria-Pocuro_Condominio-Altos-de-San-Ramn_galeria_5_523_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominioAltosdeSanRamn/Inmobiliaria-Pocuro_Condominio-Altos-de-San-Ramn_galeria_6_523_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, Inmobiliaria Pocuro, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho",
       "Cancha"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/523/condominio-altos-de-san-ramon"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-464-condominio-arboleda",
@@ -4084,33 +4084,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/464/condominio-arboleda"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioArboleda/Inmobiliaria-Nuevavida_Condominio-Arboleda_galeria_1_464_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
-    "lat": -38.7358908,
-    "lng": -72.590538,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -38.716045,
+    "lng": -72.658507,
+    "address": "Los Educadores 235",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Temuco con DS19, Inmobiliaria Nuevavida, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioArboleda/Inmobiliaria-Nuevavida_Condominio-Arboleda_galeria_1_464_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioArboleda/Inmobiliaria-Nuevavida_Condominio-Arboleda_galeria_1_464_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioArboleda/Inmobiliaria-Nuevavida_Condominio-Arboleda_galeria_2_464_na.jpg",
@@ -4118,20 +4106,32 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioArboleda/Inmobiliaria-Nuevavida_Condominio-Arboleda_galeria_4_464_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioArboleda/Inmobiliaria-Nuevavida_Condominio-Arboleda_galeria_5_464_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Temuco con DS19, Inmobiliaria Nuevavida, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho",
       "BBQ / parrilla"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/464/condominio-arboleda"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-247-condominio-ayelen-poniente",
     "name": "Condominio AyElen Poniente",
     "developer": "Río Baker",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Quillota",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -4146,10 +4146,31 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5",
+    "lat": -32.882184,
+    "lng": -71.241532,
+    "address": "Calle 21 de mayo",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioAylenPoniente/Condominio-Aylen-Poniente_galeria_1_247_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioAylenPoniente/Condominio-Aylen-Poniente_galeria_1_247_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioAylenPoniente/Condominio-Aylen-Poniente_galeria_2_247_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Río Baker, departamentos con 2 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -4157,35 +4178,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioAylenPoniente/Condominio-Aylen-Poniente_galeria_1_247_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quillota"
-    },
-    "lat": -32.879997,
-    "lng": -71.2473555,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Río Baker, departamentos con 2 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioAylenPoniente/Condominio-Aylen-Poniente_galeria_1_247_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioAylenPoniente/Condominio-Aylen-Poniente_galeria_2_247_na.webp"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "borinquen-vina",
@@ -4206,10 +4206,32 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren",
+    "lat": -33.0244535,
+    "lng": -71.5517636,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://proyectos.ilossilos.cl/wp-content/uploads/2025/07/condominio-borinquen-oficinas.jpg",
+    "images": [
+      "https://proyectos.ilossilos.cl/wp-content/uploads/2025/07/condominio-borinquen-oficinas.jpg",
+      "https://ilossilos.cl/wp-content/uploads/2023/04/Altos-de-Copiapo-los-silos.jpg",
+      "https://ilossilos.cl/wp-content/uploads/2025/01/Imagen-Destacada_-1.jpg",
+      "https://ilossilos.cl/wp-content/uploads/2023/04/card-borinquen-entrega-inmediata-800x800.jpg",
+      "https://ilossilos.cl/wp-content/uploads/2026/08/20260819-elmanzano-800x800.jpg",
+      "https://ilossilos.cl/wp-content/uploads/2023/04/ultimas-unidades-trebol-1-800x800.jpg",
+      "https://ilossilos.cl/wp-content/uploads/2026/04/el-trebol-II-card-1-800x800.jpg"
+    ],
+    "description": "Encuentra los proyectos con subsidio DS19 ofrecidos por Inmobiliaria Los Silos. Te ayudamos a obtener tu casa o departamento propio.",
+    "amenities": [],
     "sources": [
       {
         "portal": "enlace",
@@ -4221,7 +4243,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Los Silos. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://proyectos.ilossilos.cl/wp-content/uploads/2025/07/condominio-borinquen-oficinas.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -4229,28 +4250,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Viña del Mar"
-    },
-    "lat": -33.0244535,
-    "lng": -71.5517636,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Encuentra los proyectos con subsidio DS19 ofrecidos por Inmobiliaria Los Silos. Te ayudamos a obtener tu casa o departamento propio.",
-    "images": [
-      "https://proyectos.ilossilos.cl/wp-content/uploads/2025/07/condominio-borinquen-oficinas.jpg",
-      "https://ilossilos.cl/wp-content/uploads/2023/04/Altos-de-Copiapo-los-silos.jpg",
-      "https://ilossilos.cl/wp-content/uploads/2025/01/Imagen-Destacada_-1.jpg",
-      "https://ilossilos.cl/wp-content/uploads/2023/04/card-borinquen-entrega-inmediata-800x800.jpg",
-      "https://ilossilos.cl/wp-content/uploads/2026/08/20260819-elmanzano-800x800.jpg",
-      "https://ilossilos.cl/wp-content/uploads/2023/04/ultimas-unidades-trebol-1-800x800.jpg",
-      "https://ilossilos.cl/wp-content/uploads/2026/04/el-trebol-II-card-1-800x800.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Viña del Mar",
-    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
-    "accessMode": "metrotren"
+    }
   },
   {
     "id": "uts-condominio-brisas-de-maitenes",
@@ -4271,10 +4271,28 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 58.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
+    "lat": -29.902705,
+    "lng": -71.2519575,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-03-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": null,
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -4282,7 +4300,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 58,11 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -4290,24 +4307,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:La Serena"
-    },
-    "lat": -29.902705,
-    "lng": -71.2519575,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 58.1,
-    "description": null,
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-03-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "carlos-condell",
@@ -4376,7 +4376,7 @@ export const catalog = [
     "id": "sub-334-condominio-carmen-bascunan",
     "name": "Condominio Carmen Bascuñan",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Villa Alemana",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -4391,10 +4391,32 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
+    "lat": -33.071886,
+    "lng": -71.370518,
+    "address": "Mart\\u00edn Rivas 3409",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_2_334_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_2_334_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_3_334_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_4_334_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_5_334_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Villa Alemana con DS19, Conavicoop, departamentos con 2 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -4402,36 +4424,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_2_334_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:villa-alemana"
-    },
-    "lat": -33.0441903,
-    "lng": -71.3725464,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Villa Alemana con DS19, Conavicoop, departamentos con 2 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_2_334_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_3_334_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_4_334_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioCarmenBascuan/Conavicoop_Condominio-Carmen-Bascuan_galeria_5_334_na.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-casas-patronales",
@@ -4515,33 +4515,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-amancay-etapa-1"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/13/20240829010801TbZ5tnwJlav6i4R.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
     "lat": -29.986005917896257,
     "lng": -71.26002562714703,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/13/20240829010801TbZ5tnwJlav6i4R.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/13/20240829010801TbZ5tnwJlav6i4R.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/13/20240826012222JQMKFWuQ89Dca8G.jpg",
@@ -4550,15 +4538,27 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/13/featured-plugins/20240821033621YuCmgb6oMpSyOwB.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/13/featured-plugins/20240821033621AQcAzYxpHtqi5vf.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-amancay-etapa-1"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "ecomac-condominio-cerro-amancay-etapa-2",
@@ -4579,33 +4579,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-amancay-etapa-2"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/123/20240829010801TbZ5tnwJlav6i4R.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
     "lat": -29.986005917896257,
     "lng": -71.26002562714703,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/123/20240829010801TbZ5tnwJlav6i4R.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/123/20240829010801TbZ5tnwJlav6i4R.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/123/20240826012222JQMKFWuQ89Dca8G.jpg",
@@ -4614,15 +4602,27 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/123/featured-plugins/20240821033621YuCmgb6oMpSyOwB.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/123/featured-plugins/20240821033621AQcAzYxpHtqi5vf.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-amancay-etapa-2"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "ecomac-condominio-cerro-mamalluca-faldeos-del-cerro-grande-iii",
@@ -4643,33 +4643,21 @@ export const catalog = [
     "bathroomsMax": 3,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-mamalluca-faldeos-del-cerro-grande-iii"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/16/20260619111434IodBU75rSTEd3ct.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
     "lat": -29.931624774980524,
     "lng": -71.23694202365188,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/16/20260619111434IodBU75rSTEd3ct.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/16/20260619111434IodBU75rSTEd3ct.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/16/20260529021735f2OIgf7khF9oQjZ.png",
@@ -4678,13 +4666,25 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/16/featured-plugins/20250217033446JQ2bidWkgVTRp9k.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/16/featured-plugins/20250217033446WkBV1263JEscF2o.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-mamalluca-faldeos-del-cerro-grande-iii"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "ecomac-condominio-cerro-paranao-faldeos-del-cerro-grande-iii",
@@ -4705,33 +4705,21 @@ export const catalog = [
     "bathroomsMax": 3,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-paranao-faldeos-del-cerro-grande-iii"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/17/20251013125832Dw0b0ILVuOvHHxI.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
     "lat": -29.931624774980524,
     "lng": -71.23694202365188,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/17/20251013125832Dw0b0ILVuOvHHxI.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/17/20251013125832Dw0b0ILVuOvHHxI.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/17/20260630091545uegle4CpV7QskHm.png",
@@ -4740,13 +4728,25 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/17/featured-plugins/20250217033446JQ2bidWkgVTRp9k.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/17/featured-plugins/20250217033446WkBV1263JEscF2o.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-paranao-faldeos-del-cerro-grande-iii"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "ecomac-condominio-cerro-tamaya-faldeos-del-cerro-grande-iii",
@@ -4767,33 +4767,21 @@ export const catalog = [
     "bathroomsMax": 3,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-tamaya-faldeos-del-cerro-grande-iii"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/18/20260630054808anmHOondWzt6D1y.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
     "lat": -29.931624774980524,
     "lng": -71.23694202365188,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/18/20260630054808anmHOondWzt6D1y.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/18/20260630054808anmHOondWzt6D1y.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/18/202605290218505aHeFOLvnpQAyo1.png",
@@ -4802,13 +4790,25 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/18/featured-plugins/20250217033446JQ2bidWkgVTRp9k.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/18/featured-plugins/20250217033446WkBV1263JEscF2o.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/condominio-cerro-tamaya-faldeos-del-cerro-grande-iii"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-conjunto-residencial-costa-pacifico",
@@ -4887,33 +4887,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/cumbres-del-bosque"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/19/20240827051210fOFxHzlJWKIoT12.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
     "lat": -29.973305458626353,
     "lng": -71.2473813300579,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/19/20240827051210fOFxHzlJWKIoT12.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/19/20240827051210fOFxHzlJWKIoT12.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/19/20240826012244KiQCwdNjlaCSGNi.jpg",
@@ -4922,16 +4910,28 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/19/featured-plugins/20240607030444879e7D0YcCr9NYD.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/19/featured-plugins/20240610062905tgG81ZeihCcHXxK.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/cumbres-del-bosque"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "bci-8571-condominio-curamapu",
@@ -5017,10 +5017,28 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": "Lo Prado",
     "metroLine": "L5",
     "metroWalkMin": 22,
     "connectivityScore": 3,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.400207,
+    "lng": -70.716248,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/CondominioDonFrancisco/Comosa-Gestin-Inmobiliaria_Condominio-Don-Francisco_galeria_1_398_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/CondominioDonFrancisco/Comosa-Gestin-Inmobiliaria_Condominio-Don-Francisco_galeria_1_398_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Renca con DS19, Comosa Gestión Inmobiliaria, departamentos con 1 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -5028,32 +5046,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/CondominioDonFrancisco/Comosa-Gestin-Inmobiliaria_Condominio-Don-Francisco_galeria_1_398_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Renca"
-    },
-    "lat": -33.4036212,
-    "lng": -70.7310176,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Renca con DS19, Comosa Gestión Inmobiliaria, departamentos con 1 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/CondominioDonFrancisco/Comosa-Gestin-Inmobiliaria_Condominio-Don-Francisco_galeria_1_398_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "silos-condominio-don-gaspar",
@@ -5187,7 +5187,7 @@ export const catalog = [
     "id": "sub-93-condominio-dona-agustina",
     "name": "Condominio Doña Agustina",
     "developer": "Malpo",
-    "region": "Metropolitana",
+    "region": "Maule",
     "comuna": "Linares",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -5202,10 +5202,30 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Linares",
+    "accessDetail": "Corredor 5 Sur · buses interurbanos",
+    "accessMode": "ruta5",
+    "lat": -35.844502,
+    "lng": -71.573868,
+    "address": "Av. Presidente Ib\\u00e1\\u00f1ez S/N",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/CondominioDoaAgustina/Condominio-Doa-Agustina_galeria_1_93_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/CondominioDoaAgustina/Condominio-Doa-Agustina_galeria_1_93_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/CondominioDoaAgustina/Condominio-Doa-Agustina_galeria_2_93_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/CondominioDoaAgustina/Condominio-Doa-Agustina_galeria_3_93_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Linares con DS01, Inmobiliaria Malpo, departamentos con 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -5213,34 +5233,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/CondominioDoaAgustina/Condominio-Doa-Agustina_galeria_1_93_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Linares"
-    },
-    "lat": -35.8452905,
-    "lng": -71.5977173,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Linares con DS01, Inmobiliaria Malpo, departamentos con 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/CondominioDoaAgustina/Condominio-Doa-Agustina_galeria_1_93_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/CondominioDoaAgustina/Condominio-Doa-Agustina_galeria_2_93_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMalpo/CondominioDoaAgustina/Condominio-Doa-Agustina_galeria_3_93_na.webp"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "aitue-condominio-dona-josefina",
@@ -5261,33 +5261,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "aitue",
-        "url": "https://www.aitue.cl/propiedades-departamentos/condominio-dona-josefina/chiguayante/"
-      }
-    ],
-    "notes": "Importado desde Aitue",
-    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2026/05/josefina.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Chiguayante",
+    "accessDetail": "Estación Biotrén en la comuna",
+    "accessMode": "biotren",
     "lat": -36.94700227,
     "lng": -73.01608086,
     "address": null,
     "contactPhone": "+56971380833",
     "contactWhatsapp": "https://wa.me/56971380833",
-    "areaM2": null,
-    "description": "Moverte con calma y libertadDisfruta de un entorno con un diseño vial fluido, accesos despejados y la tranquilidad de contar siempre con un espacio cómodo y seguro esperándote.",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2026/05/josefina.png",
     "images": [
       "https://www.aitue.cl/wp-content/uploads/2026/05/josefina.png",
       "https://www.aitue.cl/wp-content/uploads/2026/05/BANNER-WEB_IVA_AITUE-1.jpg",
@@ -5296,6 +5284,7 @@ export const catalog = [
       "https://www.aitue.cl/wp-content/uploads/2022/12/linkedin.png",
       "https://www.aitue.cl/wp-content/uploads/2022/12/insta.png"
     ],
+    "description": "Moverte con calma y libertadDisfruta de un entorno con un diseño vial fluido, accesos despejados y la tranquilidad de contar siempre con un espacio cómodo y seguro esperándote.",
     "amenities": [
       "Piscina",
       "Quincho",
@@ -5308,10 +5297,21 @@ export const catalog = [
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Chiguayante",
-    "accessDetail": "Estación Biotrén en la comuna",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/condominio-dona-josefina/chiguayante/"
+      }
+    ],
+    "notes": "Importado desde Aitue",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-dona-sofia",
@@ -5332,33 +5332,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 67.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-dona-sofia/"
-      }
-    ],
-    "notes": "Ficha UTS: 67,58 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-224-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:quilpue"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Quilpué",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
     "lat": -33.0498135,
     "lng": -71.4415282,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 67.6,
-    "description": "Condominio Doña Sofía es una excelente alternativa para quienes buscan vivienda propia con respaldo estatal, en un entorno tranquilo, bien conectado y con equipamiento que mejora la vida diaria. Ubica…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-224-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/2-224-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/5-193-1024x768.jpg",
@@ -5366,6 +5354,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/1-234-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/3-217-1024x768.jpg"
     ],
+    "description": "Condominio Doña Sofía es una excelente alternativa para quienes buscan vivienda propia con respaldo estatal, en un entorno tranquilo, bien conectado y con equipamiento que mejora la vida diaria. Ubica…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
@@ -5374,10 +5363,21 @@ export const catalog = [
       "Máquinas deportivas",
       "Bicicleteros"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Quilpué",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-dona-sofia/"
+      }
+    ],
+    "notes": "Ficha UTS: 67,58 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:quilpue"
+    }
   },
   {
     "id": "aitue-condominio-dona-sofia",
@@ -5398,33 +5398,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "aitue",
-        "url": "https://www.aitue.cl/propiedades-departamentos/condominio-dona-sofia/talcahuano/"
-      }
-    ],
-    "notes": "Importado desde Aitue",
-    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2026/06/sofia.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Talcahuano",
+    "accessDetail": "Estaciones Biotrén en la comuna",
+    "accessMode": "biotren",
     "lat": -36.76016207,
     "lng": -73.09818864,
     "address": null,
     "contactPhone": "+56934224811",
     "contactWhatsapp": "https://wa.me/56934224811",
-    "areaM2": null,
-    "description": "Espacio y libertad en todo tu condominio Descubre la comodidad de vivir en un proyecto con amplias áreas de circulación, estacionamientos cómodos y espacios comunes diseñados para que te muevas con total libertad y tranquilidad.",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2026/06/sofia.png",
     "images": [
       "https://www.aitue.cl/wp-content/uploads/2026/06/sofia.png",
       "https://www.aitue.cl/wp-content/uploads/2026/06/BANNER-HOME-SOFIA-AITUE.png",
@@ -5433,6 +5421,7 @@ export const catalog = [
       "https://www.aitue.cl/wp-content/uploads/2022/12/linkedin.png",
       "https://www.aitue.cl/wp-content/uploads/2022/12/insta.png"
     ],
+    "description": "Espacio y libertad en todo tu condominio Descubre la comodidad de vivir en un proyecto con amplias áreas de circulación, estacionamientos cómodos y espacios comunes diseñados para que te muevas con total libertad y tranquilidad.",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
@@ -5446,10 +5435,21 @@ export const catalog = [
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Talcahuano",
-    "accessDetail": "Estaciones Biotrén en la comuna",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/condominio-dona-sofia/talcahuano/"
+      }
+    ],
+    "notes": "Importado desde Aitue",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "silos-condominio-el-manzano",
@@ -5785,10 +5785,32 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Limache",
+    "accessDetail": "Terminal de la línea Metrotren",
+    "accessMode": "metrotren",
+    "lat": -32.877571,
+    "lng": -71.263504,
+    "address": "Esmeralda 352, Limache.",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioEsmeralda/Condominio-Esmeralda_galeria_1_249_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioEsmeralda/Condominio-Esmeralda_galeria_1_249_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioEsmeralda/Condominio-Esmeralda_galeria_2_249_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioEsmeralda/Condominio-Esmeralda_galeria_3_249_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Limache con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -5796,36 +5818,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioEsmeralda/Condominio-Esmeralda_galeria_1_249_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:limache"
-    },
-    "lat": -33.0018741,
-    "lng": -71.2657315,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Limache con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioEsmeralda/Condominio-Esmeralda_galeria_1_249_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioEsmeralda/Condominio-Esmeralda_galeria_2_249_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioEsmeralda/Condominio-Esmeralda_galeria_3_249_na.webp"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Limache",
-    "accessDetail": "Terminal de la línea Metrotren",
-    "accessMode": "metrotren"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "silos-condominio-estancia-norte-quilicura",
@@ -5910,33 +5910,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 66,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-fernando-monckberg/"
-      }
-    ],
-    "notes": "Ficha UTS: 66 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-254-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quillota"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5",
     "lat": -32.879997,
     "lng": -71.2473555,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 66,
-    "description": "Condominio Fernando Monckeberg es un proyecto habitacional acogido al Subsidio DS19. Está compuesto por 6 torres de 5 pisos y ofrece departamentos diseñados para brindar comodidad, funcionalidad y esp…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-254-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-254-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-185-1024x768.jpg",
@@ -5945,14 +5933,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/3-237-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-244-1024x768.jpg"
     ],
+    "description": "Condominio Fernando Monckeberg es un proyecto habitacional acogido al Subsidio DS19. Está compuesto por 6 torres de 5 pisos y ofrece departamentos diseñados para brindar comodidad, funcionalidad y esp…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Quillota",
-    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-fernando-monckberg/"
+      }
+    ],
+    "notes": "Ficha UTS: 66 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Quillota"
+    }
   },
   {
     "id": "bci-9516-condominio-francisco-zelada-torre-a",
@@ -6039,33 +6039,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 47.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-fuchslocher-oriente/"
-      }
-    ],
-    "notes": "Ficha UTS: 47,39 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-217-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Osorno"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5",
     "lat": -40.5736955,
     "lng": -73.1358091,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 47.4,
-    "description": "Una oportunidad única para quienes buscan su primera vivienda en un entorno tranquilo, bien conectado y con respaldo estatal.Condominio Fuchslocher Oriente combina calidad, diseño y naturaleza, con de…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-217-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-217-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mapa-2-1024x768.png",
@@ -6074,14 +6062,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Depto-509A-1200x900-1-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Depto-508B-1200x900-1-1024x768.jpg"
     ],
+    "description": "Una oportunidad única para quienes buscan su primera vivienda en un entorno tranquilo, bien conectado y con respaldo estatal.Condominio Fuchslocher Oriente combina calidad, diseño y naturaleza, con de…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Osorno",
-    "accessDetail": "Corredor 5 Sur · terminal de buses",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-fuchslocher-oriente/"
+      }
+    ],
+    "notes": "Ficha UTS: 47,39 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Osorno"
+    }
   },
   {
     "id": "gran-avenida",
@@ -6180,33 +6180,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/404/condominio-ingeniero-enrique-tirapegui"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioIngenieroEnriqueTirapegui/Conavicoop_Condominio-Ingeniero-Enrique-Tirapegui_galeria_1_404_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Concepción"
-    },
-    "lat": -36.8270698,
-    "lng": -73.0502064,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren",
+    "lat": -36.82862,
+    "lng": -73.050103,
+    "address": "Caupolic\\u00e1n 325",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Concepción con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioIngenieroEnriqueTirapegui/Conavicoop_Condominio-Ingeniero-Enrique-Tirapegui_galeria_1_404_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioIngenieroEnriqueTirapegui/Conavicoop_Condominio-Ingeniero-Enrique-Tirapegui_galeria_1_404_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioIngenieroEnriqueTirapegui/Conavicoop_Condominio-Ingeniero-Enrique-Tirapegui_galeria_2_404_na.jpg",
@@ -6214,13 +6202,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioIngenieroEnriqueTirapegui/Conavicoop_Condominio-Ingeniero-Enrique-Tirapegui_galeria_4_404_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/CondominioIngenieroEnriqueTirapegui/Conavicoop_Condominio-Ingeniero-Enrique-Tirapegui_galeria_5_404_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Concepción con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Concepción",
-    "accessDetail": "Red Biotrén + micros · terminal Collao",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/404/condominio-ingeniero-enrique-tirapegui"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-jardin-los-volcanes",
@@ -6241,10 +6241,35 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "Entrega inmediata",
+    "areaM2": 65,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5",
+    "lat": -40.5736955,
+    "lng": -73.1358091,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-204-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/2-204-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/4-191-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/3-200-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/1-93-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/2-86-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/3-81-1024x768.jpg"
+    ],
+    "description": "Jardín Los Volcanes – Departamentos DS19 en Osorno Jardín Los Volcanes es un proyecto habitacional ubicado en la comuna de Osorno, Región de Los Lagos, diseñado para familias que buscan acceder a una …",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Áreas verdes"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -6256,7 +6281,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 65 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-204-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
@@ -6264,31 +6288,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Osorno"
-    },
-    "lat": -40.5736955,
-    "lng": -73.1358091,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 65,
-    "description": "Jardín Los Volcanes – Departamentos DS19 en Osorno Jardín Los Volcanes es un proyecto habitacional ubicado en la comuna de Osorno, Región de Los Lagos, diseñado para familias que buscan acceder a una …",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/2-204-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/4-191-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/3-200-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/1-93-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/2-86-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/3-81-1024x768.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Áreas verdes"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Osorno",
-    "accessDetail": "Corredor 5 Sur · terminal de buses",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "ecomac-jardines-del-pacifico-v",
@@ -6309,33 +6309,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/jardines-del-pacifico-v"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/43/20260206111106kdcuj9n6Doi9xh7.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
     "lat": -29.899108474892813,
     "lng": -71.27201898901275,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/43/20260206111106kdcuj9n6Doi9xh7.png",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/43/20260206111106kdcuj9n6Doi9xh7.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/43/20260122085558AsD6646g9XdYgEk.jpg",
@@ -6344,15 +6332,27 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/43/featured-plugins/2026012208564502YgmqKDUDoBP3U.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/43/featured-plugins/202601220856450jL9r5AgOQvEUkr.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/jardines-del-pacifico-v"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-javieracarrera",
@@ -6373,33 +6373,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 65.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-javieracarrera/"
-      }
-    ],
-    "notes": "Ficha UTS: 65.78 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -38.7358908,
     "lng": -72.590538,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 65.8,
-    "description": "Departamentos emplazados en Avda. Javiera Carrera, muy cerca de Avda. Alemania. Expedita conectividad con distintos sectores de la ciudad. Cercano a colegios, universidades, supermercados y centros co…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-02-Vitrina-UTS-1024x768.jpg",
@@ -6408,11 +6396,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-07-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Departamentos emplazados en Avda. Javiera Carrera, muy cerca de Avda. Alemania. Expedita conectividad con distintos sectores de la ciudad. Cercano a colegios, universidades, supermercados y centros co…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-javieracarrera/"
+      }
+    ],
+    "notes": "Ficha UTS: 65.78 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Temuco"
+    }
   },
   {
     "id": "uts-condominio-la-estrella-8540",
@@ -6626,33 +6626,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 58.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-la-reserva-1/"
-      }
-    ],
-    "notes": "Ficha UTS: 58,93 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-292-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Antofagasta"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses",
     "lat": -23.6463741,
     "lng": -70.3980033,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 58.9,
-    "description": "Explora Condominio La Reserva Etapa 1, un destacado proyecto de Integración Social desarrollado por Echeverría Izquierdo, situado en la innovadora extensión urbana de Alto La Chimba. Este condominio n…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-292-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-292-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-183-1024x768.jpg",
@@ -6661,14 +6649,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/7-122-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-82-1024x768.jpg"
     ],
+    "description": "Explora Condominio La Reserva Etapa 1, un destacado proyecto de Integración Social desarrollado por Echeverría Izquierdo, situado en la innovadora extensión urbana de Alto La Chimba. Este condominio n…",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
-    "accessDetail": "Capital regional · terminal de buses",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-la-reserva-1/"
+      }
+    ],
+    "notes": "Ficha UTS: 58,93 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Antofagasta"
+    }
   },
   {
     "id": "bci-5819-condominio-las-brisas-2",
@@ -6737,7 +6737,7 @@ export const catalog = [
     "id": "sub-506-condominio-las-golondrinas",
     "name": "Condominio Las Golondrinas",
     "developer": "PY",
-    "region": "Metropolitana",
+    "region": "Los Lagos",
     "comuna": "Puerto Varas",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -6752,10 +6752,32 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Buses · Puerto Varas / acceso Puerto Montt",
+    "accessDetail": "Micros y buses · cerca del eje 5 Sur",
+    "accessMode": "buses",
+    "lat": -41.338836,
+    "lng": -72.96956,
+    "address": "Avenida Centenario",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_1_506_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_1_506_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_2_506_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_3_506_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_4_506_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_5_506_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Puerto Varas con DS19, Inmobiliaria PY, departamentos con 1, 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -6767,36 +6789,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_1_506_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:puerto-varas"
-    },
-    "lat": -41.317802,
-    "lng": -72.9829073,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 60,
-    "description": "Proyecto departamentos ubicados en la comuna Puerto Varas con DS19, Inmobiliaria PY, departamentos con 1, 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_1_506_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_2_506_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_3_506_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_4_506_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/CondominioLasGolondrinas/Inmobiliaria-PY_Condominio-Las-Golondrinas_galeria_5_506_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-251-condominio-las-lobelias",
@@ -6817,10 +6817,32 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren",
+    "lat": -36.723306,
+    "lng": -70.274735,
+    "address": "Francisco Echaurren 614. Placilla, Valpara\\u00edso.",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioLasLobelias/Condominio-Las-Lobelias_galeria_1_251_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioLasLobelias/Condominio-Las-Lobelias_galeria_1_251_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioLasLobelias/Condominio-Las-Lobelias_galeria_4_251_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioLasLobelias/Condominio-Las-Lobelias_galeria_5_251_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Valparaíso con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -6828,36 +6850,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioLasLobelias/Condominio-Las-Lobelias_galeria_1_251_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Valparaíso"
-    },
-    "lat": -33.0458456,
-    "lng": -71.6196749,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Valparaíso con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioLasLobelias/Condominio-Las-Lobelias_galeria_1_251_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioLasLobelias/Condominio-Las-Lobelias_galeria_4_251_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioLasLobelias/Condominio-Las-Lobelias_galeria_5_251_na.webp"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Valparaíso / Puerto",
-    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
-    "accessMode": "metrotren"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-474-condominio-las-pataguas",
@@ -6878,10 +6878,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 1,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.357143,
+    "lng": -70.794221,
+    "address": "Camino Lo Echevers",
+    "contactPhone": "+56981801703",
+    "contactWhatsapp": "https://wa.me/56981801703",
+    "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/laspataguas-6a10ad78ea0704.webp",
+    "images": [
+      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/laspataguas-6a10ad78ea0704.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_1_474_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_2_474_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_3_474_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_4_474_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_5_474_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Lampa con DS19, Inmobiliaria SOCOVESA, departamentos con 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -6893,7 +6916,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/laspataguas-6a10ad78ea0704.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -6901,29 +6923,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
-    },
-    "lat": -33.29492054999367,
-    "lng": -70.86652996292614,
-    "address": null,
-    "contactPhone": "+56981801703",
-    "contactWhatsapp": "https://wa.me/56981801703",
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Lampa con DS19, Inmobiliaria SOCOVESA, departamentos con 3 dormitorios",
-    "images": [
-      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/laspataguas-6a10ad78ea0704.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_1_474_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_2_474_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_3_474_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_4_474_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSOCOVESA/CondominiolasPataguas/Inmobiliaria-SOCOVESA_Condominio-las-Pataguas_galeria_5_474_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    }
   },
   {
     "id": "las-torres-558",
@@ -7007,10 +7007,34 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "Venta en verde",
+    "areaM2": 56.3,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
+    "accessDetail": "Corredor 5 Norte · Atacama",
+    "accessMode": "ruta5",
+    "lat": -27.3664685,
+    "lng": -70.3322753,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Fachada-LO-Nuevo-color-1024x768.webp",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Fachada-LO-Nuevo-color-1024x768.webp",
+      "https://usatusubsidio.com/wp-content/uploads/Fachada-2-LO-Nuevo-color-1024x768.webp",
+      "https://usatusubsidio.com/wp-content/uploads/1-250-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/2-240-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/7-162-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/4-222-1024x768.jpg"
+    ],
+    "description": "Condominio Lickan Oriente se emplaza en un sector estratégico de la ciudad, pensado para quienes buscan un equilibrio entre comodidad, tranquilidad y buena conectividad. Su ubicación permite resolver …",
+    "amenities": [
+      "Quincho",
+      "Áreas verdes"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7022,7 +7046,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 56,3 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Fachada-LO-Nuevo-color-1024x768.webp",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
@@ -7030,30 +7053,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Copiapo"
-    },
-    "lat": -27.3664685,
-    "lng": -70.3322753,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 56.3,
-    "description": "Condominio Lickan Oriente se emplaza en un sector estratégico de la ciudad, pensado para quienes buscan un equilibrio entre comodidad, tranquilidad y buena conectividad. Su ubicación permite resolver …",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Fachada-LO-Nuevo-color-1024x768.webp",
-      "https://usatusubsidio.com/wp-content/uploads/Fachada-2-LO-Nuevo-color-1024x768.webp",
-      "https://usatusubsidio.com/wp-content/uploads/1-250-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/2-240-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/7-162-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/4-222-1024x768.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Áreas verdes"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
-    "accessDetail": "Corredor 5 Norte · Atacama",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "sub-139-condominio-lihuen",
@@ -7074,10 +7074,30 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.165012,
+    "lng": -70.775385,
+    "address": "Camino San Ram\\u00f3n 3781",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioLihuen/ECASA-Inmobiliaria_Condominio-Lihuen_galeria_1_139_na.png",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioLihuen/ECASA-Inmobiliaria_Condominio-Lihuen_galeria_1_139_na.png"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, ECASA Inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -7089,34 +7109,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioLihuen/ECASA-Inmobiliaria_Condominio-Lihuen_galeria_1_139_na.png",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 60.8,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, ECASA Inmobiliaria, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioLihuen/ECASA-Inmobiliaria_Condominio-Lihuen_galeria_1_139_na.png"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "lo-blanco-1361",
@@ -7185,7 +7185,7 @@ export const catalog = [
     "id": "sub-140-condominio-loncopangue",
     "name": "Condominio Loncopangue",
     "developer": "Isiete",
-    "region": "Metropolitana",
+    "region": "La Araucanía",
     "comuna": "Villarrica",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -7200,33 +7200,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/140/condominio-loncopangue"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIsiete/CondominioLoncopangue/Inmobiliaria-Isiete_Condominio-Loncopangue_galeria_10_140_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Villarrica"
-    },
-    "lat": -39.2780911,
-    "lng": -72.2274364,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Villarrica · buses lacustres",
+    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
+    "accessMode": "buses",
+    "lat": -39.305129,
+    "lng": -72.218972,
+    "address": "Segunda Faja Al Volc\\u00e1n Lote B5-6",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Villarrica con DS19, Inmobiliaria Isiete, departamentos con 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIsiete/CondominioLoncopangue/Inmobiliaria-Isiete_Condominio-Loncopangue_galeria_10_140_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIsiete/CondominioLoncopangue/Inmobiliaria-Isiete_Condominio-Loncopangue_galeria_10_140_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIsiete/CondominioLoncopangue/Inmobiliaria-Isiete_Condominio-Loncopangue_galeria_6_140_na.webp",
@@ -7235,15 +7223,27 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIsiete/CondominioLoncopangue/Inmobiliaria-Isiete_Condominio-Loncopangue_galeria_9_140_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIsiete/CondominioLoncopangue/Inmobiliaria-Isiete_Condominio-Loncopangue_galeria_11_140_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Villarrica con DS19, Inmobiliaria Isiete, departamentos con 2 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho",
       "Gimnasio"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/140/condominio-loncopangue"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-los-arrayanes",
@@ -7264,10 +7264,36 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega inmediata",
+    "areaM2": 58,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
+    "lat": -29.902705,
+    "lng": -71.2519575,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/9-96-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/9-96-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/1-212-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/4-193-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/5-181-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/6-158-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/7-139-1024x768.jpg"
+    ],
+    "description": "Condominio Los Arrayanes te invita a disfrutar de un estilo de vida equilibrado, en un sector privilegiado de la ciudad, ideal para quienes buscan tranquilidad, buena conectividad y un entorno pensado…",
+    "amenities": [
+      "Quincho",
+      "Sala de eventos",
+      "Juegos infantiles",
+      "Áreas verdes"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7279,7 +7305,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 58 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/9-96-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
@@ -7287,32 +7312,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:La Serena"
-    },
-    "lat": -29.902705,
-    "lng": -71.2519575,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 58,
-    "description": "Condominio Los Arrayanes te invita a disfrutar de un estilo de vida equilibrado, en un sector privilegiado de la ciudad, ideal para quienes buscan tranquilidad, buena conectividad y un entorno pensado…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/9-96-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/1-212-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/4-193-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/5-181-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/6-158-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/7-139-1024x768.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Sala de eventos",
-      "Juegos infantiles",
-      "Áreas verdes"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "uts-condominio-los-avellanos",
@@ -7333,33 +7333,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-los-avellanos/"
-      }
-    ],
-    "notes": "Ficha UTS: 56 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -38.7358908,
     "lng": -72.590538,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 56,
-    "description": "Condominio Los Avellanos se encuentra ubicado a orillas del Barrio Los Pablos y del Río Cautin. Naturaleza y el mejor equipamiento (a minutos del Jumbo Los Pablos) en un barrio con gran proyección, de…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-04-Vitrina-UTS-1024x768.jpg",
@@ -7368,11 +7356,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-03-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Condominio Los Avellanos se encuentra ubicado a orillas del Barrio Los Pablos y del Río Cautin. Naturaleza y el mejor equipamiento (a minutos del Jumbo Los Pablos) en un barrio con gran proyección, de…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-los-avellanos/"
+      }
+    ],
+    "notes": "Ficha UTS: 56 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Temuco"
+    }
   },
   {
     "id": "sub-481-condominio-los-cipreses",
@@ -7393,33 +7393,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/481/condominio-los-cipreses-vii"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominiolosCipreses/Inmobiliaria-Pocuro_Condominio-los-Cipreses_galeria_10_481_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Bernardo"
-    },
-    "lat": -33.5922859,
-    "lng": -70.7045838,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.606053,
+    "lng": -70.683114,
+    "address": "Cam. Padre Hurtado 16153",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Bernardo con DS19, Inmobiliaria Pocuro, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominiolosCipreses/Inmobiliaria-Pocuro_Condominio-los-Cipreses_galeria_10_481_na.png",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominiolosCipreses/Inmobiliaria-Pocuro_Condominio-los-Cipreses_galeria_10_481_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPocuro/CondominiolosCipresesVII/Inmobiliaria-Pocuro_Condominio-los-Cipreses-VII_galeria_3_481_na.jpg",
@@ -7429,13 +7417,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominiolosCipreses/Inmobiliaria-Pocuro_Condominio-los-Cipreses_galeria_5_481_na.png",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPocuro/CondominiolosCipreses/Inmobiliaria-Pocuro_Condominio-los-Cipreses_galeria_6_481_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Bernardo con DS19, Inmobiliaria Pocuro, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/481/condominio-los-cipreses-vii"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "soco-los-coihues-casas-en-lampa",
@@ -7526,33 +7526,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/los-maitenes"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/55/20240619110420KrRgjEDt9aXR6MZ.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
     "lat": -29.927520889130843,
     "lng": -71.21194140668587,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/55/20240619110420KrRgjEDt9aXR6MZ.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/55/20240619110420KrRgjEDt9aXR6MZ.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/55/20240826011818IB3LB8TrWoM0UZ9.jpg",
@@ -7561,23 +7549,35 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/55/featured-plugins/20240611121710Oq7NO2CdPurNpin.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/55/featured-plugins/20240611121710LIvsdkUnbEdrVNt.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/los-maitenes"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-los-naranjos",
     "name": "Condominio Los Naranjos",
     "developer": "FOURCADE",
     "region": "Biobío",
-    "comuna": "Los Angeles",
+    "comuna": "Los Ángeles",
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
@@ -7591,33 +7591,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-los-naranjos/"
-      }
-    ],
-    "notes": "Ficha UTS: 56.93 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Los Angeles"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5",
     "lat": -37.4707455,
     "lng": -72.351686,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 56.9,
-    "description": "Propiedad Condominio Los Naranjos en Bio Bío.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-02-Vitrina-UTS-1024x768.jpg",
@@ -7626,11 +7614,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-07-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Propiedad Condominio Los Naranjos en Bio Bío.",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
-    "accessDetail": "Corredor 5 Sur · capital provincial",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-los-naranjos/"
+      }
+    ],
+    "notes": "Ficha UTS: 56.93 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Los Angeles"
+    }
   },
   {
     "id": "bci-9597-condominio-los-vinedos-de-tucapel",
@@ -7718,33 +7718,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 52.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-marconi/"
-      }
-    ],
-    "notes": "Ficha UTS: 52,83 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Marconi-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -38.7358908,
     "lng": -72.590538,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 52.8,
-    "description": "Condominio Marconi es un nuevo proyecto con Subsidio DS19 que se encuentra emplazado en Calle Milano esquina Marconi, Temuco. Con excelente locomoción, cercano a Supermercados, Consultorio, colegios y…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Marconi-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Marconi-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Marconi-02-Vitrina-UTS-1024x768.jpg",
@@ -7753,15 +7741,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Marconi-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Marconi-09-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Condominio Marconi es un nuevo proyecto con Subsidio DS19 que se encuentra emplazado en Calle Milano esquina Marconi, Temuco. Con excelente locomoción, cercano a Supermercados, Consultorio, colegios y…",
     "amenities": [
       "Piscina",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-marconi/"
+      }
+    ],
+    "notes": "Ficha UTS: 52,83 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Temuco"
+    }
   },
   {
     "id": "uts-condominio-mirador",
@@ -7782,33 +7782,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-mirador/"
-      }
-    ],
-    "notes": "Ficha UTS: metro Mirador. 56,59 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-262-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Villarica"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Acceso estimado · Ruta 5 Sur",
+    "accessDetail": "Comuna sin ficha detallada",
+    "accessMode": "ruta5",
     "lat": -37.8146462,
     "lng": -72.6992486,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 56.6,
-    "description": "Condominio Mirador es un proyecto de departamentos ubicado en la ciudad de Villarrica, Región de La Araucanía. Está pensado para quienes buscan acceder a una vivienda propia con apoyo estatal, en un e…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-262-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-262-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-249-1024x768.jpg",
@@ -7817,11 +7805,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-188-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-168-1024x768.jpg"
     ],
+    "description": "Condominio Mirador es un proyecto de departamentos ubicado en la ciudad de Villarrica, Región de La Araucanía. Está pensado para quienes buscan acceder a una vivienda propia con apoyo estatal, en un e…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Acceso estimado · Ruta 5 Sur",
-    "accessDetail": "Comuna sin ficha detallada",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-mirador/"
+      }
+    ],
+    "notes": "Ficha UTS: metro Mirador. 56,59 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Villarica"
+    }
   },
   {
     "id": "uts-condominio-mirador-del-rio",
@@ -7842,10 +7842,28 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Chiguayante",
+    "accessDetail": "Estación Biotrén en la comuna",
+    "accessMode": "biotren",
+    "lat": -36.9292478,
+    "lng": -73.0237115,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-03-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Ubicado en el acceso principal de Av. Ocho oriente, rodeado de un entorno natural entre el río Biobío y el cerro Manquimavida. Excelente conectividad con la ciudad de Concepción y comunas como Hualqui…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7853,7 +7871,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: metro Mirador. 59,37 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -7861,24 +7878,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chiguayante"
-    },
-    "lat": -36.9292478,
-    "lng": -73.0237115,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 59.4,
-    "description": "Ubicado en el acceso principal de Av. Ocho oriente, rodeado de un entorno natural entre el río Biobío y el cerro Manquimavida. Excelente conectividad con la ciudad de Concepción y comunas como Hualqui…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-03-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Chiguayante",
-    "accessDetail": "Estación Biotrén en la comuna",
-    "accessMode": "biotren"
+    }
   },
   {
     "id": "condominio-montreal",
@@ -7952,7 +7952,7 @@ export const catalog = [
     "id": "sub-207-condominio-newen",
     "name": "Condominio Newen",
     "developer": "Nuevavida",
-    "region": "Metropolitana",
+    "region": "La Araucanía",
     "comuna": "Villarrica",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -7967,10 +7967,34 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Villarrica · buses lacustres",
+    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
+    "accessMode": "buses",
+    "lat": -39.304527,
+    "lng": -72.2216,
+    "address": "Km. 2 segunda faja al volc\\u00e1n",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_10_207_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_10_207_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_9_207_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_11_207_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_12_207_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_13_207_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_14_207_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Villarrica con DS19, Inmobiliaria Nuevavida, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Piscina",
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -7982,38 +8006,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_10_207_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Villarrica"
-    },
-    "lat": -39.2780911,
-    "lng": -72.2274364,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 56.1,
-    "description": "Proyecto departamentos ubicados en la comuna Villarrica con DS19, Inmobiliaria Nuevavida, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_10_207_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_9_207_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_11_207_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_12_207_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_13_207_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/CondominioNewen/Inmobiliaria-Nuevavida_Condominio-Newen_galeria_14_207_na.jpg"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "soco-condominio-nueva-toledo",
@@ -8034,33 +8034,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega Inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "socovesa",
-        "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-nueva-toledo/"
-      }
-    ],
-    "notes": "Importado desde Socovesa",
-    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/05/Toledo-Miniatura-exterior.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -36.5851157,
     "lng": -72.073736,
     "address": null,
     "contactPhone": "+56927420982",
     "contactWhatsapp": "https://wa.me/56927420982",
-    "areaM2": null,
-    "description": "Casas en venta en Chillán, tres nuevos modelos de casas de 3 dormitorios en la mejor ubicación de Chillán.",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/05/Toledo-Miniatura-exterior.jpg",
     "images": [
       "https://www.socovesa.cl/wp-content/uploads/2022/05/Toledo-Miniatura-exterior.jpg",
       "https://www.socovesa.cl/wp-content/uploads/2022/05/desktop-banner-nueva-toledo.webp",
@@ -8069,6 +8057,7 @@ export const catalog = [
       "https://www.socovesa.cl/wp-content/uploads/2022/05/mobile-banner-secundario-nueva-toledo.webp",
       "https://www.socovesa.cl/wp-content/uploads/2022/05/desktop-nueva-toledo-carrusel-1.webp"
     ],
+    "description": "Casas en venta en Chillán, tres nuevos modelos de casas de 3 dormitorios en la mejor ubicación de Chillán.",
     "amenities": [
       "Piscina",
       "Juegos infantiles",
@@ -8078,10 +8067,21 @@ export const catalog = [
       "3 dormitorios",
       "3 baños"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Chillán",
-    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-nueva-toledo/"
+      }
+    ],
+    "notes": "Importado desde Socovesa",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-ohiggins",
@@ -8102,33 +8102,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-ohiggins/"
-      }
-    ],
-    "notes": "Ficha UTS: 59.73 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/22126.w1600-1024x768.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 59.7,
-    "description": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/22126.w1600-1024x768.webp",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/22126.w1600-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/22125.w1600-1024x768.webp",
@@ -8137,16 +8125,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/22130.w1600-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/22131.w1600-1024x768.webp"
     ],
+    "description": null,
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
       "Máquinas deportivas",
       "Sala multiuso"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-ohiggins/"
+      }
+    ],
+    "notes": "Ficha UTS: 59.73 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "sub-252-condominio-paqari",
@@ -8167,33 +8167,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/252/condominio-paqari"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioPaqari/Condominio-Paqari_galeria_1_252_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Valparaíso"
-    },
-    "lat": -33.0458456,
-    "lng": -71.6196749,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren",
+    "lat": -33.069969,
+    "lng": -71.621933,
+    "address": "San Enrique 1398. Villa Alemana.",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Valparaíso con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioPaqari/Condominio-Paqari_galeria_1_252_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioPaqari/Condominio-Paqari_galeria_1_252_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioPaqari/Condominio-Paqari_galeria_3_252_na.webp",
@@ -8202,22 +8190,34 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioPaqari/Condominio-Paqari_galeria_6_252_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/CondominioPaqari/Condominio-Paqari_galeria_7_252_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Valparaíso con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Valparaíso / Puerto",
-    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/252/condominio-paqari"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-parque-carrera",
     "name": "Condominio Parque Carrera",
     "developer": "Providencia",
     "region": "Biobío",
-    "comuna": "Los Angeles",
+    "comuna": "Los Ángeles",
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
@@ -8231,33 +8231,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-carrera/"
-      }
-    ],
-    "notes": "Ficha UTS: 59,4 m2 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-54-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Los Angeles"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5",
     "lat": -37.4707455,
     "lng": -72.351686,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 59.4,
-    "description": "Vive en un entorno pensado para disfrutar cada día Condominio Parque Carrera es un proyecto de departamentos DS19 ubicado en la ciudad de Los Ángeles, Región del Biobío. Su propuesta combina comodidad…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-54-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-54-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-229-1024x768.jpg",
@@ -8266,15 +8254,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-197-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-213-1024x768.jpg"
     ],
+    "description": "Vive en un entorno pensado para disfrutar cada día Condominio Parque Carrera es un proyecto de departamentos DS19 ubicado en la ciudad de Los Ángeles, Región del Biobío. Su propuesta combina comodidad…",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
-    "accessDetail": "Corredor 5 Sur · capital provincial",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-carrera/"
+      }
+    ],
+    "notes": "Ficha UTS: 59,4 m2 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Los Angeles"
+    }
   },
   {
     "id": "uts-condominio-parque-ciudadano-iii",
@@ -8295,33 +8295,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-ciudadano-iii/"
-      }
-    ],
-    "notes": "Ficha UTS: 63,83 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-261-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 63.8,
-    "description": "Departamentos con subsidio para vivir en Rancagua Condominio Parque Ciudadano III es un proyecto habitacional ubicado en Rancagua, pensado para familias que buscan acceder a una vivienda propia con ap…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-261-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-261-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-251-1024x768.jpg",
@@ -8330,16 +8318,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-216-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-190-1024x768.jpg"
     ],
+    "description": "Departamentos con subsidio para vivir en Rancagua Condominio Parque Ciudadano III es un proyecto habitacional ubicado en Rancagua, pensado para familias que buscan acceder a una vivienda propia con ap…",
     "amenities": [
       "Piscina",
       "Sala de eventos",
       "Juegos infantiles",
       "BBQ / parrilla"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-ciudadano-iii/"
+      }
+    ],
+    "notes": "Ficha UTS: 63,83 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "bci-8843-condominio-parque-del-sur-torre-a",
@@ -8492,33 +8492,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/14/condominio-parque-lourdes"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioParqueLourdes/Inmobiliaria-Icuadra_Condominio-Parque-Lourdes_galeria_13_14_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Valdivia"
-    },
-    "lat": -39.8141262,
-    "lng": -73.2459859,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Valdivia · acceso Ruta 5",
+    "accessDetail": "Capital regional · buses; tren de pasajeros limitado",
+    "accessMode": "buses",
+    "lat": -39.790618,
+    "lng": -73.212011,
+    "address": "Av. Pedro Aguirre Cerda 1581",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Valdivia con DS19, Inmobiliaria Icuadra, departamentos con 1, 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioParqueLourdes/Inmobiliaria-Icuadra_Condominio-Parque-Lourdes_galeria_13_14_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioParqueLourdes/Inmobiliaria-Icuadra_Condominio-Parque-Lourdes_galeria_13_14_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioParqueLourdes/Condominio-Parque-Lourdes_galeria_7_14_na.webp",
@@ -8527,18 +8515,30 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioParqueLourdes/Inmobiliaria-Icuadra_Condominio-Parque-Lourdes_galeria_15_14_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioParqueLourdes/Inmobiliaria-Icuadra_Condominio-Parque-Lourdes_galeria_16_14_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Valdivia con DS19, Inmobiliaria Icuadra, departamentos con 1, 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Valdivia · acceso Ruta 5",
-    "accessDetail": "Capital regional · buses; tren de pasajeros limitado",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/14/condominio-parque-lourdes"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "parque-pehuen",
     "name": "Condominio Parque Pehuén",
-    "developer": "Consultar portal",
+    "developer": "SIP\\u003C\\/p\\u003E\\u003Cp\\u003EAgenda tu visita y descubre p",
     "region": "O'Higgins",
     "comuna": "Rancagua",
     "propertyType": "departamento",
@@ -8556,10 +8556,39 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -33.453801,
+    "lng": -70.742238,
+    "address": "Claudio Arrau 7482",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/CondominioParquePehun/Imsl_Condominio-Parque-Pehun_galeria_9_384_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/CondominioParquePehun/Imsl_Condominio-Parque-Pehun_galeria_9_384_na.jpg",
+      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791155952",
+      "https://www.subsidios.cl/assets/images/letras-banner-donde.webp",
+      "https://www.subsidios.cl/assets/images/letras-banner-aqui.webp",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/pudahuel-mobile.webp?v=1791155952",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/mirador-del-sol-mobile.webp?v=1791155952",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/vertice-mobile.webp?v=1791155952",
+      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791149668"
+    ],
+    "description": "Compra propiedades con subsidio habitacional DS1, DS49 y DS19 en subsidios.cl Te asesoramos durante todo el proceso para encontrar tu próxima vivienda de forma fácil y rápida.",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero",
+      "Cancha"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -8571,43 +8600,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/CondominioParquePehun/Imsl_Condominio-Parque-Pehun_galeria_9_384_na.jpg",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Compra propiedades con subsidio habitacional DS1, DS49 y DS19 en subsidios.cl Te asesoramos durante todo el proceso para encontrar tu próxima vivienda de forma fácil y rápida.",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/CondominioParquePehun/Imsl_Condominio-Parque-Pehun_galeria_9_384_na.jpg",
-      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791149668",
-      "https://www.subsidios.cl/assets/images/letras-banner-donde.webp",
-      "https://www.subsidios.cl/assets/images/letras-banner-aqui.webp",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/pudahuel-mobile.webp?v=1791149668",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/mirador-del-sol-mobile.webp?v=1791149668",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/vertice-mobile.webp?v=1791149668",
-      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791148524"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero",
-      "Cancha"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-parque-pehuen-i",
@@ -8628,33 +8628,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 64.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-pehuen-i/"
-      }
-    ],
-    "notes": "Ficha UTS: 64,74 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/optimized_DJI_0392-1024x1024.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 64.7,
-    "description": "Condominio Parque Pehuén I: departamentos DS19 en Rancagua Condominio Parque Pehuén I es un proyecto de departamentos acogido al subsidio automático DS19, ubicado en Rancagua. Se emplaza en el cruce d…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/optimized_DJI_0392-1024x1024.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/optimized_DJI_0392-1024x1024.jpg",
       "https://usatusubsidio.com/wp-content/uploads/optimized_DJI_0391-1024x1024.jpg",
@@ -8663,16 +8651,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/11-37-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Sin-titulo-1-1-1024x768.jpg"
     ],
+    "description": "Condominio Parque Pehuén I: departamentos DS19 en Rancagua Condominio Parque Pehuén I es un proyecto de departamentos acogido al subsidio automático DS19, ubicado en Rancagua. Se emplaza en el cruce d…",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-parque-pehuen-i/"
+      }
+    ],
+    "notes": "Ficha UTS: 64,74 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "uts-condominio-parque-vistas-de-colina",
@@ -8753,10 +8753,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": 57.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
+    "lat": -29.9531851,
+    "lng": -71.3379503,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-207-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/2-207-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/11-66-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/1-213-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/4-194-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/5-182-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/6-159-1024x768.jpg"
+    ],
+    "description": "Ubicado en una de las principales avenidas de Coquimbo, Condominio Paseo San Carlos VIII es un proyecto pensado para quienes buscan calidad de vida, tranquilidad y excelente conectividad. Su privilegi…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8768,7 +8789,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 57,8 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-207-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
@@ -8776,27 +8796,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
-    },
-    "lat": -29.9531851,
-    "lng": -71.3379503,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 57.8,
-    "description": "Ubicado en una de las principales avenidas de Coquimbo, Condominio Paseo San Carlos VIII es un proyecto pensado para quienes buscan calidad de vida, tranquilidad y excelente conectividad. Su privilegi…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/2-207-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/11-66-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/1-213-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/4-194-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/5-182-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/6-159-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "sub-376-condominio-pilares-de-talca",
@@ -8817,10 +8817,34 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 72,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -35.416987,
+    "lng": -71.606732,
+    "address": "38 Oriente",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_1_376_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_1_376_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_2_376_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_3_376_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_4_376_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_5_376_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_6_376_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Talca con DS19 DS01 Tramo II DS01 Tramo III, Brio Inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Piscina",
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -8832,38 +8856,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_1_376_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Talca"
-    },
-    "lat": -35.4265343,
-    "lng": -71.6660322,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 72,
-    "description": "Proyecto departamentos ubicados en la comuna Talca con DS19 DS01 Tramo II DS01 Tramo III, Brio Inmobiliaria, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_1_376_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_2_376_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_3_376_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_4_376_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_5_376_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/CondominioPilaresdeTalca/Brio-Inmobiliaria_Condominio-Pilares-de-Talca_galeria_6_376_na.jpg"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-pinares",
@@ -8884,33 +8884,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-pinares/"
-      }
-    ],
-    "notes": "Ficha UTS: 60.4 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PINARES-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.4,
-    "description": "El hogar de tus sueños está en Condominio Pinares, un proyecto que le dará a tu familia la calidad de vida que merece. Disfruta la comodidad de vivir en un condominio con un gran equipamiento y cercan…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PINARES-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PINARES-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PINARES-02-Vitrina-UTS-1024x768.jpg",
@@ -8919,14 +8907,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PINARES-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PINARES-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "El hogar de tus sueños está en Condominio Pinares, un proyecto que le dará a tu familia la calidad de vida que merece. Disfruta la comodidad de vivir en un condominio con un gran equipamiento y cercan…",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-pinares/"
+      }
+    ],
+    "notes": "Ficha UTS: 60.4 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "uts-condominio-portal-bonilla",
@@ -8947,33 +8947,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 52.2,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-bonilla/"
-      }
-    ],
-    "notes": "Ficha UTS: 52,23 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Concepción"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren",
     "lat": -36.8270698,
     "lng": -73.0502064,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 52.2,
-    "description": "Condominio Portal Bonilla esta ubicado en uno de los accesos a la ciudad, una ubicación estratégica con conexión a la costa (playas Tome, Dichato, Pingueral, Puerto Talcahuano y salida a ruta Itata o …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-02-Vitrina-UTS-1024x768.jpg",
@@ -8982,11 +8970,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-06-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-05-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Condominio Portal Bonilla esta ubicado en uno de los accesos a la ciudad, una ubicación estratégica con conexión a la costa (playas Tome, Dichato, Pingueral, Puerto Talcahuano y salida a ruta Itata o …",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Concepción",
-    "accessDetail": "Red Biotrén + micros · terminal Collao",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-bonilla/"
+      }
+    ],
+    "notes": "Ficha UTS: 52,23 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Concepción"
+    }
   },
   {
     "id": "uts-condominio-portal-de-tutuquen",
@@ -9007,10 +9007,33 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56.2,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Curicó",
+    "accessDetail": "Corredor 5 Sur · buses a Santiago/sur",
+    "accessMode": "ruta5",
+    "lat": -34.985368,
+    "lng": -71.2393705,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-04-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-03-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Portal de Tutuquen, es un condominio de departamentos con entrega inmediata, ubicado en un entorno natural, tranquilo y residencial. Con movilización a la puerta y cercano a los servicios básicos, est…",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Áreas verdes"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9018,7 +9041,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 56,2 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -9026,29 +9048,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Curicó"
-    },
-    "lat": -34.985368,
-    "lng": -71.2393705,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 56.2,
-    "description": "Portal de Tutuquen, es un condominio de departamentos con entrega inmediata, ubicado en un entorno natural, tranquilo y residencial. Con movilización a la puerta y cercano a los servicios básicos, est…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-04-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-03-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Áreas verdes"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Curicó",
-    "accessDetail": "Corredor 5 Sur · buses a Santiago/sur",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "uts-condominio-portal-del-bosque",
@@ -9069,33 +9069,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-del-bosque/"
-      }
-    ],
-    "notes": "Ficha UTS: metro El Bosque. 59,68 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-pedro-de-la-paz"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren",
     "lat": -36.8414183,
     "lng": -73.1039909,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 59.7,
-    "description": "Proyecto con excelente ubicación con conexión a Concepción y Coronel ,en un barrio consolidado cercano a playa portal san pedro de la paz, estación Biotren Lomas Coloradas y servicios básicos (superme…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-02-Vitrina-UTS-1024x768.jpg",
@@ -9103,11 +9091,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-03-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Proyecto con excelente ubicación con conexión a Concepción y Coronel ,en un barrio consolidado cercano a playa portal san pedro de la paz, estación Biotren Lomas Coloradas y servicios básicos (superme…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · San Pedro de la Paz",
-    "accessDetail": "Estaciones Biotrén / acceso Concepción",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-del-bosque/"
+      }
+    ],
+    "notes": "Ficha UTS: metro El Bosque. 59,68 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:san-pedro-de-la-paz"
+    }
   },
   {
     "id": "uts-condominio-portal-ulriksen",
@@ -9128,33 +9128,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 56.3,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-ulriksen/"
-      }
-    ],
-    "notes": "Ficha UTS: 56.30 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-291-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": false,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:serena-oriente"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
     "lat": -29.9315532,
     "lng": -71.2430449,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 56.3,
-    "description": "Condominio Portal Ulriksen es un proyecto de departamentos ubicado en Sixto Cortés Alcayaga 2570, sector Serena Oriente, comuna de La Serena. Desarrollado por Inmobiliaria Ecomac, está pensado para fa…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-291-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-291-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-282-1024x768.jpg",
@@ -9163,6 +9151,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-247-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-218-1024x768.jpg"
     ],
+    "description": "Condominio Portal Ulriksen es un proyecto de departamentos ubicado en Sixto Cortés Alcayaga 2570, sector Serena Oriente, comuna de La Serena. Desarrollado por Inmobiliaria Ecomac, está pensado para fa…",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
@@ -9176,10 +9165,21 @@ export const catalog = [
       "Áreas verdes.",
       "Acceso controlado las 24 horas."
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-portal-ulriksen/"
+      }
+    ],
+    "notes": "Ficha UTS: 56.30 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": false,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:serena-oriente"
+    }
   },
   {
     "id": "sub-504-condominio-puerta-del-sol",
@@ -9200,33 +9200,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/504/condominio-puerta-del-sol"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioPuertadelSol/Besalco_Condominio-Puerta-del-Sol_galeria_10_504_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Arica"
-    },
-    "lat": -18.4785288,
-    "lng": -70.3211394,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses",
+    "lat": -18.437956,
+    "lng": -70.295215,
+    "address": "Av. Alcalde Santiago Arata Gandolfo 4561",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Arica con DS19, Besalco, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioPuertadelSol/Besalco_Condominio-Puerta-del-Sol_galeria_10_504_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioPuertadelSol/Besalco_Condominio-Puerta-del-Sol_galeria_10_504_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioPuertadelSol/Besalco_Condominio-Puerta-del-Sol_galeria_4_504_na.jpg",
@@ -9236,13 +9224,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioPuertadelSol/Besalco_Condominio-Puerta-del-Sol_galeria_8_504_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Besalco/CondominioPuertadelSol/Besalco_Condominio-Puerta-del-Sol_galeria_9_504_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Arica con DS19, Besalco, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Arica · Ruta 5 Norte",
-    "accessDetail": "Capital regional · terminal internacional/nacional",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/504/condominio-puerta-del-sol"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-419-condominio-quillay",
@@ -9263,33 +9263,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/419/condominio-quillay"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioQuillay/Inmobiliaria-Armas_Condominio-Quillay_galeria_1_419_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Coquimbo"
-    },
-    "lat": -29.9531851,
-    "lng": -71.3379503,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
+    "lat": -30.593357,
+    "lng": -71.192324,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, Inmobiliaria Armas, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioQuillay/Inmobiliaria-Armas_Condominio-Quillay_galeria_1_419_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioQuillay/Inmobiliaria-Armas_Condominio-Quillay_galeria_1_419_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioQuillay/Inmobiliaria-Armas_Condominio-Quillay_galeria_2_419_na.jpg",
@@ -9298,15 +9286,27 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioQuillay/Inmobiliaria-Armas_Condominio-Quillay_galeria_5_419_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioQuillay/Inmobiliaria-Armas_Condominio-Quillay_galeria_6_419_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, Inmobiliaria Armas, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/419/condominio-quillay"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-quillota-21",
@@ -9327,33 +9327,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 58,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-quillota-21/"
-      }
-    ],
-    "notes": "Ficha UTS: 57,96 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1_1200X900-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quillota"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5",
     "lat": -32.879997,
     "lng": -71.2473555,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 58,
-    "description": "Condominio Quillota 21, ubicado en un barrio consolidado con acceso directo a Av. 21 de mayo. Cercano a todo lo que necesitas con una excelente conectividad a comunas de La Cruz y La Calera.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1_1200X900-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1_1200X900-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2_1200X900-1024x768.jpg",
@@ -9362,18 +9350,30 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/PLANTA_A_1200X900-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/PLANTA_B_1200X900-1024x768.jpg"
     ],
+    "description": "Condominio Quillota 21, ubicado en un barrio consolidado con acceso directo a Av. 21 de mayo. Cercano a todo lo que necesitas con una excelente conectividad a comunas de La Cruz y La Calera.",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Quillota",
-    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-quillota-21/"
+      }
+    ],
+    "notes": "Ficha UTS: 57,96 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Quillota"
+    }
   },
   {
     "id": "uts-condominio-quinta-berna",
     "name": "Condominio Quinta Berna",
     "developer": "ECOMAC",
     "region": "Biobío",
-    "comuna": "Los Angeles",
+    "comuna": "Los Ángeles",
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
@@ -9387,10 +9387,35 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega inmediata",
+    "areaM2": 63,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5",
+    "lat": -37.4707455,
+    "lng": -72.351686,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/QUINTA-BERNA-4-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/QUINTA-BERNA-4-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/5-165-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/4-175-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/3-183-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/2-187-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/1-193-1024x768.jpg"
+    ],
+    "description": "Condominio Quinta Berna es un proyecto habitacional acogido al Subsidio DS19, ubicado en la ciudad de Los Ángeles, Región del Biobío. Está pensado para familias que buscan acceder a una vivienda propi…",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Áreas verdes"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9402,7 +9427,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 63 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/QUINTA-BERNA-4-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
@@ -9410,31 +9434,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Los Angeles"
-    },
-    "lat": -37.4707455,
-    "lng": -72.351686,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 63,
-    "description": "Condominio Quinta Berna es un proyecto habitacional acogido al Subsidio DS19, ubicado en la ciudad de Los Ángeles, Región del Biobío. Está pensado para familias que buscan acceder a una vivienda propi…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/QUINTA-BERNA-4-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/5-165-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/4-175-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/3-183-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/2-187-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/1-193-1024x768.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Áreas verdes"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
-    "accessDetail": "Corredor 5 Sur · capital provincial",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "sub-372-condominio-radal",
@@ -9455,33 +9455,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": "Quinta Normal",
     "metroLine": "L5",
     "metroWalkMin": 10,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/372/condominio-radal"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSip/CondominioRadal/Condominio-Radal_galeria_1_372_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quinta Normal"
-    },
-    "lat": -33.4283561,
-    "lng": -70.6999898,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.42225,
+    "lng": -70.702521,
+    "address": "Radal del Obispo Francisco Anabal\\u00f3n Duarte 2148",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Quinta Normal con DS19, Inmobiliaria Sip, departamentos con 1 y 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSip/CondominioRadal/Condominio-Radal_galeria_1_372_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSip/CondominioRadal/Condominio-Radal_galeria_1_372_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSip/CondominioRadal/Condominio-Radal_galeria_2_372_na.webp",
@@ -9490,14 +9478,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSip/CondominioRadal/Condominio-Radal_galeria_5_372_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSip/CondominioRadal/Condominio-Radal_galeria_6_372_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Quinta Normal con DS19, Inmobiliaria Sip, departamentos con 1 y 2 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/372/condominio-radal"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-16-condominio-rahue-centro-i",
@@ -9518,33 +9518,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/16/condominio-rahue-centro-i"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioRahueCentroI/Inmobiliaria-Icuadra_Condominio-Rahue-Centro-I_galeria_10_16_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Osorno"
-    },
-    "lat": -40.5736955,
-    "lng": -73.1358091,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5",
+    "lat": -40.576415,
+    "lng": -73.152337,
+    "address": "Antofagasta 650",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Osorno con DS19 DS01, Inmobiliaria Icuadra, departamentos con 1 y 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioRahueCentroI/Inmobiliaria-Icuadra_Condominio-Rahue-Centro-I_galeria_10_16_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioRahueCentroI/Inmobiliaria-Icuadra_Condominio-Rahue-Centro-I_galeria_10_16_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioRahueCentroI/Inmobiliaria-Icuadra_Condominio-Rahue-Centro-I_galeria_8_16_na.jpg",
@@ -9553,13 +9541,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioRahueCentroI/Inmobiliaria-Icuadra_Condominio-Rahue-Centro-I_galeria_12_16_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/CondominioRahueCentroI/Inmobiliaria-Icuadra_Condominio-Rahue-Centro-I_galeria_13_16_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Osorno con DS19 DS01, Inmobiliaria Icuadra, departamentos con 1 y 2 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Osorno",
-    "accessDetail": "Corredor 5 Sur · terminal de buses",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/16/condominio-rahue-centro-i"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-rayun",
@@ -9580,33 +9580,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 62.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-rayun/"
-      }
-    ],
-    "notes": "Ficha UTS: 62.63 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/accesocontrolado-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:curauma"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren",
     "lat": -33.127419,
     "lng": -71.5696552,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 62.6,
-    "description": "Descubre Condominio Rayún, tu próximo hogar en el corazón de Curauma, una zona que combina la tranquilidad de la naturaleza con la conveniencia de tener todo lo necesario a tu alcance. Ubicado estraté…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/accesocontrolado-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/accesocontrolado-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/areasdeesparcimientos-1024x768.jpg",
@@ -9615,15 +9603,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/juegos-infantiles-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/localescomerciales-1024x768.jpg"
     ],
+    "description": "Descubre Condominio Rayún, tu próximo hogar en el corazón de Curauma, una zona que combina la tranquilidad de la naturaleza con la conveniencia de tener todo lo necesario a tu alcance. Ubicado estraté…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Valparaíso / Puerto",
-    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-rayun/"
+      }
+    ],
+    "notes": "Ficha UTS: 62.63 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:curauma"
+    }
   },
   {
     "id": "uts-condominio-san-cristian",
@@ -9644,33 +9644,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 60.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-san-cristian/"
-      }
-    ],
-    "notes": "Ficha UTS: 60,12 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-4-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": false,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:villa-alemana"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
     "lat": -33.0441903,
     "lng": -71.3725464,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.1,
-    "description": "Condominio San Cristian de Villa Alemana, consta de 118 departamentos, 5 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condominio tiene acceso controlado para la seguridad …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-4-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-4-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-9-4-1024x768.jpg",
@@ -9679,15 +9667,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-2-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-7-3-1024x768.jpg"
     ],
+    "description": "Condominio San Cristian de Villa Alemana, consta de 118 departamentos, 5 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condominio tiene acceso controlado para la seguridad …",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Villa Alemana",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-san-cristian/"
+      }
+    ],
+    "notes": "Ficha UTS: 60,12 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": false,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:villa-alemana"
+    }
   },
   {
     "id": "uts-condominio-san-marcos",
@@ -9708,33 +9708,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 59.2,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-san-marcos/"
-      }
-    ],
-    "notes": "Ficha UTS: 59,21 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-8-1-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": false,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Requinoa"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · Requínoa",
+    "accessDetail": "Acceso 5 Sur vía Rancagua / Rengo",
+    "accessMode": "ruta5",
     "lat": -34.2848586,
     "lng": -70.8175128,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 59.2,
-    "description": "Condominio San Marcos de Requinoa, consta de 66 casas, 4 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condominio tiene acceso controlado para la seguridad de sus residente…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-8-1-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-8-1-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-9-1-1024x768.jpg",
@@ -9743,16 +9731,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-1-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-3-1-1024x768.jpg"
     ],
+    "description": "Condominio San Marcos de Requinoa, consta de 66 casas, 4 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condominio tiene acceso controlado para la seguridad de sus residente…",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes",
       "Cancha"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Cerca Ruta 5 Sur · Requínoa",
-    "accessDetail": "Acceso 5 Sur vía Rancagua / Rengo",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-san-marcos/"
+      }
+    ],
+    "notes": "Ficha UTS: 59,21 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": false,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Requinoa"
+    }
   },
   {
     "id": "uts-condominio-san-rafael",
@@ -9773,33 +9773,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 61.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-san-rafael/"
-      }
-    ],
-    "notes": "Ficha UTS: 61,11 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-265-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:villa-alemana"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
     "lat": -33.0441903,
     "lng": -71.3725464,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 61.1,
-    "description": "Un proyecto pensado para la vida en comunidad Condominio San Rafael es un proyecto de departamentos ubicado en Villa Alemana, Región de Valparaíso. Su propuesta combina seguridad, áreas verdes y espac…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-265-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/3-265-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-283-1024x768.jpg",
@@ -9808,15 +9796,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-237-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-208-1024x768.jpg"
     ],
+    "description": "Un proyecto pensado para la vida en comunidad Condominio San Rafael es un proyecto de departamentos ubicado en Villa Alemana, Región de Valparaíso. Su propuesta combina seguridad, áreas verdes y espac…",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Villa Alemana",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-san-rafael/"
+      }
+    ],
+    "notes": "Ficha UTS: 61,11 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:villa-alemana"
+    }
   },
   {
     "id": "uts-condominio-santa-adriana",
@@ -9837,33 +9837,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 63.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-adriana/"
-      }
-    ],
-    "notes": "Ficha UTS: 63,89 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-3-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": false,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
     "lat": -32.750687,
     "lng": -70.7252688,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 63.9,
-    "description": "Condominio Santa Adriana de San Felipe, consta de 178 departamentos, 12 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condominio tiene acceso controlado para la seguridad d…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-3-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-4-3-1024x768.jpg",
@@ -9872,15 +9860,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-6-2-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-9-3-1024x768.jpg"
     ],
+    "description": "Condominio Santa Adriana de San Felipe, consta de 178 departamentos, 12 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condominio tiene acceso controlado para la seguridad d…",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-adriana/"
+      }
+    ],
+    "notes": "Ficha UTS: 63,89 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": false,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:san-felipe"
+    }
   },
   {
     "id": "uts-condominio-santa-ines-ii",
@@ -9971,33 +9971,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 60.2,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-josefina/"
-      }
-    ],
-    "notes": "Ficha UTS: 60,24 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-108-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": false,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.2,
-    "description": "Condominio Santa Josefina de Rancagua, ya cuenta con entrega inmediata. El proyecto consta de 97 departamentos, 6 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condominio t…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-108-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/7-108-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/20-11-1024x768.jpg",
@@ -10006,16 +9994,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-149-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-201-1024x768.jpg"
     ],
+    "description": "Condominio Santa Josefina de Rancagua, ya cuenta con entrega inmediata. El proyecto consta de 97 departamentos, 6 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condominio t…",
     "amenities": [
       "Cowork",
       "Juegos infantiles",
       "Áreas verdes",
       "Cancha"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-josefina/"
+      }
+    ],
+    "notes": "Ficha UTS: 60,24 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": false,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "uts-condominio-santa-maria-isabel",
@@ -10036,33 +10036,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 60.2,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-maria-isabel/"
-      }
-    ],
-    "notes": "Ficha UTS: 60,24 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-109-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": false,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:La Cruz"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses regionales · Valparaíso",
+    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
+    "accessMode": "buses",
     "lat": -32.8279116,
     "lng": -71.2271534,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.2,
-    "description": "Condominio Santa María Isabel de La Cruz, ya cuenta con entrega inmediata. El proyecto consta de 105 departamentos, 13 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condomi…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-109-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/7-109-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-122-1024x768.jpg",
@@ -10071,14 +10059,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/2-160-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/3-156-1024x768.jpg"
     ],
+    "description": "Condominio Santa María Isabel de La Cruz, ya cuenta con entrega inmediata. El proyecto consta de 105 departamentos, 13 distintos modelos, cuidadosamente diseñados para diversas necesidades. El condomi…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Buses regionales · Valparaíso",
-    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-santa-maria-isabel/"
+      }
+    ],
+    "notes": "Ficha UTS: 60,24 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": false,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:La Cruz"
+    }
   },
   {
     "id": "santa-rosa-ciclos",
@@ -10172,33 +10172,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/senderos-de-penuelas"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/76/202504251036569A9cqj1AHZB8NDt.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
     "lat": -29.955545527159114,
     "lng": -71.27613682470137,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/76/202504251036569A9cqj1AHZB8NDt.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/76/202504251036569A9cqj1AHZB8NDt.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/76/20240826012623LWv0gQj7QJVrZ9r.jpg",
@@ -10207,6 +10195,7 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/76/featured-plugins/20240613094743P5rgNYLI7hIjr3W.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/76/featured-plugins/2024061309474331ssvFGDI52LGx5.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Quincho",
       "Gimnasio",
@@ -10215,10 +10204,21 @@ export const catalog = [
       "Áreas verdes",
       "Bicicletero"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/senderos-de-penuelas"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-senderos-de-penuelas-ii",
@@ -10239,10 +10239,36 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "Venta en verde",
+    "areaM2": 57.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
+    "lat": -29.9531851,
+    "lng": -71.3379503,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-249-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/1-249-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/6-180-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/7-161-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/2-239-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/5-205-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/4-221-1024x768.jpg"
+    ],
+    "description": "Condominio Senderos de Peñuelas II es un proyecto residencial emplazado en un entorno privilegiado, pensado para quienes buscan tranquilidad, buena conectividad y espacios diseñados para la vida famil…",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Áreas verdes",
+      "Bicicletero"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -10254,7 +10280,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 57,9 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-249-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
@@ -10262,32 +10287,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
-    },
-    "lat": -29.9531851,
-    "lng": -71.3379503,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 57.9,
-    "description": "Condominio Senderos de Peñuelas II es un proyecto residencial emplazado en un entorno privilegiado, pensado para quienes buscan tranquilidad, buena conectividad y espacios diseñados para la vida famil…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/1-249-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/6-180-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/7-161-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/2-239-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/5-205-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/4-221-1024x768.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Áreas verdes",
-      "Bicicletero"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "ecomac-senderos-del-limari-iii",
@@ -10308,33 +10308,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/senderos-del-limari-iii"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/82/20240624124225riBQYJXmNZl9rJN.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5",
     "lat": -30.59740809241875,
     "lng": -71.18223331472143,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/82/20240624124225riBQYJXmNZl9rJN.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/82/20240624124225riBQYJXmNZl9rJN.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/82/20240826013135d9bUi7CAcnodxxG.jpg",
@@ -10343,16 +10331,28 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/82/featured-plugins/20240612070311EhF1sFQCOWH3wsU.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/82/featured-plugins/20240612070311O2qNB8jFpjQ80e8.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
-    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/senderos-del-limari-iii"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-405-condominio-sol-de-penuelas",
@@ -10373,10 +10373,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
+    "lat": -29.951976,
+    "lng": -71.280575,
+    "address": "Los Lagos",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_1_405_na.png",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_1_405_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_2_405_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_3_405_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_4_405_na.png"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, ECASA Inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -10384,35 +10405,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_1_405_na.png",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Coquimbo"
-    },
-    "lat": -29.9531851,
-    "lng": -71.3379503,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, ECASA Inmobiliaria, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_1_405_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_2_405_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_3_405_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/CondominioSoldePeuelas/ECASA-Inmobiliaria_Condominio-Sol-de-Peuelas_galeria_4_405_na.png"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-tepual",
@@ -10433,33 +10433,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 52.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-tepual/"
-      }
-    ],
-    "notes": "Ficha UTS: 52.58 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/22155.w1600-1024x768.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:puerto-montt"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5",
     "lat": -41.471798,
     "lng": -72.9395915,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 52.6,
-    "description": "Descubre Condominio El Tepual, un proyecto de departamentos ubicado en un sector residencial de Puerto Montt, pensado para quienes buscan una vivienda con espacios funcionales, buena conectividad y ac…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/22155.w1600-1024x768.webp",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/22155.w1600-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/22159.w1600-1024x768.webp",
@@ -10468,6 +10456,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/22247.w1600-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/22248.w1600-1024x768.webp"
     ],
+    "description": "Descubre Condominio El Tepual, un proyecto de departamentos ubicado en un sector residencial de Puerto Montt, pensado para quienes buscan una vivienda con espacios funcionales, buena conectividad y ac…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
@@ -10475,10 +10464,21 @@ export const catalog = [
       "Circuito de calistenia",
       "Sala multiuso"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
-    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-tepual/"
+      }
+    ],
+    "notes": "Ficha UTS: 52.58 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:puerto-montt"
+    }
   },
   {
     "id": "soco-condominio-terraza-mirador-ii",
@@ -10499,33 +10499,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "Entrega Inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "socovesa",
-        "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-terraza-mirador-ii/"
-      }
-    ],
-    "notes": "Importado desde Socovesa",
-    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/05/header_terraza_mirador.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5",
     "lat": -41.4499742,
     "lng": -72.9221482,
     "address": null,
     "contactPhone": "+56927420982",
     "contactWhatsapp": "https://wa.me/56927420982",
-    "areaM2": null,
-    "description": "Descubre Terraza Mirador II, un condominio exclusivo con departamentos en Puerto Montt, vistas privilegiadas en una ubicación estratégica.",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/05/header_terraza_mirador.jpg",
     "images": [
       "https://www.socovesa.cl/wp-content/uploads/2022/05/header_terraza_mirador.jpg",
       "https://www.socovesa.cl/wp-content/uploads/2022/05/desktop-banner-terraza-mirador.webp",
@@ -10534,6 +10522,7 @@ export const catalog = [
       "https://www.socovesa.cl/wp-content/uploads/2022/05/mobile-banner-secundario-terraza-mirador.webp",
       "https://www.socovesa.cl/wp-content/uploads/2022/05/desktop-terraza-mirador-carrusel-1.webp"
     ],
+    "description": "Descubre Terraza Mirador II, un condominio exclusivo con departamentos en Puerto Montt, vistas privilegiadas en una ubicación estratégica.",
     "amenities": [
       "Sala de eventos",
       "Juegos infantiles",
@@ -10543,10 +10532,21 @@ export const catalog = [
       "2 dormitorios",
       "2 baños"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
-    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-terraza-mirador-ii/"
+      }
+    ],
+    "notes": "Importado desde Socovesa",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "titan-2-renca",
@@ -10684,7 +10684,7 @@ export const catalog = [
     "id": "sub-143-condominio-vertice",
     "name": "Condominio Vértice",
     "developer": "Isiete",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Quillota",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -10699,33 +10699,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/143/condominio-vertice"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIsiete/CondominioVrtice/Inmobiliaria-Isiete_Condominio-Vrtice_galeria_1_143_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quillota"
-    },
-    "lat": -32.879997,
-    "lng": -71.2473555,
-    "address": null,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5",
+    "lat": -32.896243,
+    "lng": -71.262622,
+    "address": "Juan Bautista Alberdi 1900",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Isiete, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIsiete/CondominioVrtice/Inmobiliaria-Isiete_Condominio-Vrtice_galeria_1_143_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIsiete/CondominioVrtice/Inmobiliaria-Isiete_Condominio-Vrtice_galeria_1_143_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIsiete/CondominioVrtice/Inmobiliaria-Isiete_Condominio-Vrtice_galeria_2_143_na.jpg",
@@ -10734,15 +10722,27 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIsiete/CondominioVrtice/Inmobiliaria-Isiete_Condominio-Vrtice_galeria_5_143_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIsiete/CondominioVrtice/Inmobiliaria-Isiete_Condominio-Vrtice_galeria_6_143_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Isiete, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/143/condominio-vertice"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "viento-norte-sur",
@@ -10827,33 +10827,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 50,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-viracocha/"
-      }
-    ],
-    "notes": "Ficha UTS: 50 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Viracocha-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Ovalle"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5",
     "lat": -30.6030819,
     "lng": -71.2029894,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 50,
-    "description": "Condominio Viracocha un proyecto de 5 edificios con solo 240 departamentos, excelentes terminaciones, espacios funcionales y prácticos para quienes busquen tener su primera vivienda en un entorno priv…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Viracocha-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Viracocha-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/3-2-1024x768.jpg",
@@ -10862,11 +10850,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/1-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/cocina-2-1024x683.jpg"
     ],
+    "description": "Condominio Viracocha un proyecto de 5 edificios con solo 240 departamentos, excelentes terminaciones, espacios funcionales y prácticos para quienes busquen tener su primera vivienda en un entorno priv…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
-    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-viracocha/"
+      }
+    ],
+    "notes": "Ficha UTS: 50 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Ovalle"
+    }
   },
   {
     "id": "uts-condominio-vista-chinquihue",
@@ -10887,33 +10887,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 58,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-vista-chinquihue/"
-      }
-    ],
-    "notes": "Ficha UTS: 58 m² m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/chinquihue-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:puerto-montt"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5",
     "lat": -41.471798,
     "lng": -72.9395915,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 58,
-    "description": "Condominio Vista Chinquihue: Un condominio diseñado para la inversión y el buen vivir con Entrega Inmediata Experimenta la combinación perfecta entre inversión inteligente y calidad de vida con la ent…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/chinquihue-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/chinquihue-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/f-1-1024x768.jpg",
@@ -10922,21 +10910,33 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/b-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/g-1-1024x768.jpg"
     ],
+    "description": "Condominio Vista Chinquihue: Un condominio diseñado para la inversión y el buen vivir con Entrega Inmediata Experimenta la combinación perfecta entre inversión inteligente y calidad de vida con la ent…",
     "amenities": [
       "Sala de eventos",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
-    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-vista-chinquihue/"
+      }
+    ],
+    "notes": "Ficha UTS: 58 m² m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:puerto-montt"
+    }
   },
   {
     "id": "sub-420-condominio-vista-molle",
     "name": "Condominio Vista Molle",
     "developer": "Armas",
-    "region": "Metropolitana",
+    "region": "Tarapacá",
     "comuna": "Alto Hospicio",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -10951,33 +10951,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/420/condominio-vista-molle"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioVistaMolle/Inmobiliaria-Armas_Condominio-Vista-Molle_galeria_1_420_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:alto-hospicio"
-    },
-    "lat": -20.2700478,
-    "lng": -70.1009162,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Buses · Alto Hospicio / Iquique",
+    "accessDetail": "Conurbación con Iquique · micros locales",
+    "accessMode": "buses",
+    "lat": -20.296369,
+    "lng": -70.10309,
+    "address": "Av. Gladys Marin 4717",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Alto Hospicio con DS19, Inmobiliaria Armas, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioVistaMolle/Inmobiliaria-Armas_Condominio-Vista-Molle_galeria_1_420_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioVistaMolle/Inmobiliaria-Armas_Condominio-Vista-Molle_galeria_1_420_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioVistaMolle/Inmobiliaria-Armas_Condominio-Vista-Molle_galeria_2_420_na.jpg",
@@ -10985,15 +10973,27 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioVistaMolle/Inmobiliaria-Armas_Condominio-Vista-Molle_galeria_4_420_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/CondominioVistaMolle/Inmobiliaria-Armas_Condominio-Vista-Molle_galeria_5_420_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Alto Hospicio con DS19, Inmobiliaria Armas, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/420/condominio-vista-molle"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-vista-parque-iii",
@@ -11014,33 +11014,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 55.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-vista-parque-iii/"
-      }
-    ],
-    "notes": "Ficha UTS: 55,82 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-213-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Talca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -35.4265343,
     "lng": -71.6660322,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 55.8,
-    "description": "Condominio Vista Parque III es un proyecto de departamentos ubicado en la ciudad de Talca, pensado para quienes buscan acceder a una vivienda propia con apoyo estatal y en un entorno que combina buena…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-213-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/5-213-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-258-1024x768.jpg",
@@ -11049,15 +11037,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/4-229-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-187-1024x768.jpg"
     ],
+    "description": "Condominio Vista Parque III es un proyecto de departamentos ubicado en la ciudad de Talca, pensado para quienes buscan acceder a una vivienda propia con apoyo estatal y en un entorno que combina buena…",
     "amenities": [
       "Departamentos de 1 dormitorio.",
       "Departamentos de 2 dormitorios.",
       "Departamentos de 3 dormitorios."
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-vista-parque-iii/"
+      }
+    ],
+    "notes": "Ficha UTS: 55,82 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Talca"
+    }
   },
   {
     "id": "uts-condominio-volcan-villarrica",
@@ -11078,33 +11078,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-volcan-villarrica/"
-      }
-    ],
-    "notes": "Ficha UTS: 60 m² m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/vv-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:villarrica"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Villarrica · buses lacustres",
+    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
+    "accessMode": "buses",
     "lat": -39.2780911,
     "lng": -72.2274364,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60,
-    "description": "Vive en Villarrica con entrega inmediata Condominio Volcán Villarrica es un proyecto de departamentos ubicado en Avenida Alto Costanera 110, en la ciudad de Villarrica, Región de La Araucanía. Ofrece …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/vv-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/vv-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/a-9-1024x768.jpg",
@@ -11113,6 +11101,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/g-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/h-1024x768.jpg"
     ],
+    "description": "Vive en Villarrica con entrega inmediata Condominio Volcán Villarrica es un proyecto de departamentos ubicado en Avenida Alto Costanera 110, en la ciudad de Villarrica, Región de La Araucanía. Ofrece …",
     "amenities": [
       "Piscina",
       "Sala de eventos",
@@ -11126,10 +11115,21 @@ export const catalog = [
       "Acceso controlado las 24 horas.",
       "Equipamiento comercial."
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Villarrica · buses lacustres",
-    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-volcan-villarrica/"
+      }
+    ],
+    "notes": "Ficha UTS: 60 m² m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:villarrica"
+    }
   },
   {
     "id": "uts-condominio-volcanes",
@@ -11150,10 +11150,30 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 76.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses",
+    "lat": -23.6463741,
+    "lng": -70.3980033,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-03-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Condominio Los Volcanes está ubicado en un nuevo polo de desarrollo en la ciudad, su emplazamiento generará un atractivo embellecimiento del sector, además de la creación de centros y servicios comerc…",
+    "amenities": [
+      "Áreas verdes"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -11161,7 +11181,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 76.56 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -11169,32 +11188,13 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Antofagasta"
-    },
-    "lat": -23.6463741,
-    "lng": -70.3980033,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 76.6,
-    "description": "Condominio Los Volcanes está ubicado en un nuevo polo de desarrollo en la ciudad, su emplazamiento generará un atractivo embellecimiento del sector, además de la creación de centros y servicios comerc…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-03-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [
-      "Áreas verdes"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
-    "accessDetail": "Capital regional · terminal de buses",
-    "accessMode": "buses"
+    }
   },
   {
     "id": "sub-434-costanera-del-sol",
     "name": "Costanera del Sol",
     "developer": "CVV",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Hualpén",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -11209,33 +11209,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Santa Rosa / Lo Prado",
-    "metroLine": "L4A/L5",
-    "metroWalkMin": 10,
+    "areaM2": null,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/434/costanera-del-sol"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl: metro Santa Rosa / Lo Prado. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/CostaneradelSol/Inmobiliaria-CVV_Costanera-del-Sol_galeria_1_434_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": false,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Hualpén"
-    },
-    "lat": -36.7927608,
-    "lng": -73.0943414,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén / buses · Hualpén",
+    "accessDetail": "Acceso a red Biotrén y Concepción",
+    "accessMode": "biotren",
+    "lat": -36.806691,
+    "lng": -73.090675,
+    "address": "Padre Las Casas 840",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Hualpén con DS19, Inmobiliaria CVV, departamentos con 1 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/CostaneradelSol/Inmobiliaria-CVV_Costanera-del-Sol_galeria_1_434_na.png",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/CostaneradelSol/Inmobiliaria-CVV_Costanera-del-Sol_galeria_1_434_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/CostaneradelSol/Inmobiliaria-CVV_Costanera-del-Sol_galeria_2_434_na.png",
@@ -11244,13 +11232,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/CostaneradelSol/Inmobiliaria-CVV_Costanera-del-Sol_galeria_5_434_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/CostaneradelSol/Inmobiliaria-CVV_Costanera-del-Sol_galeria_6_434_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Hualpén con DS19, Inmobiliaria CVV, departamentos con 1 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/434/costanera-del-sol"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "semi-nuevo-nunoa-ref",
@@ -11437,33 +11437,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/don-manuel/"
-      }
-    ],
-    "notes": "Ficha UTS: 60,65 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Fachada-1920x1800px-1024x768.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quillota"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5",
     "lat": -32.879997,
     "lng": -71.2473555,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.7,
-    "description": "Condominio Don Manuel es un proyecto habitacional acogido al Subsidio DS19, ubicado en calle Manuel Bulnes, en un sector urbano consolidado de Quillota, Región de Valparaíso. El proyecto está pensado …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Fachada-1920x1800px-1024x768.webp",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Fachada-1920x1800px-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/plano-ubicacion-1920x1800px-1024x768.webp",
@@ -11472,6 +11460,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Render-3-1920x1800px-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/Render-4-1920x1800px-1024x768.webp"
     ],
+    "description": "Condominio Don Manuel es un proyecto habitacional acogido al Subsidio DS19, ubicado en calle Manuel Bulnes, en un sector urbano consolidado de Quillota, Región de Valparaíso. El proyecto está pensado …",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
@@ -11482,10 +11471,21 @@ export const catalog = [
       "Local comercial para la comunidad",
       "Estacionamientos y bodegas"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Quillota",
-    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/don-manuel/"
+      }
+    ],
+    "notes": "Ficha UTS: 60,65 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Quillota"
+    }
   },
   {
     "id": "euro-don-pepe-154",
@@ -11571,33 +11571,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 85,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/dona-ignacia/"
-      }
-    ],
-    "notes": "Ficha UTS: 85 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-4-10-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Talca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -35.4265343,
     "lng": -71.6660322,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 85,
-    "description": "Doña Ignacia ofrece casas en Talca y Maule con hasta 43% de ahorro energético. Acceso rápido a Ruta 5 en proyecto consolidado. Descubre tu nuevo hogar hoy.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-4-10-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-4-10-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-8-1024x768.jpg",
@@ -11606,11 +11594,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-6-6-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-9-7-1024x768.jpg"
     ],
+    "description": "Doña Ignacia ofrece casas en Talca y Maule con hasta 43% de ahorro energético. Acceso rápido a Ruta 5 en proyecto consolidado. Descubre tu nuevo hogar hoy.",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/dona-ignacia/"
+      }
+    ],
+    "notes": "Ficha UTS: 85 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Talca"
+    }
   },
   {
     "id": "ecomac-dunas-de-san-pedro-iv",
@@ -11631,33 +11631,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "Entrega inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/dunas-de-san-pedro-iv"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/135/202506030334391CCwjGROINbTHpF.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
     "lat": -29.86728813970626,
     "lng": -71.27336326166483,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/135/202506030334391CCwjGROINbTHpF.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/135/202506030334391CCwjGROINbTHpF.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/135/20240826011913vAFWAvHd7PCQ5f0.jpg",
@@ -11666,14 +11654,26 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/135/featured-plugins/20240607105505yd3CyF8xc5YVf29.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/135/featured-plugins/202406071052193QbFn8pfJDhn79F.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/dunas-de-san-pedro-iv"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-edificio-alcala",
@@ -11756,33 +11756,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "aitue",
-        "url": "https://www.aitue.cl/propiedades-departamentos/borde-laguna/los-angeles/"
-      }
-    ],
-    "notes": "Importado desde Aitue",
-    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/EBL-1.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5",
     "lat": -37.4486138,
     "lng": -72.3362441,
     "address": null,
     "contactPhone": "+56993218566",
     "contactWhatsapp": "https://wa.me/56993218566",
-    "areaM2": null,
-    "description": "Todos los días podrás caminar, leer o descansar en un entorno privilegiado, un lugar único junto a la laguna.",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/EBL-1.png",
     "images": [
       "https://www.aitue.cl/wp-content/uploads/2021/04/EBL-1.png",
       "https://www.aitue.cl/wp-content/uploads/2021/04/BANNER-WEB_IVA_AITUE-3.jpg",
@@ -11791,6 +11779,7 @@ export const catalog = [
       "https://www.aitue.cl/wp-content/uploads/2022/12/linkedin.png",
       "https://www.aitue.cl/wp-content/uploads/2022/12/insta.png"
     ],
+    "description": "Todos los días podrás caminar, leer o descansar en un entorno privilegiado, un lugar único junto a la laguna.",
     "amenities": [
       "Quincho",
       "VISTA 360",
@@ -11801,10 +11790,21 @@ export const catalog = [
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
-    "accessDetail": "Corredor 5 Sur · capital provincial",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/borde-laguna/los-angeles/"
+      }
+    ],
+    "notes": "Importado desde Aitue",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "aitue-edificio-castellon-227",
@@ -11896,33 +11896,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "socovesa",
-        "url": "https://www.socovesa.cl/nuestros-proyectos/edificio-garcia-reyes/"
-      }
-    ],
-    "notes": "Importado desde Socovesa",
-    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2021/06/Garcia-Miniatura-Julio_2025.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Valdivia · acceso Ruta 5",
+    "accessDetail": "Capital regional · buses; tren de pasajeros limitado",
+    "accessMode": "buses",
     "lat": -39.8124702,
     "lng": -73.2386761,
     "address": null,
     "contactPhone": "+56927420982",
     "contactWhatsapp": "https://wa.me/56927420982",
-    "areaM2": null,
-    "description": "Departamento en venta en Valdivia: Edificio García Reyes, ubicado a pasos de la costanera. Tipologías de estudio, 1 y 2 dormitorios. Cotiza aquí.",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2021/06/Garcia-Miniatura-Julio_2025.jpg",
     "images": [
       "https://www.socovesa.cl/wp-content/uploads/2021/06/Garcia-Miniatura-Julio_2025.jpg",
       "https://www.socovesa.cl/wp-content/uploads/2021/12/Destacada-web-Edificio-Vertce-01-1024x576.jpg",
@@ -11931,15 +11919,27 @@ export const catalog = [
       "https://www.socovesa.cl/wp-content/uploads/2021/06/desktop-banner-secundario-edificio-garcia-reyes.webp",
       "https://www.socovesa.cl/wp-content/uploads/2021/06/edificio-garcia-reyes-comedor.webp"
     ],
+    "description": "Departamento en venta en Valdivia: Edificio García Reyes, ubicado a pasos de la costanera. Tipologías de estudio, 1 y 2 dormitorios. Cotiza aquí.",
     "amenities": [
       "23 m² totales | 20.49 m² útiles | 3 m² terraza",
       "1 dormitorio",
       "1 baño"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Valdivia · acceso Ruta 5",
-    "accessDetail": "Capital regional · buses; tren de pasajeros limitado",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/edificio-garcia-reyes/"
+      }
+    ],
+    "notes": "Importado desde Socovesa",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "aitue-edificio-huertos-las-margaritas",
@@ -12154,7 +12154,7 @@ export const catalog = [
     "id": "sub-76-edificio-las-rocas",
     "name": "Edificio Las Rocas",
     "developer": "desde 1985 presente en el rubro inmobiliario. Nuestra trayec",
-    "region": "Metropolitana",
+    "region": "Tarapacá",
     "comuna": "Alto Hospicio",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -12169,33 +12169,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Santa Rosa",
-    "metroLine": "L4A",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/76/edificio-las-rocas"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl: metro Santa Rosa. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/SSInmobiliaria/EdificioLasRocas/Edificio-Las-Rocas_galeria_1_76_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": false,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:alto-hospicio"
-    },
-    "lat": -20.2700478,
-    "lng": -70.1009162,
-    "address": null,
+    "areaM2": null,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Buses · Alto Hospicio / Iquique",
+    "accessDetail": "Conurbación con Iquique · micros locales",
+    "accessMode": "buses",
+    "lat": -20.277221,
+    "lng": -70.102145,
+    "address": "Santa Rosa de Alto Molle 3979",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Alto Hospicio con DS01, S&S Inmobiliaria, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/SSInmobiliaria/EdificioLasRocas/Edificio-Las-Rocas_galeria_1_76_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/SSInmobiliaria/EdificioLasRocas/Edificio-Las-Rocas_galeria_1_76_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/SSInmobiliaria/EdificioLasRocas/Edificio-Las-Rocas_galeria_4_76_na.webp",
@@ -12204,13 +12192,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/SSInmobiliaria/EdificioLasRocas/Edificio-Las-Rocas_galeria_7_76_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/SSInmobiliaria/EdificioLasRocas/Edificio-Las-Rocas_galeria_8_76_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Alto Hospicio con DS01, S&S Inmobiliaria, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/76/edificio-las-rocas"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-450-edificio-nueva-lientur",
@@ -12231,33 +12231,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/450/edificio-nueva-lientur"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Lontueinmobiliaria/EdificioNuevaLientur/Lontue-inmobiliaria_Edificio-Nueva-Lientur_galeria_1_450_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Concepción"
-    },
-    "lat": -36.8270698,
-    "lng": -73.0502064,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren",
+    "lat": -36.815822,
+    "lng": -73.039248,
+    "address": "Lientur 973",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Concepción con DS01 Tramo III, Lontue inmobiliaria, departamentos con Studio, 1 y 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Lontueinmobiliaria/EdificioNuevaLientur/Lontue-inmobiliaria_Edificio-Nueva-Lientur_galeria_1_450_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Lontueinmobiliaria/EdificioNuevaLientur/Lontue-inmobiliaria_Edificio-Nueva-Lientur_galeria_1_450_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Lontueinmobiliaria/EdificioNuevaLientur/Lontue-inmobiliaria_Edificio-Nueva-Lientur_galeria_2_450_na.jpg",
@@ -12266,13 +12254,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Lontueinmobiliaria/EdificioNuevaLientur/Lontue-inmobiliaria_Edificio-Nueva-Lientur_galeria_5_450_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Lontueinmobiliaria/EdificioNuevaLientur/Lontue-inmobiliaria_Edificio-Nueva-Lientur_galeria_6_450_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Concepción con DS01 Tramo III, Lontue inmobiliaria, departamentos con Studio, 1 y 2 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Concepción",
-    "accessDetail": "Red Biotrén + micros · terminal Collao",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/450/edificio-nueva-lientur"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "silos-condominio-parquemar",
@@ -12293,33 +12293,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "los-silos",
-        "url": "https://ilossilos.cl/producto/condominio-parquemar/"
-      }
-    ],
-    "notes": "Ficha Los Silos. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://proyectos.ilossilos.cl/wp-content/uploads/2026/09/parquemar-web-1080x1080-1.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Viña del Mar"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren",
     "lat": -33.0244535,
     "lng": -71.5517636,
     "address": "Av. Gómez Carreño 4065, Viña del mar",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Fecha estimada de entrega: Segundo semestre 2027*",
+    "imageUrl": "https://proyectos.ilossilos.cl/wp-content/uploads/2026/09/parquemar-web-1080x1080-1.jpg",
     "images": [
       "https://proyectos.ilossilos.cl/wp-content/uploads/2026/09/parquemar-web-1080x1080-1.jpg",
       "https://proyectos.ilossilos.cl/wp-content/uploads/2024/04/juegos-infantiles.png",
@@ -12328,16 +12316,28 @@ export const catalog = [
       "https://proyectos.ilossilos.cl/wp-content/uploads/2025/05/bicicletero-1.png",
       "https://proyectos.ilossilos.cl/wp-content/uploads/2026/09/parquemar-modelod-1000x620-1.jpg"
     ],
+    "description": "Fecha estimada de entrega: Segundo semestre 2027*",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Viña del Mar",
-    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/condominio-parquemar/"
+      }
+    ],
+    "notes": "Ficha Los Silos. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Viña del Mar"
+    }
   },
   {
     "id": "silos-edificio-parque-mar-2",
@@ -12358,33 +12358,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "los-silos",
-        "url": "https://ilossilos.cl/producto/edificio-parque-mar-2/"
-      }
-    ],
-    "notes": "Ficha Los Silos. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://proyectos.ilossilos.cl/wp-content/uploads/2026/07/parquemar-web-1080x1080-1.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Viña del Mar"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren",
     "lat": -33.0244535,
     "lng": -71.5517636,
     "address": "Av. Gómez Carreño 4015, Viña del mar",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Fecha estimada de entrega: Segundo semestre 2028*",
+    "imageUrl": "https://proyectos.ilossilos.cl/wp-content/uploads/2026/07/parquemar-web-1080x1080-1.jpg",
     "images": [
       "https://proyectos.ilossilos.cl/wp-content/uploads/2026/07/parquemar-web-1080x1080-1.jpg",
       "https://proyectos.ilossilos.cl/wp-content/uploads/2024/04/juegos-infantiles.png",
@@ -12393,16 +12381,28 @@ export const catalog = [
       "https://proyectos.ilossilos.cl/wp-content/uploads/2025/05/bicicletero-1.png",
       "https://proyectos.ilossilos.cl/wp-content/uploads/2026/08/20260814-pm2-c-m.jpg"
     ],
+    "description": "Fecha estimada de entrega: Segundo semestre 2028*",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Viña del Mar",
-    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "los-silos",
+        "url": "https://ilossilos.cl/producto/edificio-parque-mar-2/"
+      }
+    ],
+    "notes": "Ficha Los Silos. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Viña del Mar"
+    }
   },
   {
     "id": "aitue-plaza-los-canelos",
@@ -12423,33 +12423,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "aitue",
-        "url": "https://www.aitue.cl/propiedades-departamentos/plaza-los-canelos/san-pedro-de-la-paz/"
-      }
-    ],
-    "notes": "Importado desde Aitue",
-    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/EPLC.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren",
     "lat": -36.8430132,
     "lng": -73.0988136,
     "address": null,
     "contactPhone": "+56994005049",
     "contactWhatsapp": "https://wa.me/56994005049",
-    "areaM2": null,
-    "description": "Disfruta de una completa propuesta de espacios comunes, que incluyen quinchos, piscina, salón gourmet, cowork, salón kids, gimnasio, lavandería, bicicletero y una exclusiva zona pet, pensados para acompañar tu día a día y enriquecer la vida familiar.",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/EPLC.png",
     "images": [
       "https://www.aitue.cl/wp-content/uploads/2021/04/EPLC.png",
       "https://www.aitue.cl/wp-content/uploads/2021/04/BANNER-WEB_IVA_AITUE-4.jpg",
@@ -12458,6 +12446,7 @@ export const catalog = [
       "https://www.aitue.cl/wp-content/uploads/2021/04/IMG-BANNER-2.jpg",
       "https://www.aitue.cl/wp-content/uploads/2021/04/IMG-BANNER-3.jpg"
     ],
+    "description": "Disfruta de una completa propuesta de espacios comunes, que incluyen quinchos, piscina, salón gourmet, cowork, salón kids, gimnasio, lavandería, bicicletero y una exclusiva zona pet, pensados para acompañar tu día a día y enriquecer la vida familiar.",
     "amenities": [
       "Piscina",
       "Quincho",
@@ -12472,10 +12461,21 @@ export const catalog = [
       "PLANTAS",
       "AGENDAR"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · San Pedro de la Paz",
-    "accessDetail": "Estaciones Biotrén / acceso Concepción",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-departamentos/plaza-los-canelos/san-pedro-de-la-paz/"
+      }
+    ],
+    "notes": "Importado desde Aitue",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "edificio-prat",
@@ -12623,33 +12623,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": "Quinta Normal",
     "metroLine": "L5",
     "metroWalkMin": 10,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/216/edificio-quinta-radal"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioQuintaRadal/Edificio-Quinta-Radal_galeria_1_216_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quinta Normal"
-    },
-    "lat": -33.4283561,
-    "lng": -70.6999898,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.437926,
+    "lng": -70.70332,
+    "address": "Radal N\\u00ba 1225",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Quinta Normal con DS01 Tramo III, Habitage Inmobiliaria, departamentos con 3 y 4 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioQuintaRadal/Edificio-Quinta-Radal_galeria_1_216_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioQuintaRadal/Edificio-Quinta-Radal_galeria_1_216_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioQuintaRadal/Edificio-Quinta-Radal_galeria_2_216_na.webp",
@@ -12658,13 +12646,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioQuintaRadal/Edificio-Quinta-Radal_galeria_5_216_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioQuintaRadal/Habitage-Inmobiliaria_Edificio-Quinta-Radal_galeria_6_216_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Quinta Normal con DS01 Tramo III, Habitage Inmobiliaria, departamentos con 3 y 4 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/216/edificio-quinta-radal"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "aitue-edificio-refugio-new",
@@ -12817,33 +12817,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "Entrega Inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "socovesa",
-        "url": "https://www.socovesa.cl/nuestros-proyectos/edificio-vertice/"
-      }
-    ],
-    "notes": "Importado desde Socovesa",
-    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2021/12/Destacada-web-Edificio-Vertce-01.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -38.7403648,
     "lng": -72.6069936,
     "address": null,
     "contactPhone": "+56927420982",
     "contactWhatsapp": "https://wa.me/56927420982",
-    "areaM2": null,
-    "description": "Departamentos en venta en Temuco con venta en verde, estudios, 1 y 2 dormitorios a minutos del centro de Temuco. Visítanos en San Martin esquina Sta. Margarita.",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2021/12/Destacada-web-Edificio-Vertce-01.jpg",
     "images": [
       "https://www.socovesa.cl/wp-content/uploads/2021/12/Destacada-web-Edificio-Vertce-01.jpg",
       "https://www.socovesa.cl/wp-content/uploads/2023/10/destacada-n3-de-condominio-vista-nielol.webp",
@@ -12852,11 +12840,23 @@ export const catalog = [
       "https://www.socovesa.cl/wp-content/uploads/2021/12/desktop-banner-secundario-vertice.webp",
       "https://www.socovesa.cl/wp-content/uploads/2021/12/mobile-banner-secundario-vertice.webp"
     ],
+    "description": "Departamentos en venta en Temuco con venta en verde, estudios, 1 y 2 dormitorios a minutos del centro de Temuco. Visítanos en San Martin esquina Sta. Margarita.",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/edificio-vertice/"
+      }
+    ],
+    "notes": "Importado desde Socovesa",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-269-edificio-vivaceta",
@@ -12877,33 +12877,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": "Vivaceta",
     "metroLine": "L2",
     "metroWalkMin": 14,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/269/edificio-vivaceta"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioVivaceta/Edificio-Vivaceta_galeria_1_269_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Conchalí"
-    },
-    "lat": -33.3843233,
-    "lng": -70.6747382,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.38549,
+    "lng": -70.677279,
+    "address": "Camino Vecinal 1636",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Conchalí con DS01 DS19, Habitage Inmobiliaria, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioVivaceta/Edificio-Vivaceta_galeria_1_269_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioVivaceta/Edificio-Vivaceta_galeria_1_269_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioVivaceta/Habitage-Inmobiliaria_Edificio-Vivaceta_galeria_2_269_na.jpg",
@@ -12912,13 +12900,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioVivaceta/Habitage-Inmobiliaria_Edificio-Vivaceta_galeria_5_269_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/HabitageInmobiliaria/EdificioVivaceta/Habitage-Inmobiliaria_Edificio-Vivaceta_galeria_6_269_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Conchalí con DS01 DS19, Habitage Inmobiliaria, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/269/edificio-vivaceta"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "bricsa-38",
@@ -13130,33 +13130,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 45.3,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/el-portal-2/"
-      }
-    ],
-    "notes": "Ficha UTS: 45,28 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Talca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -35.4265343,
     "lng": -71.6660322,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 45.3,
-    "description": "Cercano al centro de la ciudad, con excelente conectividad",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-02-Vitrina-UTS-1024x768.jpg",
@@ -13165,11 +13153,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Cercano al centro de la ciudad, con excelente conectividad",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/el-portal-2/"
+      }
+    ],
+    "notes": "Ficha UTS: 45,28 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Talca"
+    }
   },
   {
     "id": "sub-211-el-porvenir",
@@ -13190,33 +13190,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/211/el-porvenir"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/LaCruzInmobiliaria/ElPorvenir/La-Cruz-Inmobiliaria_El-Porvenir_galeria_10_211_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
-    "lat": -32.750687,
-    "lng": -70.7252688,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
+    "lat": -32.762217,
+    "lng": -70.711388,
+    "address": "Av. Michimalongo N\\u00b0 2356",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, La Cruz Inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/LaCruzInmobiliaria/ElPorvenir/La-Cruz-Inmobiliaria_El-Porvenir_galeria_10_211_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/LaCruzInmobiliaria/ElPorvenir/La-Cruz-Inmobiliaria_El-Porvenir_galeria_10_211_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/LaCruzInmobiliaria/ElPorvenir/La-Cruz-Inmobiliaria_El-Porvenir_galeria_5_211_na.jpg",
@@ -13225,13 +13213,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/LaCruzInmobiliaria/ElPorvenir/La-Cruz-Inmobiliaria_El-Porvenir_galeria_8_211_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/LaCruzInmobiliaria/ElPorvenir/La-Cruz-Inmobiliaria_El-Porvenir_galeria_9_211_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, La Cruz Inmobiliaria, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/211/el-porvenir"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "bci-9701-el-porvenir",
@@ -13318,33 +13318,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/el-real/"
-      }
-    ],
-    "notes": "Ficha UTS: 63 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10@2x-1024x768.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
     "lat": -32.750687,
     "lng": -70.7252688,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 63,
-    "description": "¡Tu primer hogar te espera en San Felipe!El Real es un proyecto con subsidio automático DS19, ubicado en un sector residencial consolidado del Valle de Aconcagua, ideal para quienes buscan acceder a s…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10@2x-1024x768.webp",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10@2x-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/05-FACHADA-1024x768.webp",
@@ -13353,11 +13341,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-11@2x-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-5@2x-1024x768.webp"
     ],
+    "description": "¡Tu primer hogar te espera en San Felipe!El Real es un proyecto con subsidio automático DS19, ubicado en un sector residencial consolidado del Valle de Aconcagua, ideal para quienes buscan acceder a s…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/el-real/"
+      }
+    ],
+    "notes": "Ficha UTS: 63 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:san-felipe"
+    }
   },
   {
     "id": "euro-entre-vicunas",
@@ -13443,33 +13443,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 54.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/estrella-del-norte-ii/"
-      }
-    ],
-    "notes": "Ficha UTS: 54,93 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:quilpue"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Quilpué",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
     "lat": -33.0498135,
     "lng": -71.4415282,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 54.9,
-    "description": "Hermoso depto de 3D -1B en condominio cerrado, en barrio residencial de Belloto Norte, Quilpué. Perfecto para vivir en familia, cercano a CESFAM, movilización, Colegios, Supermercado, comercio barrial…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-02-Vitrina-UTS-1024x768.jpg",
@@ -13478,11 +13466,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Hermoso depto de 3D -1B en condominio cerrado, en barrio residencial de Belloto Norte, Quilpué. Perfecto para vivir en familia, cercano a CESFAM, movilización, Colegios, Supermercado, comercio barrial…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Quilpué",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/estrella-del-norte-ii/"
+      }
+    ],
+    "notes": "Ficha UTS: 54,93 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:quilpue"
+    }
   },
   {
     "id": "paz-I221",
@@ -13561,33 +13561,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 64.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/farellon-norte/"
-      }
-    ],
-    "notes": "Ficha UTS: 64.60 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Antofagasta"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses",
     "lat": -23.6463741,
     "lng": -70.3980033,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 64.6,
-    "description": "Condominio Farellón Norte es un proyecto de altura ubicado en un sector privilegiado y consolidado al norte de la ciudad, con departamentos de alto estándar en terminaciones que harán de tu primera vi…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-02-Vitrina-UTS-1024x768.jpg",
@@ -13596,17 +13584,29 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Condominio Farellón Norte es un proyecto de altura ubicado en un sector privilegiado y consolidado al norte de la ciudad, con departamentos de alto estándar en terminaciones que harán de tu primera vi…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
-    "accessDetail": "Capital regional · terminal de buses",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/farellon-norte/"
+      }
+    ],
+    "notes": "Ficha UTS: 64.60 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Antofagasta"
+    }
   },
   {
     "id": "sub-130-farellon-norte-iii",
     "name": "Farellón Norte III",
     "developer": "Armas",
-    "region": "Metropolitana",
+    "region": "Antofagasta",
     "comuna": "Antofagasta",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -13621,33 +13621,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/130/farellon-norte"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/FarellnNorteIII/Inmobiliaria-Armas_Farelln-Norte-III_galeria_19_130_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Antofagasta"
-    },
-    "lat": -23.6463741,
-    "lng": -70.3980033,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses",
+    "lat": -23.662452,
+    "lng": -70.373612,
+    "address": "Av. Rica Aventura con Calle Oficina Lina, Antofagasta",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Antofagasta con DS19, Inmobiliaria Armas, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/FarellnNorteIII/Inmobiliaria-Armas_Farelln-Norte-III_galeria_19_130_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/FarellnNorteIII/Inmobiliaria-Armas_Farelln-Norte-III_galeria_19_130_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/FarellnNorteIII/Inmobiliaria-Armas_Farelln-Norte-III_galeria_20_130_na.jpg",
@@ -13656,19 +13644,31 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/FarellnNorteIII/Inmobiliaria-Armas_Farelln-Norte-III_galeria_23_130_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/FarellnNorteIII/Inmobiliaria-Armas_Farelln-Norte-III_galeria_24_130_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Antofagasta con DS19, Inmobiliaria Armas, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/130/farellon-norte"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-401-fotografo-enrique-maturana-gonzalez",
     "name": "Fotógrafo Enrique Maturana González",
     "developer": "Consultar portal",
-    "region": "Metropolitana",
+    "region": "Maule",
     "comuna": "Linares",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -13683,10 +13683,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Linares",
+    "accessDetail": "Corredor 5 Sur · buses interurbanos",
+    "accessMode": "ruta5",
+    "lat": -35.83086,
+    "lng": -71.588271,
+    "address": "Manuel Rodriguez",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_1_401_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_1_401_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_2_401_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_3_401_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_4_401_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Linares con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -13694,35 +13715,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_1_401_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Linares"
-    },
-    "lat": -35.8452905,
-    "lng": -71.5977173,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Linares con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_1_401_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_2_401_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_3_401_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/FotgrafoEnriqueMaturanaGonzlez/Conavicoop_Fotgrafo-Enrique-Maturana-Gonzlez_galeria_4_401_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "euro-froilan-roa-5731",
@@ -13814,33 +13814,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 34.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-fuchslocher/"
-      }
-    ],
-    "notes": "Ficha UTS: 34.71 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-286-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Osorno"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5",
     "lat": -40.5736955,
     "lng": -73.1358091,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 34.7,
-    "description": "Una alternativa para acceder a la vivienda propia Fuchslocher 1170 es un proyecto de departamentos acogido al Subsidio DS19, ubicado en la ciudad de Osorno, Región de Los Lagos. Su ubicación frente a …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-286-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-286-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/8-159-1024x768.jpg",
@@ -13849,21 +13837,33 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/4-256-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/5-240-1024x768.jpg"
     ],
+    "description": "Una alternativa para acceder a la vivienda propia Fuchslocher 1170 es un proyecto de departamentos acogido al Subsidio DS19, ubicado en la ciudad de Osorno, Región de Los Lagos. Su ubicación frente a …",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Osorno",
-    "accessDetail": "Corredor 5 Sur · terminal de buses",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-fuchslocher/"
+      }
+    ],
+    "notes": "Ficha UTS: 34.71 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Osorno"
+    }
   },
   {
     "id": "sub-427-fuentes-de-piedra-iv",
     "name": "Fuentes de Piedra IV",
     "developer": "CISS",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Penco",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -13878,33 +13878,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/427/fuentes-de-piedra-iv"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePiedraIV/Inmobiliaria-CISS_Fuentes-de-Piedra-IV_galeria_1_427_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Penco"
-    },
-    "lat": -36.7385838,
-    "lng": -72.9937749,
-    "address": null,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Penco",
+    "accessDetail": "Estación Biotrén · costa Biobío",
+    "accessMode": "biotren",
+    "lat": -36.724794,
+    "lng": -72.987227,
+    "address": "Los Lirios 95",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Penco con DS19, Inmobiliaria CISS, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePiedraIV/Inmobiliaria-CISS_Fuentes-de-Piedra-IV_galeria_1_427_na.png",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePiedraIV/Inmobiliaria-CISS_Fuentes-de-Piedra-IV_galeria_1_427_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePiedraIV/Inmobiliaria-CISS_Fuentes-de-Piedra-IV_galeria_2_427_na.png",
@@ -13913,13 +13901,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePiedraIV/Inmobiliaria-CISS_Fuentes-de-Piedra-IV_galeria_5_427_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePiedraIV/Inmobiliaria-CISS_Fuentes-de-Piedra-IV_galeria_6_427_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Penco con DS19, Inmobiliaria CISS, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/427/fuentes-de-piedra-iv"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-309-fuentes-de-porvenir",
@@ -13940,10 +13940,30 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Chiguayante",
+    "accessDetail": "Estación Biotrén en la comuna",
+    "accessMode": "biotren",
+    "lat": -36.947258,
+    "lng": -73.020532,
+    "address": "Esperanza 507",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePorvenir/Fuentes-de-Porvenir_galeria_1_309_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePorvenir/Fuentes-de-Porvenir_galeria_1_309_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePorvenir/Inmobiliaria-CISS_Fuentes-de-Porvenir_galeria_2_309_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePorvenir/Inmobiliaria-CISS_Fuentes-de-Porvenir_galeria_3_309_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Chiguayante con DS19, Inmobiliaria CISS, departamentos con 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -13951,40 +13971,20 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePorvenir/Fuentes-de-Porvenir_galeria_1_309_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Chiguayante"
-    },
-    "lat": -36.9292478,
-    "lng": -73.0237115,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Chiguayante con DS19, Inmobiliaria CISS, departamentos con 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePorvenir/Fuentes-de-Porvenir_galeria_1_309_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePorvenir/Inmobiliaria-CISS_Fuentes-de-Porvenir_galeria_2_309_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePorvenir/Inmobiliaria-CISS_Fuentes-de-Porvenir_galeria_3_309_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Chiguayante",
-    "accessDetail": "Estación Biotrén en la comuna",
-    "accessMode": "biotren"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-426-fuentes-de-prats",
     "name": "Fuentes de Prats",
     "developer": "CISS",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Coronel",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -13999,33 +13999,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/426/fuentes-de-prats"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePrats/Inmobiliaria-CISS_Fuentes-de-Prats_galeria_1_426_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Coronel"
-    },
-    "lat": -37.0164712,
-    "lng": -73.1561953,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Coronel",
+    "accessDetail": "Estación Biotrén · sur del Gran Concepción",
+    "accessMode": "biotren",
+    "lat": -37.014002,
+    "lng": -73.158196,
+    "address": "Carlos Pratt Gonz\\u00e1lez 765",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Coronel con DS19, Inmobiliaria CISS, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePrats/Inmobiliaria-CISS_Fuentes-de-Prats_galeria_1_426_na.png",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePrats/Inmobiliaria-CISS_Fuentes-de-Prats_galeria_1_426_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePrats/Inmobiliaria-CISS_Fuentes-de-Prats_galeria_2_426_na.png",
@@ -14034,19 +14022,31 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePrats/Inmobiliaria-CISS_Fuentes-de-Prats_galeria_5_426_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdePrats/Inmobiliaria-CISS_Fuentes-de-Prats_galeria_6_426_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Coronel con DS19, Inmobiliaria CISS, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/426/fuentes-de-prats"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-348-fuentes-de-rucalhue-2",
     "name": "Fuentes de Rucalhue 2",
     "developer": "CISS",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Hualpén",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -14061,10 +14061,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén / buses · Hualpén",
+    "accessDetail": "Acceso a red Biotrén y Concepción",
+    "accessMode": "biotren",
+    "lat": -36.80283,
+    "lng": -73.098764,
+    "address": "Avenida Rucalhue 389",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Fuentes-de-Rucalhue-2_galeria_1_348_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Fuentes-de-Rucalhue-2_galeria_1_348_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_2_348_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_3_348_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_4_348_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_5_348_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_6_348_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Hualpén con DS19, Inmobiliaria CISS, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -14076,44 +14099,21 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Fuentes-de-Rucalhue-2_galeria_1_348_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Hualpén"
-    },
-    "lat": -36.7927608,
-    "lng": -73.0943414,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 59,
-    "description": "Proyecto departamentos ubicados en la comuna Hualpén con DS19, Inmobiliaria CISS, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Fuentes-de-Rucalhue-2_galeria_1_348_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_2_348_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_3_348_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_4_348_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_5_348_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeRucalhue2/Inmobiliaria-CISS_Fuentes-de-Rucalhue-2_galeria_6_348_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-311-fuentes-de-san-pedro",
     "name": "Fuentes de San Pedro",
     "developer": "CISS",
-    "region": "Metropolitana",
-    "comuna": "San Pedro de La Paz",
+    "region": "Biobío",
+    "comuna": "San Pedro de la Paz",
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
@@ -14127,10 +14127,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren",
+    "lat": -36.886128,
+    "lng": -73.143133,
+    "address": "Avenida Bosquemar 50",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Fuentes-de-San-Pedro_galeria_1_311_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Fuentes-de-San-Pedro_galeria_1_311_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_2_311_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_3_311_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_4_311_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_5_311_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_6_311_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna San Pedro de La Paz con DS19, Inmobiliaria CISS, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -14142,43 +14165,20 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Fuentes-de-San-Pedro_galeria_1_311_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-pedro-de-la-paz"
-    },
-    "lat": -36.8414183,
-    "lng": -73.1039909,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 59,
-    "description": "Proyecto departamentos ubicados en la comuna San Pedro de La Paz con DS19, Inmobiliaria CISS, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Fuentes-de-San-Pedro_galeria_1_311_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_2_311_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_3_311_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_4_311_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_5_311_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeSanPedro/Inmobiliaria-CISS_Fuentes-de-San-Pedro_galeria_6_311_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-425-fuentes-de-vilumanque-2",
     "name": "Fuentes de Vilumanque 2",
     "developer": "CISS",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Penco",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -14193,10 +14193,30 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Penco",
+    "accessDetail": "Estación Biotrén · costa Biobío",
+    "accessMode": "biotren",
+    "lat": -36.724794,
+    "lng": -72.987227,
+    "address": "Los Lirios 95",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeVilumanque2/Inmobiliaria-CISS_Fuentes-de-Vilumanque-2_galeria_1_425_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeVilumanque2/Inmobiliaria-CISS_Fuentes-de-Vilumanque-2_galeria_1_425_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeVilumanque2/Inmobiliaria-CISS_Fuentes-de-Vilumanque-2_galeria_2_425_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Penco con DS19, Inmobiliaria CISS, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -14204,40 +14224,20 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeVilumanque2/Inmobiliaria-CISS_Fuentes-de-Vilumanque-2_galeria_1_425_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Penco"
-    },
-    "lat": -36.7385838,
-    "lng": -72.9937749,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Penco con DS19, Inmobiliaria CISS, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeVilumanque2/Inmobiliaria-CISS_Fuentes-de-Vilumanque-2_galeria_1_425_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCISS/FuentesdeVilumanque2/Inmobiliaria-CISS_Fuentes-de-Vilumanque-2_galeria_2_425_na.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-124-gran-vista",
     "name": "Gran Vista",
     "developer": "Armas",
-    "region": "Metropolitana",
+    "region": "Tarapacá",
     "comuna": "Alto Hospicio",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -14252,33 +14252,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/124/gran-vista"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/GranVista/Inmobiliaria-Armas_Gran-Vista_galeria_10_124_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:alto-hospicio"
-    },
-    "lat": -20.2700478,
-    "lng": -70.1009162,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Buses · Alto Hospicio / Iquique",
+    "accessDetail": "Conurbación con Iquique · micros locales",
+    "accessMode": "buses",
+    "lat": -20.302897,
+    "lng": -70.108266,
+    "address": "Av. Las Am\\u00e9ricas esquina circunvalaci\\u00f3n sur Alto Hospicio",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Alto Hospicio con DS19, Inmobiliaria Armas, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/GranVista/Inmobiliaria-Armas_Gran-Vista_galeria_10_124_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/GranVista/Inmobiliaria-Armas_Gran-Vista_galeria_10_124_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/GranVista/Inmobiliaria-Armas_Gran-Vista_galeria_4_124_na.jpg",
@@ -14288,13 +14276,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/GranVista/Inmobiliaria-Armas_Gran-Vista_galeria_8_124_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/GranVista/Inmobiliaria-Armas_Gran-Vista_galeria_9_124_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Alto Hospicio con DS19, Inmobiliaria Armas, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/124/gran-vista"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "euro-guillermo-mann-1401",
@@ -14383,33 +14383,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "aitue",
-        "url": "https://www.aitue.cl/propiedades-casas/hacienda-las-cruces/los-angeles/"
-      }
-    ],
-    "notes": "Importado desde Aitue",
-    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/HLC-2.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5",
     "lat": -37.4486138,
     "lng": -72.3362441,
     "address": null,
     "contactPhone": "+56993218566",
     "contactWhatsapp": "https://wa.me/56993218566",
-    "areaM2": null,
-    "description": "Un barrio consolidado en Los ÁngelesEn el tradicional sector El Avellano, un entorno residencial ideal para quienes buscan tranquilidad, amplitud y calidad de vida.",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/HLC-2.png",
     "images": [
       "https://www.aitue.cl/wp-content/uploads/2021/04/HLC-2.png",
       "https://www.aitue.cl/wp-content/uploads/2022/12/facebook.png",
@@ -14418,6 +14406,7 @@ export const catalog = [
       "https://www.aitue.cl/wp-content/themes/aitue/assets/img/menu.png",
       "https://www.aitue.cl/wp-content/themes/aitue/assets/img/menu-cerrar.png"
     ],
+    "description": "Un barrio consolidado en Los ÁngelesEn el tradicional sector El Avellano, un entorno residencial ideal para quienes buscan tranquilidad, amplitud y calidad de vida.",
     "amenities": [
       "Piscina",
       "Quincho",
@@ -14431,10 +14420,21 @@ export const catalog = [
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
-    "accessDetail": "Corredor 5 Sur · capital provincial",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "aitue",
+        "url": "https://www.aitue.cl/propiedades-casas/hacienda-las-cruces/los-angeles/"
+      }
+    ],
+    "notes": "Importado desde Aitue",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "hacienda-lo-errazuriz",
@@ -14455,10 +14455,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "incluido",
     "delivery": "futura",
+    "areaM2": null,
     "metroStation": "Cerrillos",
     "metroLine": "L6",
     "metroWalkMin": 12,
     "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.500127,
+    "lng": -70.698361,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Ingevec/HaciendaloErrzuriz/Ingevec_Hacienda-lo-Errzuriz_galeria_1_389_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Ingevec/HaciendaloErrzuriz/Ingevec_Hacienda-lo-Errzuriz_galeria_1_389_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Ingevec/HaciendaloErrzuriz/Ingevec_Hacienda-lo-Errzuriz_galeria_2_389_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Cerrillos con DS19, Ingevec, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -14470,35 +14491,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl: metro Cerrillos. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Ingevec/HaciendaloErrzuriz/Ingevec_Hacienda-lo-Errzuriz_galeria_1_389_na.jpg",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Cerrillos"
-    },
-    "lat": -33.5023396,
-    "lng": -70.7158417,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Cerrillos con DS19, Ingevec, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Ingevec/HaciendaloErrzuriz/Ingevec_Hacienda-lo-Errzuriz_galeria_1_389_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Ingevec/HaciendaloErrzuriz/Ingevec_Hacienda-lo-Errzuriz_galeria_2_389_na.jpg"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-444-hacienda-quilicura",
@@ -14520,10 +14520,36 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 61.1,
     "metroStation": "Quilicura",
     "metroLine": "L3",
     "metroWalkMin": 12,
     "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.357091,
+    "lng": -70.756289,
+    "address": "San Luis Nte. 1001",
+    "contactPhone": "+56991965737",
+    "contactWhatsapp": "https://wa.me/56991965737",
+    "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/banner-6aa1ad60256667.webp",
+    "images": [
+      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/banner-6aa1ad60256667.webp",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_10_444_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_11_444_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_12_444_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_13_444_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_14_444_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_3_444_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Quilicura con DS19 DS01 Tramo II DS01 Tramo III, Tres Piedras, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -14538,8 +14564,7 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/quilicura/departamento/hacienda-quilicura/8827"
       }
     ],
-    "notes": "Ficha BCI: metro Quilicura. Precio y cupos pueden variar.",
-    "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/banner-6aa1ad60256667.webp",
+    "notes": "Ficha Subsidios.cl: metro Quilicura. Confirmá tipologías y cupos en el portal.",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -14547,32 +14572,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
-    },
-    "lat": -33.3572013269483,
-    "lng": -70.7564163208008,
-    "address": null,
-    "contactPhone": "+56991965737",
-    "contactWhatsapp": "https://wa.me/56991965737",
-    "areaM2": 61.1,
-    "description": "Proyecto departamentos ubicados en la comuna Quilicura con DS19 DS01 Tramo II DS01 Tramo III, Tres Piedras, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/banner-6aa1ad60256667.webp",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_10_444_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_11_444_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_12_444_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_13_444_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_14_444_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TresPiedras/HaciendaQuilicura/Tres-Piedras_Hacienda-Quilicura_galeria_3_444_na.jpg"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    }
   },
   {
     "id": "sub-399-historiador-guillermo-feliu",
@@ -14593,10 +14593,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -34.693462,
+    "lng": -71.032225,
+    "address": "C. Miraflores 1159",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_1_399_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_1_399_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_2_399_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_3_399_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_4_399_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Chimbarongo con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -14604,40 +14625,19 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_1_399_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Chimbarongo"
-    },
-    "lat": -34.708953,
-    "lng": -71.0403642,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Chimbarongo con DS19, Conavicoop, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_1_399_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_2_399_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_3_399_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Conavicoop/HistoriadorGuillermoFeli/Conavicoop_Historiador-Guillermo-Feli_galeria_4_399_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "horcones-2",
     "name": "Horcones 2",
-    "developer": "Monte San Lorenzo",
+    "developer": "SIP\\u003C\\/p\\u003E\\u003Cp\\u003EAgenda tu visita y descubre p",
     "region": "Valparaíso",
     "comuna": "Casablanca",
     "propertyType": "departamento",
@@ -14655,10 +14655,39 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 63.5,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 68 · buses Casablanca",
+    "accessDetail": "Entre Santiago y Valparaíso por Ruta 68",
+    "accessMode": "ruta",
+    "lat": -33.453801,
+    "lng": -70.742238,
+    "address": "Claudio Arrau 7482",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/JardinesdeHorcones2/Imsl_Jardines-de-Horcones-2_galeria_1_509_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/JardinesdeHorcones2/Imsl_Jardines-de-Horcones-2_galeria_1_509_na.jpg",
+      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791155962",
+      "https://www.subsidios.cl/assets/images/letras-banner-donde.webp",
+      "https://www.subsidios.cl/assets/images/letras-banner-aqui.webp",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/pudahuel-mobile.webp?v=1791155962",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/mirador-del-sol-mobile.webp?v=1791155962",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/vertice-mobile.webp?v=1791155962",
+      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791149679"
+    ],
+    "description": "Compra propiedades con subsidio habitacional DS1, DS49 y DS19 en subsidios.cl Te asesoramos durante todo el proceso para encontrar tu próxima vivienda de forma fácil y rápida.",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero",
+      "Cancha"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -14674,43 +14703,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/JardinesdeHorcones2/Imsl_Jardines-de-Horcones-2_galeria_1_509_na.jpg",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Casablanca"
-    },
-    "lat": -33.3205864,
-    "lng": -71.4100762,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 63.5,
-    "description": "Compra propiedades con subsidio habitacional DS1, DS49 y DS19 en subsidios.cl Te asesoramos durante todo el proceso para encontrar tu próxima vivienda de forma fácil y rápida.",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/JardinesdeHorcones2/Imsl_Jardines-de-Horcones-2_galeria_1_509_na.jpg",
-      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791149679",
-      "https://www.subsidios.cl/assets/images/letras-banner-donde.webp",
-      "https://www.subsidios.cl/assets/images/letras-banner-aqui.webp",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/pudahuel-mobile.webp?v=1791149679",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/mirador-del-sol-mobile.webp?v=1791149679",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/vertice-mobile.webp?v=1791149679",
-      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791148528"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero",
-      "Cancha"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 68 · buses Casablanca",
-    "accessDetail": "Entre Santiago y Valparaíso por Ruta 68",
-    "accessMode": "ruta"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-huertos-sur",
@@ -14731,33 +14731,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 57.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/huertos-sur/"
-      }
-    ],
-    "notes": "Ficha UTS: 57,82 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-pedro-de-la-paz"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren",
     "lat": -36.8414183,
     "lng": -73.1039909,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 57.8,
-    "description": "El Condominio Huerto Sur se ubica frente al nuevo centro cívico de San Pedro, cercano al nuevo puente industrial y al Parque Los Batros a pocos pasos de la locomoción colectiva, los bomberos, los cent…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-1024x768.jpg",
@@ -14766,14 +14754,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-1024x768.jpg"
     ],
+    "description": "El Condominio Huerto Sur se ubica frente al nuevo centro cívico de San Pedro, cercano al nuevo puente industrial y al Parque Los Batros a pocos pasos de la locomoción colectiva, los bomberos, los cent…",
     "amenities": [
       "Juegos infantiles",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · San Pedro de la Paz",
-    "accessDetail": "Estaciones Biotrén / acceso Concepción",
-    "accessMode": "biotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/huertos-sur/"
+      }
+    ],
+    "notes": "Ficha UTS: 57,82 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:san-pedro-de-la-paz"
+    }
   },
   {
     "id": "euro-independencia-4745",
@@ -16165,7 +16165,7 @@ export const catalog = [
     "id": "sub-472-jardin-del-valle",
     "name": "Jardín del Valle",
     "developer": "Sigma",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Quillota",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -16180,10 +16180,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 69,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5",
+    "lat": -32.860188,
+    "lng": -71.230536,
+    "address": "Avenida Fernando Monckeberg Barros",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_1_472_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_1_472_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_2_472_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_3_472_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_4_472_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_5_472_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Sigma, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -16195,37 +16218,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_1_472_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quillota"
-    },
-    "lat": -32.879997,
-    "lng": -71.2473555,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 69,
-    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Sigma, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_1_472_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_2_472_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_3_472_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_4_472_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/JardndelValle/Inmobiliaria-Sigma_Jardn-del-Valle_galeria_5_472_na.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-jardin-norte",
@@ -16246,33 +16246,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/jardin-norte/"
-      }
-    ],
-    "notes": "Ficha UTS: 60,72 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-281-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Talca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -35.4265343,
     "lng": -71.6660322,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.7,
-    "description": "Jardín Norte es un proyecto habitacional ubicado en Avenida Circunvalación Norte esquina 5 Oriente, Talca, diseñado para quienes buscan acceder a una vivienda propia en un entorno seguro, moderno y pe…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-281-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-281-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/3-263-1024x768.jpg",
@@ -16281,16 +16269,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/8-155-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-185-1024x768.jpg"
     ],
+    "description": "Jardín Norte es un proyecto habitacional ubicado en Avenida Circunvalación Norte esquina 5 Oriente, Talca, diseñado para quienes buscan acceder a una vivienda propia en un entorno seguro, moderno y pe…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
       "Espacios para actividades al aire libre",
       "Acceso controlado para mayor seguridad"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardin-norte/"
+      }
+    ],
+    "notes": "Ficha UTS: 60,72 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Talca"
+    }
   },
   {
     "id": "jardines-san-bernardo",
@@ -16426,7 +16426,7 @@ export const catalog = [
   {
     "id": "jardines-san-felipe",
     "name": "Jardines de San Felipe",
-    "developer": "Monte San Lorenzo",
+    "developer": "SIP\\u003C\\/p\\u003E\\u003Cp\\u003EAgenda tu visita y descubre p",
     "region": "Valparaíso",
     "comuna": "San Felipe",
     "propertyType": "departamento",
@@ -16444,10 +16444,39 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 65,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
+    "lat": -33.453801,
+    "lng": -70.742238,
+    "address": "Claudio Arrau 7482",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/JardinesdeSanFelipe/Imsl_Jardines-de-San-Felipe_galeria_1_508_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/JardinesdeSanFelipe/Imsl_Jardines-de-San-Felipe_galeria_1_508_na.jpg",
+      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791155962",
+      "https://www.subsidios.cl/assets/images/letras-banner-donde.webp",
+      "https://www.subsidios.cl/assets/images/letras-banner-aqui.webp",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/pudahuel-mobile.webp?v=1791155962",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/mirador-del-sol-mobile.webp?v=1791155962",
+      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/vertice-mobile.webp?v=1791155962",
+      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791149679"
+    ],
+    "description": "Compra propiedades con subsidio habitacional DS1, DS49 y DS19 en subsidios.cl Te asesoramos durante todo el proceso para encontrar tu próxima vivienda de forma fácil y rápida.",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero",
+      "Cancha"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -16463,43 +16492,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/JardinesdeSanFelipe/Imsl_Jardines-de-San-Felipe_galeria_1_508_na.jpg",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
-    "lat": -32.750687,
-    "lng": -70.7252688,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 65,
-    "description": "Compra propiedades con subsidio habitacional DS1, DS49 y DS19 en subsidios.cl Te asesoramos durante todo el proceso para encontrar tu próxima vivienda de forma fácil y rápida.",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Imsl/JardinesdeSanFelipe/Imsl_Jardines-de-San-Felipe_galeria_1_508_na.jpg",
-      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791149679",
-      "https://www.subsidios.cl/assets/images/letras-banner-donde.webp",
-      "https://www.subsidios.cl/assets/images/letras-banner-aqui.webp",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/pudahuel-mobile.webp?v=1791149679",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/mirador-del-sol-mobile.webp?v=1791149679",
-      "https://www.subsidios.cl/storage/imagenes/banner-nuevos/vertice-mobile.webp?v=1791149679",
-      "https://www.subsidios.cl/storage/imagenes/semi-nuevos/banner_home_mobile.webp?v=1791148528"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero",
-      "Cancha"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "jardines-san-francisco",
@@ -16584,33 +16584,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/jardines-de-valdivia-ii/"
-      }
-    ],
-    "notes": "Ficha UTS: 56 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:penablanca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses regionales · Valparaíso",
+    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
+    "accessMode": "buses",
     "lat": -33.0402022,
     "lng": -71.3529769,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 56,
-    "description": "Condominio ubicado en un sector residencial, entre metros Sargento Aldea y Peñablanca. A minutos del centro de Villa Alemana, cercano a colegios, centros de deporte y con colectivos a la puerta, línea…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-02-Vitrina-UTS-1024x768.jpg",
@@ -16618,11 +16606,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-05-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Condominio ubicado en un sector residencial, entre metros Sargento Aldea y Peñablanca. A minutos del centro de Villa Alemana, cercano a colegios, centros de deporte y con colectivos a la puerta, línea…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Buses regionales · Valparaíso",
-    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardines-de-valdivia-ii/"
+      }
+    ],
+    "notes": "Ficha UTS: 56 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:penablanca"
+    }
   },
   {
     "id": "uts-jardines-del-sur",
@@ -16643,33 +16643,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 71,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/jardines-del-sur/"
-      }
-    ],
-    "notes": "Ficha UTS: 71 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10-28-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Osorno"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5",
     "lat": -40.5736955,
     "lng": -73.1358091,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 71,
-    "description": "Descubre la Calidad de Vida en Jardines del Sur: Tu Nuevo Hogar en Osorno Explora un nuevo estándar de vida en Jardines del Sur, el innovador barrio que redefine la propuesta habitacional en la consol…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10-28-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/10-28-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-82-1024x768.jpg",
@@ -16678,11 +16666,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/3-74-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-72-1024x768.jpg"
     ],
+    "description": "Descubre la Calidad de Vida en Jardines del Sur: Tu Nuevo Hogar en Osorno Explora un nuevo estándar de vida en Jardines del Sur, el innovador barrio que redefine la propuesta habitacional en la consol…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Osorno",
-    "accessDetail": "Corredor 5 Sur · terminal de buses",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/jardines-del-sur/"
+      }
+    ],
+    "notes": "Ficha UTS: 71 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Osorno"
+    }
   },
   {
     "id": "euro-jose-pedro-alessandri",
@@ -16811,7 +16811,7 @@ export const catalog = [
     "id": "sub-484-la-finka-poniente",
     "name": "La Finka Poniente",
     "developer": "Río Baker",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Quillota",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -16826,10 +16826,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5",
+    "lat": -32.876629,
+    "lng": -71.237659,
+    "address": "Rafael Arizt\\u00eda 355",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_1_484_na.png",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_1_484_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_2_484_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_3_484_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_4_484_na.png"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -16837,37 +16860,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_1_484_na.png",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quillota"
-    },
-    "lat": -32.879997,
-    "lng": -71.2473555,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_1_484_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_2_484_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_3_484_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/LaFinkaPoniente/Inmobiliaria-Ro-Baker_La-Finka-Poniente_galeria_4_484_na.png"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-las-uvas-y-el-viento-316",
@@ -17029,33 +17029,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 68.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/laguna-verde/"
-      }
-    ],
-    "notes": "Ficha UTS: 68.42 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Copiapo"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
+    "accessDetail": "Corredor 5 Norte · Atacama",
+    "accessMode": "ruta5",
     "lat": -27.3664685,
     "lng": -70.3322753,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 68.4,
-    "description": "Conjunto residencial Laguna Verde, casas con subsidio automático DS19 en Copiapó En un tranquilo sector residencial de Copiapó, nace el conjunto residencial Laguna verde, de Grupo Inmobiliario Pacal. …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-02-Vitrina-UTS-1024x768.jpg",
@@ -17063,11 +17051,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-05-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Conjunto residencial Laguna Verde, casas con subsidio automático DS19 en Copiapó En un tranquilo sector residencial de Copiapó, nace el conjunto residencial Laguna verde, de Grupo Inmobiliario Pacal. …",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
-    "accessDetail": "Corredor 5 Norte · Atacama",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/laguna-verde/"
+      }
+    ],
+    "notes": "Ficha UTS: 68.42 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Copiapo"
+    }
   },
   {
     "id": "soco-las-pataguas-subsidio-ds19",
@@ -17155,33 +17155,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 62.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/las-pelargonias/"
-      }
-    ],
-    "notes": "Ficha UTS: 62.63 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/RENDER-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:penablanca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
     "lat": -33.0402022,
     "lng": -71.3529769,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 62.6,
-    "description": "Las Pelargonias es un proyecto habitacional acogido al Subsidio DS19, ubicado en el sector de Peñablanca, Villa Alemana, una zona residencial reconocida por su tranquilidad, conectividad y calidad de …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/RENDER-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/RENDER-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ZONADEENCUENTRO-1-1024x768.jpg",
@@ -17190,6 +17178,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/T2-2-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/T3-2-1024x768.jpg"
     ],
+    "description": "Las Pelargonias es un proyecto habitacional acogido al Subsidio DS19, ubicado en el sector de Peñablanca, Villa Alemana, una zona residencial reconocida por su tranquilidad, conectividad y calidad de …",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
@@ -17197,10 +17186,21 @@ export const catalog = [
       "Bicicletero",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Villa Alemana",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/las-pelargonias/"
+      }
+    ],
+    "notes": "Ficha UTS: 62.63 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:penablanca"
+    }
   },
   {
     "id": "lira-parque",
@@ -17280,33 +17280,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/lomas-de-borgono/"
-      }
-    ],
-    "notes": "Ficha UTS: 56,86 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Copiapo"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
+    "accessDetail": "Corredor 5 Norte · Atacama",
+    "accessMode": "ruta5",
     "lat": -27.3664685,
     "lng": -70.3322753,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 56.9,
-    "description": "Te presentamos nuestro nuevo proyecto en Copiapó “Condominio Lomas de Borgoño”. Un proyecto ideal para disfrutar junto a tu familia. El proyecto cuenta con 4 modelos de departamentos con 2 y 3 dormito…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-02-Vitrina-UTS-1024x768.jpg",
@@ -17315,17 +17303,29 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Te presentamos nuestro nuevo proyecto en Copiapó “Condominio Lomas de Borgoño”. Un proyecto ideal para disfrutar junto a tu familia. El proyecto cuenta con 4 modelos de departamentos con 2 y 3 dormito…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
-    "accessDetail": "Corredor 5 Norte · Atacama",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/lomas-de-borgono/"
+      }
+    ],
+    "notes": "Ficha UTS: 56,86 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Copiapo"
+    }
   },
   {
     "id": "sub-10-lomas-de-coyhaique-ii",
     "name": "Lomas de Coyhaique II",
     "developer": "Icuadra",
-    "region": "Metropolitana",
+    "region": "Aysén",
     "comuna": "Coyhaique",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -17340,33 +17340,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/10/lomas-de-coyhaique-ii"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/LomasdeCoyhaiqueII/Lomas-de-Coyhaique-II_galeria_1_10_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Coyhaique"
-    },
-    "lat": -45.5711804,
-    "lng": -72.0684863,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Coyhaique",
+    "accessDetail": "Sin Ruta 5 continua · buses regionales",
+    "accessMode": "buses",
+    "lat": -45.587949,
+    "lng": -72.057305,
+    "address": "Circunvalaci\\u00f3n Oriente Poniente",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Coyhaique con DS19 DS01, Inmobiliaria Icuadra, departamentos con 1, 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/LomasdeCoyhaiqueII/Lomas-de-Coyhaique-II_galeria_1_10_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/LomasdeCoyhaiqueII/Lomas-de-Coyhaique-II_galeria_1_10_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/LomasdeCoyhaiqueII/Lomas-de-Coyhaique-II_galeria_2_10_na.webp",
@@ -17375,14 +17363,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/LomasdeCoyhaiqueII/Lomas-de-Coyhaique-II_galeria_5_10_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/LomasdeCoyhaiqueII/Lomas-de-Coyhaique-II_galeria_6_10_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Coyhaique con DS19 DS01, Inmobiliaria Icuadra, departamentos con 1, 2 y 3 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/10/lomas-de-coyhaique-ii"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-396-lomas-de-la-luz",
@@ -17403,33 +17403,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/396/lomas-de-la-luz"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LomasdelaLuz/Comosa-Gestin-Inmobiliaria_Lomas-de-la-Luz_galeria_1_396_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Valparaíso"
-    },
-    "lat": -33.0458456,
-    "lng": -71.6196749,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren",
+    "lat": -33.118737,
+    "lng": -71.585333,
+    "address": "Avenida Lomas de la Luz",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Valparaíso con DS19, Comosa Gestión Inmobiliaria, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LomasdelaLuz/Comosa-Gestin-Inmobiliaria_Lomas-de-la-Luz_galeria_1_396_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LomasdelaLuz/Comosa-Gestin-Inmobiliaria_Lomas-de-la-Luz_galeria_1_396_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LomasdelaLuz/Comosa-Gestin-Inmobiliaria_Lomas-de-la-Luz_galeria_2_396_na.jpg",
@@ -17438,16 +17426,28 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LomasdelaLuz/Comosa-Gestin-Inmobiliaria_Lomas-de-la-Luz_galeria_5_396_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LomasdelaLuz/Comosa-Gestin-Inmobiliaria_Lomas-de-la-Luz_galeria_6_396_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Valparaíso con DS19, Comosa Gestión Inmobiliaria, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho",
       "Sala de eventos",
       "Juegos infantiles",
       "Bicicletero"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Valparaíso / Puerto",
-    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/396/lomas-de-la-luz"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-353-lomas-de-landa",
@@ -17468,10 +17468,28 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren",
+    "lat": -36.809505,
+    "lng": -73.028382,
+    "address": "Camino a Penco Ruta 150",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Madesalinmobiliaria/LomasdeLanda/Lomas-de-Landa_galeria_1_353_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Madesalinmobiliaria/LomasdeLanda/Lomas-de-Landa_galeria_1_353_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Concepción con DS01, Madesal inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -17479,32 +17497,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Madesalinmobiliaria/LomasdeLanda/Lomas-de-Landa_galeria_1_353_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Concepción"
-    },
-    "lat": -36.8270698,
-    "lng": -73.0502064,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Concepción con DS01, Madesal inmobiliaria, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Madesalinmobiliaria/LomasdeLanda/Lomas-de-Landa_galeria_1_353_na.webp"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Biotrén · Concepción",
-    "accessDetail": "Red Biotrén + micros · terminal Collao",
-    "accessMode": "biotren"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-199-lomas-de-limache",
@@ -17525,10 +17525,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Limache",
+    "accessDetail": "Terminal de la línea Metrotren",
+    "accessMode": "metrotren",
+    "lat": -33.001072,
+    "lng": -71.264406,
+    "address": "Calle Echaurren 95",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/LomasdeLimache/Lomas-de-Limache_galeria_1_199_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/LomasdeLimache/Lomas-de-Limache_galeria_1_199_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/LomasdeLimache/Lomas-de-Limache_galeria_2_199_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/LomasdeLimache/Lomas-de-Limache_galeria_3_199_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Limache con DS19, Inmobiliaria Sigma, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -17536,35 +17557,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/LomasdeLimache/Lomas-de-Limache_galeria_1_199_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:limache"
-    },
-    "lat": -33.0018741,
-    "lng": -71.2657315,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Limache con DS19, Inmobiliaria Sigma, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/LomasdeLimache/Lomas-de-Limache_galeria_1_199_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/LomasdeLimache/Lomas-de-Limache_galeria_2_199_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/LomasdeLimache/Lomas-de-Limache_galeria_3_199_na.webp"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Limache",
-    "accessDetail": "Terminal de la línea Metrotren",
-    "accessMode": "metrotren"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-los-acacios-1594",
@@ -17633,7 +17633,7 @@ export const catalog = [
     "id": "sub-175-los-alamos-de-penco",
     "name": "Los Álamos de Penco",
     "developer": "es una empresa formada el a\\u00f1o 2005 con el objetivo de e",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Penco",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -17648,10 +17648,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Penco",
+    "accessDetail": "Estación Biotrén · costa Biobío",
+    "accessMode": "biotren",
+    "lat": -36.747449,
+    "lng": -73.00149,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_1_175_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_1_175_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_2_175_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_3_175_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_4_175_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_5_175_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_6_175_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Penco con DS19, Comosa Gestión Inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -17663,37 +17686,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_1_175_na.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Penco"
-    },
-    "lat": -36.7385838,
-    "lng": -72.9937749,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 63,
-    "description": "Proyecto departamentos ubicados en la comuna Penco con DS19, Comosa Gestión Inmobiliaria, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_1_175_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_2_175_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_3_175_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_4_175_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_5_175_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ComosaGestinInmobiliaria/LoslamosdePenco/Los-lamos-de-Penco_galeria_6_175_na.webp"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-los-almendros",
@@ -17714,33 +17714,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/los-almendros/"
-      }
-    ],
-    "notes": "Ficha UTS: 63,7 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-165-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:villa-alemana"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
     "lat": -33.0441903,
     "lng": -71.3725464,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 63.7,
-    "description": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-165-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/7-165-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-184-1024x768.jpg",
@@ -17749,11 +17737,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/9-117-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/8-141-1024x768.jpg"
     ],
+    "description": null,
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Villa Alemana",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/los-almendros/"
+      }
+    ],
+    "notes": "Ficha UTS: 63,7 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:villa-alemana"
+    }
   },
   {
     "id": "uts-los-aromos",
@@ -17774,10 +17774,29 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 66,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5",
+    "lat": -30.6030819,
+    "lng": -71.2029894,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-03-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-04-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Condominio Los Aromos, es un proyecto que destaca dentro de Ovalle. Con un alto nivel de diseño y terminaciones, se emplaza en un consolidado sector residencial en pleno auge y desarrollo. A sólo minu…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -17785,7 +17804,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 65.99 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -17793,25 +17811,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Ovalle"
-    },
-    "lat": -30.6030819,
-    "lng": -71.2029894,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 66,
-    "description": "Condominio Los Aromos, es un proyecto que destaca dentro de Ovalle. Con un alto nivel de diseño y terminaciones, se emplaza en un consolidado sector residencial en pleno auge y desarrollo. A sólo minu…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-03-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-04-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
-    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "bci-8917-los-cipreses",
@@ -17881,7 +17881,7 @@ export const catalog = [
     "id": "sub-517-los-molinos",
     "name": "Los Molinos",
     "developer": "Baker",
-    "region": "Metropolitana",
+    "region": "O'Higgins",
     "comuna": "Rengo",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -17896,33 +17896,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/517/los-molinos"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/LosMolinos/Inmobiliaria-Baker_Los-Molinos_galeria_1_517_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rengo"
-    },
-    "lat": -34.4088744,
-    "lng": -70.8616583,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · Rengo",
+    "accessDetail": "Comuna sobre el corredor 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -34.402349,
+    "lng": -70.863626,
+    "address": "Ernesto Riquelme 694",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Rengo con DS19, Inmobiliaria Baker, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/LosMolinos/Inmobiliaria-Baker_Los-Molinos_galeria_1_517_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/LosMolinos/Inmobiliaria-Baker_Los-Molinos_galeria_1_517_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/LosMolinos/Inmobiliaria-Baker_Los-Molinos_galeria_2_517_na.jpg",
@@ -17931,14 +17919,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/LosMolinos/Inmobiliaria-Baker_Los-Molinos_galeria_5_517_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/LosMolinos/Inmobiliaria-Baker_Los-Molinos_galeria_6_517_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Rengo con DS19, Inmobiliaria Baker, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/517/los-molinos"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "los-tilos-3520",
@@ -18012,7 +18012,7 @@ export const catalog = [
     "id": "sub-90-manso-de-velasco-iii",
     "name": "Manso de Velasco III",
     "developer": "Malpo",
-    "region": "Metropolitana",
+    "region": "O'Higgins",
     "comuna": "San Fernando",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -18027,10 +18027,26 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal San Fernando",
+    "accessDetail": "Parada frecuente de buses en corredor 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -34.593389,
+    "lng": -71.003022,
+    "address": "Los Rulos \\u0026 Ambrosio O\\u0027Higgins",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": null,
+    "images": [],
+    "description": "Proyecto departamentos ubicados en la comuna San Fernando con DS19, Inmobiliaria Malpo, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -18038,30 +18054,14 @@ export const catalog = [
       }
     ],
     "notes": "Importado desde Subsidios.cl",
-    "imageUrl": null,
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Fernando"
-    },
-    "lat": -34.583791,
-    "lng": -70.989122,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Fernando con DS19, Inmobiliaria Malpo, departamentos con 2 y 3 dormitorios",
-    "images": [],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "euro-mapocho-3521",
@@ -18223,33 +18223,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "no",
     "delivery": "Entrega inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "euro",
-        "url": "https://www.euroinmobiliaria.cl/proyectos/mirador-pacifico"
-      }
-    ],
-    "notes": "Importado desde Euro Inmobiliaria",
-    "imageUrl": "https://euroinmobiliaria.cl/storage/53/conversions/01KHT91PBR2Z4WWRV656EK3XZC-main.webp",
-    "dataGaps": {
-      "parkingUnknown": false,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Coquimbo"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
     "lat": -29.9531851,
     "lng": -71.3379503,
     "address": "Av. Los Pescadores 5121",
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
-    "areaM2": null,
-    "description": null,
+    "imageUrl": "https://euroinmobiliaria.cl/storage/53/conversions/01KHT91PBR2Z4WWRV656EK3XZC-main.webp",
     "images": [
       "https://euroinmobiliaria.cl/storage/53/conversions/01KHT91PBR2Z4WWRV656EK3XZC-main.webp",
       "https://euroinmobiliaria.cl/storage/293/conversions/01KJBB2XDKAGVGSRDX8METVRMM-galeria.webp",
@@ -18259,13 +18247,25 @@ export const catalog = [
       "https://euroinmobiliaria.cl/storage/58/conversions/01KHTA25YN829VM8QTQQ8NXS0H-galeria.webp",
       "https://euroinmobiliaria.cl/storage/57/conversions/01KHTA25GTJ5JZRZ3HE28S5Y6Q-galeria.webp"
     ],
+    "description": null,
     "amenities": [
       "Bodega"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "euro",
+        "url": "https://www.euroinmobiliaria.cl/proyectos/mirador-pacifico"
+      }
+    ],
+    "notes": "Importado desde Euro Inmobiliaria",
+    "dataGaps": {
+      "parkingUnknown": false,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Coquimbo"
+    }
   },
   {
     "id": "matta-vial-624",
@@ -18407,7 +18407,7 @@ export const catalog = [
     "id": "sub-507-mirador-costanera-ii",
     "name": "Mirador Costanera II",
     "developer": "PY",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Hualpén",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -18422,33 +18422,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "areaM2": null,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/507/mirador-costanera-ii"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl: metro Mirador. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradorCostaneraII/Inmobiliaria-PY_Mirador-Costanera-II_galeria_1_507_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": false,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Hualpén"
-    },
-    "lat": -36.7927608,
-    "lng": -73.0943414,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén / buses · Hualpén",
+    "accessDetail": "Acceso a red Biotrén y Concepción",
+    "accessMode": "biotren",
+    "lat": -36.800018,
+    "lng": -73.10684,
+    "address": "Albacete 14",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Hualpén con DS19, Inmobiliaria PY, departamentos con 1 y 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradorCostaneraII/Inmobiliaria-PY_Mirador-Costanera-II_galeria_1_507_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradorCostaneraII/Inmobiliaria-PY_Mirador-Costanera-II_galeria_1_507_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradorCostaneraII/Inmobiliaria-PY_Mirador-Costanera-II_galeria_2_507_na.jpg",
@@ -18457,14 +18445,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradorCostaneraII/Inmobiliaria-PY_Mirador-Costanera-II_galeria_5_507_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradorCostaneraII/Inmobiliaria-PY_Mirador-Costanera-II_galeria_6_507_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Hualpén con DS19, Inmobiliaria PY, departamentos con 1 y 2 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/507/mirador-costanera-ii"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-mirador-costaventura-2",
@@ -18485,33 +18485,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 51.2,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-mirador-costaventura-2/"
-      }
-    ],
-    "notes": "Ficha UTS: metro Mirador. 51,19 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-231-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Antofagasta"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses",
     "lat": -23.6463741,
     "lng": -70.3980033,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 51.2,
-    "description": "Mirador Costa Ventura II es un proyecto habitacional con subsidio DS19 automático, ubicado en un sector residencial en crecimiento de la comuna de Antofagasta. Su entorno combina áreas verdes, equipam…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-231-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-231-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/10-87-1024x768.jpg",
@@ -18520,15 +18508,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/7-148-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-167-1024x768.jpg"
     ],
+    "description": "Mirador Costa Ventura II es un proyecto habitacional con subsidio DS19 automático, ubicado en un sector residencial en crecimiento de la comuna de Antofagasta. Su entorno combina áreas verdes, equipam…",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
-    "accessDetail": "Capital regional · terminal de buses",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-mirador-costaventura-2/"
+      }
+    ],
+    "notes": "Ficha UTS: metro Mirador. 51,19 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Antofagasta"
+    }
   },
   {
     "id": "sub-335-mirador-de-agua-santa",
@@ -18549,43 +18549,43 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren",
+    "lat": -33.044917,
+    "lng": -71.570546,
+    "address": "Avenida Sonap 1271",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Playamansa/MiradordeAguaSanta/Mirador-de-Agua-Santa_galeria_1_335_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Playamansa/MiradordeAguaSanta/Mirador-de-Agua-Santa_galeria_1_335_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Viña del Mar con DS19, Playa mansa, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
         "url": "https://www.subsidios.cl/proyecto/335/mirador-de-agua-santa"
       }
     ],
-    "notes": "Ficha Subsidios.cl: metro Mirador. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Playamansa/MiradordeAguaSanta/Mirador-de-Agua-Santa_galeria_1_335_na.webp",
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Viña del Mar"
-    },
-    "lat": -33.0244535,
-    "lng": -71.5517636,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Viña del Mar con DS19, Playa mansa, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Playamansa/MiradordeAguaSanta/Mirador-de-Agua-Santa_galeria_1_335_na.webp"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Viña del Mar",
-    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
-    "accessMode": "metrotren"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "soco-mirador-de-la-frontera",
@@ -18606,33 +18606,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "socovesa",
-        "url": "https://www.socovesa.cl/nuestros-proyectos/mirador-de-la-frontera/"
-      }
-    ],
-    "notes": "Importado desde Socovesa",
-    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2026/07/ss-mirador-de-la-frontera-portada.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -38.7415829,
     "lng": -72.6532951,
     "address": null,
     "contactPhone": "+56927420982",
     "contactWhatsapp": "https://wa.me/56927420982",
-    "areaM2": null,
-    "description": "Amplias casas en Temuco desde 10.500 UF, con modelos de 124 a 200 m². Entorno verde y diseño sureño. Venta en verde. Cotiza en Socovesa.",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2026/07/ss-mirador-de-la-frontera-portada.webp",
     "images": [
       "https://www.socovesa.cl/wp-content/uploads/2026/07/ss-mirador-de-la-frontera-portada.webp",
       "https://www.socovesa.cl/wp-content/uploads/2023/10/destacada-n3-de-condominio-vista-nielol.webp",
@@ -18641,6 +18629,7 @@ export const catalog = [
       "https://www.socovesa.cl/wp-content/uploads/2026/07/desktop-banner-secundario-mirador-de-la-frontera.webp",
       "https://www.socovesa.cl/wp-content/uploads/2026/07/mobile-banner-secundario-mirador-de-la-frontera.webp"
     ],
+    "description": "Amplias casas en Temuco desde 10.500 UF, con modelos de 124 a 200 m². Entorno verde y diseño sureño. Venta en verde. Cotiza en Socovesa.",
     "amenities": [
       "Quincho",
       "Gimnasio",
@@ -18652,10 +18641,21 @@ export const catalog = [
       "3 dormitorios",
       "3 baños"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/mirador-de-la-frontera/"
+      }
+    ],
+    "notes": "Importado desde Socovesa",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-54-mirador-de-limache",
@@ -18676,10 +18676,33 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Limache",
+    "accessDetail": "Terminal de la línea Metrotren",
+    "accessMode": "metrotren",
+    "lat": -32.981625,
+    "lng": -71.268472,
+    "address": "Col\\u00f3n 245",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_1_54_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_1_54_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_7_54_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_8_54_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_2_54_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_5_54_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_6_54_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Limache con DS19, Tasco Boetsch, departamentos con 2 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -18690,38 +18713,15 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/mirador-de-limache/"
       }
     ],
-    "notes": "Ficha Subsidios.cl: metro Mirador. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_1_54_na.webp",
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:limache"
-    },
-    "lat": -33.0018741,
-    "lng": -71.2657315,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 60,
-    "description": "Proyecto departamentos ubicados en la comuna Limache con DS19, Tasco Boetsch, departamentos con 2 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_1_54_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_7_54_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_8_54_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_2_54_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_5_54_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/TascoBoetsch/MiradordeLimache/Mirador-de-Limache_galeria_6_54_na.webp"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Limache",
-    "accessDetail": "Terminal de la línea Metrotren",
-    "accessMode": "metrotren"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-171-mirador-de-talhuen",
@@ -18742,33 +18742,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/171/mirador-de-talhuen"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl: metro Mirador. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIciclos/MiradordeTalhun/Mirador-de-Talhun_galeria_1_171_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Ovalle"
-    },
-    "lat": -30.6030819,
-    "lng": -71.2029894,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5",
+    "lat": -30.604238,
+    "lng": -71.203879,
+    "address": "Benjam\\u00edn Vicu\\u00f1a Mackenna 448",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Ovalle con DS19 DS01, Inmobiliaria Ciclos, departamentos con 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIciclos/MiradordeTalhun/Mirador-de-Talhun_galeria_1_171_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIciclos/MiradordeTalhun/Mirador-de-Talhun_galeria_1_171_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIciclos/MiradordeTalhun/Mirador-de-Talhun_galeria_2_171_na.webp",
@@ -18777,15 +18765,27 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCiclos/MiradordeTalhun/Inmobiliaria-Ciclos_Mirador-de-Talhun_galeria_5_171_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCiclos/MiradordeTalhun/Inmobiliaria-Ciclos_Mirador-de-Talhun_galeria_6_171_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Ovalle con DS19 DS01, Inmobiliaria Ciclos, departamentos con 2 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
-    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/171/mirador-de-talhuen"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-mirador-de-volcanes",
@@ -18806,33 +18806,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 71,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/mirador-de-volcanes/"
-      }
-    ],
-    "notes": "Ficha UTS: metro Mirador. 71 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/mvpm-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:puerto-montt"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5",
     "lat": -41.471798,
     "lng": -72.9395915,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 71,
-    "description": "Mirador de Volcanes: Tu Nuevo Hogar en Puerto Montt con Entrega Inmediata ¡Bienvenido a un espacio para tu nueva vida! Descubre la encantadora ciudad de Puerto Montt desde la comodidad y rentabilidad …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/mvpm-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/mvpm-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/tacora_c-1024x768.jpg",
@@ -18841,14 +18829,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/tacora_a-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/tacora_d-1024x768.jpg"
     ],
+    "description": "Mirador de Volcanes: Tu Nuevo Hogar en Puerto Montt con Entrega Inmediata ¡Bienvenido a un espacio para tu nueva vida! Descubre la encantadora ciudad de Puerto Montt desde la comodidad y rentabilidad …",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
-    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/mirador-de-volcanes/"
+      }
+    ],
+    "notes": "Ficha UTS: metro Mirador. 71 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:puerto-montt"
+    }
   },
   {
     "id": "sub-528-mirador-del-aguila",
@@ -18869,33 +18869,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/528/mirador-del-aguila"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl: metro Mirador. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/Miradordelguila/Inmobiliaria-Baker_Mirador-del-guila_galeria_1_528_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Machalí"
-    },
-    "lat": -34.182453,
-    "lng": -70.6511584,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Buses a Rancagua · cerca Ruta 5 Sur",
+    "accessDetail": "Micros a Rancagua · acceso 5 Sur por la capital regional",
+    "accessMode": "ruta5",
+    "lat": -34.166433,
+    "lng": -70.655293,
+    "address": "Cam. El Recreo 236",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Machalí con DS19, Inmobiliaria Baker, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/Miradordelguila/Inmobiliaria-Baker_Mirador-del-guila_galeria_1_528_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/Miradordelguila/Inmobiliaria-Baker_Mirador-del-guila_galeria_1_528_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/Miradordelguila/Inmobiliaria-Baker_Mirador-del-guila_galeria_2_528_na.jpg",
@@ -18904,14 +18892,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/Miradordelguila/Inmobiliaria-Baker_Mirador-del-guila_galeria_5_528_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/Miradordelguila/Inmobiliaria-Baker_Mirador-del-guila_galeria_6_528_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Machalí con DS19, Inmobiliaria Baker, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Buses a Rancagua · cerca Ruta 5 Sur",
-    "accessDetail": "Micros a Rancagua · acceso 5 Sur por la capital regional",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/528/mirador-del-aguila"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-227-mirador-del-puerto",
@@ -18932,10 +18932,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 58.2,
     "metroStation": "Mirador",
     "metroLine": "L5",
     "metroWalkMin": 12,
     "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -23.107683,
+    "lng": -70.449078,
+    "address": "Avenida Fertilizantes 600",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/AltosdeMejillones/MiradordelPuerto/Mirador-del-Puerto_galeria_1_227_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/AltosdeMejillones/MiradordelPuerto/Mirador-del-Puerto_galeria_1_227_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/AltosdeMejillones/MiradordelPuerto/Mirador-del-Puerto_galeria_2_227_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/AltosdeMejillones/MiradordelPuerto/Mirador-del-Puerto_galeria_3_227_na.webp"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Mejillones con DS19, Altos de Mejillones, departamentos con 1, 2 y 3 dormitorios",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles",
+      "Bodega"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -18947,37 +18970,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl: metro Mirador. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/AltosdeMejillones/MiradordelPuerto/Mirador-del-Puerto_galeria_1_227_na.webp",
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Mejillones"
-    },
-    "lat": -23.1002342,
-    "lng": -70.4483076,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 58.2,
-    "description": "Proyecto departamentos ubicados en la comuna Mejillones con DS19, Altos de Mejillones, departamentos con 1, 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/AltosdeMejillones/MiradordelPuerto/Mirador-del-Puerto_galeria_1_227_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/AltosdeMejillones/MiradordelPuerto/Mirador-del-Puerto_galeria_2_227_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/AltosdeMejillones/MiradordelPuerto/Mirador-del-Puerto_galeria_3_227_na.webp"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho",
-      "Juegos infantiles",
-      "Bodega"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-467-mirador-del-sol-departamentos",
@@ -18998,10 +18998,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 62,
     "metroStation": "Santa Rosa / Mirador",
     "metroLine": "L4A/L5",
     "metroWalkMin": 10,
     "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.566217,
+    "lng": -70.6279,
+    "address": "Avenida Observatorio \\u0026 Avenida Santa Rosa",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_3_467_na.png",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_3_467_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_3_467_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_4_467_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_4_467_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna La Pintana con DS19, Inmobiliaria PY, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -19013,35 +19034,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl: metro Santa Rosa / Mirador. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_3_467_na.png",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:La Pintana"
-    },
-    "lat": -33.5833594,
-    "lng": -70.629827,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 62,
-    "description": "Proyecto departamentos ubicados en la comuna La Pintana con DS19, Inmobiliaria PY, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_3_467_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_3_467_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_4_467_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/MiradordelSolDepartamentos/Inmobiliaria-PY_Mirador-del-Sol-Departamentos_galeria_4_467_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "euro-mirador-irarrazabal",
@@ -19126,46 +19126,46 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/516/alto-mirador-4"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl: metro Mirador. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIcuadra/AltoMirador4/Inmobiliaria-Icuadra_Alto-Mirador-4_galeria_1_516_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:puerto-montt"
-    },
-    "lat": -41.471798,
-    "lng": -72.9395915,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5",
+    "lat": -41.452036,
+    "lng": -72.9385,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Puerto Montt con DS19, Inmobiliaria Icuadra, departamentos con 1, 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIcuadra/AltoMirador4/Inmobiliaria-Icuadra_Alto-Mirador-4_galeria_1_516_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIcuadra/AltoMirador4/Inmobiliaria-Icuadra_Alto-Mirador-4_galeria_1_516_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIcuadra/AltoMirador4/Inmobiliaria-Icuadra_Alto-Mirador-4_galeria_2_516_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIcuadra/AltoMirador4/Inmobiliaria-Icuadra_Alto-Mirador-4_galeria_3_516_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaIcuadra/AltoMirador4/Inmobiliaria-Icuadra_Alto-Mirador-4_galeria_4_516_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Puerto Montt con DS19, Inmobiliaria Icuadra, departamentos con 1, 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
-    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/516/alto-mirador-4"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-montevideo-464",
@@ -19186,33 +19186,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 35,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/montevideo-464/"
-      }
-    ],
-    "notes": "Ficha UTS: 35 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Montevideo-464-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Antofagasta"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses",
     "lat": -23.6463741,
     "lng": -70.3980033,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 35,
-    "description": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Montevideo-464-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Montevideo-464-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Montevideo-464-02-Vitrina-UTS-1024x768.jpg",
@@ -19221,13 +19209,25 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Montevideo-464-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Montevideo-464-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": null,
     "amenities": [
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
-    "accessDetail": "Capital regional · terminal de buses",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/montevideo-464/"
+      }
+    ],
+    "notes": "Ficha UTS: 35 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Antofagasta"
+    }
   },
   {
     "id": "paz-I202",
@@ -19518,10 +19518,28 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
+    "lat": -32.749098,
+    "lng": -70.706051,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NovaMiraflores/Albores-inmobiliaria_Nova-Miraflores_galeria_1_394_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NovaMiraflores/Albores-inmobiliaria_Nova-Miraflores_galeria_1_394_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Albores inmobiliaria, departamentos con 1, 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -19529,32 +19547,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NovaMiraflores/Albores-inmobiliaria_Nova-Miraflores_galeria_1_394_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
-    "lat": -32.750687,
-    "lng": -70.7252688,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Albores inmobiliaria, departamentos con 1, 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NovaMiraflores/Albores-inmobiliaria_Nova-Miraflores_galeria_1_394_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "euro-nova-parque",
@@ -19640,10 +19640,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": "Cerrillos",
     "metroLine": "L6",
     "metroWalkMin": 12,
     "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.505955,
+    "lng": -70.702448,
+    "address": "Av. Aeropuerto 7082",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_1_395_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_1_395_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_2_395_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_3_395_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_4_395_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Cerrillos con DS19, Albores inmobiliaria, departamentos con 1, 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -19651,35 +19672,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl: metro Cerrillos. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_1_395_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Cerrillos"
-    },
-    "lat": -33.5023396,
-    "lng": -70.7158417,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Cerrillos con DS19, Albores inmobiliaria, departamentos con 1, 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_1_395_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_2_395_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_3_395_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaAeropuerto1/Albores-inmobiliaria_Nueva-Aeropuerto-1_galeria_4_395_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-condominio-nueva-carrera",
@@ -19700,33 +19700,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 58.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-nueva-carrera/"
-      }
-    ],
-    "notes": "Ficha UTS: 58,14 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-3-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
     "lat": -32.750687,
     "lng": -70.7252688,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 58.1,
-    "description": "En un céntrico sector residencial de la comuna de San Felipe, se ubican los Condominios Nueva Carrera I y II. A pocas cuadras del centro de la ciudad ofrece vivir bien conectado con todos los servicio…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-3-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/13-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/12-3-1024x768.jpg",
@@ -19735,20 +19723,32 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/15-2-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-11-1024x768.jpg"
     ],
+    "description": "En un céntrico sector residencial de la comuna de San Felipe, se ubican los Condominios Nueva Carrera I y II. A pocas cuadras del centro de la ciudad ofrece vivir bien conectado con todos los servicio…",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-nueva-carrera/"
+      }
+    ],
+    "notes": "Ficha UTS: 58,14 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:san-felipe"
+    }
   },
   {
     "id": "sub-391-nueva-carrera-1837",
     "name": "Nueva Carrera 1837",
     "developer": "y constructora\"",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "La Calera",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -19763,10 +19763,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · La Calera",
+    "accessDetail": "Corredor Ruta 5 · buses a Valparaíso/Santiago",
+    "accessMode": "ruta5",
+    "lat": -32.796112,
+    "lng": -71.210728,
+    "address": "Carrera 1837",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_1_391_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_1_391_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_3_391_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_4_391_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_5_391_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna La Calera con DS19 DS49, Albores inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -19778,35 +19799,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_1_391_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:La Calera"
-    },
-    "lat": -32.788981,
-    "lng": -71.203546,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 59.1,
-    "description": "Proyecto departamentos ubicados en la comuna La Calera con DS19 DS49, Albores inmobiliaria, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_1_391_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_3_391_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_4_391_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera1837/Albores-inmobiliaria_Nueva-Carrera-1837_galeria_5_391_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-393-nueva-carrera-2",
@@ -19827,33 +19827,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/393/nueva-carrera-2"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera2/Albores-inmobiliaria_Nueva-Carrera-2_galeria_1_393_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
-    "lat": -32.750687,
-    "lng": -70.7252688,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
+    "lat": -32.742505,
+    "lng": -70.721273,
+    "address": "Abraham Ahumada 478",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Albores inmobiliaria, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera2/Albores-inmobiliaria_Nueva-Carrera-2_galeria_1_393_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera2/Albores-inmobiliaria_Nueva-Carrera-2_galeria_1_393_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera2/Albores-inmobiliaria_Nueva-Carrera-2_galeria_2_393_na.jpg",
@@ -19862,13 +19850,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera2/Albores-inmobiliaria_Nueva-Carrera-2_galeria_5_393_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaCarrera2/Albores-inmobiliaria_Nueva-Carrera-2_galeria_6_393_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Albores inmobiliaria, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/393/nueva-carrera-2"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-392-nueva-tocornal-1",
@@ -19889,33 +19889,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/392/nueva-tocornal-1"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaTocornal1/Albores-inmobiliaria_Nueva-Tocornal-1_galeria_1_392_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
-    "lat": -32.750687,
-    "lng": -70.7252688,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
+    "lat": -32.756522,
+    "lng": -70.702974,
+    "address": "Tocornal 2875",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Albores inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaTocornal1/Albores-inmobiliaria_Nueva-Tocornal-1_galeria_1_392_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaTocornal1/Albores-inmobiliaria_Nueva-Tocornal-1_galeria_1_392_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaTocornal1/Albores-inmobiliaria_Nueva-Tocornal-1_galeria_2_392_na.jpg",
@@ -19923,13 +19911,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaTocornal1/Albores-inmobiliaria_Nueva-Tocornal-1_galeria_4_392_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/Alboresinmobiliaria/NuevaTocornal1/Albores-inmobiliaria_Nueva-Tocornal-1_galeria_5_392_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Albores inmobiliaria, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/392/nueva-tocornal-1"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-nueva-tocornal-1-y-2",
@@ -19950,33 +19950,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/nueva-tocornal-1-y-2/"
-      }
-    ],
-    "notes": "Ficha UTS: 60,38 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALBORES-UTS-NT1Y2-Exterior-4-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
     "lat": -32.750687,
     "lng": -70.7252688,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.4,
-    "description": "Descubre la esencia de la calidad de vida en Condominio Nueva Tocornal, un proyecto residencial único que redefine tu concepto de hogar en San Felipe. Esta propuesta innovadora se distingue por su con…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALBORES-UTS-NT1Y2-Exterior-4-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/ALBORES-UTS-NT1Y2-Exterior-4-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ALBORES-UTS-NT1Y2-Exterior-2-1024x768.jpg",
@@ -19985,14 +19973,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/ALBORES-UTS-NT1Y2-Interior-Cocina-Comedor-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ALBORES-UTS-NT1Y2-Interior-Dormitorio-1024x768.jpg"
     ],
+    "description": "Descubre la esencia de la calidad de vida en Condominio Nueva Tocornal, un proyecto residencial único que redefine tu concepto de hogar en San Felipe. Esta propuesta innovadora se distingue por su con…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/nueva-tocornal-1-y-2/"
+      }
+    ],
+    "notes": "Ficha UTS: 60,38 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:san-felipe"
+    }
   },
   {
     "id": "nuevo-renca",
@@ -20134,7 +20134,7 @@ export const catalog = [
     "name": "OHiggins 979",
     "developer": "Contigo",
     "region": "Biobío",
-    "comuna": "Los Angeles",
+    "comuna": "Los Ángeles",
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
@@ -20148,33 +20148,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 48,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/ohiggins-979/"
-      }
-    ],
-    "notes": "Ficha UTS: 48 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/4-236-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Los Angeles"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5",
     "lat": -37.4707455,
     "lng": -72.351686,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 48,
-    "description": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/4-236-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/4-236-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-266-1024x768.jpg",
@@ -20182,6 +20170,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/3-248-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/5-221-1024x768.jpg"
     ],
+    "description": null,
     "amenities": [
       "Juegos infantiles",
       "Bicicletero",
@@ -20191,10 +20180,21 @@ export const catalog = [
       "Bicicleteros.",
       "Áreas comunes para compartir y disfrutar."
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
-    "accessDetail": "Corredor 5 Sur · capital provincial",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/ohiggins-979/"
+      }
+    ],
+    "notes": "Ficha UTS: 48 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Los Angeles"
+    }
   },
   {
     "id": "soco-pajaritos-departamentos-en-maipu",
@@ -20268,7 +20268,7 @@ export const catalog = [
     "id": "sub-465-parque-andino",
     "name": "Parque Andino",
     "developer": "Nuevavida",
-    "region": "Metropolitana",
+    "region": "La Araucanía",
     "comuna": "Villarrica",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -20283,33 +20283,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/465/parque-andino"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/ParqueAndino/Inmobiliaria-Nuevavida_Parque-Andino_galeria_1_465_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Villarrica"
-    },
-    "lat": -39.2780911,
-    "lng": -72.2274364,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Villarrica · buses lacustres",
+    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
+    "accessMode": "buses",
+    "lat": -39.300275,
+    "lng": -72.228953,
+    "address": "C. El Horizonte 1726",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Villarrica con DS19, Inmobiliaria Nuevavida, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/ParqueAndino/Inmobiliaria-Nuevavida_Parque-Andino_galeria_1_465_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/ParqueAndino/Inmobiliaria-Nuevavida_Parque-Andino_galeria_1_465_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/ParqueAndino/Inmobiliaria-Nuevavida_Parque-Andino_galeria_2_465_na.jpg",
@@ -20317,15 +20305,27 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/ParqueAndino/Inmobiliaria-Nuevavida_Parque-Andino_galeria_4_465_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaNuevavida/ParqueAndino/Inmobiliaria-Nuevavida_Parque-Andino_galeria_5_465_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Villarrica con DS19, Inmobiliaria Nuevavida, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles",
       "BBQ / parrilla"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/465/parque-andino"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "paz-I152",
@@ -20406,33 +20406,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 54.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/parque-canteras/"
-      }
-    ],
-    "notes": "Ficha UTS: 54.56 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Arica"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses",
     "lat": -18.4785288,
     "lng": -70.3211394,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 54.6,
-    "description": "Condominio de departamentos con subsidio automático DS19 en Arica Condominio Parque Canteras se ubica cercano a colegios, centro médico, comercio, restaurantes y cuenta con una inigualable conectivida…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-02-Vitrina-UTS-1024x768.jpg",
@@ -20440,11 +20428,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-05-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Condominio de departamentos con subsidio automático DS19 en Arica Condominio Parque Canteras se ubica cercano a colegios, centro médico, comercio, restaurantes y cuenta con una inigualable conectivida…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Arica · Ruta 5 Norte",
-    "accessDetail": "Capital regional · terminal internacional/nacional",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-canteras/"
+      }
+    ],
+    "notes": "Ficha UTS: 54.56 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Arica"
+    }
   },
   {
     "id": "sub-475-parque-cordillera-ii",
@@ -20465,33 +20465,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/475/parque-cordillera-ii"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/ParqueCordilleraII/Inmobiliaria-Urbani_Parque-Cordillera-II_galeria_1_475_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Chillán"
-    },
-    "lat": -36.6066616,
-    "lng": -72.1033194,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -36.621767,
+    "lng": -72.072327,
+    "address": "Calle Cerro del Le\\u00f3n \\u0026 El Volc\\u00e1n",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Chillán con DS19, Inmobiliaria Urbani, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/ParqueCordilleraII/Inmobiliaria-Urbani_Parque-Cordillera-II_galeria_1_475_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/ParqueCordilleraII/Inmobiliaria-Urbani_Parque-Cordillera-II_galeria_1_475_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/ParqueCordilleraII/Inmobiliaria-Urbani_Parque-Cordillera-II_galeria_2_475_na.jpg",
@@ -20499,20 +20487,32 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/ParqueCordilleraII/Inmobiliaria-Urbani_Parque-Cordillera-II_galeria_4_475_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/ParqueCordilleraII/Inmobiliaria-Urbani_Parque-Cordillera-II_galeria_5_475_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Chillán con DS19, Inmobiliaria Urbani, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Chillán",
-    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/475/parque-cordillera-ii"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-433-parque-costanera",
     "name": "Parque Costanera",
     "developer": "CVV",
-    "region": "Metropolitana",
+    "region": "Biobío",
     "comuna": "Hualpén",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -20527,33 +20527,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Santa Rosa / Lo Prado",
-    "metroLine": "L4A/L5",
-    "metroWalkMin": 10,
+    "areaM2": null,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/433/parque-costanera"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl: metro Santa Rosa / Lo Prado. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/ParqueCostanera/Inmobiliaria-CVV_Parque-Costanera_galeria_1_433_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": false,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Hualpén"
-    },
-    "lat": -36.7927608,
-    "lng": -73.0943414,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén / buses · Hualpén",
+    "accessDetail": "Acceso a red Biotrén y Concepción",
+    "accessMode": "biotren",
+    "lat": -36.806691,
+    "lng": -73.090675,
+    "address": "Padre Las Casas 790",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Hualpén con DS19, Inmobiliaria CVV, departamentos con 1 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/ParqueCostanera/Inmobiliaria-CVV_Parque-Costanera_galeria_1_433_na.png",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/ParqueCostanera/Inmobiliaria-CVV_Parque-Costanera_galeria_1_433_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/ParqueCostanera/Inmobiliaria-CVV_Parque-Costanera_galeria_2_433_na.png",
@@ -20562,13 +20550,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/ParqueCostanera/Inmobiliaria-CVV_Parque-Costanera_galeria_5_433_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/ParqueCostanera/Inmobiliaria-CVV_Parque-Costanera_galeria_6_433_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Hualpén con DS19, Inmobiliaria CVV, departamentos con 1 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/433/parque-costanera"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "silos-condominio-parque-curamapu",
@@ -20656,10 +20656,29 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 56,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.1702433,
+    "lng": -70.740718,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-03-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-04-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Este proyecto cuenta con terminaciones como: COCINA AMERICANA INTEGRADA. PISO FLOTANTE EN LIVING COMEDOR Y DORMITORIOS. GUARDA POLVOS EN TODO EL DEPARTAMENTO. CERÁMICOS EN BAÑOS Y CONCINAS. LOGGIA CON…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -20667,7 +20686,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 56 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -20675,31 +20693,13 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 56,
-    "description": "Este proyecto cuenta con terminaciones como: COCINA AMERICANA INTEGRADA. PISO FLOTANTE EN LIVING COMEDOR Y DORMITORIOS. GUARDA POLVOS EN TODO EL DEPARTAMENTO. CERÁMICOS EN BAÑOS Y CONCINAS. LOGGIA CON…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-03-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-04-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "sub-73-parque-del-sol-linares",
     "name": "Parque del Sol Linares",
     "developer": "Independencia",
-    "region": "Metropolitana",
+    "region": "Maule",
     "comuna": "Linares",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -20714,33 +20714,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/73/parque-del-sol-linares"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolLinares/Inmobiliaria-Independencia_Parque-del-Sol-Linares_galeria_5_73_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Linares"
-    },
-    "lat": -35.8452905,
-    "lng": -71.5977173,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Linares",
+    "accessDetail": "Corredor 5 Sur · buses interurbanos",
+    "accessMode": "ruta5",
+    "lat": -35.867284,
+    "lng": -71.597943,
+    "address": "Manuel Rodriguez 457",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Linares con DS19 DS01, Inmobiliaria Independencia, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolLinares/Inmobiliaria-Independencia_Parque-del-Sol-Linares_galeria_5_73_na.png",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolLinares/Inmobiliaria-Independencia_Parque-del-Sol-Linares_galeria_5_73_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolLinares/Inmobiliaria-Independencia_Parque-del-Sol-Linares_galeria_6_73_na.png",
@@ -20748,13 +20736,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolLinares/Inmobiliaria-Independencia_Parque-del-Sol-Linares_galeria_8_73_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolLinares/Inmobiliaria-Independencia_Parque-del-Sol-Linares_galeria_9_73_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Linares con DS19 DS01, Inmobiliaria Independencia, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/73/parque-del-sol-linares"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-259-parque-del-sol-san-javier",
@@ -20775,33 +20775,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/259/parque-del-sol-san-javier"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolSanJavier/Parque-del-Sol-San-Javier_galeria_1_259_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Javier"
-    },
-    "lat": -33.455781,
-    "lng": -70.6813976,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -35.608466,
+    "lng": -71.73832,
+    "address": "Av Chorrillos s/n Costado Ferreter\\u00eda Mimbral",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Javier con DS01, Inmobiliaria Independencia, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolSanJavier/Parque-del-Sol-San-Javier_galeria_1_259_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolSanJavier/Parque-del-Sol-San-Javier_galeria_1_259_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolSanJavier/Parque-del-Sol-San-Javier_galeria_2_259_na.webp",
@@ -20809,13 +20797,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolSanJavier/Parque-del-Sol-San-Javier_galeria_4_259_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIndependencia/ParquedelSolSanJavier/Parque-del-Sol-San-Javier_galeria_5_259_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Javier con DS01, Inmobiliaria Independencia, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/259/parque-del-sol-san-javier"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-parque-las-alamedas",
@@ -20836,33 +20836,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 58.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/parque-las-alamedas/"
-      }
-    ],
-    "notes": "Ficha UTS: 58,71 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-199-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 58.7,
-    "description": "Departamentos con subsidio para vivir en Rancagua Parque Las Alamedas es un proyecto residencial desarrollado por Inmobiliaria Koyam, ubicado en la ciudad de Rancagua. Está pensado para familias que b…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-199-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/5-199-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/13-50-1024x768.jpg",
@@ -20871,13 +20859,25 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/3-226-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-233-1024x768.jpg"
     ],
+    "description": "Departamentos con subsidio para vivir en Rancagua Parque Las Alamedas es un proyecto residencial desarrollado por Inmobiliaria Koyam, ubicado en la ciudad de Rancagua. Está pensado para familias que b…",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-las-alamedas/"
+      }
+    ],
+    "notes": "Ficha UTS: 58,71 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "soco-parque-los-avellanos-ii",
@@ -20898,33 +20898,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega Inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "socovesa",
-        "url": "https://www.socovesa.cl/nuestros-proyectos/parque-los-avellanos-ii/"
-      }
-    ],
-    "notes": "Importado desde Socovesa",
-    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/01/Avellanos-Miniatura-agosto-2025.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5",
     "lat": -37.4468702,
     "lng": -72.3381084,
     "address": null,
     "contactPhone": "+56927420982",
     "contactWhatsapp": "https://wa.me/56927420982",
-    "areaM2": null,
-    "description": "Casas en Los Ángeles con entrega inmediata. Condominio Parque Los Avellanos IIdesde 110 a 135 m² con patios amplios. Agenda tu visita hoy.",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/01/Avellanos-Miniatura-agosto-2025.jpg",
     "images": [
       "https://www.socovesa.cl/wp-content/uploads/2022/01/Avellanos-Miniatura-agosto-2025.jpg",
       "https://www.socovesa.cl/wp-content/uploads/2022/01/desktop-banner-parque-los-avellanos-ii.webp",
@@ -20933,6 +20921,7 @@ export const catalog = [
       "https://www.socovesa.cl/wp-content/uploads/2022/01/mobile-banner-secundario-parque-los-avellanos-ii.webp",
       "https://www.socovesa.cl/wp-content/uploads/2022/01/desktop-parque-los-avellanos-ii-carrusel-1.webp"
     ],
+    "description": "Casas en Los Ángeles con entrega inmediata. Condominio Parque Los Avellanos IIdesde 110 a 135 m² con patios amplios. Agenda tu visita hoy.",
     "amenities": [
       "Piscina",
       "Quincho",
@@ -20943,10 +20932,21 @@ export const catalog = [
       "3 dormitorios",
       "3 baños"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
-    "accessDetail": "Corredor 5 Sur · capital provincial",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/parque-los-avellanos-ii/"
+      }
+    ],
+    "notes": "Importado desde Socovesa",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-parque-samore",
@@ -20967,33 +20967,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63.7,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/parque-samore/"
-      }
-    ],
-    "notes": "Ficha UTS: 63,7 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-251-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:curauma"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
+    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
+    "accessMode": "ruta",
     "lat": -33.127419,
     "lng": -71.5696552,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 63.7,
-    "description": "Condominio Parque Samoré – Etapa I es un proyecto acogido al Subsidio DS19, emplazado en el consolidado sector de Curauma, una de las zonas con mayor desarrollo residencial de la región. Esta primera …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-251-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-251-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/8-139-1024x768.jpg",
@@ -21002,11 +20990,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/7-163-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-182-1024x768.jpg"
     ],
+    "description": "Condominio Parque Samoré – Etapa I es un proyecto acogido al Subsidio DS19, emplazado en el consolidado sector de Curauma, una de las zonas con mayor desarrollo residencial de la región. Esta primera …",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
-    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
-    "accessMode": "ruta"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-samore/"
+      }
+    ],
+    "notes": "Ficha UTS: 63,7 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:curauma"
+    }
   },
   {
     "id": "uts-parque-villarrica",
@@ -21027,33 +21027,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 70,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/parque-villarrica/"
-      }
-    ],
-    "notes": "Ficha UTS: 70 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pv-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:villarrica"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Villarrica · buses lacustres",
+    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
+    "accessMode": "buses",
     "lat": -39.2780911,
     "lng": -72.2274364,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 70,
-    "description": "¡Vive la experiencia única de un hogar completo en Parque Villarrica! Este proyecto te ofrece un espacio diseñado para la familia, ubicado en un barrio consolidado y cercano al centro de Villarrica. C…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pv-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/pv-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/a-4-1024x768.jpg",
@@ -21062,14 +21050,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/b-4-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/c-2-1024x768.jpg"
     ],
+    "description": "¡Vive la experiencia única de un hogar completo en Parque Villarrica! Este proyecto te ofrece un espacio diseñado para la familia, ubicado en un barrio consolidado y cercano al centro de Villarrica. C…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Villarrica · buses lacustres",
-    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parque-villarrica/"
+      }
+    ],
+    "notes": "Ficha UTS: 70 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:villarrica"
+    }
   },
   {
     "id": "sub-505-parque-zenteno-ii",
@@ -21090,33 +21090,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/505/parque-zenteno"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/ParqueZenteno/Inmobiliaria-Icuadra_Parque-Zenteno-_galeria_1_505_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Osorno"
-    },
-    "lat": -40.5736955,
-    "lng": -73.1358091,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5",
+    "lat": -40.595746,
+    "lng": -73.108873,
+    "address": "Zenteno 2795",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Osorno con DS19, Inmobiliaria Icuadra, departamentos con 1 y 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/ParqueZenteno/Inmobiliaria-Icuadra_Parque-Zenteno-_galeria_1_505_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/ParqueZenteno/Inmobiliaria-Icuadra_Parque-Zenteno-_galeria_1_505_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/ParqueZenteno/Inmobiliaria-Icuadra_Parque-Zenteno-_galeria_2_505_na.jpg",
@@ -21125,13 +21113,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/ParqueZentenoII/Inmobiliaria-Icuadra_Parque-Zenteno-II_galeria_5_505_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaIcuadra/ParqueZentenoII/Inmobiliaria-Icuadra_Parque-Zenteno-II_galeria_6_505_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Osorno con DS19, Inmobiliaria Icuadra, departamentos con 1 y 2 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Osorno",
-    "accessDetail": "Corredor 5 Sur · terminal de buses",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/505/parque-zenteno"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-parques-del-sur",
@@ -21152,33 +21152,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 71,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/parques-del-sur/"
-      }
-    ],
-    "notes": "Ficha UTS: 71 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-272-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:puerto-montt"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5",
     "lat": -41.471798,
     "lng": -72.9395915,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 71,
-    "description": "Vive en un barrio pensado para la vida familiar Parques del Sur es un proyecto de casas ubicado en Puerto Montt, Región de Los Lagos. Se encuentra en Av. Los Notros S/N esquina Calle Margot Loyola y e…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-272-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/3-272-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-279-1024x768.jpg",
@@ -21187,11 +21175,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-215-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-194-1024x768.jpg"
     ],
+    "description": "Vive en un barrio pensado para la vida familiar Parques del Sur es un proyecto de casas ubicado en Puerto Montt, Región de Los Lagos. Se encuentra en Av. Los Notros S/N esquina Calle Margot Loyola y e…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
-    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parques-del-sur/"
+      }
+    ],
+    "notes": "Ficha UTS: 71 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:puerto-montt"
+    }
   },
   {
     "id": "uts-parras-de-san-javier",
@@ -21212,33 +21212,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 62.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/parras-de-san-javier/"
-      }
-    ],
-    "notes": "Ficha UTS: 62,37 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-236-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Javier"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
+    "accessDetail": "Acceso 5 Sur / Talca",
+    "accessMode": "ruta5",
     "lat": -35.5923933,
     "lng": -71.735308,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 62.4,
-    "description": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-236-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/2-236-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/3-229-1024x768.jpg",
@@ -21247,16 +21235,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-177-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/9-111-1024x768.jpg"
     ],
+    "description": null,
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
-    "accessDetail": "Acceso 5 Sur / Talca",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parras-de-san-javier/"
+      }
+    ],
+    "notes": "Ficha UTS: 62,37 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:San Javier"
+    }
   },
   {
     "id": "uts-parras-de-san-javier-ii",
@@ -21277,33 +21277,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 64.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/parras-de-san-javier-ii/"
-      }
-    ],
-    "notes": "Ficha UTS: 64,14 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-201-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Javier"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
+    "accessDetail": "Acceso 5 Sur / Talca",
+    "accessMode": "ruta5",
     "lat": -35.5923933,
     "lng": -71.735308,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 64.1,
-    "description": "Parras de San Javier II es un proyecto residencial desarrollado por Inmobiliaria FAI en la comuna de San Javier, Región del Maule, diseñado para familias que buscan acceder a una vivienda propia con a…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-201-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/5-201-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-235-1024x768.jpg",
@@ -21312,6 +21300,7 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-176-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-157-1024x768.jpg"
     ],
+    "description": "Parras de San Javier II es un proyecto residencial desarrollado por Inmobiliaria FAI en la comuna de San Javier, Región del Maule, diseñado para familias que buscan acceder a una vivienda propia con a…",
     "amenities": [
       "Piscina",
       "Quincho",
@@ -21319,10 +21308,21 @@ export const catalog = [
       "Áreas verdes",
       "Espacios para compartir en familia y con amigos"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
-    "accessDetail": "Acceso 5 Sur / Talca",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parras-de-san-javier-ii/"
+      }
+    ],
+    "notes": "Ficha UTS: 64,14 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:San Javier"
+    }
   },
   {
     "id": "sub-385-parrones-de-baquedano",
@@ -21343,33 +21343,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/385/parrones-de-baquedano"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedano/Brio-Inmobiliaria_Parrones-de-Baquedano_galeria_10_385_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.165282,
+    "lng": -70.77553,
+    "address": "Cam. San Ram\\u00f3n 3507",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Brio Inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedano/Brio-Inmobiliaria_Parrones-de-Baquedano_galeria_10_385_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedano/Brio-Inmobiliaria_Parrones-de-Baquedano_galeria_10_385_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedano/Brio-Inmobiliaria_Parrones-de-Baquedano_galeria_2_385_na.jpg",
@@ -21379,14 +21367,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedano/Brio-Inmobiliaria_Parrones-de-Baquedano_galeria_6_385_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedano/Brio-Inmobiliaria_Parrones-de-Baquedano_galeria_7_385_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Brio Inmobiliaria, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/385/parrones-de-baquedano"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-499-parrones-de-baquedano-norte",
@@ -21407,10 +21407,34 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.165282,
+    "lng": -70.77553,
+    "address": "Cam. San Ram\\u00f3n 3507",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_1_499_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_1_499_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_2_499_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_3_499_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_4_499_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_5_499_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_6_499_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19 DS01 Tramo II DS01 Tramo III, Brio Inmobiliaria, departamentos con 2 dormitorios",
+    "amenities": [
+      "Piscina",
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -21422,38 +21446,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_1_499_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 63.4,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19 DS01 Tramo II DS01 Tramo III, Brio Inmobiliaria, departamentos con 2 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_1_499_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_2_499_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_3_499_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_4_499_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_5_499_na.jpg",
-      "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/ParronesdeBaquedanoNorte/Brio-Inmobiliaria_Parrones-de-Baquedano-Norte_galeria_6_499_na.jpg"
-    ],
-    "amenities": [
-      "Piscina",
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-parrones-baquedano-sur",
@@ -21474,33 +21474,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/parrones-baquedano-sur/"
-      }
-    ],
-    "notes": "Ficha UTS: 63,4 m2 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-265-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 63.4,
-    "description": "Parrones de Baquedano Sur marca un antes y un después en la forma de vivir en Rancagua, ofreciendo residencias de alto estándar que combinan a la perfección diseño y funcionalidad. Este desarrollo, ub…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-265-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/2-265-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-276-1024x768.jpg",
@@ -21509,11 +21497,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-230-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-201-1024x768.jpg"
     ],
+    "description": "Parrones de Baquedano Sur marca un antes y un después en la forma de vivir en Rancagua, ofreciendo residencias de alto estándar que combinan a la perfección diseño y funcionalidad. Este desarrollo, ub…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/parrones-baquedano-sur/"
+      }
+    ],
+    "notes": "Ficha UTS: 63,4 m2 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "uts-condominio-paseo-de-las-aves",
@@ -21596,33 +21596,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": "Rojas Magallanes",
     "metroLine": "L4",
     "metroWalkMin": 12,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/374/paso-el-roble"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/PasoelRoble/Inmobiliaria-Sip_Paso-el-Roble_galeria_10_374_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:La Florida"
-    },
-    "lat": -33.5204181,
-    "lng": -70.6006178,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.516648,
+    "lng": -70.602585,
+    "address": "Paso El Roble 187",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna La Florida con DS01 Tramo III, Inmobiliaria Sip, departamentos con 1 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/PasoelRoble/Inmobiliaria-Sip_Paso-el-Roble_galeria_10_374_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/PasoelRoble/Inmobiliaria-Sip_Paso-el-Roble_galeria_10_374_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/PasoelRoble/Inmobiliaria-Sip_Paso-el-Roble_galeria_9_374_na.jpg",
@@ -21631,22 +21619,34 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/PasoelRoble/Inmobiliaria-Sip_Paso-el-Roble_galeria_14_374_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaSip/PasoelRoble/Inmobiliaria-Sip_Paso-el-Roble_galeria_15_374_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna La Florida con DS01 Tramo III, Inmobiliaria Sip, departamentos con 1 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho",
       "Cowork",
       "Sala cowork"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/374/paso-el-roble"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-483-peumayen",
     "name": "Peumayen",
     "developer": "Río Baker",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Quillota",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -21661,10 +21661,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5",
+    "lat": -32.87755,
+    "lng": -71.235297,
+    "address": "Rafael Arizt\\u00eda 568",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_1_483_na.png",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_1_483_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_2_483_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_3_483_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_4_483_na.png"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Bicicletero"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -21672,37 +21695,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_1_483_na.png",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quillota"
-    },
-    "lat": -32.879997,
-    "lng": -71.2473555,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Quillota con DS19, Inmobiliaria Río Baker, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_1_483_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_2_483_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_3_483_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaRoBaker/Peumayen/Inmobiliaria-Ro-Baker_Peumayen_galeria_4_483_na.png"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Bicicletero"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "pintor-helsby",
@@ -21782,10 +21782,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.138089,
+    "lng": -70.738196,
+    "address": "Samuel Rom\\u00e1n Rojas 936",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_1_495_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_1_495_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_2_495_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_3_495_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_4_495_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_5_495_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_6_495_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria PY, departamentos con 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -21797,37 +21820,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_1_495_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 63,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria PY, departamentos con 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_1_495_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_2_495_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_3_495_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_4_495_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_5_495_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloII/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II_galeria_6_495_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-513-pintor-gustavo-cabello-ii-ds01",
@@ -21848,33 +21848,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/513/pintor-gustavo-cabello-ii-ds01"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloIIDS01/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II-DS01_galeria_1_513_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.138632,
+    "lng": -70.737333,
+    "address": "Samuel Rom\\u00e1n Rojas 936",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS01 Tramo II DS01 Tramo III, Inmobiliaria PY, departamentos con 2 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloIIDS01/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II-DS01_galeria_1_513_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloIIDS01/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II-DS01_galeria_1_513_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloIIDS01/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II-DS01_galeria_2_513_na.jpg",
@@ -21882,13 +21870,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloIIDS01/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II-DS01_galeria_4_513_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaPY/PintorGustavoCabelloIIDS01/Inmobiliaria-PY_Pintor-Gustavo-Cabello-II-DS01_galeria_5_513_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS01 Tramo II DS01 Tramo III, Inmobiliaria PY, departamentos con 2 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/513/pintor-gustavo-cabello-ii-ds01"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "bci-9444-pintor-jose-venturelli",
@@ -21955,7 +21955,7 @@ export const catalog = [
     "id": "sub-70-plaza-bilbao-barquin",
     "name": "Plaza Bilbao Barquín",
     "developer": "Urbani",
-    "region": "Metropolitana",
+    "region": "Ñuble",
     "comuna": "San Carlos",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -21970,33 +21970,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/70/plaza-bilbao-barquin"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/PlazaBilbaoBarqun/Plaza-Bilbao-Barqun_galeria_1_70_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Carlos"
-    },
-    "lat": -36.3792284,
-    "lng": -72.0179525,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · San Carlos",
+    "accessDetail": "Corredor 5 Sur · Ñuble",
+    "accessMode": "ruta5",
+    "lat": -36.425325,
+    "lng": -71.976199,
+    "address": "Francisco Bilbao 500",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Carlos con DS19, Inmobiliaria Urbani, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/PlazaBilbaoBarqun/Plaza-Bilbao-Barqun_galeria_1_70_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/PlazaBilbaoBarqun/Plaza-Bilbao-Barqun_galeria_1_70_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/PlazaBilbaoBarqun/Plaza-Bilbao-Barqun_galeria_2_70_na.webp",
@@ -22004,14 +21992,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/PlazaBilbaoBarqun/Plaza-Bilbao-Barqun_galeria_4_70_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaUrbani/PlazaBilbaoBarqun/Plaza-Bilbao-Barqun_galeria_6_70_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Carlos con DS19, Inmobiliaria Urbani, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/70/plaza-bilbao-barquin"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-plaza-cautin",
@@ -22032,33 +22032,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/plaza-cautin/"
-      }
-    ],
-    "notes": "Ficha UTS: 60 m² m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pc-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -38.7358908,
     "lng": -72.590538,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60,
-    "description": "Vive con Calidad y Comodidad en Plaza Cautín: ¡Tu Nuevo Hogar en Temuco con Subsidio Automático y Entrega Inmediata! Descubre la comodidad y calidad de vida en Plaza Cautín, un condominio estratégicam…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pc-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/pc-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/d-7-1024x768.jpg",
@@ -22067,16 +22055,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/g-2-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/b-7-1024x768.jpg"
     ],
+    "description": "Vive con Calidad y Comodidad en Plaza Cautín: ¡Tu Nuevo Hogar en Temuco con Subsidio Automático y Entrega Inmediata! Descubre la comodidad y calidad de vida en Plaza Cautín, un condominio estratégicam…",
     "amenities": [
       "Sala de eventos",
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/plaza-cautin/"
+      }
+    ],
+    "notes": "Ficha UTS: 60 m² m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Temuco"
+    }
   },
   {
     "id": "plaza-central-maipu",
@@ -22764,10 +22764,28 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 62.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses",
+    "lat": -18.4785288,
+    "lng": -70.3211394,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-03-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Condominio de departamentos con subsidio automático DS19 en Arica Vive un gran sector de Arica, con todo lo que necesitas a tu alcance y disfruta del Parque Las Torres a sólo metros de tu hogar. Condo…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -22775,7 +22793,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 62.88 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -22783,24 +22800,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Arica"
-    },
-    "lat": -18.4785288,
-    "lng": -70.3211394,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 62.9,
-    "description": "Condominio de departamentos con subsidio automático DS19 en Arica Vive un gran sector de Arica, con todo lo que necesitas a tu alcance y disfruta del Parque Las Torres a sólo metros de tu hogar. Condo…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-03-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Arica · Ruta 5 Norte",
-    "accessDetail": "Capital regional · terminal internacional/nacional",
-    "accessMode": "buses"
+    }
   },
   {
     "id": "uts-portal-de-curanilahue",
@@ -22821,33 +22821,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 71.3,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/portal-de-curanilahue/"
-      }
-    ],
-    "notes": "Ficha UTS: 71,27 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portal-de-Curanilahue-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Curanilahue"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses · Curanilahue",
+    "accessDetail": "Fuera del eje 5 Sur · buses a Concepción/Lebu",
+    "accessMode": "buses",
     "lat": -37.4758037,
     "lng": -73.3457069,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 71.3,
-    "description": "Portal de Curanilahue es un proyecto de casas con subsidio DS19 adjudicado, ubicado en Avenida Bernardo O’Higgins 1900 en Curanilahue,El proyecto está equipado con áreas verdes, multicancha y ciclovía…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portal-de-Curanilahue-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Portal-de-Curanilahue-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Portal-de-Curanilahue-02-Vitrina-UTS-1024x768.jpg",
@@ -22856,13 +22844,25 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Portal-de-Curanilahue-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Portal-de-Curanilahue-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Portal de Curanilahue es un proyecto de casas con subsidio DS19 adjudicado, ubicado en Avenida Bernardo O’Higgins 1900 en Curanilahue,El proyecto está equipado con áreas verdes, multicancha y ciclovía…",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Buses · Curanilahue",
-    "accessDetail": "Fuera del eje 5 Sur · buses a Concepción/Lebu",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/portal-de-curanilahue/"
+      }
+    ],
+    "notes": "Ficha UTS: 71,27 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Curanilahue"
+    }
   },
   {
     "id": "bci-9598-portal-de-los-artesanos",
@@ -22947,33 +22947,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 66.4,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/portal-del-alwa/"
-      }
-    ],
-    "notes": "Ficha UTS: 66,43 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-126-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Arica"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses",
     "lat": -18.4785288,
     "lng": -70.3211394,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 66.4,
-    "description": "¿Estás buscando un lugar que combine comodidad, modernidad y una ubicación privilegiada cerca de la playa? Portal del Alwa, el nuevo proyecto con subsidio DS19, te ofrece todo esto y más, convirtiéndo…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-126-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-126-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-124-1024x768.jpg",
@@ -22982,16 +22970,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-112-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-96-1024x768.jpg"
     ],
+    "description": "¿Estás buscando un lugar que combine comodidad, modernidad y una ubicación privilegiada cerca de la playa? Portal del Alwa, el nuevo proyecto con subsidio DS19, te ofrece todo esto y más, convirtiéndo…",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Arica · Ruta 5 Norte",
-    "accessDetail": "Capital regional · terminal internacional/nacional",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/portal-del-alwa/"
+      }
+    ],
+    "notes": "Ficha UTS: 66,43 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Arica"
+    }
   },
   {
     "id": "soco-portal-del-libertador-ix",
@@ -23076,33 +23076,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/380/portal-el-abra"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/PortalelAbra/Inmobiliaria-Baker_Portal-el-Abra_galeria_1_380_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Requínoa"
-    },
-    "lat": -34.2848586,
-    "lng": -70.8175128,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -34.281546,
+    "lng": -70.821585,
+    "address": "Avenida la Piscina",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Requínoa con DS19 DS01 Tramo II DS01 Tramo III, Inmobiliaria Baker, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/PortalelAbra/Inmobiliaria-Baker_Portal-el-Abra_galeria_1_380_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/PortalelAbra/Inmobiliaria-Baker_Portal-el-Abra_galeria_1_380_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/PortalelAbra/Inmobiliaria-Baker_Portal-el-Abra_galeria_2_380_na.jpg",
@@ -23111,15 +23099,27 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/PortalelAbra/Inmobiliaria-Baker_Portal-el-Abra_galeria_5_380_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/InmobiliariaBaker/PortalelAbra/Inmobiliaria-Baker_Portal-el-Abra_galeria_6_380_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Requínoa con DS19 DS01 Tramo II DS01 Tramo III, Inmobiliaria Baker, departamentos con 3 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/380/portal-el-abra"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-406-portal-el-alwa",
@@ -23140,33 +23140,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/406/portal-el-alwa"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/Portalelalwa/ECASA-Inmobiliaria_Portal-el-alwa_galeria_1_406_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Arica"
-    },
-    "lat": -18.4785288,
-    "lng": -70.3211394,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses",
+    "lat": -18.44399,
+    "lng": -70.29529,
+    "address": "Av. Santiago Arata 4351",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Arica con DS19, ECASA Inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/Portalelalwa/ECASA-Inmobiliaria_Portal-el-alwa_galeria_1_406_na.png",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/Portalelalwa/ECASA-Inmobiliaria_Portal-el-alwa_galeria_1_406_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/Portalelalwa/ECASA-Inmobiliaria_Portal-el-alwa_galeria_2_406_na.png",
@@ -23174,13 +23162,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/Portalelalwa/ECASA-Inmobiliaria_Portal-el-alwa_galeria_4_406_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/ECASAInmobiliaria/Portalelalwa/ECASA-Inmobiliaria_Portal-el-alwa_galeria_5_406_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Arica con DS19, ECASA Inmobiliaria, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Arica · Ruta 5 Norte",
-    "accessDetail": "Capital regional · terminal internacional/nacional",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/406/portal-el-alwa"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-portal-lo-campino",
@@ -23263,33 +23263,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59.3,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/portal-penablanca/"
-      }
-    ],
-    "notes": "Ficha UTS: 59,34 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Diseคo-sin-tกtulo-2-1-1024x768.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:penablanca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
     "lat": -33.0402022,
     "lng": -71.3529769,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 59.3,
-    "description": "Condominio de departamentos, ubicado en una comuna consolidada y residencial, cerca de todo lo que necesitas (supermercados, colegios, jardines infantíles, farmacias y más). Locomoción colectiva a la …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Diseคo-sin-tกtulo-2-1-1024x768.png",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Diseคo-sin-tกtulo-2-1-1024x768.png",
       "https://usatusubsidio.com/wp-content/uploads/C-1024x768.png",
@@ -23298,14 +23286,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Diseคo-sin-tกtulo-2-1024x768.png",
       "https://usatusubsidio.com/wp-content/uploads/Diseคo-sin-tกtulo-3-1024x768.png"
     ],
+    "description": "Condominio de departamentos, ubicado en una comuna consolidada y residencial, cerca de todo lo que necesitas (supermercados, colegios, jardines infantíles, farmacias y más). Locomoción colectiva a la …",
     "amenities": [
       "Quincho",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Villa Alemana",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/portal-penablanca/"
+      }
+    ],
+    "notes": "Ficha UTS: 59,34 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:penablanca"
+    }
   },
   {
     "id": "ecomac-portal-ulriksen",
@@ -23326,33 +23326,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Venta en verde",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "ecomac",
-        "url": "https://www.ecomac.cl/proyectos/portal-ulriksen"
-      }
-    ],
-    "notes": "Importado desde API Ecomac",
-    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/136/20260506054922VDhopF4yitwphm1.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5",
     "lat": -29.931341274980827,
     "lng": -71.2396005246596,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/136/20260506054922VDhopF4yitwphm1.jpg",
     "images": [
       "https://api.somosecomac.cl/storage/administration/webprojects/136/20260506054922VDhopF4yitwphm1.jpg",
       "https://api.somosecomac.cl/storage/administration/webprojects/136/20260511044443qBozP1lSk7I9Tki.png",
@@ -23361,6 +23349,7 @@ export const catalog = [
       "https://api.somosecomac.cl/storage/administration/webprojects/136/featured-plugins/20260506060320WTGfEIlKnYrOnha.png",
       "https://api.somosecomac.cl/storage/administration/webprojects/136/featured-plugins/20260506060320PPjsyuhJ5ZYTg3v.png"
     ],
+    "description": "Desde 1965, ECOMAC construye hogares y sueños en Chile. Especialistas en vivienda con presencia en Atacama, Coquimbo, Bío-Bío, y Los Lagos.",
     "amenities": [
       "Quincho",
       "Sala de eventos",
@@ -23368,10 +23357,21 @@ export const catalog = [
       "Áreas verdes",
       "Bicicletero"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · terminal La Serena",
-    "accessDetail": "Corredor 5 Norte · terminal Elqui",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "ecomac",
+        "url": "https://www.ecomac.cl/proyectos/portal-ulriksen"
+      }
+    ],
+    "notes": "Importado desde API Ecomac",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-praderas-de-labranza-ii",
@@ -23392,33 +23392,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 71,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/praderas-de-labranza-ii/"
-      }
-    ],
-    "notes": "Ficha UTS: 71 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pdl-1-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Temuco"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -38.7358908,
     "lng": -72.590538,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 71,
-    "description": "Descubre tu Nuevo Hogar en Praderas de Labranza II: Entrega Inmediata y Bienestar Garantizado ¡Da inicio a tu nueva etapa de vida en el consolidado sector de Labranza, a escasos minutos de Temuco, con…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pdl-1-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/pdl-1-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/e-5-1024x768.jpg",
@@ -23427,14 +23415,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/d-8-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/b-8-1024x768.jpg"
     ],
+    "description": "Descubre tu Nuevo Hogar en Praderas de Labranza II: Entrega Inmediata y Bienestar Garantizado ¡Da inicio a tu nueva etapa de vida en el consolidado sector de Labranza, a escasos minutos de Temuco, con…",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Temuco",
-    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/praderas-de-labranza-ii/"
+      }
+    ],
+    "notes": "Ficha UTS: 71 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Temuco"
+    }
   },
   {
     "id": "uts-praderas-de-talca",
@@ -23455,33 +23455,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 69.3,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/praderas-de-talca/"
-      }
-    ],
-    "notes": "Ficha UTS: 69.32 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-13-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Talca"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
     "lat": -35.4265343,
     "lng": -71.6660322,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 69.3,
-    "description": "Condominio de 300 Departamentos con Subsidio Automático DS 19. Excelente locomoción, cercano a Colegios, Centros de Salud, Carabineros y Comercio. Piscina, tina de hidromasaje, sendero de trote, juego…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-13-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/13-13-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-52-1024x768.jpg",
@@ -23490,15 +23478,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/2-50-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/5-46-1024x768.jpg"
     ],
+    "description": "Condominio de 300 Departamentos con Subsidio Automático DS 19. Excelente locomoción, cercano a Colegios, Centros de Salud, Carabineros y Comercio. Piscina, tina de hidromasaje, sendero de trote, juego…",
     "amenities": [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/praderas-de-talca/"
+      }
+    ],
+    "notes": "Ficha UTS: 69.32 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Talca"
+    }
   },
   {
     "id": "uts-praderas-del-llaima",
@@ -23519,33 +23519,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 70.1,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/praderas-del-llaima/"
-      }
-    ],
-    "notes": "Ficha UTS: 70,1 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/llaima_1-1-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Vilcún"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses · Vilcún / acceso Temuco",
+    "accessDetail": "Cercano a Temuco · sin estación férrea de pasajeros",
+    "accessMode": "buses",
     "lat": -38.6703956,
     "lng": -72.2240806,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 70.1,
-    "description": "Praderas del Llaima: Vive la Experiencia Única de un Hogar Completo en Cajón Descubre la majestuosidad de vivir en Praderas del Llaima, un nuevo barrio en la pintoresca localidad de Cajón, con vistas …",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/llaima_1-1-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/llaima_1-1-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Colico_e-2-1024x768.jpg",
@@ -23554,11 +23542,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Colico_c-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/tacora_b-3-1024x768.jpg"
     ],
+    "description": "Praderas del Llaima: Vive la Experiencia Única de un Hogar Completo en Cajón Descubre la majestuosidad de vivir en Praderas del Llaima, un nuevo barrio en la pintoresca localidad de Cajón, con vistas …",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Buses · Vilcún / acceso Temuco",
-    "accessDetail": "Cercano a Temuco · sin estación férrea de pasajeros",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/praderas-del-llaima/"
+      }
+    ],
+    "notes": "Ficha UTS: 70,1 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Vilcún"
+    }
   },
   {
     "id": "presidente-prieto",
@@ -23765,33 +23765,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/421/puerta-norte-chinchorro"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/PuertaNorteChinchorro/Inmobiliaria-Armas_Puerta-Norte-Chinchorro_galeria_1_421_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Arica"
-    },
-    "lat": -18.4785288,
-    "lng": -70.3211394,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses",
+    "lat": -18.429222,
+    "lng": -70.295463,
+    "address": "Av. Santiago Arata 4501",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Arica con DS19, Inmobiliaria Armas, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/PuertaNorteChinchorro/Inmobiliaria-Armas_Puerta-Norte-Chinchorro_galeria_1_421_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/PuertaNorteChinchorro/Inmobiliaria-Armas_Puerta-Norte-Chinchorro_galeria_1_421_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/PuertaNorteChinchorro/Inmobiliaria-Armas_Puerta-Norte-Chinchorro_galeria_2_421_na.png",
@@ -23800,13 +23788,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/PuertaNorteChinchorro/Inmobiliaria-Armas_Puerta-Norte-Chinchorro_galeria_5_421_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaArmas/PuertaNorteChinchorro/Inmobiliaria-Armas_Puerta-Norte-Chinchorro_galeria_6_421_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Arica con DS19, Inmobiliaria Armas, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Arica · Ruta 5 Norte",
-    "accessDetail": "Capital regional · terminal internacional/nacional",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/421/puerta-norte-chinchorro"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-quinta-costanera",
@@ -23827,33 +23827,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 61.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/quinta-costanera/"
-      }
-    ],
-    "notes": "Ficha UTS: 61,89 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Cinta-Entrega-inmediata-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Vallenar"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Vallenar",
+    "accessDetail": "Corredor 5 Norte",
+    "accessMode": "ruta5",
     "lat": -28.5750438,
     "lng": -70.7616398,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 61.9,
-    "description": "Descubre Quinta Costanera, un exclusivo proyecto acogido al subsidio DS19 que te permitirá vivir en la nueva costanera de Vallenar, en primera línea del río y a solo minutos del centro de la ciudad. C…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Cinta-Entrega-inmediata-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Cinta-Entrega-inmediata-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-156-1024x768.jpg",
@@ -23862,11 +23850,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/4-127-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-142-1024x768.jpg"
     ],
+    "description": "Descubre Quinta Costanera, un exclusivo proyecto acogido al subsidio DS19 que te permitirá vivir en la nueva costanera de Vallenar, en primera línea del río y a solo minutos del centro de la ciudad. C…",
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Vallenar",
-    "accessDetail": "Corredor 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/quinta-costanera/"
+      }
+    ],
+    "notes": "Ficha UTS: 61,89 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Vallenar"
+    }
   },
   {
     "id": "soco-reserva-magallanes",
@@ -23887,33 +23887,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega Inmediata",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "socovesa",
-        "url": "https://www.socovesa.cl/nuestros-proyectos/reserva-magallanes/"
-      }
-    ],
-    "notes": "Importado desde Socovesa",
-    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2023/10/Reserva-Magallanes-2025-Mayo_Miniatura.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": false,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": false,
-      "locationSource": "ficha"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Punta Arenas",
+    "accessDetail": "Capital Magallanes · buses locales / austral",
+    "accessMode": "buses",
     "lat": -53.1424021,
     "lng": -70.9401398,
     "address": null,
     "contactPhone": "+56927420982",
     "contactWhatsapp": "https://wa.me/56927420982",
-    "areaM2": null,
-    "description": "Reserva Magallanes: casas aisladas en Punta Arenas con calefacción central y espacios integrados. Modelos de 60 y 70m². ¡Agenda tu visita hoy!",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2023/10/Reserva-Magallanes-2025-Mayo_Miniatura.jpg",
     "images": [
       "https://www.socovesa.cl/wp-content/uploads/2023/10/Reserva-Magallanes-2025-Mayo_Miniatura.jpg",
       "https://www.socovesa.cl/wp-content/uploads/2023/10/desktop-banner-reserva-magallanes.webp",
@@ -23922,15 +23910,27 @@ export const catalog = [
       "https://www.socovesa.cl/wp-content/uploads/2023/10/mobile-banner-secundario-reserva-magallanes.webp",
       "https://www.socovesa.cl/wp-content/uploads/2023/10/desktop-reserva-magallanes-carrusel-1.webp"
     ],
+    "description": "Reserva Magallanes: casas aisladas en Punta Arenas con calefacción central y espacios integrados. Modelos de 60 y 70m². ¡Agenda tu visita hoy!",
     "amenities": [
       "70 m² totales",
       "3 dormitorios",
       "3 baños"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Punta Arenas",
-    "accessDetail": "Capital Magallanes · buses locales / austral",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/reserva-magallanes/"
+      }
+    ],
+    "notes": "Importado desde Socovesa",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-robles-de-aconcagua",
@@ -23951,10 +23951,28 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 59,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Los Andes · Ruta 57/60",
+    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
+    "accessMode": "buses",
+    "lat": -32.8336867,
+    "lng": -70.5981609,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-246-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/2-246-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/3-239-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/1-256-1024x768.jpg"
+    ],
+    "description": "¡Tu primer hogar te espera en Los Andes!Robles del Aconcagua es un proyecto con subsidio automático DS19, ubicado en un sector residencial consolidado del Valle de Aconcagua, ideal para quienes buscan…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -23962,7 +23980,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 59 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-246-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -23970,24 +23987,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:los-andes"
-    },
-    "lat": -32.8336867,
-    "lng": -70.5981609,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 59,
-    "description": "¡Tu primer hogar te espera en Los Andes!Robles del Aconcagua es un proyecto con subsidio automático DS19, ubicado en un sector residencial consolidado del Valle de Aconcagua, ideal para quienes buscan…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/2-246-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/3-239-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/1-256-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Los Andes · Ruta 57/60",
-    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
-    "accessMode": "buses"
+    }
   },
   {
     "id": "uts-rocas-de-la-iglesia-2",
@@ -24008,10 +24008,33 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 66.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Constitución · costa Maule",
+    "accessDetail": "Buses a Talca · lejos del eje 5 Sur",
+    "accessMode": "buses",
+    "lat": -35.3318306,
+    "lng": -72.4118998,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-04-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-03-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-02-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "En un sector privilegiado de Constitución, con una insuperable vista al mar y al santuario de la naturaleza Piedra de la Iglesia. Con Departamentos de 3 Dormitorios y 1 ó 2 baños, puedes disfrutar jun…",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles",
+      "Áreas verdes"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24019,7 +24042,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 66.77 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -24027,29 +24049,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Constitución"
-    },
-    "lat": -35.3318306,
-    "lng": -72.4118998,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 66.8,
-    "description": "En un sector privilegiado de Constitución, con una insuperable vista al mar y al santuario de la naturaleza Piedra de la Iglesia. Con Departamentos de 3 Dormitorios y 1 ó 2 baños, puedes disfrutar jun…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-04-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-03-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-02-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles",
-      "Áreas verdes"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Constitución · costa Maule",
-    "accessDetail": "Buses a Talca · lejos del eje 5 Sur",
-    "accessMode": "buses"
+    }
   },
   {
     "id": "euro-rosas-1444",
@@ -24139,33 +24139,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/496/samuel-roman-rojas"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SamuelRomnRojas/Inmobiliaria-PY_Samuel-Romn-Rojas_galeria_1_496_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.138089,
+    "lng": -70.738196,
+    "address": "Samuel Rom\\u00e1n Rojas 936",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria PY, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SamuelRomnRojas/Inmobiliaria-PY_Samuel-Romn-Rojas_galeria_1_496_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SamuelRomnRojas/Inmobiliaria-PY_Samuel-Romn-Rojas_galeria_1_496_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SamuelRomnRojas/Inmobiliaria-PY_Samuel-Romn-Rojas_galeria_2_496_na.jpg",
@@ -24174,13 +24162,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SamuelRomnRojas/Inmobiliaria-PY_Samuel-Romn-Rojas_galeria_5_496_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SamuelRomnRojas/Inmobiliaria-PY_Samuel-Romn-Rojas_galeria_6_496_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria PY, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/496/samuel-roman-rojas"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "aitue-san-andres-del-valle",
@@ -24256,7 +24256,7 @@ export const catalog = [
     "id": "sub-456-san-cristian",
     "name": "San Cristián",
     "developer": "Magua",
-    "region": "Metropolitana",
+    "region": "Valparaíso",
     "comuna": "Villa Alemana",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -24271,33 +24271,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/456/san-cristian"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanCristin/Inmobiliaria-Magua_San-Cristin_galeria_1_456_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:villa-alemana"
-    },
-    "lat": -33.0441903,
-    "lng": -71.3725464,
-    "address": null,
+    "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
+    "lat": -33.052752,
+    "lng": -71.357093,
+    "address": "Av. Nueva Hipodromo 650",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Villa Alemana con DS19, Inmobiliaria Magua, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanCristin/Inmobiliaria-Magua_San-Cristin_galeria_1_456_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanCristin/Inmobiliaria-Magua_San-Cristin_galeria_1_456_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanCristin/Inmobiliaria-Magua_San-Cristin_galeria_2_456_na.jpg",
@@ -24305,13 +24293,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanCristin/Inmobiliaria-Magua_San-Cristin_galeria_4_456_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanCristin/Inmobiliaria-Magua_San-Cristin_galeria_5_456_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Villa Alemana con DS19, Inmobiliaria Magua, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/456/san-cristian"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "paz-I229",
@@ -24468,33 +24468,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 61.6,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/condominio-san-jorge-aurelio/"
-      }
-    ],
-    "notes": "Ficha UTS: 61.63 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10-108-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
     "lat": -32.750687,
     "lng": -70.7252688,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 61.6,
-    "description": "Condominio San Jorge Aurelio: departamentos DS19 en San Felipe Condominio San Jorge Aurelio es un proyecto de departamentos ubicado en San Felipe, diseñado para quienes buscan acceder a una vivienda p…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10-108-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/10-108-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-284-1024x768.jpg",
@@ -24503,16 +24491,28 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/4-254-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/5-238-1024x768.jpg"
     ],
+    "description": "Condominio San Jorge Aurelio: departamentos DS19 en San Felipe Condominio San Jorge Aurelio es un proyecto de departamentos ubicado en San Felipe, diseñado para quienes buscan acceder a una vivienda p…",
     "amenities": [
       "Piscina",
       "Quincho",
       "Áreas verdes",
       "BBQ / parrilla"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/condominio-san-jorge-aurelio/"
+      }
+    ],
+    "notes": "Ficha UTS: 61.63 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:san-felipe"
+    }
   },
   {
     "id": "sub-458-san-marcos",
@@ -24533,33 +24533,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/458/san-marcos"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanMarcos/Inmobiliaria-Magua_San-Marcos_galeria_1_458_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Requínoa"
-    },
-    "lat": -34.2848586,
-    "lng": -70.8175128,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -34.287578,
+    "lng": -70.825294,
+    "address": "Cam. Los Perales 110",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Requínoa con DS19, Inmobiliaria Magua, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanMarcos/Inmobiliaria-Magua_San-Marcos_galeria_1_458_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanMarcos/Inmobiliaria-Magua_San-Marcos_galeria_1_458_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanMarcos/Inmobiliaria-Magua_San-Marcos_galeria_2_458_na.jpg",
@@ -24567,13 +24555,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanMarcos/Inmobiliaria-Magua_San-Marcos_galeria_4_458_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SanMarcos/Inmobiliaria-Magua_San-Marcos_galeria_5_458_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Requínoa con DS19, Inmobiliaria Magua, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/458/san-marcos"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-san-rafael-condominio",
@@ -24594,33 +24594,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 58,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/san-rafael-condominio/"
-      }
-    ],
-    "notes": "Ficha UTS: 58 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/SAN-RAFAEL-CONDOMINIO-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
     "lat": -34.1702433,
     "lng": -70.740718,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 58,
-    "description": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/SAN-RAFAEL-CONDOMINIO-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/SAN-RAFAEL-CONDOMINIO-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/SAN-RAFAEL-CONDOMINIO-02-Vitrina-UTS-1024x768.jpg",
@@ -24629,15 +24617,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/SAN-RAFAEL-CONDOMINIO-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/SAN-RAFAEL-CONDOMINIO-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": null,
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/san-rafael-condominio/"
+      }
+    ],
+    "notes": "Ficha UTS: 58 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Rancagua"
+    }
   },
   {
     "id": "sub-457-santa-adriana",
@@ -24658,33 +24658,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/457/santa-adriana"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaAdriana/Inmobiliaria-Magua_Santa-Adriana_galeria_1_457_na.png",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
-    "lat": -32.750687,
-    "lng": -70.7252688,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
+    "lat": -32.755903,
+    "lng": -70.716746,
+    "address": "Maria Eufrasia 1500",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Inmobiliaria Magua, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaAdriana/Inmobiliaria-Magua_Santa-Adriana_galeria_1_457_na.png",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaAdriana/Inmobiliaria-Magua_Santa-Adriana_galeria_1_457_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaAdriana/Inmobiliaria-Magua_Santa-Adriana_galeria_2_457_na.png",
@@ -24692,13 +24680,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaAdriana/Inmobiliaria-Magua_Santa-Adriana_galeria_4_457_na.png",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaAdriana/Inmobiliaria-Magua_Santa-Adriana_galeria_5_457_na.png"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Inmobiliaria Magua, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/457/santa-adriana"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-santa-elena-1670",
@@ -24859,10 +24859,31 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5",
+    "lat": -34.174892,
+    "lng": -70.756535,
+    "address": "Bolivia 1244",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_1_459_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_1_459_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_2_459_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_3_459_na.jpg",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_4_459_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria Magua, departamentos con 3 dormitorios",
+    "amenities": [
+      "Quincho"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -24870,35 +24891,14 @@ export const catalog = [
       }
     ],
     "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_1_459_na.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rancagua"
-    },
-    "lat": -34.1702433,
-    "lng": -70.740718,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Rancagua con DS19, Inmobiliaria Magua, departamentos con 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_1_459_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_2_459_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_3_459_na.jpg",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaMagua/SantaJosefina/Inmobiliaria-Magua_Santa-Josefina_galeria_4_459_na.jpg"
-    ],
-    "amenities": [
-      "Quincho"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
-    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
-    "accessMode": "ruta5"
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-edificio-santa-petronila",
@@ -25200,33 +25200,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/473/sendero-de-guindal"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/SenderodeGuindal/Inmobiliaria-Sigma_Sendero-de-Guindal_galeria_1_473_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Calle Larga"
-    },
-    "lat": -32.8552685,
-    "lng": -70.6260407,
-    "address": "Calle Larga",
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -32.870502,
+    "lng": -70.652273,
+    "address": "Castro 185",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Calle Larga con DS19, Inmobiliaria Sigma, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/SenderodeGuindal/Inmobiliaria-Sigma_Sendero-de-Guindal_galeria_1_473_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/SenderodeGuindal/Inmobiliaria-Sigma_Sendero-de-Guindal_galeria_1_473_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/SenderodeGuindal/Inmobiliaria-Sigma_Sendero-de-Guindal_galeria_2_473_na.jpg",
@@ -25234,15 +25222,27 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/SenderodeGuindal/Inmobiliaria-Sigma_Sendero-de-Guindal_galeria_4_473_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaSigma/SenderodeGuindal/Inmobiliaria-Sigma_Sendero-de-Guindal_galeria_5_473_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Calle Larga con DS19, Inmobiliaria Sigma, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Quincho",
       "Gimnasio",
       "Juegos infantiles"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/473/sendero-de-guindal"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-senderos-de-los-andes-iii",
@@ -25263,33 +25263,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 57,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/senderos-de-los-andes-iii/"
-      }
-    ],
-    "notes": "Ficha UTS: 57 m² m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portada-Senderos-de-los-Andes-IV-entrega-inmediata-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:los-andes"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Terminal Los Andes · Ruta 57/60",
+    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
+    "accessMode": "buses",
     "lat": -32.8336867,
     "lng": -70.5981609,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 57,
-    "description": "Casas de 3 dormitorios, áreas verdes con juegos infantiles. Este es el lugar perfecto para empezar a realizar tus sueños en Los Andes.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portada-Senderos-de-los-Andes-IV-entrega-inmediata-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Portada-Senderos-de-los-Andes-IV-entrega-inmediata-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-91-1024x768.jpg",
@@ -25297,14 +25285,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/3-86-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/5-80-1024x768.jpg"
     ],
+    "description": "Casas de 3 dormitorios, áreas verdes con juegos infantiles. Este es el lugar perfecto para empezar a realizar tus sueños en Los Andes.",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Los Andes · Ruta 57/60",
-    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/senderos-de-los-andes-iii/"
+      }
+    ],
+    "notes": "Ficha UTS: 57 m² m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:los-andes"
+    }
   },
   {
     "id": "sub-109-senderos-de-los-andes-v",
@@ -25325,33 +25325,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/109/senderos-de-los-andes-ii"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SenderosdeLosAndesIIIyIV/Inmobiliaria-PY_Senderos-de-Los-Andes-III-y-IV_galeria_10_109_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:los-andes"
-    },
-    "lat": -32.8336867,
-    "lng": -70.5981609,
-    "address": null,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -32.818612,
+    "lng": -70.609759,
+    "address": "Hern\\u00e1n Barrera \\u00c1lvarez 1326",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Los Andes con DS19 DS15, Inmobiliaria PY, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SenderosdeLosAndesIIIyIV/Inmobiliaria-PY_Senderos-de-Los-Andes-III-y-IV_galeria_10_109_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SenderosdeLosAndesIIIyIV/Inmobiliaria-PY_Senderos-de-Los-Andes-III-y-IV_galeria_10_109_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SenderosdeLosAndesII/Senderos-de-Los-Andes-II_galeria_5_109_na.webp",
@@ -25360,13 +25348,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SenderosdeLosAndesIV/Inmobiliaria-PY_Senderos-de-Los-Andes-IV_galeria_8_109_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/SenderosdeLosAndesIIIyIV/Inmobiliaria-PY_Senderos-de-Los-Andes-III-y-IV_galeria_8_109_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Los Andes con DS19 DS15, Inmobiliaria PY, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/109/senderos-de-los-andes-ii"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-sol-de-penuelas",
@@ -25387,33 +25387,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 62,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/sol-de-penuelas/"
-      }
-    ],
-    "notes": "Ficha UTS: 62 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-68-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Chile"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Acceso estimado · Ruta 5 Norte",
+    "accessDetail": "Comuna sin ficha detallada",
+    "accessMode": "ruta5",
     "lat": -31.6353704,
     "lng": -71.1688783,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 62,
-    "description": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-68-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-68-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-57-1024x768.jpg",
@@ -25422,11 +25410,23 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-44-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-36-1024x768.jpg"
     ],
+    "description": null,
     "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Acceso estimado · Ruta 5 Norte",
-    "accessDetail": "Comuna sin ficha detallada",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/sol-de-penuelas/"
+      }
+    ],
+    "notes": "Ficha UTS: 62 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Chile"
+    }
   },
   {
     "id": "paz-I230",
@@ -25719,10 +25719,29 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 66,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -35.4265343,
+    "lng": -71.6660322,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-03-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-04-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Departamentos ubicados en 6 sur con Panamericana, Talca de 3 dormitorios con 1 ó 2 baños. Con subsidio automático DS19 desde UF 1.400. Con subsidios para familias vulnerables ganados DS49 – DS1T…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -25730,7 +25749,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 66 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -25738,25 +25756,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
-    },
-    "lat": -35.4265343,
-    "lng": -71.6660322,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 66,
-    "description": "Departamentos ubicados en 6 sur con Panamericana, Talca de 3 dormitorios con 1 ó 2 baños. Con subsidio automático DS19 desde UF 1.400. Con subsidios para familias vulnerables ganados DS49 – DS1T…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-03-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-04-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "uts-valles-de-la-florida",
@@ -25777,10 +25777,28 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 63,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -35.4265343,
+    "lng": -71.6660322,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-03-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Departamentos ubicados en 30 Sur con 14 Poniente, Talca de 3 dormitorios con 1/2 baños. Con subsidio automático DS19 desde UF 1.780.",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -25788,7 +25806,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 63 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -25796,30 +25813,13 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
-    },
-    "lat": -35.4265343,
-    "lng": -71.6660322,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 63,
-    "description": "Departamentos ubicados en 30 Sur con 14 Poniente, Talca de 3 dormitorios con 1/2 baños. Con subsidio automático DS19 desde UF 1.780.",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-03-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "sub-155-valles-de-rengo-iii",
     "name": "Valles de Rengo III",
     "developer": "PY",
-    "region": "Metropolitana",
+    "region": "O'Higgins",
     "comuna": "Rengo",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -25834,33 +25834,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/155/valles-de-rengo"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/VallesdeRengo/Inmobiliaria-PY_Valles-de-Rengo_galeria_2_155_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Rengo"
-    },
-    "lat": -34.4088744,
-    "lng": -70.8616583,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · Rengo",
+    "accessDetail": "Comuna sobre el corredor 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -34.394624,
+    "lng": -70.855508,
+    "address": "San Mart\\u00edn 1456",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Rengo con DS19, Inmobiliaria PY, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/VallesdeRengo/Inmobiliaria-PY_Valles-de-Rengo_galeria_2_155_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/VallesdeRengo/Inmobiliaria-PY_Valles-de-Rengo_galeria_2_155_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/VallesdeRengo/Inmobiliaria-PY_Valles-de-Rengo_galeria_4_155_na.jpg",
@@ -25869,13 +25857,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/VallesdeRengo/Inmobiliaria-PY_Valles-de-Rengo_galeria_7_155_na.jpg",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaPY/VallesdeRengo/Inmobiliaria-PY_Valles-de-Rengo_galeria_8_155_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Rengo con DS19, Inmobiliaria PY, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/155/valles-de-rengo"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-valles-de-san-clemente",
@@ -25896,10 +25896,29 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 66,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -35.4265343,
+    "lng": -71.6660322,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-SAN-CLEMENTE-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-SAN-CLEMENTE-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-SAN-CLEMENTE-02-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Valles de San Clemente es una nueva etapa de este proyecto de vivienda de integración social, la cual comprende casas completamente terminadas de 95m2. Reja incorporada, ventanas de aluminio termopane…",
+    "amenities": [
+      "Áreas verdes"
+    ],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -25907,7 +25926,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 66 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-SAN-CLEMENTE-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -25915,25 +25933,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
-    },
-    "lat": -35.4265343,
-    "lng": -71.6660322,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 66,
-    "description": "Valles de San Clemente es una nueva etapa de este proyecto de vivienda de integración social, la cual comprende casas completamente terminadas de 95m2. Reja incorporada, ventanas de aluminio termopane…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-SAN-CLEMENTE-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-SAN-CLEMENTE-02-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [
-      "Áreas verdes"
-    ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Talca",
-    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
-    "accessMode": "ruta5"
+    }
   },
   {
     "id": "uts-valles-del-sur",
@@ -25954,33 +25954,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 69,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/valles-del-sur/"
-      }
-    ],
-    "notes": "Ficha UTS: 69 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/8-161-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Osorno"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5",
     "lat": -40.5736955,
     "lng": -73.1358091,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 69,
-    "description": "Vive en un entorno tranquilo del sur de Chile Valles del Sur es un proyecto de casas ubicado en Matilde Throup Sepúlveda 2091, en la ciudad de Osorno, Región de Los Lagos. Está pensado para familias q…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/8-161-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/8-161-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-278-1024x768.jpg",
@@ -25989,13 +25977,25 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-243-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-214-1024x768.jpg"
     ],
+    "description": "Vive en un entorno tranquilo del sur de Chile Valles del Sur es un proyecto de casas ubicado en Matilde Throup Sepúlveda 2091, en la ciudad de Osorno, Región de Los Lagos. Está pensado para familias q…",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Sur · terminal Osorno",
-    "accessDetail": "Corredor 5 Sur · terminal de buses",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/valles-del-sur/"
+      }
+    ],
+    "notes": "Ficha UTS: 69 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Osorno"
+    }
   },
   {
     "id": "uts-veramonte-2",
@@ -26016,33 +26016,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 61.8,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/veramonte-2/"
-      }
-    ],
-    "notes": "Ficha UTS: 61,77 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-66-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:villa-alemana"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
     "lat": -33.0441903,
     "lng": -71.3725464,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 61.8,
-    "description": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-66-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/3-66-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-64-1024x768.jpg",
@@ -26051,14 +26039,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/8-31-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/9-27-1024x768.jpg"
     ],
+    "description": null,
     "amenities": [
       "Quincho",
       "Juegos infantiles"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Villa Alemana",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/veramonte-2/"
+      }
+    ],
+    "notes": "Ficha UTS: 61,77 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:villa-alemana"
+    }
   },
   {
     "id": "paz-I136",
@@ -26139,33 +26139,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 60.3,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/vicente-huidobro/"
-      }
-    ],
-    "notes": "Ficha UTS: 60.29 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VICENTE-HUIDOBRO-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Cartagena"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses regionales · Valparaíso",
+    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
+    "accessMode": "buses",
     "lat": -33.5468491,
     "lng": -71.6031708,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 60.3,
-    "description": "Condominio departamentos con control de acceso , areas verdes y juegos infantiles",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VICENTE-HUIDOBRO-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/VICENTE-HUIDOBRO-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/VICENTE-HUIDOBRO-02-Vitrina-UTS-1024x768.jpg",
@@ -26173,14 +26161,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/VICENTE-HUIDOBRO-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/VICENTE-HUIDOBRO-05-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Condominio departamentos con control de acceso , areas verdes y juegos infantiles",
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Buses regionales · Valparaíso",
-    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vicente-huidobro/"
+      }
+    ],
+    "notes": "Ficha UTS: 60.29 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:Cartagena"
+    }
   },
   {
     "id": "euro-vicuna-mackenna-1432",
@@ -26254,8 +26254,8 @@ export const catalog = [
     "id": "sub-346-viento-norte-ii",
     "name": "Viento Norte II",
     "developer": "CVV",
-    "region": "Metropolitana",
-    "comuna": "San Pedro de La Paz",
+    "region": "Biobío",
+    "comuna": "San Pedro de la Paz",
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
@@ -26269,10 +26269,34 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Santa Rosa / Lo Prado",
-    "metroLine": "L4A/L5",
-    "metroWalkMin": 10,
+    "areaM2": 53.6,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren",
+    "lat": -36.949554,
+    "lng": -72.149081,
+    "address": "Calle 4 Norte 365",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Viento-Norte-II_galeria_1_346_na.webp",
+    "images": [
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Viento-Norte-II_galeria_1_346_na.webp",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_2_346_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_3_346_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_4_346_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_5_346_na.png",
+      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_6_346_na.png"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna San Pedro de La Paz con DS19, Inmobiliaria CVV, departamentos con 1, 2 y 3 dormitorios",
+    "amenities": [
+      "Quincho",
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -26283,39 +26307,15 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/viento-norte-ii/"
       }
     ],
-    "notes": "Ficha Subsidios.cl: metro Santa Rosa / Lo Prado. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Viento-Norte-II_galeria_1_346_na.webp",
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-pedro-de-la-paz"
-    },
-    "lat": -36.8414183,
-    "lng": -73.1039909,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 53.6,
-    "description": "Proyecto departamentos ubicados en la comuna San Pedro de La Paz con DS19, Inmobiliaria CVV, departamentos con 1, 2 y 3 dormitorios",
-    "images": [
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Viento-Norte-II_galeria_1_346_na.webp",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_2_346_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_3_346_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_4_346_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_5_346_na.png",
-      "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaCVV/VientoNorteII/Inmobiliaria-CVV_Viento-Norte-II_galeria_6_346_na.png"
-    ],
-    "amenities": [
-      "Quincho",
-      "Juegos infantiles"
-    ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-vista-aconcagua",
@@ -26336,10 +26336,29 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 69,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Terminal Los Andes · Ruta 57/60",
+    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
+    "accessMode": "buses",
+    "lat": -32.8336867,
+    "lng": -70.5981609,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-01-Vitrina-UTS-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-01-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-02-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-03-Vitrina-UTS-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-04-Vitrina-UTS-1024x768.jpg"
+    ],
+    "description": "Condominio Vista Aconcagua está pensado para que tus días sean más cómodos y prácticos. Ubicado en una tranquila y segura zona residencial de Los Andes, se encuentra cercano a supermercados, comercio,…",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -26347,7 +26366,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 68.98 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-01-Vitrina-UTS-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -26355,25 +26373,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:los-andes"
-    },
-    "lat": -32.8336867,
-    "lng": -70.5981609,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 69,
-    "description": "Condominio Vista Aconcagua está pensado para que tus días sean más cómodos y prácticos. Ubicado en una tranquila y segura zona residencial de Los Andes, se encuentra cercano a supermercados, comercio,…",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-01-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-02-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-03-Vitrina-UTS-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-04-Vitrina-UTS-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Terminal Los Andes · Ruta 57/60",
-    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
-    "accessMode": "buses"
+    }
   },
   {
     "id": "uts-vista-costanera",
@@ -26576,10 +26576,28 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 69.9,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 5,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Quilpué",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren",
+    "lat": -33.0498135,
+    "lng": -71.4415282,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-01-Vitrina-UTS-1-1024x768.jpg",
+    "images": [
+      "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-01-Vitrina-UTS-1-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-02-Vitrina-UTS-1-1024x768.jpg",
+      "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-03-Vitrina-UTS-1-1024x768.jpg"
+    ],
+    "description": "Condominio de departamentos con Subsidio DS19 en Quilpué. Presentamos Condominio Vista Marga Marga, un lugar equipado con todo lo que necesitas para vivir mejor.",
+    "amenities": [],
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -26587,7 +26605,6 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: 69.91 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-01-Vitrina-UTS-1-1024x768.jpg",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -26595,24 +26612,7 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:quilpue"
-    },
-    "lat": -33.0498135,
-    "lng": -71.4415282,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
-    "areaM2": 69.9,
-    "description": "Condominio de departamentos con Subsidio DS19 en Quilpué. Presentamos Condominio Vista Marga Marga, un lugar equipado con todo lo que necesitas para vivir mejor.",
-    "images": [
-      "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-01-Vitrina-UTS-1-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-02-Vitrina-UTS-1-1024x768.jpg",
-      "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-03-Vitrina-UTS-1-1024x768.jpg"
-    ],
-    "amenities": [],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Quilpué",
-    "accessDetail": "Estación Metrotren en la comuna",
-    "accessMode": "metrotren"
+    }
   },
   {
     "id": "euro-vista-portugal",
@@ -26704,33 +26704,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/525/vistas-de-curauma-iii"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/VistasdeCuraumaIII/Brio-Inmobiliaria_Vistas-de-Curauma-III_galeria_1_525_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:curauma"
-    },
-    "lat": -33.127419,
-    "lng": -71.5696552,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren",
+    "lat": -33.114472,
+    "lng": -71.58514,
+    "address": "Av. Lomas de la Luz 860",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Valparaíso con DS19, Brio Inmobiliaria, departamentos con 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/VistasdeCuraumaIII/Brio-Inmobiliaria_Vistas-de-Curauma-III_galeria_1_525_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/VistasdeCuraumaIII/Brio-Inmobiliaria_Vistas-de-Curauma-III_galeria_1_525_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/VistasdeCuraumaIII/Brio-Inmobiliaria_Vistas-de-Curauma-III_galeria_2_525_na.jpg",
@@ -26739,14 +26727,26 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/VistasdeCuraumaIII/Brio-Inmobiliaria_Vistas-de-Curauma-III_galeria_5_525_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/BrioInmobiliaria/VistasdeCuraumaIII/Brio-Inmobiliaria_Vistas-de-Curauma-III_galeria_6_525_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Valparaíso con DS19, Brio Inmobiliaria, departamentos con 2 y 3 dormitorios",
     "amenities": [
       "Piscina",
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Metrotren · Valparaíso / Puerto",
-    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
-    "accessMode": "metrotren"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/525/vistas-de-curauma-iii"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-vistas-de-curauma-iii",
@@ -26767,33 +26767,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 58.2,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/vistas-de-curauma-iii/"
-      }
-    ],
-    "notes": "Ficha UTS: 58,16 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-276-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:curauma"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
+    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
+    "accessMode": "ruta",
     "lat": -33.127419,
     "lng": -71.5696552,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 58.2,
-    "description": "Condominio Vistas III de Curauma es un proyecto de departamentos ubicado en Lomas de la Luz 860, en el sector de Curauma, Valparaíso. Está acogido al subsidio automático DS19 y ofrece departamentos de…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-276-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/2-276-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-287-1024x768.jpg",
@@ -26802,15 +26790,27 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-241-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-212-1024x768.jpg"
     ],
+    "description": "Condominio Vistas III de Curauma es un proyecto de departamentos ubicado en Lomas de la Luz 860, en el sector de Curauma, Valparaíso. Está acogido al subsidio automático DS19 y ofrece departamentos de…",
     "amenities": [
       "Piscina",
       "Quincho",
       "Conserjería"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
-    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
-    "accessMode": "ruta"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vistas-de-curauma-iii/"
+      }
+    ],
+    "notes": "Ficha UTS: 58,16 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:curauma"
+    }
   },
   {
     "id": "uts-vistas-i",
@@ -26831,33 +26831,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
+    "areaM2": 58.2,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/vistas-i/"
-      }
-    ],
-    "notes": "Ficha UTS: 58,16 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-278-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": false,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:curauma"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Buses · Placilla de Peñuelas / Ruta 68",
+    "accessDetail": "Cerca de Curauma · buses a Valparaíso",
+    "accessMode": "ruta",
     "lat": -33.127419,
     "lng": -71.5696552,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 58.2,
-    "description": "Condominio Vistas I, ubicado en el sector de Curauma en Valparaíso, es un proyecto innovador que ofrece una excelente oportunidad para quienes buscan adquirir su primera vivienda, beneficiándose de la…",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-278-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/1-278-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/2-267-1024x768.jpg",
@@ -26866,13 +26854,25 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-232-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-203-1024x768.jpg"
     ],
+    "description": "Condominio Vistas I, ubicado en el sector de Curauma en Valparaíso, es un proyecto innovador que ofrece una excelente oportunidad para quienes buscan adquirir su primera vivienda, beneficiándose de la…",
     "amenities": [
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Buses · Placilla de Peñuelas / Ruta 68",
-    "accessDetail": "Cerca de Curauma · buses a Valparaíso",
-    "accessMode": "ruta"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/vistas-i/"
+      }
+    ],
+    "notes": "Ficha UTS: 58,16 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": false,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "sector:curauma"
+    }
   },
   {
     "id": "euro-vitro",
@@ -26964,33 +26964,21 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 4,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/511/vive-la-herradura"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/PuertoCapital/VivelaHerradura/Puerto-Capital_Vive-la-Herradura_galeria_1_511_na.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Coquimbo"
-    },
-    "lat": -29.9531851,
-    "lng": -71.3379503,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
+    "lat": -29.982399,
+    "lng": -71.350462,
+    "address": "C. Ambrosio O\\u0027Higgins 730",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, Puerto Capital, departamentos con 1 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/PuertoCapital/VivelaHerradura/Puerto-Capital_Vive-la-Herradura_galeria_1_511_na.jpg",
     "images": [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/PuertoCapital/VivelaHerradura/Puerto-Capital_Vive-la-Herradura_galeria_1_511_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/PuertoCapital/VivelaHerradura/Puerto-Capital_Vive-la-Herradura_galeria_2_511_na.jpg",
@@ -26999,13 +26987,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.digitaloceanspaces.com/PuertoCapital/VivelaHerradura/Puerto-Capital_Vive-la-Herradura_galeria_5_511_na.jpg",
       "https://subsidioscl.sfo2.digitaloceanspaces.com/PuertoCapital/VivelaHerradura/Puerto-Capital_Vive-la-Herradura_galeria_6_511_na.jpg"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, Puerto Capital, departamentos con 1 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Ruta 5 Norte · Coquimbo",
-    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/511/vive-la-herradura"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "vive-la-vara",
@@ -27100,33 +27100,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/381/vive-san-felipe"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/PuertoCapital/ViveSanFelipe/Puerto-Capital_Vive-San-Felipe_galeria_1_381_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "sector:san-felipe"
-    },
-    "lat": -32.750687,
-    "lng": -70.7252688,
-    "address": null,
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses",
+    "lat": -32.753677,
+    "lng": -70.716002,
+    "address": "El molino 236",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Puerto Capital, departamentos con 1, 2 y 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/PuertoCapital/ViveSanFelipe/Puerto-Capital_Vive-San-Felipe_galeria_1_381_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/PuertoCapital/ViveSanFelipe/Puerto-Capital_Vive-San-Felipe_galeria_1_381_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/PuertoCapital/ViveSanFelipe/Puerto-Capital_Vive-San-Felipe_galeria_2_381_na.webp",
@@ -27135,19 +27123,31 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/PuertoCapital/ViveSanFelipe/Puerto-Capital_Vive-San-Felipe_galeria_5_381_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/PuertoCapital/ViveSanFelipe/Puerto-Capital_Vive-San-Felipe_galeria_6_381_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna San Felipe con DS19, Puerto Capital, departamentos con 1, 2 y 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
-    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
-    "accessMode": "buses"
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/381/vive-san-felipe"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "sub-266-walk-parral",
     "name": "Walk Parral",
     "developer": "FAI",
-    "region": "Metropolitana",
+    "region": "Maule",
     "comuna": "Parral",
     "propertyType": "departamento",
     "condition": "nuevo",
@@ -27162,33 +27162,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": null,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
-    "sources": [
-      {
-        "portal": "subsidios-cl",
-        "url": "https://www.subsidios.cl/proyecto/266/walk-parral"
-      }
-    ],
-    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaFAI/walkparral/walk-parral_galeria_1_266_na.webp",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Parral"
-    },
-    "lat": -36.1414293,
-    "lng": -71.8222221,
-    "address": null,
+    "connectivityScore": 3,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · Parral",
+    "accessDetail": "Corredor 5 Sur",
+    "accessMode": "ruta5",
+    "lat": -36.149677,
+    "lng": -71.82885,
+    "address": "Av. Igualdad Sur 991, Parral.",
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": null,
-    "description": "Proyecto departamentos ubicados en la comuna Parral con DS19, Inmobiliaria FAI, departamentos con 3 dormitorios",
+    "imageUrl": "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaFAI/walkparral/walk-parral_galeria_1_266_na.webp",
     "images": [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaFAI/walkparral/walk-parral_galeria_1_266_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaFAI/walkparral/walk-parral_galeria_2_266_na.webp",
@@ -27197,13 +27185,25 @@ export const catalog = [
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaFAI/walkparral/walk-parral_galeria_5_266_na.webp",
       "https://subsidioscl.sfo2.cdn.digitaloceanspaces.com/InmobiliariaFAI/walkparral/walk-parral_galeria_6_266_na.webp"
     ],
+    "description": "Proyecto departamentos ubicados en la comuna Parral con DS19, Inmobiliaria FAI, departamentos con 3 dormitorios",
     "amenities": [
       "Quincho"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/266/walk-parral"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
   },
   {
     "id": "uts-walk-san-javier",
@@ -27224,33 +27224,21 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
+    "areaM2": 65.5,
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
     "connectivityScore": 3,
-    "sources": [
-      {
-        "portal": "usatusubsidio",
-        "url": "https://usatusubsidio.cl/propiedades/walk-san-javier/"
-      }
-    ],
-    "notes": "Ficha UTS: 65.53 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Walk-San-Javier-01-Vitrina-UTS-1024x768.jpg",
-    "dataGaps": {
-      "parkingUnknown": true,
-      "deliveryUnknown": true,
-      "metroEstimated": true,
-      "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Javier"
-    },
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
+    "accessDetail": "Acceso 5 Sur / Talca",
+    "accessMode": "ruta5",
     "lat": -35.5923933,
     "lng": -71.735308,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
-    "areaM2": 65.5,
-    "description": "Condominio de departamentos, en una gran ubicación. Areas Verdes, Piscina, Local Comercial. Ubicación: Avenida Chorrillos Esquina Adriana García",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Walk-San-Javier-01-Vitrina-UTS-1024x768.jpg",
     "images": [
       "https://usatusubsidio.com/wp-content/uploads/Walk-San-Javier-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Walk-San-Javier-02-Vitrina-UTS-1024x768.jpg",
@@ -27259,14 +27247,26 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Walk-San-Javier-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Walk-San-Javier-06-Vitrina-UTS-1024x768.jpg"
     ],
+    "description": "Condominio de departamentos, en una gran ubicación. Areas Verdes, Piscina, Local Comercial. Ubicación: Avenida Chorrillos Esquina Adriana García",
     "amenities": [
       "Piscina",
       "Áreas verdes"
     ],
-    "accessKind": "regional",
-    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
-    "accessDetail": "Acceso 5 Sur / Talca",
-    "accessMode": "ruta5"
+    "sources": [
+      {
+        "portal": "usatusubsidio",
+        "url": "https://usatusubsidio.cl/propiedades/walk-san-javier/"
+      }
+    ],
+    "notes": "Ficha UTS: 65.53 m². Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": true,
+      "locationSource": "comuna:San Javier"
+    }
   },
   {
     "id": "paz-I174",
