@@ -27,11 +27,30 @@ npm install
 npm run dev
 ```
 
-## Actualizar catálogo
+## Actualización diaria (04:00 Chile)
 
-Los datos viven en `src/data/catalog.js` (curados desde fichas públicas). Los portales origen suelen bloquear scraping automático; por eso el catálogo se mantiene como JSON/JS estático con enlace a la ficha original.
+El workflow `.github/workflows/daily-update.yml` corre **todos los días cerca de las 04:00 (America/Santiago)**:
 
-## Publicar en GitHub Pages
+1. Lee la **UF del día** desde [mindicador.cl](https://mindicador.cl/api/uf)
+2. Actualiza proyectos desde [Subsidios.cl](https://www.subsidios.cl/proyectos)
+3. Hace commit del catálogo si cambió
+4. Rebuild + deploy a la rama `gh-pages`
+
+También puedes lanzarlo a mano en GitHub → **Actions → Daily catalog update → Run workflow**.
+
+### Activar por primera vez
+
+1. En el repo: **Settings → Actions → General → Allow all actions**
+2. **Settings → Pages** debe seguir apuntando a la rama `gh-pages`
+3. Si GitHub rechaza subir el archivo `.github/workflows/...` desde tu PC (falta scope `workflow`), créalo en la web de GitHub o usa un PAT con scope `workflow`
+
+### Probar en local
+
+```bash
+npm run update:catalog
+```
+
+## Publicar en GitHub Pages (manual)
 
 ```bash
 VITE_BASE=/casa-al-metro/ npm run build
