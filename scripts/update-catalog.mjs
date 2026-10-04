@@ -29,7 +29,7 @@ const CATALOG_PATH = path.join(ROOT, 'src/data/catalog.js')
 const META_PATH = path.join(ROOT, 'src/data/update-meta.json')
 
 const UA =
-  'UnPortalBot/1.2 (+https://github.com/claudiojaviermeza-creator/casa-al-metro; daily multi-source refresh)'
+  'GuanPortalBot/1.3 (+https://github.com/claudette-letelier/guan-portal; daily multi-source refresh)'
 
 const COMUNA_REGION = {
   Santiago: 'Metropolitana',

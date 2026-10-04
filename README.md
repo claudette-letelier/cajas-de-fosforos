@@ -6,8 +6,8 @@ Agrega fichas públicas de portales listados por el MINVU ([portales de proyecto
 
 ## Sitio
 
-- Repo: https://github.com/claudiojaviermeza-creator/casa-al-metro
-- GitHub Pages: https://claudiojaviermeza-creator.github.io/casa-al-metro/
+- Repo: https://github.com/claudette-letelier/guan-portal
+- GitHub Pages: https://claudette-letelier.github.io/guan-portal/
 
 ## Filtros
 
@@ -32,29 +32,11 @@ npm run dev
 El workflow `.github/workflows/daily-update.yml` corre **todos los días cerca de las 04:00 (America/Santiago)**:
 
 1. Lee la **UF del día** desde [mindicador.cl](https://mindicador.cl/api/uf)
-2. Actualiza proyectos desde **13+ fuentes** (Subsidios.cl, UsaTuSubsidio, Enlace/BCI, Los Silos, Ingevec, Ciclos, Euro, Ecomac API, Socovesa, Paz API, Aitue, Bricsa, Galilea)
+2. Actualiza proyectos desde **13+ fuentes**
 3. Hace commit del catálogo si cambió
-4. Rebuild + deploy a la rama `gh-pages`
-
-Portales con Cloudflare estricto (BancoEstado Enlace, Matchogar, TocToc) no se pueden scrapear desde GitHub Actions; quedan como enlace de referencia.
+4. Rebuild + deploy a la rama `gh-pages` con `VITE_BASE=/guan-portal/`
 
 También puedes lanzarlo a mano en GitHub → **Actions → Daily catalog update → Run workflow**.
-
-### Activar por primera vez (importante)
-
-El login actual de GitHub CLI no tiene permiso `workflow`, así que el archivo del cron está en:
-
-`scripts/github-daily-update.yml`
-
-Haz esto **una sola vez**:
-
-1. Abre: https://github.com/claudiojaviermeza-creator/casa-al-metro/new/main?filename=.github/workflows/daily-update.yml
-2. Copia y pega el contenido de `scripts/github-daily-update.yml`
-3. Commit en `main`
-4. Ve a **Actions** y verifica que aparece **Daily catalog update (04:00 Chile)**
-5. Opcional: **Run workflow** para probarlo ahora
-
-También: **Settings → Actions → General → Allow all actions**, y Pages en rama `gh-pages`.
 
 ### Probar en local
 
@@ -65,9 +47,36 @@ npm run update:catalog
 ## Publicar en GitHub Pages (manual)
 
 ```bash
-VITE_BASE=/casa-al-metro/ npm run build
+VITE_BASE=/guan-portal/ npm run build
 # subir contenido de dist/ a la rama gh-pages
 ```
+
+## Seguridad (página estática)
+
+Güan Portal es **solo frontend en GitHub Pages**: no hay login ni base de datos propia. Aun así conviene:
+
+### Ya aplicado en el repo
+
+- **HTTPS** vía GitHub Pages
+- **CSP** (Content-Security-Policy) en `index.html`
+- **Referrer / nosniff / Permissions-Policy**
+- Enlaces externos con `rel="noopener noreferrer"`
+- Validación de URLs scrapeadas (`safeHttpUrl` / `safeImageUrl`) — bloquea `javascript:` y protocolos raros
+- **Dependabot** semanal (npm + Actions)
+- Sin secretos en el cliente (el catálogo es público)
+
+### Checklist en tu cuenta GitHub
+
+1. **Settings → Pages**: Source = rama `gh-pages` / carpeta `/ (root)`
+2. **Settings → Actions**: permitir Actions; el workflow usa `GITHUB_TOKEN` (no pegues PATs en el código)
+3. **Settings → Secrets**: no guardes tokens de scraping en el frontend
+4. Activa **2FA** en tu cuenta
+5. Revisa PRs de Dependabot antes de mergear
+6. Si compartes el repo, evita tokens `gho_` / `ghp_` en historial (`git log`, Issues, Actions logs)
+
+### Límites realistas
+
+Una página estática no puede “blindarse” como un banco: el JS es público. El riesgo principal es **XSS** (inyectar scripts) o **links maliciosos** en datos scrapeados; por eso filtramos URLs y usamos CSP. No hay servidor propio que un atacante pueda “hackear” para robar contraseñas de usuarios finales.
 
 ## Aviso
 

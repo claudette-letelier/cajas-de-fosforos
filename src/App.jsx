@@ -29,6 +29,7 @@ import {
   ufToClp,
 } from './lib/search.js'
 import { honestyScore, truthSignals } from './lib/truth.js'
+import { safeHttpUrl, safeImageUrl } from './lib/security.js'
 
 const portalName = Object.fromEntries(portals.map((p) => [p.id, p.name]))
 
@@ -76,7 +77,8 @@ function SignalIcon({ tone }) {
 
 function ProjectImage({ src, alt }) {
   const [failed, setFailed] = useState(false)
-  if (!src || failed) {
+  const safeSrc = safeImageUrl(src)
+  if (!safeSrc || failed) {
     return (
       <div className="flex h-full min-h-[140px] w-full flex-col items-center justify-center gap-2 bg-[linear-gradient(145deg,#134e4a_0%,#1c3d4a_55%,#0b2e2b_100%)] text-white/70">
         <ImageOff className="size-6 opacity-70" />
@@ -86,7 +88,7 @@ function ProjectImage({ src, alt }) {
   }
   return (
     <img
-      src={src}
+      src={safeSrc}
       alt={alt}
       loading="lazy"
       decoding="async"
@@ -218,12 +220,15 @@ export default function App() {
               ficha de origen y te avisa qué dato no está confirmado.
             </p>
             <div className="mt-5 grid gap-3 md:grid-cols-2">
-              {portals.map((p) => (
+              {portals.map((p) => {
+                const href = safeHttpUrl(p.url)
+                if (!href) return null
+                return (
                 <a
                   key={p.id}
-                  href={p.url}
+                  href={href}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="rounded-xl border border-[var(--line)] bg-white p-4 hover:border-[var(--teal)]"
                 >
                   <div className="flex items-center justify-between gap-2">
@@ -232,7 +237,7 @@ export default function App() {
                   </div>
                   <p className="mt-1 text-sm text-[var(--muted-ink)]">{p.role}</p>
                 </a>
-              ))}
+              )})}
             </div>
           </div>
         </section>
@@ -629,19 +634,22 @@ export default function App() {
                             </div>
 
                             <div className="flex flex-wrap gap-2">
-                              {p.sources.map((s) => (
+                              {p.sources.map((s) => {
+                                const href = safeHttpUrl(s.url)
+                                if (!href) return null
+                                return (
                                 <a
                                   key={`${p.id}-${s.portal}-${s.url}`}
-                                  href={s.url}
+                                  href={href}
                                   target="_blank"
-                                  rel="noreferrer"
+                                  rel="noopener noreferrer"
                                   className="inline-flex h-8 items-center gap-1.5 rounded-lg border border-[var(--line)] px-3 text-xs hover:bg-[var(--sand)]"
                                 >
                                   <Layers className="size-3.5" />
                                   {portalName[s.portal] || s.portal}
                                   <ExternalLink className="size-3" />
                                 </a>
-                              ))}
+                              )})}
                             </div>
                           </div>
                         </div>
@@ -704,7 +712,7 @@ export default function App() {
                 className="underline"
                 href="https://www.minvu.gob.cl/beneficio/vivienda/portales-de-proyectos/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 portales MINVU
               </a>{' '}
