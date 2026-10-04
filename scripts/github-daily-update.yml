@@ -1,0 +1,83 @@
+name: Daily catalog update (04:00 Chile)
+
+on:
+  schedule:
+    # GitHub cron is UTC. Chile ≈ UTC-3 (verano) / UTC-4 (invierno).
+    # 07:00 UTC ≈ 04:00 Chile (UTC-3). 08:00 UTC ≈ 04:00 Chile (UTC-4).
+    - cron: "0 7 * * *"
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-catalog
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Only run near 04:00 America/Santiago
+        id: gate
+        run: |
+          HOUR=$(TZ=America/Santiago date +%H)
+          echo "chile_hour=$HOUR"
+          echo "chile_now=$(TZ=America/Santiago date -Iseconds)"
+          if [ "$HOUR" = "04" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Skip: not 04:00 in America/Santiago (hour=$HOUR)"
+          fi
+
+      - name: Setup Node
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        if: steps.gate.outputs.run == 'true'
+        run: npm ci
+
+      - name: Update catalog from public sources
+        if: steps.gate.outputs.run == 'true'
+        run: npm run update:catalog
+
+      - name: Commit catalog if changed
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "unportal-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/catalog.js src/data/update-meta.json
+          if git diff --staged --quiet; then
+            echo "No catalog changes"
+          else
+            git commit -m "chore: daily catalog refresh ($(TZ=America/Santiago date +%F))"
+            git push
+          fi
+
+      - name: Build static site
+        if: steps.gate.outputs.run == 'true'
+        env:
+          VITE_BASE: /${{ github.event.repository.name }}/
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        if: steps.gate.outputs.run == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true
+          enable_jekyll: false
