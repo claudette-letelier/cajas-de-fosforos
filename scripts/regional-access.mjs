@@ -541,7 +541,5 @@ function regionalAccessFor(comuna, region) {
   }
 }
 
-const stats = { sources: {} }
-
 
 export { COMUNA_REGIONAL_ACCESS, regionalAccessFor }
