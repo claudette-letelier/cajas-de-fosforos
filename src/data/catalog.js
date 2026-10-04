@@ -36,7 +36,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/accion-briones-luco/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Vitrina-01-Briones-Luco-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-aires-de-limache",
@@ -67,7 +74,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/aires-de-limache/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-aires-de-machali",
@@ -98,7 +112,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-casas/aires-de-machali/rancagua/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/ADM-.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-aires-de-recoleta",
@@ -129,7 +150,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/aires-de-recoleta/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-RECOLETA-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-aires-de-renaca",
@@ -160,7 +188,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/aires-de-renaca/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/condominio-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-aires-de-san-pedro",
@@ -191,7 +226,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/aires-de-san-pedro/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-280-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-aires-del-limari",
@@ -222,7 +264,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/aires-del-limari/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-180-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-aires-del-sauce",
@@ -253,7 +302,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/aires-del-sauce/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-172-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-alameda-4719",
@@ -284,7 +340,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/alameda-4719/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-Con-cinta-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-485-alicura-condominio",
@@ -315,7 +378,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/485/alicura-condominio"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-alkura-casas-en-chicureo",
@@ -346,7 +416,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/alkura-casas-en-chicureo/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2019/06/B95A6994_B.jpeg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-9452-alto-andes",
@@ -377,7 +454,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/puente-alto/departamento/alto-andes/9452"
       }
     ],
-    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-alto-curacavi",
@@ -408,7 +492,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/alto-curacavi/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-alto-irarrazaval",
@@ -439,7 +530,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/alto-irarrazaval"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/160/conversions/01KJ5KDYN85FHZ84C1DN7XC8GE-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-alto-miraflores-ii",
@@ -470,7 +568,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/alto-miraflores-ii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-26-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-altos-de-marga-marga-iii",
@@ -501,7 +606,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/altos-de-marga-marga-iii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-altos-de-san-miguel",
@@ -532,7 +644,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/altos-de-san-miguel/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-altos-de-santa-maria",
@@ -563,7 +682,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/altos-de-santa-maria/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-altos-del-este",
@@ -594,7 +720,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/altos-del-este/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2FE0E83B-9950-48E2-B432-A54610D57ADE-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-altos-del-parque",
@@ -625,7 +758,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/altos-del-parque/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/8-140-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "alturas-pudahuel",
@@ -664,7 +804,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/pudahuel/departamento/alturas-de-pudahuel/9580"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-7-alturas-de-tepual",
@@ -695,7 +842,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/7/alturas-de-tepual"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "andes-quilicura-ii",
@@ -726,7 +880,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/andes-quilicura-ii/"
       }
     ],
-    "notes": "Entrega inmediata según ficha."
+    "notes": "Entrega inmediata según ficha.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-1-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-400-arquitecta-dora-riedel",
@@ -757,7 +918,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/400/arquitecta-dora-riedel"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I227",
@@ -788,7 +956,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/atelier-nunoa"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2271/proyecto/WEB_PAZ_ATELIER.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-avellanos-departamentos-en-nunoa",
@@ -819,7 +994,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/avellanos-departamentos-en-nunoa/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2021/03/Socovesa-Avellanos-Hero-Desktop.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bricsa-18",
@@ -850,7 +1032,14 @@ export const catalog = [
         "url": "https://bricsa.cl/proyecto/18"
       }
     ],
-    "notes": "Importado desde Bricsa"
+    "notes": "Importado desde Bricsa",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-barrio-encanto-de-molina",
@@ -881,7 +1070,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/barrio-encanto-de-molina/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-271-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-barrio-espanol",
@@ -912,7 +1108,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/barrio-espanol/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10.-Condominio-Completo-Barrio-Espanol-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-319-barrio-las-delicias",
@@ -943,7 +1146,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/319/barrio-las-delicias-v-departamentos"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-barrio-las-delicias-v",
@@ -974,7 +1184,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/barrio-las-delicias-v/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-64-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-521-barrio-pinares-v",
@@ -1005,7 +1222,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/521/barrio-pinares-v"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "galilea-brisas-de-machali-ii",
@@ -1036,7 +1260,14 @@ export const catalog = [
         "url": "https://www.galilea.cl/proyectos/brisas-de-machali-ii/"
       }
     ],
-    "notes": "Importado desde Galilea"
+    "notes": "Importado desde Galilea",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "brisas-quilicura",
@@ -1071,7 +1302,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/quilicura/departamento/brisas-de-quilicura/7014"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-brisas-de-san-fernando",
@@ -1102,7 +1340,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/brisas-de-san-fernando/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-178-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-brisas-de-san-javier",
@@ -1133,7 +1378,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/brisas-de-san-javier/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-2-10-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-477-brisas-de-san-javier-ii",
@@ -1164,7 +1416,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/477/brisas-de-san-javier-ii"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-brisas-del-maule-vi",
@@ -1195,7 +1454,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/brisas-del-maule-vi/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-126-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I170",
@@ -1226,7 +1492,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/caiquen"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1701/proyecto/WEB_PAZ_CAIQUEN.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-camilo-henriquez-2565",
@@ -1257,7 +1530,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/camilo-henriquez-2565/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-273-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I188",
@@ -1288,7 +1568,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/carmen-72"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1881/proyecto/WEB_PAZ_CARMEN.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-7938-carrion",
@@ -1351,7 +1638,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/carrion-2"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1561/proyecto/WEB_PAZ_CARRION_2.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-house",
@@ -1382,7 +1676,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-casas/house/concepcion/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/TH.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-casas-borde-laguna",
@@ -1413,7 +1714,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-casas/casas-borde-laguna/los-angeles/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/CBL-1.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-central-sur-210",
@@ -1444,7 +1752,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/central-sur-210/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Central_Sur_210-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-maestranza",
@@ -1475,7 +1790,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/maestranza/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-223-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-ciudad-panamericana",
@@ -1506,7 +1828,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/ciudad-panamericana/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-3-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-519-ciudad-panamericana-lote-c",
@@ -1542,7 +1871,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/cerrillos/departamento/ciudad-panamericana-lote-c/9499"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-coipue-departamentos-en-venta-macul",
@@ -1573,7 +1909,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/coipue-departamentos-en-venta-macul/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2021/09/Socovesa-Edificio-Coipue-0T2A1882-HDR-2-scaled.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I169",
@@ -1604,7 +1947,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/colombia-7664"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1691/proyecto/WEB_PAZ_COLOMBIA.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-402-condominio-abogada-matilde-throup",
@@ -1635,7 +1985,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/402/condominio-abogada-matilde-throup"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-6-condominio-alto-o-higgins",
@@ -1666,7 +2023,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/6/condominio-alto-ohiggins"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "alto-andes-puente-alto",
@@ -1709,7 +2073,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-alto-andes/"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-261-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-313-condominio-alto-carrera",
@@ -1740,7 +2111,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/313/condominio-alto-carrera"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-alto-del-puerto",
@@ -1771,7 +2149,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/alto-del-puerto/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/FACHADA-ALTO-DEL-PUERTO-DS-19-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-212-condominio-alto-durand",
@@ -1802,7 +2187,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/212/barrio-las-delicias"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-alto-durand-iv",
@@ -1833,7 +2225,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-alto-durand-iv/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portada-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-condominio-alto-maderos",
@@ -1864,7 +2263,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-alto-maderos/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2019/09/ss-alto-maderos-portada.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-alto-molle",
@@ -1895,7 +2301,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-alto-molle/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-260-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "alto-ohiggins-2",
@@ -1930,7 +2343,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/258/alto-ohiggins-2"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-492-condominio-alto-piramide-ii",
@@ -1961,7 +2381,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/492/condominio-alto-piramide"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "altos-de-buin",
@@ -1996,7 +2423,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-altos-de-buin/"
       }
     ],
-    "notes": "Sin metro; dependencia de tren/buses. Baja puntuación de conectividad Santiago."
+    "notes": "Sin metro; dependencia de tren/buses. Baja puntuación de conectividad Santiago.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-523-condominio-altos-de-san-ramon",
@@ -2027,7 +2461,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/523/condominio-altos-de-san-ramon"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-464-condominio-arboleda",
@@ -2058,7 +2499,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/464/condominio-arboleda"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-247-condominio-ayelen-poniente",
@@ -2089,7 +2537,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/247/condominio-aylen-poniente"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "borinquen-vina",
@@ -2124,7 +2579,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-borinquen/"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-brisas-de-maitenes",
@@ -2155,7 +2617,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-brisas-de-maitenes/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "carlos-condell",
@@ -2194,7 +2663,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/san-bernardo/departamento/condominio-carlos-condell/9409"
       }
     ],
-    "notes": "Opciones 3D/2B publicadas."
+    "notes": "Opciones 3D/2B publicadas.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Fachada-2-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-334-condominio-carmen-bascunan",
@@ -2225,7 +2701,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/334/condominio-carmen-bascunan"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-casas-patronales",
@@ -2256,7 +2739,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-casas-patronales/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-CASAS-PATRONALES-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-condominio-cerro-amancay-etapa-1",
@@ -2287,7 +2777,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/condominio-cerro-amancay-etapa-1"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/13/20240829010801TbZ5tnwJlav6i4R.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-condominio-cerro-amancay-etapa-2",
@@ -2318,7 +2815,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/condominio-cerro-amancay-etapa-2"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/123/20240829010801TbZ5tnwJlav6i4R.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-condominio-cerro-mamalluca-faldeos-del-cerro-grande-iii",
@@ -2349,7 +2853,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/condominio-cerro-mamalluca-faldeos-del-cerro-grande-iii"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/16/20260619111434IodBU75rSTEd3ct.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-condominio-cerro-paranao-faldeos-del-cerro-grande-iii",
@@ -2380,7 +2891,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/condominio-cerro-paranao-faldeos-del-cerro-grande-iii"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/17/20251013125832Dw0b0ILVuOvHHxI.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-condominio-cerro-tamaya-faldeos-del-cerro-grande-iii",
@@ -2411,7 +2929,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/condominio-cerro-tamaya-faldeos-del-cerro-grande-iii"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/18/20260630054808anmHOondWzt6D1y.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-conjunto-residencial-costa-pacifico",
@@ -2442,7 +2967,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/conjunto-residencial-costa-pacifico/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-COSTA-PACIFICO-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-cumbres-del-bosque",
@@ -2473,7 +3005,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/cumbres-del-bosque"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/19/20240827051210fOFxHzlJWKIoT12.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-8571-condominio-curamapu",
@@ -2504,7 +3043,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/padre-hurtado/departamento/condominio-curamapu/8571"
       }
     ],
-    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-398-condominio-don-francisco",
@@ -2535,7 +3081,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/398/condominio-don-francisco"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-condominio-don-gaspar",
@@ -2566,7 +3119,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-don-gaspar/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-don-miguel",
@@ -2597,7 +3157,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-don-miguel/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/4-108-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-93-condominio-dona-agustina",
@@ -2628,7 +3195,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/93/condominio-dona-agustina"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-condominio-dona-josefina",
@@ -2659,7 +3233,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/condominio-dona-josefina/chiguayante/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2026/05/josefina.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-dona-sofia",
@@ -2690,7 +3271,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-dona-sofia/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-224-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-condominio-dona-sofia",
@@ -2721,7 +3309,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/condominio-dona-sofia/talcahuano/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2026/06/sofia.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-condominio-el-manzano",
@@ -2752,7 +3347,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-el-manzano/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-condominio-el-trebol",
@@ -2783,7 +3385,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-el-trebol/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-8238-condominio-el-trebol-ii",
@@ -2818,7 +3427,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-el-trebol-2/"
       }
     ],
-    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "escritor-jorge-edwards",
@@ -2853,7 +3469,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/pudahuel/departamento/condominio-escritor-jorge-edwards/9446"
       }
     ],
-    "notes": "Incluye tipología 2D/2B desde UF 2.800."
+    "notes": "Incluye tipología 2D/2B desde UF 2.800.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "escritor-salvador-reyes",
@@ -2888,7 +3511,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/colina/casa/condominio-escritor-salvador-reyes/9443"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-249-condominio-esmeralda",
@@ -2919,7 +3549,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/249/condominio-esmeralda"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-condominio-estancia-norte-quilicura",
@@ -2950,7 +3587,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-estancia-norte-quilicura/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-fernando-monckberg",
@@ -2981,7 +3625,53 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-fernando-monckberg/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-254-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
+  },
+  {
+    "id": "bci-9516-condominio-francisco-zelada-torre-a",
+    "name": "Condominio Francisco Zelada Torre A",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Estación Central",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 1872,
+    "priceToUf": 2570,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": "Estación Central",
+    "metroLine": "L1",
+    "metroWalkMin": 8,
+    "connectivityScore": 5,
+    "imageUrl": null,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/estacion-central/departamento/condominio-francisco-zelada-torre-a/9516"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-fuchslocher-oriente",
@@ -3012,7 +3702,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-fuchslocher-oriente/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-217-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "gran-avenida",
@@ -3055,7 +3752,14 @@ export const catalog = [
         "url": "https://www.granavenidads19.cl/"
       }
     ],
-    "notes": "DS19 automático; tipología 2D/2B publicada. ~7 min al metro."
+    "notes": "DS19 automático; tipología 2D/2B publicada. ~7 min al metro.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/6-142-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-404-condominio-ingeniero-enrique-tirapegui",
@@ -3086,7 +3790,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/404/condominio-ingeniero-enrique-tirapegui"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-jardin-los-volcanes",
@@ -3121,7 +3832,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/jardin-los-volcanes"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/34/202507170458115oJc5bReJwD9v4i.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-jardines-del-pacifico-v",
@@ -3152,7 +3870,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/jardines-del-pacifico-v"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/43/20260206111106kdcuj9n6Doi9xh7.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-javieracarrera",
@@ -3183,7 +3908,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-javieracarrera/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-la-estrella-8540",
@@ -3214,7 +3946,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-la-estrella-8540/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-48-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "la-piramide",
@@ -3225,7 +3964,8 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2800,
     "priceToUf": 2800,
@@ -3253,7 +3993,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/huechuraba/departamento/condominio-la-piramide/9191"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-condominio-la-pradera",
@@ -3284,7 +4031,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-la-pradera/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-la-reserva-1",
@@ -3315,7 +4069,53 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-la-reserva-1/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-292-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
+  },
+  {
+    "id": "bci-5819-condominio-las-brisas-2",
+    "name": "Condominio Las Brisas 2",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "San Bernardo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2120,
+    "priceToUf": 2130,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
+    "imageUrl": null,
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/san-bernardo/departamento/condominio-las-brisas-2/5819"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-506-condominio-las-golondrinas",
@@ -3350,7 +4150,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-las-golondrinas/"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-211-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-251-condominio-las-lobelias",
@@ -3381,7 +4188,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/251/condominio-las-lobelias"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-474-condominio-las-pataguas",
@@ -3416,7 +4230,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/lampa/casa/condominio-las-pataguas/8853"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "las-torres-558",
@@ -3455,7 +4276,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/pudahuel/departamento/condominio-las-torres-558/9454"
       }
     ],
-    "notes": "Rango amplio de precios; desde UF 1.900."
+    "notes": "Rango amplio de precios; desde UF 1.900.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-lickan-oriente",
@@ -3490,7 +4318,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/condominio-lickan-oriente"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/49/20260824115528CTrnzsBZJ39PUbM.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-139-condominio-lihuen",
@@ -3525,7 +4360,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-lihuen/"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/6-100-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "lo-blanco-1361",
@@ -3564,7 +4406,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/la-pintana/departamento/condominio-lo-blanco-1361/9465"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-220-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-140-condominio-loncopangue",
@@ -3595,7 +4444,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/140/condominio-loncopangue"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-los-arrayanes",
@@ -3630,7 +4486,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/condominio-los-arrayanes"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/51/20240924125838tsac1AeabLo8icA.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-los-avellanos",
@@ -3661,7 +4524,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-los-avellanos/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-481-condominio-los-cipreses",
@@ -3692,7 +4562,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/481/condominio-los-cipreses-vii"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-los-coihues-casas-en-lampa",
@@ -3723,7 +4600,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/los-coihues-casas-en-lampa/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2019/08/Socovesa-Coihues_Fotomontaje-Patios_Deco-B_V02-2-scaled.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-los-maitenes",
@@ -3754,7 +4638,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/los-maitenes"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/55/20240619110420KrRgjEDt9aXR6MZ.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-los-naranjos",
@@ -3785,7 +4676,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-los-naranjos/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-marconi",
@@ -3816,7 +4714,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-marconi/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Marconi-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-mirador",
@@ -3847,7 +4752,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-mirador/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-262-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-mirador-del-rio",
@@ -3878,7 +4790,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-mirador-del-rio/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "condominio-montreal",
@@ -3922,7 +4841,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/san-miguel/departamento/condominio-montreal/9661"
       }
     ],
-    "notes": "Sin cupo DS19 en ficha vista; excelente conectividad L2."
+    "notes": "Sin cupo DS19 en ficha vista; excelente conectividad L2.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-192-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-207-condominio-newen",
@@ -3957,7 +4883,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-newen/"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Newen-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-condominio-nueva-toledo",
@@ -3988,7 +4921,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-nueva-toledo/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/05/Toledo-Miniatura-exterior.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-ohiggins",
@@ -4019,7 +4959,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-ohiggins/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/22126.w1600-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-252-condominio-paqari",
@@ -4050,7 +4997,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/252/condominio-paqari"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-parque-carrera",
@@ -4081,7 +5035,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-parque-carrera/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-54-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-parque-ciudadano-iii",
@@ -4112,7 +5073,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-parque-ciudadano-iii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-261-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-8843-condominio-parque-del-sur-torre-a",
@@ -4144,7 +5112,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/la-cisterna/departamento/condominio-parque-del-sur-torre-a/8843"
       }
     ],
-    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "parque-eyzaguirre",
@@ -4184,7 +5159,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/puente-alto/departamento/condominio-parque-eyzaguirre/9269"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/22252.w1600-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-14-condominio-parque-lourdes",
@@ -4215,7 +5197,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/14/condominio-parque-lourdes"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "parque-pehuen",
@@ -4252,7 +5241,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/384/condominio-parque-pehuen"
       }
     ],
-    "notes": "Fuera de Metro Santiago; score de conectividad N/A."
+    "notes": "Fuera de Metro Santiago; score de conectividad N/A.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-parque-pehuen-i",
@@ -4283,7 +5279,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-parque-pehuen-i/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/optimized_DJI_0392-1024x1024.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-parque-vistas-de-colina",
@@ -4314,7 +5317,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-parque-vistas-de-colina/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-59-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-paseo-san-carlos-viii",
@@ -4349,7 +5359,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/paseo-san-carlos-viii"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/70/20250711102929C94KB8MpqzpvPbP.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-376-condominio-pilares-de-talca",
@@ -4384,7 +5401,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-pilares-de-talca/"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-261-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-pinares",
@@ -4415,7 +5439,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-pinares/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PINARES-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-portal-bonilla",
@@ -4446,7 +5477,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-portal-bonilla/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-portal-de-tutuquen",
@@ -4477,7 +5515,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-portal-de-tutuquen/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-PORTAL-DE-TUTUQUEN-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-portal-del-bosque",
@@ -4508,7 +5553,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-portal-del-bosque/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-portal-ulriksen",
@@ -4539,7 +5591,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-portal-ulriksen/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-291-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-504-condominio-puerta-del-sol",
@@ -4570,7 +5629,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/504/condominio-puerta-del-sol"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-419-condominio-quillay",
@@ -4601,7 +5667,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/419/condominio-quillay"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-quillota-21",
@@ -4632,7 +5705,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-quillota-21/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1_1200X900-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-quinta-berna",
@@ -4667,7 +5747,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/condominio-quinta-berna"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/74/20260810034202Gz4Nwgh9pDSttnV.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-372-condominio-radal",
@@ -4698,7 +5785,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/372/condominio-radal"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-16-condominio-rahue-centro-i",
@@ -4729,7 +5823,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/16/condominio-rahue-centro-i"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-rayun",
@@ -4760,7 +5861,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-rayun/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/accesocontrolado-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-san-cristian",
@@ -4791,7 +5899,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-san-cristian/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-4-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-san-marcos",
@@ -4822,7 +5937,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-san-marcos/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-8-1-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-san-rafael",
@@ -4853,7 +5975,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-san-rafael/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-265-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-santa-adriana",
@@ -4884,7 +6013,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-santa-adriana/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10-3-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-santa-ines-ii",
@@ -4919,7 +6055,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-santa-ines-etapa-ii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/8-68-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-santa-josefina",
@@ -4950,7 +6093,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-santa-josefina/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-108-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-santa-maria-isabel",
@@ -4981,7 +6131,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-santa-maria-isabel/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-109-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "santa-rosa-ciclos",
@@ -5020,7 +6177,14 @@ export const catalog = [
         "url": "https://www.iciclos.cl/condominio-santa-rosa/"
       }
     ],
-    "notes": "Buses RED al metro; futura L9 mejora proyección."
+    "notes": "Buses RED al metro; futura L9 mejora proyección.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-senderos-de-penuelas",
@@ -5051,7 +6215,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/senderos-de-penuelas"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/76/202504251036569A9cqj1AHZB8NDt.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-senderos-de-penuelas-ii",
@@ -5086,7 +6257,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/senderos-de-penuelas-ii"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/77/20251210122855GWiEQWAhKPACXd3.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-senderos-del-limari-iii",
@@ -5117,7 +6295,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/senderos-del-limari-iii"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/82/20240624124225riBQYJXmNZl9rJN.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-405-condominio-sol-de-penuelas",
@@ -5148,7 +6333,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/405/condominio-sol-de-penuelas"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-tepual",
@@ -5179,7 +6371,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-tepual/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/22155.w1600-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-condominio-terraza-mirador-ii",
@@ -5210,7 +6409,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/condominio-terraza-mirador-ii/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/05/header_terraza_mirador.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "titan-2-renca",
@@ -5249,7 +6455,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/renca/departamento/condominio-titan-2/8842"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-89-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "tres-piedras",
@@ -5288,7 +6501,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-tres-piedras/"
       }
     ],
-    "notes": "Tipologías 2D/2B y 3D/2B."
+    "notes": "Tipologías 2D/2B y 3D/2B.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-143-condominio-vertice",
@@ -5319,7 +6539,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/143/condominio-vertice"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "viento-norte-sur",
@@ -5359,7 +6586,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/cerrillos/departamento/condominio-viento-norte-y-sur/8630"
       }
     ],
-    "notes": "Buena conexión L6 hacia Franklin / centro."
+    "notes": "Buena conexión L6 hacia Franklin / centro.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-1-1-1024x768.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-viracocha",
@@ -5390,7 +6624,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-viracocha/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Viracocha-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-vista-chinquihue",
@@ -5421,7 +6662,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-vista-chinquihue/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/chinquihue-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-420-condominio-vista-molle",
@@ -5452,7 +6700,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/420/condominio-vista-molle"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-vista-parque-iii",
@@ -5483,7 +6738,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-vista-parque-iii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-213-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-volcan-villarrica",
@@ -5514,7 +6776,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-volcan-villarrica/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/vv-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-volcanes",
@@ -5545,7 +6814,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-volcanes/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Condominio-Volcanes-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-434-costanera-del-sol",
@@ -5576,7 +6852,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/434/costanera-del-sol"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "semi-nuevo-nunoa-ref",
@@ -5670,7 +6953,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/diagonal-vicuna"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/259/conversions/01KJ9F0RND29Q92VFVX92JYPRH-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-don-manuel",
@@ -5701,7 +6991,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/don-manuel/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Fachada-1920x1800px-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-don-pepe-154",
@@ -5733,7 +7030,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/don-pepe-154"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/203/conversions/01KJ6B9705E5T8WEPZ9FDBARYM-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-dona-ignacia",
@@ -5764,7 +7068,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/dona-ignacia/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-4-10-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-dunas-de-san-pedro-iv",
@@ -5795,7 +7106,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/dunas-de-san-pedro-iv"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/135/202506030334391CCwjGROINbTHpF.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-edificio-alcala",
@@ -5826,7 +7144,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/edificio-alcala/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/11-49-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-borde-laguna",
@@ -5857,7 +7182,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/borde-laguna/los-angeles/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/EBL-1.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-edificio-castellon-227",
@@ -5888,7 +7220,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/edificio-castellon-227/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2025/01/CAS227.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-edificio-garcia-reyes",
@@ -5919,7 +7258,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/edificio-garcia-reyes/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2021/06/Garcia-Miniatura-Julio_2025.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-edificio-huertos-las-margaritas",
@@ -5950,7 +7296,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/edificio-huertos-las-margaritas/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2025/04/EHM.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-edificio-insigne",
@@ -5981,7 +7334,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/edificio-insigne/concepcion/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2024/01/INSIGNE.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I171",
@@ -6012,7 +7372,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/edificio-iv-centenario-1025"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1711/proyecto/WEB_PAZ_IV_CENTENARIO.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-76-edificio-las-rocas",
@@ -6043,7 +7410,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/76/edificio-las-rocas"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-450-edificio-nueva-lientur",
@@ -6074,7 +7448,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/450/edificio-nueva-lientur"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-condominio-parquemar",
@@ -6105,7 +7486,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-parquemar/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-edificio-parque-mar-2",
@@ -6136,7 +7524,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/edificio-parque-mar-2/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-plaza-los-canelos",
@@ -6167,7 +7562,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/plaza-los-canelos/san-pedro-de-la-paz/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/EPLC.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "edificio-prat",
@@ -6229,7 +7631,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/edificio-prat/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/6-60-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-216-edificio-quinta-radal",
@@ -6260,7 +7669,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/216/edificio-quinta-radal"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-edificio-refugio-new",
@@ -6291,7 +7707,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/edificio-refugio-new/santiago/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/ERN-2.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-edificio-riga",
@@ -6322,7 +7745,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/edificio-riga/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-91-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-edificio-vertice",
@@ -6353,7 +7783,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/edificio-vertice/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2021/12/Destacada-web-Edificio-Vertce-01.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-269-edificio-vivaceta",
@@ -6384,7 +7821,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/269/edificio-vivaceta"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bricsa-38",
@@ -6415,7 +7859,14 @@ export const catalog = [
         "url": "https://bricsa.cl/proyecto/38"
       }
     ],
-    "notes": "Importado desde Bricsa"
+    "notes": "Importado desde Bricsa",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bricsa-37",
@@ -6446,7 +7897,14 @@ export const catalog = [
         "url": "https://bricsa.cl/proyecto/37"
       }
     ],
-    "notes": "Importado desde Bricsa"
+    "notes": "Importado desde Bricsa",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-altos-del-valle",
@@ -6477,7 +7935,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-departamentos/altos-del-valle/concepcion/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/ADV-1.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-el-portal-2",
@@ -6508,7 +7973,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/el-portal-2/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-211-el-porvenir",
@@ -6539,7 +8011,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/211/el-porvenir"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-9701-el-porvenir",
@@ -6570,7 +8049,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/lampa/departamento/el-porvenir/9701"
       }
     ],
-    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-el-real",
@@ -6601,7 +8087,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/el-real/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-10@2x-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-entre-vicunas",
@@ -6633,7 +8126,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/entre-vicunas"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/68/conversions/01KHTFRJ9W6V7WQRXBTNCY1WBZ-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-estrella-del-norte-ii",
@@ -6664,7 +8164,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/estrella-del-norte-ii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I221",
@@ -6695,7 +8202,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/exequiel-fernandez-3-430"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2211/proyecto/Gourmet_principal.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-farellon-norte",
@@ -6726,7 +8240,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/farellon-norte/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-130-farellon-norte-iii",
@@ -6757,7 +8278,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/130/farellon-norte"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-401-fotografo-enrique-maturana-gonzalez",
@@ -6788,7 +8316,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/401/fotografo-enrique-maturana-gonzalez"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-froilan-roa-5731",
@@ -6820,7 +8355,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/froilan-roa-5731"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/217/conversions/01KJ6RZVKQ0TAFERK3CMXYXC52-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-fuchslocher",
@@ -6851,7 +8393,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-fuchslocher/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-286-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-427-fuentes-de-piedra-iv",
@@ -6882,7 +8431,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/427/fuentes-de-piedra-iv"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-309-fuentes-de-porvenir",
@@ -6913,7 +8469,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/309/fuentes-de-porvenir"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-426-fuentes-de-prats",
@@ -6944,7 +8507,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/426/fuentes-de-prats"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-348-fuentes-de-rucalhue-2",
@@ -6979,7 +8549,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/fuentes-de-rucalhue-2/"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Fuentes-de-Rucalhue-2-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-311-fuentes-de-san-pedro",
@@ -7014,7 +8591,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/fuentes-de-san-pedro/"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Fuentes-de-San-Pedro-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-425-fuentes-de-vilumanque-2",
@@ -7045,7 +8629,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/425/fuentes-de-vilumanque-2"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-124-gran-vista",
@@ -7076,7 +8667,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/124/gran-vista"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-guillermo-mann-1401",
@@ -7108,7 +8706,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/guillermo-mann-1401"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/281/conversions/01KJ9VGGT3Q8MMQ2KRVJ5PR5X7-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-hacienda-las-cruces",
@@ -7139,7 +8744,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-casas/hacienda-las-cruces/los-angeles/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/HLC-2.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "hacienda-lo-errazuriz",
@@ -7174,7 +8786,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyectos-en-venta"
       }
     ],
-    "notes": "Estacionamientos en superficie y subterráneo reportados."
+    "notes": "Estacionamientos en superficie y subterráneo reportados.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-444-hacienda-quilicura",
@@ -7214,7 +8833,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/quilicura/departamento/hacienda-quilicura/8827"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-140-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-399-historiador-guillermo-feliu",
@@ -7245,7 +8871,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/399/historiador-guillermo-feliu"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "horcones-2",
@@ -7286,7 +8919,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/horcones-de-casa-blanca/"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/4-173-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-huertos-sur",
@@ -7317,7 +8957,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/huertos-sur/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-independencia-4745",
@@ -7349,7 +8996,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/independencia-4745"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/11/conversions/750x450_independencia-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-abdoncifuentes",
@@ -7380,7 +9034,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-abdoncifuentes"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-brasil",
@@ -7411,7 +9072,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-brasil"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-carreracapital",
@@ -7442,7 +9110,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-carreracapital"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-centenario",
@@ -7473,7 +9148,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-centenario"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-coronelgodoy",
@@ -7504,7 +9186,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-coronelgodoy"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-diagonalparaguay",
@@ -7535,7 +9224,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-diagonalparaguay"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-donignacio",
@@ -7566,7 +9262,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-donignacio"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-elaromo",
@@ -7597,7 +9300,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-elaromo"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-froilanroa",
@@ -7628,7 +9338,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-froilanroa"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-loslilenes",
@@ -7659,7 +9376,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-loslilenes"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-matta",
@@ -7690,7 +9414,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-matta"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-nuevaesmeralda",
@@ -7721,7 +9452,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-nuevaesmeralda"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-prat",
@@ -7752,7 +9490,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-prat"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-serranocapital",
@@ -7783,7 +9528,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-serranocapital"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-terrazzo",
@@ -7814,7 +9566,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-terrazzo"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-tocornal",
@@ -7845,7 +9604,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-tocornal"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-vespuciocapital",
@@ -7876,7 +9642,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-vespuciocapital"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-vicu",
@@ -7907,7 +9680,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-vicu%C3%B1amackenna7589"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-vima",
@@ -7938,7 +9718,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-vima"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ingevec-vivaceta",
@@ -7969,7 +9756,14 @@ export const catalog = [
         "url": "https://ingevecinmobiliaria.cl/proyecto-vivaceta"
       }
     ],
-    "notes": "Importado desde Ingevec"
+    "notes": "Importado desde Ingevec",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-472-jardin-del-valle",
@@ -8004,7 +9798,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/jardin-del-valle/"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/01.Quillota-sin-autos-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-jardin-norte",
@@ -8035,7 +9836,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/jardin-norte/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-281-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "jardines-san-bernardo",
@@ -8082,7 +9890,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/san-bernardo/departamento/jardines-de-san-bernardo/8830"
       }
     ],
-    "notes": "1 a 3 dormitorios. Más alejado del eje central de metro."
+    "notes": "1 a 3 dormitorios. Más alejado del eje central de metro.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Jardines_de_San_Bernardo_I-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-jardines-de-san-bernardo-ii",
@@ -8113,7 +9928,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/jardines-de-san-bernardo-ii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Jardines_de_San_Bernardo_II-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "jardines-san-felipe",
@@ -8154,7 +9976,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/jardines-de-san-felipe/"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-169-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "jardines-san-francisco",
@@ -8193,7 +10022,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/la-pintana/departamento/jardines-de-san-francisco/9033"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-237-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-jardines-de-valdivia-ii",
@@ -8224,7 +10060,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/jardines-de-valdivia-ii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-jardines-del-sur",
@@ -8255,7 +10098,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/jardines-del-sur/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10-28-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-jose-pedro-alessandri",
@@ -8287,7 +10137,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/jose-pedro-alessandri"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/173/conversions/01KJ5XPQX77FC8FPJ6KS9PVNSD-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "la-balada",
@@ -8349,7 +10206,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/484/la-finka-poniente"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-las-uvas-y-el-viento-316",
@@ -8384,7 +10248,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/la-granja/departamento/la-granja/8324"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-282-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "la-granja-2",
@@ -8423,7 +10294,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/la-granja/departamento/la-granja-2/9327"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-23-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-laguna-verde",
@@ -8454,7 +10332,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/laguna-verde/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-las-pataguas-subsidio-ds19",
@@ -8485,7 +10370,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/las-pataguas-subsidio-ds19/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2023/08/Las_Pataguas-Fachada_casa-jardin.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-las-pelargonias",
@@ -8516,7 +10408,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/las-pelargonias/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/RENDER-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "lira-parque",
@@ -8551,7 +10450,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/san-joaquin/departamento/lira-parque/9755"
       }
     ],
-    "notes": "Estacionamientos subterráneos en el conjunto."
+    "notes": "Estacionamientos subterráneos en el conjunto.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-lomas-de-borgono",
@@ -8582,7 +10488,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/lomas-de-borgono/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-10-lomas-de-coyhaique-ii",
@@ -8613,7 +10526,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/10/lomas-de-coyhaique-ii"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-396-lomas-de-la-luz",
@@ -8644,7 +10564,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/396/lomas-de-la-luz"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-353-lomas-de-landa",
@@ -8675,7 +10602,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/353/lomas-de-landa"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-199-lomas-de-limache",
@@ -8706,7 +10640,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/199/lomas-de-limache"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-los-acacios-1594",
@@ -8737,7 +10678,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/los-acacios-1594/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Sin-titulo-1-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-175-los-alamos-de-penco",
@@ -8772,7 +10720,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/los-alamos-de-penco/"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/6-24-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-los-almendros",
@@ -8803,7 +10758,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/los-almendros/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/7-165-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-los-aromos",
@@ -8834,7 +10796,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/los-aromos/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-8917-los-cipreses",
@@ -8866,7 +10835,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/san-bernardo/departamento/los-cipreses/8917"
       }
     ],
-    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-517-los-molinos",
@@ -8897,7 +10873,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/517/los-molinos"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "los-tilos-3520",
@@ -8940,7 +10923,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/renca/departamento/los-tilos-3520/8868"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Los_Tilos_3520-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-90-manso-de-velasco-iii",
@@ -8971,7 +10961,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/90/villa-manso-de-velasco"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-mapocho-3521",
@@ -9003,7 +11000,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/mapocho-3521"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/233/conversions/01KJ95S7ZGG40Y9365VRF14V3W-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-marathon-departamentos-en-nunoa",
@@ -9034,7 +11038,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/marathon-departamentos-en-nunoa/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2025/07/Marathon_133-86-Depto-1004-Cam-Terraza-01-scaled.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-mirador-pacifico",
@@ -9066,7 +11077,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/mirador-pacifico"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/53/conversions/01KHT91PBR2Z4WWRV656EK3XZC-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "matta-vial-624",
@@ -9114,7 +11132,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/san-joaquin/departamento/matta-vial-624/8914"
       }
     ],
-    "notes": "Tipologías 2D/2B desde UF 2.800. Alta ratio de estacionamientos reportada."
+    "notes": "Tipologías 2D/2B desde UF 2.800. Alta ratio de estacionamientos reportada.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Matta-vial-624-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I234",
@@ -9145,7 +11170,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/mercado-serrano-245"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2341/proyecto/WEB_PAZ_SERRANO.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-507-mirador-costanera-ii",
@@ -9176,7 +11208,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/507/mirador-costanera-ii"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-mirador-costaventura-2",
@@ -9207,7 +11246,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-mirador-costaventura-2/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-231-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-335-mirador-de-agua-santa",
@@ -9238,7 +11284,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/335/mirador-de-agua-santa"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-mirador-de-la-frontera",
@@ -9269,7 +11322,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/mirador-de-la-frontera/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2026/07/ss-mirador-de-la-frontera-portada.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-54-mirador-de-limache",
@@ -9304,7 +11364,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/mirador-de-limache/"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/MIRADOR-DE-LIMACHE-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-171-mirador-de-talhuen",
@@ -9335,7 +11402,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/171/mirador-de-talhuen"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-mirador-de-volcanes",
@@ -9366,7 +11440,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/mirador-de-volcanes/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/mvpm-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-528-mirador-del-aguila",
@@ -9397,7 +11478,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/528/mirador-del-aguila"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-227-mirador-del-puerto",
@@ -9432,7 +11520,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/mirador-del-puerto/"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mirador-del-Puerto-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-467-mirador-del-sol-departamentos",
@@ -9467,7 +11562,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/mirador-del-sol-departamentos/"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-1-12-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-mirador-irarrazabal",
@@ -9498,7 +11600,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/mirador-irarrazabal"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/31/conversions/750x450_irarrazaval-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-516-mirador-sur-ii",
@@ -9529,7 +11638,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/516/alto-mirador-4"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-montevideo-464",
@@ -9560,7 +11676,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/montevideo-464/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Montevideo-464-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I202",
@@ -9591,7 +11714,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/mosaic-art"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2021/proyecto/WEB_PAZ_MOSAIC.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-n3-nueva-etapa",
@@ -9622,7 +11752,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/n3-nueva-etapa/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2023/10/destacada-n3-de-condominio-vista-nielol.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-n3",
@@ -9653,7 +11790,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/n3/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2023/11/n3-vista-nielol-depto-H-67m2-living-comedor.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I166",
@@ -9684,7 +11828,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/neo-art"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1661/proyecto/WEB_PAZ_NEO.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-394-nova-miraflores",
@@ -9715,7 +11866,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/394/nova-miraflores"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-nova-parque",
@@ -9747,7 +11905,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/nova-parque"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/369/conversions/01M20TRPRJJTJ2DSGCFKK3C1ZQ-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-395-nueva-aeropuerto-1",
@@ -9778,7 +11943,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/395/nueva-aeropuerto-1"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-nueva-carrera",
@@ -9809,7 +11981,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-nueva-carrera/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-3-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-391-nueva-carrera-1837",
@@ -9844,7 +12023,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/nueva-carrera-1837/"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALBORES-UTS-NC1837-Exterior-4-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-393-nueva-carrera-2",
@@ -9875,7 +12061,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/393/nueva-carrera-2"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-392-nueva-tocornal-1",
@@ -9906,7 +12099,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/392/nueva-tocornal-1"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-nueva-tocornal-1-y-2",
@@ -9937,7 +12137,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/nueva-tocornal-1-y-2/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/ALBORES-UTS-NT1Y2-Exterior-4-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "nuevo-renca",
@@ -9980,7 +12187,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/renca/departamento/nuevo-renca/8924"
       }
     ],
-    "notes": "2D/2B desde UF 2.800."
+    "notes": "2D/2B desde UF 2.800.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-85-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-o3",
@@ -10011,7 +12225,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/o3/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2024/05/desktop-banner-03-parque-olimpia.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-ohiggins-979",
@@ -10042,7 +12263,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/ohiggins-979/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/4-236-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-pajaritos-departamentos-en-maipu",
@@ -10073,7 +12301,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/pajaritos-departamentos-en-maipu/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2024/08/Pajaritos-301-COMEDOR-2-scaled.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-465-parque-andino",
@@ -10104,7 +12339,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/465/parque-andino"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I152",
@@ -10135,7 +12377,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/parque-arboleda-lo-curro-et-2"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1521/proyecto/COMEDOR_LIVING_1_.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parque-canteras",
@@ -10166,7 +12415,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parque-canteras/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-475-parque-cordillera-ii",
@@ -10197,7 +12453,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/475/parque-cordillera-ii"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-433-parque-costanera",
@@ -10228,7 +12491,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/433/parque-costanera"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "silos-condominio-parque-curamapu",
@@ -10259,7 +12529,14 @@ export const catalog = [
         "url": "https://ilossilos.cl/producto/condominio-parque-curamapu/"
       }
     ],
-    "notes": "Importado desde Los Silos"
+    "notes": "Importado desde Los Silos",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parque-el-dorado",
@@ -10290,7 +12567,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parque-el-dorado/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-73-parque-del-sol-linares",
@@ -10321,7 +12605,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/73/parque-del-sol-linares"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-259-parque-del-sol-san-javier",
@@ -10352,7 +12643,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/259/parque-del-sol-san-javier"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parque-las-alamedas",
@@ -10383,7 +12681,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parque-las-alamedas/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-199-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-parque-los-avellanos-ii",
@@ -10414,7 +12719,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/parque-los-avellanos-ii/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/01/Avellanos-Miniatura-agosto-2025.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parque-samore",
@@ -10445,7 +12757,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parque-samore/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-251-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parque-villarrica",
@@ -10476,7 +12795,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parque-villarrica/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pv-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-505-parque-zenteno-ii",
@@ -10507,7 +12833,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/505/parque-zenteno"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parques-del-sur",
@@ -10538,7 +12871,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parques-del-sur/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-272-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parras-de-san-javier",
@@ -10569,7 +12909,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parras-de-san-javier/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-236-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parras-de-san-javier-ii",
@@ -10600,7 +12947,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parras-de-san-javier-ii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/5-201-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-385-parrones-de-baquedano",
@@ -10631,7 +12985,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/385/parrones-de-baquedano"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-499-parrones-de-baquedano-norte",
@@ -10666,7 +13027,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parrones-de-baquedano-norte/"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-277-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-parrones-baquedano-sur",
@@ -10697,7 +13065,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/parrones-baquedano-sur/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-265-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-paseo-de-las-aves",
@@ -10728,7 +13103,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-paseo-de-las-aves/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/image-9-2-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-374-paso-el-roble",
@@ -10759,7 +13141,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/374/paso-el-roble"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-483-peumayen",
@@ -10790,7 +13179,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/483/peumayen"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "pintor-helsby",
@@ -10825,7 +13221,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/penaflor/casa/pintor-alfredo-helsby/9437"
       }
     ],
-    "notes": "Casas con subsidio en periferia RM."
+    "notes": "Casas con subsidio en periferia RM.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-495-pintor-gustavo-cabello-ii",
@@ -10860,7 +13263,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/pintor-gustavo-cabello-ii/"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-77-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-513-pintor-gustavo-cabello-ii-ds01",
@@ -10891,7 +13301,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/513/pintor-gustavo-cabello-ii-ds01"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-9444-pintor-jose-venturelli",
@@ -10922,7 +13339,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/buin/casa/pintor-jose-venturelli/9444"
       }
     ],
-    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)"
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-70-plaza-bilbao-barquin",
@@ -10953,7 +13377,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/70/plaza-bilbao-barquin"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-plaza-cautin",
@@ -10984,7 +13415,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/plaza-cautin/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pc-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "plaza-central-maipu",
@@ -11021,7 +13459,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/527/plaza-central"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bricsa-35",
@@ -11052,7 +13497,14 @@ export const catalog = [
         "url": "https://bricsa.cl/proyecto/35"
       }
     ],
-    "notes": "Importado desde Bricsa"
+    "notes": "Importado desde Bricsa",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-plaza-de-lourdes",
@@ -11084,7 +13536,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/plaza-de-lourdes"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/73/conversions/01KHWBJW6215GWP4Y8VFNX09RS-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I173",
@@ -11115,7 +13574,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/plaza-lira-santa-victoria-382"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1731/proyecto/WEB_PAZ_PLAZA_LIRA_SANTA_VICTORIA_382.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I236",
@@ -11146,7 +13612,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/plaza-lira-santa-victoria-382b"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2361/proyecto/WEB_PAZ_PLAZA_LIRA_SANTA_VICTORIA_382B.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "plaza-mayor-maipu",
@@ -11183,7 +13656,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/522/plaza-mayor"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bricsa-42",
@@ -11214,7 +13694,14 @@ export const catalog = [
         "url": "https://bricsa.cl/proyecto/42"
       }
     ],
-    "notes": "Importado desde Bricsa"
+    "notes": "Importado desde Bricsa",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-plaza-mirador-departamentos-en-la-florida",
@@ -11245,7 +13732,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/plaza-mirador-departamentos-en-la-florida/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2026/04/plaza-mirador-505-Depto-3D2B-80-m²-living.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-plaza-quilicura",
@@ -11276,7 +13770,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-plaza-quilicura/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/12-57-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-portal-austral",
@@ -11307,7 +13808,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/portal-austral/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2022/07/Portal-Austral-Casa-103_04.2.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-portal-de-azapa",
@@ -11338,7 +13846,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/portal-de-azapa/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-portal-de-curanilahue",
@@ -11369,7 +13884,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/portal-de-curanilahue/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portal-de-Curanilahue-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-9598-portal-de-los-artesanos",
@@ -11432,7 +13954,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/portal-del-alwa/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-126-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-portal-del-libertador-ix",
@@ -11463,7 +13992,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/portal-del-libertador-ix/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2025/05/desktop-imagen-eje-2-portal-del-libertador-ix-exterior-e1770150950574.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-380-portal-el-abra",
@@ -11494,7 +14030,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/380/portal-el-abra"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-406-portal-el-alwa",
@@ -11525,7 +14068,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/406/portal-el-alwa"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-portal-lo-campino",
@@ -11556,7 +14106,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/portal-lo-campino/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/PORTAL-LO-CAMPINO-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-portal-penablanca",
@@ -11587,7 +14144,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/portal-penablanca/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Diseคo-sin-tกtulo-2-1-1024x768.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "ecomac-portal-ulriksen",
@@ -11618,7 +14182,14 @@ export const catalog = [
         "url": "https://www.ecomac.cl/proyectos/portal-ulriksen"
       }
     ],
-    "notes": "Importado desde API Ecomac"
+    "notes": "Importado desde API Ecomac",
+    "imageUrl": "https://api.somosecomac.cl/storage/administration/webprojects/136/20260506054922VDhopF4yitwphm1.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-praderas-de-labranza-ii",
@@ -11649,7 +14220,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/praderas-de-labranza-ii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/pdl-1-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-praderas-de-talca",
@@ -11680,7 +14258,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/praderas-de-talca/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-13-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-praderas-del-llaima",
@@ -11711,7 +14296,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/praderas-del-llaima/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/llaima_1-1-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "presidente-prieto",
@@ -11746,7 +14338,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/pedro-aguirre-cerda/departamento/presidente-prieto/7015"
       }
     ],
-    "notes": "Entrega inmediata según inmobiliaria."
+    "notes": "Entrega inmediata según inmobiliaria.",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "principal-1385",
@@ -11785,7 +14384,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/conchali/departamento/principal-1385/8886"
       }
     ],
-    "notes": ""
+    "notes": "",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Principal_1385-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-8247-puerta-norte",
@@ -11848,7 +14454,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/421/puerta-norte-chinchorro"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-quinta-costanera",
@@ -11879,7 +14492,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/quinta-costanera/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Cinta-Entrega-inmediata-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "soco-reserva-magallanes",
@@ -11910,7 +14530,14 @@ export const catalog = [
         "url": "https://www.socovesa.cl/nuestros-proyectos/reserva-magallanes/"
       }
     ],
-    "notes": "Importado desde Socovesa"
+    "notes": "Importado desde Socovesa",
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2023/10/Reserva-Magallanes-2025-Mayo_Miniatura.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-robles-de-aconcagua",
@@ -11941,7 +14568,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/robles-de-aconcagua/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-246-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-rocas-de-la-iglesia-2",
@@ -11972,7 +14606,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/rocas-de-la-iglesia-2/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Rocas-de-la-Iglesia-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-rosas-1444",
@@ -12004,7 +14645,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/rosas-1444"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/246/conversions/01KJ9C7DV4569XVK1PT43B7GZZ-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-496-samuel-roman-rojas",
@@ -12035,7 +14683,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/496/samuel-roman-rojas"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "aitue-san-andres-del-valle",
@@ -12066,7 +14721,14 @@ export const catalog = [
         "url": "https://www.aitue.cl/propiedades-casas/san-andres-del-valle/lomas-de-san-andres/"
       }
     ],
-    "notes": "Importado desde Aitue"
+    "notes": "Importado desde Aitue",
+    "imageUrl": "https://www.aitue.cl/wp-content/uploads/2021/04/SADV.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-456-san-cristian",
@@ -12097,7 +14759,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/456/san-cristian"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I229",
@@ -12128,7 +14797,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/san-francisco-211"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2291/proyecto/WEB_PAZ_SAN_FRANCISCO_211.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I232",
@@ -12159,7 +14835,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/san-isidro-545"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2321/proyecto/PilotoSanIsidro_NZ9_6927_Pano.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-condominio-san-jorge-aurelio",
@@ -12190,7 +14873,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/condominio-san-jorge-aurelio/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/10-108-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-458-san-marcos",
@@ -12221,7 +14911,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/458/san-marcos"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-san-rafael-condominio",
@@ -12252,7 +14949,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/san-rafael-condominio/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/SAN-RAFAEL-CONDOMINIO-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-457-santa-adriana",
@@ -12283,7 +14987,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/457/santa-adriana"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-santa-elena-1670",
@@ -12319,7 +15030,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/santa-elena-1670"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I177",
@@ -12350,7 +15068,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/santa-elvira-46"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1771/proyecto/Hall_de_acceso_doble_altura_1_.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-459-santa-josefina",
@@ -12381,7 +15106,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/459/santa-josefina"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-edificio-santa-petronila",
@@ -12412,7 +15144,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/edificio-santa-petronila/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-20-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-santa-rosa",
@@ -12447,7 +15186,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/la-pintana/departamento/santa-rosa/8887"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Santa_Rosa-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I197",
@@ -12478,7 +15224,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/seminario-2"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1971/proyecto/WEB_PAZ_SEMINARIO_2.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I196",
@@ -12509,7 +15262,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/seminario-850"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1961/proyecto/WEB_PAZ_SEMINARIO_850.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-473-sendero-de-guindal",
@@ -12540,7 +15300,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/473/sendero-de-guindal"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-senderos-de-los-andes-iii",
@@ -12571,7 +15338,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/senderos-de-los-andes-iii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Portada-Senderos-de-los-Andes-IV-entrega-inmediata-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-109-senderos-de-los-andes-v",
@@ -12602,7 +15376,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/109/senderos-de-los-andes-ii"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-sol-de-penuelas",
@@ -12633,7 +15414,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/sol-de-penuelas/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-68-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I230",
@@ -12664,7 +15452,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/tarapaca-851"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2301/proyecto/Escena_98.png",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I214",
@@ -12695,7 +15490,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/teresa-vial-1139"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2141/proyecto/WEB_PAZ_TERESA_V.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-terrazas-del-bicentenario",
@@ -12709,8 +15511,8 @@ export const catalog = [
       "DS19",
       "DS1"
     ],
-    "priceFromUf": 3000,
-    "priceToUf": 3000,
+    "priceFromUf": 2200,
+    "priceToUf": 2200,
     "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
@@ -12735,7 +15537,14 @@ export const catalog = [
         "url": "https://www.enlaceinmobiliarios.cl/bci/cerrillos/departamento/terrazas-del-bicentenario/9382"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-245-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-terrazas-del-bicentenario-ii",
@@ -12766,7 +15575,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/terrazas-del-bicentenario-ii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/TBIC-Parque1-1-1024x768.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-torres-de-varoli",
@@ -12797,7 +15613,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/torres-de-varoli/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-valles-de-la-florida",
@@ -12828,7 +15651,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/valles-de-la-florida/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-155-valles-de-rengo-iii",
@@ -12859,7 +15689,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/155/valles-de-rengo"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-valles-de-san-clemente",
@@ -12890,7 +15727,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/valles-de-san-clemente/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-SAN-CLEMENTE-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-valles-del-sur",
@@ -12921,7 +15765,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/valles-del-sur/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/8-161-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-veramonte-2",
@@ -12952,7 +15803,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/veramonte-2/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/3-66-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I136",
@@ -12983,7 +15841,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/verdece-ii"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1361/proyecto/NZ9_3070_1_1_1_.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-vicente-huidobro",
@@ -13014,7 +15879,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/vicente-huidobro/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VICENTE-HUIDOBRO-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-vicuna-mackenna-1432",
@@ -13046,7 +15918,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/vicuna-mackenna-1432"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/188/conversions/01KJ67F0BS60BMYNGCQB6TCS6G-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-346-viento-norte-ii",
@@ -13081,7 +15960,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/viento-norte-ii/"
       }
     ],
-    "notes": "Importado desde Subsidios.cl"
+    "notes": "Importado desde Subsidios.cl",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Viento-Norte-II-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-vista-aconcagua",
@@ -13112,7 +15998,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/vista-aconcagua/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-vista-costanera",
@@ -13143,7 +16036,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/vista-costanera/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/8-129-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I237",
@@ -13174,7 +16074,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/vista-golf-ii"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I2371/proyecto/PVG_INT_02_Living_Comedor_copia.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I132",
@@ -13205,7 +16112,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/vista-golf-la-dehesa"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1321/proyecto/VG01.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-vista-marga-marga-i",
@@ -13236,7 +16150,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/vista-marga-marga-i/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-01-Vitrina-UTS-1-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-vista-portugal",
@@ -13267,7 +16188,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/vista-portugal"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/353/conversions/01M0BGSP9W193RB8NCSGNJ960C-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-525-vistas-de-curauma-iii",
@@ -13298,7 +16226,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/525/vistas-de-curauma-iii"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-vistas-de-curauma-iii",
@@ -13329,7 +16264,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/vistas-de-curauma-iii/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/2-276-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-vistas-i",
@@ -13360,7 +16302,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/vistas-i/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/1-278-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "euro-vitro",
@@ -13392,7 +16341,14 @@ export const catalog = [
         "url": "https://www.euroinmobiliaria.cl/proyectos/vitro"
       }
     ],
-    "notes": "Importado desde Euro Inmobiliaria"
+    "notes": "Importado desde Euro Inmobiliaria",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/65/conversions/01KHTDE7KJHWGY12C2ZV2J74NJ-main.webp",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-511-vive-la-herradura",
@@ -13423,7 +16379,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/511/vive-la-herradura"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "vive-la-vara",
@@ -13462,7 +16425,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/vive-la-vara/"
       }
     ],
-    "notes": "Estacionamientos subterráneos publicados."
+    "notes": "Estacionamientos subterráneos publicados.",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/13-60-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-381-vive-san-felipe",
@@ -13493,7 +16463,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/381/vive-san-felipe"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "sub-266-walk-parral",
@@ -13524,7 +16501,14 @@ export const catalog = [
         "url": "https://www.subsidios.cl/proyecto/266/walk-parral"
       }
     ],
-    "notes": "Importado automáticamente desde Subsidios.cl"
+    "notes": "Importado automáticamente desde Subsidios.cl",
+    "imageUrl": null,
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "uts-walk-san-javier",
@@ -13555,7 +16539,14 @@ export const catalog = [
         "url": "https://usatusubsidio.cl/propiedades/walk-san-javier/"
       }
     ],
-    "notes": "Importado desde UsaTuSubsidio"
+    "notes": "Importado desde UsaTuSubsidio",
+    "imageUrl": "https://usatusubsidio.com/wp-content/uploads/Walk-San-Javier-01-Vitrina-UTS-1024x768.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": false,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I174",
@@ -13586,7 +16577,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/workin-oficinas"
       }
     ],
-    "notes": "Importado desde API Paz"
+    "notes": "Importado desde API Paz",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1741/proyecto/oficina.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I191",
@@ -13617,7 +16615,14 @@ export const catalog = [
         "url": "https://www.paz.cl/proyecto/zorzal"
       }
     ],
-    "notes": "Importado desde Paz (posible subsidio a la tasa)"
+    "notes": "Importado desde Paz (posible subsidio a la tasa)",
+    "imageUrl": "https://api.paz.cl/imagenes_cotizador/I1911/proyecto/WEB_PAZ_ZORZAL.jpg",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   }
 ]
 
@@ -13625,5 +16630,5 @@ export const catalogMeta = {
   generatedAt: "2026-10-04",
   ufClp: UF_CLP,
   disclaimer:
-    'Catálogo actualizado desde fuentes públicas (Subsidios.cl, UsaTuSubsidio, Enlace/BCI, Los Silos, Ingevec, Ciclos, Euro, Ecomac, Socovesa, Paz, Aitue, Bricsa, Galilea, mindicador.cl). Cupos y precios cambian: confirma en el portal de origen.',
+    'Güan Portal no es un brochure: precios “desde”, cupos y tipologías cambian. Confirmamos la ficha en el portal de origen antes de postular o reservar.',
 }

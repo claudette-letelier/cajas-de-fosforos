@@ -332,8 +332,17 @@ function normalizeItem(partial) {
     metroLine: partial.metroLine ?? metro.line,
     metroWalkMin: partial.metroWalkMin ?? metro.walk,
     connectivityScore: partial.connectivityScore ?? metro.score,
+    imageUrl: partial.imageUrl || null,
     sources: partial.sources || [{ portal: partial.portal, url: partial.url }],
     notes: partial.notes || `Importado desde ${partial.portal}`,
+    dataGaps: {
+      parkingUnknown: (partial.parking || 'consultar') === 'consultar',
+      deliveryUnknown: (partial.delivery || 'consultar') === 'consultar',
+      metroEstimated:
+        region === 'Metropolitana' &&
+        (partial.metroWalkMin == null || partial.metroStation == null),
+      priceIsDesde: true,
+    },
   }
 }
 
@@ -352,6 +361,13 @@ function extractSubsidios(html) {
     const comuna = decodeHtml(comunaHtml)
     const dorms = parseDorms(dormsText)
     if (!name || !uf) continue
+    const before = html.slice(Math.max(0, m.index - 1200), m.index)
+    const imageUrl =
+      before.match(
+        /src="(https:\/\/(?:subsidioscl\.)?(?:sfo2\.)?(?:cdn\.)?digitaloceanspaces\.com\/[^"]+)"/i,
+      )?.[1] ||
+      before.match(/src="(https:\/\/[^"]+\.(?:jpg|jpeg|png|webp)[^"]*)"/i)?.[1] ||
+      null
     projects.push(
       normalizeItem({
         id: `sub-${idNum}-${slugify(name)}`.slice(0, 80),
@@ -363,6 +379,7 @@ function extractSubsidios(html) {
         bedroomsMax: dorms.max,
         subsidies: ['DS19'],
         url: `https://www.subsidios.cl${pathUrl}`,
+        imageUrl,
         notes: 'Importado desde Subsidios.cl',
       }),
     )
@@ -409,6 +426,10 @@ function extractUsaTuSubsidio(html) {
     const priceRaw = a.match(/property-card__price[^>]*>\s*([\d.]+)\s*UF/i)?.[1]
     const developer = a.match(/propiedades\/\?inmobiliaria=([^"]+)[\s\S]*?<\/a>/)?.[1]
     const subsidyHint = a.match(/subsidio=([^"&]+)/)?.[1] || ''
+    const imageUrl =
+      a.match(/<img[^>]+src="(https?:\/\/[^"]+)"/i)?.[1] ||
+      a.match(/data-src="(https?:\/\/[^"]+)"/i)?.[1] ||
+      null
     if (!slug || !name || !priceRaw) continue
 
     let comuna = 'Chile'
@@ -439,6 +460,7 @@ function extractUsaTuSubsidio(html) {
         priceFromUf: parseChileUf(priceRaw),
         subsidies,
         url: `https://usatusubsidio.cl/propiedades/${slug}/`,
+        imageUrl,
         notes: 'Importado desde UsaTuSubsidio',
       }),
     )
@@ -741,6 +763,7 @@ async function scrapeEuro() {
         subsidies: hasSub ? ['DS19', 'DS1'] : ['Sin subsidio'],
         delivery: p.entrega || 'consultar',
         url: `https://www.euroinmobiliaria.cl/proyectos/${p.slug}`,
+        imageUrl: p.imagen ? String(p.imagen).replace(/\\\//g, '/') : null,
         notes: 'Importado desde Euro Inmobiliaria',
       }),
     )
@@ -762,6 +785,7 @@ async function scrapeEcomac() {
       const tipo = String(p.type || '').toUpperCase().includes('CASA')
         ? 'casa'
         : 'departamento'
+      const cover = p.cover_image_desktop || p.cover_image_mobile
       return normalizeItem({
         id: `ecomac-${p.slug || p.id}`,
         portal: 'ecomac',
@@ -777,6 +801,7 @@ async function scrapeEcomac() {
         subsidies: p.is_ds19 ? ['DS19'] : ['Sin subsidio'],
         delivery: p.sale_type || 'consultar',
         url: `https://www.ecomac.cl/proyectos/${p.slug}`,
+        imageUrl: cover ? `https://api.somosecomac.cl${cover}` : null,
         notes: 'Importado desde API Ecomac',
       })
     })
@@ -787,10 +812,10 @@ async function scrapeSocovesa() {
   const html = await fetchText('https://www.socovesa.cl/proyectos')
   const out = []
   const re =
-    /<div class="card_proyecto"([^>]*)>[\s\S]*?<h4>([^<]+)<\/h4>[\s\S]*?href="(https:\/\/www\.socovesa\.cl\/nuestros-proyectos\/[^"]+)"/g
+    /<div class="card_proyecto"([^>]*)>([\s\S]*?)<h4>([^<]+)<\/h4>[\s\S]*?href="(https:\/\/www\.socovesa\.cl\/nuestros-proyectos\/[^"]+)"/g
   let m
   while ((m = re.exec(html))) {
-    const [, attrs, nameHtml, url] = m
+    const [, attrs, cardHtml, nameHtml, url] = m
     const attr = (k) => attrs.match(new RegExp(`${k}="([^"]*)"`))?.[1]
     const price = Number(attr('data-precio') || 0)
     if (!price || price < 500) continue
@@ -802,6 +827,9 @@ async function scrapeSocovesa() {
     const subFlag = String(attr('data-subsidio') || '').toLowerCase()
     const slugSub = /subsidio|ds19/i.test(url)
     const subsidies = subFlag === 'si' || slugSub ? ['DS19'] : ['Sin subsidio']
+    const imageUrl =
+      cardHtml.match(/src="(https:\/\/www\.socovesa\.cl\/wp-content\/uploads\/[^"]+)"/)?.[1] ||
+      null
     out.push(
       normalizeItem({
         id: `soco-${slugify(url.split('/').filter(Boolean).pop())}`,
@@ -816,6 +844,7 @@ async function scrapeSocovesa() {
         subsidies,
         delivery: attr('data-disponibilidad') || 'consultar',
         url,
+        imageUrl,
         notes: 'Importado desde Socovesa',
       }),
     )
@@ -825,8 +854,18 @@ async function scrapeSocovesa() {
 
 /* -------------------- Paz API -------------------- */
 async function scrapePaz() {
-  const rows = await fetchJson('https://api.paz.cl/api/proyectos')
+  const [rows, images] = await Promise.all([
+    fetchJson('https://api.paz.cl/api/proyectos'),
+    fetchJson('https://api.paz.cl/api/proyectos/imagenes-principales').catch(() => []),
+  ])
   if (!Array.isArray(rows)) throw new Error('Paz API unexpected shape')
+  const imgById = new Map()
+  for (const img of Array.isArray(images) ? images : []) {
+    if (!img?.idProyecto || !img?.url) continue
+    if (!imgById.has(img.idProyecto)) {
+      imgById.set(img.idProyecto, `https://api.paz.cl${img.url}`)
+    }
+  }
   return rows
     .map((p) => {
       const price = Math.round(Number(p.precio_desde) || 0)
@@ -834,12 +873,18 @@ async function scrapePaz() {
       const name = p.nombre_proyecto || p.edificio
       const slug = slugify(p.edificio || name)
       const hasTasa = Boolean(p.logoSubsidioTasa)
-      const subsidies = hasTasa ? ['Sin subsidio'] : ['Sin subsidio']
-      // Paz rarely marks DS19; keep as mercado abierto, flag tasa if present in notes
+      const subsidies = ['Sin subsidio']
       const notes = hasTasa
         ? 'Importado desde Paz (posible subsidio a la tasa)'
         : 'Importado desde API Paz'
       const dorms = parseDorms(p.cantidad_dormitorios || '1-2')
+      const idKey = `${p.id_proyecto}1`
+      const imageUrl =
+        imgById.get(idKey) ||
+        imgById.get(p.id_proyecto) ||
+        (p.logo_1_nombre_proyecto
+          ? `https://api.paz.cl${p.logo_1_nombre_proyecto}logo.png`
+          : null)
       return normalizeItem({
         id: `paz-${p.id_proyecto || slug}`,
         portal: 'paz',
@@ -855,6 +900,7 @@ async function scrapePaz() {
         metroStation: p.metro || null,
         connectivityScore: p.metro ? 5 : 3,
         url: `https://www.paz.cl/proyecto/${slug}`,
+        imageUrl,
         notes,
       })
     })
@@ -892,6 +938,9 @@ async function scrapeAitue() {
     const price = parseChileUf(uf)
     // Aitue: subsidio a la tasa available sitewide; DS19 not always. Tag mid-market as Sin subsidio unless name hints.
     const subsidies = /subsidio|ds19/i.test(b) ? ['DS19'] : ['Sin subsidio']
+    const imageUrl =
+      b.match(/src="(https:\/\/www\.aitue\.cl\/wp-content\/uploads\/[^"]+)"/)?.[1] ||
+      null
     out.push(
       normalizeItem({
         id: `aitue-${slugify(slug)}`,
@@ -902,6 +951,7 @@ async function scrapeAitue() {
         propertyType: tipo,
         priceFromUf: price,
         subsidies,
+        imageUrl,
         url,
         notes: 'Importado desde Aitue',
       }),
@@ -1052,6 +1102,8 @@ function mergeCatalog(existing, scraped) {
         bedroomsMax: Math.max(cur.bedroomsMax ?? 0, s.bedroomsMax ?? 0) || cur.bedroomsMax,
         subsidies: uniqueSubsidies([...(cur.subsidies || []), ...(s.subsidies || [])]),
         sources: mergeSources(cur.sources, s.sources?.[0]),
+        imageUrl: s.imageUrl || cur.imageUrl || null,
+        dataGaps: s.dataGaps || cur.dataGaps,
         developer:
           cur.developer && cur.developer !== 'Consultar portal'
             ? cur.developer
@@ -1065,6 +1117,7 @@ function mergeCatalog(existing, scraped) {
       byId.set(s.id, {
         ...cur,
         ...s,
+        imageUrl: s.imageUrl || cur.imageUrl || null,
         sources: mergeSources(cur.sources, s.sources?.[0]),
         subsidies: uniqueSubsidies([...(cur.subsidies || []), ...(s.subsidies || [])]),
       })
@@ -1112,7 +1165,7 @@ export const catalogMeta = {
   generatedAt: ${JSON.stringify(generatedAt)},
   ufClp: UF_CLP,
   disclaimer:
-    'Catálogo actualizado desde fuentes públicas (Subsidios.cl, UsaTuSubsidio, Enlace/BCI, Los Silos, Ingevec, Ciclos, Euro, Ecomac, Socovesa, Paz, Aitue, Bricsa, Galilea, mindicador.cl). Cupos y precios cambian: confirma en el portal de origen.',
+    'Güan Portal no es un brochure: precios “desde”, cupos y tipologías cambian. Confirmamos la ficha en el portal de origen antes de postular o reservar.',
 }
 `
 }
