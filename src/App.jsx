@@ -175,22 +175,26 @@ export default function App() {
     <div className="min-h-screen overflow-x-hidden bg-[var(--paper)] text-[var(--ink)]">
       <header className="relative isolate min-h-[88vh] overflow-hidden sm:min-h-[78vh]">
         <img
-          src={`${import.meta.env.BASE_URL}banner-hero-v3.jpg`}
-          alt=""
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-[center_35%]"
+          src={`${import.meta.env.BASE_URL}banner-hero-v4.jpg`}
+          alt="Caja de fósforos Copihue abierta con un departamento en miniatura adentro"
+          className="absolute inset-0 -z-20 h-full w-full scale-105 object-cover object-[68%_52%] sm:object-[72%_48%]"
+          style={{ animation: 'hero-drift 18s ease-in-out infinite alternate' }}
         />
         <div
           className="absolute inset-0 -z-10"
           style={{
             background:
-              'linear-gradient(105deg, rgba(11,46,43,0.94) 0%, rgba(19,78,74,0.82) 38%, rgba(28,61,74,0.50) 68%, rgba(28,61,74,0.28) 100%), radial-gradient(ellipse 55% 50% at 12% 18%, rgba(242,169,59,0.22), transparent 58%)',
+              'linear-gradient(100deg, rgba(11,46,43,0.92) 0%, rgba(11,46,43,0.78) 28%, rgba(11,46,43,0.35) 52%, rgba(11,46,43,0.12) 72%, rgba(11,46,43,0.05) 100%)',
           }}
         />
         <div
-          className="pointer-events-none absolute -right-16 top-10 h-56 w-56 rounded-full bg-[#f2a93b]/15 blur-3xl"
-          style={{ animation: 'soft-pulse 7s ease-in-out infinite' }}
+          className="pointer-events-none absolute bottom-0 left-0 right-0 h-28 -z-10"
+          style={{
+            background:
+              'linear-gradient(to top, var(--paper), transparent)',
+          }}
         />
-        <div className="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col px-5 pb-12 pt-8 sm:min-h-[78vh] sm:px-8 sm:pb-16">
+        <div className="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col px-5 pb-14 pt-8 sm:min-h-[78vh] sm:px-8 sm:pb-16">
           <nav className="flex flex-wrap items-center justify-between gap-3 text-sm text-white/80">
             <span className="font-[family-name:var(--font-display)] text-xl text-white">
               Cajas de Fósforos
@@ -212,40 +216,72 @@ export default function App() {
             </div>
           </nav>
 
-          <div className="mt-auto max-w-2xl pt-16">
-            <p className="font-[family-name:var(--font-display)] text-5xl leading-[0.95] text-white sm:text-7xl">
+          <div className="mt-auto max-w-xl pt-20 sm:pt-24">
+            <p
+              className="font-[family-name:var(--font-display)] text-5xl leading-[0.95] text-white sm:text-7xl"
+              style={{ animation: 'fade-up 0.9s ease-out both' }}
+            >
               Cajas de Fósforos
             </p>
-            <h1 className="mt-5 text-2xl font-medium text-[#f6e7c5] sm:text-3xl">
+            <h1
+              className="mt-5 text-2xl font-medium text-[#f6e7c5] sm:text-3xl"
+              style={{ animation: 'fade-up 0.9s ease-out 0.12s both' }}
+            >
               Encuentra tu cajita de fósforos.
             </h1>
-            <p className="mt-4 text-white/80">
-              Iniciativa sin fines de lucro para ayudarte a mirar vivienda en
-              Chile con menos marketing: juntamos avisos públicos y marcamos lo
-              que falta confirmar (precio “desde”, cupos, acceso al transporte).
+            <p
+              className="mt-4 max-w-md text-white/85"
+              style={{ animation: 'fade-up 0.9s ease-out 0.22s both' }}
+            >
+              Iniciativa sin fines de lucro para mirar vivienda en Chile con menos
+              marketing: avisos públicos, ficha clara y acceso real al transporte.
             </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-3 text-white sm:grid-cols-4">
-              <div className="rounded-xl bg-white/10 p-3 backdrop-blur">
-                <p className="text-2xl font-semibold">{stats.total}</p>
-                <p className="text-xs text-white/70">proyectos</p>
-              </div>
-              <div className="rounded-xl bg-white/10 p-3 backdrop-blur">
-                <p className="text-2xl font-semibold">{stats.withSub}</p>
-                <p className="text-xs text-white/70">con subsidio</p>
-              </div>
-              <div className="rounded-xl bg-white/10 p-3 backdrop-blur">
-                <p className="text-2xl font-semibold">{stats.withPhoto}</p>
-                <p className="text-xs text-white/70">con foto</p>
-              </div>
-              <div className="rounded-xl bg-white/10 p-3 backdrop-blur">
-                <p className="text-2xl font-semibold">{stats.regions}</p>
-                <p className="text-xs text-white/70">regiones</p>
-              </div>
+            <div
+              className="mt-8 flex flex-wrap gap-3"
+              style={{ animation: 'fade-up 0.9s ease-out 0.32s both' }}
+            >
+              <a
+                href="#buscador"
+                onClick={(e) => {
+                  e.preventDefault()
+                  buscadorRef.current?.scrollIntoView({ behavior: 'smooth' })
+                }}
+                className="rounded-md bg-[#f2a93b] px-5 py-2.5 text-sm font-semibold text-[#0b2e2b] shadow-sm hover:brightness-105"
+              >
+                Buscar vivienda
+              </a>
+              <a
+                href="#para-que-sirve"
+                className="rounded-md border border-white/35 bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm hover:bg-white/15"
+              >
+                Cómo funciona
+              </a>
             </div>
           </div>
         </div>
       </header>
+
+      <div className="border-b border-[var(--line)] bg-white/80 px-5 py-4 sm:px-8">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-8 gap-y-2 text-sm">
+          <p>
+            <span className="font-semibold text-[var(--ink)]">{stats.total}</span>{' '}
+            <span className="text-[var(--muted-ink)]">proyectos</span>
+          </p>
+          <p>
+            <span className="font-semibold text-[var(--ink)]">{stats.withSub}</span>{' '}
+            <span className="text-[var(--muted-ink)]">con subsidio</span>
+          </p>
+          <p>
+            <span className="font-semibold text-[var(--ink)]">{stats.withPhoto}</span>{' '}
+            <span className="text-[var(--muted-ink)]">con foto</span>
+          </p>
+          <p>
+            <span className="font-semibold text-[var(--ink)]">{stats.regions}</span>{' '}
+            <span className="text-[var(--muted-ink)]">regiones</span>
+          </p>
+        </div>
+      </div>
 
       {showPortals ? (
         <section className="border-b border-[var(--line)] bg-[var(--sand)] px-5 py-8 sm:px-8">
@@ -823,7 +859,10 @@ export default function App() {
         </div>
       </section>
 
-      <section className="border-t border-[var(--line)] bg-[var(--sand)] px-5 py-12 sm:px-8">
+      <section
+        id="para-que-sirve"
+        className="border-t border-[var(--line)] bg-[var(--sand)] px-5 py-12 sm:px-8"
+      >
         <div className="mx-auto max-w-6xl">
           <h2 className="font-[family-name:var(--font-display)] text-3xl">
             Para qué sirve Cajas de Fósforos

@@ -70,6 +70,8 @@ const LOCALITY_HINTS = [
   { re: /\bchicureo\b/i, key: 'chicureo' },
   { re: /\bla\s+dehesa\b/i, key: 'la-dehesa' },
   { re: /\bandalu[eé]\b/i, key: 'andalue' },
+  { re: /\bbosquemar\b/i, key: 'bosquemar' },
+  { re: /\blomas?\s+de\s+landa\b|\blanda\b.*penco|camino\s+a\s+penco|ruta\s*150\b/i, key: 'lomas-de-landa' },
   { re: /\bsan\s+pedro\s+de\s+la\s+paz\b/i, key: 'san-pedro-de-la-paz' },
   { re: /\balto\s+hospicio\b/i, key: 'alto-hospicio' },
   { re: /\bserena\s+oriente\b/i, key: 'serena-oriente' },
@@ -178,9 +180,37 @@ const COMUNA_REGION = {
   Chiguayante: 'Biobío',
   Talcahuano: 'Biobío',
   'San Pedro de la Paz': 'Biobío',
+  'San Pedro de La Paz': 'Biobío',
+  Hualpén: 'Biobío',
+  Hualpen: 'Biobío',
+  Penco: 'Biobío',
+  Coronel: 'Biobío',
+  Tomé: 'Biobío',
+  Lota: 'Biobío',
   'Los Ángeles': 'Biobío',
+  'Los Angeles': 'Biobío',
+  Curanilahue: 'Biobío',
   Temuco: 'La Araucanía',
+  Villarrica: 'La Araucanía',
   Valdivia: 'Los Ríos',
+  Osorno: 'Los Lagos',
+  'Puerto Varas': 'Los Lagos',
+  Rengo: "O'Higgins",
+  'San Fernando': "O'Higgins",
+  Curicó: 'Maule',
+  Linares: 'Maule',
+  Parral: 'Maule',
+  'San Carlos': 'Ñuble',
+  Quillota: 'Valparaíso',
+  'La Calera': 'Valparaíso',
+  Concón: 'Valparaíso',
+  Concon: 'Valparaíso',
+  'Villa Alemana': 'Valparaíso',
+  Copiapó: 'Atacama',
+  Antofagasta: 'Antofagasta',
+  Iquique: 'Tarapacá',
+  'Alto Hospicio': 'Tarapacá',
+  Coyhaique: 'Aysén',
   'Punta Arenas': 'Magallanes',
   Arica: 'Arica y Parinacota',
 }
@@ -382,6 +412,10 @@ function normalizeRegion(raw) {
 function normalizeItem(partial) {
   let comuna = decodeHtml(partial.comuna || 'Chile')
   if (comuna === 'Santiago Centro') comuna = 'Santiago'
+  if (/^san pedro de la paz$/i.test(comuna)) comuna = 'San Pedro de la Paz'
+  if (/^hualpen$/i.test(comuna)) comuna = 'Hualpén'
+  if (/^los angeles$/i.test(comuna)) comuna = 'Los Ángeles'
+  if (/^concon$/i.test(comuna)) comuna = 'Concón'
   const region = normalizeRegion(
     partial.region ||
       COMUNA_REGION[comuna] ||
@@ -667,7 +701,7 @@ function extractCoords(html) {
   )) {
     push(m[1], m[2], 45)
   }
-  // JSON lat/lng pairs
+  // JSON lat/lng pairs (bare numbers)
   for (const m of html.matchAll(
     /"lat(?:itude)?"\s*:\s*(-?\d+\.\d+)[\s\S]{0,80}"l(?:ng|on|ongitude)"\s*:\s*(-?\d+\.\d+)/gi,
   )) {
@@ -677,6 +711,22 @@ function extractCoords(html) {
     /"l(?:ng|on|ongitude)"\s*:\s*(-?\d+\.\d+)[\s\S]{0,80}"lat(?:itude)?"\s*:\s*(-?\d+\.\d+)/gi,
   )) {
     push(m[2], m[1], 30)
+  }
+  // Subsidios.cl / Laravel JSON: "latitude":"-36.8","longitude":"-73.0"
+  for (const m of html.matchAll(
+    /"latitude"\s*:\s*"(-?\d+\.\d+)"[\s\S]{0,120}"longitude"\s*:\s*"(-?\d+\.\d+)"/gi,
+  )) {
+    push(m[1], m[2], 70)
+  }
+  for (const m of html.matchAll(
+    /"longitude"\s*:\s*"(-?\d+\.\d+)"[\s\S]{0,120}"latitude"\s*:\s*"(-?\d+\.\d+)"/gi,
+  )) {
+    push(m[2], m[1], 70)
+  }
+  for (const m of html.matchAll(
+    /"lat"\s*:\s*"(-?\d+\.\d+)"[\s\S]{0,80}"l(?:ng|on)"\s*:\s*"(-?\d+\.\d+)"/gi,
+  )) {
+    push(m[1], m[2], 65)
   }
   // data attributes / init helpers
   for (const m of html.matchAll(
@@ -1009,8 +1059,21 @@ function extractAddress(html) {
   const ldAddr =
     listing?.address?.streetAddress ||
     (typeof listing?.address === 'string' ? listing.address : null)
+  // Subsidios.cl embedded project JSON (prefer address next to latitude)
+  const subsidiosAddr =
+    html.match(
+      /"address"\s*:\s*"((?:[^"\\]|\\.){5,120})"\s*,\s*"latitude"/i,
+    )?.[1] ||
+    html.match(/"address"\s*:\s*"((?:[^"\\]|\\.){5,120})"/i)?.[1]
   const raw =
     ldAddr ||
+    (subsidiosAddr
+      ? subsidiosAddr
+          .replace(/\\u003C/gi, '<')
+          .replace(/\\u003E/gi, '>')
+          .replace(/\\"/g, '"')
+          .replace(/\\\//g, '/')
+      : '') ||
     html.match(
       /<(?:h3|p|span|div)[^>]*>\s*((?:Avenida|Av\.|Calle|Pasaje|Camino)[^<]{5,90})\s*</i,
     )?.[1] ||
@@ -1193,6 +1256,99 @@ async function enrichAllExistingDetails(catalog) {
   return mapPool(catalog, 8, enrichGenericFromSource)
 }
 
+/** Re-fetch coords/address for projects with estimated pins (esp. regiones / Subsidios.cl). */
+async function enrichLocations(catalog) {
+  const targets = catalog.filter((p) => {
+    const url = p.sources?.[0]?.url || ''
+    const fromSubsidios = /subsidios\.cl\/proyecto\//i.test(url)
+    const estimated = p.dataGaps?.locationEstimated !== false
+    const missingAddr = !p.address
+    const outsideRm = p.region !== 'Metropolitana'
+    const wrongRegion =
+      COMUNA_REGION[p.comuna] &&
+      COMUNA_REGION[p.comuna] !== p.region &&
+      COMUNA_REGION[p.comuna] !== 'Metropolitana'
+    return fromSubsidios || ((outsideRm || wrongRegion) && (estimated || missingAddr))
+  })
+  console.log(`  locations enriching ${targets.length} / ${catalog.length}…`)
+  const byId = new Map(catalog.map((p) => [p.id, p]))
+
+  async function fixOne(item) {
+    const url = item.sources?.[0]?.url
+    const portal = item.sources?.[0]?.portal
+    // Always re-apply known comuna→region map
+    const regionFix = COMUNA_REGION[item.comuna]
+    let next = item
+    if (regionFix && regionFix !== item.region) {
+      next = normalizeItem({
+        ...item,
+        portal: portal || 'subsidios-cl',
+        url,
+        regionHint: regionFix,
+        region: regionFix,
+      })
+    }
+
+    if (!url || !/^https?:\/\//i.test(url)) return next
+
+    try {
+      if (portal === 'subsidios-cl' || /subsidios\.cl\/proyecto\//i.test(url)) {
+        return await enrichSubsidiosDetail({
+          ...next,
+          address: null, // force refresh
+          dataGaps: { ...(next.dataGaps || {}), locationEstimated: true },
+        })
+      }
+      const html = await fetchText(url)
+      const coords = extractCoords(html)
+      const address = extractAddress(html) || next.address
+      const location = resolveLocation(
+        { ...next, address },
+        coords,
+      )
+      return normalizeItem({
+        ...next,
+        portal: portal || next.sources?.[0]?.portal || 'web',
+        url,
+        regionHint: regionFix || next.region,
+        address,
+        lat: location.lat,
+        lng: location.lng,
+        dataGaps: {
+          ...(next.dataGaps || {}),
+          locationEstimated: location.locationEstimated,
+          locationSource: location.locationSource,
+        },
+      })
+    } catch (err) {
+      console.warn('  location fix fail', url, err.message)
+      return next
+    }
+  }
+
+  const fixed = await mapPool(targets, 6, fixOne)
+  for (const p of fixed) byId.set(p.id, p)
+
+  // Second pass: region-only fixes for anyone we skipped
+  for (const [id, p] of byId) {
+    const regionFix = COMUNA_REGION[p.comuna]
+    if (regionFix && regionFix !== p.region) {
+      byId.set(
+        id,
+        normalizeItem({
+          ...p,
+          portal: p.sources?.[0]?.portal || 'web',
+          url: p.sources?.[0]?.url,
+          regionHint: regionFix,
+          region: regionFix,
+        }),
+      )
+    }
+  }
+
+  return [...byId.values()]
+}
+
 function applyDetailExtras(item, html, { prefer = [], portal } = {}) {
   const images = pickProjectImages(html, { prefer, limit: 6 })
   const description = extractDescription(html)
@@ -1258,7 +1414,10 @@ async function enrichSubsidiosDetail(item) {
     !item.description ||
     !(item.images && item.images.length) ||
     !item.imageUrl ||
-    /AgencyLogo|logo_|favicon/i.test(item.imageUrl)
+    /AgencyLogo|logo_|favicon/i.test(item.imageUrl) ||
+    !item.address ||
+    item.lat == null ||
+    item.dataGaps?.locationEstimated !== false
   if (!needsDetail && process.env.FORCE_DETAILS !== '1') return item
   try {
     const html = await fetchText(url)
@@ -1267,19 +1426,22 @@ async function enrichSubsidiosDetail(item) {
       portal: 'subsidios-cl',
     })
     const parking = inferParking(html)
-    const metro = inferMetroFromText(html)
+    const isRM = item.region === 'Metropolitana'
+    const metro = isRM ? inferMetroFromText(html) : null
     const contacts = extractContacts(html)
     const coords = extractCoords(html)
     const developer =
       html.match(/Inmobiliaria\s+([^<,\n]{2,60})/i)?.[1]?.trim() ||
       item.developer
 
+    const hasFichaCoords = coords?.lat != null && coords?.lng != null
     return normalizeItem({
       ...item,
       portal: 'subsidios-cl',
       url,
       name: item.name,
       comuna: item.comuna,
+      regionHint: COMUNA_REGION[item.comuna] || item.region,
       developer:
         developer && developer !== 'Consultar portal'
           ? decodeHtml(developer).slice(0, 80)
@@ -1293,17 +1455,28 @@ async function enrichSubsidiosDetail(item) {
       images: extras.images,
       description: extras.description,
       amenities: extras.amenities,
-      address: extras.address,
+      address: extras.address || item.address,
       parking: parking !== 'consultar' ? parking : item.parking,
-      metroStation: metro?.station || item.metroStation,
-      metroLine: metro?.line || item.metroLine,
-      metroWalkMin: metro?.walk ?? item.metroWalkMin,
-      connectivityScore: metro?.score ?? item.connectivityScore,
-      metroVerified: Boolean(metro?.verified),
-      lat: coords?.lat ?? item.lat,
-      lng: coords?.lng ?? item.lng,
+      metroStation: isRM ? metro?.station || item.metroStation : null,
+      metroLine: isRM ? metro?.line || item.metroLine : null,
+      metroWalkMin: isRM ? (metro?.walk ?? item.metroWalkMin) : null,
+      connectivityScore: isRM
+        ? metro?.score ?? item.connectivityScore
+        : item.connectivityScore,
+      metroVerified: isRM ? Boolean(metro?.verified) : false,
+      lat: hasFichaCoords ? coords.lat : item.lat,
+      lng: hasFichaCoords ? coords.lng : item.lng,
       contactPhone: contacts.contactPhone || item.contactPhone,
       contactWhatsapp: contacts.contactWhatsapp || item.contactWhatsapp,
+      dataGaps: {
+        ...(item.dataGaps || {}),
+        locationEstimated: hasFichaCoords
+          ? false
+          : item.dataGaps?.locationEstimated !== false,
+        locationSource: hasFichaCoords
+          ? 'ficha'
+          : item.dataGaps?.locationSource || null,
+      },
       notes: extras.imageUrl
         ? `Ficha Subsidios.cl${metro ? `: metro ${metro.station}` : ''}. Confirmá tipologías y cupos en el portal.`
         : item.notes,
@@ -2387,6 +2560,18 @@ function mergeCatalog(existing, scraped) {
             s.dataGaps?.metroEstimated === false ||
             cur.dataGaps?.metroEstimated === false
           ),
+          locationEstimated: !(
+            s.dataGaps?.locationEstimated === false ||
+            cur.dataGaps?.locationEstimated === false
+          ),
+          locationSource:
+            s.dataGaps?.locationEstimated === false
+              ? s.dataGaps?.locationSource || 'ficha'
+              : cur.dataGaps?.locationEstimated === false
+                ? cur.dataGaps?.locationSource || 'ficha'
+                : s.dataGaps?.locationSource ||
+                  cur.dataGaps?.locationSource ||
+                  null,
           priceIsDesde: true,
         },
         developer:
@@ -2482,7 +2667,9 @@ async function main() {
 
   const only = (process.env.ONLY || '').toLowerCase()
   const scrapedBatches =
-    only === 'details'
+    only === 'locations'
+      ? [await enrichLocations(await loadExistingCatalog())]
+      : only === 'details'
       ? [await enrichAllExistingDetails(await loadExistingCatalog())]
       : only === 'uts' || process.env.UTS_ONLY === '1'
       ? [await safeSource('usatusubsidio', () => scrapeUsaTuSubsidio(20))]
@@ -2518,11 +2705,11 @@ async function main() {
   console.log('Total scraped rows:', scraped.length)
 
   const existing =
-    only === 'details' ? [] : await loadExistingCatalog()
+    only === 'details' || only === 'locations' ? [] : await loadExistingCatalog()
   console.log('Catálogo actual:', existing.length)
 
   const { catalog, updated, created } =
-    only === 'details'
+    only === 'details' || only === 'locations'
       ? {
           catalog: scraped
             .filter((p) => p.priceFromUf >= 500)

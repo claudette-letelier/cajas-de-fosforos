@@ -154,5 +154,17 @@
     "lng": -72.9395915,
     "display": "Puerto Montt, Provincia de Llanquihue, Región de Los Lagos, Chile",
     "query": "Puerto Montt, Los Lagos, Chile"
+  },
+  "lomas-de-landa": {
+    "lat": -36.809505,
+    "lng": -73.028382,
+    "display": "Camino a Penco Ruta 150, Concepción, Biobío, Chile",
+    "query": "Camino a Penco Ruta 150, Concepción, Chile"
+  },
+  "bosquemar": {
+    "lat": -36.886128,
+    "lng": -73.143133,
+    "display": "Avenida Bosquemar 50, San Pedro de la Paz, Biobío, Chile",
+    "query": "Avenida Bosquemar 50, San Pedro de la Paz, Chile"
   }
 }
