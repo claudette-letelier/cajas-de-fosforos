@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #102a32;
+  --teal: #0f766e;
+  --paper: #f3f7f6;
+  --sand: #e4eeec;
+  --muted-ink: #44585c;
+  --line: #c9d6d3;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+button,
+a,
+select,
+input {
+  font: inherit;
+}

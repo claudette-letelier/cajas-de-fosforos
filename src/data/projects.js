@@ -1,36 +1,6 @@
-export type Project = {
-  id: string;
-  name: string;
-  developer: string;
-  comuna: string;
-  type: "departamento" | "casa";
-  priceFromUf: number;
-  priceToUf?: number;
-  subsidyFromClp?: number;
-  subsidyUf?: number;
-  bedrooms: number[];
-  bathrooms: number[];
-  parking: "incluido" | "disponible" | "consultar" | "no";
-  metro: {
-    station: string;
-    line: string;
-    walkMinutes: number | null;
-    note: string;
-  };
-  delivery: string;
-  address: string;
-  website: string;
-  quietArea: boolean;
-  lifestyleFit: number; // 1-5 vs perfil (metro + vida urbana)
-  highlights: string[];
-  caveats: string[];
-  matchTags: string[];
-  status: "prioridad" | "viable" | "alternativa" | "descartable";
-};
-
 export const UF_CLP = 39_500;
 
-export const projects: Project[] = [
+export const projects = [
   {
     id: "matta-vial-624",
     name: "Matta Vial 624",

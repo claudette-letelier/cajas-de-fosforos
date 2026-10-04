@@ -1,6 +1,6 @@
-import { UF_CLP, type Project } from "@/data/projects";
+import { UF_CLP } from '../data/projects.js';
 
-export function formatClp(value: number): string {
+export function formatClp(value) {
   return new Intl.NumberFormat("es-CL", {
     style: "currency",
     currency: "CLP",
@@ -8,19 +8,19 @@ export function formatClp(value: number): string {
   }).format(value);
 }
 
-export function formatUf(value: number): string {
+export function formatUf(value) {
   return `UF ${value.toLocaleString("es-CL", { maximumFractionDigits: 1 })}`;
 }
 
 /** Rough bank capacity: ~25–30% of net income for dividend */
-export function estimateMaxDividend(salaryClp: number) {
+export function estimateMaxDividend(salaryClp) {
   return {
     conservative: Math.round(salaryClp * 0.25),
     stretch: Math.round(salaryClp * 0.3),
   };
 }
 
-export function estimateFinancing(project: Project, salaryClp: number) {
+export function estimateFinancing(project, salaryClp) {
   const subsidyUf = project.subsidyUf ?? 0;
   const netUf = Math.max(project.priceFromUf - subsidyUf, 0);
   const netClp = netUf * UF_CLP;
@@ -34,7 +34,7 @@ export function estimateFinancing(project: Project, salaryClp: number) {
     (Math.pow(1 + monthlyRate, months) - 1);
   const estimatedDividend = Math.round(netClp * factor);
 
-  let affordability: "cómodo" | "ajustado" | "apretado" = "cómodo";
+  let affordability = "cómodo";
   if (estimatedDividend > max.stretch) affordability = "apretado";
   else if (estimatedDividend > max.conservative) affordability = "ajustado";
 
@@ -48,15 +48,9 @@ export function estimateFinancing(project: Project, salaryClp: number) {
 }
 
 export function scoreProject(
-  project: Project,
-  filters: {
-    minBedrooms: number;
-    preferTwoBaths: boolean;
-    requireParking: boolean;
-    maxMetroWalk: number;
-    hideFar: boolean;
-  },
-): number {
+  project,
+  filters,
+) {
   let score = project.lifestyleFit * 20;
 
   if (project.bedrooms.some((b) => b >= filters.minBedrooms)) score += 15;
