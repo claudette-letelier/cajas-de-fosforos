@@ -23,6 +23,7 @@
 import { writeFileSync, existsSync, readFileSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 import path from 'node:path'
+import { regionalAccessFor } from './regional-access.mjs'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const CATALOG_PATH = path.join(ROOT, 'src/data/catalog.js')
@@ -387,15 +388,43 @@ function normalizeItem(partial) {
       COMUNA_REGION[partial.comuna] ||
       (partial.regionHint ? partial.regionHint : 'Metropolitana'),
   )
-  const metro =
-    COMUNA_METRO[comuna] ||
-    (region === 'Metropolitana'
-      ? { station: null, line: null, walk: null, score: 2 }
-      : { station: null, line: null, walk: null, score: null })
+
+  const regional = regionalAccessFor(comuna, region)
+  const metroDefault =
+    region === 'Metropolitana'
+      ? COMUNA_METRO[comuna] || {
+          station: null,
+          line: null,
+          walk: null,
+          score: 2,
+        }
+      : { station: null, line: null, walk: null, score: null }
+
+  // Outside RM: never keep Santiago metro fields from bad text matches
+  const useMetro =
+    region === 'Metropolitana' &&
+    (partial.metroVerified || partial.accessKind === 'metro')
 
   const bedroomsMin = partial.bedroomsMin ?? 1
   const bedroomsMax = partial.bedroomsMax ?? Math.max(bedroomsMin, 2)
   const price = partial.priceFromUf || 0
+
+  const metroStation =
+    region === 'Metropolitana'
+      ? (useMetro ? partial.metroStation : null) ?? metroDefault.station
+      : null
+  const metroLine =
+    region === 'Metropolitana'
+      ? (useMetro ? partial.metroLine : null) ?? metroDefault.line
+      : null
+  const metroWalkMin =
+    region === 'Metropolitana'
+      ? (useMetro ? partial.metroWalkMin : null) ?? metroDefault.walk
+      : null
+  const connectivityScore =
+    region === 'Metropolitana'
+      ? partial.connectivityScore ?? metroDefault.score
+      : regional?.connectivityScore ?? partial.connectivityScore ?? 2
 
   return {
     id: partial.id || `${partial.portal}-${slugify(partial.name)}`,
@@ -415,10 +444,28 @@ function normalizeItem(partial) {
     parking: partial.parking || 'consultar',
     delivery: partial.delivery || 'consultar',
     areaM2: partial.areaM2 ?? null,
-    metroStation: partial.metroStation ?? metro.station,
-    metroLine: partial.metroLine ?? metro.line,
-    metroWalkMin: partial.metroWalkMin ?? metro.walk,
-    connectivityScore: partial.connectivityScore ?? metro.score,
+    metroStation,
+    metroLine,
+    metroWalkMin,
+    connectivityScore,
+    accessKind:
+      region === 'Metropolitana'
+        ? 'metro'
+        : regional?.accessKind || partial.accessKind || 'regional',
+    accessLabel:
+      region === 'Metropolitana'
+        ? null
+        : regional?.accessLabel ||
+          partial.accessLabel ||
+          'Sin Metro de Santiago · acceso por buses (estimado)',
+    accessDetail:
+      region === 'Metropolitana'
+        ? null
+        : regional?.accessDetail || partial.accessDetail || null,
+    accessMode:
+      region === 'Metropolitana'
+        ? 'metro'
+        : regional?.accessMode || partial.accessMode || 'buses',
     lat: partial.lat ?? null,
     lng: partial.lng ?? null,
     address: sanitizeAddress(partial.address),
@@ -439,11 +486,18 @@ function normalizeItem(partial) {
     dataGaps: {
       parkingUnknown: (partial.parking || 'consultar') === 'consultar',
       deliveryUnknown: (partial.delivery || 'consultar') === 'consultar',
-      // Heurística por comuna ≠ ficha del proyecto
-      metroEstimated: partial.metroVerified
-        ? false
-        : region === 'Metropolitana',
+      metroEstimated:
+        region === 'Metropolitana'
+          ? partial.metroVerified
+            ? false
+            : true
+          : true,
       priceIsDesde: true,
+      ...(partial.dataGaps || {}),
+      // Force regional honesty flags after spread
+      ...(region !== 'Metropolitana'
+        ? { metroEstimated: true }
+        : {}),
     },
   }
 }
@@ -1069,7 +1123,9 @@ async function enrichGenericFromSource(item) {
     const htmlCoords = extractCoords(html)
     const location = resolveLocation(item, htmlCoords)
     const parking = inferParking(html)
-    const metro = inferMetroFromText(html)
+    const isRM = item.region === 'Metropolitana'
+    const metro = isRM ? inferMetroFromText(html) : null
+    const regional = !isRM ? regionalAccessFor(item.comuna, item.region) : null
     const goodExisting =
       item.imageUrl && !/logo|AgencyLogo|favicon|icon/i.test(item.imageUrl)
     const imageUrl = goodExisting ? item.imageUrl : images[0] || item.imageUrl
@@ -1079,7 +1135,7 @@ async function enrichGenericFromSource(item) {
       item.images,
     )
 
-    const metroVerified = Boolean(metro?.verified) || item.dataGaps?.metroEstimated === false
+    const metroVerified = Boolean(metro?.verified)
 
     return {
       ...item,
@@ -1094,10 +1150,17 @@ async function enrichGenericFromSource(item) {
       lng: location.lng,
       parking:
         parking !== 'consultar' ? parking : item.parking || 'consultar',
-      metroStation: metro?.station || item.metroStation,
-      metroLine: metro?.line || item.metroLine,
-      metroWalkMin: metro?.walk ?? item.metroWalkMin,
-      connectivityScore: metro?.score ?? item.connectivityScore,
+      metroStation: isRM ? metro?.station || item.metroStation : null,
+      metroLine: isRM ? metro?.line || item.metroLine : null,
+      metroWalkMin: isRM ? (metro?.walk ?? item.metroWalkMin) : null,
+      connectivityScore: isRM
+        ? metro?.score ?? item.connectivityScore
+        : regional?.connectivityScore ?? item.connectivityScore ?? 2,
+      accessKind: isRM ? 'metro' : 'regional',
+      accessLabel: isRM ? null : regional?.accessLabel || item.accessLabel,
+      accessDetail: isRM ? null : regional?.accessDetail || item.accessDetail,
+      accessMode: isRM ? 'metro' : regional?.accessMode || item.accessMode || 'buses',
+      metroVerified: isRM ? metroVerified : false,
       dataGaps: {
         ...(item.dataGaps || {}),
         parkingUnknown: !(
@@ -1107,7 +1170,7 @@ async function enrichGenericFromSource(item) {
         deliveryUnknown:
           item.dataGaps?.deliveryUnknown ??
           !(item.delivery && item.delivery !== 'consultar'),
-        metroEstimated: metroVerified ? false : item.dataGaps?.metroEstimated !== false,
+        metroEstimated: isRM ? !metroVerified : true,
         locationEstimated: location.locationEstimated,
         locationSource: location.locationSource || null,
         priceIsDesde: true,

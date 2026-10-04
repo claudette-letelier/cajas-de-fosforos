@@ -2,9 +2,9 @@
 export const UF_CLP = 41090
 
 /**
- * connectivityScore (1–5): ranking de acceso a Metro de Santiago.
- * 5 = ≤8 min a pie · 4 = ≤15 · 3 = ≤25 o combinación bus+metro
- * 2 = lejos / estación futura · 1 = sin metro · null = fuera de RM
+ * connectivityScore (1–5):
+ * - Metropolitana: acceso a Metro de Santiago
+ * - Regiones: Metrotren/Biotrén, Ruta 5 Norte/Sur o terminal de buses (estimado por comuna)
  */
 export const catalog = [
   {
@@ -61,7 +61,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Vitrina-05-Briones-Luco-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Vitrina-06-Briones-Luco-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-aires-de-limache",
@@ -85,7 +89,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -97,7 +101,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:limache"
@@ -113,7 +117,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-01-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/AIRES-DE-LIMACHE-02-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Limache",
+    "accessDetail": "Terminal de la línea Metrotren",
+    "accessMode": "metrotren"
   },
   {
     "id": "aitue-aires-de-machali",
@@ -137,7 +145,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "aitue",
@@ -149,7 +157,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -179,7 +187,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-aires-de-recoleta",
@@ -234,7 +246,11 @@ export const catalog = [
     ],
     "amenities": [
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-aires-de-renaca",
@@ -258,7 +274,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -270,7 +286,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:renaca"
@@ -292,7 +308,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-aires-de-san-pedro",
@@ -316,7 +336,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -328,7 +348,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-pedro-de-la-paz"
@@ -361,7 +381,11 @@ export const catalog = [
       "Circuito de caminata",
       "3 locales comerciales",
       "Punto limpio"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren"
   },
   {
     "id": "uts-aires-del-limari",
@@ -385,7 +409,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -397,7 +421,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Ovalle"
@@ -421,7 +445,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-aires-del-sauce",
@@ -445,7 +473,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -457,7 +485,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -477,7 +505,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/7-117-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/8-97-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-alameda-4719",
@@ -533,7 +565,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-63-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-67-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-485-alicura-condominio",
@@ -591,7 +627,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-alkura-casas-en-chicureo",
@@ -653,7 +693,11 @@ export const catalog = [
       "Entorno",
       "CONOCE PROYECTO",
       "Financiamiento"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bci-9452-alto-andes",
@@ -712,7 +756,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-alto-curacavi",
@@ -774,7 +822,11 @@ export const catalog = [
       "Condominio cerrado",
       "Acceso vehicular y peatonal controlado",
       "Espacio para ejercitarse"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "euro-alto-irarrazaval",
@@ -834,7 +886,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-alto-miraflores-ii",
@@ -890,7 +946,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/2-46-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/3-45-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-altos-de-marga-marga-iii",
@@ -914,7 +974,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -926,7 +986,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:quilpue"
@@ -943,7 +1003,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-02-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-MARGA-MARGA-III-03-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Quilpué",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-altos-de-san-miguel",
@@ -964,9 +1028,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "San Miguel",
-    "metroLine": "L2",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -979,7 +1043,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -998,7 +1062,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ALTOS-DE-SAN-MIGUEL-05-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "silos-altos-de-santa-maria",
@@ -1061,7 +1129,11 @@ export const catalog = [
       "Bodega",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-altos-del-este",
@@ -1082,9 +1154,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Ñuble",
-    "metroLine": "L5/L6",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -1097,7 +1169,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chillán"
@@ -1117,7 +1189,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/B82B14FA-DEF8-4584-8F57-9865A045DD7F-1024x772.jpg",
       "https://usatusubsidio.com/wp-content/uploads/E7C03B5E-604A-4CF7-9748-2597DCB37923-1024x772.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-altos-del-parque",
@@ -1141,7 +1217,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -1153,7 +1229,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:curauma"
@@ -1173,7 +1249,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-183-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-252-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
+    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
+    "accessMode": "ruta"
   },
   {
     "id": "alturas-pudahuel",
@@ -1245,7 +1325,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-7-alturas-de-tepual",
@@ -1269,7 +1353,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -1281,7 +1365,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:puerto-montt"
@@ -1302,7 +1386,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5"
   },
   {
     "id": "andes-quilicura-ii",
@@ -1358,7 +1446,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-11-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-7-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-400-arquitecta-dora-riedel",
@@ -1415,7 +1507,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I227",
@@ -1478,7 +1574,11 @@ export const catalog = [
       "Estacionamiento visitas",
       "BBQ / parrilla",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-avellanos-departamentos-en-nunoa",
@@ -1541,7 +1641,11 @@ export const catalog = [
       "Barrio",
       "Contáctanos",
       "Financiamiento"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bricsa-18",
@@ -1599,7 +1703,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-barrio-encanto-de-molina",
@@ -1623,7 +1731,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -1635,7 +1743,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Molina"
@@ -1657,7 +1765,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · Molina",
+    "accessDetail": "Acceso 5 Sur vía Curicó",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-barrio-espanol",
@@ -1681,7 +1793,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -1693,7 +1805,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -1716,7 +1828,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-319-barrio-las-delicias",
@@ -1740,7 +1856,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -1752,7 +1868,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chillán"
@@ -1770,7 +1886,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-barrio-las-delicias-v",
@@ -1791,9 +1911,9 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Ñuble",
-    "metroLine": "L5/L6",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -1806,7 +1926,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chillán"
@@ -1824,7 +1944,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/2-65-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/5-59-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-521-barrio-pinares-v",
@@ -1848,7 +1972,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -1860,7 +1984,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -1881,7 +2005,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "galilea-brisas-de-machali-ii",
@@ -1905,7 +2033,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "galilea",
@@ -1917,7 +2045,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Machalí"
@@ -1940,7 +2068,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Sala de estar"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Buses a Rancagua · cerca Ruta 5 Sur",
+    "accessDetail": "Micros a Rancagua · acceso 5 Sur por la capital regional",
+    "accessMode": "ruta5"
   },
   {
     "id": "brisas-quilicura",
@@ -1995,7 +2127,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6ab15ac086b3b5.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-brisas-de-san-fernando",
@@ -2019,7 +2155,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2031,7 +2167,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:San Fernando"
@@ -2056,7 +2192,11 @@ export const catalog = [
       "Quincho",
       "Áreas verdes",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal San Fernando",
+    "accessDetail": "Parada frecuente de buses en corredor 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-brisas-de-san-javier",
@@ -2080,7 +2220,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2092,7 +2232,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:San Javier"
@@ -2110,7 +2250,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-4-11-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-1-10-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
+    "accessDetail": "Acceso 5 Sur / Talca",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-477-brisas-de-san-javier-ii",
@@ -2166,7 +2310,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-brisas-del-maule-vi",
@@ -2190,7 +2338,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2202,7 +2350,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Constitución"
@@ -2226,7 +2374,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Constitución · costa Maule",
+    "accessDetail": "Buses a Talca · lejos del eje 5 Sur",
+    "accessMode": "buses"
   },
   {
     "id": "paz-I170",
@@ -2290,7 +2442,11 @@ export const catalog = [
       "Áreas verdes",
       "Estacionamiento visitas",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-camilo-henriquez-2565",
@@ -2311,10 +2467,10 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Ecuador",
-    "metroLine": "L1",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2326,7 +2482,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Concepción"
@@ -2347,7 +2503,11 @@ export const catalog = [
     "amenities": [
       "Gimnasio",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren"
   },
   {
     "id": "paz-I188",
@@ -2410,7 +2570,11 @@ export const catalog = [
       "Cowork",
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bci-7938-carrion",
@@ -2472,7 +2636,11 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
-    }
+    },
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I156",
@@ -2537,7 +2705,11 @@ export const catalog = [
       "Áreas verdes",
       "Estacionamiento visitas",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "aitue-house",
@@ -2596,7 +2768,11 @@ export const catalog = [
     ],
     "amenities": [
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "aitue-casas-borde-laguna",
@@ -2620,7 +2796,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "aitue",
@@ -2632,7 +2808,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -2663,7 +2839,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-central-sur-210",
@@ -2684,10 +2864,10 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2699,7 +2879,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Concepción"
@@ -2722,7 +2902,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Transporte público"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren"
   },
   {
     "id": "uts-maestranza",
@@ -2746,7 +2930,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -2758,7 +2942,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -2776,7 +2960,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/4-206-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-233-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-ciudad-panamericana",
@@ -2834,7 +3022,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-519-ciudad-panamericana-lote-c",
@@ -2897,7 +3089,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-coipue-departamentos-en-venta-macul",
@@ -2957,7 +3153,11 @@ export const catalog = [
       "Sala de estar",
       "1 dormitorio",
       "1 baño"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I169",
@@ -3021,7 +3221,11 @@ export const catalog = [
       "Estacionamiento visitas",
       "BBQ / parrilla",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-402-condominio-abogada-matilde-throup",
@@ -3078,7 +3282,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-6-condominio-alto-o-higgins",
@@ -3102,7 +3310,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3114,7 +3322,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -3137,7 +3345,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "alto-andes-puente-alto",
@@ -3213,7 +3425,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-313-condominio-alto-carrera",
@@ -3237,7 +3453,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3249,7 +3465,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -3266,7 +3482,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-alto-del-puerto",
@@ -3287,9 +3507,9 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -3302,7 +3522,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Valparaíso"
@@ -3324,7 +3544,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren"
   },
   {
     "id": "sub-212-condominio-alto-durand",
@@ -3348,7 +3572,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3360,7 +3584,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -3382,7 +3606,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-alto-durand-iv",
@@ -3406,7 +3634,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -3418,7 +3646,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -3441,7 +3669,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "soco-condominio-alto-maderos",
@@ -3465,7 +3697,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "socovesa",
@@ -3477,7 +3709,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -3506,7 +3738,11 @@ export const catalog = [
       "90 m² totales",
       "3 dormitorios",
       "3 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-alto-molle",
@@ -3530,7 +3766,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -3542,7 +3778,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:alto-hospicio"
@@ -3562,7 +3798,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-215-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-189-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Buses · Alto Hospicio / Iquique",
+    "accessDetail": "Conurbación con Iquique · micros locales",
+    "accessMode": "buses"
   },
   {
     "id": "alto-ohiggins-2",
@@ -3583,9 +3823,9 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "si",
     "delivery": "consultar",
-    "metroStation": "Cerrillos / Mirador",
-    "metroLine": "L6/L5",
-    "metroWalkMin": 10,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -3602,7 +3842,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -3630,7 +3870,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-492-condominio-alto-piramide-ii",
@@ -3687,7 +3931,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "altos-de-buin",
@@ -3748,7 +3996,11 @@ export const catalog = [
       "https://ilossilos.cl/wp-content/uploads/2023/04/ultimas-unidades-trebol-1-800x800.jpg",
       "https://ilossilos.cl/wp-content/uploads/2026/04/el-trebol-II-card-1-800x800.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-523-condominio-altos-de-san-ramon",
@@ -3769,9 +4021,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "El Bosque",
-    "metroLine": "L2",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -3784,7 +4036,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -3807,7 +4059,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Cancha"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-464-condominio-arboleda",
@@ -3831,7 +4087,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -3843,7 +4099,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -3865,7 +4121,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "BBQ / parrilla"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-247-condominio-ayelen-poniente",
@@ -3921,7 +4181,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "borinquen-vina",
@@ -3942,10 +4206,10 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "San Miguel / Quilicura",
-    "metroLine": "L2/L3",
-    "metroWalkMin": 10,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "enlace",
@@ -3961,7 +4225,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Viña del Mar"
@@ -3982,7 +4246,11 @@ export const catalog = [
       "https://ilossilos.cl/wp-content/uploads/2023/04/ultimas-unidades-trebol-1-800x800.jpg",
       "https://ilossilos.cl/wp-content/uploads/2026/04/el-trebol-II-card-1-800x800.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-condominio-brisas-de-maitenes",
@@ -4006,7 +4274,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -4018,7 +4286,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:La Serena"
@@ -4035,7 +4303,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-02-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Brisas-de-Maitenes-03-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "carlos-condell",
@@ -4094,7 +4366,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/FACHADAfinalCONDELL-6a296f31ea6e83.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-334-condominio-carmen-bascunan",
@@ -4151,7 +4427,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-casas-patronales",
@@ -4210,7 +4490,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ecomac-condominio-cerro-amancay-etapa-1",
@@ -4234,7 +4518,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -4246,7 +4530,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -4270,7 +4554,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "ecomac-condominio-cerro-amancay-etapa-2",
@@ -4294,7 +4582,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -4306,7 +4594,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -4330,7 +4618,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "ecomac-condominio-cerro-mamalluca-faldeos-del-cerro-grande-iii",
@@ -4354,7 +4646,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -4366,7 +4658,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -4388,7 +4680,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "ecomac-condominio-cerro-paranao-faldeos-del-cerro-grande-iii",
@@ -4412,7 +4708,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -4424,7 +4720,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -4446,7 +4742,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "ecomac-condominio-cerro-tamaya-faldeos-del-cerro-grande-iii",
@@ -4470,7 +4770,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -4482,7 +4782,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -4504,7 +4804,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-conjunto-residencial-costa-pacifico",
@@ -4558,7 +4862,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-COSTA-PACIFICO-03-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/CONDOMINIO-COSTA-PACIFICO-04-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ecomac-cumbres-del-bosque",
@@ -4579,9 +4887,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega inmediata",
-    "metroStation": "El Bosque",
-    "metroLine": "L2",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -4594,7 +4902,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -4619,7 +4927,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "bci-8571-condominio-curamapu",
@@ -4680,7 +4992,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-398-condominio-don-francisco",
@@ -4733,7 +5049,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "silos-condominio-don-gaspar",
@@ -4794,7 +5114,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-don-miguel",
@@ -4853,7 +5177,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-93-condominio-dona-agustina",
@@ -4908,7 +5236,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "aitue-condominio-dona-josefina",
@@ -4932,7 +5264,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "aitue",
@@ -4944,7 +5276,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -4975,7 +5307,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Chiguayante",
+    "accessDetail": "Estación Biotrén en la comuna",
+    "accessMode": "biotren"
   },
   {
     "id": "uts-condominio-dona-sofia",
@@ -4999,7 +5335,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -5011,7 +5347,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:quilpue"
@@ -5037,7 +5373,11 @@ export const catalog = [
       "Amplias áreas verdes y zonas de esparcimiento",
       "Máquinas deportivas",
       "Bicicleteros"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Quilpué",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "aitue-condominio-dona-sofia",
@@ -5061,7 +5401,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "aitue",
@@ -5073,7 +5413,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -5105,7 +5445,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Talcahuano",
+    "accessDetail": "Estaciones Biotrén en la comuna",
+    "accessMode": "biotren"
   },
   {
     "id": "silos-condominio-el-manzano",
@@ -5165,7 +5509,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "silos-condominio-el-trebol",
@@ -5227,7 +5575,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bodega",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bci-8238-condominio-el-trebol-ii",
@@ -5290,7 +5642,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "escritor-jorge-edwards",
@@ -5345,7 +5701,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/JORGEEDWARDS-6a3aff64ee8172.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "escritor-salvador-reyes",
@@ -5400,7 +5760,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/SALVADORREYES-6a3affefe44609.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-249-condominio-esmeralda",
@@ -5424,7 +5788,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -5436,7 +5800,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:limache"
@@ -5457,7 +5821,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Limache",
+    "accessDetail": "Terminal de la línea Metrotren",
+    "accessMode": "metrotren"
   },
   {
     "id": "silos-condominio-estancia-norte-quilicura",
@@ -5517,7 +5885,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-fernando-monckberg",
@@ -5541,7 +5913,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -5553,7 +5925,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Quillota"
@@ -5576,7 +5948,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5"
   },
   {
     "id": "bci-9516-condominio-francisco-zelada-torre-a",
@@ -5638,7 +6014,11 @@ export const catalog = [
       "Gimnasio",
       "Cowork",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-fuchslocher-oriente",
@@ -5662,7 +6042,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -5674,7 +6054,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Osorno"
@@ -5697,7 +6077,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5"
   },
   {
     "id": "gran-avenida",
@@ -5771,7 +6155,11 @@ export const catalog = [
       "Bodega",
       "Conserjería",
       "Cámaras de seguridad"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-404-condominio-ingeniero-enrique-tirapegui",
@@ -5795,7 +6183,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -5807,7 +6195,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Concepción"
@@ -5828,7 +6216,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren"
   },
   {
     "id": "uts-jardin-los-volcanes",
@@ -5852,7 +6244,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -5868,7 +6260,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Osorno"
@@ -5892,7 +6284,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5"
   },
   {
     "id": "ecomac-jardines-del-pacifico-v",
@@ -5916,7 +6312,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -5928,7 +6324,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -5952,7 +6348,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-javieracarrera",
@@ -5976,7 +6376,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -5988,7 +6388,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -6008,7 +6408,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Javiera-Carrera-07-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-la-estrella-8540",
@@ -6068,7 +6472,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "la-piramide",
@@ -6128,7 +6536,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/fachada-66fa91feabd6f9.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "silos-condominio-la-pradera",
@@ -6189,7 +6601,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-la-reserva-1",
@@ -6213,7 +6629,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -6225,7 +6641,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Antofagasta"
@@ -6248,7 +6664,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses"
   },
   {
     "id": "bci-5819-condominio-las-brisas-2",
@@ -6307,7 +6727,11 @@ export const catalog = [
     "contactPhone": "+56931459669",
     "contactWhatsapp": "https://wa.me/56931459669",
     "lat": -33.616698088028556,
-    "lng": -70.68334816349575
+    "lng": -70.68334816349575,
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-506-condominio-las-golondrinas",
@@ -6368,7 +6792,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-251-condominio-las-lobelias",
@@ -6392,7 +6820,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -6404,7 +6832,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Valparaíso"
@@ -6425,7 +6853,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren"
   },
   {
     "id": "sub-474-condominio-las-pataguas",
@@ -6487,7 +6919,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "las-torres-558",
@@ -6546,7 +6982,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/Diseosinttulo-6957e8d33b2d39.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-lickan-oriente",
@@ -6570,7 +7010,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -6586,7 +7026,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Copiapo"
@@ -6609,7 +7049,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
+    "accessDetail": "Corredor 5 Norte · Atacama",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-139-condominio-lihuen",
@@ -6633,7 +7077,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -6649,7 +7093,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -6668,7 +7112,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "lo-blanco-1361",
@@ -6727,7 +7175,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/FACHADALoBlanco-68efe202448e97.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-140-condominio-loncopangue",
@@ -6787,7 +7239,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Gimnasio"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-los-arrayanes",
@@ -6811,7 +7267,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -6827,7 +7283,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:La Serena"
@@ -6852,7 +7308,11 @@ export const catalog = [
       "Sala de eventos",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-los-avellanos",
@@ -6876,7 +7336,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -6888,7 +7348,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -6908,7 +7368,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-03-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Avellanos-06-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-481-condominio-los-cipreses",
@@ -6967,7 +7431,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-los-coihues-casas-en-lampa",
@@ -7033,7 +7501,11 @@ export const catalog = [
       "67.74 m² totales",
       "3 dormitorios",
       "2 baños"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ecomac-los-maitenes",
@@ -7057,7 +7529,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -7069,7 +7541,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -7094,7 +7566,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-los-naranjos",
@@ -7118,7 +7594,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7130,7 +7606,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Los Angeles"
@@ -7150,7 +7626,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Los-Naranjos-07-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "bci-9597-condominio-los-vinedos-de-tucapel",
@@ -7213,7 +7693,11 @@ export const catalog = [
       "Conserjería"
     ],
     "contactPhone": "+56993444093",
-    "contactWhatsapp": "https://wa.me/56993444093"
+    "contactWhatsapp": "https://wa.me/56993444093",
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-marconi",
@@ -7237,7 +7721,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7249,7 +7733,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -7273,7 +7757,11 @@ export const catalog = [
       "Piscina",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-mirador",
@@ -7294,10 +7782,10 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7309,7 +7797,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Villarica"
@@ -7329,7 +7817,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-188-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-168-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Acceso estimado · Ruta 5 Sur",
+    "accessDetail": "Comuna sin ficha detallada",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-mirador-del-rio",
@@ -7350,9 +7842,9 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -7365,7 +7857,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chiguayante"
@@ -7382,7 +7874,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-02-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Mirador-del-Rio-03-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Chiguayante",
+    "accessDetail": "Estación Biotrén en la comuna",
+    "accessMode": "biotren"
   },
   {
     "id": "condominio-montreal",
@@ -7446,7 +7942,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/fachada-6a4810d7602d77.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-207-condominio-newen",
@@ -7509,7 +8009,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-condominio-nueva-toledo",
@@ -7533,7 +8037,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "socovesa",
@@ -7545,7 +8049,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -7573,7 +8077,11 @@ export const catalog = [
       "103 m² totales",
       "3 dormitorios",
       "3 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-ohiggins",
@@ -7597,7 +8105,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7609,7 +8117,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -7634,7 +8142,11 @@ export const catalog = [
       "Áreas verdes",
       "Máquinas deportivas",
       "Sala multiuso"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-252-condominio-paqari",
@@ -7658,7 +8170,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -7670,7 +8182,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Valparaíso"
@@ -7694,7 +8206,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-condominio-parque-carrera",
@@ -7718,7 +8234,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7730,7 +8246,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Los Angeles"
@@ -7754,7 +8270,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-parque-ciudadano-iii",
@@ -7778,7 +8298,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -7790,7 +8310,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -7815,7 +8335,11 @@ export const catalog = [
       "Sala de eventos",
       "Juegos infantiles",
       "BBQ / parrilla"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "bci-8843-condominio-parque-del-sur-torre-a",
@@ -7879,7 +8403,11 @@ export const catalog = [
       "Lavandería",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "parque-eyzaguirre",
@@ -7939,7 +8467,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6a75decfb67e93.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-14-condominio-parque-lourdes",
@@ -7963,7 +8495,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -7975,7 +8507,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Valdivia"
@@ -7997,7 +8529,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Valdivia · acceso Ruta 5",
+    "accessDetail": "Capital regional · buses; tren de pasajeros limitado",
+    "accessMode": "buses"
   },
   {
     "id": "parque-pehuen",
@@ -8020,9 +8556,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
-    "metroStation": "Cerrillos / Mirador",
-    "metroLine": "L6/L5",
-    "metroWalkMin": 10,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -8039,7 +8575,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -8067,7 +8603,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-parque-pehuen-i",
@@ -8091,7 +8631,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8103,7 +8643,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -8128,7 +8668,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-parque-vistas-de-colina",
@@ -8184,7 +8728,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/3-88-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-87-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-paseo-san-carlos-viii",
@@ -8208,7 +8756,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8224,7 +8772,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -8244,7 +8792,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-182-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-159-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-376-condominio-pilares-de-talca",
@@ -8268,7 +8820,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -8284,7 +8836,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -8307,7 +8859,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-pinares",
@@ -8331,7 +8887,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8343,7 +8899,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -8366,7 +8922,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-portal-bonilla",
@@ -8390,7 +8950,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8402,7 +8962,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Concepción"
@@ -8422,7 +8982,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-06-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-Bonilla-05-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren"
   },
   {
     "id": "uts-condominio-portal-de-tutuquen",
@@ -8446,7 +9010,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8458,7 +9022,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Curicó"
@@ -8480,7 +9044,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Curicó",
+    "accessDetail": "Corredor 5 Sur · buses a Santiago/sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-portal-del-bosque",
@@ -8501,9 +9069,9 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "El Bosque",
-    "metroLine": "L2",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -8516,7 +9084,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-pedro-de-la-paz"
@@ -8535,7 +9103,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Condominio-Portal-del-Bosque-03-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren"
   },
   {
     "id": "uts-condominio-portal-ulriksen",
@@ -8559,7 +9131,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8571,7 +9143,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:serena-oriente"
@@ -8603,7 +9175,11 @@ export const catalog = [
       "Bicicleteros.",
       "Áreas verdes.",
       "Acceso controlado las 24 horas."
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-504-condominio-puerta-del-sol",
@@ -8627,7 +9203,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -8639,7 +9215,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Arica"
@@ -8662,7 +9238,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses"
   },
   {
     "id": "sub-419-condominio-quillay",
@@ -8686,7 +9266,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -8698,7 +9278,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -8722,7 +9302,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-quillota-21",
@@ -8746,7 +9330,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8758,7 +9342,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Quillota"
@@ -8778,7 +9362,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/PLANTA_A_1200X900-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/PLANTA_B_1200X900-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-quinta-berna",
@@ -8802,7 +9390,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8818,7 +9406,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Los Angeles"
@@ -8842,7 +9430,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-372-condominio-radal",
@@ -8901,7 +9493,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-16-condominio-rahue-centro-i",
@@ -8925,7 +9521,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -8937,7 +9533,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Osorno"
@@ -8959,7 +9555,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-rayun",
@@ -8983,7 +9583,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -8995,7 +9595,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:curauma"
@@ -9019,7 +9619,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-condominio-san-cristian",
@@ -9043,7 +9647,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9055,7 +9659,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:villa-alemana"
@@ -9079,7 +9683,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-condominio-san-marcos",
@@ -9103,7 +9711,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9115,7 +9723,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Requinoa"
@@ -9140,7 +9748,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Cancha"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · Requínoa",
+    "accessDetail": "Acceso 5 Sur vía Rancagua / Rengo",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-san-rafael",
@@ -9164,7 +9776,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9176,7 +9788,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:villa-alemana"
@@ -9200,7 +9812,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-condominio-santa-adriana",
@@ -9224,7 +9840,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9236,7 +9852,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -9260,7 +9876,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "uts-condominio-santa-ines-ii",
@@ -9326,7 +9946,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-santa-josefina",
@@ -9350,7 +9974,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9362,7 +9986,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -9387,7 +10011,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Cancha"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-santa-maria-isabel",
@@ -9411,7 +10039,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9423,7 +10051,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:La Cruz"
@@ -9446,7 +10074,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Buses regionales · Valparaíso",
+    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
+    "accessMode": "buses"
   },
   {
     "id": "santa-rosa-ciclos",
@@ -9515,7 +10147,11 @@ export const catalog = [
       "Áreas verdes",
       "Bicicletero",
       "Cámaras de seguridad"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ecomac-senderos-de-penuelas",
@@ -9539,7 +10175,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -9551,7 +10187,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -9578,7 +10214,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-senderos-de-penuelas-ii",
@@ -9602,7 +10242,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9618,7 +10258,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -9643,7 +10283,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "ecomac-senderos-del-limari-iii",
@@ -9667,7 +10311,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "ecomac",
@@ -9679,7 +10323,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -9704,7 +10348,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-405-condominio-sol-de-penuelas",
@@ -9728,7 +10376,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -9740,7 +10388,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -9760,7 +10408,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-tepual",
@@ -9784,7 +10436,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -9796,7 +10448,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:puerto-montt"
@@ -9822,7 +10474,11 @@ export const catalog = [
       "Máquinas deportivas",
       "Circuito de calistenia",
       "Sala multiuso"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5"
   },
   {
     "id": "soco-condominio-terraza-mirador-ii",
@@ -9843,9 +10499,9 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "Entrega Inmediata",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -9858,7 +10514,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -9886,7 +10542,11 @@ export const catalog = [
       "56 m² totales",
       "2 dormitorios",
       "2 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5"
   },
   {
     "id": "titan-2-renca",
@@ -9945,7 +10605,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/FACHADA-68878b73126da3.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "tres-piedras",
@@ -10010,7 +10674,11 @@ export const catalog = [
       "https://ilossilos.cl/wp-content/uploads/2023/04/ultimas-unidades-trebol-1-800x800.jpg",
       "https://ilossilos.cl/wp-content/uploads/2026/04/el-trebol-II-card-1-800x800.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-143-condominio-vertice",
@@ -10070,7 +10738,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "viento-norte-sur",
@@ -10130,7 +10802,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/viento-69cc90d1ca87c8.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-viracocha",
@@ -10154,7 +10830,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -10166,7 +10842,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Ovalle"
@@ -10186,7 +10862,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/1-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/cocina-2-1024x683.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-vista-chinquihue",
@@ -10210,7 +10890,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -10222,7 +10902,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:puerto-montt"
@@ -10246,7 +10926,11 @@ export const catalog = [
       "Sala de eventos",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-420-condominio-vista-molle",
@@ -10305,7 +10989,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-vista-parque-iii",
@@ -10329,7 +11017,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -10341,7 +11029,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -10365,7 +11053,11 @@ export const catalog = [
       "Departamentos de 1 dormitorio.",
       "Departamentos de 2 dormitorios.",
       "Departamentos de 3 dormitorios."
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-volcan-villarrica",
@@ -10389,7 +11081,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -10401,7 +11093,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:villarrica"
@@ -10433,7 +11125,11 @@ export const catalog = [
       "Zona de ejercicios.",
       "Acceso controlado las 24 horas.",
       "Equipamiento comercial."
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Villarrica · buses lacustres",
+    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
+    "accessMode": "buses"
   },
   {
     "id": "uts-condominio-volcanes",
@@ -10457,7 +11153,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -10469,7 +11165,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Antofagasta"
@@ -10488,7 +11184,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses"
   },
   {
     "id": "sub-434-costanera-del-sol",
@@ -10546,7 +11246,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "semi-nuevo-nunoa-ref",
@@ -10589,7 +11293,11 @@ export const catalog = [
       "locationEstimated": true,
       "priceIsDesde": true,
       "locationSource": "comuna:Ñuñoa"
-    }
+    },
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "semi-nuevo-providencia-ref",
@@ -10632,7 +11340,11 @@ export const catalog = [
       "locationEstimated": true,
       "priceIsDesde": true,
       "locationSource": "comuna:Providencia"
-    }
+    },
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "euro-diagonal-vicuna",
@@ -10700,7 +11412,11 @@ export const catalog = [
       "Áreas verdes",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-don-manuel",
@@ -10724,7 +11440,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -10736,7 +11452,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Quillota"
@@ -10765,7 +11481,11 @@ export const catalog = [
       "Bicicleteros",
       "Local comercial para la comunidad",
       "Estacionamientos y bodegas"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Quillota",
+    "accessDetail": "Buses interurbanos por Ruta 5 · terminal comunal",
+    "accessMode": "ruta5"
   },
   {
     "id": "euro-don-pepe-154",
@@ -10826,7 +11546,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-dona-ignacia",
@@ -10850,7 +11574,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -10862,7 +11586,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -10882,7 +11606,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-6-6-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-9-7-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "ecomac-dunas-de-san-pedro-iv",
@@ -10906,7 +11634,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -10918,7 +11646,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -10941,7 +11669,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-edificio-alcala",
@@ -10999,7 +11731,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "aitue-borde-laguna",
@@ -11023,7 +11759,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "aitue",
@@ -11035,7 +11771,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -11064,7 +11800,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "aitue-edificio-castellon-227",
@@ -11131,7 +11871,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-edificio-garcia-reyes",
@@ -11152,10 +11896,10 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "Venta en verde",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "socovesa",
@@ -11167,7 +11911,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -11191,7 +11935,11 @@ export const catalog = [
       "23 m² totales | 20.49 m² útiles | 3 m² terraza",
       "1 dormitorio",
       "1 baño"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Valdivia · acceso Ruta 5",
+    "accessDetail": "Capital regional · buses; tren de pasajeros limitado",
+    "accessMode": "buses"
   },
   {
     "id": "aitue-edificio-huertos-las-margaritas",
@@ -11257,7 +12005,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "aitue-edificio-insigne",
@@ -11323,7 +12075,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I171",
@@ -11388,7 +12144,11 @@ export const catalog = [
       "BBQ / parrilla",
       "Bicicletero",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-76-edificio-las-rocas",
@@ -11446,7 +12206,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-450-edificio-nueva-lientur",
@@ -11470,7 +12234,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -11482,7 +12246,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Concepción"
@@ -11504,7 +12268,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren"
   },
   {
     "id": "silos-condominio-parquemar",
@@ -11525,10 +12293,10 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "San Miguel / Mirador",
-    "metroLine": "L2/L5",
-    "metroWalkMin": 10,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "los-silos",
@@ -11540,7 +12308,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Viña del Mar"
@@ -11565,7 +12333,11 @@ export const catalog = [
       "Áreas verdes",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren"
   },
   {
     "id": "silos-edificio-parque-mar-2",
@@ -11586,10 +12358,10 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "San Miguel / Mirador",
-    "metroLine": "L2/L5",
-    "metroWalkMin": 10,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "los-silos",
@@ -11601,7 +12373,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Viña del Mar"
@@ -11626,7 +12398,11 @@ export const catalog = [
       "Áreas verdes",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren"
   },
   {
     "id": "aitue-plaza-los-canelos",
@@ -11650,7 +12426,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "aitue",
@@ -11662,7 +12438,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -11695,7 +12471,11 @@ export const catalog = [
       "UBICACIÓN",
       "PLANTAS",
       "AGENDAR"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren"
   },
   {
     "id": "edificio-prat",
@@ -11751,7 +12531,11 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Santiago"
-    }
+    },
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-edificio-prat",
@@ -11814,7 +12598,11 @@ export const catalog = [
       "Estacionamiento visitas",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-216-edificio-quinta-radal",
@@ -11872,7 +12660,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "aitue-edificio-refugio-new",
@@ -11938,7 +12730,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-edificio-riga",
@@ -11996,7 +12792,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-edificio-vertice",
@@ -12020,7 +12820,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "socovesa",
@@ -12032,7 +12832,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -12052,7 +12852,11 @@ export const catalog = [
       "https://www.socovesa.cl/wp-content/uploads/2021/12/desktop-banner-secundario-vertice.webp",
       "https://www.socovesa.cl/wp-content/uploads/2021/12/mobile-banner-secundario-vertice.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-269-edificio-vivaceta",
@@ -12110,7 +12914,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bricsa-38",
@@ -12166,7 +12974,11 @@ export const catalog = [
       "https://venta.bricsa.cl:4430/multimedia/proyecto/0v001_19363_interior36.png",
       "https://venta.bricsa.cl:4430/multimedia/proyecto/0v001_19363_interior35.png"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bricsa-37",
@@ -12222,7 +13034,11 @@ export const catalog = [
       "https://venta.bricsa.cl:4430/multimedia/proyecto/0v001_19363_3.png",
       "https://venta.bricsa.cl:4430/multimedia/proyecto/0v001_19363_4.png"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "aitue-altos-del-valle",
@@ -12289,7 +13105,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-el-portal-2",
@@ -12313,7 +13133,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -12325,7 +13145,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -12345,7 +13165,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/EL-PORTAL-2-06-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-211-el-porvenir",
@@ -12369,7 +13193,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -12381,7 +13205,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -12403,7 +13227,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "bci-9701-el-porvenir",
@@ -12465,7 +13293,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Juegos infantiles y m�quinas de ejercicios."
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-el-real",
@@ -12489,7 +13321,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -12501,7 +13333,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -12521,7 +13353,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-11@2x-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/Mesa-de-trabajo-5@2x-1024x768.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "euro-entre-vicunas",
@@ -12582,7 +13418,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-estrella-del-norte-ii",
@@ -12606,7 +13446,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -12618,7 +13458,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:quilpue"
@@ -12638,7 +13478,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/ESTRELLA-DEL-NORTE-II-06-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Quilpué",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "paz-I221",
@@ -12692,7 +13536,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-farellon-norte",
@@ -12716,7 +13564,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -12728,7 +13576,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Antofagasta"
@@ -12748,7 +13596,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Farellon-Norte-06-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses"
   },
   {
     "id": "sub-130-farellon-norte-iii",
@@ -12806,7 +13658,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-401-fotografo-enrique-maturana-gonzalez",
@@ -12862,7 +13718,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "euro-froilan-roa-5731",
@@ -12929,7 +13789,11 @@ export const catalog = [
       "Áreas verdes",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-fuchslocher",
@@ -12953,7 +13817,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -12965,7 +13829,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Osorno"
@@ -12989,7 +13853,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-427-fuentes-de-piedra-iv",
@@ -13047,7 +13915,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-309-fuentes-de-porvenir",
@@ -13071,7 +13943,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -13083,7 +13955,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chiguayante"
@@ -13102,7 +13974,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Chiguayante",
+    "accessDetail": "Estación Biotrén en la comuna",
+    "accessMode": "biotren"
   },
   {
     "id": "sub-426-fuentes-de-prats",
@@ -13160,7 +14036,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-348-fuentes-de-rucalhue-2",
@@ -13222,7 +14102,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-311-fuentes-de-san-pedro",
@@ -13284,7 +14168,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-425-fuentes-de-vilumanque-2",
@@ -13339,7 +14227,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-124-gran-vista",
@@ -13398,7 +14290,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "euro-guillermo-mann-1401",
@@ -13462,7 +14358,11 @@ export const catalog = [
       "Bodega",
       "Bicicletero",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "aitue-hacienda-las-cruces",
@@ -13486,7 +14386,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "aitue",
@@ -13498,7 +14398,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -13530,7 +14430,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "hacienda-lo-errazuriz",
@@ -13590,7 +14494,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-444-hacienda-quilicura",
@@ -13660,7 +14568,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-399-historiador-guillermo-feliu",
@@ -13716,7 +14628,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "horcones-2",
@@ -13739,10 +14655,10 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
-    "metroStation": "Cerrillos / Mirador",
-    "metroLine": "L6/L5",
-    "metroWalkMin": 10,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -13762,7 +14678,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Casablanca"
@@ -13790,7 +14706,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 68 · buses Casablanca",
+    "accessDetail": "Entre Santiago y Valparaíso por Ruta 68",
+    "accessMode": "ruta"
   },
   {
     "id": "uts-huertos-sur",
@@ -13814,7 +14734,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -13826,7 +14746,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-pedro-de-la-paz"
@@ -13849,7 +14769,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción",
+    "accessMode": "biotren"
   },
   {
     "id": "euro-independencia-4745",
@@ -13914,7 +14838,11 @@ export const catalog = [
       "Áreas verdes",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-abdoncifuentes",
@@ -13974,7 +14902,11 @@ export const catalog = [
       "Quincho",
       "Gimnasio",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-brasil",
@@ -14036,7 +14968,11 @@ export const catalog = [
       "Gimnasio",
       "Áreas verdes",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-carreracapital",
@@ -14099,7 +15035,11 @@ export const catalog = [
       "Cowork",
       "Lavandería",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-centenario",
@@ -14155,7 +15095,11 @@ export const catalog = [
       "https://ingevecinmobiliaria.cl/hubfs/PROYECTOS%20INGEVEC/CENTENARIO/FOTOS%20WEBP/13entorno%20centenario.webp",
       "https://ingevecinmobiliaria.cl/hubfs/PROYECTOS%20INGEVEC/CENTENARIO/FOTOS%20WEBP/12entorno%20centenario.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-coronelgodoy",
@@ -14216,7 +15160,11 @@ export const catalog = [
       "Gimnasio",
       "Cowork",
       "Lavandería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-diagonalparaguay",
@@ -14279,7 +15227,11 @@ export const catalog = [
       "Lavandería",
       "Bicicletero",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-donignacio",
@@ -14342,7 +15294,11 @@ export const catalog = [
       "Lavandería",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-elaromo",
@@ -14403,7 +15359,11 @@ export const catalog = [
       "Quincho",
       "Gimnasio",
       "Sala de eventos"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-froilanroa",
@@ -14466,7 +15426,11 @@ export const catalog = [
       "Cowork",
       "Lavandería",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-loslilenes",
@@ -14529,7 +15493,11 @@ export const catalog = [
       "Sala de eventos",
       "Cowork",
       "Lavandería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-matta",
@@ -14592,7 +15560,11 @@ export const catalog = [
       "Cowork",
       "Lavandería",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-nuevaesmeralda",
@@ -14655,7 +15627,11 @@ export const catalog = [
       "Lavandería",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-prat",
@@ -14720,7 +15696,11 @@ export const catalog = [
       "Bodega",
       "Bicicletero",
       "Pet friendly"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-serranocapital",
@@ -14783,7 +15763,11 @@ export const catalog = [
       "Cowork",
       "Lavandería",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-terrazzo",
@@ -14841,7 +15825,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-tocornal",
@@ -14897,7 +15885,11 @@ export const catalog = [
       "https://ingevecinmobiliaria.cl/hubfs/PROYECTOS%20INGEVEC/TOCORNAL/FOTOS%20WEBP/7entorno%20tocornal.webp",
       "https://ingevecinmobiliaria.cl/hubfs/PROYECTOS%20INGEVEC/TOCORNAL/FOTOS%20WEBP/8entorno%20tocornal.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-vespuciocapital",
@@ -14960,7 +15952,11 @@ export const catalog = [
       "Cowork",
       "Lavandería",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-vicu",
@@ -15024,7 +16020,11 @@ export const catalog = [
       "Lavandería",
       "Cancha",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-vima",
@@ -15085,7 +16085,11 @@ export const catalog = [
       "Quincho",
       "Gimnasio",
       "Cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "ingevec-vivaceta",
@@ -15151,7 +16155,11 @@ export const catalog = [
       "Bodega",
       "Bicicletero",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-472-jardin-del-valle",
@@ -15213,7 +16221,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-jardin-norte",
@@ -15237,7 +16249,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -15249,7 +16261,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -15274,7 +16286,11 @@ export const catalog = [
       "Áreas verdes",
       "Espacios para actividades al aire libre",
       "Acceso controlado para mayor seguridad"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "jardines-san-bernardo",
@@ -15341,7 +16357,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/JD-6a3c38d624c204.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-jardines-de-san-bernardo-ii",
@@ -15397,7 +16417,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-170-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-181-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "jardines-san-felipe",
@@ -15420,10 +16444,10 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "si",
     "delivery": "consultar",
-    "metroStation": "Cerrillos / Mirador",
-    "metroLine": "L6/L5",
-    "metroWalkMin": 10,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -15443,7 +16467,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -15471,7 +16495,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "jardines-san-francisco",
@@ -15531,7 +16559,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/Diseosinttulo-6a1cf455396eb2.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-jardines-de-valdivia-ii",
@@ -15555,7 +16587,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -15567,7 +16599,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:penablanca"
@@ -15586,7 +16618,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/JARDINES-DE-VALDIVIA-II-05-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Buses regionales · Valparaíso",
+    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
+    "accessMode": "buses"
   },
   {
     "id": "uts-jardines-del-sur",
@@ -15610,7 +16646,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -15622,7 +16658,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Osorno"
@@ -15642,7 +16678,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/3-74-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-72-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5"
   },
   {
     "id": "euro-jose-pedro-alessandri",
@@ -15703,7 +16743,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "la-balada",
@@ -15757,7 +16801,11 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Maipú"
-    }
+    },
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-484-la-finka-poniente",
@@ -15815,7 +16863,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-las-uvas-y-el-viento-316",
@@ -15889,7 +16941,11 @@ export const catalog = [
       "Equipamiento deportivo",
       "Locales comerciales",
       "Condominio cerrado con portería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "la-granja-2",
@@ -15948,7 +17004,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/boetsch-6807c633f290a7.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-laguna-verde",
@@ -15972,7 +17032,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -15984,7 +17044,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Copiapo"
@@ -16003,7 +17063,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Laguna-Verde-05-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
+    "accessDetail": "Corredor 5 Norte · Atacama",
+    "accessMode": "ruta5"
   },
   {
     "id": "soco-las-pataguas-subsidio-ds19",
@@ -16066,7 +17130,11 @@ export const catalog = [
       "53 m² totales",
       "3 dormitorios",
       "1 baño"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-las-pelargonias",
@@ -16090,7 +17158,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -16102,7 +17170,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:penablanca"
@@ -16128,7 +17196,11 @@ export const catalog = [
       "Bodega",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "lira-parque",
@@ -16183,7 +17255,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6ab1554390cee4.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-lomas-de-borgono",
@@ -16207,7 +17283,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -16219,7 +17295,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Copiapo"
@@ -16239,7 +17315,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-05-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Lomas-de-Borgono-06-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Copiapó",
+    "accessDetail": "Corredor 5 Norte · Atacama",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-10-lomas-de-coyhaique-ii",
@@ -16298,7 +17378,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-396-lomas-de-la-luz",
@@ -16322,7 +17406,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -16334,7 +17418,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Valparaíso"
@@ -16359,7 +17443,11 @@ export const catalog = [
       "Sala de eventos",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren"
   },
   {
     "id": "sub-353-lomas-de-landa",
@@ -16383,7 +17471,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -16395,7 +17483,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Concepción"
@@ -16412,7 +17500,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Biotrén · Concepción",
+    "accessDetail": "Red Biotrén + micros · terminal Collao",
+    "accessMode": "biotren"
   },
   {
     "id": "sub-199-lomas-de-limache",
@@ -16436,7 +17528,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -16448,7 +17540,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:limache"
@@ -16468,7 +17560,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Limache",
+    "accessDetail": "Terminal de la línea Metrotren",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-los-acacios-1594",
@@ -16527,7 +17623,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-175-los-alamos-de-penco",
@@ -16589,7 +17689,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-los-almendros",
@@ -16613,7 +17717,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -16625,7 +17729,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:villa-alemana"
@@ -16645,7 +17749,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/9-117-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/8-141-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-los-aromos",
@@ -16669,7 +17777,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -16681,7 +17789,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Ovalle"
@@ -16699,7 +17807,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-03-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Los-Aromos-04-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "bci-8917-los-cipreses",
@@ -16759,7 +17871,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-517-los-molinos",
@@ -16818,7 +17934,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "los-tilos-3520",
@@ -16882,7 +18002,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/fachadamontevideo-65b7c9241567b1.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-90-manso-de-velasco-iii",
@@ -16933,7 +18057,11 @@ export const catalog = [
     "images": [],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "euro-mapocho-3521",
@@ -16999,7 +18127,11 @@ export const catalog = [
       "Bodega",
       "Bicicletero",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-marathon-departamentos-en-nunoa",
@@ -17065,7 +18197,11 @@ export const catalog = [
       "40 m² totales | 35.2 m² útiles | 5.7 m² terraza",
       "1 dormitorio",
       "1 baño"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "euro-mirador-pacifico",
@@ -17087,9 +18223,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "no",
     "delivery": "Entrega inmediata",
-    "metroStation": "Ñuñoa / Irarrázaval / Mirador",
-    "metroLine": "L3/L6/L3/L5",
-    "metroWalkMin": 10,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -17102,7 +18238,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -17125,7 +18261,11 @@ export const catalog = [
     ],
     "amenities": [
       "Bodega"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "matta-vial-624",
@@ -17193,7 +18333,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/DJI.JPG-6a87607b6fda77.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I234",
@@ -17253,7 +18397,11 @@ export const catalog = [
       "Áreas verdes",
       "Estacionamiento visitas",
       "BBQ / parrilla"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-507-mirador-costanera-ii",
@@ -17312,7 +18460,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-mirador-costaventura-2",
@@ -17333,10 +18485,10 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -17348,7 +18500,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Antofagasta"
@@ -17372,7 +18524,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses"
   },
   {
     "id": "sub-335-mirador-de-agua-santa",
@@ -17393,10 +18549,10 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -17408,7 +18564,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Viña del Mar"
@@ -17425,7 +18581,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Viña del Mar",
+    "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
+    "accessMode": "metrotren"
   },
   {
     "id": "soco-mirador-de-la-frontera",
@@ -17446,9 +18606,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Venta en verde",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -17461,7 +18621,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -17491,7 +18651,11 @@ export const catalog = [
       "124 m² totales",
       "3 dormitorios",
       "3 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-54-mirador-de-limache",
@@ -17512,9 +18676,9 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -17531,7 +18695,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:limache"
@@ -17553,7 +18717,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Limache",
+    "accessDetail": "Terminal de la línea Metrotren",
+    "accessMode": "metrotren"
   },
   {
     "id": "sub-171-mirador-de-talhuen",
@@ -17574,10 +18742,10 @@ export const catalog = [
     "bathroomsMax": 1,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -17589,7 +18757,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Ovalle"
@@ -17613,7 +18781,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal Ovalle",
+    "accessDetail": "Corredor 5 Norte · buses a Serena/Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-mirador-de-volcanes",
@@ -17634,9 +18806,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -17649,7 +18821,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:puerto-montt"
@@ -17672,7 +18844,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-528-mirador-del-aguila",
@@ -17693,10 +18869,10 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -17708,7 +18884,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Machalí"
@@ -17731,7 +18907,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Buses a Rancagua · cerca Ruta 5 Sur",
+    "accessDetail": "Micros a Rancagua · acceso 5 Sur por la capital regional",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-227-mirador-del-puerto",
@@ -17793,7 +18973,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-467-mirador-del-sol-departamentos",
@@ -17853,7 +19037,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "euro-mirador-irarrazabal",
@@ -17913,7 +19101,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-516-mirador-sur-ii",
@@ -17934,9 +19126,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "consultar",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -17949,7 +19141,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:puerto-montt"
@@ -17969,7 +19161,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-montevideo-464",
@@ -17993,7 +19189,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -18005,7 +19201,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Antofagasta"
@@ -18027,7 +19223,11 @@ export const catalog = [
     ],
     "amenities": [
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
+    "accessDetail": "Capital regional · terminal de buses",
+    "accessMode": "buses"
   },
   {
     "id": "paz-I202",
@@ -18090,7 +19290,11 @@ export const catalog = [
       "Cowork",
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-n3-nueva-etapa",
@@ -18114,7 +19318,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "socovesa",
@@ -18126,7 +19330,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -18155,7 +19359,11 @@ export const catalog = [
       "Sala de estar",
       "1 dormitorio",
       "1 baño"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "soco-n3",
@@ -18179,7 +19387,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "socovesa",
@@ -18191,7 +19399,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -18219,7 +19427,11 @@ export const catalog = [
       "Sala de estar",
       "1 dormitorio",
       "1 baño"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "paz-I166",
@@ -18281,7 +19493,11 @@ export const catalog = [
       "Áreas verdes",
       "Estacionamiento visitas",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-394-nova-miraflores",
@@ -18305,7 +19521,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -18317,7 +19533,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -18334,7 +19550,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "euro-nova-parque",
@@ -18395,7 +19615,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-395-nueva-aeropuerto-1",
@@ -18451,7 +19675,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-nueva-carrera",
@@ -18475,7 +19703,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -18487,7 +19715,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -18510,7 +19738,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "sub-391-nueva-carrera-1837",
@@ -18570,7 +19802,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-393-nueva-carrera-2",
@@ -18594,7 +19830,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -18606,7 +19842,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -18628,7 +19864,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "sub-392-nueva-tocornal-1",
@@ -18652,7 +19892,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -18664,7 +19904,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -18685,7 +19925,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "uts-nueva-tocornal-1-y-2",
@@ -18709,7 +19953,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -18721,7 +19965,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -18744,7 +19988,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "nuevo-renca",
@@ -18807,7 +20055,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/renca-69a3676435bef9.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-o3",
@@ -18831,7 +20083,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "socovesa",
@@ -18843,7 +20095,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -18871,7 +20123,11 @@ export const catalog = [
       "Sala de estar",
       "3 dormitorios",
       "2 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-ohiggins-979",
@@ -18895,7 +20151,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -18907,7 +20163,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Los Angeles"
@@ -18934,7 +20190,11 @@ export const catalog = [
       "Juegos infantiles.",
       "Bicicleteros.",
       "Áreas comunes para compartir y disfrutar."
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "soco-pajaritos-departamentos-en-maipu",
@@ -18998,7 +20258,11 @@ export const catalog = [
       "Sala de estar",
       "1 dormitorio",
       "1 baño"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-465-parque-andino",
@@ -19057,7 +20321,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "BBQ / parrilla"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I152",
@@ -19113,7 +20381,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-parque-canteras",
@@ -19137,7 +20409,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -19149,7 +20421,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Arica"
@@ -19168,7 +20440,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-04-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Parque-Canteras-05-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses"
   },
   {
     "id": "sub-475-parque-cordillera-ii",
@@ -19192,7 +20468,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -19204,7 +20480,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chillán"
@@ -19226,7 +20502,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-433-parque-costanera",
@@ -19284,7 +20564,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "silos-condominio-parque-curamapu",
@@ -19347,7 +20631,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-parque-el-dorado",
@@ -19371,7 +20659,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -19383,7 +20671,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -19401,7 +20689,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-03-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/PARQUE-EL-DORADO-04-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-73-parque-del-sol-linares",
@@ -19458,7 +20750,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-259-parque-del-sol-san-javier",
@@ -19515,7 +20811,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-parque-las-alamedas",
@@ -19539,7 +20839,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -19551,7 +20851,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -19573,7 +20873,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "soco-parque-los-avellanos-ii",
@@ -19597,7 +20901,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "socovesa",
@@ -19609,7 +20913,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -19638,7 +20942,11 @@ export const catalog = [
       "110 m² totales",
       "3 dormitorios",
       "3 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Los Ángeles",
+    "accessDetail": "Corredor 5 Sur · capital provincial",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-parque-samore",
@@ -19662,7 +20970,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -19674,7 +20982,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:curauma"
@@ -19694,7 +21002,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/7-163-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-182-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
+    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
+    "accessMode": "ruta"
   },
   {
     "id": "uts-parque-villarrica",
@@ -19718,7 +21030,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -19730,7 +21042,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:villarrica"
@@ -19753,7 +21065,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Villarrica · buses lacustres",
+    "accessDetail": "Buses a Temuco · fuera del eje 5 Sur",
+    "accessMode": "buses"
   },
   {
     "id": "sub-505-parque-zenteno-ii",
@@ -19777,7 +21093,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -19789,7 +21105,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Osorno"
@@ -19811,7 +21127,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-parques-del-sur",
@@ -19835,7 +21155,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -19847,7 +21167,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:puerto-montt"
@@ -19867,7 +21187,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-215-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-194-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-parras-de-san-javier",
@@ -19891,7 +21215,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -19903,7 +21227,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:San Javier"
@@ -19928,7 +21252,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
+    "accessDetail": "Acceso 5 Sur / Talca",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-parras-de-san-javier-ii",
@@ -19952,7 +21280,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -19964,7 +21292,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:San Javier"
@@ -19990,7 +21318,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Espacios para compartir en familia y con amigos"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
+    "accessDetail": "Acceso 5 Sur / Talca",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-385-parrones-de-baquedano",
@@ -20014,7 +21346,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -20026,7 +21358,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -20050,7 +21382,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-499-parrones-de-baquedano-norte",
@@ -20074,7 +21410,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -20090,7 +21426,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -20113,7 +21449,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-parrones-baquedano-sur",
@@ -20137,7 +21477,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -20149,7 +21489,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -20169,7 +21509,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/5-230-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/6-201-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-condominio-paseo-de-las-aves",
@@ -20227,7 +21571,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-374-paso-el-roble",
@@ -20288,7 +21636,11 @@ export const catalog = [
       "Quincho",
       "Cowork",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-483-peumayen",
@@ -20346,7 +21698,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "pintor-helsby",
@@ -20401,7 +21757,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/HELSBYfachada-68c3390362b0e9.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-495-pintor-gustavo-cabello-ii",
@@ -20425,7 +21785,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -20441,7 +21801,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -20463,7 +21823,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-513-pintor-gustavo-cabello-ii-ds01",
@@ -20487,7 +21851,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -20499,7 +21863,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -20520,7 +21884,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "bci-9444-pintor-jose-venturelli",
@@ -20577,7 +21945,11 @@ export const catalog = [
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/JOSEVENTURELLI-6a3b02497005d1.png",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/JOSEVENTURELLI-6a3b024a035030.png"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-70-plaza-bilbao-barquin",
@@ -20635,7 +22007,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-plaza-cautin",
@@ -20659,7 +22035,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -20671,7 +22047,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -20696,7 +22072,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "plaza-central-maipu",
@@ -20766,7 +22146,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bricsa-35",
@@ -20824,7 +22208,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "euro-plaza-de-lourdes",
@@ -20885,7 +22273,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Bodega"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I173",
@@ -20947,7 +22339,11 @@ export const catalog = [
       "Áreas verdes",
       "Estacionamiento visitas",
       "BBQ / parrilla"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I236",
@@ -21010,7 +22406,11 @@ export const catalog = [
       "Cowork",
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "plaza-mayor-maipu",
@@ -21080,7 +22480,11 @@ export const catalog = [
       "Juegos infantiles",
       "Bicicletero",
       "Cancha"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bricsa-42",
@@ -21136,7 +22540,11 @@ export const catalog = [
       "https://venta.bricsa.cl:4430/multimedia/proyecto/0v001_19363_galeria03.jpg",
       "https://venta.bricsa.cl:4430/multimedia/proyecto/0v001_19363_galeria04.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-plaza-mirador-departamentos-en-la-florida",
@@ -21201,7 +22609,11 @@ export const catalog = [
       "BBQ / parrilla",
       "1 dormitorio",
       "1 baño"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-plaza-quilicura",
@@ -21260,7 +22672,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Zonas comunes de esparcimiento"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "soco-portal-austral",
@@ -21281,9 +22697,9 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Venta en Blanco",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
     "connectivityScore": 4,
     "sources": [
       {
@@ -21296,7 +22712,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -21323,7 +22739,11 @@ export const catalog = [
       "87 m² totales",
       "3 dormitorios",
       "3 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Puerto Montt",
+    "accessDetail": "Fin del 5 Sur continental · terminal + micros",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-portal-de-azapa",
@@ -21347,7 +22767,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -21359,7 +22779,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Arica"
@@ -21376,7 +22796,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-02-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Portal-de-Azapa-03-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses"
   },
   {
     "id": "uts-portal-de-curanilahue",
@@ -21400,7 +22824,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -21412,7 +22836,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Curanilahue"
@@ -21434,7 +22858,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Buses · Curanilahue",
+    "accessDetail": "Fuera del eje 5 Sur · buses a Concepción/Lebu",
+    "accessMode": "buses"
   },
   {
     "id": "bci-9598-portal-de-los-artesanos",
@@ -21494,7 +22922,11 @@ export const catalog = [
     "amenities": [
       "Gimnasio",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-portal-del-alwa",
@@ -21518,7 +22950,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -21530,7 +22962,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Arica"
@@ -21555,7 +22987,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses"
   },
   {
     "id": "soco-portal-del-libertador-ix",
@@ -21579,7 +23015,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "socovesa",
@@ -21591,7 +23027,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -21615,7 +23051,11 @@ export const catalog = [
       "62 m² totales",
       "3 dormitorios",
       "2 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Chillán",
+    "accessDetail": "Capital Ñuble · terminal + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-380-portal-el-abra",
@@ -21675,7 +23115,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-406-portal-el-alwa",
@@ -21699,7 +23143,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -21711,7 +23155,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Arica"
@@ -21732,7 +23176,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses"
   },
   {
     "id": "uts-portal-lo-campino",
@@ -21790,7 +23238,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-portal-penablanca",
@@ -21814,7 +23266,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -21826,7 +23278,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:penablanca"
@@ -21849,7 +23301,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "ecomac-portal-ulriksen",
@@ -21873,7 +23329,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "ecomac",
@@ -21885,7 +23341,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -21911,7 +23367,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · terminal La Serena",
+    "accessDetail": "Corredor 5 Norte · terminal Elqui",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-praderas-de-labranza-ii",
@@ -21935,7 +23395,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -21947,7 +23407,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Temuco"
@@ -21970,7 +23430,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Temuco",
+    "accessDetail": "Capital regional · terminal Rodoviario + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-praderas-de-talca",
@@ -21994,7 +23458,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -22006,7 +23470,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -22030,7 +23494,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-praderas-del-llaima",
@@ -22054,7 +23522,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -22066,7 +23534,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Vilcún"
@@ -22086,7 +23554,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Colico_c-3-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/tacora_b-3-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Buses · Vilcún / acceso Temuco",
+    "accessDetail": "Cercano a Temuco · sin estación férrea de pasajeros",
+    "accessMode": "buses"
   },
   {
     "id": "presidente-prieto",
@@ -22141,7 +23613,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6ab161857b3ae3.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "principal-1385",
@@ -22200,7 +23676,11 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/Diseosinttulo-6a3c3989b324b3.webp"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "bci-8247-puerta-norte",
@@ -22260,7 +23740,11 @@ export const catalog = [
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
-    }
+    },
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-421-puerta-norte-chinchorro",
@@ -22284,7 +23768,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -22296,7 +23780,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Arica"
@@ -22318,7 +23802,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Arica · Ruta 5 Norte",
+    "accessDetail": "Capital regional · terminal internacional/nacional",
+    "accessMode": "buses"
   },
   {
     "id": "uts-quinta-costanera",
@@ -22342,7 +23830,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -22354,7 +23842,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Vallenar"
@@ -22374,7 +23862,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/4-127-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/4-142-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Vallenar",
+    "accessDetail": "Corredor 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "soco-reserva-magallanes",
@@ -22395,10 +23887,10 @@ export const catalog = [
     "bathroomsMax": 2,
     "parking": "consultar",
     "delivery": "Entrega Inmediata",
-    "metroStation": "Mirador",
-    "metroLine": "L5",
-    "metroWalkMin": 12,
-    "connectivityScore": 4,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "socovesa",
@@ -22410,7 +23902,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": false,
       "locationSource": "ficha"
@@ -22434,7 +23926,11 @@ export const catalog = [
       "70 m² totales",
       "3 dormitorios",
       "3 baños"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Punta Arenas",
+    "accessDetail": "Capital Magallanes · buses locales / austral",
+    "accessMode": "buses"
   },
   {
     "id": "uts-robles-de-aconcagua",
@@ -22458,7 +23954,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -22470,7 +23966,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:los-andes"
@@ -22487,7 +23983,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/3-239-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/1-256-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Los Andes · Ruta 57/60",
+    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
+    "accessMode": "buses"
   },
   {
     "id": "uts-rocas-de-la-iglesia-2",
@@ -22511,7 +24011,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -22523,7 +24023,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Constitución"
@@ -22545,7 +24045,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Constitución · costa Maule",
+    "accessDetail": "Buses a Talca · lejos del eje 5 Sur",
+    "accessMode": "buses"
   },
   {
     "id": "euro-rosas-1444",
@@ -22610,7 +24114,11 @@ export const catalog = [
       "Áreas verdes",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-496-samuel-roman-rojas",
@@ -22634,7 +24142,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -22646,7 +24154,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -22668,7 +24176,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "aitue-san-andres-del-valle",
@@ -22734,7 +24246,11 @@ export const catalog = [
       "AGENDAR",
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-456-san-cristian",
@@ -22791,7 +24307,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I229",
@@ -22854,7 +24374,11 @@ export const catalog = [
       "Áreas verdes",
       "Estacionamiento visitas",
       "BBQ / parrilla"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I232",
@@ -22919,7 +24443,11 @@ export const catalog = [
       "Áreas verdes",
       "Estacionamiento visitas",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-condominio-san-jorge-aurelio",
@@ -22943,7 +24471,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -22955,7 +24483,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -22980,7 +24508,11 @@ export const catalog = [
       "Quincho",
       "Áreas verdes",
       "BBQ / parrilla"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "sub-458-san-marcos",
@@ -23037,7 +24569,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-san-rafael-condominio",
@@ -23061,7 +24597,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -23073,7 +24609,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -23097,7 +24633,11 @@ export const catalog = [
       "Juegos infantiles",
       "Áreas verdes",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-457-santa-adriana",
@@ -23121,7 +24661,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -23133,7 +24673,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -23154,7 +24694,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "uts-santa-elena-1670",
@@ -23219,7 +24763,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Gimnasio"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I177",
@@ -23286,7 +24834,11 @@ export const catalog = [
       "Estacionamiento visitas",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-459-santa-josefina",
@@ -23310,7 +24862,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -23322,7 +24874,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Rancagua"
@@ -23342,7 +24894,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Rancagua",
+    "accessDetail": "Corredor 5 Sur + buses urbanos · ~1 h a Santiago",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-edificio-santa-petronila",
@@ -23404,7 +24960,11 @@ export const catalog = [
       "Gimnasio",
       "Lavandería",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-santa-rosa",
@@ -23477,7 +25037,11 @@ export const catalog = [
       "Bicicleteros.",
       "Local comercial.",
       "Acceso controlado y monitoreado."
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I197",
@@ -23541,7 +25105,11 @@ export const catalog = [
       "Estacionamiento visitas",
       "BBQ / parrilla",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I196",
@@ -23607,7 +25175,11 @@ export const catalog = [
       "Estacionamiento visitas",
       "BBQ / parrilla",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-473-sendero-de-guindal",
@@ -23666,7 +25238,11 @@ export const catalog = [
       "Quincho",
       "Gimnasio",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-senderos-de-los-andes-iii",
@@ -23690,7 +25266,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -23702,7 +25278,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:los-andes"
@@ -23724,7 +25300,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Los Andes · Ruta 57/60",
+    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
+    "accessMode": "buses"
   },
   {
     "id": "sub-109-senderos-de-los-andes-v",
@@ -23782,7 +25362,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-sol-de-penuelas",
@@ -23806,7 +25390,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -23818,7 +25402,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Chile"
@@ -23838,7 +25422,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/6-44-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/7-36-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Acceso estimado · Ruta 5 Norte",
+    "accessDetail": "Comuna sin ficha detallada",
+    "accessMode": "ruta5"
   },
   {
     "id": "paz-I230",
@@ -23902,7 +25490,11 @@ export const catalog = [
       "Lavandería",
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I214",
@@ -23968,7 +25560,11 @@ export const catalog = [
       "Estacionamiento visitas",
       "BBQ / parrilla",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-terrazas-del-bicentenario",
@@ -24036,7 +25632,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-terrazas-del-bicentenario-ii",
@@ -24094,7 +25694,11 @@ export const catalog = [
     ],
     "amenities": [
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-torres-de-varoli",
@@ -24118,7 +25722,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24130,7 +25734,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -24148,7 +25752,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-03-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/Torres-De-Varoli-04-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-valles-de-la-florida",
@@ -24172,7 +25780,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24184,7 +25792,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -24201,7 +25809,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-02-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/VALLES-DE-LA-FLORIDA-03-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "sub-155-valles-de-rengo-iii",
@@ -24259,7 +25871,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-valles-de-san-clemente",
@@ -24283,7 +25899,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24295,7 +25911,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Talca"
@@ -24313,7 +25929,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Talca",
+    "accessDetail": "Capital regional · terminal de buses + 5 Sur",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-valles-del-sur",
@@ -24337,7 +25957,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24349,7 +25969,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Osorno"
@@ -24371,7 +25991,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Sur · terminal Osorno",
+    "accessDetail": "Corredor 5 Sur · terminal de buses",
+    "accessMode": "ruta5"
   },
   {
     "id": "uts-veramonte-2",
@@ -24395,7 +26019,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24407,7 +26031,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:villa-alemana"
@@ -24430,7 +26054,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Villa Alemana",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "paz-I136",
@@ -24486,7 +26114,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-vicente-huidobro",
@@ -24510,7 +26142,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 2,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24522,7 +26154,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Cartagena"
@@ -24544,7 +26176,11 @@ export const catalog = [
     "amenities": [
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Buses regionales · Valparaíso",
+    "accessDetail": "Sin ficha de Metrotren/Ruta 5 para esta comuna · estimado regional",
+    "accessMode": "buses"
   },
   {
     "id": "euro-vicuna-mackenna-1432",
@@ -24608,7 +26244,11 @@ export const catalog = [
       "Áreas verdes",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-346-viento-norte-ii",
@@ -24671,7 +26311,11 @@ export const catalog = [
     "amenities": [
       "Quincho",
       "Juegos infantiles"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-vista-aconcagua",
@@ -24695,7 +26339,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24707,7 +26351,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:los-andes"
@@ -24725,7 +26369,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-03-Vitrina-UTS-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/VISTA-ACONCAGUA-04-Vitrina-UTS-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Terminal Los Andes · Ruta 57/60",
+    "accessDetail": "Buses interurbanos · sin tren de pasajeros cercano",
+    "accessMode": "buses"
   },
   {
     "id": "uts-vista-costanera",
@@ -24783,7 +26431,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I237",
@@ -24839,7 +26491,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I132",
@@ -24895,7 +26551,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-vista-marga-marga-i",
@@ -24919,7 +26579,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 5,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -24931,7 +26591,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:quilpue"
@@ -24948,7 +26608,11 @@ export const catalog = [
       "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-02-Vitrina-UTS-1-1024x768.jpg",
       "https://usatusubsidio.com/wp-content/uploads/VISTA-MARGA-MARGA-I-03-Vitrina-UTS-1-1024x768.jpg"
     ],
-    "amenities": []
+    "amenities": [],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Quilpué",
+    "accessDetail": "Estación Metrotren en la comuna",
+    "accessMode": "metrotren"
   },
   {
     "id": "euro-vista-portugal",
@@ -25015,7 +26679,11 @@ export const catalog = [
       "Áreas verdes",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-525-vistas-de-curauma-iii",
@@ -25039,7 +26707,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -25051,7 +26719,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:curauma"
@@ -25074,7 +26742,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Metrotren · Valparaíso / Puerto",
+    "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
+    "accessMode": "metrotren"
   },
   {
     "id": "uts-vistas-de-curauma-iii",
@@ -25098,7 +26770,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -25110,7 +26782,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:curauma"
@@ -25134,7 +26806,11 @@ export const catalog = [
       "Piscina",
       "Quincho",
       "Conserjería"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Buses · Ruta 68 hacia Valparaíso",
+    "accessDetail": "Acceso por Ruta 68 · paraderos locales (aprox. comuna)",
+    "accessMode": "ruta"
   },
   {
     "id": "uts-vistas-i",
@@ -25158,7 +26834,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -25170,7 +26846,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": false,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:curauma"
@@ -25192,7 +26868,11 @@ export const catalog = [
     ],
     "amenities": [
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Buses · Placilla de Peñuelas / Ruta 68",
+    "accessDetail": "Cerca de Curauma · buses a Valparaíso",
+    "accessMode": "ruta"
   },
   {
     "id": "euro-vitro",
@@ -25259,7 +26939,11 @@ export const catalog = [
       "Áreas verdes",
       "Bodega",
       "Bicicletero"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-511-vive-la-herradura",
@@ -25283,7 +26967,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -25295,7 +26979,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:Coquimbo"
@@ -25317,7 +27001,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5"
   },
   {
     "id": "vive-la-vara",
@@ -25387,7 +27075,11 @@ export const catalog = [
       "Quincho",
       "Juegos infantiles",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "sub-381-vive-san-felipe",
@@ -25411,7 +27103,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "subsidios-cl",
@@ -25423,7 +27115,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "sector:san-felipe"
@@ -25445,7 +27137,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Terminal San Felipe · acceso Ruta 60",
+    "accessDetail": "Buses a Los Andes / Valparaíso / Santiago",
+    "accessMode": "buses"
   },
   {
     "id": "sub-266-walk-parral",
@@ -25503,7 +27199,11 @@ export const catalog = [
     ],
     "amenities": [
       "Quincho"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "uts-walk-san-javier",
@@ -25527,7 +27227,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": null,
+    "connectivityScore": 3,
     "sources": [
       {
         "portal": "usatusubsidio",
@@ -25539,7 +27239,7 @@ export const catalog = [
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
-      "metroEstimated": false,
+      "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
       "locationSource": "comuna:San Javier"
@@ -25562,7 +27262,11 @@ export const catalog = [
     "amenities": [
       "Piscina",
       "Áreas verdes"
-    ]
+    ],
+    "accessKind": "regional",
+    "accessLabel": "Cerca Ruta 5 Sur · San Javier",
+    "accessDetail": "Acceso 5 Sur / Talca",
+    "accessMode": "ruta5"
   },
   {
     "id": "paz-I174",
@@ -25618,7 +27322,11 @@ export const catalog = [
     "amenities": [
       "Áreas verdes",
       "Estacionamiento visitas"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   },
   {
     "id": "paz-I191",
@@ -25685,7 +27393,11 @@ export const catalog = [
       "Estacionamiento visitas",
       "Bicicletero",
       "Sala cowork"
-    ]
+    ],
+    "accessKind": "metro",
+    "accessMode": "metro",
+    "accessLabel": null,
+    "accessDetail": null
   }
 ]
 

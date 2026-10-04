@@ -28,6 +28,7 @@ import { catalog, catalogMeta, UF_CLP } from './data/catalog.js'
 import { portals, REGIONS, SUBSIDY_OPTIONS } from './data/portals.js'
 import {
   connectivityLabel,
+  accessSummary,
   filterCatalog,
   formatClp,
   formatUf,
@@ -221,7 +222,7 @@ export default function App() {
             <p className="mt-4 text-white/80">
               Iniciativa sin fines de lucro para ayudarte a mirar vivienda en
               Chile con menos marketing: juntamos avisos públicos y marcamos lo
-              que falta confirmar (precio “desde”, metro estimado, cupos).
+              que falta confirmar (precio “desde”, cupos, acceso al transporte).
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-3 text-white sm:grid-cols-4">
@@ -465,7 +466,7 @@ export default function App() {
 
             <label className="mb-3 block text-sm">
               <span className="mb-1 block font-medium">
-                Conectividad metro Santiago (mín.)
+                Conectividad (mín.)
               </span>
               <select
                 value={filters.minConnectivity}
@@ -477,6 +478,9 @@ export default function App() {
                 <option value={4}>4+ (muy buena)</option>
                 <option value={5}>Solo 5 (excelente)</option>
               </select>
+              <span className="mt-1 block text-[11px] text-[var(--muted-ink)]">
+                Santiago: metro. Regiones: Metrotren/Biotrén, Ruta 5 o buses.
+              </span>
             </label>
 
             <label className="mb-4 block text-sm">
@@ -486,7 +490,7 @@ export default function App() {
                 onChange={(e) => set('sortBy', e.target.value)}
                 className="h-10 w-full rounded-lg border border-[var(--line)] px-2"
               >
-                <option value="metro-desc">Mejor conectividad metro</option>
+                <option value="metro-desc">Mejor conectividad</option>
                 <option value="precio-asc">Precio UF ↑</option>
                 <option value="precio-desc">Precio UF ↓</option>
                 <option value="nombre">Nombre</option>
@@ -756,25 +760,18 @@ export default function App() {
                             <div className="flex items-start gap-2 text-sm">
                               <TrainFront className="mt-0.5 size-4 text-[var(--teal)]" />
                               <div>
-                                <p className="font-medium">
-                                  Ranking metro Santiago
-                                </p>
-                                <ConnectivityBars score={p.connectivityScore} />
-                                <p className="mt-1 text-xs text-[var(--muted-ink)]">
-                                  {p.metroStation
-                                    ? `${p.metroStation}${
-                                        p.metroLine ? ` (${p.metroLine})` : ''
-                                      }${
-                                        p.metroWalkMin != null
-                                          ? ` · ~${p.metroWalkMin} min`
-                                          : ''
-                                      }${
-                                        p.dataGaps?.metroEstimated === false
-                                          ? ' · según ficha'
-                                          : ' · estimado comuna'
-                                      }`
-                                    : connectivityLabel(p.connectivityScore)}
-                                </p>
+                                {(() => {
+                                  const access = accessSummary(p)
+                                  return (
+                                    <>
+                                      <p className="font-medium">{access.title}</p>
+                                      <ConnectivityBars score={access.score} />
+                                      <p className="mt-1 text-xs text-[var(--muted-ink)]">
+                                        {access.detail}
+                                      </p>
+                                    </>
+                                  )
+                                })()}
                               </div>
                             </div>
 

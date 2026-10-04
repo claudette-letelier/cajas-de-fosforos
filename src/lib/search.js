@@ -17,7 +17,19 @@ export function ufToClp(uf) {
   return Math.round(uf * UF_CLP)
 }
 
-export function connectivityLabel(score) {
+export function connectivityLabel(score, project = null) {
+  if (project && project.region && project.region !== 'Metropolitana') {
+    if (project.accessLabel) return project.accessLabel
+    if (score == null) return 'Sin Metro Santiago · acceso regional estimado'
+    const map = {
+      5: 'Muy buen acceso regional (tren/terminal)',
+      4: 'Buen acceso (Ruta 5 / tren / terminal)',
+      3: 'Acceso medio (buses / carretera)',
+      2: 'Acceso limitado (lejos del eje principal)',
+      1: 'Acceso difícil / aislado',
+    }
+    return map[score] || String(score)
+  }
   if (score == null) return 'N/A (fuera de Metro Santiago)'
   const map = {
     5: 'Excelente (≤8 min al metro)',
@@ -27,6 +39,38 @@ export function connectivityLabel(score) {
     1: 'Sin metro cercano',
   }
   return map[score] || String(score)
+}
+
+/** Título + detalle de conectividad según región. */
+export function accessSummary(project) {
+  const isRM = project.region === 'Metropolitana'
+  if (isRM) {
+    return {
+      title: 'Ranking metro Santiago',
+      score: project.connectivityScore,
+      detail: project.metroStation
+        ? `${project.metroStation}${
+            project.metroLine ? ` (${project.metroLine})` : ''
+          }${
+            project.metroWalkMin != null ? ` · ~${project.metroWalkMin} min` : ''
+          }${
+            project.dataGaps?.metroEstimated === false
+              ? ' · según ficha'
+              : ' · estimado comuna'
+          }`
+        : connectivityLabel(project.connectivityScore, project),
+    }
+  }
+  return {
+    title: 'Acceso en regiones',
+    score: project.connectivityScore,
+    detail: [
+      project.accessLabel,
+      project.accessDetail,
+    ]
+      .filter(Boolean)
+      .join(' · ') || connectivityLabel(project.connectivityScore, project),
+  }
 }
 
 export function filterCatalog(items, filters) {

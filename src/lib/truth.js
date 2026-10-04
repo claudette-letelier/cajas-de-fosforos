@@ -54,6 +54,15 @@ export function truthSignals(project) {
         }.`,
       })
     }
+  } else {
+    signals.push({
+      id: 'regional-access',
+      tone: 'neutral',
+      label: 'Sin Metro de Santiago',
+      detail: project.accessLabel
+        ? `${project.accessLabel}. ${project.accessDetail || 'Estimación por comuna (no es distancia exacta al paradero).'}`
+        : 'En regiones mostramos acceso a Metrotren/Biotrén, Ruta 5 o terminal de buses, no ranking de metro capitalino.',
+    })
   }
 
   if (project.dataGaps?.locationEstimated) {

@@ -17,7 +17,7 @@ import {
 } from 'lucide-react'
 import { honestyScore, truthSignals } from '../lib/truth.js'
 import { reputationLinks } from '../lib/reputation.js'
-import { connectivityLabel, formatClp, formatUf, ufToClp } from '../lib/search.js'
+import { accessSummary, formatClp, formatUf, ufToClp } from '../lib/search.js'
 import { safeHttpUrl, safeImageUrl, safeWhatsappUrl } from '../lib/security.js'
 
 function GalleryImage({ src, alt }) {
@@ -44,12 +44,12 @@ function GalleryImage({ src, alt }) {
   )
 }
 
-function ConnectivityBars({ score }) {
+function ConnectivityBars({ score, title }) {
   if (score == null) {
     return <span className="text-xs text-[var(--muted-ink)]">N/A</span>
   }
   return (
-    <div className="flex items-center gap-1" title={connectivityLabel(score)}>
+    <div className="flex items-center gap-1" title={title || ''}>
       {[1, 2, 3, 4, 5].map((i) => (
         <span
           key={i}
@@ -277,18 +277,23 @@ export default function ProjectDetail({
             <div className="flex items-start gap-2">
               <TrainFront className="mt-0.5 size-4 text-[var(--teal)]" />
               <div>
-                <ConnectivityBars score={project.connectivityScore} />
-                <p className="mt-1 text-xs text-[var(--muted-ink)]">
-                  {project.metroStation
-                    ? `${project.metroStation}${
-                        project.metroLine ? ` (${project.metroLine})` : ''
-                      }${
-                        project.metroWalkMin != null
-                          ? ` · ~${project.metroWalkMin} min`
-                          : ''
-                      }`
-                    : connectivityLabel(project.connectivityScore)}
-                </p>
+                {(() => {
+                  const access = accessSummary(project)
+                  return (
+                    <>
+                      <p className="text-xs font-medium text-[var(--ink)]">
+                        {access.title}
+                      </p>
+                      <ConnectivityBars
+                        score={access.score}
+                        title={access.detail}
+                      />
+                      <p className="mt-1 text-xs text-[var(--muted-ink)]">
+                        {access.detail}
+                      </p>
+                    </>
+                  )
+                })()}
               </div>
             </div>
           </div>

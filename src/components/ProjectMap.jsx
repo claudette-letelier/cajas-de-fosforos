@@ -123,7 +123,9 @@ export default function ProjectMap({ projects, onSelect }) {
           : `<br/><span style="color:#9a3412">Ubicación aprox. por comuna</span>`
       const metro = p.metroStation
         ? `<br/><span style="color:#0f766e">Metro: ${escapeHtml(p.metroStation)}</span>`
-        : ''
+        : p.region !== 'Metropolitana' && p.accessLabel
+          ? `<br/><span style="color:#0f766e">${escapeHtml(p.accessLabel)}</span>`
+          : ''
 
       const marker = L.marker([p.lat, p.lng], { title: p.name })
       marker.bindTooltip(p.name, {
