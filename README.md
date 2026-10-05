@@ -44,6 +44,17 @@ Qué cubren hoy:
 
 Conviene correr `npm test` y `npm run validate:catalog` después de `npm run update:catalog`.
 
+### Indicadores comunales (estilo SimCity)
+
+En el mapa puedes activar **Indicadores comunales (CEAD)**: barras de delincuencia,
+oferta, precio y conectividad por comuna.
+
+```bash
+npm run build:indicators   # regenera src/data/comuna-indicators.json
+```
+
+Usa un extracto abierto de CEAD (no es mapa de “zonas rojas” de barrio).
+
 Si quieres el refresco automático diario en GitHub, copia
 `scripts/github-daily-update.yml` a `.github/workflows/daily-update.yml`
 (desde la web de GitHub o con un token que permita workflows) y actívalo en
