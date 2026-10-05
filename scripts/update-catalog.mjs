@@ -77,6 +77,7 @@ const LOCALITY_HINTS = [
   { re: /\bandalu[eé]\b/i, key: 'andalue' },
   { re: /\bbosquemar\b/i, key: 'bosquemar' },
   { re: /\blomas?\s+de\s+landa\b|\blanda\b.*penco|camino\s+a\s+penco|ruta\s*150\b/i, key: 'lomas-de-landa' },
+  { re: /\bla\s+estrella\s*8540\b|\bestrella\s*8540\b/i, key: 'la-estrella-pudahuel' },
   { re: /\bsan\s+pedro\s+de\s+la\s+paz\b/i, key: 'san-pedro-de-la-paz' },
   { re: /\balto\s+hospicio\b/i, key: 'alto-hospicio' },
   { re: /\bserena\s+oriente\b/i, key: 'serena-oriente' },

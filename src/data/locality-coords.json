@@ -166,5 +166,11 @@
     "lng": -73.143133,
     "display": "Avenida Bosquemar 50, San Pedro de la Paz, Biobío, Chile",
     "query": "Avenida Bosquemar 50, San Pedro de la Paz, Chile"
+  },
+  "la-estrella-pudahuel": {
+    "lat": -33.4585286,
+    "lng": -70.752391,
+    "display": "La Estrella 8540, Pudahuel Sur, Pudahuel, Chile",
+    "query": "La Estrella 8540, Pudahuel, Chile"
   }
 }

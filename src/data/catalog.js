@@ -2,9 +2,9 @@
 export const UF_CLP = 41090
 
 /**
- * connectivityScore (1–5): ranking de acceso a Metro de Santiago.
- * 5 = ≤8 min a pie · 4 = ≤15 · 3 = ≤25 o combinación bus+metro
- * 2 = lejos / estación futura · 1 = sin metro · null = fuera de RM
+ * connectivityScore (1–5):
+ * - Metropolitana: acceso a Metro de Santiago
+ * - Regiones: Metrotren/Biotrén, Ruta 5 Norte/Sur o terminal de buses (estimado por comuna)
  */
 export const catalog = [
   {
@@ -6450,12 +6450,12 @@ export const catalog = [
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Pudahuel"
+      "locationEstimated": false,
+      "locationSource": "geocode:address"
     },
-    "lat": -33.4192724,
-    "lng": -70.8634486,
-    "address": null,
+    "lat": -33.4585286,
+    "lng": -70.752391,
+    "address": "La Estrella 8540, Pudahuel",
     "contactPhone": null,
     "contactWhatsapp": null,
     "areaM2": 54.1,
