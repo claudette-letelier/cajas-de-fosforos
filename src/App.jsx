@@ -926,9 +926,14 @@ export default function App() {
               y avisos públicos de inmobiliarias.
             </p>
           </div>
-          <p className="flex items-center gap-2 self-start sm:self-end">
-            <Building2 className="size-4" />
-            Hecho para ayudar · confirma siempre en el aviso original
+          <p className="flex flex-col gap-2 self-start text-white/70 sm:self-end sm:items-end">
+            <span className="inline-flex items-center gap-2">
+              <Building2 className="size-4" />
+              Hecho para ayudar · confirma siempre en el aviso original
+            </span>
+            <span className="text-xs text-white/45">
+              Estadísticas anónimas con GoatCounter (sin cookies de tracking).
+            </span>
           </p>
         </div>
       </footer>

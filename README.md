@@ -49,6 +49,23 @@ Si quieres el refresco automático diario en GitHub, copia
 (desde la web de GitHub o con un token que permita workflows) y actívalo en
 Actions. Ese archivo ya incluye las acciones `checkout` y `setup-node` en v7.
 
+## Visitas (GoatCounter)
+
+El sitio usa **GoatCounter hosted** (el servicio gratis de ellos), no self-hosted.
+
+1. Crea una cuenta en https://www.goatcounter.com  
+2. Código del sitio: `cajas-de-fosforos` (debe coincidir con el script en `index.html`)  
+3. Panel: https://cajas-de-fosforos.goatcounter.com  
+
+Hasta que no crees ese sitio en GoatCounter, el contador no guarda visitas.
+
+### ¿Qué es self-hosted?
+
+- **Hosted (lo que usamos):** GoatCounter corre en sus servidores. Tú solo pones el script y miras el panel web. Cero servidor propio.
+- **Self-hosted:** instalas GoatCounter en **tu** VPS/servidor (Docker o binario + base de datos). Tú pagas/mantienes la máquina, backups y actualizaciones; a cambio los datos no pasan por goatcounter.com.
+
+Para este proyecto el hosted gratis alcanza. Self-hosted solo tiene sentido si quieres control total de los datos o no depender de un tercero.
+
 ## Aviso
 
 Precios, cupos de subsidio y tipologías cambian. Confirma siempre en el aviso
