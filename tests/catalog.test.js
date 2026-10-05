@@ -76,6 +76,12 @@ describe('catalog schema', () => {
       )
     }
   })
+
+  it('UTS Santa Elena 1670 is FOGAES not DS19', () => {
+    const p = catalog.find((x) => x.id === 'uts-santa-elena-1670')
+    assert.ok(p)
+    assert.deepEqual(p.subsidies, ['FOGAES'])
+  })
 })
 
 describe('maps helpers', () => {

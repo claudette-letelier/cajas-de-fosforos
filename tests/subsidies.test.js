@@ -4,6 +4,8 @@ import {
   inferHousingSubsidies,
   mergeSubsidies,
   uniqueSubsidies,
+  parseSubsidyHint,
+  extractTipoSubsidio,
 } from '../scripts/lib/subsidies.mjs'
 
 describe('inferHousingSubsidies', () => {
@@ -34,6 +36,29 @@ describe('inferHousingSubsidies', () => {
       'buscador-card">Hacienda Lo Errázuriz (DS19) <a href="https://subsidios.cl/x">ver</a>'
     assert.deepEqual(inferHousingSubsidies(cardA), ['Sin subsidio'])
     assert.deepEqual(inferHousingSubsidies(cardB), ['DS19'])
+  })
+
+  it('detects FOGAES', () => {
+    assert.deepEqual(
+      inferHousingSubsidies('Tipo Subsidio FOGAES · hasta 90% financiamiento'),
+      ['FOGAES'],
+    )
+  })
+})
+
+describe('parseSubsidyHint / extractTipoSubsidio', () => {
+  it('maps UTS subsidio=fogaes to FOGAES instead of DS19', () => {
+    assert.deepEqual(parseSubsidyHint('fogaes'), ['FOGAES'])
+    assert.deepEqual(parseSubsidyHint('ds19-automatico'), ['DS19'])
+  })
+
+  it('reads Tipo Subsidio from UTS detail HTML', () => {
+    const html = `
+      <div class="detail-spec__value">FOGAES</div>
+      <div class="detail-spec__label">Tipo Subsidio</div>
+      <a href="/financiamiento/?tipo_subsidio=FOGAES">sim</a>`
+    assert.equal(extractTipoSubsidio(html), 'FOGAES')
+    assert.deepEqual(parseSubsidyHint(extractTipoSubsidio(html)), ['FOGAES'])
   })
 })
 

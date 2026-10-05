@@ -1,6 +1,53 @@
 /**
- * Infer MINVU-style housing subsidies from free text.
- * Ignores “subsidio a la tasa” and menu noise; prefers explicit DS19/DS1/DS49.
+ * Map a portal subsidy slug/label (e.g. UsaTuSubsidio `subsidio=` or
+ * “Tipo Subsidio”) to catalog labels. Unknown values return [].
+ */
+export function parseSubsidyHint(hint) {
+  const s = String(hint || '')
+    .trim()
+    .toLowerCase()
+    .replace(/\+/g, ' ')
+  if (!s) return []
+  if (/fogaes/.test(s)) return ['FOGAES']
+  if (/ds19|ds-19|ds_19/.test(s)) return ['DS19']
+  if (/ds1[-_\s]?tramo[-_\s]?2|tramo[-_\s]?2/.test(s)) return ['DS1 Tramo 2']
+  if (/ds1[-_\s]?tramo[-_\s]?3|tramo[-_\s]?3/.test(s)) return ['DS1 Tramo 3']
+  if (/ds1[-_\s]?tramo[-_\s]?1|tramo[-_\s]?1/.test(s)) return ['DS1']
+  if (/\bds1\b|ds-1|ds_1/.test(s)) return ['DS1']
+  if (/ds49|ds-49|ds_49/.test(s)) return ['DS49']
+  if (/sin[-_\s]?subsidio/.test(s)) return ['Sin subsidio']
+  return []
+}
+
+/**
+ * Read “Tipo Subsidio” from UsaTuSubsidio / similar detail HTML.
+ */
+export function extractTipoSubsidio(html) {
+  const raw = String(html || '')
+  const fromSpec = raw.match(
+    /detail-spec__value[^>]*>\s*([^<]+?)\s*<\/div>\s*<div class="detail-spec__label">\s*Tipo Subsidio/i,
+  )?.[1]
+  if (fromSpec) return decodeBasic(fromSpec).trim()
+  const fromQuery = raw.match(/tipo_subsidio=([A-Za-z0-9_-]+)/i)?.[1]
+  if (fromQuery) return decodeURIComponent(fromQuery).trim()
+  const fromTable = raw.match(
+    /Tipo\s*Subsidio[\s\S]{0,120}?>(FOGAES|DS\s*19|DS\s*1(?:\s*Tramo\s*[123])?|DS\s*49)</i,
+  )?.[1]
+  if (fromTable) return fromTable.replace(/\s+/g, ' ').trim()
+  return null
+}
+
+function decodeBasic(s) {
+  return String(s)
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#8211;/g, '–')
+    .replace(/&nbsp;/g, ' ')
+}
+
+/**
+ * Infer housing / financing aids from free text.
+ * Ignores “subsidio a la tasa” and menu noise; prefers explicit DS19/DS1/DS49/FOGAES.
  */
 export function inferHousingSubsidies(text, { defaultTo = 'Sin subsidio' } = {}) {
   const raw = String(text || '')
@@ -8,6 +55,7 @@ export function inferHousingSubsidies(text, { defaultTo = 'Sin subsidio' } = {})
 
   // Explicit “sin subsidio” as project status wins when no DS19 token nearby.
   const hasSin = /sin\s+subsidio/.test(t)
+  const hasFogaes = /\bfogaes\b/.test(t)
   const hasDs19 = /\bds[\s.\-]?19\b|subsidio\s*autom[aá]tico\s*ds[\s.\-]?19/.test(t)
   const hasDs49 = /\bds[\s.\-]?49\b/.test(t)
   const hasDs1T2 = /\bds[\s.\-]?1\b[^.\n]{0,24}tramo\s*2|tramo\s*2[^.\n]{0,24}\bds[\s.\-]?1\b|ds1-tramo-2/.test(
@@ -23,6 +71,7 @@ export function inferHousingSubsidies(text, { defaultTo = 'Sin subsidio' } = {})
     !/\bds[\s.\-]?19\b/.test(t)
 
   const out = []
+  if (hasFogaes) out.push('FOGAES')
   if (hasDs19) out.push('DS19')
   if (hasDs1T2) out.push('DS1 Tramo 2')
   if (hasDs1T3) out.push('DS1 Tramo 3')

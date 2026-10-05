@@ -30,8 +30,10 @@ import {
   sanitizeAddress,
 } from './lib/html-location.mjs'
 import {
+  extractTipoSubsidio,
   inferHousingSubsidies,
   mergeSubsidies,
+  parseSubsidyHint,
   uniqueSubsidies,
 } from './lib/subsidies.mjs'
 
@@ -1411,15 +1413,11 @@ function extractUsaTuSubsidio(html) {
       regionHint = r
     } else if (locRaw) comuna = locRaw
 
-    const subsidies = []
-    const s = subsidyHint.toLowerCase()
-    if (s.includes('ds19')) subsidies.push('DS19')
-    if (s.includes('ds1-tramo-2') || s.includes('tramo-2')) subsidies.push('DS1 Tramo 2')
-    if (s.includes('ds1-tramo-3') || s.includes('tramo-3')) subsidies.push('DS1 Tramo 3')
-    if (s.includes('ds1') && !subsidies.some((x) => x.includes('DS1'))) subsidies.push('DS1')
-    if (s.includes('ds49')) subsidies.push('DS49')
-    // Portal dedicado a subsidios: sin hint explícito asumimos DS19.
-    if (!subsidies.length) subsidies.push('DS19')
+    // Prefer explicit card hint (incl. FOGAES). Never map unknown → DS19.
+    let subsidies = parseSubsidyHint(subsidyHint)
+    if (!subsidies.length) {
+      subsidies = inferHousingSubsidies(a, { defaultTo: 'DS19' })
+    }
 
     out.push(
       normalizeItem({
@@ -1504,6 +1502,15 @@ async function enrichUsaTuSubsidioDetail(item) {
       portal: 'usatusubsidio',
     })
 
+    // Detail “Tipo Subsidio” is authoritative (e.g. FOGAES ≠ DS19).
+    const tipo = extractTipoSubsidio(html)
+    const fromTipo = parseSubsidyHint(tipo)
+    const subsidies = fromTipo.length
+      ? fromTipo
+      : item.subsidies?.length
+        ? item.subsidies
+        : ['Sin subsidio']
+
     return normalizeItem({
       ...item,
       portal: 'usatusubsidio',
@@ -1519,7 +1526,7 @@ async function enrichUsaTuSubsidioDetail(item) {
       bedroomsMax: dormRaw ? dorms.max : item.bedroomsMax,
       bathroomsMin: bathRaw ? baths.min : item.bathroomsMin,
       bathroomsMax: bathRaw ? Math.max(baths.min, baths.max) : item.bathroomsMax,
-      subsidies: item.subsidies,
+      subsidies,
       parking: parking !== 'consultar' ? parking : item.parking,
       areaM2: areaParsed || item.areaM2 || null,
       metroStation: metro?.station || item.metroStation,
@@ -1550,6 +1557,7 @@ async function scrapeUsaTuSubsidio(maxPages = 20) {
     'https://usatusubsidio.cl/propiedades/?subsidio=ds19',
     'https://usatusubsidio.cl/propiedades/?subsidio=ds1-tramo-2',
     'https://usatusubsidio.cl/propiedades/?subsidio=ds1-tramo-3',
+    'https://usatusubsidio.cl/propiedades/?subsidio=fogaes',
     'https://usatusubsidio.cl/propiedades/?region=metropolitana',
   ]
   const all = []

@@ -520,7 +520,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "FOGAES"
     ],
     "priceFromUf": 2288,
     "priceToUf": 2288,
@@ -24696,7 +24696,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "FOGAES"
     ],
     "priceFromUf": 2204,
     "priceToUf": 2204,
@@ -27389,5 +27389,6 @@ export const catalogMeta = {
   "generatedAt": "2026-10-04",
   "ufClp": 41090,
   "disclaimer": "Precios “desde”, cupos y tipologías cambian. Confirma siempre en el aviso original y en sala de ventas / SERVIU antes de postular o reservar.",
-  "subsidyAuditAt": "2026-10-05T01:49:59.551Z"
+  "subsidyAuditAt": "2026-10-05T01:49:59.551Z",
+  "fogaesFixAt": "2026-10-05T02:00:09.727Z"
 }

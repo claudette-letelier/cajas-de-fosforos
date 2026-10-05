@@ -122,5 +122,7 @@ export const SUBSIDY_OPTIONS = [
   'DS1',
   'DS1 Tramo 2',
   'DS1 Tramo 3',
+  'DS49',
+  'FOGAES',
   'Sin subsidio',
 ]
