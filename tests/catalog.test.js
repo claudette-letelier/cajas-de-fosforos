@@ -53,6 +53,29 @@ describe('catalog schema', () => {
     assert.equal(p.address, 'Avenida Bosquemar 50')
     assert.equal(p.dataGaps?.locationEstimated, false)
   })
+
+  it('does not invent DS19 for Ingevec Diagonal Paraguay', () => {
+    const p = catalog.find((x) => x.id === 'ingevec-diagonalparaguay')
+    assert.ok(p)
+    assert.deepEqual(p.subsidies, ['Sin subsidio'])
+  })
+
+  it('Galilea Brisas de Machalí II is Sin subsidio', () => {
+    const p = catalog.find((x) => x.id === 'galilea-brisas-de-machali-ii')
+    assert.ok(p)
+    assert.deepEqual(p.subsidies, ['Sin subsidio'])
+  })
+
+  it('Euro projects are not tagged DS19 for subsidio a la tasa', () => {
+    const euros = catalog.filter((x) => x.id.startsWith('euro-'))
+    assert.ok(euros.length > 5)
+    for (const p of euros) {
+      assert.ok(
+        !p.subsidies.includes('DS19'),
+        `${p.id} should not be DS19`,
+      )
+    }
+  })
 })
 
 describe('maps helpers', () => {

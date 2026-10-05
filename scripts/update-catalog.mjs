@@ -29,6 +29,11 @@ import {
   extractCoords,
   sanitizeAddress,
 } from './lib/html-location.mjs'
+import {
+  inferHousingSubsidies,
+  mergeSubsidies,
+  uniqueSubsidies,
+} from './lib/subsidies.mjs'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const CATALOG_PATH = path.join(ROOT, 'src/data/catalog.js')
@@ -474,7 +479,8 @@ function normalizeItem(partial) {
     comuna,
     propertyType: partial.propertyType || 'departamento',
     condition: partial.condition || 'nuevo',
-    subsidies: partial.subsidies?.length ? partial.subsidies : ['DS19'],
+    // Never invent DS19: missing evidence defaults to Sin subsidio.
+    subsidies: partial.subsidies?.length ? partial.subsidies : ['Sin subsidio'],
     priceFromUf: price,
     priceToUf: partial.priceToUf || price,
     bedroomsMin,
@@ -1412,6 +1418,7 @@ function extractUsaTuSubsidio(html) {
     if (s.includes('ds1-tramo-3') || s.includes('tramo-3')) subsidies.push('DS1 Tramo 3')
     if (s.includes('ds1') && !subsidies.some((x) => x.includes('DS1'))) subsidies.push('DS1')
     if (s.includes('ds49')) subsidies.push('DS49')
+    // Portal dedicado a subsidios: sin hint explícito asumimos DS19.
     if (!subsidies.length) subsidies.push('DS19')
 
     out.push(
@@ -1820,12 +1827,19 @@ function extractIngevec(html) {
     if (seen.has(slug)) continue
     seen.add(slug)
     const idx = html.indexOf(m[1])
-    const window = html.slice(Math.max(0, idx - 400), idx + 1200)
+    // Limit evidence to the same card: do not bleed into the next buscador-card
+    // (that bug tagged Diagonal Paraguay as DS19 from Hacienda Lo Errázuriz).
+    const cardStart = html.lastIndexOf('buscador-card', idx)
+    const nextCard = html.indexOf('buscador-card', idx + Math.max(m[1].length, 1))
+    const windowStart = cardStart >= 0 ? cardStart : Math.max(0, idx - 500)
+    const windowEnd = nextCard >= 0 ? nextCard : Math.min(html.length, idx + 700)
+    const window = html.slice(windowStart, windowEnd)
     const uf = window.match(/UF\s*([\d.]+)/i)?.[1]
     const name = `Ingevec ${slug
       .split('-')
       .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
       .join(' ')}`
+    const subsidies = inferHousingSubsidies(window)
     out.push(
       normalizeItem({
         id: `ingevec-${slug}`,
@@ -1835,7 +1849,7 @@ function extractIngevec(html) {
         region: 'Metropolitana',
         developer: 'Ingevec Inmobiliaria',
         priceFromUf: uf ? parseChileUf(uf) : 2500,
-        subsidies: window.toLowerCase().includes('ds19') ? ['DS19'] : ['Sin subsidio'],
+        subsidies,
         url,
         notes: 'Importado desde Ingevec',
         connectivityScore: 4,
@@ -1859,10 +1873,13 @@ async function enrichIngevecDetail(item) {
     })
     const parking = inferParking(html)
     const metro = inferMetroFromText(html)
+    // Detail page is authoritative for subsidy claims.
+    const subsidies = inferHousingSubsidies(html)
     return normalizeItem({
       ...item,
       portal: 'ingevec',
       url,
+      subsidies,
       imageUrl: extras.imageUrl,
       images: extras.images,
       description: extras.description,
@@ -1986,7 +2003,10 @@ async function scrapeEuro() {
         bedroomsMin: dorms.min,
         bedroomsMax: dorms.max,
         bathroomsMin: Number(String(p.bathrooms || '1').match(/\d+/)?.[0] || 1),
-        subsidies: hasSub ? ['DS19', 'DS1'] : ['Sin subsidio'],
+        subsidies: hasSub
+          ? // Euro “subsidio” flag = subsidio a la tasa, not MINVU DS19/DS1.
+            inferHousingSubsidies(`${p.nombre || ''} ${p.slug || ''} subsidio a la tasa`)
+          : ['Sin subsidio'],
         delivery: p.entrega || 'consultar',
         url: `https://www.euroinmobiliaria.cl/proyectos/${p.slug}`,
         imageUrl: p.imagen ? String(p.imagen).replace(/\\\//g, '/') : null,
@@ -1999,7 +2019,7 @@ async function scrapeEuro() {
             p.nombre,
             p.comuna_nombre ? `en ${p.comuna_nombre}` : null,
             p.entrega ? `entrega ${p.entrega}` : null,
-            hasSub ? 'con tipologías sujetas a subsidio' : null,
+            hasSub ? 'con tipologías sujetas a subsidio a la tasa' : null,
           ]
             .filter(Boolean)
             .join(' · '),
@@ -2182,8 +2202,8 @@ async function scrapeAitue() {
         .join(' ')
     const comuna = comunaSlug ? titleCaseComuna(comunaSlug) : 'Chile'
     const price = parseChileUf(uf)
-    // Aitue: subsidio a la tasa available sitewide; DS19 not always. Tag mid-market as Sin subsidio unless name hints.
-    const subsidies = /subsidio|ds19/i.test(b) ? ['DS19'] : ['Sin subsidio']
+    // Aitue: subsidio a la tasa existe en el sitio; DS19 solo con evidencia explícita.
+    const subsidies = inferHousingSubsidies(b)
     const imageUrl =
       b.match(/src="(https:\/\/www\.aitue\.cl\/wp-content\/uploads\/[^"]+)"/)?.[1] ||
       null
@@ -2289,7 +2309,12 @@ async function scrapeGalilea() {
         .map((m) => parseChileUf(m[1]))
         .filter((n) => n >= 1000 && n <= 12000)
       if (!ufs.length) continue
-      const hasSub = /subsidio|DS\s*19/i.test(html)
+      const hasSub = /\bDS\s*19\b|subsidio\s*autom[aá]tico|acogido\s+al\s+subsidio/i.test(
+        html,
+      )
+      const saysSin = /<p>\s*sin\s+subsidio\s*<\/p>/i.test(html)
+      const subsidies =
+        hasSub && !saysSin ? ['DS19'] : inferHousingSubsidies(html)
       let comuna = comunaHint
       if (comuna === 'Chile') {
         for (const c of Object.keys(COMUNA_REGION)) {
@@ -2308,7 +2333,7 @@ async function scrapeGalilea() {
           developer: 'Galilea',
           priceFromUf: Math.min(...ufs),
           priceToUf: Math.max(...ufs),
-          subsidies: hasSub ? ['DS19'] : ['Sin subsidio'],
+          subsidies,
           url,
           bedroomsMin: 2,
           bedroomsMax: 3,
@@ -2464,7 +2489,7 @@ function mergeCatalog(existing, scraped) {
         contactPhone: s.contactPhone || cur.contactPhone || null,
         contactWhatsapp: s.contactWhatsapp || cur.contactWhatsapp || null,
         sources: mergeSources(cur.sources, s.sources?.[0]),
-        subsidies: uniqueSubsidies([...(cur.subsidies || []), ...(s.subsidies || [])]),
+        subsidies: mergeSubsidies(cur.subsidies, s.subsidies),
       })
       updated++
     } else {
@@ -2479,10 +2504,6 @@ function mergeCatalog(existing, scraped) {
     .sort((a, b) => a.name.localeCompare(b.name, 'es'))
 
   return { catalog, updated, created }
-}
-
-function uniqueSubsidies(list) {
-  return [...new Set(list.filter(Boolean))]
 }
 
 function mergeSources(sources = [], incoming) {

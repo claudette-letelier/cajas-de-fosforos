@@ -2020,7 +2020,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "Sin subsidio"
     ],
     "priceFromUf": 3100,
     "priceToUf": 6290,
@@ -7889,7 +7889,6 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "Sin subsidio",
       "DS19"
     ],
     "priceFromUf": 3150,
@@ -11355,8 +11354,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3184,
     "priceToUf": 3859,
@@ -11496,8 +11494,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3285,
     "priceToUf": 3979,
@@ -13368,8 +13365,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3093,
     "priceToUf": 3908,
@@ -13733,8 +13729,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3049,
     "priceToUf": 3883,
@@ -14305,8 +14300,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3461,
     "priceToUf": 3461,
@@ -14784,8 +14778,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3135,
     "priceToUf": 3663,
@@ -15175,7 +15168,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "Sin subsidio"
     ],
     "priceFromUf": 3223,
     "priceToUf": 3223,
@@ -16693,8 +16686,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3401,
     "priceToUf": 3401,
@@ -18072,8 +18064,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 2994,
     "priceToUf": 3622,
@@ -18212,8 +18203,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 2525,
     "priceToUf": 3251,
@@ -19565,8 +19555,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 2725,
     "priceToUf": 2725,
@@ -22223,8 +22212,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 2733,
     "priceToUf": 3824,
@@ -24060,8 +24048,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3063,
     "priceToUf": 3581,
@@ -24709,8 +24696,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "Sin subsidio"
+      "DS19"
     ],
     "priceFromUf": 2204,
     "priceToUf": 2204,
@@ -26191,8 +26177,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 3381,
     "priceToUf": 3381,
@@ -26883,8 +26868,7 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19",
-      "DS1"
+      "Sin subsidio"
     ],
     "priceFromUf": 2791,
     "priceToUf": 3838,
@@ -27402,8 +27386,8 @@ export const catalog = [
 ]
 
 export const catalogMeta = {
-  generatedAt: "2026-10-04",
-  ufClp: UF_CLP,
-  disclaimer:
-    'Precios “desde”, cupos y tipologías cambian. Confirma siempre en el aviso original y en sala de ventas / SERVIU antes de postular o reservar.',
+  "generatedAt": "2026-10-04",
+  "ufClp": 41090,
+  "disclaimer": "Precios “desde”, cupos y tipologías cambian. Confirma siempre en el aviso original y en sala de ventas / SERVIU antes de postular o reservar.",
+  "subsidyAuditAt": "2026-10-05T01:49:59.551Z"
 }
