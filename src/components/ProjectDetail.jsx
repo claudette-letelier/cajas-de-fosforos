@@ -20,6 +20,35 @@ import { reputationLinks } from '../lib/reputation.js'
 import { accessSummary, formatClp, formatUf, ufToClp } from '../lib/search.js'
 import { safeHttpUrl, safeImageUrl, safeWhatsappUrl } from '../lib/security.js'
 import { googleMapsUrl, hasExactLocation, wazeUrl } from '../lib/maps.js'
+import {
+  getComunaIndicators,
+  indicatorsMeta,
+  scoreColor,
+} from '../lib/indicators.js'
+
+function IndicatorBar({ label, score, detail, invert }) {
+  const width = score == null ? 0 : Math.max(4, Math.min(100, score))
+  const color = scoreColor(score, { invert })
+  return (
+    <div className="grid grid-cols-[100px_1fr_auto] items-center gap-2 text-xs">
+      <span className="truncate font-medium text-[var(--ink)]">{label}</span>
+      <div className="h-2.5 overflow-hidden rounded-sm bg-[var(--line)]">
+        <div
+          className="h-full rounded-sm"
+          style={{ width: `${width}%`, background: color }}
+        />
+      </div>
+      <span className="w-8 text-right tabular-nums text-[var(--muted-ink)]">
+        {score == null ? '—' : Math.round(score)}
+      </span>
+      {detail ? (
+        <p className="col-span-3 -mt-0.5 text-[11px] text-[var(--muted-ink)]">
+          {detail}
+        </p>
+      ) : null}
+    </div>
+  )
+}
 
 function GalleryImage({ src, alt }) {
   const [failed, setFailed] = useState(false)
@@ -351,6 +380,61 @@ export default function ProjectDetail({
               </div>
             </div>
           ) : null}
+
+          {(() => {
+            const ind = getComunaIndicators(project.comuna)
+            if (!ind) return null
+            return (
+              <div className="mt-5 rounded-xl border border-[var(--line)] bg-[var(--sand)]/50 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-[var(--ink)]">
+                  Indicadores de la comuna
+                </p>
+                <p className="mt-1 text-sm text-[var(--muted-ink)]">
+                  {ind.comuna}
+                  {ind.year ? ` · datos ${ind.year}` : ''}
+                </p>
+                <div className="mt-3 space-y-2">
+                  <IndicatorBar
+                    label="Delincuencia"
+                    score={ind.crimeScore}
+                    detail={
+                      ind.tasaDmcs100k != null
+                        ? `${ind.tasaDmcs100k} casos DMCS / 100 mil hab. (percentil país)`
+                        : 'Sin dato CEAD'
+                    }
+                  />
+                  <IndicatorBar
+                    label="Oferta viv."
+                    score={ind.offerScore}
+                    invert
+                    detail={`${ind.projects} proyecto(s) en este catálogo`}
+                  />
+                  <IndicatorBar
+                    label="Precio UF"
+                    score={ind.priceScore}
+                    detail={
+                      ind.priceAvgUf != null
+                        ? `Promedio desde ${formatUf(ind.priceAvgUf)}`
+                        : undefined
+                    }
+                  />
+                  <IndicatorBar
+                    label="Conectividad"
+                    score={ind.connectivityScore}
+                    invert
+                    detail={
+                      ind.connectivityAvg != null
+                        ? `Score medio ${ind.connectivityAvg}/5`
+                        : undefined
+                    }
+                  />
+                </div>
+                <p className="mt-3 text-[11px] leading-snug text-[var(--muted-ink)]">
+                  {indicatorsMeta.disclaimer} Fuente: {indicatorsMeta.source}.
+                </p>
+              </div>
+            )
+          })()}
 
           {project.amenities?.length ? (
             <div className="mt-5">
