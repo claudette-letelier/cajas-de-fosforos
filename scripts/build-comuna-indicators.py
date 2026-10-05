@@ -58,12 +58,18 @@ def main() -> None:
         "Abusos sexuales",
     }
     df["fecha"] = pd.to_datetime(df["fecha"])
-    chosen = 2024
-    for year in (2024, 2023):
-        y = df[(df["fecha"].dt.year == year) & (df["delito"].astype(str).isin(DMCS))]
-        if y["fecha"].dt.month.nunique() >= 11:
-            chosen = year
+    # Prefer the latest calendar year with ≥11 months of data
+    chosen = None
+    for year in sorted(df["fecha"].dt.year.unique(), reverse=True):
+        probe = df[
+            (df["fecha"].dt.year == year) & (df["delito"].astype(str).isin(DMCS))
+        ]
+        if probe["fecha"].dt.month.nunique() >= 11:
+            chosen = int(year)
             break
+    if chosen is None:
+        chosen = int(df["fecha"].dt.year.max())
+    print("using CEAD year", chosen)
     y = df[(df["fecha"].dt.year == chosen) & (df["delito"].astype(str).isin(DMCS))]
     agg = (
         y.groupby(["comuna", "region", "cut_comuna"], observed=True)["delito_n"]
