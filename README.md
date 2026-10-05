@@ -54,8 +54,8 @@ Actions. Ese archivo ya incluye las acciones `checkout` y `setup-node` en v7.
 El sitio usa **GoatCounter hosted** (el servicio gratis de ellos), no self-hosted.
 
 1. Crea una cuenta en https://www.goatcounter.com  
-2. Código del sitio: `cajas-de-fosforos` (debe coincidir con el script en `index.html`)  
-3. Panel: https://cajas-de-fosforos.goatcounter.com  
+2. Código del sitio: `claudette` (debe coincidir con el script en `index.html`)  
+3. Panel: https://claudette.goatcounter.com  
 
 Hasta que no crees ese sitio en GoatCounter, el contador no guarda visitas.
 
