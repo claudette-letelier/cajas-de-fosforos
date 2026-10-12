@@ -263,6 +263,11 @@ export default function ProjectDetail({
               <span className="rounded-full border border-[var(--line)] px-2.5 py-1 capitalize">
                 {project.condition}
               </span>
+              {project.availability === 'agotado' ? (
+                <span className="rounded-full bg-[#f3d6d0] px-2.5 py-1 text-[#6d2a22]">
+                  Agotado o sin stock
+                </span>
+              ) : null}
             </div>
           </div>
 

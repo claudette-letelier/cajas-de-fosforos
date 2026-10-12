@@ -17,6 +17,11 @@
  * - Aitue
  * - Bricsa
  * - Galilea
+ * - Santolaya
+ * - Fundamenta
+ * - Deisa
+ * - PY
+ * - Besalco Inmobiliaria
  *
  * Uso: node scripts/update-catalog.mjs
  */
@@ -29,7 +34,7 @@ import {
   extractCoords,
   sanitizeAddress,
 } from './lib/html-location.mjs'
-import { lookupStreetPin, streetPinIsExact } from './lib/street-pin.mjs'
+import { haversineKm, lookupStreetPin, streetPinIsExact } from './lib/street-pin.mjs'
 import {
   extractTipoSubsidio,
   inferHousingSubsidies,
@@ -239,6 +244,9 @@ const COMUNA_REGION = {
   Concon: 'Valparaíso',
   'Villa Alemana': 'Valparaíso',
   Copiapó: 'Atacama',
+  'Bahía Inglesa': 'Atacama',
+  Caldera: 'Atacama',
+  Melipilla: 'Metropolitana',
   Antofagasta: 'Antofagasta',
   Iquique: 'Tarapacá',
   'Alto Hospicio': 'Tarapacá',
@@ -292,6 +300,31 @@ const COMUNA_METRO = {
 }
 
 const stats = { sources: {} }
+
+/** Portales de la propia inmobiliaria. Si el scrape sale bien y el proyecto ya no está, queda agotado. */
+const EXCLUSIVE_PORTALS = new Set([
+  'ecomac',
+  'ingevec',
+  'aitue',
+  'ciclos',
+  'galilea',
+  'los-silos',
+  'socovesa',
+  'bricsa',
+  'euro',
+  'paz',
+  'santolaya',
+  'fundamenta',
+  'deisa',
+  'py',
+  'besalco',
+])
+
+function soldListing(text) {
+  return /sin\s+stock|agotad|vendid[oa]s?|sin\s+disponibilidad|no\s+disponible|100\s*%\s*vendid/i.test(
+    String(text || ''),
+  )
+}
 
 function slugify(text) {
   return String(text)
@@ -579,6 +612,13 @@ function normalizeItem(partial) {
         ? [partial.imageUrl]
         : [],
     description: cleanDescription(partial.description),
+    availability:
+      partial.availability === 'agotado' ||
+      soldListing(
+        [partial.delivery, partial.availabilityNote, partial.name].filter(Boolean).join(' '),
+      )
+        ? 'agotado'
+        : 'disponible',
     amenities: Array.isArray(partial.amenities)
       ? [...new Set(partial.amenities.filter(Boolean))].slice(0, 12)
       : [],
@@ -2095,8 +2135,8 @@ async function scrapeEuro() {
         imageUrl: p.imagen ? String(p.imagen).replace(/\\\//g, '/') : null,
         images: p.imagen ? [String(p.imagen).replace(/\\\//g, '/')] : [],
         address: sanitizeAddress(p.direccion),
-        lat: Number.isFinite(Number(p.lat)) ? Number(p.lat) : null,
-        lng: Number.isFinite(Number(p.lng)) ? Number(p.lng) : null,
+        lat: usableCoord(p.lat, p.lng)?.lat ?? null,
+        lng: usableCoord(p.lat, p.lng)?.lng ?? null,
         description: cleanDescription(
           [
             p.nombre,
@@ -2434,6 +2474,377 @@ async function scrapeGalilea() {
   return out
 }
 
+function plainName(raw) {
+  return decodeHtml(String(raw || '').replace(/<br\s*\/?>/gi, ' '))
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function numCoord(raw) {
+  const n = Number(String(raw ?? '').trim())
+  return Number.isFinite(n) ? n : null
+}
+
+/** 0,0 and points outside Chile are missing coordinates, not a real pin. */
+function usableCoord(lat, lng) {
+  const a = Number(lat)
+  const b = Number(lng)
+  if (!Number.isFinite(a) || !Number.isFinite(b)) return null
+  if (Math.abs(a) < 0.01 && Math.abs(b) < 0.01) return null
+  if (a < -56 || a > -17 || b < -76 || b > -66) return null
+  return { lat: a, lng: b }
+}
+
+/** Drop coordinates that land in another city than the stated comuna. */
+function acceptProjectCoords(lat, lng, comuna, region) {
+  if (lat == null || lng == null) return null
+  if (lat < -56 || lat > -17 || lng < -76 || lng > -66) return null
+  const table = loadComunaCoords()
+  const hit =
+    table[`${comuna}|${region}`] ||
+    Object.entries(table).find(([k]) => k.startsWith(`${comuna}|`))?.[1]
+  if (hit?.lat != null && haversineKm(lat, lng, hit.lat, hit.lng) > 40) return null
+  return { lat, lng }
+}
+
+function comunaSelectMap(html) {
+  const map = new Map()
+  for (const m of html.matchAll(/<option[^>]*value="(\d+)"[^>]*>([^<]+)/gi)) {
+    const label = decodeHtml(m[2]).trim()
+    const known = Object.keys(COMUNA_REGION).find(
+      (c) => c.toLowerCase() === label.toLowerCase(),
+    )
+    if (known) map.set(m[1], known)
+  }
+  return map
+}
+
+function regionFor(comuna) {
+  return COMUNA_REGION[comuna] || 'Metropolitana'
+}
+
+/* -------------------- Santolaya -------------------- */
+async function scrapeSantolaya() {
+  const [html, data] = await Promise.all([
+    fetchText('https://www.santolaya.cl/proyectos-venta'),
+    fetchJsonPost('https://www.santolaya.cl/api/proyecto/traerProyectosFiltro'),
+  ])
+  const rows = data?.proyectos
+  if (!Array.isArray(rows) || !rows.length) throw new Error('listado Santolaya vacío')
+  const comunas = comunaSelectMap(html)
+  return rows
+    .map((p) => {
+      const price = Math.round(Number(p.desde_uf) || 0)
+      if (!price || price < 500) return null
+      const comuna = comunas.get(String(p.id_comuna)) || 'Santiago'
+      const region = regionFor(comuna)
+      const dorms = parseDorms(p.cant_dorm)
+      const baths = parseDorms(p.cant_banos)
+      const delivery = plainName(p.fecha_entrega || p.estado_entrega?.nombre || p.tipo_venta)
+      const coords = acceptProjectCoords(
+        numCoord(p.coor_latitud),
+        numCoord(p.coor_longitud),
+        comuna,
+        region,
+      )
+      const image = p.portada_web
+        ? `https://www.santolaya.cl/images/proyecto/portada/${encodeURI(p.portada_web)}`
+        : null
+      const phone = normalizeChileMobile(p.whatsapp || p.telefono)
+      return normalizeItem({
+        id: `santolaya-${slugify(p.alias || p.nombre)}`,
+        portal: 'santolaya',
+        name: plainName(p.nombre),
+        comuna,
+        region,
+        developer: 'Santolaya',
+        propertyType: /casa/i.test(p.nombre || '') ? 'casa' : 'departamento',
+        priceFromUf: price,
+        bedroomsMin: dorms.min,
+        bedroomsMax: dorms.max,
+        bathroomsMin: baths.min,
+        bathroomsMax: baths.max,
+        subsidies: inferHousingSubsidies(p.descripcion || ''),
+        delivery,
+        availabilityNote: delivery,
+        url: `https://www.santolaya.cl/proyecto/${p.alias}`,
+        imageUrl: image,
+        address: plainName(p.direccion),
+        description: p.descripcion,
+        lat: coords?.lat ?? null,
+        lng: coords?.lng ?? null,
+        contactPhone: phone ? `+${phone}` : null,
+        contactWhatsapp: phone ? `https://wa.me/${phone}` : null,
+        dataGaps: coords
+          ? { locationEstimated: false, locationSource: 'ficha' }
+          : undefined,
+        notes: 'Importado desde Santolaya',
+      })
+    })
+    .filter(Boolean)
+}
+
+async function fetchJsonPost(url) {
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'User-Agent': UA,
+      Accept: 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: '',
+  })
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`)
+  return res.json()
+}
+
+/* -------------------- Fundamenta -------------------- */
+async function scrapeFundamenta() {
+  const html = await fetchText('https://www.fundamenta.cl/proyectos-en-venta/')
+  const cards = html.split(/<article\b/).slice(1)
+  const out = []
+  const seen = new Set()
+  for (const card of cards) {
+    const href = card.match(
+      /href="(https:\/\/www\.fundamenta\.cl\/proyectos-en-venta\/([^"/]+)\/([^"/]+)\/?)"/,
+    )
+    if (!href || seen.has(href[1])) continue
+    seen.add(href[1])
+    const price = parseChileUf(card.match(/UF\s*([\d.]+)/)?.[1] || '')
+    if (!price || price < 500) continue
+    const sector = href[2]
+    const slug = href[3]
+    const tipo = /departamento/i.test(sector) ? 'departamento' : 'casa'
+    const comunaSlug = sector.replace(/^departamento-en-/, '')
+    const comuna = titleCaseComuna(comunaSlug)
+    const dorms = parseDorms(
+      [...card.matchAll(/dormitorio[^>]*>(\d+)/gi)].map((m) => m[1]).join(' '),
+    )
+    const name = slug
+      .split('-')
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ')
+    const image = card.match(/src="(https:\/\/www\.fundamenta\.cl\/wp-content\/uploads\/[^"]+)"/)?.[1]
+    const sold = soldListing(card.replace(/<[^>]+>/g, ' '))
+    out.push(
+      normalizeItem({
+        id: `fundamenta-${slugify(slug)}`,
+        portal: 'fundamenta',
+        name,
+        comuna,
+        developer: 'Fundamenta',
+        propertyType: tipo,
+        priceFromUf: price,
+        bedroomsMin: dorms.min,
+        bedroomsMax: dorms.max,
+        subsidies: inferHousingSubsidies(card),
+        availability: sold ? 'agotado' : 'disponible',
+        url: href[1],
+        imageUrl: image || null,
+        notes: 'Importado desde Fundamenta',
+      }),
+    )
+  }
+  if (!out.length) throw new Error('listado Fundamenta vacío')
+  return out
+}
+
+/* -------------------- Deisa -------------------- */
+async function scrapeDeisa() {
+  const html = await fetchText('https://www.deisa.cl/enventa')
+  const at = html.indexOf('BUSCADOR_PROYECTOS = ')
+  const rows = at < 0 ? null : extractJsonArray(html.slice(at), '[')
+  if (!Array.isArray(rows) || !rows.length) throw new Error('listado Deisa vacío')
+  return rows
+    .map((p) => {
+      const price = Math.round(Number(p.valor_oferta) || Number(p.valor_desde) || 0)
+      if (!price || price < 500) return null
+      const comuna = p.comuna?.nombre || 'Santiago'
+      const region = regionFor(comuna)
+      const dorms = parseDorms(p.dormitorios)
+      const baths = parseDorms(p.banos)
+      const coords = acceptProjectCoords(
+        numCoord(p.latitud),
+        numCoord(p.longitud),
+        comuna,
+        region,
+      )
+      const phone = normalizeChileMobile(p.telefono || p.whatsapp)
+      return normalizeItem({
+        id: `deisa-${slugify(p.alias || p.nombre)}`,
+        portal: 'deisa',
+        name: plainName(p.nombre),
+        comuna,
+        region,
+        developer: 'Deisa',
+        propertyType: 'departamento',
+        priceFromUf: price,
+        bedroomsMin: dorms.min,
+        bedroomsMax: dorms.max,
+        bathroomsMin: baths.min,
+        bathroomsMax: baths.max,
+        subsidies: inferHousingSubsidies(`${p.bajada || ''} ${p.titulo || ''}`),
+        delivery: plainName(p.tipo_entrega || p.buscador_tipo_entrega_label),
+        availability: Number(p.estado) === 1 ? 'disponible' : 'agotado',
+        url: p.link && /^https?:/i.test(p.link)
+          ? p.link
+          : `https://www.deisa.cl/proyecto/${p.alias}`,
+        imageUrl: p.imagen_fachada
+          ? `https://www.deisa.cl/images/proyectos/fachada/${encodeURI(p.imagen_fachada)}`
+          : null,
+        address: plainName(p.direccion),
+        lat: coords?.lat ?? null,
+        lng: coords?.lng ?? null,
+        contactPhone: phone ? `+${phone}` : null,
+        contactWhatsapp: phone ? `https://wa.me/${phone}` : null,
+        dataGaps: coords
+          ? { locationEstimated: false, locationSource: 'ficha' }
+          : undefined,
+        notes: 'Importado desde Deisa',
+      })
+    })
+    .filter(Boolean)
+}
+
+/* -------------------- PY -------------------- */
+async function scrapePy() {
+  const html = await fetchText('https://py.cl/proyectos/')
+  const parts = html.split(/<a href="(https:\/\/py\.cl\/proyecto\/[^"]+)"/)
+  const out = []
+  for (let i = 1; i < parts.length; i += 2) {
+    const url = parts[i]
+    const card = parts[i + 1] || ''
+    const slug = url.split('/').filter(Boolean).pop()
+    const name = plainName(card.match(/card__title">([^<]+)/)?.[1])
+    const comuna = plainName(card.match(/card__place[^>]*>([^<]+)/)?.[1]) || 'Chile'
+    const price = parseChileUf(card.match(/UF\s*(?:&nbsp;)?\s*([\d.]+)/)?.[1] || '')
+    if (!name || !price || price < 500) continue
+    const dorms = parseDorms(card.match(/<strong>([^<]*dorm[^<]*|[^<]+)<\/strong>/i)?.[1] || card)
+    const tipo = /\/casas-/i.test(url) ? 'casa' : 'departamento'
+    const image = card.match(/src="(https:\/\/py\.cl\/wp-content\/uploads\/[^"]+)"/)?.[1] || null
+    const text = card.replace(/<[^>]+>/g, ' ')
+    out.push(
+      normalizeItem({
+        id: `py-${slugify(slug)}`,
+        portal: 'py',
+        name,
+        comuna,
+        developer: 'PY',
+        propertyType: tipo,
+        priceFromUf: price,
+        bedroomsMin: dorms.min,
+        bedroomsMax: dorms.max,
+        subsidies: inferHousingSubsidies(text),
+        availability: soldListing(text) ? 'agotado' : 'disponible',
+        url,
+        imageUrl: image,
+        notes: 'Importado desde PY',
+      }),
+    )
+  }
+  if (!out.length) throw new Error('listado PY vacío')
+  return out
+}
+
+/* -------------------- Besalco -------------------- */
+async function scrapeBesalco() {
+  const html = await fetchText('https://www.besalcoinmobiliaria.cl/proyectos/')
+  const scripts = [...new Set([...html.matchAll(/\/_nuxt\/[^"'\s>]+\.js/g)].map((m) => m[0]))]
+  let bundle = ''
+  for (const src of scripts) {
+    const js = await fetchText(`https://www.besalcoinmobiliaria.cl${src}`)
+    if (js.includes('typeOfProject') && js.includes('commune:')) {
+      bundle = js
+      break
+    }
+  }
+  if (!bundle) throw new Error('Besalco no publicó el listado')
+  const start = bundle.indexOf('[{id:')
+  if (start < 0) throw new Error('listado Besalco no reconocible')
+  const objects = splitJsObjects(bundle, start + 1)
+  const out = []
+  for (const obj of objects) {
+    const available = /available:!0/.test(obj)
+    if (!available || soldListing(jsString(obj, 'status'))) continue
+    const title = jsString(obj, 'title')
+    const path = jsString(obj, 'path')
+    const price = Math.round(Number(jsString(obj, 'value')) || 0)
+    if (!title || !path || !price || price < 500 || price > 80000) continue
+    const comuna = jsString(obj, 'commune') || 'Chile'
+    const tipo = /casa/i.test(jsString(obj, 'type')) ? 'casa' : 'departamento'
+    const dorms = parseDorms(obj.match(/dorms:"([^"]+)"/)?.[1] || '')
+    const baths = parseDorms(obj.match(/bath:"([^"]+)"/)?.[1] || '')
+    const image = jsString(obj, 'cardImage')
+    out.push(
+      normalizeItem({
+        id: `besalco-${slugify(path)}`,
+        portal: 'besalco',
+        name: title,
+        comuna,
+        developer: 'Besalco',
+        propertyType: tipo,
+        priceFromUf: price,
+        bedroomsMin: dorms.min,
+        bedroomsMax: dorms.max,
+        bathroomsMin: baths.min,
+        bathroomsMax: baths.max,
+        subsidies: inferHousingSubsidies(obj),
+        delivery: jsString(obj, 'status') || 'consultar',
+        description: jsString(obj, 'description'),
+        url: `https://www.besalcoinmobiliaria.cl/${path}`,
+        imageUrl: image
+          ? `https://www.besalcoinmobiliaria.cl${image.startsWith('/') ? '' : '/'}${image}`
+          : null,
+        notes: 'Importado desde Besalco Inmobiliaria',
+      }),
+    )
+  }
+  if (!out.length) throw new Error('listado Besalco vacío')
+  return out
+}
+
+function jsString(obj, key) {
+  const m = obj.match(new RegExp(`${key}:"((?:\\\\.|[^"\\\\])*)"`))
+  return m ? m[1].replace(/\\"/g, '"') : ''
+}
+
+function splitJsObjects(js, from) {
+  const out = []
+  let i = from
+  while (i < js.length && js[i] !== ']') {
+    if (js[i] !== '{') {
+      i++
+      continue
+    }
+    let depth = 0
+    let quote = false
+    let esc = false
+    let end = i
+    for (let j = i; j < js.length; j++) {
+      const ch = js[j]
+      if (quote) {
+        if (esc) esc = false
+        else if (ch === '\\') esc = true
+        else if (ch === '"') quote = false
+        continue
+      }
+      if (ch === '"') quote = true
+      else if (ch === '{') depth++
+      else if (ch === '}') {
+        depth--
+        if (depth === 0) {
+          end = j + 1
+          break
+        }
+      }
+    }
+    out.push(js.slice(i, end))
+    i = end
+    if (out.length > 400) break
+  }
+  return out
+}
+
 /* -------------------- Merge -------------------- */
 function mergeCatalog(existing, scraped) {
   const byId = new Map()
@@ -2489,8 +2900,8 @@ function mergeCatalog(existing, scraped) {
         description: s.description || cur.description || null,
         amenities:
           s.amenities?.length ? s.amenities : cur.amenities?.length ? cur.amenities : [],
-        lat: s.lat ?? cur.lat ?? null,
-        lng: s.lng ?? cur.lng ?? null,
+        lat: usableCoord(s.lat, s.lng)?.lat ?? usableCoord(cur.lat, cur.lng)?.lat ?? null,
+        lng: usableCoord(s.lat, s.lng)?.lng ?? usableCoord(cur.lat, cur.lng)?.lng ?? null,
         address: sanitizeAddress(s.address) || sanitizeAddress(cur.address),
         contactPhone: s.contactPhone || cur.contactPhone || null,
         contactWhatsapp: s.contactWhatsapp || cur.contactWhatsapp || null,
@@ -2550,6 +2961,7 @@ function mergeCatalog(existing, scraped) {
           betterDeveloper(s.developer) ||
           betterDeveloper(cur.developer) ||
           (s.developer || cur.developer || 'Consultar portal').replace(/\+/g, ' '),
+        availability: s.availability === 'agotado' ? 'agotado' : 'disponible',
         delivery:
           cur.delivery && cur.delivery !== 'consultar' ? cur.delivery : s.delivery,
         notes: fromFicha ? s.notes : cur.notes || s.notes,
@@ -2566,8 +2978,8 @@ function mergeCatalog(existing, scraped) {
         description: s.description || cur.description || null,
         amenities:
           s.amenities?.length ? s.amenities : cur.amenities?.length ? cur.amenities : [],
-        lat: s.lat ?? cur.lat ?? null,
-        lng: s.lng ?? cur.lng ?? null,
+        lat: usableCoord(s.lat, s.lng)?.lat ?? usableCoord(cur.lat, cur.lng)?.lat ?? null,
+        lng: usableCoord(s.lat, s.lng)?.lng ?? usableCoord(cur.lat, cur.lng)?.lng ?? null,
         address: sanitizeAddress(s.address) || sanitizeAddress(cur.address),
         contactPhone: s.contactPhone || cur.contactPhone || null,
         contactWhatsapp: s.contactWhatsapp || cur.contactWhatsapp || null,
@@ -2587,6 +2999,51 @@ function mergeCatalog(existing, scraped) {
     .sort((a, b) => a.name.localeCompare(b.name, 'es'))
 
   return { catalog, updated, created }
+}
+
+/**
+ * A project that disappears from its own developer site is kept, but marked
+ * agotado. A failed fetch does not count: Paz or Euro being down must not
+ * hide projects that were still for sale.
+ */
+function markMissingAsAgotado(catalog, scraped) {
+  const freshPortals = new Set(
+    Object.entries(stats.sources)
+      .filter(
+        ([name, info]) => EXCLUSIVE_PORTALS.has(name) && info?.ok && info.count > 0,
+      )
+      .map(([name]) => name),
+  )
+  const liveKeys = new Set()
+  for (const row of scraped) {
+    const portal = row.sources?.[0]?.portal
+    if (!stats.sources[portal]?.ok) continue
+    liveKeys.add(row.id)
+    liveKeys.add(`${portal}|${slugify(row.name)}|${slugify(row.comuna)}`)
+    liveKeys.add(`${slugify(row.name)}|${slugify(row.comuna)}`)
+  }
+
+  let agotados = 0
+  for (const project of catalog) {
+    if (!project.availability) project.availability = 'disponible'
+    const owned = [...new Set((project.sources || []).map((s) => s.portal))].filter((p) =>
+      EXCLUSIVE_PORTALS.has(p),
+    )
+    const checked = owned.filter((p) => freshPortals.has(p))
+    if (!checked.length || checked.length !== owned.length) continue
+    const key = `${slugify(project.name)}|${slugify(project.comuna)}`
+    const stillListed =
+      liveKeys.has(project.id) ||
+      checked.some((portal) => liveKeys.has(`${portal}|${key}`)) ||
+      liveKeys.has(key)
+    if (stillListed) continue
+    if (project.availability !== 'agotado') agotados++
+    project.availability = 'agotado'
+    if (!/ya no aparece en el listado en venta/i.test(project.notes || '')) {
+      project.notes = `${project.notes || ''} Ya no aparece en el listado en venta.`.trim()
+    }
+  }
+  return agotados
 }
 
 function mergeSources(sources = [], incoming) {
@@ -2670,6 +3127,11 @@ async function main() {
     safeSource('aitue', () => scrapeAitue()),
     safeSource('bricsa', () => scrapeBricsa()),
     safeSource('galilea', () => scrapeGalilea()),
+    safeSource('santolaya', () => scrapeSantolaya()),
+    safeSource('fundamenta', () => scrapeFundamenta()),
+    safeSource('deisa', () => scrapeDeisa()),
+    safeSource('py', () => scrapePy()),
+    safeSource('besalco', () => scrapeBesalco()),
   ])
 
   const scraped = scrapedBatches.flat()
@@ -2689,6 +3151,10 @@ async function main() {
           created: 0,
         }
       : mergeCatalog(existing, scraped)
+  const agotados =
+    only === 'details' || only === 'locations'
+      ? 0
+      : markMissingAsAgotado(catalog, scraped)
   writeFileSync(CATALOG_PATH, serializeCatalog(catalog, ufClp, generatedAt))
   writeFileSync(
     META_PATH,
@@ -2700,6 +3166,7 @@ async function main() {
         catalogSize: catalog.length,
         updated,
         created,
+        agotados,
         sources: stats.sources,
       },
       null,
@@ -2707,7 +3174,9 @@ async function main() {
     ),
   )
 
-  console.log(`OK catalog=${catalog.length} updated=${updated} created=${created}`)
+  console.log(
+    `OK catalog=${catalog.length} updated=${updated} created=${created} agotados=${agotados}`,
+  )
   console.log(JSON.stringify(stats.sources, null, 2))
 }
 

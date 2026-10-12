@@ -1,70 +1,87 @@
 {
   "generatedAt": "2026-10-12",
-  "ufClp": 41090,
-  "scraped": 437,
-  "catalogSize": 432,
-  "updated": 433,
-  "created": 4,
+  "ufClp": 41147,
+  "scraped": 578,
+  "catalogSize": 520,
+  "updated": 559,
+  "created": 19,
+  "agotados": 0,
   "sources": {
     "mindicador": {
-      "ok": false,
-      "error": "HTTP 502 for https://mindicador.cl/api/uf",
-      "ufClp": 41090,
-      "fallback": true
-    },
-    "ecomac": {
       "ok": true,
-      "count": 18
+      "ufClp": 41147
     },
-    "ingevec": {
+    "fundamenta": {
       "ok": true,
-      "count": 21
+      "count": 19
+    },
+    "paz": {
+      "ok": true,
+      "count": 25
     },
     "aitue": {
       "ok": true,
       "count": 14
     },
-    "ciclos": {
-      "ok": true,
-      "count": 2
-    },
     "galilea": {
       "ok": true,
       "count": 1
     },
-    "los-silos": {
+    "ingevec": {
       "ok": true,
-      "count": 14
+      "count": 21
+    },
+    "ecomac": {
+      "ok": true,
+      "count": 18
+    },
+    "euro": {
+      "ok": true,
+      "count": 18
     },
     "socovesa": {
       "ok": true,
       "count": 21
     },
+    "deisa": {
+      "ok": true,
+      "count": 11
+    },
+    "py": {
+      "ok": true,
+      "count": 27
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 27
+    },
+    "ciclos": {
+      "ok": true,
+      "count": 2
+    },
+    "besalco": {
+      "ok": true,
+      "count": 14
+    },
+    "los-silos": {
+      "ok": true,
+      "count": 14
+    },
     "bricsa": {
       "ok": true,
       "count": 5
-    },
-    "subsidios-cl": {
-      "ok": true,
-      "count": 120
-    },
-    "euro": {
-      "ok": false,
-      "error": "fetch failed",
-      "count": 0
-    },
-    "enlace-bci": {
-      "ok": true,
-      "count": 39
     },
     "usatusubsidio": {
       "ok": true,
       "count": 182
     },
-    "paz": {
-      "ok": false,
-      "error": "terminated",
-      "count": 0
+    "subsidios-cl": {
+      "ok": true,
+      "count": 120
+    },
+    "enlace-bci": {
+      "ok": true,
+      "count": 39
     }
   }
 }

@@ -96,6 +96,36 @@ export const portals = [
     url: 'https://www.galilea.cl/',
     role: 'Proyectos Galilea (O’Higgins y más)',
   },
+  {
+    id: 'santolaya',
+    name: 'Santolaya',
+    url: 'https://www.santolaya.cl/proyectos-venta',
+    role: 'Departamentos Santolaya en venta',
+  },
+  {
+    id: 'fundamenta',
+    name: 'Fundamenta',
+    url: 'https://www.fundamenta.cl/proyectos-en-venta/',
+    role: 'Proyectos Fundamenta en venta',
+  },
+  {
+    id: 'deisa',
+    name: 'Deisa',
+    url: 'https://www.deisa.cl/enventa',
+    role: 'Departamentos Deisa en venta',
+  },
+  {
+    id: 'py',
+    name: 'PY',
+    url: 'https://py.cl/proyectos/',
+    role: 'Casas y departamentos PY',
+  },
+  {
+    id: 'besalco',
+    name: 'Besalco',
+    url: 'https://www.besalcoinmobiliaria.cl/proyectos/',
+    role: 'Casas y departamentos Besalco en venta',
+  },
 ]
 
 export const REGIONS = [

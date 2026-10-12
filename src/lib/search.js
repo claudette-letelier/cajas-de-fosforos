@@ -95,6 +95,10 @@ export function filterCatalog(items, filters) {
       return false
     if (filters.condition !== 'todos' && p.condition !== filters.condition) return false
 
+    const availability = filters.availability || 'en-venta'
+    if (availability === 'en-venta' && p.availability === 'agotado') return false
+    if (availability === 'agotado' && p.availability !== 'agotado') return false
+
     if (filters.bedrooms > 0) {
       if (p.bedroomsMax < filters.bedrooms) return false
     }
