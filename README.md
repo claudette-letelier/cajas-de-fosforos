@@ -53,10 +53,11 @@ precio y conectividad de la **comuna** (no del barrio).
 npm run build:indicators   # regenera src/data/comuna-indicators.json
 ```
 
-Si quieres el refresco automático diario en GitHub, copia
-`scripts/github-daily-update.yml` a `.github/workflows/daily-update.yml`
-(desde la web de GitHub o con un token que permita workflows) y actívalo en
-Actions. Ese archivo ya incluye las acciones `checkout` y `setup-node` en v7.
+El refresco automático está en `.github/workflows/daily-update.yml`.
+GitHub lo corre cerca de las 04:00 de Chile: actualiza el catálogo en `main`
+y publica el sitio en `gh-pages`. También se puede lanzar a mano en la pestaña
+Actions, con **Run workflow**. La copia en `scripts/github-daily-update.yml`
+es la misma receta, por si hay que leerla fuera de Actions.
 
 ## Visitas (GoatCounter)
 
