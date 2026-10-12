@@ -34,7 +34,12 @@ import {
   extractCoords,
   sanitizeAddress,
 } from './lib/html-location.mjs'
-import { haversineKm, lookupStreetPin, streetPinIsExact } from './lib/street-pin.mjs'
+import {
+  haversineKm,
+  lookupStreetPin,
+  pinMatchesComuna,
+  streetPinIsExact,
+} from './lib/street-pin.mjs'
 import {
   extractTipoSubsidio,
   inferHousingSubsidies,
@@ -772,9 +777,19 @@ function inferMetroFromText(text) {
   }
 }
 
+function fichaPinOk(lat, lng, item) {
+  return pinMatchesComuna(lat, lng, item?.comuna, loadComunaCoords())
+}
+
 /** Prefer ficha coords; else a street/number pin; else sector; else comuna centroid. */
 function resolveLocation(item, htmlCoords) {
-  if (htmlCoords?.lat != null && htmlCoords?.lng != null) {
+  // Subsidios and other fichas sometimes publish a pin in another region
+  // (Las Lobelias is Placilla, Valparaíso, but the page says Argentina).
+  if (
+    htmlCoords?.lat != null &&
+    htmlCoords?.lng != null &&
+    fichaPinOk(htmlCoords.lat, htmlCoords.lng, item)
+  ) {
     return {
       lat: htmlCoords.lat,
       lng: htmlCoords.lng,
@@ -786,7 +801,8 @@ function resolveLocation(item, htmlCoords) {
     item.lat != null &&
     item.lng != null &&
     item.dataGaps?.locationEstimated === false &&
-    item.dataGaps?.locationSource !== 'calle'
+    item.dataGaps?.locationSource !== 'calle' &&
+    fichaPinOk(item.lat, item.lng, item)
   ) {
     return {
       lat: item.lat,
@@ -3046,6 +3062,41 @@ function markMissingAsAgotado(catalog, scraped) {
   return agotados
 }
 
+/** Replace pins that landed far from every known centroid of that comuna. */
+function healFarPins(catalog) {
+  let n = 0
+  for (const item of catalog) {
+    if (item.lat == null || item.lng == null) continue
+    if (pinMatchesComuna(item.lat, item.lng, item.comuna, loadComunaCoords())) continue
+    const location = resolveLocation(
+      {
+        ...item,
+        lat: null,
+        lng: null,
+        dataGaps: {
+          ...(item.dataGaps || {}),
+          locationEstimated: true,
+          locationSource: null,
+        },
+      },
+      null,
+    )
+    if (location.lat == null) continue
+    item.lat = location.lat
+    item.lng = location.lng
+    item.dataGaps = {
+      ...(item.dataGaps || {}),
+      locationEstimated: location.locationEstimated,
+      locationSource: location.locationSource || null,
+    }
+    n++
+    console.log(
+      `  pin lejos de ${item.comuna}: ${item.name} → ${location.locationSource}`,
+    )
+  }
+  return n
+}
+
 function mergeSources(sources = [], incoming) {
   if (!incoming) return sources || []
   const list = [...(sources || [])]
@@ -3094,6 +3145,25 @@ async function main() {
     : { ok: false, error: uf.error, ufClp, fallback: true }
 
   const only = (process.env.ONLY || '').toLowerCase()
+  if (only === 'pins') {
+    const existing = await loadExistingCatalog()
+    const healed = healFarPins(existing)
+    writeFileSync(CATALOG_PATH, serializeCatalog(existing, ufClp, generatedAt))
+    let meta = {}
+    if (existsSync(META_PATH)) {
+      try {
+        meta = JSON.parse(readFileSync(META_PATH, 'utf8'))
+      } catch {
+        meta = {}
+      }
+    }
+    meta.generatedAt = generatedAt
+    meta.ufClp = ufClp
+    meta.pinsHealed = healed
+    writeFileSync(META_PATH, JSON.stringify(meta, null, 2))
+    console.log(`Pines corregidos: ${healed}. Catálogo ${existing.length}`)
+    return
+  }
   const scrapedBatches =
     only === 'locations'
       ? [await enrichLocations(await loadExistingCatalog())]
@@ -3155,6 +3225,8 @@ async function main() {
     only === 'details' || only === 'locations'
       ? 0
       : markMissingAsAgotado(catalog, scraped)
+  const healed = healFarPins(catalog)
+  if (healed) console.log(`Pines corregidos por estar lejos de su comuna: ${healed}`)
   writeFileSync(CATALOG_PATH, serializeCatalog(catalog, ufClp, generatedAt))
   writeFileSync(
     META_PATH,

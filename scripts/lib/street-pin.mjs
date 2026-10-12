@@ -147,6 +147,28 @@ export function geocodeAcceptable(hit, { comuna, centroid, street, number, comun
   return true
 }
 
+/**
+ * A ficha coordinate is usable when it sits near this comuna.
+ * The same name can exist under a wrong region (Concepción labeled
+ * Metropolitana); any matching comuna centroid within maxKm counts.
+ * No known centroid means we do not reject the pin.
+ */
+export function pinMatchesComuna(lat, lng, comuna, table, maxKm = 120) {
+  if (lat == null || lng == null) return false
+  const want = fold(comuna)
+  if (!want || want === 'chile') return lat >= -56 && lat <= -17 && lng >= -76 && lng <= -66
+  let best = null
+  for (const [key, value] of Object.entries(table || {})) {
+    if (!value || value.lat == null || value.lng == null) continue
+    const name = key.split('|')[0]
+    if (fold(name) !== want) continue
+    const km = haversineKm(lat, lng, value.lat, value.lng)
+    if (best == null || km < best) best = km
+  }
+  if (best == null) return lat >= -56 && lat <= -17 && lng >= -76 && lng <= -66
+  return best <= maxKm
+}
+
 export function haversineKm(lat1, lng1, lat2, lng2) {
   const R = 6371
   const p = Math.PI / 180

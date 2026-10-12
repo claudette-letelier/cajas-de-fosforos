@@ -77,6 +77,14 @@ describe('catalog schema', () => {
     }
   })
 
+  it('Las Lobelias stays in Placilla, not across the Andes', () => {
+    const p = catalog.find((x) => x.id === 'sub-251-condominio-las-lobelias')
+    assert.ok(p)
+    assert.ok(p.lng < -71.4, `lng ${p.lng}`)
+    assert.ok(p.lat > -33.3 && p.lat < -33.0, `lat ${p.lat}`)
+    assert.equal(p.dataGaps?.locationSource, 'sector:placilla')
+  })
+
   it('UTS Santa Elena 1670 is FOGAES not DS19', () => {
     const p = catalog.find((x) => x.id === 'uts-santa-elena-1670')
     assert.ok(p)

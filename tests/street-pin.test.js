@@ -2,6 +2,7 @@ import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
 import {
   geocodeAcceptable,
+  pinMatchesComuna,
   streetFromAddress,
   streetFromName,
   streetPinIsExact,
@@ -106,6 +107,28 @@ describe('streetPinKeys', () => {
         },
         item,
       ),
+      true,
+    )
+  })
+})
+
+describe('pinMatchesComuna', () => {
+  const table = {
+    'Valparaíso|Valparaíso': { lat: -33.0458456, lng: -71.6196749 },
+    'Concepcion|Metropolitana': { lat: -33.45, lng: -70.66 },
+    'Concepción|Biobío': { lat: -36.8270698, lng: -73.0502064 },
+  }
+
+  it('rejects a Valparaíso ficha that lands in Argentina', () => {
+    assert.equal(
+      pinMatchesComuna(-36.723306, -70.274735, 'Valparaíso', table),
+      false,
+    )
+  })
+
+  it('keeps a Concepción pin when another region label is wrong', () => {
+    assert.equal(
+      pinMatchesComuna(-36.788013, -73.0476297, 'Concepcion', table),
       true,
     )
   })

@@ -8187,8 +8187,8 @@ export const catalog = [
     "accessLabel": "Metrotren · Valparaíso / Puerto",
     "accessDetail": "Red Metrotren + micros locales · terminales Barón / Rodoviario",
     "accessMode": "metrotren",
-    "lat": -36.723306,
-    "lng": -70.274735,
+    "lat": -33.1148867,
+    "lng": -71.5679796,
     "address": "Francisco Echaurren 614. Placilla, Valpara\\u00edso.",
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -8215,8 +8215,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
-      "locationEstimated": false,
-      "locationSource": "ficha",
+      "locationEstimated": true,
+      "locationSource": "sector:placilla",
       "priceIsDesde": true
     },
     "availability": "disponible"
