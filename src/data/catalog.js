@@ -8516,7 +8516,8 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2200,
     "priceToUf": 2700,
@@ -12507,7 +12508,8 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2150,
     "priceToUf": 2800,
@@ -13724,6 +13726,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -13778,6 +13782,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -13832,6 +13838,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -13886,6 +13894,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -13940,6 +13950,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -13994,6 +14006,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14048,6 +14062,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14102,6 +14118,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14156,6 +14174,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14210,6 +14230,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14264,6 +14286,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14318,6 +14342,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14372,6 +14398,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14426,6 +14454,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14480,6 +14510,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14534,6 +14566,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -17187,6 +17221,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -18404,6 +18440,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -22070,6 +22108,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
