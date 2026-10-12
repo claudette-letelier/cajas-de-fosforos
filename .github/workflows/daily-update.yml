@@ -52,6 +52,9 @@ jobs:
 
       - name: Update catalog from public sources
         if: steps.gate.outputs.run == 'true'
+        # A down portal must not skip the build. The script already keeps
+        # going when one source fails; this covers an unexpected crash.
+        continue-on-error: true
         run: npm run update:catalog
 
       - name: Commit catalog if changed

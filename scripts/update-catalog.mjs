@@ -429,11 +429,45 @@ async function safeSource(name, fn) {
   }
 }
 
+/** Last published UF, used when mindicador.cl is down. */
+function readPreviousUf() {
+  if (existsSync(META_PATH)) {
+    try {
+      const n = Number(JSON.parse(readFileSync(META_PATH, 'utf8')).ufClp)
+      if (Number.isFinite(n) && n >= 1000) return Math.round(n)
+    } catch {
+      /* ignore a broken meta file */
+    }
+  }
+  if (existsSync(CATALOG_PATH)) {
+    const match = readFileSync(CATALOG_PATH, 'utf8').match(
+      /export const UF_CLP = (\d+)/,
+    )
+    if (match) return Number(match[1])
+  }
+  return null
+}
+
+/**
+ * UF is only a display conversion. A 502 from mindicador.cl must not abort
+ * the catalog refresh; the previous value stays until the API answers again.
+ */
 async function fetchUf() {
-  const data = await fetchJson('https://mindicador.cl/api/uf')
-  const value = data?.serie?.[0]?.valor
-  if (!value) throw new Error('UF value missing')
-  return Math.round(value)
+  try {
+    const data = await fetchJson('https://mindicador.cl/api/uf')
+    const value = Number(data?.serie?.[0]?.valor)
+    if (!Number.isFinite(value) || value < 1000) {
+      throw new Error('UF value missing')
+    }
+    return { ufClp: Math.round(value), ok: true }
+  } catch (err) {
+    const previous = readPreviousUf()
+    if (!previous) throw err
+    console.warn(
+      `mindicador.cl no respondió (${err.message}). Se mantiene la UF anterior: ${previous}`,
+    )
+    return { ufClp: previous, ok: false, error: err.message }
+  }
 }
 
 function normalizeRegion(raw) {
@@ -2595,9 +2629,12 @@ async function main() {
   const generatedAt = new Date().toISOString().slice(0, 10)
   console.log('Cajas de Fósforos multi-source update', generatedAt)
 
-  const ufClp = await fetchUf()
-  console.log('UF del día:', ufClp)
-  stats.sources.mindicador = { ok: true, ufClp }
+  const uf = await fetchUf()
+  const ufClp = uf.ufClp
+  console.log(uf.ok ? 'UF del día:' : 'UF anterior:', ufClp)
+  stats.sources.mindicador = uf.ok
+    ? { ok: true, ufClp }
+    : { ok: false, error: uf.error, ufClp, fallback: true }
 
   const only = (process.env.ONLY || '').toLowerCase()
   const scrapedBatches =
