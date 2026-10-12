@@ -29,6 +29,7 @@ import {
   extractCoords,
   sanitizeAddress,
 } from './lib/html-location.mjs'
+import { lookupStreetPin, streetPinIsExact } from './lib/street-pin.mjs'
 import {
   extractTipoSubsidio,
   inferHousingSubsidies,
@@ -42,8 +43,10 @@ const CATALOG_PATH = path.join(ROOT, 'src/data/catalog.js')
 const META_PATH = path.join(ROOT, 'src/data/update-meta.json')
 const COMUNA_COORDS_PATH = path.join(ROOT, 'src/data/comuna-coords.json')
 const LOCALITY_COORDS_PATH = path.join(ROOT, 'src/data/locality-coords.json')
+const STREET_COORDS_PATH = path.join(ROOT, 'src/data/street-coords.json')
 let COMUNA_COORDS = null
 let LOCALITY_COORDS = null
+let STREET_COORDS = null
 function loadComunaCoords() {
   if (COMUNA_COORDS) return COMUNA_COORDS
   if (!existsSync(COMUNA_COORDS_PATH)) {
@@ -70,11 +73,25 @@ function loadLocalityCoords() {
   }
   return LOCALITY_COORDS
 }
+function loadStreetCoords() {
+  if (STREET_COORDS) return STREET_COORDS
+  if (!existsSync(STREET_COORDS_PATH)) {
+    STREET_COORDS = {}
+    return STREET_COORDS
+  }
+  try {
+    STREET_COORDS = JSON.parse(readFileSync(STREET_COORDS_PATH, 'utf8'))
+  } catch {
+    STREET_COORDS = {}
+  }
+  return STREET_COORDS
+}
 
 /** Known sectors/barrios more precise than the official comuna field. */
 const LOCALITY_HINTS = [
   { re: /\bcurauma\b/i, key: 'curauma' },
   { re: /\bplacilla\s+de\s+pe[ñn]uelas\b/i, key: 'placilla-de-penuelas' },
+  { re: /\bre[ñn]aca\s+alto\b/i, key: 'renaca-alto' },
   { re: /\bre[ñn]aca\b/i, key: 'renaca' },
   { re: /\bconc[oó]n\b/i, key: 'concon' },
   { re: /\bpe[ñn]ablanca\b/i, key: 'penablanca' },
@@ -97,6 +114,7 @@ const LOCALITY_HINTS = [
   { re: /\bvilla\s+alemana\b/i, key: 'villa-alemana' },
   { re: /\bsan\s+felipe\b/i, key: 'san-felipe' },
   { re: /\bpuerto\s+montt\b/i, key: 'puerto-montt' },
+  { re: /\bpe[ñn]uelas\b/i, key: 'penuelas-coquimbo', region: 'Coquimbo' },
   // Placilla alone (as sector/comuna label) → Peñuelas, not Cerro Yungay
   { re: /\bplacilla\b/i, key: 'placilla' },
 ]
@@ -122,7 +140,8 @@ function extractLocalityKey(item) {
     .filter(Boolean)
     .join('\n')
   for (const hint of LOCALITY_HINTS) {
-    if (hint.re.test(blob)) return hint.key
+    if (hint.re.test(blob) && (!hint.region || hint.region === item.region))
+      return hint.key
   }
   const override =
     COMUNA_QUERY_OVERRIDES[`${item.comuna}|${item.region}`] ||
@@ -679,7 +698,7 @@ function inferMetroFromText(text) {
   }
 }
 
-/** Prefer ficha coords; else sector from description; else comuna centroid. */
+/** Prefer ficha coords; else a street/number pin; else sector; else comuna centroid. */
 function resolveLocation(item, htmlCoords) {
   if (htmlCoords?.lat != null && htmlCoords?.lng != null) {
     return {
@@ -692,13 +711,25 @@ function resolveLocation(item, htmlCoords) {
   if (
     item.lat != null &&
     item.lng != null &&
-    item.dataGaps?.locationEstimated === false
+    item.dataGaps?.locationEstimated === false &&
+    item.dataGaps?.locationSource !== 'calle'
   ) {
     return {
       lat: item.lat,
       lng: item.lng,
       locationEstimated: false,
       locationSource: item.dataGaps?.locationSource || 'ficha',
+    }
+  }
+
+  const street = lookupStreetPin(loadStreetCoords(), item)
+  if (street) {
+    const exact = streetPinIsExact(street, item)
+    return {
+      lat: street.lat,
+      lng: street.lng,
+      locationEstimated: !exact,
+      locationSource: 'calle',
     }
   }
 
@@ -713,8 +744,10 @@ function resolveLocation(item, htmlCoords) {
     }
   }
 
-  // Keep previous estimated pin only if we have no better locality hint
-  if (item.lat != null && item.lng != null && !localityKey) {
+  const bogusComuna = !item.comuna || /^chile$/i.test(item.comuna)
+  // Keep previous estimated pin only if we have no better locality hint.
+  // "Chile" is not a comuna: Nominatim resolves it to a village (Illapel / Plaza de Armas).
+  if (item.lat != null && item.lng != null && !localityKey && !bogusComuna) {
     return {
       lat: item.lat,
       lng: item.lng,
@@ -724,6 +757,14 @@ function resolveLocation(item, htmlCoords) {
   }
 
   const table = loadComunaCoords()
+  if (bogusComuna) {
+    return {
+      lat: null,
+      lng: null,
+      locationEstimated: true,
+      locationSource: null,
+    }
+  }
   const key = `${item.comuna}|${item.region}`
   let byComuna = table[key]
   if (!byComuna?.lat) {

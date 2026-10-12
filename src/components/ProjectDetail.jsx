@@ -167,16 +167,26 @@ export default function ProjectDetail({
               {project.dataGaps?.locationEstimated ? (
                 <span className="text-[#9a3412]">
                   · pin aprox.
-                  {String(project.dataGaps?.locationSource || '').startsWith(
-                    'sector:',
+                  {String(project.dataGaps?.locationSource || '') === 'calle' ||
+                  String(project.dataGaps?.locationSource || '').startsWith(
+                    'calle:',
                   )
-                    ? ` (${String(project.dataGaps.locationSource)
-                        .slice('sector:'.length)
-                        .replace(/-/g, ' ')})`
-                    : ' por comuna'}
+                    ? ' por dirección'
+                    : String(project.dataGaps?.locationSource || '').startsWith(
+                        'sector:',
+                      )
+                      ? ` (${String(project.dataGaps.locationSource)
+                          .slice('sector:'.length)
+                          .replace(/-/g, ' ')})`
+                      : ' por comuna'}
                 </span>
               ) : project.lat != null ? (
-                <span className="text-[var(--teal)]">· pin según ficha</span>
+                <span className="text-[var(--teal)]">
+                  ·{' '}
+                  {project.dataGaps?.locationSource === 'calle'
+                    ? 'pin según dirección'
+                    : 'pin según ficha'}
+                </span>
               ) : null}
             </p>
           </div>

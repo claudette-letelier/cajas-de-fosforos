@@ -1,0 +1,152 @@
+{
+  "central sur 210|concepcion": {
+    "lat": -36.8320182,
+    "lng": -73.0624929,
+    "display": "Central Sur, Barrio Cívico, Concepción, Provincia de Concepción, Región del Biobío, 4070713, Chile",
+    "precision": "street"
+  },
+  "el trebol 1393|padre hurtado": {
+    "lat": -33.5682049,
+    "lng": -70.7928619,
+    "display": "El Trébol, Padre Hurtado, Provincia de Talagante, Región Metropolitana de Santiago, 9280931, Chile",
+    "precision": "street"
+  },
+  "don pepe 154|la florida": {
+    "lat": -33.5270266,
+    "lng": -70.5978972,
+    "display": "Don Pepe, Arturo Prat, La Florida, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "street"
+  },
+  "exequiel fernandez 3430|macul": {
+    "lat": -33.4856983,
+    "lng": -70.6015599,
+    "display": "3430, Exequiel Fernández, Macul, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "house"
+  },
+  "froilan roa 5731|la florida": {
+    "lat": -33.5166461,
+    "lng": -70.5965041,
+    "display": "Froilán Roa, Villa Perú, La Florida, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "street"
+  },
+  "fuchslocher 1170|osorno": {
+    "lat": -40.5660463,
+    "lng": -73.1471034,
+    "display": "Fuchslocher, Pampa Alegre, Rahue Bajo, Osorno, Provincia de Osorno, Región de Los Lagos, 5300615, Chile",
+    "precision": "street"
+  },
+  "guillermo mann 1401|nunoa": {
+    "lat": -33.4713045,
+    "lng": -70.6185874,
+    "display": "1401, Doctor Guillermo Mann, Villa Exequiel González Cortés, Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "street"
+  },
+  "los acacios 1594|renca": {
+    "lat": -33.4045693,
+    "lng": -70.6916181,
+    "display": "Los Acacios, Población General Bonilla, Renca, Provincia de Santiago, Región Metropolitana de Santiago, 8390450, Chile",
+    "precision": "street"
+  },
+  "mapocho 3521|quinta normal": {
+    "lat": -33.432739,
+    "lng": -70.6836834,
+    "display": "3521, Avenida Mapocho, Quinta Normal, Provincia de Santiago, Región Metropolitana de Santiago, 8350302, Chile",
+    "precision": "house"
+  },
+  "los pescadores 5121|coquimbo": {
+    "lat": -29.9524337,
+    "lng": -71.2971164,
+    "display": "Los Pescadores, Caleta Los Pescadores de Peñuelas, Peñuelas Bajo, Coquimbo, Provincia de Elqui, Región de Coquimbo, 1800016, Chile",
+    "precision": "street"
+  },
+  "montevideo 464|antofagasta": {
+    "lat": -23.6365384,
+    "lng": -70.3871796,
+    "display": "Montevideo, Antofagasta, Provincia de Antofagasta, Región de Antofagasta, 1241241, Chile",
+    "precision": "street"
+  },
+  "rosas 1444|santiago": {
+    "lat": -33.4358264,
+    "lng": -70.6576411,
+    "display": "1444, Rosas, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "house"
+  },
+  "santa elena 1670|santiago": {
+    "lat": -33.4659992,
+    "lng": -70.6282044,
+    "display": "1670, Santa Elena, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "house"
+  },
+  "vicuna mackenna 1432|nunoa": {
+    "lat": -33.4697458,
+    "lng": -70.624665,
+    "display": "Avenida Vicuña Mackenna, La Portada de Ñuñoa, Ñuñoa, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "street"
+  },
+  "la vara 2941|san bernardo": {
+    "lat": -33.5668632,
+    "lng": -70.7062781,
+    "display": "2941, Camino La Vara, Bosques de San Bernardo, San Bernardo, Provincia de Maipo, Región Metropolitana de Santiago, 8071047, Chile",
+    "precision": "house"
+  },
+  "raul labbe 12650|lo barnechea": {
+    "lat": -33.3644082,
+    "lng": -70.51492,
+    "display": "12650, Avenida Raúl Labbé, Villa La Ponderosa, Lo Barnechea, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 7690554, Chile",
+    "precision": "house"
+  },
+  "id:euro-diagonal-vicuna": {
+    "lat": -33.4700674,
+    "lng": -70.6270063,
+    "display": "2000, Santa Elena, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "house"
+  },
+  "id:euro-vista-portugal": {
+    "lat": -33.4522052,
+    "lng": -70.6344392,
+    "display": "755, Avenida Portugal, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "house"
+  },
+  "id:borinquen-vina": {
+    "lat": -33.0481684,
+    "lng": -71.5651539,
+    "display": "Condominio Borinquén, Viña del Mar (mapa del aviso)",
+    "precision": "point"
+  },
+  "id:aitue-edificio-huertos-las-margaritas": {
+    "lat": -36.8364923,
+    "lng": -73.1075815,
+    "display": "Edificio Huertos Las Margaritas, San Pedro de la Paz (mapa del aviso)",
+    "precision": "point"
+  },
+  "alameda 4719|estacion central": {
+    "lat": -33.4556145,
+    "lng": -70.7004141,
+    "display": "4719, Avenida Libertador Bernardo O'Higgins, Villa Las Mercedes, Estación Central, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "precision": "street"
+  },
+  "camilo henriquez 2565|concepcion": {
+    "lat": -36.8111214,
+    "lng": -73.03578,
+    "display": "Camilo Henríquez, Población Baquedano, Chillancito, Concepción, Provincia de Concepción, Región del Biobío, 4081375, Chile",
+    "precision": "street"
+  },
+  "gomez carreno 4065|vina del mar": {
+    "lat": -32.9917322,
+    "lng": -71.519034,
+    "display": "Norte, 4065, Almirante Gómez Carreño, Cuarto Sector Gómez Carreño, Gómez Carreño, Viña del Mar, Provincia de Valparaíso, Región de Valparaíso, 2571190, Chile",
+    "precision": "street"
+  },
+  "gomez carreno 4015|vina del mar": {
+    "lat": -32.9955958,
+    "lng": -71.5201907,
+    "display": "Gómez Carreño, Segundo Sector Gómez Carreño, Gómez Carreño, Viña del Mar, Provincia de Valparaíso, Región de Valparaíso, 2571190, Chile",
+    "precision": "street"
+  },
+  "independencia 4745|conchali": {
+    "lat": -33.3855345,
+    "lng": -70.6785758,
+    "display": "Edificio Independencia 4745, 4745, Avenida Independencia, Población Las Mercedes, Conchalí, Provincia de Santiago, Región Metropolitana de Santiago, 8540000, Chile",
+    "precision": "street"
+  }
+}

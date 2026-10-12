@@ -115,13 +115,18 @@ export default function ProjectMap({ projects, onSelect }) {
       const sector = source.startsWith('sector:')
         ? source.slice('sector:'.length).replace(/-/g, ' ')
         : null
+      const calle = source === 'calle' || source.startsWith('calle:')
       const locNote = !estimated
-        ? `<br/><span style="color:#0f766e">Ubicación según ficha${
+        ? `<br/><span style="color:#0f766e">Ubicación según ${calle ? 'dirección' : 'ficha'}${
             p.address ? `: ${escapeHtml(p.address)}` : ''
           }</span>`
-        : sector
-          ? `<br/><span style="color:#9a3412">Aprox. por sector: ${escapeHtml(sector)}</span>`
-          : `<br/><span style="color:#9a3412">Ubicación aprox. por comuna</span>`
+        : calle
+          ? `<br/><span style="color:#9a3412">Aprox. por dirección${
+              p.address ? `: ${escapeHtml(p.address)}` : ''
+            }</span>`
+          : sector
+            ? `<br/><span style="color:#9a3412">Aprox. por sector: ${escapeHtml(sector)}</span>`
+            : `<br/><span style="color:#9a3412">Ubicación aprox. por comuna</span>`
       const metro = p.metroStation
         ? `<br/><span style="color:#0f766e">Metro: ${escapeHtml(p.metroStation)}</span>`
         : p.region !== 'Metropolitana' && p.accessLabel
