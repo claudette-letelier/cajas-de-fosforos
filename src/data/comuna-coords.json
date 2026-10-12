@@ -389,11 +389,6 @@
     "lng": -70.5418308,
     "display": "Peñalolén, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
   },
-  "Chile|Metropolitana": {
-    "lat": -33.4376995,
-    "lng": -70.6510671,
-    "display": "Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile"
-  },
   "Las Condes|Metropolitana": {
     "lat": -33.4084548,
     "lng": -70.5671489,
@@ -538,11 +533,6 @@
     "lat": -32.8336867,
     "lng": -70.5981609,
     "display": "Los Andes, Provincia de Los Andes, Región de Valparaíso, 2100000, Chile"
-  },
-  "Chile|Coquimbo": {
-    "lat": -31.6353704,
-    "lng": -71.1688783,
-    "display": "Chile, Comunidad y Progreso, Illapel, Provincia de Choapa, Región de Coquimbo, 1930000, Chile"
   },
   "Lo Barnechea|Metropolitana": {
     "lat": -33.3616012,

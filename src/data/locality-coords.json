@@ -23,6 +23,18 @@
     "display": "Reñaca, Viña del Mar, Provincia de Valparaíso, Región de Valparaíso, 2540070, Chile",
     "query": "Reñaca, Viña del Mar, Valparaíso, Chile"
   },
+  "renaca-alto": {
+    "lat": -32.9876877,
+    "lng": -71.4989786,
+    "display": "Condominio Aires de Reñaca, Reñaca Alto, Viña del Mar, Chile",
+    "query": "Reñaca Alto, Viña del Mar, Chile"
+  },
+  "penuelas-coquimbo": {
+    "lat": -29.9555863,
+    "lng": -71.2861078,
+    "display": "Peñuelas, Coquimbo, Región de Coquimbo, Chile",
+    "query": "Peñuelas, Coquimbo, Chile"
+  },
   "concón": {
     "lat": -32.9220036,
     "lng": -71.5159565,

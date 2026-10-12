@@ -280,8 +280,8 @@ export const catalog = [
     "accessLabel": "Metrotren · Viña del Mar",
     "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
     "accessMode": "metrotren",
-    "lat": -32.9715335,
-    "lng": -71.5437133,
+    "lat": -32.9876877,
+    "lng": -71.4989786,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -311,7 +311,7 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "sector:renaca"
+      "locationSource": "sector:renaca-alto"
     }
   },
   {
@@ -547,11 +547,11 @@ export const catalog = [
       "deliveryUnknown": true,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Estación Central"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4536375,
-    "lng": -70.6898654,
+    "lat": -33.4556145,
+    "lng": -70.7004141,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -2476,8 +2476,8 @@ export const catalog = [
     "accessLabel": "Biotrén · Concepción",
     "accessDetail": "Red Biotrén + micros · terminal Collao",
     "accessMode": "biotren",
-    "lat": -36.8270698,
-    "lng": -73.0502064,
+    "lat": -36.8111214,
+    "lng": -73.03578,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -2506,7 +2506,7 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Concepción"
+      "locationSource": "calle"
     }
   },
   {
@@ -2873,8 +2873,8 @@ export const catalog = [
     "accessLabel": "Biotrén · Concepción",
     "accessDetail": "Red Biotrén + micros · terminal Collao",
     "accessMode": "biotren",
-    "lat": -36.8270698,
-    "lng": -73.0502064,
+    "lat": -36.8320182,
+    "lng": -73.0624929,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -2905,7 +2905,7 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Concepción"
+      "locationSource": "calle"
     }
   },
   {
@@ -4215,8 +4215,8 @@ export const catalog = [
     "accessLabel": "Metrotren · Viña del Mar",
     "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
     "accessMode": "metrotren",
-    "lat": -33.0244535,
-    "lng": -71.5517636,
+    "lat": -33.0481684,
+    "lng": -71.5651539,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -4248,8 +4248,8 @@ export const catalog = [
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Viña del Mar"
+      "locationEstimated": false,
+      "locationSource": "calle"
     }
   },
   {
@@ -5488,10 +5488,10 @@ export const catalog = [
       "metroEstimated": false,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Padre Hurtado"
+      "locationSource": "calle"
     },
-    "lat": -33.5673051,
-    "lng": -70.8020467,
+    "lat": -33.5682049,
+    "lng": -70.7928619,
     "address": "Calle el Trebol 1393, Padre Hurtado",
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -11381,12 +11381,12 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Santiago"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4376995,
-    "lng": -70.6510671,
-    "address": null,
+    "lat": -33.4700674,
+    "lng": -70.6270063,
+    "address": "Santa Elena 2000",
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
     "areaM2": null,
@@ -11522,10 +11522,10 @@ export const catalog = [
       "metroEstimated": false,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:La Florida"
+      "locationSource": "calle"
     },
-    "lat": -33.5204181,
-    "lng": -70.6006178,
+    "lat": -33.5270266,
+    "lng": -70.5978972,
     "address": "Calle Don Pepe N°154",
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
@@ -11942,8 +11942,8 @@ export const catalog = [
     "id": "aitue-edificio-huertos-las-margaritas",
     "name": "Edificio Huertos Las Margaritas",
     "developer": "Aitue",
-    "region": "Metropolitana",
-    "comuna": "Chile",
+    "region": "Biobío",
+    "comuna": "San Pedro de la Paz",
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
@@ -11960,7 +11960,7 @@ export const catalog = [
     "metroStation": null,
     "metroLine": null,
     "metroWalkMin": null,
-    "connectivityScore": 2,
+    "connectivityScore": 4,
     "sources": [
       {
         "portal": "aitue",
@@ -11974,11 +11974,11 @@ export const catalog = [
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Chile"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4376995,
-    "lng": -70.6510671,
+    "lat": -36.8364923,
+    "lng": -73.1075815,
     "address": null,
     "contactPhone": "+56953710816",
     "contactWhatsapp": "https://wa.me/56953710816",
@@ -12003,10 +12003,10 @@ export const catalog = [
       "CONTACTAR A UN EJECUTIVO",
       "COTIZAR"
     ],
-    "accessKind": "metro",
-    "accessMode": "metro",
-    "accessLabel": null,
-    "accessDetail": null
+    "accessKind": "regional",
+    "accessMode": "biotren",
+    "accessLabel": "Biotrén · San Pedro de la Paz",
+    "accessDetail": "Estaciones Biotrén / acceso Concepción"
   },
   {
     "id": "aitue-edificio-insigne",
@@ -12299,8 +12299,8 @@ export const catalog = [
     "accessLabel": "Metrotren · Viña del Mar",
     "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
     "accessMode": "metrotren",
-    "lat": -33.0244535,
-    "lng": -71.5517636,
+    "lat": -32.9917322,
+    "lng": -71.519034,
     "address": "Av. Gómez Carreño 4065, Viña del mar",
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -12332,8 +12332,8 @@ export const catalog = [
       "deliveryUnknown": true,
       "metroEstimated": true,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Viña del Mar"
+      "locationEstimated": false,
+      "locationSource": "calle"
     }
   },
   {
@@ -12364,8 +12364,8 @@ export const catalog = [
     "accessLabel": "Metrotren · Viña del Mar",
     "accessDetail": "Estaciones Metrotren + micros · buen acceso costa",
     "accessMode": "metrotren",
-    "lat": -33.0244535,
-    "lng": -71.5517636,
+    "lat": -32.9955958,
+    "lng": -71.5201907,
     "address": "Av. Gómez Carreño 4015, Viña del mar",
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -12398,7 +12398,7 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Viña del Mar"
+      "locationSource": "calle"
     }
   },
   {
@@ -13516,11 +13516,11 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Macul"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4821635,
-    "lng": -70.5991929,
+    "lat": -33.4856983,
+    "lng": -70.6015599,
     "address": "Av. Apoquindo 4501, Oficina 2104",
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -13757,10 +13757,10 @@ export const catalog = [
       "metroEstimated": false,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:La Florida"
+      "locationSource": "calle"
     },
-    "lat": -33.5204181,
-    "lng": -70.6006178,
+    "lat": -33.5166461,
+    "lng": -70.5965041,
     "address": null,
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
@@ -13818,8 +13818,8 @@ export const catalog = [
     "accessLabel": "Ruta 5 Sur · terminal Osorno",
     "accessDetail": "Corredor 5 Sur · terminal de buses",
     "accessMode": "ruta5",
-    "lat": -40.5736955,
-    "lng": -73.1358091,
+    "lat": -40.5660463,
+    "lng": -73.1471034,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -13851,7 +13851,7 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Osorno"
+      "locationSource": "calle"
     }
   },
   {
@@ -14327,11 +14327,11 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Ñuñoa"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4543164,
-    "lng": -70.5936358,
+    "lat": -33.4713045,
+    "lng": -70.6185874,
     "address": null,
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
@@ -14805,11 +14805,11 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Conchalí"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.3843233,
-    "lng": -70.6747382,
+    "lat": -33.3855345,
+    "lng": -70.6785758,
     "address": null,
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
@@ -17595,10 +17595,10 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Renca"
+      "locationSource": "calle"
     },
-    "lat": -33.4036212,
-    "lng": -70.7310176,
+    "lat": -33.4045693,
+    "lng": -70.6916181,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -18091,11 +18091,11 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Quinta Normal"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4283561,
-    "lng": -70.6999898,
+    "lat": -33.432739,
+    "lng": -70.6836834,
     "address": null,
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
@@ -18222,8 +18222,8 @@ export const catalog = [
     "accessLabel": "Ruta 5 Norte · Coquimbo",
     "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
     "accessMode": "ruta5",
-    "lat": -29.9531851,
-    "lng": -71.3379503,
+    "lat": -29.9524337,
+    "lng": -71.2971164,
     "address": "Av. Los Pescadores 5121",
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
@@ -18254,7 +18254,7 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Coquimbo"
+      "locationSource": "calle"
     }
   },
   {
@@ -19185,8 +19185,8 @@ export const catalog = [
     "accessLabel": "Terminal Antofagasta · Ruta 1 / 5 Norte",
     "accessDetail": "Capital regional · terminal de buses",
     "accessMode": "buses",
-    "lat": -23.6463741,
-    "lng": -70.3980033,
+    "lat": -23.6365384,
+    "lng": -70.3871796,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -19216,7 +19216,7 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Antofagasta"
+      "locationSource": "calle"
     }
   },
   {
@@ -24075,11 +24075,11 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Santiago"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4376995,
-    "lng": -70.6510671,
+    "lat": -33.4358264,
+    "lng": -70.6576411,
     "address": null,
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
@@ -24727,12 +24727,12 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Santiago"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4376995,
-    "lng": -70.6510671,
-    "address": null,
+    "lat": -33.4659992,
+    "lng": -70.6282044,
+    "address": "Santa Elena 1670",
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880?text=Hola%2C%20me%20interesa%20cotizar%20Santa%20Elena%201670",
     "areaM2": 51.3,
@@ -25382,8 +25382,8 @@ export const catalog = [
     "accessLabel": "Acceso estimado · Ruta 5 Norte",
     "accessDetail": "Comuna sin ficha detallada",
     "accessMode": "ruta5",
-    "lat": -31.6353704,
-    "lng": -71.1688783,
+    "lat": -29.9555863,
+    "lng": -71.2861078,
     "address": null,
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -25411,7 +25411,7 @@ export const catalog = [
       "metroEstimated": true,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Chile"
+      "locationSource": "sector:penuelas-coquimbo"
     }
   },
   {
@@ -26205,10 +26205,10 @@ export const catalog = [
       "metroEstimated": false,
       "priceIsDesde": true,
       "locationEstimated": true,
-      "locationSource": "comuna:Ñuñoa"
+      "locationSource": "calle"
     },
-    "lat": -33.4543164,
-    "lng": -70.5936358,
+    "lat": -33.4697458,
+    "lng": -70.624665,
     "address": null,
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
@@ -26635,12 +26635,12 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Santiago"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.4376995,
-    "lng": -70.6510671,
-    "address": null,
+    "lat": -33.4522052,
+    "lng": -70.6344392,
+    "address": "Portugal 755",
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880",
     "areaM2": null,
@@ -27035,11 +27035,11 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:San Bernardo"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.5922859,
-    "lng": -70.7045838,
+    "lat": -33.5668632,
+    "lng": -70.7062781,
     "address": "Camino La Vara 02941, San Bernardo",
     "contactPhone": null,
     "contactWhatsapp": null,
@@ -27288,11 +27288,11 @@ export const catalog = [
       "deliveryUnknown": false,
       "metroEstimated": false,
       "priceIsDesde": true,
-      "locationEstimated": true,
-      "locationSource": "comuna:Lo Barnechea"
+      "locationEstimated": false,
+      "locationSource": "calle"
     },
-    "lat": -33.3616012,
-    "lng": -70.5051957,
+    "lat": -33.3644082,
+    "lng": -70.51492,
     "address": "Av. Raúl Labbé 12650, Lo Barnechea",
     "contactPhone": null,
     "contactWhatsapp": null,
