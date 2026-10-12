@@ -2967,9 +2967,9 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
-      "priceIsDesde": true,
       "locationEstimated": false,
-      "locationSource": "ficha"
+      "locationSource": "ficha",
+      "priceIsDesde": true
     },
     "accessKind": "metro",
     "accessMode": "metro",
@@ -7348,6 +7348,72 @@ export const catalog = [
     "availability": "disponible"
   },
   {
+    "id": "bci-9517-condominio-francisco-zelada-torre-b",
+    "name": "Condominio Francisco Zelada Torre B",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Estación Central",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 1827,
+    "priceToUf": 2495,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "areaM2": null,
+    "metroStation": "Las Rejas / Ecuador",
+    "metroLine": "L1",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.455063958798185,
+    "lng": -70.70296505404625,
+    "address": "Francisco Noguera 200, piso 11, Oficina 1104",
+    "contactPhone": "+56944661870",
+    "contactWhatsapp": "https://wa.me/56944661870",
+    "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-69414fab07c6c3.webp",
+    "images": [
+      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-69414fab07c6c3.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-5d6e935cce4da7.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/-69414fab07c6c3.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/ok-694152112315f1.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-69415037461775.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-69415037d346f0.png"
+    ],
+    "description": "Descubre Condominio Francisco Zelada Torre B , una incre ble opci n de proyectos inmobiliarios en Estaci�n Central. Encuentra Departamentos de 1,2 dormitorios con precios atractivos desde 1.827 UF hasta 2.495 UF. No te pierdas tu mejor opci n en Condominio Francisco Zelada Torre B!",
+    "availability": "disponible",
+    "amenities": [
+      "Quincho",
+      "Gimnasio",
+      "Cowork",
+      "Bodega",
+      "Bicicletero"
+    ],
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/estacion-central/departamento/condominio-francisco-zelada-torre-b/9517"
+      }
+    ],
+    "notes": "Ficha BCI: metro Las Rejas / Ecuador. Precio y cupos pueden variar.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
+  },
+  {
     "id": "uts-condominio-fuchslocher-oriente",
     "name": "Condominio Fuchslocher Oriente",
     "developer": "BOETSCH",
@@ -10125,11 +10191,11 @@ export const catalog = [
     "description": "Descripci n Descubre Condominio Parque Eyzaguirre, ubicado en un tranquilo sector de Puente Alto cercano al R�o Maipo. Excelente conectividad por Av. Eyzaguirre y cercano a todo lo que necesitas (supermercados, colegios, jardines infantiles y centros de salud). En este proyecto de departamentos encontrar�s espacios pensados para disfrutar en familia.",
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6a75decfb67e93.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-69133e0f267ff0.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/.prgaleriax-67f92fbc54f0a2.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/.prgaleriax-67f92fe4d862e0.png?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe58f9ff6.png?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe72e3687.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe5ed2ea0.png?noIndexImage=1",
       "https://usatusubsidio.com/wp-content/uploads/22252.w1600-1024x768.webp",
       "https://usatusubsidio.com/wp-content/uploads/22238.w1600-1-1024x768.webp"
     ],
