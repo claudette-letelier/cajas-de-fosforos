@@ -1,17 +1,21 @@
 {
-  "generatedAt": "2026-10-12",
-  "ufClp": 41147,
-  "scraped": 578,
-  "catalogSize": 521,
-  "updated": 577,
-  "created": 1,
-  "agotados": 0,
+  "generatedAt": "2026-11-06",
+  "ufClp": 41274,
+  "scraped": 558,
+  "catalogSize": 536,
+  "updated": 543,
+  "created": 15,
+  "agotados": 7,
   "sources": {
     "mindicador": {
       "ok": true,
-      "ufClp": 41147
+      "ufClp": 41274
     },
     "ecomac": {
+      "ok": true,
+      "count": 16
+    },
+    "euro": {
       "ok": true,
       "count": 18
     },
@@ -19,49 +23,37 @@
       "ok": true,
       "count": 19
     },
-    "euro": {
-      "ok": true,
-      "count": 18
-    },
     "aitue": {
       "ok": true,
       "count": 14
-    },
-    "paz": {
-      "ok": true,
-      "count": 25
     },
     "galilea": {
       "ok": true,
       "count": 1
     },
-    "besalco": {
-      "ok": true,
-      "count": 14
-    },
-    "ingevec": {
-      "ok": true,
-      "count": 21
-    },
     "deisa": {
       "ok": true,
       "count": 11
     },
+    "besalco": {
+      "ok": true,
+      "count": 14
+    },
     "py": {
       "ok": true,
-      "count": 27
+      "count": 28
     },
     "ciclos": {
       "ok": true,
       "count": 2
     },
-    "santolaya": {
-      "ok": true,
-      "count": 27
-    },
-    "socovesa": {
+    "ingevec": {
       "ok": true,
       "count": 21
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 24
     },
     "los-silos": {
       "ok": true,
@@ -71,17 +63,26 @@
       "ok": true,
       "count": 5
     },
+    "socovesa": {
+      "ok": true,
+      "count": 22
+    },
     "subsidios-cl": {
       "ok": true,
-      "count": 120
-    },
-    "enlace-bci": {
-      "ok": true,
-      "count": 39
+      "count": 125
     },
     "usatusubsidio": {
       "ok": true,
-      "count": 182
+      "count": 188
+    },
+    "enlace-bci": {
+      "ok": true,
+      "count": 36
+    },
+    "paz": {
+      "ok": false,
+      "error": "fetch failed",
+      "count": 0
     }
   }
 }
