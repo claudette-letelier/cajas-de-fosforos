@@ -1,10 +1,7 @@
-name: Daily catalog update (04:00 Chile)
-
+name: Daily catalog update
 on:
   schedule:
-    # GitHub cron is UTC. Chile ≈ UTC-3 (verano) / UTC-4 (invierno).
-    # 07:00 UTC ≈ 04:00 Chile (UTC-3). 08:00 UTC ≈ 04:00 Chile (UTC-4).
-    - cron: "0 7 * * *"
+    # Se ejecuta una vez al día a las 08:00 UTC (aprox 04:00-05:00 en Chile, dependiendo del horario de verano/invierno, sujeto a las colas de GitHub)
     - cron: "0 8 * * *"
   workflow_dispatch:
 
@@ -26,39 +23,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Only run near 04:00 America/Santiago
-        id: gate
-        run: |
-          HOUR=$(TZ=America/Santiago date +%H)
-          echo "chile_hour=$HOUR"
-          echo "chile_now=$(TZ=America/Santiago date -Iseconds)"
-          if [ "$HOUR" = "04" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Skip: not 04:00 in America/Santiago (hour=$HOUR)"
-          fi
-
       - name: Setup Node
-        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
 
       - name: Install
-        if: steps.gate.outputs.run == 'true'
         run: npm ci
 
       - name: Update catalog from public sources
-        if: steps.gate.outputs.run == 'true'
         # A down portal must not skip the build. The script already keeps
         # going when one source fails; this covers an unexpected crash.
         continue-on-error: true
         run: npm run update:catalog
 
       - name: Commit catalog if changed
-        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "unportal-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -71,13 +51,11 @@ jobs:
           fi
 
       - name: Build static site
-        if: steps.gate.outputs.run == 'true'
         env:
           VITE_BASE: /${{ github.event.repository.name }}/
         run: npm run build
 
       - name: Deploy to gh-pages
-        if: steps.gate.outputs.run == 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
