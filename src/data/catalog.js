@@ -1493,7 +1493,8 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2450,
     "priceToUf": 3000,
@@ -2983,8 +2984,8 @@ export const catalog = [
       "DS19",
       "DS1"
     ],
-    "priceFromUf": 2273,
-    "priceToUf": 3475,
+    "priceFromUf": 2044,
+    "priceToUf": 2895,
     "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
@@ -3007,11 +3008,12 @@ export const catalog = [
     "description": "Descripci n Descubre edificio Carri�n 2, una gran alternativa para vivir o invertir en Independencia. Dise�ado por Squella Arquitectos, cada detalle ha sido escogido para dar calidad y confort en tu nuevo departamento. Sorpr�ndete con sus amplios espacios comunes, completamente equipados y decorados para disfrutar con tu familia o amigos.",
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-69a0bb7e999772.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Conexionfachadaenlace-6724fc589a0bd8.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadafrancia-6669b399e9b969.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/caluga-proyectos-sostenibles-bci-64-65a13804f22387.png",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/-69a0bb7e999772.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-69a0bb101ba798.png",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-69a0bb10b8a883.png"
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-69a0bb10b8a883.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Conexionfachadaenlace-6724fc589a0bd8.webp?noIndexImage=1"
     ],
     "amenities": [
       "Piscina",
@@ -6916,7 +6918,7 @@ export const catalog = [
       "https://proyectos.ilossilos.cl/wp-content/uploads/2026/08/elmanzano-webgaleria-1200x800-5.jpg",
       "https://proyectos.ilossilos.cl/wp-content/uploads/2026/08/elmanzano-webgaleria-1200x800-6.jpg",
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6acf96dd1fe5a7.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/eltrebolfachadax-645e614919a755.webp?noIndexImage=1"
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/CURAMAPUFACHADA-645e61a3bc1dd3.webp?noIndexImage=1"
     ],
     "amenities": [
       "Juegos infantiles",
@@ -7455,6 +7457,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -7538,7 +7542,7 @@ export const catalog = [
       "DS1"
     ],
     "priceFromUf": 1827,
-    "priceToUf": 2495,
+    "priceToUf": 2509,
     "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
@@ -7568,7 +7572,7 @@ export const catalog = [
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-69415037461775.png",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-69415037d346f0.png"
     ],
-    "description": "Descubre Condominio Francisco Zelada Torre B , una incre ble opci n de proyectos inmobiliarios en Estaci�n Central. Encuentra Departamentos de 1,2 dormitorios con precios atractivos desde 1.827 UF hasta 2.495 UF. No te pierdas tu mejor opci n en Condominio Francisco Zelada Torre B!",
+    "description": "Descubre Condominio Francisco Zelada Torre B , una incre ble opci n de proyectos inmobiliarios en Estaci�n Central. Encuentra Departamentos de 1,2 dormitorios con precios atractivos desde 1.827 UF hasta 2.509 UF. No te pierdas tu mejor opci n en Condominio Francisco Zelada Torre B!",
     "availability": "disponible",
     "amenities": [
       "Quincho",
@@ -7588,6 +7592,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -8830,6 +8836,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -9602,6 +9610,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -9618,7 +9628,7 @@ export const catalog = [
       "DS1"
     ],
     "priceFromUf": 1900,
-    "priceToUf": 2696,
+    "priceToUf": 2600,
     "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
@@ -9644,12 +9654,12 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
-      "priceIsDesde": true,
       "locationEstimated": false,
-      "locationSource": "ficha"
+      "locationSource": "ficha",
+      "priceIsDesde": true
     },
     "areaM2": null,
-    "description": "Descripci n �Tu nuevo hogar te espera en Condominio Los Vi�edos de Tucapel! Ubicado en Tucapel 1310, a pasos de Av. San Francisco, este condominio cerrado con seguridad 24/7 combina tranquilidad, conveniencia y plusval�a en tu comuna. Nuestros departamentos ofrecen una distribuci�n funcional y acabados pensados para tu confort. Utiliza tu Subsidio DS01 Tramo 3 o postula junto a nuestro equipo. �Escr�benos y demos el primer paso!",
+    "description": "Descripci n �Tu nuevo hogar te espera en Condominio Los Vi�edos de Tucapel! Ubicado en Tucapel 1310, a pasos de Av. San Francisco, este condominio cerrado con seguridad 24/7 combina tranquilidad, conveniencia y plusval�a en tu comuna. Nuestros departamentos ofrecen una distribuci�n funcional y acabados pensados para tu confort. Utiliza tu Subsidio DS01 Tramo 3 o Tramo 4 o postula junto a nuestro equipo. �Escr�benos y demos el primer paso!",
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/FACHADA-6a99eb157ba2b6.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/FACHADA-6a99eb157ba2b6.webp",
@@ -9925,8 +9935,8 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/fachada-6a4810d7602d77.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/fachada-6a4810d7602d77.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadaxfachada-63487bdb18a119.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-69659380d63982.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadaxfachada-63487bdb18a119.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/fachada-6a4810d7602d77.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6a48120d5ccbb3.png",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-montreal/59e15f1d6389-7-192-1024x768.jpg",
@@ -10400,9 +10410,9 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
-      "priceIsDesde": true,
       "locationEstimated": false,
-      "locationSource": "ficha"
+      "locationSource": "ficha",
+      "priceIsDesde": true
     }
   },
   {
@@ -10600,10 +10610,10 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6a75decfb67e93.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-69133e0f267ff0.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/.prgaleriax-67f92fbc54f0a2.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/.prgaleriax-67f92fe4d862e0.png?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe58f9ff6.png?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe72e3687.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4db03bd171.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e7574afe0.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e7666e050.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e773aedb9.png?noIndexImage=1",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-parque-eyzaguirre/bf6127604421-22252.w1600-1024x768.webp",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-parque-eyzaguirre/83b9d9775382-22238.w1600-1-1024x768.webp"
     ],
@@ -13286,9 +13296,9 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
-      "priceIsDesde": true,
       "locationEstimated": false,
-      "locationSource": "ficha"
+      "locationSource": "ficha",
+      "priceIsDesde": true
     }
   },
   {
@@ -13824,6 +13834,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -14934,6 +14946,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -16319,6 +16333,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -16501,8 +16517,8 @@ export const catalog = [
     "subsidies": [
       "Sin subsidio"
     ],
-    "priceFromUf": 6786,
-    "priceToUf": 6786,
+    "priceFromUf": 6000,
+    "priceToUf": 6000,
     "bedroomsMin": 2,
     "bedroomsMax": 2,
     "bathroomsMin": 2,
@@ -18902,6 +18918,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -20185,6 +20203,71 @@ export const catalog = [
     "availability": "disponible"
   },
   {
+    "id": "sub-533-hacienda-coquimbo",
+    "name": "Hacienda Coquimbo",
+    "developer": "Consultar portal",
+    "region": "Coquimbo",
+    "comuna": "Coquimbo",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19"
+    ],
+    "priceFromUf": 1600,
+    "priceToUf": 1600,
+    "bedroomsMin": 2,
+    "bedroomsMax": 3,
+    "bathroomsMin": 1,
+    "bathroomsMax": 2,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "areaM2": null,
+    "metroStation": null,
+    "metroLine": null,
+    "metroWalkMin": null,
+    "connectivityScore": 4,
+    "accessKind": "regional",
+    "accessLabel": "Ruta 5 Norte · Coquimbo",
+    "accessDetail": "Conurbación con La Serena · buses y 5 Norte",
+    "accessMode": "ruta5",
+    "lat": -29.96187,
+    "lng": -71.241876,
+    "address": "C. Neftal\\u00ed Galleguillos 3000",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaCoquimbo/Tres-Piedras_Hacienda-Coquimbo_galeria_1_533_na.jpg",
+    "images": [
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaCoquimbo/Tres-Piedras_Hacienda-Coquimbo_galeria_1_533_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaCoquimbo/Tres-Piedras_Hacienda-Coquimbo_galeria_2_533_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaCoquimbo/Tres-Piedras_Hacienda-Coquimbo_galeria_3_533_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaCoquimbo/Tres-Piedras_Hacienda-Coquimbo_galeria_4_533_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaCoquimbo/Tres-Piedras_Hacienda-Coquimbo_galeria_5_533_na.jpg",
+      "https://subsidioscl.sfo2.digitaloceanspaces.com/TresPiedras/HaciendaCoquimbo/Tres-Piedras_Hacienda-Coquimbo_galeria_6_533_na.jpg"
+    ],
+    "description": "Proyecto departamentos ubicados en la comuna Coquimbo con DS19, Tres Piedras, departamentos con 2 y 3 dormitorios",
+    "availability": "disponible",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Juegos infantiles"
+    ],
+    "sources": [
+      {
+        "portal": "subsidios-cl",
+        "url": "https://www.subsidios.cl/proyecto/533/hacienda-coquimbo"
+      }
+    ],
+    "notes": "Ficha Subsidios.cl. Confirmá tipologías y cupos en el portal.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true,
+      "locationEstimated": false,
+      "locationSource": "ficha"
+    }
+  },
+  {
     "id": "aitue-hacienda-las-cruces",
     "name": "Hacienda Las Cruces",
     "developer": "Aitue",
@@ -20373,6 +20456,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": false,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -20856,6 +20941,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -23267,6 +23354,60 @@ export const catalog = [
       "metroEstimated": true,
       "locationEstimated": true,
       "locationSource": null,
+      "priceIsDesde": true
+    }
+  },
+  {
+    "id": "soco-las-palmas-departamentos-en-macul",
+    "name": "Las Palmas",
+    "developer": "Socovesa",
+    "region": "Metropolitana",
+    "comuna": "Macul",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "Sin subsidio"
+    ],
+    "priceFromUf": 3790,
+    "priceToUf": 3790,
+    "bedroomsMin": 1,
+    "bedroomsMax": 1,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "Entrega Inmediata",
+    "areaM2": null,
+    "metroStation": "Macul",
+    "metroLine": "L4",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": null,
+    "lng": null,
+    "address": null,
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://www.socovesa.cl/wp-content/uploads/2019/08/Las-Palmas-II-Fotos-13.jpeg",
+    "images": [
+      "https://www.socovesa.cl/wp-content/uploads/2019/08/Las-Palmas-II-Fotos-13.jpeg"
+    ],
+    "description": null,
+    "availability": "disponible",
+    "amenities": [],
+    "sources": [
+      {
+        "portal": "socovesa",
+        "url": "https://www.socovesa.cl/nuestros-proyectos/las-palmas-departamentos-en-macul/"
+      }
+    ],
+    "notes": "Importado desde Socovesa",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": false,
+      "metroEstimated": true,
       "priceIsDesde": true
     }
   },
@@ -27213,9 +27354,9 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
-      "priceIsDesde": true,
       "locationEstimated": false,
-      "locationSource": "ficha"
+      "locationSource": "ficha",
+      "priceIsDesde": true
     }
   },
   {
@@ -27596,9 +27737,9 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
-      "priceIsDesde": true,
       "locationEstimated": false,
-      "locationSource": "ficha"
+      "locationSource": "ficha",
+      "priceIsDesde": true
     }
   },
   {
@@ -30457,7 +30598,8 @@ export const catalog = [
     "propertyType": "departamento",
     "condition": "nuevo",
     "subsidies": [
-      "DS19"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 2250,
     "priceToUf": 2800,
@@ -32777,6 +32919,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
