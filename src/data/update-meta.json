@@ -1,63 +1,69 @@
 {
-  "generatedAt": "2026-11-08",
+  "generatedAt": "2026-11-10",
   "ufClp": 41290,
-  "scraped": 543,
-  "catalogSize": 538,
-  "updated": 543,
-  "created": 0,
-  "agotados": 0,
+  "scraped": 562,
+  "catalogSize": 540,
+  "updated": 560,
+  "created": 2,
+  "agotados": 1,
   "sources": {
     "mindicador": {
-      "ok": true,
-      "ufClp": 41290
+      "ok": false,
+      "error": "HTTP 502 for https://mindicador.cl/api/uf",
+      "ufClp": 41290,
+      "fallback": true
     },
     "ecomac": {
       "ok": true,
       "count": 16
     },
-    "fundamenta": {
+    "euro": {
       "ok": true,
-      "count": 19
-    },
-    "deisa": {
-      "ok": true,
-      "count": 11
-    },
-    "besalco": {
-      "ok": true,
-      "count": 14
-    },
-    "galilea": {
-      "ok": true,
-      "count": 1
-    },
-    "ingevec": {
-      "ok": true,
-      "count": 21
-    },
-    "py": {
-      "ok": true,
-      "count": 28
-    },
-    "santolaya": {
-      "ok": true,
-      "count": 24
+      "count": 18
     },
     "aitue": {
       "ok": true,
       "count": 14
     },
+    "deisa": {
+      "ok": true,
+      "count": 11
+    },
+    "fundamenta": {
+      "ok": true,
+      "count": 19
+    },
+    "galilea": {
+      "ok": true,
+      "count": 1
+    },
     "ciclos": {
       "ok": true,
       "count": 2
     },
-    "los-silos": {
+    "ingevec": {
+      "ok": true,
+      "count": 21
+    },
+    "besalco": {
       "ok": true,
       "count": 14
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 24
+    },
+    "py": {
+      "ok": true,
+      "count": 28
     },
     "bricsa": {
       "ok": true,
       "count": 5
+    },
+    "los-silos": {
+      "ok": true,
+      "count": 13
     },
     "socovesa": {
       "ok": true,
@@ -65,12 +71,7 @@
     },
     "subsidios-cl": {
       "ok": true,
-      "count": 126
-    },
-    "euro": {
-      "ok": false,
-      "error": "fetch failed",
-      "count": 0
+      "count": 127
     },
     "usatusubsidio": {
       "ok": true,
@@ -78,7 +79,7 @@
     },
     "enlace-bci": {
       "ok": true,
-      "count": 37
+      "count": 38
     },
     "paz": {
       "ok": false,
