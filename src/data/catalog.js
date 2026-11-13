@@ -1038,6 +1038,71 @@ export const catalog = [
     "availability": "disponible"
   },
   {
+    "id": "bci-9654-alto-federico-scotto",
+    "name": "Alto Federico Scotto",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Estación Central",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 2371,
+    "priceToUf": 3253,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "areaM2": null,
+    "metroStation": "Universidad de Santiago / Parque O'Higgins / Rondizzoni",
+    "metroLine": "L1/L2",
+    "metroWalkMin": 10,
+    "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.452788675521504,
+    "lng": -70.68638538240805,
+    "address": "Francisco Noguera 200, piso 11, Oficina 1104",
+    "contactPhone": null,
+    "contactWhatsapp": null,
+    "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6a31496d4de035.webp",
+    "images": [
+      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6a31496d4de035.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/-6a31496d4de035.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/httpsiciclos.clTourJardinesDeSanB-6ae2674936db56.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6a3149a19dbae4.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6a3149a219b067.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6a3149a2860556.png"
+    ],
+    "description": "Descripci n Un edificio boutique de solo 7 pisos y 170 departamentos, que ofrece un equilibrio perfecto entre la cercan�a a lugares de inter�s y la accesibilidad al transporte. Una opci�n ideal para quienes buscan un lugar c�modo y conveniente para vivir. Con un enfoque en la reducci�n de gastos comunes, el edificio utiliza termos en lugar de calderas para el suministro de agua caliente. Esta alternativa promueve una gesti�n m�s eficiente de la energ�a, lo que se traduce en un ahorro significativo para los residentes. Espacios amplios y luminosos, dise�ados para ofrecer comodidad. Con ventanales que permiten la entrada de luz natural, estos ambientes son perfectos para disfrutar en familia y recibir amigos, creando una atm�sfera acogedora. En este proyecto, cada dormitorio ha sido cuidadosamente dise�ado para brindarte un refugio detranquilidad. Con una distribuci�n optimizada, estos…",
+    "availability": "disponible",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Gimnasio",
+      "Bicicletero"
+    ],
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/estacion-central/departamento/alto-federico-scotto/9654"
+      }
+    ],
+    "notes": "Ficha BCI: metro Universidad de Santiago / Parque O'Higgins / Rondizzoni. Precio y cupos pueden variar.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
+  },
+  {
     "id": "euro-alto-irarrazaval",
     "name": "Alto Irarrázaval",
     "developer": "Euro Inmobiliaria",
@@ -5817,11 +5882,12 @@ export const catalog = [
     "propertyType": "casa",
     "condition": "nuevo",
     "subsidies": [
-      "Sin subsidio"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 6265,
     "priceToUf": 6265,
-    "bedroomsMin": 3,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -5836,22 +5902,34 @@ export const catalog = [
     "accessLabel": null,
     "accessDetail": null,
     "accessMode": "metro",
-    "lat": null,
-    "lng": null,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
+    "lat": -33.56333639427137,
+    "lng": -70.82518854065322,
+    "address": "Francisco Noguera 200, piso 11, Oficina 1104",
+    "contactPhone": "+56971567524",
+    "contactWhatsapp": "https://wa.me/56971567524",
     "imageUrl": "https://py.cl/wp-content/uploads/2021/04/Cond.-Camino-el-Retiro_compra-sin-iva-400x225.png",
     "images": [
-      "https://py.cl/wp-content/uploads/2021/04/Cond.-Camino-el-Retiro_compra-sin-iva-400x225.png"
+      "https://py.cl/wp-content/uploads/2021/04/Cond.-Camino-el-Retiro_compra-sin-iva-400x225.png",
+      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-68de925698f900.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/-68de925698f900.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-68de911ef1e128.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-68de911f5e6198.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-68de911fdd29a7.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-68de912063c816.png"
     ],
-    "description": null,
+    "description": "Descubre Condominio Camino El Retiro II , una incre ble opci n de proyectos inmobiliarios en Padre Hurtado. Encuentra Casas de 3 dormitorio con precios atractivos desde 5.635 UF hasta 6.305 UF. No te pierdas tu mejor opci n en Condominio Camino El Retiro II!",
     "availability": "disponible",
-    "amenities": [],
+    "amenities": [
+      "Juegos infantiles"
+    ],
     "sources": [
       {
         "portal": "py",
         "url": "https://py.cl/proyecto/casas-padre-hurtado-camino-retiro-ii/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/padre-hurtado/casa/condominio-camino-el-retiro-ii/6327"
       }
     ],
     "notes": "Importado desde PY",
@@ -8149,8 +8227,8 @@ export const catalog = [
     "subsidies": [
       "Sin subsidio"
     ],
-    "priceFromUf": 2271,
-    "priceToUf": 2271,
+    "priceFromUf": 2709,
+    "priceToUf": 2709,
     "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
@@ -10252,6 +10330,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -10316,8 +10396,8 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/fachada-6a4810d7602d77.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/fachada-6a4810d7602d77.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-69659380d63982.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadaxfachada-63487bdb18a119.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-69659380d63982.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/fachada-6a4810d7602d77.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6a48120d5ccbb3.png",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-montreal/59e15f1d6389-7-192-1024x768.jpg",
@@ -13538,6 +13618,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -16107,6 +16189,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -19756,6 +19840,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -24302,6 +24388,8 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-68efff24bae006.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FachadaLlantnxpxComp-6494c27e7b8f17.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/fachada-66a485fa649eb4.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/fachada-66a4881ac742d3.png?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/-68efff24bae006.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-68efff71c60429.png",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-68efff728a3871.png",
@@ -24323,6 +24411,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -29562,6 +29652,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -33982,8 +34074,8 @@ export const catalog = [
     "description": "Descripci n MEGA PROYECTO EN CERRILLOS 7 torres habitacionales de entre 10 y 16 pisos de altura, adem�s de un subterr�neo. Proyecto con subsidio, cercanoo al metro y sitios de interes para la comunidad.",
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/Enlace-687f9f1a432262.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachada-6ac538e5d336a6.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/WProyectoVNVSFachadaVientoNorteVConPersonas-65956393a72da7.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachada-6ac538e5d336a6.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/Enlace-687f9f1a432262.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/Enlace-687f9f2e684192.png",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/Enlance-687f9f2f4cc3f7.png",
@@ -35088,8 +35180,8 @@ export const catalog = [
     "subsidies": [
       "Sin subsidio"
     ],
-    "priceFromUf": 12830,
-    "priceToUf": 12830,
+    "priceFromUf": 13085,
+    "priceToUf": 13085,
     "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,

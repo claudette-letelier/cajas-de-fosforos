@@ -1,17 +1,21 @@
 {
   "generatedAt": "2026-11-13",
   "ufClp": 41290,
-  "scraped": 572,
-  "catalogSize": 558,
-  "updated": 565,
-  "created": 7,
+  "scraped": 595,
+  "catalogSize": 559,
+  "updated": 594,
+  "created": 1,
   "agotados": 0,
   "sources": {
     "mindicador": {
       "ok": false,
-      "error": "fetch failed",
+      "error": "HTTP 500 for https://mindicador.cl/api/uf",
       "ufClp": 41290,
       "fallback": true
+    },
+    "fundamenta": {
+      "ok": true,
+      "count": 19
     },
     "ecomac": {
       "ok": true,
@@ -21,49 +25,49 @@
       "ok": true,
       "count": 18
     },
-    "fundamenta": {
-      "ok": true,
-      "count": 19
-    },
     "deisa": {
       "ok": true,
       "count": 11
+    },
+    "paz": {
+      "ok": true,
+      "count": 25
     },
     "ingevec": {
       "ok": true,
       "count": 21
     },
-    "besalco": {
-      "ok": true,
-      "count": 14
-    },
-    "aitue": {
-      "ok": true,
-      "count": 14
-    },
     "ciclos": {
       "ok": true,
       "count": 2
-    },
-    "py": {
-      "ok": true,
-      "count": 28
-    },
-    "santolaya": {
-      "ok": true,
-      "count": 24
     },
     "galilea": {
       "ok": true,
       "count": 1
     },
-    "los-silos": {
+    "besalco": {
       "ok": true,
-      "count": 13
+      "count": 14
+    },
+    "py": {
+      "ok": true,
+      "count": 28
+    },
+    "aitue": {
+      "ok": true,
+      "count": 14
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 24
     },
     "socovesa": {
       "ok": true,
       "count": 23
+    },
+    "los-silos": {
+      "ok": true,
+      "count": 13
     },
     "bricsa": {
       "ok": true,
@@ -79,12 +83,7 @@
     },
     "enlace-bci": {
       "ok": true,
-      "count": 46
-    },
-    "paz": {
-      "ok": false,
-      "error": "fetch failed",
-      "count": 0
+      "count": 44
     }
   }
 }
