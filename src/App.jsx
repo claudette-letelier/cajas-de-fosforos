@@ -50,6 +50,7 @@ const defaultFilters = {
   region: 'todas',
   propertyType: 'todos',
   condition: 'todos',
+  availability: 'en-venta',
   bedrooms: 0,
   bathrooms: 0,
   parking: 'todos',
@@ -413,6 +414,19 @@ export default function App() {
             </label>
 
             <label className="mb-3 block text-sm">
+              <span className="mb-1 block font-medium">Disponibilidad</span>
+              <select
+                value={filters.availability || 'en-venta'}
+                onChange={(e) => set('availability', e.target.value)}
+                className="h-10 w-full rounded-lg border border-[var(--line)] px-2"
+              >
+                <option value="en-venta">En venta</option>
+                <option value="agotado">Agotados o vendidos</option>
+                <option value="todos">En venta y agotados</option>
+              </select>
+            </label>
+
+            <label className="mb-3 block text-sm">
               <span className="mb-1 block font-medium">Tipo</span>
               <select
                 value={filters.propertyType}
@@ -695,6 +709,11 @@ export default function App() {
                             <span className="rounded-full border border-[var(--line)] px-2.5 py-1 capitalize">
                               {p.condition}
                             </span>
+                            {p.availability === 'agotado' ? (
+                              <span className="rounded-full bg-[#f3d6d0] px-2.5 py-1 text-[#6d2a22]">
+                                Agotado
+                              </span>
+                            ) : null}
                             <span className="rounded-full border border-[var(--line)] px-2.5 py-1 capitalize">
                               Entrega: {p.delivery}
                             </span>

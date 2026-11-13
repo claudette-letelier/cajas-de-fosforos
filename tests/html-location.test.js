@@ -30,6 +30,13 @@ describe('extractCoords', () => {
     const c = extractCoords(html)
     assert.equal(c.lat, -36.809505)
   })
+
+  it('reads Waze links even when the ampersand is an HTML entity', () => {
+    const html = `href="https://waze.com/ul?ll=-33.04816840%2C-71.56515390&#038;navigate=yes"`
+    const c = extractCoords(html)
+    assert.equal(c.lat, -33.0481684)
+    assert.equal(c.lng, -71.5651539)
+  })
 })
 
 describe('extractAddress', () => {

@@ -89,6 +89,11 @@ export function extractCoords(html) {
     push(m[1], m[2], 45)
   }
   for (const m of text.matchAll(
+    /(?:[?&]|&#0*38;|&amp;)ll=(-?\d+\.\d+)(?:%2C|,)(-?\d+\.\d+)/gi,
+  )) {
+    push(m[1], m[2], 48)
+  }
+  for (const m of text.matchAll(
     /"lat(?:itude)?"\s*:\s*(-?\d+\.\d+)[\s\S]{0,80}"l(?:ng|on|ongitude)"\s*:\s*(-?\d+\.\d+)/gi,
   )) {
     push(m[1], m[2], 30)

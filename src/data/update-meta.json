@@ -1,14 +1,90 @@
 {
-  "generatedAt": "2026-10-04",
-  "ufClp": 41090,
-  "scraped": 428,
-  "catalogSize": 428,
-  "updated": 428,
-  "created": 0,
+  "generatedAt": "2026-11-13",
+  "ufClp": 41290,
+  "scraped": 572,
+  "catalogSize": 558,
+  "updated": 565,
+  "created": 7,
+  "agotados": 0,
   "sources": {
     "mindicador": {
+      "ok": false,
+      "error": "fetch failed",
+      "ufClp": 41290,
+      "fallback": true
+    },
+    "ecomac": {
       "ok": true,
-      "ufClp": 41090
+      "count": 16
+    },
+    "euro": {
+      "ok": true,
+      "count": 18
+    },
+    "fundamenta": {
+      "ok": true,
+      "count": 19
+    },
+    "deisa": {
+      "ok": true,
+      "count": 11
+    },
+    "ingevec": {
+      "ok": true,
+      "count": 21
+    },
+    "besalco": {
+      "ok": true,
+      "count": 14
+    },
+    "aitue": {
+      "ok": true,
+      "count": 14
+    },
+    "ciclos": {
+      "ok": true,
+      "count": 2
+    },
+    "py": {
+      "ok": true,
+      "count": 28
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 24
+    },
+    "galilea": {
+      "ok": true,
+      "count": 1
+    },
+    "los-silos": {
+      "ok": true,
+      "count": 13
+    },
+    "socovesa": {
+      "ok": true,
+      "count": 23
+    },
+    "bricsa": {
+      "ok": true,
+      "count": 5
+    },
+    "subsidios-cl": {
+      "ok": true,
+      "count": 128
+    },
+    "usatusubsidio": {
+      "ok": true,
+      "count": 189
+    },
+    "enlace-bci": {
+      "ok": true,
+      "count": 46
+    },
+    "paz": {
+      "ok": false,
+      "error": "fetch failed",
+      "count": 0
     }
   }
 }

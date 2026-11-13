@@ -67,25 +67,33 @@ export function truthSignals(project) {
 
   if (project.dataGaps?.locationEstimated) {
     const source = String(project.dataGaps?.locationSource || '')
+    const calle = source === 'calle' || source.startsWith('calle:')
     const sector = source.startsWith('sector:')
       ? source.slice('sector:'.length).replace(/-/g, ' ')
       : null
     signals.push({
       id: 'location',
       tone: 'gap',
-      label: sector
-        ? `Ubicación aprox. por sector (${sector})`
-        : 'Ubicación aproximada por comuna',
-      detail: sector
-        ? `No hay ubicación exacta en el aviso; el pin usa el sector mencionado en la descripción (“${sector}”). Confirma dirección en sala de ventas.`
-        : 'No encontramos una ubicación exacta en el aviso. El pin es aproximado por comuna; confirma la dirección en sala de ventas.',
+      label: calle
+        ? 'Ubicación aprox. por dirección'
+        : sector
+          ? `Ubicación aprox. por sector (${sector})`
+          : 'Ubicación aproximada por comuna',
+      detail: calle
+        ? 'El pin usa la calle del aviso, no el centro de la comuna. Confirma el número en sala de ventas.'
+        : sector
+          ? `No hay ubicación exacta en el aviso; el pin usa el sector mencionado en la descripción (“${sector}”). Confirma dirección en sala de ventas.`
+          : 'No encontramos una ubicación exacta en el aviso. El pin es aproximado por comuna; confirma la dirección en sala de ventas.',
     })
   } else if (project.lat != null && project.lng != null) {
+    const byStreet = project.dataGaps?.locationSource === 'calle'
     signals.push({
       id: 'location-ok',
       tone: 'ok',
-      label: 'Ubicación según ficha',
-      detail: 'Ubicación tomada del aviso público.',
+      label: byStreet ? 'Ubicación según dirección' : 'Ubicación según ficha',
+      detail: byStreet
+        ? 'Pin ubicado con la calle y el número del aviso.'
+        : 'Ubicación tomada del aviso público.',
     })
   }
 

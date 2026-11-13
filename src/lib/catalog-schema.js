@@ -110,6 +110,14 @@ export function validateProject(p, { index } = {}) {
     errors.push(`${tag}: connectivityScore fuera de 1–5`)
   }
 
+  if (
+    p.availability != null &&
+    p.availability !== 'disponible' &&
+    p.availability !== 'agotado'
+  ) {
+    errors.push(`${tag}: availability inválida (${p.availability})`)
+  }
+
   if (p.contactWhatsapp) {
     if (!/^https:\/\/wa\.me\//i.test(p.contactWhatsapp))
       errors.push(`${tag}: contactWhatsapp no es wa.me`)
