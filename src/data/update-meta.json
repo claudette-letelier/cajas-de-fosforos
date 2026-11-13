@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12",
+  "generatedAt": "2026-11-13",
   "ufClp": 41290,
-  "scraped": 595,
-  "catalogSize": 551,
-  "updated": 587,
-  "created": 8,
+  "scraped": 572,
+  "catalogSize": 558,
+  "updated": 565,
+  "created": 7,
   "agotados": 0,
   "sources": {
     "mindicador": {
@@ -25,10 +25,6 @@
       "ok": true,
       "count": 19
     },
-    "paz": {
-      "ok": true,
-      "count": 25
-    },
     "deisa": {
       "ok": true,
       "count": 11
@@ -41,9 +37,9 @@
       "ok": true,
       "count": 14
     },
-    "galilea": {
+    "aitue": {
       "ok": true,
-      "count": 1
+      "count": 14
     },
     "ciclos": {
       "ok": true,
@@ -57,17 +53,17 @@
       "ok": true,
       "count": 24
     },
-    "aitue": {
+    "galilea": {
       "ok": true,
-      "count": 14
-    },
-    "socovesa": {
-      "ok": true,
-      "count": 23
+      "count": 1
     },
     "los-silos": {
       "ok": true,
       "count": 13
+    },
+    "socovesa": {
+      "ok": true,
+      "count": 23
     },
     "bricsa": {
       "ok": true,
@@ -83,7 +79,12 @@
     },
     "enlace-bci": {
       "ok": true,
-      "count": 44
+      "count": 46
+    },
+    "paz": {
+      "ok": false,
+      "error": "fetch failed",
+      "count": 0
     }
   }
 }
