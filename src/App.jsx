@@ -226,7 +226,7 @@ export default function App() {
                   '0 2px 4px rgba(0,0,0,0.55), 0 8px 24px rgba(0,0,0,0.45), 0 0 1px rgba(0,0,0,0.8)',
               }}
             >
-              Mapas de cajas de fósforos
+              Mapa de proyectos inmobiliarios en Chile
             </p>
             <h1
               className="mt-5 text-2xl font-medium text-[#f6e7c5] sm:text-3xl"
@@ -236,7 +236,7 @@ export default function App() {
                   '0 2px 4px rgba(0,0,0,0.6), 0 6px 18px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.85)',
               }}
             >
-              Encuentra tu cajita de fósforos.
+              Encuentra tu próximo hogar.
             </h1>
             <p
               className="mt-4 max-w-md text-white/85"
@@ -949,9 +949,6 @@ export default function App() {
             <span className="inline-flex items-center gap-2">
               <Building2 className="size-4" />
               Hecho para ayudar · confirma siempre en el aviso original
-            </span>
-            <span className="text-xs text-white/45">
-              Estadísticas anónimas con GoatCounter (sin cookies de tracking).
             </span>
           </p>
         </div>
