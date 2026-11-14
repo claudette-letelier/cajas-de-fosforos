@@ -1099,6 +1099,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -3095,6 +3097,71 @@ export const catalog = [
       "priceIsDesde": true
     },
     "availability": "disponible"
+  },
+  {
+    "id": "bci-8006-campvs-80",
+    "name": "Campvs 80",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "Ñuñoa",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 5139,
+    "priceToUf": 11958,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "areaM2": null,
+    "metroStation": "Ñuñoa",
+    "metroLine": "L3/L6",
+    "metroWalkMin": 10,
+    "connectivityScore": 5,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.45442244886354,
+    "lng": -70.60890018939973,
+    "address": "Av. Campo de Deportes esquina Av. Irarr�zaval, �u�oa.",
+    "contactPhone": "+56969099698",
+    "contactWhatsapp": "https://wa.me/56969099698",
+    "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-695d0d79a87010.webp",
+    "images": [
+      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-695d0d79a87010.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/-695d0d79a87010.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-695c7318642fd3.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-695c73191cf9f6.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-695c73196a6850.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/IMG-667c778707ea18.png"
+    ],
+    "description": "Descubre Campvs 80 , una incre ble opci n de proyectos inmobiliarios en �u�oa. Encuentra Departamentos de 1,2,3 dormitorios con precios atractivos desde 5.139 UF hasta 11.958 UF. No te pierdas tu mejor opci n en Campvs 80!",
+    "availability": "disponible",
+    "amenities": [
+      "Piscina",
+      "Quincho",
+      "Gimnasio",
+      "Cowork"
+    ],
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/nunoa/departamento/campvs-80/8006"
+      }
+    ],
+    "notes": "Importado desde Enlace Inmobiliarios (portal BCI)",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "paz-I188",
@@ -6888,11 +6955,11 @@ export const catalog = [
     "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/lautarook-68ffe7841d8b75.webp",
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/lautarook-68ffe7841d8b75.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-616f6c35ef36e0.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-616f57d71b9be5.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADAFRONTALVPS-61f1fb4ca67593.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/FachadaCordilleraRefugio-62e2e0b15eac24.png?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/FachadaFrontalRefugio-62e2e0b1b43758.png?noIndexImage=1"
+      "https://cache.enlaceinmobiliario.cl/FachadaFrontalRefugio-62e2e0b1b43758.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-616f6c35ef36e0.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-616f57d71b9be5.webp?noIndexImage=1"
     ],
     "description": "Descripci n Parque Condominio Don Lautaro esta pensado como un lugar ideal para vivir, a los pies de la cordillera, con una vista privilegiada y enmarcado por las nuevas y modernas urbanizaciones de la comuna de Pe�alol�n.",
     "availability": "disponible",
@@ -6912,6 +6979,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -10525,8 +10594,8 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/fachada-6a4810d7602d77.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/fachada-6a4810d7602d77.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadaxfachada-63487bdb18a119.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-69659380d63982.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadaxfachada-63487bdb18a119.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/fachada-6a4810d7602d77.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6a48120d5ccbb3.png",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-montreal/59e15f1d6389-7-192-1024x768.jpg",
@@ -11200,10 +11269,10 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6a75decfb67e93.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-69133e0f267ff0.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/.prgaleriax-67f92fbc54f0a2.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/.prgaleriax-67f92fe4d862e0.png?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe58f9ff6.png?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe72e3687.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4db03bd171.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e7574afe0.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e7666e050.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e773aedb9.png?noIndexImage=1",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-parque-eyzaguirre/bf6127604421-22252.w1600-1024x768.webp",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-parque-eyzaguirre/83b9d9775382-22238.w1600-1-1024x768.webp"
     ],
@@ -18046,6 +18115,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -19501,9 +19572,9 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/Diseosinttulo-6a3af855bc48e1.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/ZANARTUfachadaenlace-672660257a9283.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-6abc82f9506786.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-6a0e3aa2553271.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/GmannFachada-65566363301190.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-6a0e3aa2553271.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-6abc82f9506786.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/Diseosinttulo-6a3af855bc48e1.webp"
     ],
     "description": "Descripci n Edificio de 168 departamentos distribuidos en 11 pisos, con 166 bodegas, 171 estacionamientos y 26 adicionales para visitas. Su dise�o moderno se integra perfectamente en una de las mejores zonas de desarrollo residencial en la comuna de �u�oa, ideal tanto para iniciar una vida familiar como para quienes buscan independencia. Nuestro proyecto est� pensado para ofrecer comodidad y bienestar, con una ubicaci�n estrat�gica que te acerca a todo lo que necesitas. Departamentos dise�ados con productos de �ltima tendencia combinado con una perfecta distribuci�n para habitar tu espacio de forma m�s c�moda. Hall acogedor que recibe a residentes y visitantes con un ambiente c�lido y elegante. Con un dise�o moderno y sofisticado, este espacio amplio y luminoso marca el estilo distintivo del edificio, creando la primera impresi�n perfecta y reflejando la calidad del proyecto en su con…",
@@ -20015,8 +20086,8 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/FachadaEleuterio-66fede22142e25.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/FachadaEleuterio-66fede22142e25.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADAxpx.-6aba7d4e4532a8.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADANUEVA-667071a9416fe2.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADAxpx.-6aba7d4e4532a8.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/FachadaEleuterio-66fede22142e25.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/Hall-66feded668b4d6.png"
     ],
@@ -20053,11 +20124,12 @@ export const catalog = [
     "propertyType": "casa",
     "condition": "nuevo",
     "subsidies": [
-      "Sin subsidio"
+      "DS19",
+      "DS1"
     ],
     "priceFromUf": 5995,
     "priceToUf": 5995,
-    "bedroomsMin": 3,
+    "bedroomsMin": 1,
     "bedroomsMax": 3,
     "bathroomsMin": 1,
     "bathroomsMax": 2,
@@ -20072,25 +20144,35 @@ export const catalog = [
     "accessLabel": null,
     "accessDetail": null,
     "accessMode": "metro",
-    "lat": null,
-    "lng": null,
-    "address": null,
-    "contactPhone": null,
-    "contactWhatsapp": null,
+    "lat": -33.508778771723414,
+    "lng": -70.70463017763385,
+    "address": "Francisco Noguera 200, piso 11, Oficina 1104",
+    "contactPhone": "+56978083970",
+    "contactWhatsapp": "https://wa.me/56978083970",
     "imageUrl": "https://py.cl/wp-content/uploads/2024/01/Entre-Parques-V_Casa-B1-400x225.jpg",
     "images": [
-      "https://py.cl/wp-content/uploads/2024/01/Entre-Parques-V_Casa-B1-400x225.jpg"
+      "https://py.cl/wp-content/uploads/2024/01/Entre-Parques-V_Casa-B1-400x225.jpg",
+      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6ada5ae1d021d5.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/-6ada5ae1d021d5.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6ada5afa0b4653.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6ada5afb8e2135.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6ada5afd96d9a4.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6ada5b1444a8a6.png"
     ],
-    "description": null,
+    "description": "Descubre Entre Parques V , una incre ble opci n de proyectos inmobiliarios en Cerrillos. Encuentra Casas de 3 dormitorio con precios atractivos desde 5.405 UF hasta 6.380 UF. No te pierdas tu mejor opci n en Entre Parques V!",
     "availability": "disponible",
     "amenities": [],
     "sources": [
       {
         "portal": "py",
         "url": "https://py.cl/proyecto/casas-cerrillos-entre-parques-v/"
+      },
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/cerrillos/casa/entre-parques-v/9655"
       }
     ],
-    "notes": "Importado desde PY",
+    "notes": "Ficha BCI: metro Cerrillos. Precio y cupos pueden variar.",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": true,
@@ -24548,6 +24630,69 @@ export const catalog = [
       "priceIsDesde": true
     },
     "availability": "disponible"
+  },
+  {
+    "id": "bci-9331-las-acacias-7894",
+    "name": "Las Acacias 7894",
+    "developer": "Consultar portal",
+    "region": "Metropolitana",
+    "comuna": "La Florida",
+    "propertyType": "departamento",
+    "condition": "nuevo",
+    "subsidies": [
+      "DS19",
+      "DS1"
+    ],
+    "priceFromUf": 3090,
+    "priceToUf": 4160,
+    "bedroomsMin": 1,
+    "bedroomsMax": 2,
+    "bathroomsMin": 1,
+    "bathroomsMax": 1,
+    "parking": "consultar",
+    "delivery": "consultar",
+    "areaM2": null,
+    "metroStation": "Mirador",
+    "metroLine": "L5",
+    "metroWalkMin": 12,
+    "connectivityScore": 4,
+    "accessKind": "metro",
+    "accessLabel": null,
+    "accessDetail": null,
+    "accessMode": "metro",
+    "lat": -33.52683530740955,
+    "lng": -70.59887409210206,
+    "address": "Av. Carlos Valdovinos 201, San Joaqu�n",
+    "contactPhone": "+56999510229",
+    "contactWhatsapp": "https://wa.me/56999510229",
+    "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/DiseosinttuloT.-68375cf403cb94.webp",
+    "images": [
+      "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/DiseosinttuloT.-68375cf403cb94.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/LasAcaciasfachadanochex-67ea9b0ecac1f0.png",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-64ff62543d5d98.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/BRIRGBBARCDFachada-67ed5122928698.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FachadaBaum-68ef8dadd28e22.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-6a0e347b2a9f80.webp?noIndexImage=1"
+    ],
+    "description": "Descubre Las Acacias 7894 , una incre ble opci n de proyectos inmobiliarios en La Florida. Encuentra Departamentos de 1,2 dormitorios con precios atractivos desde 3.090 UF hasta 4.160 UF. No te pierdas tu mejor opci n en Las Acacias 7894!",
+    "availability": "disponible",
+    "amenities": [
+      "Quincho",
+      "Cowork"
+    ],
+    "sources": [
+      {
+        "portal": "enlace-bci",
+        "url": "https://www.enlaceinmobiliarios.cl/bci/la-florida/departamento/las-acacias-7894/9331"
+      }
+    ],
+    "notes": "Ficha BCI: metro Mirador. Precio y cupos pueden variar.",
+    "dataGaps": {
+      "parkingUnknown": true,
+      "deliveryUnknown": true,
+      "metroEstimated": true,
+      "priceIsDesde": true
+    }
   },
   {
     "id": "bci-5693-las-calandrias-condominio-los-nidales",
@@ -33399,7 +33544,7 @@ export const catalog = [
   {
     "id": "uts-santa-elena-1670",
     "name": "Santa Elena 1670",
-    "developer": "Euro Inmobiliaria",
+    "developer": "Inmobiliaria EURO",
     "region": "Metropolitana",
     "comuna": "Santiago",
     "propertyType": "departamento",
@@ -33407,9 +33552,9 @@ export const catalog = [
     "subsidies": [
       "FOGAES"
     ],
-    "priceFromUf": 2198,
-    "priceToUf": 2969,
-    "bedroomsMin": 1,
+    "priceFromUf": 2204,
+    "priceToUf": 2204,
+    "bedroomsMin": 2,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 1,
@@ -33430,7 +33575,7 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: metro Ñuble. 51.33 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
+    "imageUrl": "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/8d52d1c21130-Fachada-editada-1024x768.png",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
@@ -33445,15 +33590,15 @@ export const catalog = [
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880?text=Hola%2C%20me%20interesa%20cotizar%20Santa%20Elena%201670",
     "areaM2": 51.3,
-    "description": "Santa Elena 1670 · en Santiago Centro · entrega Entrega inmediata",
+    "description": "Santa Elena 1670 - Tu Nuevo Hogar en Santiago Descubre una experiencia única de vida en uno de los sectores más destacados de Santiago con nuestro revolucionario proyecto inmobiliario, Santa El…",
     "images": [
-      "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/8d52d1c21130-Fachada-editada-1024x768.png",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/e9469b77886e-9-28-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/f234dcbc8d9e-8-32-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/c6aad533d852-12-19-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/b3158a8d1b38-7-43-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/135a0fd8625e-10-24-1024x768.jpg",
+      "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
       "https://usatusubsidio.com/wp-content/uploads/Fachada-editada-1024x768.png"
     ],
     "amenities": [
@@ -34995,8 +35140,8 @@ export const catalog = [
     "subsidies": [
       "Sin subsidio"
     ],
-    "priceFromUf": 9588,
-    "priceToUf": 9588,
+    "priceFromUf": 10859,
+    "priceToUf": 10859,
     "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,

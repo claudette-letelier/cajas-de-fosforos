@@ -1,23 +1,20 @@
 {
   "generatedAt": "2026-11-14",
   "ufClp": 41330,
-  "scraped": 570,
-  "catalogSize": 563,
-  "updated": 566,
-  "created": 4,
+  "scraped": 578,
+  "catalogSize": 565,
+  "updated": 576,
+  "created": 2,
   "agotados": 0,
   "sources": {
     "mindicador": {
       "ok": true,
       "ufClp": 41330
     },
-    "ecomac": {
-      "ok": true,
-      "count": 16
-    },
     "euro": {
-      "ok": true,
-      "count": 18
+      "ok": false,
+      "error": "HTTP 403 for https://www.euroinmobiliaria.cl/proyectos?subsidio=1",
+      "count": 0
     },
     "fundamenta": {
       "ok": true,
@@ -31,37 +28,45 @@
       "ok": true,
       "count": 21
     },
+    "ecomac": {
+      "ok": true,
+      "count": 16
+    },
     "ciclos": {
       "ok": true,
       "count": 2
-    },
-    "aitue": {
-      "ok": true,
-      "count": 14
-    },
-    "besalco": {
-      "ok": true,
-      "count": 14
-    },
-    "santolaya": {
-      "ok": true,
-      "count": 24
     },
     "galilea": {
       "ok": true,
       "count": 1
     },
+    "aitue": {
+      "ok": true,
+      "count": 14
+    },
+    "paz": {
+      "ok": true,
+      "count": 25
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 24
+    },
     "py": {
       "ok": true,
       "count": 28
     },
-    "socovesa": {
+    "besalco": {
       "ok": true,
-      "count": 23
+      "count": 14
     },
     "los-silos": {
       "ok": true,
       "count": 13
+    },
+    "socovesa": {
+      "ok": true,
+      "count": 23
     },
     "bricsa": {
       "ok": true,
@@ -77,12 +82,7 @@
     },
     "enlace-bci": {
       "ok": true,
-      "count": 44
-    },
-    "paz": {
-      "ok": false,
-      "error": "fetch failed",
-      "count": 0
+      "count": 45
     }
   }
 }
