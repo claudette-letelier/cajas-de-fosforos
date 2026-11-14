@@ -1,46 +1,33 @@
 {
   "generatedAt": "2026-11-14",
   "ufClp": 41330,
-  "scraped": 578,
+  "scraped": 597,
   "catalogSize": 565,
-  "updated": 576,
-  "created": 2,
+  "updated": 597,
+  "created": 0,
   "agotados": 0,
   "sources": {
     "mindicador": {
       "ok": true,
       "ufClp": 41330
     },
-    "euro": {
-      "ok": false,
-      "error": "HTTP 403 for https://www.euroinmobiliaria.cl/proyectos?subsidio=1",
-      "count": 0
+    "ecomac": {
+      "ok": true,
+      "count": 16
     },
     "fundamenta": {
       "ok": true,
       "count": 19
     },
+    "euro": {
+      "ok": true,
+      "count": 18
+    },
     "deisa": {
       "ok": true,
       "count": 11
     },
-    "ingevec": {
-      "ok": true,
-      "count": 21
-    },
-    "ecomac": {
-      "ok": true,
-      "count": 16
-    },
-    "ciclos": {
-      "ok": true,
-      "count": 2
-    },
-    "galilea": {
-      "ok": true,
-      "count": 1
-    },
-    "aitue": {
+    "besalco": {
       "ok": true,
       "count": 14
     },
@@ -48,17 +35,29 @@
       "ok": true,
       "count": 25
     },
-    "santolaya": {
+    "aitue": {
       "ok": true,
-      "count": 24
+      "count": 14
+    },
+    "ingevec": {
+      "ok": true,
+      "count": 21
+    },
+    "galilea": {
+      "ok": true,
+      "count": 1
     },
     "py": {
       "ok": true,
       "count": 28
     },
-    "besalco": {
+    "santolaya": {
       "ok": true,
-      "count": 14
+      "count": 24
+    },
+    "ciclos": {
+      "ok": true,
+      "count": 2
     },
     "los-silos": {
       "ok": true,
@@ -82,7 +81,7 @@
     },
     "enlace-bci": {
       "ok": true,
-      "count": 45
+      "count": 46
     }
   }
 }

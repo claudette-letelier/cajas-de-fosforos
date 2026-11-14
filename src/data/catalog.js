@@ -2127,6 +2127,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -3160,6 +3162,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -4887,6 +4891,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -10594,8 +10600,8 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/fachada-6a4810d7602d77.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/fachada-6a4810d7602d77.webp",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-69659380d63982.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadaxfachada-63487bdb18a119.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-69659380d63982.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/fachada-6a4810d7602d77.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/-6a48120d5ccbb3.png",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-montreal/59e15f1d6389-7-192-1024x768.jpg",
@@ -11269,10 +11275,10 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/-6a75decfb67e93.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-69133e0f267ff0.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4db03bd171.webp?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e7574afe0.png?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e7666e050.png?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/fachadacarruselenlaceinmobiliarioAltoAndes-69dd4e773aedb9.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/.prgaleriax-67f92fbc54f0a2.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/.prgaleriax-67f92fe4d862e0.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe58f9ff6.png?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/.fgimagenesjacintosgaleria-67f92fe72e3687.png?noIndexImage=1",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-parque-eyzaguirre/bf6127604421-22252.w1600-1024x768.webp",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/condominio-parque-eyzaguirre/83b9d9775382-22238.w1600-1-1024x768.webp"
     ],
@@ -13960,6 +13966,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -24652,8 +24660,8 @@ export const catalog = [
     "parking": "consultar",
     "delivery": "consultar",
     "areaM2": null,
-    "metroStation": "Mirador",
-    "metroLine": "L5",
+    "metroStation": "Rojas Magallanes",
+    "metroLine": "L4",
     "metroWalkMin": 12,
     "connectivityScore": 4,
     "accessKind": "metro",
@@ -24669,9 +24677,10 @@ export const catalog = [
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/DiseosinttuloT.-68375cf403cb94.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/LasAcaciasfachadanochex-67ea9b0ecac1f0.png",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-64ff62543d5d98.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/BRIRGBBARCDFachada-67ed5122928698.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-64ff62543d5d98.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FachadaBaum-68ef8dadd28e22.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/LasAcaciasfachadanochex-67ea9b0ecac1f0.png",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/Fachada-6a0e347b2a9f80.webp?noIndexImage=1"
     ],
     "description": "Descubre Las Acacias 7894 , una incre ble opci n de proyectos inmobiliarios en La Florida. Encuentra Departamentos de 1,2 dormitorios con precios atractivos desde 3.090 UF hasta 4.160 UF. No te pierdas tu mejor opci n en Las Acacias 7894!",
@@ -24691,6 +24700,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -33544,7 +33555,7 @@ export const catalog = [
   {
     "id": "uts-santa-elena-1670",
     "name": "Santa Elena 1670",
-    "developer": "Inmobiliaria EURO",
+    "developer": "Euro Inmobiliaria",
     "region": "Metropolitana",
     "comuna": "Santiago",
     "propertyType": "departamento",
@@ -33552,9 +33563,9 @@ export const catalog = [
     "subsidies": [
       "FOGAES"
     ],
-    "priceFromUf": 2204,
-    "priceToUf": 2204,
-    "bedroomsMin": 2,
+    "priceFromUf": 2198,
+    "priceToUf": 2969,
+    "bedroomsMin": 1,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 1,
@@ -33575,7 +33586,7 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: metro Ñuble. 51.33 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/8d52d1c21130-Fachada-editada-1024x768.png",
+    "imageUrl": "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
@@ -33590,15 +33601,15 @@ export const catalog = [
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880?text=Hola%2C%20me%20interesa%20cotizar%20Santa%20Elena%201670",
     "areaM2": 51.3,
-    "description": "Santa Elena 1670 - Tu Nuevo Hogar en Santiago Descubre una experiencia única de vida en uno de los sectores más destacados de Santiago con nuestro revolucionario proyecto inmobiliario, Santa El…",
+    "description": "Santa Elena 1670 · en Santiago Centro · entrega Entrega inmediata",
     "images": [
+      "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/8d52d1c21130-Fachada-editada-1024x768.png",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/e9469b77886e-9-28-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/f234dcbc8d9e-8-32-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/c6aad533d852-12-19-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/b3158a8d1b38-7-43-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/135a0fd8625e-10-24-1024x768.jpg",
-      "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
       "https://usatusubsidio.com/wp-content/uploads/Fachada-editada-1024x768.png"
     ],
     "amenities": [
@@ -34484,8 +34495,8 @@ export const catalog = [
     "description": "Descripci n MEGA PROYECTO EN CERRILLOS 7 torres habitacionales de entre 10 y 16 pisos de altura, adem�s de un subterr�neo. Proyecto con subsidio, cercanoo al metro y sitios de interes para la comunidad.",
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/Enlace-687f9f1a432262.webp",
-      "https://cache.enlaceinmobiliario.cl/WProyectoVNVSFachadaVientoNorteVConPersonas-65956393a72da7.png?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/fachada-6ac538e5d336a6.webp?noIndexImage=1",
+      "https://cache.enlaceinmobiliario.cl/WProyectoVNVSFachadaVientoNorteVConPersonas-65956393a72da7.png?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=680,quality=90/Enlace-687f9f1a432262.webp",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/Enlace-687f9f2e684192.png",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=webp,height=360,quality=90/Enlance-687f9f2f4cc3f7.png",
