@@ -6961,10 +6961,10 @@ export const catalog = [
     "imageUrl": "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/lautarook-68ffe7841d8b75.webp",
     "images": [
       "https://cache.enlaceinmobiliario.cl/thumbs/FrontisOriginal2/lautarook-68ffe7841d8b75.webp",
+      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-616f6c35ef36e0.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADAFRONTALVPS-61f1fb4ca67593.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/FachadaCordilleraRefugio-62e2e0b15eac24.png?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/FachadaFrontalRefugio-62e2e0b1b43758.png?noIndexImage=1",
-      "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-616f6c35ef36e0.webp?noIndexImage=1",
       "https://cache.enlaceinmobiliario.cl/cdn-cgi/image/format=auto,height=293,quality=90/FACHADA-616f57d71b9be5.webp?noIndexImage=1"
     ],
     "description": "Descripci n Parque Condominio Don Lautaro esta pensado como un lugar ideal para vivir, a los pies de la cordillera, con una vista privilegiada y enmarcado por las nuevas y modernas urbanizaciones de la comuna de Pe�alol�n.",
@@ -17150,6 +17150,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -25990,6 +25992,8 @@ export const catalog = [
       "parkingUnknown": true,
       "deliveryUnknown": true,
       "metroEstimated": true,
+      "locationEstimated": true,
+      "locationSource": null,
       "priceIsDesde": true
     }
   },
@@ -33555,7 +33559,7 @@ export const catalog = [
   {
     "id": "uts-santa-elena-1670",
     "name": "Santa Elena 1670",
-    "developer": "Euro Inmobiliaria",
+    "developer": "Inmobiliaria EURO",
     "region": "Metropolitana",
     "comuna": "Santiago",
     "propertyType": "departamento",
@@ -33563,9 +33567,9 @@ export const catalog = [
     "subsidies": [
       "FOGAES"
     ],
-    "priceFromUf": 2198,
-    "priceToUf": 2969,
-    "bedroomsMin": 1,
+    "priceFromUf": 2204,
+    "priceToUf": 2204,
+    "bedroomsMin": 2,
     "bedroomsMax": 2,
     "bathroomsMin": 1,
     "bathroomsMax": 1,
@@ -33586,7 +33590,7 @@ export const catalog = [
       }
     ],
     "notes": "Ficha UTS: metro Ñuble. 51.33 m². Confirmá tipologías y cupos en el portal.",
-    "imageUrl": "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
+    "imageUrl": "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/8d52d1c21130-Fachada-editada-1024x768.png",
     "dataGaps": {
       "parkingUnknown": true,
       "deliveryUnknown": false,
@@ -33601,15 +33605,15 @@ export const catalog = [
     "contactPhone": "+56965749880",
     "contactWhatsapp": "https://wa.me/56965749880?text=Hola%2C%20me%20interesa%20cotizar%20Santa%20Elena%201670",
     "areaM2": 51.3,
-    "description": "Santa Elena 1670 · en Santiago Centro · entrega Entrega inmediata",
+    "description": "Santa Elena 1670 - Tu Nuevo Hogar en Santiago Descubre una experiencia única de vida en uno de los sectores más destacados de Santiago con nuestro revolucionario proyecto inmobiliario, Santa El…",
     "images": [
-      "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/8d52d1c21130-Fachada-editada-1024x768.png",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/e9469b77886e-9-28-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/f234dcbc8d9e-8-32-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/c6aad533d852-12-19-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/b3158a8d1b38-7-43-1024x768.jpg",
       "https://x1iex46citdlwu7k.public.blob.vercel-storage.com/propiedades/santa-elena-1670/135a0fd8625e-10-24-1024x768.jpg",
+      "https://euroinmobiliaria.cl/storage/77/conversions/01KHWE2QHXMHKH283HDB60QXG6-main.webp",
       "https://usatusubsidio.com/wp-content/uploads/Fachada-editada-1024x768.png"
     ],
     "amenities": [
