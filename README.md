@@ -76,6 +76,11 @@ Hasta que no crees ese sitio en GoatCounter, el contador no guarda visitas.
 
 Para este proyecto el hosted gratis alcanza. Self-hosted solo tiene sentido si quieres control total de los datos o no depender de un tercero.
 
+## Licencia
+
+Copyright (c) 2026 Claudette Letelier. Publicado bajo licencia MIT: ver
+[`LICENSE`](./LICENSE).
+
 ## Aviso
 
 Precios, cupos de subsidio y tipologías cambian. Confirma siempre en el aviso

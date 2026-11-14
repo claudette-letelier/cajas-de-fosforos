@@ -950,6 +950,9 @@ export default function App() {
               <Building2 className="size-4" />
               Hecho para ayudar · confirma siempre en el aviso original
             </span>
+            <span className="text-xs text-white/45">
+              © 2026 Claudette Letelier · Cajas de Fósforos
+            </span>
           </p>
         </div>
       </footer>
