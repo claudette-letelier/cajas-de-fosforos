@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-11-14",
-  "ufClp": 41330,
-  "scraped": 579,
+  "generatedAt": "2026-11-15",
+  "ufClp": 41337,
+  "scraped": 596,
   "catalogSize": 565,
-  "updated": 579,
+  "updated": 596,
   "created": 0,
   "agotados": 0,
   "sources": {
     "mindicador": {
       "ok": true,
-      "ufClp": 41330
-    },
-    "ecomac": {
-      "ok": true,
-      "count": 16
+      "ufClp": 41337
     },
     "fundamenta": {
       "ok": true,
       "count": 19
     },
-    "paz": {
+    "ecomac": {
       "ok": true,
-      "count": 25
+      "count": 16
     },
     "deisa": {
       "ok": true,
       "count": 11
     },
-    "ingevec": {
+    "euro": {
       "ok": true,
-      "count": 21
+      "count": 18
     },
-    "besalco": {
+    "paz": {
+      "ok": true,
+      "count": 25
+    },
+    "aitue": {
       "ok": true,
       "count": 14
     },
@@ -39,17 +39,25 @@
       "ok": true,
       "count": 2
     },
-    "aitue": {
+    "galilea": {
+      "ok": true,
+      "count": 1
+    },
+    "besalco": {
       "ok": true,
       "count": 14
     },
-    "santolaya": {
+    "ingevec": {
       "ok": true,
-      "count": 24
+      "count": 21
     },
     "py": {
       "ok": true,
       "count": 28
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 24
     },
     "socovesa": {
       "ok": true,
@@ -59,10 +67,6 @@
       "ok": true,
       "count": 13
     },
-    "galilea": {
-      "ok": true,
-      "count": 1
-    },
     "bricsa": {
       "ok": true,
       "count": 5
@@ -71,18 +75,13 @@
       "ok": true,
       "count": 128
     },
-    "euro": {
-      "ok": false,
-      "error": "fetch failed",
-      "count": 0
-    },
     "usatusubsidio": {
       "ok": true,
       "count": 189
     },
     "enlace-bci": {
       "ok": true,
-      "count": 46
+      "count": 45
     }
   }
 }
