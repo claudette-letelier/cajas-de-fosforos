@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-17",
+  "generatedAt": "2026-11-18",
   "ufClp": 41344,
-  "scraped": 579,
-  "catalogSize": 566,
-  "updated": 578,
+  "scraped": 554,
+  "catalogSize": 567,
+  "updated": 553,
   "created": 1,
   "agotados": 0,
   "sources": {
@@ -17,21 +17,17 @@
       "ok": true,
       "count": 15
     },
-    "deisa": {
-      "ok": true,
-      "count": 11
-    },
     "euro": {
       "ok": true,
       "count": 18
     },
-    "paz": {
+    "deisa": {
       "ok": true,
-      "count": 25
+      "count": 11
     },
-    "ciclos": {
+    "galilea": {
       "ok": true,
-      "count": 2
+      "count": 1
     },
     "besalco": {
       "ok": true,
@@ -41,6 +37,14 @@
       "ok": true,
       "count": 22
     },
+    "aitue": {
+      "ok": true,
+      "count": 14
+    },
+    "ciclos": {
+      "ok": true,
+      "count": 2
+    },
     "santolaya": {
       "ok": true,
       "count": 24
@@ -49,26 +53,18 @@
       "ok": true,
       "count": 28
     },
-    "aitue": {
+    "los-silos": {
       "ok": true,
-      "count": 14
-    },
-    "socovesa": {
-      "ok": true,
-      "count": 23
-    },
-    "galilea": {
-      "ok": true,
-      "count": 1
+      "count": 13
     },
     "fundamenta": {
       "ok": false,
       "error": "listado Fundamenta vacío",
       "count": 0
     },
-    "los-silos": {
+    "socovesa": {
       "ok": true,
-      "count": 13
+      "count": 23
     },
     "bricsa": {
       "ok": true,
@@ -80,11 +76,16 @@
     },
     "usatusubsidio": {
       "ok": true,
-      "count": 189
+      "count": 191
     },
     "enlace-bci": {
       "ok": true,
-      "count": 47
+      "count": 45
+    },
+    "paz": {
+      "ok": false,
+      "error": "fetch failed",
+      "count": 0
     }
   }
 }
