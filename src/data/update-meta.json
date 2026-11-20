@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-19",
+  "generatedAt": "2026-11-20",
   "ufClp": 41344,
-  "scraped": 558,
-  "catalogSize": 567,
-  "updated": 558,
-  "created": 0,
-  "agotados": 1,
+  "scraped": 553,
+  "catalogSize": 568,
+  "updated": 552,
+  "created": 1,
+  "agotados": 2,
   "sources": {
     "mindicador": {
       "ok": false,
@@ -17,38 +17,37 @@
       "ok": true,
       "count": 15
     },
+    "euro": {
+      "ok": true,
+      "count": 18
+    },
     "deisa": {
       "ok": true,
-      "count": 11
-    },
-    "ciclos": {
-      "ok": true,
-      "count": 2
-    },
-    "ingevec": {
-      "ok": true,
-      "count": 21
-    },
-    "paz": {
-      "ok": true,
-      "count": 25
-    },
-    "euro": {
-      "ok": false,
-      "error": "HTTP 403 for https://www.euroinmobiliaria.cl/proyectos?subsidio=1",
-      "count": 0
-    },
-    "santolaya": {
-      "ok": true,
-      "count": 24
+      "count": 9
     },
     "besalco": {
       "ok": true,
       "count": 14
     },
-    "socovesa": {
+    "galilea": {
       "ok": true,
-      "count": 23
+      "count": 1
+    },
+    "ingevec": {
+      "ok": true,
+      "count": 21
+    },
+    "aitue": {
+      "ok": true,
+      "count": 14
+    },
+    "ciclos": {
+      "ok": true,
+      "count": 2
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 24
     },
     "py": {
       "ok": true,
@@ -59,13 +58,9 @@
       "error": "listado Fundamenta vacío",
       "count": 0
     },
-    "aitue": {
+    "socovesa": {
       "ok": true,
-      "count": 14
-    },
-    "galilea": {
-      "ok": true,
-      "count": 1
+      "count": 23
     },
     "los-silos": {
       "ok": true,
@@ -85,7 +80,12 @@
     },
     "enlace-bci": {
       "ok": true,
-      "count": 43
+      "count": 47
+    },
+    "paz": {
+      "ok": false,
+      "error": "terminated",
+      "count": 0
     }
   }
 }
