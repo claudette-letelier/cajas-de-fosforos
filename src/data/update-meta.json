@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-23",
+  "generatedAt": "2026-11-24",
   "ufClp": 41385,
-  "scraped": 573,
-  "catalogSize": 568,
-  "updated": 573,
-  "created": 0,
-  "agotados": 1,
+  "scraped": 576,
+  "catalogSize": 569,
+  "updated": 575,
+  "created": 1,
+  "agotados": 0,
   "sources": {
     "mindicador": {
       "ok": false,
-      "error": "HTTP 502 for https://mindicador.cl/api/uf",
+      "error": "fetch failed",
       "ufClp": 41385,
       "fallback": true
     },
@@ -21,70 +21,70 @@
       "ok": true,
       "count": 18
     },
-    "paz": {
-      "ok": true,
-      "count": 25
-    },
-    "galilea": {
-      "ok": true,
-      "count": 1
-    },
     "deisa": {
       "ok": true,
       "count": 9
-    },
-    "ingevec": {
-      "ok": true,
-      "count": 21
-    },
-    "ciclos": {
-      "ok": true,
-      "count": 2
     },
     "besalco": {
       "ok": true,
       "count": 14
     },
-    "aitue": {
+    "paz": {
       "ok": true,
-      "count": 14
+      "count": 25
     },
-    "santolaya": {
+    "ingevec": {
       "ok": true,
-      "count": 24
+      "count": 21
     },
     "py": {
       "ok": true,
-      "count": 27
-    },
-    "socovesa": {
-      "ok": true,
-      "count": 23
-    },
-    "bricsa": {
-      "ok": true,
-      "count": 5
+      "count": 28
     },
     "fundamenta": {
       "ok": false,
       "error": "listado Fundamenta vacío",
       "count": 0
     },
+    "ciclos": {
+      "ok": true,
+      "count": 2
+    },
+    "santolaya": {
+      "ok": true,
+      "count": 24
+    },
+    "aitue": {
+      "ok": true,
+      "count": 14
+    },
+    "galilea": {
+      "ok": true,
+      "count": 1
+    },
+    "bricsa": {
+      "ok": true,
+      "count": 5
+    },
+    "socovesa": {
+      "ok": true,
+      "count": 23
+    },
     "los-silos": {
       "ok": true,
       "count": 13
-    },
-    "usatusubsidio": {
-      "ok": true,
-      "count": 191
     },
     "subsidios-cl": {
       "ok": true,
       "count": 128
     },
+    "usatusubsidio": {
+      "ok": true,
+      "count": 191
+    },
     "enlace-bci": {
       "ok": true,
-      "count": 43
+      "count": 45
     }
   }
 }
