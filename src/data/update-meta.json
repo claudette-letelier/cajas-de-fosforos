@@ -1,35 +1,44 @@
 {
-  "generatedAt": "2026-11-25",
+  "generatedAt": "2026-11-26",
   "ufClp": 41385,
-  "scraped": 552,
-  "catalogSize": 570,
-  "updated": 551,
+  "scraped": 560,
+  "catalogSize": 571,
+  "updated": 559,
   "created": 1,
-  "agotados": 1,
+  "agotados": 0,
   "sources": {
     "mindicador": {
       "ok": false,
-      "error": "fetch failed",
+      "error": "HTTP 502 for https://mindicador.cl/api/uf",
       "ufClp": 41385,
       "fallback": true
+    },
+    "euro": {
+      "ok": false,
+      "error": "HTTP 403 for https://www.euroinmobiliaria.cl/proyectos?subsidio=1",
+      "count": 0
     },
     "ecomac": {
       "ok": true,
       "count": 15
     },
-    "euro": {
-      "ok": true,
-      "count": 18
-    },
     "deisa": {
       "ok": true,
       "count": 9
     },
-    "besalco": {
+    "aitue": {
       "ok": true,
       "count": 14
     },
-    "aitue": {
+    "ingevec": {
+      "ok": true,
+      "count": 20
+    },
+    "paz": {
+      "ok": true,
+      "count": 26
+    },
+    "besalco": {
       "ok": true,
       "count": 14
     },
@@ -37,21 +46,21 @@
       "ok": true,
       "count": 2
     },
-    "py": {
-      "ok": true,
-      "count": 28
-    },
-    "ingevec": {
-      "ok": true,
-      "count": 20
-    },
     "santolaya": {
       "ok": true,
       "count": 24
     },
+    "py": {
+      "ok": true,
+      "count": 29
+    },
     "galilea": {
       "ok": true,
       "count": 1
+    },
+    "socovesa": {
+      "ok": true,
+      "count": 23
     },
     "los-silos": {
       "ok": true,
@@ -66,15 +75,6 @@
       "ok": true,
       "count": 5
     },
-    "socovesa": {
-      "ok": true,
-      "count": 23
-    },
-    "paz": {
-      "ok": false,
-      "error": "fetch failed",
-      "count": 0
-    },
     "subsidios-cl": {
       "ok": true,
       "count": 128
@@ -85,7 +85,7 @@
     },
     "enlace-bci": {
       "ok": true,
-      "count": 46
+      "count": 45
     }
   }
 }
