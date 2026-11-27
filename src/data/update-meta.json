@@ -1,30 +1,41 @@
 {
-  "generatedAt": "2026-11-26",
+  "generatedAt": "2026-11-27",
   "ufClp": 41385,
-  "scraped": 560,
+  "scraped": 410,
   "catalogSize": 571,
-  "updated": 559,
-  "created": 1,
-  "agotados": 0,
+  "updated": 410,
+  "created": 0,
+  "agotados": 1,
   "sources": {
     "mindicador": {
       "ok": false,
-      "error": "HTTP 502 for https://mindicador.cl/api/uf",
+      "error": "fetch failed",
       "ufClp": 41385,
       "fallback": true
     },
-    "euro": {
-      "ok": false,
-      "error": "HTTP 403 for https://www.euroinmobiliaria.cl/proyectos?subsidio=1",
-      "count": 0
-    },
     "ecomac": {
       "ok": true,
-      "count": 15
+      "count": 16
+    },
+    "euro": {
+      "ok": true,
+      "count": 18
+    },
+    "paz": {
+      "ok": true,
+      "count": 25
     },
     "deisa": {
       "ok": true,
       "count": 9
+    },
+    "galilea": {
+      "ok": true,
+      "count": 1
+    },
+    "ciclos": {
+      "ok": true,
+      "count": 2
     },
     "aitue": {
       "ok": true,
@@ -34,17 +45,9 @@
       "ok": true,
       "count": 20
     },
-    "paz": {
-      "ok": true,
-      "count": 26
-    },
     "besalco": {
       "ok": true,
       "count": 14
-    },
-    "ciclos": {
-      "ok": true,
-      "count": 2
     },
     "santolaya": {
       "ok": true,
@@ -54,34 +57,30 @@
       "ok": true,
       "count": 29
     },
-    "galilea": {
-      "ok": true,
-      "count": 1
-    },
-    "socovesa": {
-      "ok": true,
-      "count": 23
-    },
-    "los-silos": {
-      "ok": true,
-      "count": 13
-    },
     "fundamenta": {
       "ok": false,
       "error": "listado Fundamenta vacío",
       "count": 0
     },
+    "los-silos": {
+      "ok": true,
+      "count": 13
+    },
+    "usatusubsidio": {
+      "ok": true,
+      "count": 24
+    },
     "bricsa": {
       "ok": true,
       "count": 5
     },
+    "socovesa": {
+      "ok": true,
+      "count": 23
+    },
     "subsidios-cl": {
       "ok": true,
       "count": 128
-    },
-    "usatusubsidio": {
-      "ok": true,
-      "count": 192
     },
     "enlace-bci": {
       "ok": true,
